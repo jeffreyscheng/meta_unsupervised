@@ -4,11 +4,12 @@ import torch
 from copy import deepcopy
 from itertools import chain
 from torch.autograd import Variable
+from torch.optim import Optimizer
 
 required = object()
 
 
-class Optimizer(object):
+class MetaOptimizer(Optimizer):
     """Base class for all optimizers.
 
     Arguments:
@@ -58,7 +59,7 @@ class Optimizer(object):
         format_string += ')'
         return format_string
 
-[docs]    def state_dict(self):
+    def state_dict(self):
         """Returns the state of the optimizer as a :class:`dict`.
 
         It contains two entries:
@@ -67,11 +68,13 @@ class Optimizer(object):
             differs between optimizer classes.
         * param_groups - a dict containing all parameter groups
         """
+
         # Save ids instead of Variables
         def pack_group(group):
             packed = {k: v for k, v in group.items() if k != 'params'}
             packed['params'] = [id(p) for p in group['params']]
             return packed
+
         param_groups = [pack_group(g) for g in self.param_groups]
         # Remap state to use ids as keys
         packed_state = {(id(k) if isinstance(k, Variable) else k): v
@@ -82,7 +85,7 @@ class Optimizer(object):
 
         }
 
-[docs]    def load_state_dict(self, state_dict):
+    def load_state_dict(self, state_dict):
         """Loads the optimizer state.
 
         Arguments:
@@ -140,12 +143,13 @@ class Optimizer(object):
         def update_group(group, new_group):
             new_group['params'] = group['params']
             return new_group
+
         param_groups = [
             update_group(g, ng) for g, ng in zip(groups, saved_groups)]
 
         self.__setstate__({'state': state, 'param_groups': param_groups})
 
-[docs]    def zero_grad(self):
+    def zero_grad(self):
         """Clears the gradients of all optimized :class:`Variable` s."""
         for group in self.param_groups:
             for p in group['params']:
@@ -154,7 +158,7 @@ class Optimizer(object):
 
                     p.grad.zero_()
 
-[docs]    def step(self, closure):
+    def step(self, closure):
         """Performs a single optimization step (parameter update).
 
         Arguments:
@@ -164,7 +168,7 @@ class Optimizer(object):
 
         raise NotImplementedError
 
-[docs]    def add_param_group(self, param_group):
+    def add_param_group(self, param_group):
         """Add a param group to the :class:`Optimizer` s `param_groups`.
 
         This can be useful when fine tuning a pre-trained network as frozen layers can be made

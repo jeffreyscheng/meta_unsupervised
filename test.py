@@ -61,7 +61,7 @@ rnn = RNN(input_size, hidden_size, num_layers, num_classes)
 # Loss and Optimizer
 criterion = nn.CrossEntropyLoss()
 # optimizer = torch.optim.Adam(rnn.parameters(), lr=learning_rate)
-meta_learner = torch.optim.MetaOptimizer(rnn.parameters())
+optimizer = torch.optim.MetaOptimizer(rnn.parameters())
 
 
 
