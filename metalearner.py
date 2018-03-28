@@ -1,212 +1,160 @@
+import torch
+import torch.nn as nn
+import torchvision.datasets as dsets
+import torchvision.transforms as transforms
+from torch.autograd import Variable
+
 from collections import defaultdict, Iterable
 
-import torch
 from copy import deepcopy
 from itertools import chain
-from torch.autograd import Variable
-from torch.optim import Optimizer
+import math
 
 required = object()
 
 
-class MetaOptimizer(Optimizer):
-    """Base class for all optimizers.
+class Net(nn.Module):
 
-    Arguments:
-        params (iterable): an iterable of :class:`Variable` s or
-            :class:`dict` s. Specifies what Variables should be optimized.
-        defaults: (dict): a dict containing default values of optimization
-            options (used when a parameter group doesn't specify them).
-    """
+    def __init__(self, input_size, hidden_size, num_classes, num_unsupervised_iterations):
+        super(Net, self).__init__()
+        self.fc1 = nn.Linear(input_size, hidden_size)
+        self.relu = nn.ReLU()
+        self.fc2 = nn.Linear(hidden_size, num_classes)
+        self.num_unsupervised_iterations = num_unsupervised_iterations
 
-    def __init__(self, params, defaults):
-        self.defaults = defaults
+    def forward(self, x):
+        out = self.fc1(x)
+        out = self.relu(out)
+        out = self.fc2(out)
+        return out
 
-        if isinstance(params, Variable) or torch.is_tensor(params):
-            raise TypeError("params argument given to the optimizer should be "
-                            "an iterable of Variables or dicts, but got " +
-                            torch.typename(params))
 
-        self.state = defaultdict(dict)
-        self.param_groups = []
+# Neural Network Model (1 hidden layer)
+class Meta(nn.Module):
+    def __init__(self, input_size, hidden_size, num_classes):
+        super(Meta, self).__init__()
+        self.fc1 = nn.Linear(input_size, hidden_size)
+        self.relu = nn.ReLU()
+        self.fc2 = nn.Linear(hidden_size, num_classes)
 
-        param_groups = list(params)
-        if len(param_groups) == 0:
-            raise ValueError("optimizer got an empty parameter list")
-        if not isinstance(param_groups[0], dict):
-            param_groups = [{'params': param_groups}]
+    def forward(self, x):
+        out = self.fc1(x)
+        out = self.relu(out)
+        out = self.fc2(out)
+        return out
 
-        for param_group in param_groups:
-            self.add_param_group(param_group)
 
-    def __getstate__(self):
-        return {
-            'state': self.state,
-            'param_groups': self.param_groups,
-        }
+class MetaOptimizer(torch.optim.Adam):
+    def __init__(self, parameters, meta_parameters, lr=1, num_unsupervised_iterations=0):
+        super(MetaOptimizer, self).__init__(parameters, lr=lr)
+        self.num_unsupervised_iterations = num_unsupervised_iterations
+        self.iteration_number = 0
 
-    def __setstate__(self, state):
-        self.__dict__.update(state)
+    def adam_step(self, closure=None):
+        loss = None
+        if closure is not None:
+            loss = closure()
 
-    def __repr__(self):
-        format_string = self.__class__.__name__ + ' ('
-        for i, group in enumerate(self.param_groups):
-            format_string += '\n'
-            format_string += 'Parameter Group {0}\n'.format(i)
-            for key in sorted(group.keys()):
-                if key != 'params':
-                    format_string += '    {0}: {1}\n'.format(key, group[key])
-        format_string += ')'
-        return format_string
-
-    def state_dict(self):
-        """Returns the state of the optimizer as a :class:`dict`.
-
-        It contains two entries:
-
-        * state - a dict holding current optimization state. Its content
-            differs between optimizer classes.
-        * param_groups - a dict containing all parameter groups
-        """
-
-        # Save ids instead of Variables
-        def pack_group(group):
-            packed = {k: v for k, v in group.items() if k != 'params'}
-            packed['params'] = [id(p) for p in group['params']]
-            return packed
-
-        param_groups = [pack_group(g) for g in self.param_groups]
-        # Remap state to use ids as keys
-        packed_state = {(id(k) if isinstance(k, Variable) else k): v
-                        for k, v in self.state.items()}
-        return {
-            'state': packed_state,
-            'param_groups': param_groups,
-
-        }
-
-    def load_state_dict(self, state_dict):
-        """Loads the optimizer state.
-
-        Arguments:
-            state_dict (dict): optimizer state. Should be an object returned
-                from a call to :meth:`state_dict`.
-        """
-        # deepcopy, to be consistent with module API
-        state_dict = deepcopy(state_dict)
-        # Validate the state_dict
-        groups = self.param_groups
-        saved_groups = state_dict['param_groups']
-
-        if len(groups) != len(saved_groups):
-            raise ValueError("loaded state dict has a different number of "
-                             "parameter groups")
-        param_lens = (len(g['params']) for g in groups)
-        saved_lens = (len(g['params']) for g in saved_groups)
-        if any(p_len != s_len for p_len, s_len in zip(param_lens, saved_lens)):
-            raise ValueError("loaded state dict contains a parameter group "
-                             "that doesn't match the size of optimizer's group")
-
-        # Update the state
-        id_map = {old_id: p for old_id, p in
-                  zip(chain(*(g['params'] for g in saved_groups)),
-                      chain(*(g['params'] for g in groups)))}
-
-        def cast(param, value):
-            """Make a deep copy of value, casting all tensors to device of param."""
-            if torch.is_tensor(value):
-                # Floating-point types are a bit special here. They are the only ones
-                # that are assumed to always match the type of params.
-                if param.is_floating_point():
-                    value = value.type_as(param)
-                value = value.cuda(param.get_device()) if param.is_cuda else value.cpu()
-                return value
-            elif isinstance(value, dict):
-                return {k: cast(param, v) for k, v in value.items()}
-            elif isinstance(value, Iterable):
-                return type(value)(cast(param, v) for v in value)
-            else:
-                return value
-
-        # Copy state assigned to params (and cast tensors to appropriate types).
-        # State that is not assigned to params is copied as is (needed for
-        # backward compatibility).
-        state = defaultdict(dict)
-        for k, v in state_dict['state'].items():
-            if k in id_map:
-                param = id_map[k]
-                state[param] = cast(param, v)
-            else:
-                state[k] = v
-
-        # Update parameter groups, setting their 'params' value
-        def update_group(group, new_group):
-            new_group['params'] = group['params']
-            return new_group
-
-        param_groups = [
-            update_group(g, ng) for g, ng in zip(groups, saved_groups)]
-
-        self.__setstate__({'state': state, 'param_groups': param_groups})
-
-    def zero_grad(self):
-        """Clears the gradients of all optimized :class:`Variable` s."""
         for group in self.param_groups:
             for p in group['params']:
-                if p.grad is not None:
-                    p.grad.detach_()
+                if p.grad is None:
+                    continue
+                grad = p.grad.data
+                if grad.is_sparse:
+                    raise RuntimeError('Adam does not support sparse gradients, please consider SparseAdam instead')
+                amsgrad = group['amsgrad']
 
-                    p.grad.zero_()
+                state = self.state[p]
 
-    def step(self, closure):
-        """Performs a single optimization step (parameter update).
+                # State initialization
+                if len(state) == 0:
+                    state['step'] = 0
+                    # Exponential moving average of gradient values
+                    state['exp_avg'] = torch.zeros_like(p.data)
+                    # Exponential moving average of squared gradient values
+                    state['exp_avg_sq'] = torch.zeros_like(p.data)
+                    if amsgrad:
+                        # Maintains max of all exp. moving avg. of sq. grad. values
+                        state['max_exp_avg_sq'] = torch.zeros_like(p.data)
 
-        Arguments:
-            closure (callable): A closure that reevaluates the model and
-                returns the loss. Optional for most optimizers.
-        """
+                exp_avg, exp_avg_sq = state['exp_avg'], state['exp_avg_sq']
+                if amsgrad:
+                    max_exp_avg_sq = state['max_exp_avg_sq']
+                beta1, beta2 = group['betas']
 
-        raise NotImplementedError
+                state['step'] += 1
 
-    def add_param_group(self, param_group):
-        """Add a param group to the :class:`Optimizer` s `param_groups`.
+                if group['weight_decay'] != 0:
+                    grad = grad.add(group['weight_decay'], p.data)
 
-        This can be useful when fine tuning a pre-trained network as frozen layers can be made
-        trainable and added to the :class:`Optimizer` as training progresses.
+                # Decay the first and second moment running average coefficient
+                exp_avg.mul_(beta1).add_(1 - beta1, grad)
+                exp_avg_sq.mul_(beta2).addcmul_(1 - beta2, grad, grad)
+                if amsgrad:
+                    # Maintains the maximum of all 2nd moment running avg. till now
+                    torch.max(max_exp_avg_sq, exp_avg_sq, out=max_exp_avg_sq)
+                    # Use the max. for normalizing running avg. of gradient
+                    denom = max_exp_avg_sq.sqrt().add_(group['eps'])
+                else:
+                    denom = exp_avg_sq.sqrt().add_(group['eps'])
 
-        Arguments:
-            param_group (dict): Specifies what Variables should be optimized along with group
-            specific optimization options.
-        """
-        assert isinstance(param_group, dict), "param group must be a dict"
+                bias_correction1 = 1 - beta1 ** state['step']
+                bias_correction2 = 1 - beta2 ** state['step']
+                step_size = group['lr'] * math.sqrt(bias_correction2) / bias_correction1
 
-        params = param_group['params']
-        if isinstance(params, Variable):
-            param_group['params'] = [params]
+                p.data.addcdiv_(-step_size, exp_avg, denom)
+
+        return loss
+
+    def step(self):
+        if self.iteration_number > self.num_unsupervised_iterations:
+            return self.adam_step()
         else:
-            param_group['params'] = list(params)
 
-        for param in param_group['params']:
-            if not isinstance(param, Variable):
-                raise TypeError("optimizer can only optimize Variables, "
-                                "but one of the params is " + torch.typename(param))
-            if not param.requires_grad:
-                raise ValueError("optimizing a parameter that doesn't require gradients")
-            if not param.is_leaf:
-                raise ValueError("can't optimize a non-leaf Variable")
 
-        for name, default in self.defaults.items():
-            if default is required and name not in param_group:
-                raise ValueError("parameter group didn't specify a value of required optimization parameter " +
-                                 name)
-            else:
-                param_group.setdefault(name, default)
+learner = Net(784, 800, 10)
+n_criterion = 0  # TODO
+n_optimizer = None  # TODO
+return learner.forward(x)
 
-        param_set = set()
-        for group in self.param_groups:
-            param_set.update(set(group['params']))
+m = Meta(3, 5, 1)
 
-        if not param_set.isdisjoint(set(param_group['params'])):
-            raise ValueError("some parameters appear in more than one parameter group")
+# MetaLearner Loss and Optimizer
+m_criterion = nn.CrossEntropyLoss()
+m_optimizer = torch.optim.Adam(m.parameters(), lr=learning_rate)
 
-        self.param_groups.append(param_group)
+##### TROLOLOLOLOLOLOL #####
+
+
+# Train the Model
+for epoch in range(num_epochs):
+    for i, (images, labels) in enumerate(train_loader):
+        # Convert torch tensor to Variable
+        images = Variable(images.view(-1, 28 * 28))
+        labels = Variable(labels)
+
+        # Forward + Backward + Optimize
+        optimizer.zero_grad()  # zero the gradient buffer
+        outputs = net(images)
+        loss = criterion(outputs, labels)
+        loss.backward()
+        optimizer.step()
+
+        if (i + 1) % 100 == 0:
+            print('Epoch [%d/%d], Step [%d/%d], Loss: %.4f'
+                  % (epoch + 1, num_epochs, i + 1, len(train_dataset) // batch_size, loss.data[0]))
+
+# Test the Model
+correct = 0
+total = 0
+for images, labels in test_loader:
+    images = Variable(images.view(-1, 28 * 28))
+    outputs = net(images)
+    _, predicted = torch.max(outputs.data, 1)
+    total += labels.size(0)
+    correct += (predicted == labels).sum()
+
+print('Accuracy of the network on the 10000 test images: %d %%' % (100 * correct / total))
+
+# Save the Model
+torch.save(net.state_dict(), 'model.pkl')
