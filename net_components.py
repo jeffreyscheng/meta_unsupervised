@@ -30,8 +30,17 @@ class SingleNet(nn.Module):
         self.fc1 = nn.Linear(input_size, hidden1)
         self.fc2 = nn.Linear(hidden1, hidden2)
         self.fc3 = nn.Linear(hidden2, output_size)
-        self.impulse = []
-        self.add_module("meta_weight", meta_weight)
+        self.impulse = None
+        self.meta_weight = meta_weight
+        self.metadata = {}
+
+        self.param_state = self.state_dict(keep_vars=True)
+        keys = list(self.param_state.keys())
+
+        def is_weight_param(param):
+            return (".weight" in param) and ("meta" not in param)
+
+        self.weight_params = [key for key in keys if is_weight_param(key)]
 
     # get new weight
     def get_update(self, v_i, w_ij, v_j):
@@ -41,10 +50,9 @@ class SingleNet(nn.Module):
 
     # compute output and propagate Hebbian updates
     def forward(self, x):
-        print(type(x))
+        self.metadata = {}
         out = x
-        self.impulse = []
-        self.impulse.append(out)
+        self.impulse = [out]
         out = self.fc1(out)
         out = self.relu(out)
         self.impulse.append(out)
@@ -54,25 +62,26 @@ class SingleNet(nn.Module):
         out = self.fc3(out)
         out = self.relu(out)
         self.impulse.append(out)
-        param_state = self.state_dict(keep_vars=True)
-        keys = list(param_state.keys())
 
-        def is_weight_param(param):
-            return (".weight" in param) and ("meta" not in param)
-
-        weight_params = [key for key in keys if is_weight_param(key)]
         # print(weight_params)
-        if len(weight_params) != len(self.impulse) - 1:
-            print("Keys:" + str(len(keys)))
-            print(keys)
+        if len(self.weight_params) != len(self.impulse) - 1:
+            print("Keys:" + str(len(self.weight_params)))
+            print(self.weight_params)
             print("Impulse:" + str(len(self.impulse)))
             print(self.impulse)
             raise ValueError("Num keys not 1 less than num impulses")
-        for i in range(0, len(weight_params)):
-            layer = param_state[weight_params[i]]
+        for i in range(0, len(self.weight_params)):
+            layer = self.param_state[self.weight_params[i]]
             # print(layer)
             input_layer = self.impulse[i]
             output_layer = self.impulse[i + 1]
+            input_stack = input_layer.repeat(output_layer.size(1), 1)
+            output_stack = output_layer.repeat(input_layer.size(1), 1).t()
+            meta_inputs = torch.stack((input_stack, layer, output_stack), dim=2)
+            print(meta_inputs.size())
+            layer_data = {'inputs': meta_inputs}
+            self.metadata[self.weight_params[i]] = layer_data
+            # TODO: vectorize with apply_()
             for input_index in range(0, len(input_layer)):
                 for output_index in range(0, len(output_layer)):
                     # print(input_layer.data)

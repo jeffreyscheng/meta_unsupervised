@@ -1,4 +1,6 @@
 from net_components import *
+import torch
+from torch.autograd import Variable
 
 required = object()
 
@@ -10,6 +12,7 @@ mid = 800
 num_classes = 10
 num_epochs = 5
 batch_size = 1
+meta_batch_size = 100
 learning_rate = 0.001
 
 # MNIST Dataset
@@ -36,7 +39,6 @@ test_loader = torch.utils.data.DataLoader(dataset=test_dataset,
 meta_weight = Meta(3, 5, 1)
 learner = SingleNet(784, 400, 200, 10, meta_weight)
 
-
 # Loss and Optimizer
 criterion = nn.CrossEntropyLoss()
 # print(len(list(learner.parameters())))
@@ -61,11 +63,21 @@ for epoch in range(num_epochs):
         print("Loss:" + str(loss))
         loss.backward()
 
-        print("LOLAL")
-        print(list(learner.parameters())[0].grad)
-        print("HOUFSDJ")
+        # print("LOLAL")
+        # crie = list(learner.parameters())
+        # for cri in crie:
+        #     print("NEW")
+        #     print(sum(cri.grad.data))
+        # # print(list(learner.parameters())[0].grad)
+        # # print(list(learner.parameters())[1].grad)
+        # print("HOUFSDJ")
 
         optimizer.step()
+
+        for param in learner.weight_params:
+            grad = learner.param_state[param].grad
+            learner.metadata[param]['grad'] = grad
+            print(grad.size())
 
 
         # print(learner.meta_weight.get_loss())
