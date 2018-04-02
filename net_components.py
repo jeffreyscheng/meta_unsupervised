@@ -45,7 +45,7 @@ class SingleNet(nn.Module):
     # get new weight
     def get_update(self, v_i, w_ij, v_j):
         inputs = Variable(torch.Tensor([v_i, w_ij, v_j]), requires_grad=True)
-        print("break")
+        # print("break")
         return self.meta_weight.forward(inputs).data[0]
 
     # compute output and propagate Hebbian updates
@@ -78,9 +78,8 @@ class SingleNet(nn.Module):
             input_stack = input_layer.repeat(output_layer.size(1), 1)
             output_stack = output_layer.repeat(input_layer.size(1), 1).t()
             meta_inputs = torch.stack((input_stack, layer, output_stack), dim=2)
-            print(meta_inputs.size())
-            layer_data = {'inputs': meta_inputs}
-            self.metadata[self.weight_params[i]] = layer_data
+            # print(meta_inputs.size())
+            self.metadata[self.weight_params[i]] = meta_inputs
             # TODO: vectorize with apply_()
             for input_index in range(0, len(input_layer)):
                 for output_index in range(0, len(output_layer)):
@@ -97,5 +96,5 @@ class SingleNet(nn.Module):
                     # print(new_weight - neuron_weight)
                     # print(type(new_weight - neuron_weight))
         print("finished a forward pass")
-        print(self.meta_weight.state_dict())
+        # print(self.meta_weight.state_dict())
         return out
