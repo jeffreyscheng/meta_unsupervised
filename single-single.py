@@ -76,8 +76,8 @@ meta_optimizer = torch.optim.Adam(meta_weight.parameters(), lr=learning_rate)
 
 # Train the Model
 for epoch in range(num_epochs):
+    tick = time.clock()
     for i, (images, labels) in enumerate(train_loader):
-        tick = time.clock()
         # Convert torch tensor to Variable
         images = Variable(images.view(-1, 28 * 28))
         labels = Variable(labels)
