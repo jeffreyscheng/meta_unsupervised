@@ -18,7 +18,7 @@ meta_input = 3
 meta_output = 1
 input_size = 784
 num_classes = 10
-learner_batch_size = 1
+learner_batch_size = 10
 
 # Variable Hyper Parameters
 starting_learner_mid1 = 400
@@ -87,7 +87,7 @@ def train_model(mid1=starting_learner_mid1, mid2=starting_learner_mid2, meta_mid
     meta_batch_size = math.floor(meta_batch_size)
     train_start_time = time.time()
     meta_weight = Meta(meta_input, meta_mid, meta_output)
-    learner = SingleNet(input_size, mid1, mid2, num_classes, meta_weight)
+    learner = SingleNet(input_size, mid1, mid2, num_classes, meta_weight, learner_batch_size)
 
     # Loss and Optimizer
     learner_criterion = nn.CrossEntropyLoss()
@@ -151,12 +151,12 @@ def train_model(mid1=starting_learner_mid1, mid2=starting_learner_mid2, meta_mid
             # print("ONE FULL PASS")
             # print(time.clock() - tick)
             #
-            if (i + 1) % 100 == 0:
+            # if (i + 1) % 100 == 0:
                 # print('Epoch [%d/%d], Step [%d/%d], Loss: %.4f'
                 #       % (epoch + 1, num_epochs, i + 1, len(train_dataset) // batch_size, learner_loss.data[0]))
-                print('Epoch [%d], Loss: %.4f' % (meta_epoch + 1, learner_loss.data[0]))
+                # print('Epoch [%d], Loss: %.4f' % (meta_epoch + 1, learner_loss.data[0]))
             #     print('Took ', time.clock() - tick, ' seconds')
-            meta_epoch += 1
+            # meta_epoch += 1
 
     # Test the Model
     correct = 0
@@ -171,20 +171,20 @@ def train_model(mid1=starting_learner_mid1, mid2=starting_learner_mid2, meta_mid
     return correct / total
 
 
-train_model()
+# train_model()
 
-# param_dict = {'mid1': (20, 1000), 'mid2': (20, 1000), 'meta_mid': (2, 10), 'meta_sample_per_iter': (10001, 100000),
-#               'meta_batch_size': (0, 10000), 'learning_rate': (0, 0.1), 'meta_rate': (0, 0.01)}
-# bayes = BayesianOptimization(train_model, param_dict)
-#
-# bayes.explore({'mid1': [starting_learner_mid1], 'mid2': [starting_learner_mid2], 'meta_mid': [starting_meta_mid],
-#                'meta_sample_per_iter': [starting_meta_sample_per_iter], 'meta_batch_size': [starting_meta_batch_size],
-#                'learning_rate': [starting_learning_rate], 'meta_rate': [starting_meta_rate]})
-#
-# bayes.maximize(init_points=5, n_iter=2, kappa=2)
-#
-# print(bayes.res['max'])
-# print(bayes.res['all'])
+param_dict = {'mid1': (20, 1000), 'mid2': (20, 1000), 'meta_mid': (2, 10), 'meta_sample_per_iter': (10001, 100000),
+              'meta_batch_size': (0, 10000), 'learning_rate': (0, 0.1), 'meta_rate': (0, 0.01)}
+bayes = BayesianOptimization(train_model, param_dict)
+
+bayes.explore({'mid1': [starting_learner_mid1], 'mid2': [starting_learner_mid2], 'meta_mid': [starting_meta_mid],
+               'meta_sample_per_iter': [starting_meta_sample_per_iter], 'meta_batch_size': [starting_meta_batch_size],
+               'learning_rate': [starting_learning_rate], 'meta_rate': [starting_meta_rate]})
+
+bayes.maximize(init_points=5, n_iter=2, kappa=2)
+
+print(bayes.res['max'])
+print(bayes.res['all'])
 
 # Save the Model
 # torch.save(learner.state_dict(), 'single_single_weights.pkl')
