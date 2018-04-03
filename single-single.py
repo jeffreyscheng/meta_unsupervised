@@ -18,7 +18,7 @@ meta_input = 3
 meta_output = 1
 input_size = 784
 num_classes = 10
-learner_batch_size = 10
+learner_batch_size = 1
 
 # Variable Hyper Parameters
 starting_learner_mid1 = 400
@@ -173,18 +173,18 @@ def train_model(mid1=starting_learner_mid1, mid2=starting_learner_mid2, meta_mid
 
 train_model()
 
-param_dict = {'mid1': (20, 1000), 'mid2': (20, 1000), 'meta_mid': (2, 10), 'meta_sample_per_iter': (10001, 100000),
-              'meta_batch_size': (0, 10000), 'learning_rate': (0, 0.1), 'meta_rate': (0, 0.01)}
-bayes = BayesianOptimization(train_model, param_dict)
-
-bayes.explore({'mid1': [starting_learner_mid1], 'mid2': [starting_learner_mid2], 'meta_mid': [starting_meta_mid],
-               'meta_sample_per_iter': [starting_meta_sample_per_iter], 'meta_batch_size': [starting_meta_batch_size],
-               'learning_rate': [starting_learning_rate], 'meta_rate': [starting_meta_rate]})
-
-bayes.maximize(init_points=5, n_iter=2, kappa=2)
-
-print(bayes.res['max'])
-print(bayes.res['all'])
+# param_dict = {'mid1': (20, 1000), 'mid2': (20, 1000), 'meta_mid': (2, 10), 'meta_sample_per_iter': (10001, 100000),
+#               'meta_batch_size': (0, 10000), 'learning_rate': (0, 0.1), 'meta_rate': (0, 0.01)}
+# bayes = BayesianOptimization(train_model, param_dict)
+#
+# bayes.explore({'mid1': [starting_learner_mid1], 'mid2': [starting_learner_mid2], 'meta_mid': [starting_meta_mid],
+#                'meta_sample_per_iter': [starting_meta_sample_per_iter], 'meta_batch_size': [starting_meta_batch_size],
+#                'learning_rate': [starting_learning_rate], 'meta_rate': [starting_meta_rate]})
+#
+# bayes.maximize(init_points=5, n_iter=2, kappa=2)
+#
+# print(bayes.res['max'])
+# print(bayes.res['all'])
 
 # Save the Model
 # torch.save(learner.state_dict(), 'single_single_weights.pkl')
