@@ -10,8 +10,7 @@ from bayes_opt import BayesianOptimization
 required = object()
 
 # Hyper2 Parameters
-total_runtime = 3600  # half an hour
-# total_runtime = 5
+total_runtime = 5 * 60
 
 # Fixed Hyper Parameters
 meta_input = 3
@@ -153,10 +152,10 @@ def train_model(mid1=starting_learner_mid1, mid2=starting_learner_mid2, meta_mid
             # print(time.clock() - tick)
             #
             # if (i + 1) % 100 == 0:
-                # print('Epoch [%d/%d], Step [%d/%d], Loss: %.4f'
-                #       % (epoch + 1, num_epochs, i + 1, len(train_dataset) // batch_size, learner_loss.data[0]))
-                # print('Epoch [%d], Loss: %.4f' % (meta_epoch, learner_loss.data[0]))
-                # print('Took ', time.clock() - tick, ' seconds')
+            # print('Epoch [%d/%d], Step [%d/%d], Loss: %.4f'
+            #       % (epoch + 1, num_epochs, i + 1, len(train_dataset) // batch_size, learner_loss.data[0]))
+            # print('Epoch [%d], Loss: %.4f' % (meta_epoch, learner_loss.data[0]))
+            # print('Took ', time.clock() - tick, ' seconds')
             # meta_epoch += 1
 
     # Test the Model
@@ -168,21 +167,21 @@ def train_model(mid1=starting_learner_mid1, mid2=starting_learner_mid2, meta_mid
         _, predicted = torch.max(outputs.data, 1)
         total += labels.size(0)
         correct += (predicted == labels).sum()
-    print('Accuracy of the network on the 10000 test images: %d %%' % (100 * correct / total))
+    # print('Accuracy of the network on the 10000 test images: %d %%' % (100 * correct / total))
     return correct / total
 
 
 # train_model()
 
-param_dict = {'mid1': (20, 1000), 'mid2': (20, 1000), 'meta_mid': (2, 10), 'meta_sample_per_iter': (10001, 100000),
-              'meta_batch_size': (0, 10000), 'learning_rate': (0, 0.1), 'meta_rate': (0, 0.01)}
+param_dict = {'mid1': (20, 800), 'mid2': (20, 800), 'meta_mid': (2, 10), 'meta_sample_per_iter': (1001, 10000),
+              'meta_batch_size': (0, 1000), 'learning_rate': (0, 0.001), 'meta_rate': (0, 0.001)}
 bayes = BayesianOptimization(train_model, param_dict)
 
 bayes.explore({'mid1': [starting_learner_mid1], 'mid2': [starting_learner_mid2], 'meta_mid': [starting_meta_mid],
                'meta_sample_per_iter': [starting_meta_sample_per_iter], 'meta_batch_size': [starting_meta_batch_size],
                'learning_rate': [starting_learning_rate], 'meta_rate': [starting_meta_rate]})
 
-bayes.maximize(init_points=2, n_iter=5, kappa=2)
+bayes.maximize(init_points=5, n_iter=15, kappa=1, acq="ucb")
 
 print(bayes.res['max'])
 print(bayes.res['all'])
