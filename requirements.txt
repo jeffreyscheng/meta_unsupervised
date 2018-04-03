@@ -1,2 +1,4 @@
 torch==0.3.1
+numpy==1.14.2
+bayesian_optimization==0.6.0
 torchvision==0.2.0
