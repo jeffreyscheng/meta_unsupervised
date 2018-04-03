@@ -10,15 +10,15 @@ from bayes_opt import BayesianOptimization
 required = object()
 
 # Hyper2 Parameters
-# total_runtime = 3600 / 2  # half an hour
-total_runtime = 5
+total_runtime = 3600  # half an hour
+# total_runtime = 5
 
 # Fixed Hyper Parameters
 meta_input = 3
 meta_output = 1
 input_size = 784
 num_classes = 10
-learner_batch_size = 1
+learner_batch_size = 10
 
 # Variable Hyper Parameters
 starting_learner_mid1 = 400
@@ -96,6 +96,7 @@ def train_model(mid1=starting_learner_mid1, mid2=starting_learner_mid2, meta_mid
     meta_criterion = nn.MSELoss()
     meta_optimizer = torch.optim.Adam(meta_weight.parameters(), lr=learning_rate)
 
+    meta_epoch = 1
     while time.time() - train_start_time < total_runtime:
         for i, (images, labels) in enumerate(train_loader):
             if time.time() - train_start_time > total_runtime:
@@ -107,7 +108,7 @@ def train_model(mid1=starting_learner_mid1, mid2=starting_learner_mid2, meta_mid
             # Forward + Backward + Optimize
             learner_optimizer.zero_grad()  # zero the gradient buffer
             outputs = learner(images)
-            learner.update(meta_rate)
+            learner.update(meta_rate, meta_epoch)
             learner_loss = learner_criterion(outputs, labels)
             # print("Loss:" + str(learner_loss))
             learner_loss.backward()
@@ -125,7 +126,7 @@ def train_model(mid1=starting_learner_mid1, mid2=starting_learner_mid2, meta_mid
             metadata_size = all_metadata.size()[0]
             # trol = time.time()
             if meta_sample_per_iter > metadata_size:
-                return math.inf
+                return 0
             sample_idx = np.random.choice(metadata_size, meta_sample_per_iter, replace=False)
             # print("yay samples")
             # print(time.time() - trol)
@@ -153,8 +154,9 @@ def train_model(mid1=starting_learner_mid1, mid2=starting_learner_mid2, meta_mid
             if (i + 1) % 100 == 0:
                 # print('Epoch [%d/%d], Step [%d/%d], Loss: %.4f'
                 #       % (epoch + 1, num_epochs, i + 1, len(train_dataset) // batch_size, learner_loss.data[0]))
-                print(learner_loss.data[0])
+                print('Epoch [%d], Loss: %.4f' % (meta_epoch + 1, learner_loss.data[0]))
             #     print('Took ', time.clock() - tick, ' seconds')
+            meta_epoch += 1
 
     # Test the Model
     correct = 0

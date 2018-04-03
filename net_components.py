@@ -82,7 +82,7 @@ class SingleNet(nn.Module):
     # @timeit
     # compute output and propagate Hebbian updates
     # takes roughly 10 ms per
-    def update(self, rate):
+    def update(self, rate, epoch):
         # print(weight_params)
         if len(self.weight_params) != len(self.impulse) - 1:
             print("Keys:" + str(len(self.weight_params)))
@@ -112,7 +112,7 @@ class SingleNet(nn.Module):
                     # print(neuron_weight)
                     shift = self.get_update(input_to_neuron, neuron_weight, output_from_neuron)
                     # print(new_weight)
-                    layer.data[output_index, input_index] -= shift * rate
+                    layer.data[output_index, input_index] -= shift * rate / epoch
                     # print(new_weight - neuron_weight)
                     # print(type(new_weight - neuron_weight))
         # print("finished a forward pass")
