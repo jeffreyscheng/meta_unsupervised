@@ -18,7 +18,8 @@ meta_input = 3
 meta_output = 1
 input_size = 784
 num_classes = 10
-learner_batch_size = 10
+# learner_batch_size = 10
+learner_batch_size = 1
 
 # Variable Hyper Parameters
 starting_learner_mid1 = 400
@@ -154,8 +155,8 @@ def train_model(mid1=starting_learner_mid1, mid2=starting_learner_mid2, meta_mid
             # if (i + 1) % 100 == 0:
                 # print('Epoch [%d/%d], Step [%d/%d], Loss: %.4f'
                 #       % (epoch + 1, num_epochs, i + 1, len(train_dataset) // batch_size, learner_loss.data[0]))
-                # print('Epoch [%d], Loss: %.4f' % (meta_epoch + 1, learner_loss.data[0]))
-            #     print('Took ', time.clock() - tick, ' seconds')
+                # print('Epoch [%d], Loss: %.4f' % (meta_epoch, learner_loss.data[0]))
+                # print('Took ', time.clock() - tick, ' seconds')
             # meta_epoch += 1
 
     # Test the Model
@@ -181,7 +182,7 @@ bayes.explore({'mid1': [starting_learner_mid1], 'mid2': [starting_learner_mid2],
                'meta_sample_per_iter': [starting_meta_sample_per_iter], 'meta_batch_size': [starting_meta_batch_size],
                'learning_rate': [starting_learning_rate], 'meta_rate': [starting_meta_rate]})
 
-bayes.maximize(init_points=5, n_iter=2, kappa=2)
+bayes.maximize(init_points=2, n_iter=5, kappa=2)
 
 print(bayes.res['max'])
 print(bayes.res['all'])

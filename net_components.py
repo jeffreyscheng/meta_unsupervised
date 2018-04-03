@@ -96,19 +96,21 @@ class SingleNet(nn.Module):
             # print(layer)
             input_layer = self.impulse[i]
             output_layer = self.impulse[i + 1]
-            print(input_layer.size())
-            print(output_layer.size())
-            print(layer.size())
-            stack_dim = self.batch_size, layer.size()[0], layer.size()[1]
-            input_stack = input_layer.unsqueeze(1).expand(stack_dim)
-            output_stack = output_layer.unsqueeze(2).expand(stack_dim)
-            weight_stack = layer.unsqueeze(0).expand(stack_dim)
-            print(input_stack.size())
-            print(output_stack.size())
-            print(weight_stack.size())
-            meta_inputs = torch.stack((input_stack, weight_stack, output_stack), dim=3)
+            # print(input_layer.size())
+            # print(output_layer.size())
+            # print(layer.size())
+            # stack_dim = self.batch_size, layer.size()[0], layer.size()[1]
+            # input_stack = input_layer.unsqueeze(1).expand(stack_dim)
+            # output_stack = output_layer.unsqueeze(2).expand(stack_dim)
+            # weight_stack = layer.unsqueeze(0).expand(stack_dim)
+            # meta_inputs = torch.stack((input_stack, weight_stack, output_stack), dim=3)
             # print(meta_inputs.size())
+
+            input_stack = input_layer.repeat(output_layer.size(1), 1)
+            output_stack = output_layer.repeat(input_layer.size(1), 1).t()
+            meta_inputs = torch.stack((input_stack, layer, output_stack), dim=2)
             self.metadata[self.weight_params[i]] = meta_inputs
+            # layer.data = torch.stack([self.meta_weight() for i, x_i in enumerate(torch.unbind(x, dim=0), 0)], dim=0)
             # TODO: vectorize with apply_()
             for input_index in range(0, len(input_layer)):
                 for output_index in range(0, len(output_layer)):
