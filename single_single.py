@@ -5,7 +5,6 @@ from torch.utils.data import Dataset, DataLoader
 import time
 import numpy as np
 import math
-from bayes_opt import BayesianOptimization
 
 required = object()
 
@@ -25,7 +24,7 @@ starting_learner_mid1 = 400
 starting_learner_mid2 = 200
 starting_meta_mid = 5
 # starting_num_epochs = 5
-starting_meta_sample_per_iter = 10000
+# starting_meta_sample_per_iter = 10000
 starting_meta_batch_size = 100
 starting_learning_rate = 0.0001
 starting_meta_rate = 0.0001
@@ -78,12 +77,11 @@ class MetaDataset(Dataset):
 # DEFINE MODELS
 
 def train_model(mid1=starting_learner_mid1, mid2=starting_learner_mid2, meta_mid=starting_meta_mid,
-                meta_sample_per_iter=starting_meta_sample_per_iter, meta_batch_size=starting_meta_batch_size,
-                learning_rate=starting_learning_rate, meta_rate=starting_meta_rate):
+                meta_batch_size=starting_meta_batch_size, learning_rate=starting_learning_rate,
+                meta_rate=starting_meta_rate):
     mid1 = math.floor(mid1)
     mid2 = math.floor(mid2)
     meta_mid = math.floor(meta_mid)
-    meta_sample_per_iter = math.floor(meta_sample_per_iter)
     meta_batch_size = math.floor(meta_batch_size)
     train_start_time = time.time()
     meta_weight = Meta(meta_input, meta_mid, meta_output)
@@ -110,7 +108,7 @@ def train_model(mid1=starting_learner_mid1, mid2=starting_learner_mid2, meta_mid
             outputs = learner(images)
             learner.update(meta_rate, meta_epoch)
             learner_loss = learner_criterion(outputs, labels)
-            # print("Loss:" + str(learner_loss))
+            print(labels.data[0], ',', str(learner_loss.data[0]))
             learner_loss.backward()
             learner_optimizer.step()
 
@@ -125,9 +123,7 @@ def train_model(mid1=starting_learner_mid1, mid2=starting_learner_mid2, meta_mid
             # print(all_metadata.size())
             metadata_size = all_metadata.size()[0]
             # trol = time.time()
-            if meta_sample_per_iter > metadata_size:
-                return 0
-            sample_idx = np.random.choice(metadata_size, meta_sample_per_iter, replace=False)
+            sample_idx = np.random.choice(metadata_size, meta_batch_size, replace=False)
             # print("yay samples")
             # print(time.time() - trol)
             sampled_metadata = all_metadata[sample_idx, :]
@@ -147,7 +143,7 @@ def train_model(mid1=starting_learner_mid1, mid2=starting_learner_mid2, meta_mid
                 # print("Meta-Loss:" + str(meta_loss))
                 meta_loss.backward()
                 meta_optimizer.step()
-            #     # print(time.time() - tock)
+                # print(time.time() - tock)
             # print("ONE FULL PASS")
             # print(time.clock() - tick)
             #
@@ -172,19 +168,6 @@ def train_model(mid1=starting_learner_mid1, mid2=starting_learner_mid2, meta_mid
 
 
 # train_model()
-
-param_dict = {'mid1': (20, 800), 'mid2': (20, 800), 'meta_mid': (2, 10), 'meta_sample_per_iter': (1001, 10000),
-              'meta_batch_size': (0, 1000), 'learning_rate': (0, 0.001), 'meta_rate': (0, 0.001)}
-bayes = BayesianOptimization(train_model, param_dict)
-
-bayes.explore({'mid1': [starting_learner_mid1], 'mid2': [starting_learner_mid2], 'meta_mid': [starting_meta_mid],
-               'meta_sample_per_iter': [starting_meta_sample_per_iter], 'meta_batch_size': [starting_meta_batch_size],
-               'learning_rate': [starting_learning_rate], 'meta_rate': [starting_meta_rate]})
-
-bayes.maximize(init_points=5, n_iter=15, kappa=1, acq="ucb")
-
-print(bayes.res['max'])
-print(bayes.res['all'])
 
 # Save the Model
 # torch.save(learner.state_dict(), 'single_single_weights.pkl')
