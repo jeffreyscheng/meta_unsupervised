@@ -108,7 +108,7 @@ def train_model(mid1=starting_learner_mid1, mid2=starting_learner_mid2, meta_mid
             outputs = learner(images)
             learner.update(meta_rate, meta_epoch)
             learner_loss = learner_criterion(outputs, labels)
-            print(labels.data[0], ',', str(learner_loss.data[0]))
+            # print(labels.data[0], ',', str(learner_loss.data[0]))
             learner_loss.backward()
             learner_optimizer.step()
 
