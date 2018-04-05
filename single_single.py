@@ -9,7 +9,7 @@ import math
 required = object()
 
 # Hyper2 Parameters
-total_runtime = 5 * 60
+total_runtime = 60
 
 # Fixed Hyper Parameters
 meta_input = 3
