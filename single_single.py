@@ -123,10 +123,16 @@ def train_model(mid1=starting_learner_mid1, mid2=starting_learner_mid2, meta_mid
             # print(all_metadata.size())
             metadata_size = all_metadata.size()[0]
             # trol = time.time()
-            sample_idx = np.random.choice(metadata_size, meta_batch_size, replace=False)
-            # print("yay samples")
-            # print(time.time() - trol)
-            sampled_metadata = all_metadata[sample_idx, :]
+            try:
+                sample_idx = np.random.choice(metadata_size, meta_batch_size, replace=False)
+                sampled_metadata = all_metadata[sample_idx, :]
+            except IndexError:
+                print("===INDEX ERROR===")
+                print(metadata_size)
+                print(meta_batch_size)
+                print(sample_idx)
+                sampled_metadata = all_metadata
+                print("===CLOSE===")
             metadata_from_forward = MetaDataset(sampled_metadata)
             meta_loader = torch.utils.data.DataLoader(dataset=metadata_from_forward,
                                                       batch_size=meta_batch_size,

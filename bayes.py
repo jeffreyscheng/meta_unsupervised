@@ -9,7 +9,7 @@ bayes.explore({'mid1': [starting_learner_mid1], 'mid2': [starting_learner_mid2],
                'meta_batch_size': [starting_meta_batch_size], 'learning_rate': [starting_learning_rate],
                'meta_rate': [starting_meta_rate]})
 
-bayes.maximize(init_points=5, n_iter=15, kappa=1, acq="ucb")
+bayes.maximize(init_points=5, n_iter=30, kappa=1, acq="ucb")
 
 print(bayes.res['max'])
 print(bayes.res['all'])
