@@ -22,6 +22,7 @@ class Mature(MetaFramework):
         meta_criterion = nn.MSELoss()
         meta_optimizer = torch.optim.Adam(meta_weight.parameters(), lr=learning_rate)
 
+        meta_epoch = 1
         # training meta-learner
         while time.time() - train_start_time < total_runtime:
             for i, (images, labels) in enumerate(train_loader):
@@ -33,7 +34,7 @@ class Mature(MetaFramework):
                 # Forward + Backward + Optimize
                 learner_optimizer.zero_grad()  # zero the gradient buffer
                 outputs = learner(images)
-                # learner.update(update_rate, meta_epoch)
+                learner.update(update_rate, meta_epoch, change_weights=False)
                 learner_loss = learner_criterion(outputs, labels)
                 # print(labels.data[0], ',', str(learner_loss.data[0]))
                 learner_loss.backward()

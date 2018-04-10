@@ -22,8 +22,9 @@ class Vanilla(MetaFramework):
         meta_criterion = nn.MSELoss()
         meta_optimizer = torch.optim.Adam(meta_weight.parameters(), lr=learning_rate)
 
-        meta_epoch = 1
+        meta_epoch = 0
         while time.time() - train_start_time < total_runtime:
+            meta_epoch += 1
             for i, (images, labels) in enumerate(train_loader):
                 if time.time() - train_start_time > total_runtime:
                     break

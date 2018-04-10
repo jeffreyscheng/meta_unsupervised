@@ -83,7 +83,7 @@ class SingleNet(nn.Module):
     # @timeit
     # compute output and propagate Hebbian updates
     # takes roughly 10 ms per
-    def update(self, rate, epoch):
+    def update(self, rate, epoch, change_weights=True):
         # print(weight_params)
         if len(self.weight_params) != len(self.impulse) - 1:
             print("Keys:" + str(len(self.weight_params)))
@@ -112,19 +112,16 @@ class SingleNet(nn.Module):
             self.metadata[self.weight_params[i]] = meta_inputs
             # layer.data = torch.stack([self.meta_weight() for i, x_i in enumerate(torch.unbind(x, dim=0), 0)], dim=0)
             # TODO: vectorize with apply_()
-            for input_index in range(0, len(input_layer)):
-                for output_index in range(0, len(output_layer)):
-                    # print(input_layer.data)
-                    input_to_neuron = input_layer.data[0, input_index]
-                    # print(input_to_neuron)
-                    output_from_neuron = output_layer.data[0, output_index]
-                    # print(output_from_neuron)
-                    neuron_weight = layer.data[output_index, input_index]
-                    # print(neuron_weight)
-                    shift = self.get_update(input_to_neuron, neuron_weight, output_from_neuron)
-                    # print(new_weight)
-                    layer.data[output_index, input_index] -= shift * rate / epoch
-                    # print(new_weight - neuron_weight)
-                    # print(type(new_weight - neuron_weight))
-        # print("finished a forward pass")
-        # print(self.meta_weight.state_dict())
+            if change_weights:
+                for input_index in range(0, len(input_layer)):
+                    for output_index in range(0, len(output_layer)):
+                        # print(input_layer.data)
+                        input_to_neuron = input_layer.data[0, input_index]
+                        # print(input_to_neuron)
+                        output_from_neuron = output_layer.data[0, output_index]
+                        # print(output_from_neuron)
+                        neuron_weight = layer.data[output_index, input_index]
+                        # print(neuron_weight)
+                        shift = self.get_update(input_to_neuron, neuron_weight, output_from_neuron)
+                        # print(new_weight)
+                        layer.data[output_index, input_index] -= shift * rate / epoch
