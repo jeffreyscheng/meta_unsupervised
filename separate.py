@@ -25,7 +25,8 @@ class Separate(MetaFramework):
         meta_optimizer = torch.optim.Adam(meta_weight.parameters(), lr=learning_rate)
 
         meta_epoch = 0
-        while time.time() - train_start_time < total_runtime:
+        while time.time() - train_start_time < 360:
+        # while time.time() - train_start_time < total_runtime:
             meta_epoch += 1
             for i, (images, labels) in enumerate(train_loader):
                 if time.time() - train_start_time > total_runtime:
@@ -39,7 +40,7 @@ class Separate(MetaFramework):
                 outputs = supervised_learner(middle_outputs)
                 unsupervised_learner.update(update_rate, meta_epoch)
                 learner_loss = learner_criterion(outputs, labels)
-                # print(labels.data[0], ',', str(learner_loss.data[0]))
+                print(labels.data[0], ',', str(learner_loss.data[0]))
                 learner_loss.backward()
                 learner_optimizer.step()
 
@@ -114,5 +115,6 @@ separate_params_init = {'mid1': [400, 20], 'mid2': [200, 20],
                         'learning_rate': [0.0001, 0.00093], 'update_rate': [0.0001, 0.00087], 'bridge': [300, 20]}
 
 separate_frame = Separate('separate', separate_fixed_params, separate_params_range, separate_params_init)
-separate_frame.optimize(1)
-separate_frame.analyze()
+separate_frame.train_model(400, 100, 10, 3000, 0.0009, 0.0001, 200)
+# separate_frame.optimize(1)
+# separate_frame.analyze()

@@ -1,10 +1,17 @@
 from bayes_opt import BayesianOptimization
 import pickle
-from single_single import *
+import torch
+from torch.autograd import Variable
+from torch.utils.data import Dataset, DataLoader
+# from single_single import *
 from pathlib import Path
+import math
 
 
 class MetaFramework:
+    num_epochs = 15
+    time_out = 60 * 15
+
     def __init__(self, name, fixed_params, variable_params_range, variable_params_init):
         self.name = name
         self.fixed_params = fixed_params
@@ -46,3 +53,28 @@ class MetaFramework:
 
     def analyze(self):
         pass
+
+
+# MetaDataset
+
+class MetaDataset(Dataset):
+    """Face Landmarks dataset."""
+
+    def __init__(self, metadata):
+        """
+        Args:
+            csv_file (string): Path to the csv file with annotations.
+            root_dir (string): Directory with all the images.
+            transform (callable, optional): Optional transform to be applied
+                on a sample.
+        """
+        metadata = metadata.data
+        self.len = metadata.size()[0]
+        self.x_data = metadata[:, 0:3]
+        self.y_data = metadata[:, 3:4]
+
+    def __len__(self):
+        return self.len
+
+    def __getitem__(self, idx):
+        return self.x_data[idx], self.y_data[idx]

@@ -1,5 +1,6 @@
 from meta_framework import *
 from net_components import *
+import numpy as np
 
 
 class Vanilla(MetaFramework):
@@ -12,8 +13,33 @@ class Vanilla(MetaFramework):
         meta_mid = math.floor(meta_mid)
         meta_batch_size = math.floor(meta_batch_size)
         train_start_time = time.time()
+        meta_input = self.fixed_params['meta_input']
+        meta_output = self.fixed_params['meta_output']
         meta_weight = Meta(meta_input, meta_mid, meta_output)
+        input_size = self.fixed_params['input_size']
+        num_classes = self.fixed_params['num_classes']
+        # learner_batch_size = math.floor(learner_batch_size)
+        learner_batch_size = 1
         learner = SingleNet(input_size, mid1, mid2, num_classes, meta_weight, learner_batch_size)
+
+        # MNIST Dataset
+        train_dataset = dsets.MNIST(root='./data',
+                                    train=True,
+                                    transform=transforms.ToTensor(),
+                                    download=True)
+
+        test_dataset = dsets.MNIST(root='./data',
+                                   train=False,
+                                   transform=transforms.ToTensor())
+
+        # Data Loader (Input Pipeline)
+        train_loader = torch.utils.data.DataLoader(dataset=train_dataset,
+                                                   batch_size=learner_batch_size,
+                                                   shuffle=True)
+
+        test_loader = torch.utils.data.DataLoader(dataset=test_dataset,
+                                                  batch_size=learner_batch_size,
+                                                  shuffle=False)
 
         # Loss and Optimizer
         learner_criterion = nn.CrossEntropyLoss()
@@ -21,13 +47,11 @@ class Vanilla(MetaFramework):
 
         meta_criterion = nn.MSELoss()
         meta_optimizer = torch.optim.Adam(meta_weight.parameters(), lr=learning_rate)
-
-        meta_epoch = 0
-        while time.time() - train_start_time < total_runtime:
-            meta_epoch += 1
+        tick = time.time()
+        for meta_epoch in range(1, MetaFramework.num_epochs + 1):
+            if time.time() - tick > MetaFramework.time_out:
+                break
             for i, (images, labels) in enumerate(train_loader):
-                if time.time() - train_start_time > total_runtime:
-                    break
                 images = Variable(images.view(-1, 28 * 28))
                 labels = Variable(labels)
 
@@ -36,7 +60,7 @@ class Vanilla(MetaFramework):
                 outputs = learner(images)
                 learner.update(update_rate, meta_epoch)
                 learner_loss = learner_criterion(outputs, labels)
-                # print(labels.data[0], ',', str(learner_loss.data[0]))
+                print(labels.data[0], ',', str(learner_loss.data[0]))
                 learner_loss.backward()
                 learner_optimizer.step()
 
@@ -82,11 +106,9 @@ class Vanilla(MetaFramework):
                 # print(time.clock() - tick)
                 #
                 # if (i + 1) % 100 == 0:
-                # print('Epoch [%d/%d], Step [%d/%d], Loss: %.4f'
-                #       % (epoch + 1, num_epochs, i + 1, len(train_dataset) // batch_size, learner_loss.data[0]))
-                # print('Epoch [%d], Loss: %.4f' % (meta_epoch, learner_loss.data[0]))
-                # print('Took ', time.clock() - tick, ' seconds')
-                # meta_epoch += 1
+                #     print('Epoch [%d/%d], Step [%d/%d], Loss: %.4f'
+                #           % (meta_epoch + 1, MetaFramework.num_epochs, i + 1, len(train_dataset) // learner_batch_size, learner_loss.data[0]))
+                #     print('Epoch [%d], Loss: %.4f' % (meta_epoch, learner_loss.data[0]))
 
         # Test the Model
         correct = 0
@@ -110,5 +132,6 @@ vanilla_params_init = {'mid1': [400, 20], 'mid2': [200, 20],
                        'learning_rate': [0.0001, 0.00093], 'update_rate': [0.0001, 0.00087]}
 
 vanilla_frame = Vanilla('vanilla', vanilla_fixed_params, vanilla_params_range, vanilla_params_init)
-vanilla_frame.optimize(1)
-vanilla_frame.analyze()
+vanilla_frame.train_model(400, 200, 10, 3000, 0.001, 0.0001)
+# vanilla_frame.optimize(1)
+# vanilla_frame.analyze()
