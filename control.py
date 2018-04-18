@@ -135,6 +135,6 @@ control_params_init = {'mid1': [400, 20], 'mid2': [200, 20],
                        'learning_rate': [0.0001, 0.00093], 'update_rate': [0.0001, 0.00087]}
 
 control_frame = Control('control', control_fixed_params, control_params_range, control_params_init)
-control_frame.train_model(400, 200, 10, 3000, 0.001, 0.0001, 10)
-# control_frame.optimize(1)
+# control_frame.train_model(400, 200, 10, 3000, 0.001, 0.0001, 10)
+control_frame.optimize(30)
 # control_frame.analyze()

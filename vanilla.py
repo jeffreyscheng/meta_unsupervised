@@ -136,5 +136,5 @@ vanilla_params_init = {'mid1': [400, 20], 'mid2': [200, 20],
 
 vanilla_frame = Vanilla('vanilla', vanilla_fixed_params, vanilla_params_range, vanilla_params_init)
 # vanilla_frame.train_model(400, 200, 10, 3000, 0.001, 0.0001, 10)
-vanilla_frame.optimize()
-vanilla_frame.analyze()
+vanilla_frame.optimize(30)
+# vanilla_frame.analyze()
