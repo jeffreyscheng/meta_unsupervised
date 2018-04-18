@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6c272def-4b24-4508-8f48-9ae398102747" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/jeffr.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/jeffr.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/control.py" beforeDir="false" afterPath="$PROJECT_DIR$/control.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/meta_framework.py" beforeDir="false" afterPath="$PROJECT_DIR$/meta_framework.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/net_components.py" beforeDir="false" afterPath="$PROJECT_DIR$/net_components.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vanilla.py" beforeDir="false" afterPath="$PROJECT_DIR$/vanilla.py" afterDir="false" />
     </list>
@@ -23,15 +23,15 @@
     <SUITE FILE_PATH="coverage/meta_unsupervised$bayes_back.coverage" NAME="bayes_back Coverage Results" MODIFIED="1523345267018" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/meta_unsupervised$test.coverage" NAME="test Coverage Results" MODIFIED="1520360330758" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/meta_unsupervised$mature.coverage" NAME="mature Coverage Results" MODIFIED="1523554531655" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/meta_unsupervised$control.coverage" NAME="control Coverage Results" MODIFIED="1524036299314" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/meta_unsupervised$control.coverage" NAME="control Coverage Results" MODIFIED="1524038423611" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="600">
-      <file leaf-file-name="meta_framework.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="meta_framework.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/meta_framework.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-687">
-              <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+            <state relative-caret-position="255">
+              <caret line="15" column="22" lean-forward="true" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
               <folding>
                 <element signature="e#0#42#0" expanded="true" />
               </folding>
@@ -42,8 +42,8 @@
       <file leaf-file-name="vanilla.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vanilla.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="41" column="41" lean-forward="true" selection-start-line="41" selection-start-column="41" selection-end-line="41" selection-end-column="41" />
+            <state relative-caret-position="357">
+              <caret line="63" lean-forward="true" selection-start-line="63" selection-end-line="63" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -51,11 +51,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="net_components.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="net_components.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/net_components.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="46" column="27" selection-start-line="46" selection-start-column="27" selection-end-line="46" selection-end-column="27" />
+            <state relative-caret-position="1989">
+              <caret line="117" lean-forward="true" selection-start-line="117" selection-end-line="117" />
               <folding>
                 <element signature="e#0#12#0" expanded="true" />
                 <element signature="e#11857#15580#0" />
@@ -81,8 +81,8 @@
       <file leaf-file-name="control.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/control.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="68" column="60" lean-forward="true" selection-start-line="68" selection-start-column="60" selection-end-line="68" selection-end-column="60" />
+            <state relative-caret-position="306">
+              <caret line="57" selection-start-line="57" selection-end-line="58" selection-end-column="25" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -128,6 +128,7 @@
       <find>0.</find>
       <find>TODO</find>
       <find>self.metadata</find>
+      <find>Vanilla</find>
       <find>st</find>
     </findStrings>
     <replaceStrings>
@@ -135,6 +136,7 @@
       <replace>mature</replace>
       <replace>separate</replace>
       <replace>control</replace>
+      <replace>Control</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -161,10 +163,10 @@
         <option value="$PROJECT_DIR$/bayes_back.py" />
         <option value="$PROJECT_DIR$/mature.py" />
         <option value="$PROJECT_DIR$/separate.py" />
-        <option value="$PROJECT_DIR$/meta_framework.py" />
+        <option value="$PROJECT_DIR$/net_components.py" />
         <option value="$PROJECT_DIR$/control.py" />
         <option value="$PROJECT_DIR$/vanilla.py" />
-        <option value="$PROJECT_DIR$/net_components.py" />
+        <option value="$PROJECT_DIR$/meta_framework.py" />
       </list>
     </option>
   </component>
@@ -566,16 +568,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/meta_framework.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-687">
-          <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#42#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/separate.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="537">
@@ -596,10 +588,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/net_components.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1989">
+          <caret line="117" lean-forward="true" selection-start-line="117" selection-end-line="117" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+            <element signature="e#11857#15580#0" />
+            <element signature="e#15702#16102#0" />
+            <element signature="e#10913#16162#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/control.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="68" column="60" lean-forward="true" selection-start-line="68" selection-start-column="60" selection-end-line="68" selection-end-column="60" />
+        <state relative-caret-position="306">
+          <caret line="57" selection-start-line="57" selection-end-line="58" selection-end-column="25" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
@@ -608,23 +613,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/vanilla.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="41" column="41" lean-forward="true" selection-start-line="41" selection-start-column="41" selection-end-line="41" selection-end-column="41" />
+        <state relative-caret-position="357">
+          <caret line="63" lean-forward="true" selection-start-line="63" selection-end-line="63" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/net_components.py">
+    <entry file="file://$PROJECT_DIR$/meta_framework.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="46" column="27" selection-start-line="46" selection-start-column="27" selection-end-line="46" selection-end-column="27" />
+        <state relative-caret-position="255">
+          <caret line="15" column="22" lean-forward="true" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
           <folding>
-            <element signature="e#0#12#0" expanded="true" />
-            <element signature="e#11857#15580#0" />
-            <element signature="e#15702#16102#0" />
-            <element signature="e#10913#16162#0" />
+            <element signature="e#0#42#0" expanded="true" />
           </folding>
         </state>
       </provider>

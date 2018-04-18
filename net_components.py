@@ -115,8 +115,9 @@ class SingleNet(nn.Module):
                 clipped_shift = torch.clamp(shift, -1000000, 1000000)
                 batch_shift = torch.mean(clipped_shift, 0)
                 layer.data += batch_shift.data * rate / epoch
-            # raise ValueError("check")
-            # print("finished")
+
+    def check_convergence(self):
+        return False
 
 
 # Template for Single Structure

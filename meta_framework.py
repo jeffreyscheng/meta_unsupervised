@@ -10,7 +10,7 @@ import math
 
 class MetaFramework:
     num_epochs = 15
-    time_out = 60 * 15
+    time_out = 10 * 60
 
     def __init__(self, name, fixed_params, variable_params_range, variable_params_init):
         self.name = name

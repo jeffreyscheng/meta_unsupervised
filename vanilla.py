@@ -50,17 +50,22 @@ class Vanilla(MetaFramework):
                                           lr=learning_rate)
 
         tick = time.time()
+        meta_converged = False
         for meta_epoch in range(1, MetaFramework.num_epochs + 1):
             if time.time() - tick > MetaFramework.time_out:
                 break
             for i, (images, labels) in enumerate(train_loader):
+                if time.time() - tick > MetaFramework.time_out:
+                    break
+                if meta_converged is False:
+                    meta_converged = learner.check_convergence()
                 images = Variable(images.view(-1, 28 * 28))
                 labels = Variable(labels)
 
                 # Learner Forward + Backward + Optimize
                 learner_optimizer.zero_grad()  # zero the gradient buffer
                 outputs = learner(images)
-                learner.update(update_rate, meta_epoch)
+                learner.update(update_rate, meta_epoch, change_weights=meta_converged)
                 learner_loss = learner_criterion(outputs, labels)
                 print(labels.data[0], ',', str(learner_loss.data[0]))
                 learner_loss.backward()
@@ -69,43 +74,44 @@ class Vanilla(MetaFramework):
                 #     print(learner.param_state[param].grad)
                 learner_optimizer.step()
 
-                # wrangling v_i, v_j, w_ij to go into MetaDataset
-                for param in learner.weight_params:
-                    grad = torch.unsqueeze(learner.param_state[param].grad, 0)
-                    grad = torch.unsqueeze(grad, 1).expand(learner_batch_size, -1, -1, -1)
-                    learner.metadata[param] = torch.cat((learner.metadata[param], grad), dim=1)
-                    cube = learner.metadata[param].size()
-                    learner.metadata[param] = learner.metadata[param].view(cube[0] * cube[2] * cube[3], cube[1])
-                all_metadata = torch.cat(list(learner.metadata.values()), dim=0)
-                metadata_size = all_metadata.size()[0]
-                try:
-                    sample_idx = np.random.choice(metadata_size, meta_batch_size, replace=False)
-                    sampled_metadata = all_metadata[sample_idx, :]
-                except IndexError:
-                    print("===INDEX ERROR===")
-                    print(metadata_size)
-                    print(meta_batch_size)
-                    print(sample_idx)
-                    sampled_metadata = all_metadata
-                    print("===CLOSE===")
-                metadata_from_forward = MetaDataset(sampled_metadata)
-                meta_loader = torch.utils.data.DataLoader(dataset=metadata_from_forward,
-                                                          batch_size=meta_batch_size,
-                                                          shuffle=True)
-                # backprop error to metalearner with metadataset
-                for j, (triplets, grads) in enumerate(meta_loader):
-                    tock = time.time()
-                    triplets = Variable(triplets)
-                    grads = Variable(grads)
+                if meta_converged:
+                    # wrangling v_i, v_j, w_ij to go into MetaDataset
+                    for param in learner.weight_params:
+                        grad = torch.unsqueeze(learner.param_state[param].grad, 0)
+                        grad = torch.unsqueeze(grad, 1).expand(learner_batch_size, -1, -1, -1)
+                        learner.metadata[param] = torch.cat((learner.metadata[param], grad), dim=1)
+                        cube = learner.metadata[param].size()
+                        learner.metadata[param] = learner.metadata[param].view(cube[0] * cube[2] * cube[3], cube[1])
+                    all_metadata = torch.cat(list(learner.metadata.values()), dim=0)
+                    metadata_size = all_metadata.size()[0]
+                    try:
+                        sample_idx = np.random.choice(metadata_size, meta_batch_size, replace=False)
+                        sampled_metadata = all_metadata[sample_idx, :]
+                    except IndexError:
+                        print("===INDEX ERROR===")
+                        print(metadata_size)
+                        print(meta_batch_size)
+                        print(sample_idx)
+                        sampled_metadata = all_metadata
+                        print("===CLOSE===")
+                    metadata_from_forward = MetaDataset(sampled_metadata)
+                    meta_loader = torch.utils.data.DataLoader(dataset=metadata_from_forward,
+                                                              batch_size=meta_batch_size,
+                                                              shuffle=True)
+                    # backprop error to metalearner with metadataset
+                    for j, (triplets, grads) in enumerate(meta_loader):
+                        tock = time.time()
+                        triplets = Variable(triplets)
+                        grads = Variable(grads)
 
-                    # Forward + Backward + Optimize
-                    meta_optimizer.zero_grad()  # zero the gradient buffer
-                    aug_triplets = torch.unsqueeze(torch.unsqueeze(triplets, 2), 3)
-                    meta_outputs = torch.squeeze(learner.get_update(aug_triplets))
-                    meta_loss = meta_criterion(meta_outputs, grads)
-                    # print("Meta-Loss:" + str(meta_loss.data[0]))
-                    meta_loss.backward()
-                    meta_optimizer.step()
+                        # Forward + Backward + Optimize
+                        meta_optimizer.zero_grad()  # zero the gradient buffer
+                        aug_triplets = torch.unsqueeze(torch.unsqueeze(triplets, 2), 3)
+                        meta_outputs = torch.squeeze(learner.get_update(aug_triplets))
+                        meta_loss = meta_criterion(meta_outputs, grads)
+                        # print("Meta-Loss:" + str(meta_loss.data[0]))
+                        meta_loss.backward()
+                        meta_optimizer.step()
 
         # Test the Model
         correct = 0
@@ -129,6 +135,6 @@ vanilla_params_init = {'mid1': [400, 20], 'mid2': [200, 20],
                        'learning_rate': [0.0001, 0.00093], 'update_rate': [0.0001, 0.00087]}
 
 vanilla_frame = Vanilla('vanilla', vanilla_fixed_params, vanilla_params_range, vanilla_params_init)
-vanilla_frame.train_model(400, 200, 10, 3000, 0.001, 0.0001, 10)
-# vanilla_frame.optimize(1)
-# vanilla_frame.analyze()
+# vanilla_frame.train_model(400, 200, 10, 3000, 0.001, 0.0001, 10)
+vanilla_frame.optimize()
+vanilla_frame.analyze()
