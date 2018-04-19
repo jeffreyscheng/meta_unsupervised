@@ -22,6 +22,11 @@ class Vanilla(MetaFramework):
         # learner_batch_size = 1
         learner = SingleNet(input_size, mid1, mid2, num_classes, meta_input, meta_mid, meta_output, learner_batch_size)
 
+        # check if GPU is available
+        gpu_bool = torch.cuda.device_count() > 0
+        if gpu_bool:
+            learner.cuda()
+
         # MNIST Dataset
         train_dataset = dsets.MNIST(root='./data',
                                     train=True,
@@ -63,7 +68,8 @@ class Vanilla(MetaFramework):
                 labels = Variable(labels)
 
                 # move to CUDA
-                images = images.cuda()
+                if gpu_bool:
+                    images = images.cuda()
 
                 # Learner Forward + Backward + Optimize
                 learner_optimizer.zero_grad()  # zero the gradient buffer
@@ -108,7 +114,7 @@ class Vanilla(MetaFramework):
                         triplets = Variable(triplets)
                         grads = Variable(grads)
 
-                        # check that triples and grad are on GPU
+                        # TODO check that triples and grad are on GPU
 
 
                         # Forward + Backward + Optimize
@@ -117,8 +123,13 @@ class Vanilla(MetaFramework):
                         meta_outputs = torch.squeeze(learner.get_update(aug_triplets))
                         meta_loss = meta_criterion(meta_outputs, grads)
                         # print("Meta-Loss:" + str(meta_loss.data[0]))
-                        meta_loss.backward()
-                        meta_optimizer.step()
+                        try:
+                            meta_loss.backward()
+                            meta_optimizer.step()
+                        except RuntimeError:
+                            print(meta_outputs.size())
+                            print(meta_loss.size())
+                            print("Runtime Error")
 
         # Test the Model
         correct = 0
@@ -126,6 +137,8 @@ class Vanilla(MetaFramework):
         for images, labels in test_loader:
             images = Variable(images.view(-1, 28 * 28))
             # to CUDA
+            if gpu_bool:
+                images = images.cuda()
             outputs = learner(images)
             _, predicted = torch.max(outputs.data, 1)
             total += labels.size(0)
@@ -145,5 +158,5 @@ vanilla_params_init = {'mid1': [400, 20], 'mid2': [200, 20],
 
 vanilla_frame = Vanilla('vanilla', vanilla_fixed_params, vanilla_params_range, vanilla_params_init)
 # vanilla_frame.train_model(400, 200, 10, 3000, 0.001, 0.0001, 10)
-vanilla_frame.optimize(30)
+vanilla_frame.optimize(40)
 # vanilla_frame.analyze()
