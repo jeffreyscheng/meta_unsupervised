@@ -62,19 +62,22 @@ class Vanilla(MetaFramework):
                 images = Variable(images.view(-1, 28 * 28))
                 labels = Variable(labels)
 
+                # move to CUDA
+                images = images.cuda()
+
                 # Learner Forward + Backward + Optimize
                 learner_optimizer.zero_grad()  # zero the gradient buffer
                 outputs = learner(images)
-                learner.update(update_rate, meta_epoch, change_weights=meta_converged)
+                learner.update(update_rate, meta_epoch)
                 learner_loss = learner_criterion(outputs, labels)
-                print(labels.data[0], ',', str(learner_loss.data[0]))
+                # print(labels.data[0], ',', str(learner_loss.data[0]))
                 learner_loss.backward()
                 # for param in learner.weight_params:
                 #     print(param)
                 #     print(learner.param_state[param].grad)
                 learner_optimizer.step()
 
-                if meta_converged:
+                if not meta_converged:
                     # wrangling v_i, v_j, w_ij to go into MetaDataset
                     for param in learner.weight_params:
                         grad = torch.unsqueeze(learner.param_state[param].grad, 0)
@@ -85,6 +88,7 @@ class Vanilla(MetaFramework):
                     all_metadata = torch.cat(list(learner.metadata.values()), dim=0)
                     metadata_size = all_metadata.size()[0]
                     try:
+                        # do with torch
                         sample_idx = np.random.choice(metadata_size, meta_batch_size, replace=False)
                         sampled_metadata = all_metadata[sample_idx, :]
                     except IndexError:
@@ -104,6 +108,9 @@ class Vanilla(MetaFramework):
                         triplets = Variable(triplets)
                         grads = Variable(grads)
 
+                        # check that triples and grad are on GPU
+
+
                         # Forward + Backward + Optimize
                         meta_optimizer.zero_grad()  # zero the gradient buffer
                         aug_triplets = torch.unsqueeze(torch.unsqueeze(triplets, 2), 3)
@@ -118,6 +125,7 @@ class Vanilla(MetaFramework):
         total = 0
         for images, labels in test_loader:
             images = Variable(images.view(-1, 28 * 28))
+            # to CUDA
             outputs = learner(images)
             _, predicted = torch.max(outputs.data, 1)
             total += labels.size(0)

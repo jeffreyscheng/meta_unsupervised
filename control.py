@@ -65,16 +65,16 @@ class Control(MetaFramework):
                 # Learner Forward + Backward + Optimize
                 learner_optimizer.zero_grad()  # zero the gradient buffer
                 outputs = learner(images)
-                learner.update(update_rate, meta_epoch, change_weights=meta_converged)
+                learner.update(update_rate, meta_epoch, change_weights=False)
                 learner_loss = learner_criterion(outputs, labels)
-                print(labels.data[0], ',', str(learner_loss.data[0]))
+                # print(labels.data[0], ',', str(learner_loss.data[0]))
                 learner_loss.backward()
                 # for param in learner.weight_params:
                 #     print(param)
                 #     print(learner.param_state[param].grad)
                 learner_optimizer.step()
 
-                if meta_converged:
+                if not meta_converged:
                     # wrangling v_i, v_j, w_ij to go into MetaDataset
                     for param in learner.weight_params:
                         grad = torch.unsqueeze(learner.param_state[param].grad, 0)
