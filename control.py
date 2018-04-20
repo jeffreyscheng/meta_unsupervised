@@ -71,7 +71,7 @@ class Control(MetaFramework):
                 # move to CUDA
                 if gpu_bool:
                     images = images.cuda()
-                    
+
                 # Learner Forward + Backward + Optimize
                 learner_optimizer.zero_grad()  # zero the gradient buffer
                 outputs = learner(images)

@@ -106,13 +106,16 @@ class SingleNet(nn.Module):
             # print(output_layer.size())
             # print(layer.size())
             stack_dim = self.batch_size, layer.size()[0], layer.size()[1]
-            # input_stack = input_layer.unsqueeze(1).expand(stack_dim)
-            # output_stack = output_layer.unsqueeze(2).expand(stack_dim)
-            # weight_stack = layer.unsqueeze(0).expand(stack_dim)
-            # meta_inputs = torch.stack((input_stack, weight_stack, output_stack), dim=3)
-            meta_inputs = torch.stack((input_layer.unsqueeze(1).expand(stack_dim),
-                                       layer.unsqueeze(0).expand(stack_dim),
-                                       output_layer.unsqueeze(2).expand(stack_dim)), dim=3)
+            input_stack = input_layer.unsqueeze(1).expand(stack_dim)
+            output_stack = output_layer.unsqueeze(2).expand(stack_dim)
+            weight_stack = layer.unsqueeze(0).expand(stack_dim)
+            print(input_stack.size())
+            print(weight_stack.size())
+            print(output_stack.size())
+            meta_inputs = torch.stack((input_stack, weight_stack, output_stack), dim=3)
+            # meta_inputs = torch.stack((input_layer.unsqueeze(1).expand(stack_dim),
+            #                            layer.unsqueeze(0).expand(stack_dim),
+            #                            output_layer.unsqueeze(2).expand(stack_dim)), dim=3)
             meta_inputs = meta_inputs.permute(0, 3, 1, 2)
             self.metadata[self.weight_params[i]] = meta_inputs
             # print(meta_inputs.size())
