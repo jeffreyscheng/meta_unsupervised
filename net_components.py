@@ -72,6 +72,9 @@ class SingleNet(nn.Module):
         return out
 
     def forward(self, x):
+        if self.impulse is not None:
+            if len(self.impulse) > 4:
+                raise ValueError("long impulse!")
         self.metadata = {}
         out = x
         self.impulse = [out]

@@ -115,7 +115,11 @@ class Vanilla(MetaFramework):
                         grads = Variable(grads)
 
                         # TODO check that triples and grad are on GPU
-
+                        if gpu_bool:
+                            print("should be 1")
+                            print(torch.cuda.device_count())
+                            print("should be GPU")
+                            print(torch.cuda.get_device_name(0))
 
                         # Forward + Backward + Optimize
                         meta_optimizer.zero_grad()  # zero the gradient buffer
