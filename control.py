@@ -22,6 +22,12 @@ class Control(MetaFramework):
         # learner_batch_size = 1
         learner = SingleNet(input_size, mid1, mid2, num_classes, meta_input, meta_mid, meta_output, learner_batch_size)
 
+        # check if GPU is available
+        gpu_bool = torch.cuda.device_count() > 0
+        if gpu_bool:
+            learner.cuda()
+
+
         # MNIST Dataset
         train_dataset = dsets.MNIST(root='./data',
                                     train=True,
@@ -62,6 +68,10 @@ class Control(MetaFramework):
                 images = Variable(images.view(-1, 28 * 28))
                 labels = Variable(labels)
 
+                # move to CUDA
+                if gpu_bool:
+                    images = images.cuda()
+                    
                 # Learner Forward + Backward + Optimize
                 learner_optimizer.zero_grad()  # zero the gradient buffer
                 outputs = learner(images)
