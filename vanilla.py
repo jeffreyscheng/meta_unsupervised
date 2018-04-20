@@ -71,6 +71,12 @@ class Vanilla(MetaFramework):
                 if gpu_bool:
                     images = images.cuda()
 
+                if gpu_bool:
+                    print("should be 1")
+                    print(torch.cuda.device_count())
+                    print("should be GPU")
+                    print(torch.cuda.get_device_name(0))
+
                 # Learner Forward + Backward + Optimize
                 learner_optimizer.zero_grad()  # zero the gradient buffer
                 outputs = learner(images)
