@@ -139,7 +139,7 @@ class Control(MetaFramework):
 control_fixed_params = {'meta_input': 3, 'meta_output': 1, 'input_size': 784, 'num_classes': 10}
 control_params_range = {'mid1': (20, 800), 'mid2': (20, 800), 'meta_mid': (2, 10), 'meta_batch_size': (1, 10000),
                         'learning_rate': (0.000001, 0.001), 'update_rate': (0.000001, 0.001),
-                        'learner_batch_size': (1, 100)}
+                        'learner_batch_size': (1, 50)}
 control_params_init = {'mid1': [400, 20], 'mid2': [200, 20],
                        'meta_mid': [5, 10], 'meta_batch_size': [100, 2337],
                        'learning_rate': [0.0001, 0.00093], 'update_rate': [0.0001, 0.00087],
