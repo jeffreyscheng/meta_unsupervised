@@ -146,6 +146,7 @@ class Vanilla(MetaFramework):
             # to CUDA
             if gpu_bool:
                 images = images.cuda()
+                labels = labels.cuda()
             outputs = learner(images)
             _, predicted = torch.max(outputs.data, 1)
             total += labels.size(0)
