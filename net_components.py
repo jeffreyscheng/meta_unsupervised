@@ -103,21 +103,16 @@ class SingleNet(nn.Module):
             print(self.impulse)
             raise ValueError("Num keys not 1 less than num impulses")
         for i in range(0, len(self.weight_params)):
-            print(self.batch_size)
             layer = self.param_state[self.weight_params[i]]
-            # print(layer)
             input_layer = self.impulse[i]
             output_layer = self.impulse[i + 1]
-            # print(input_layer.size())
-            # print(output_layer.size())
-            # print(layer.size())
             stack_dim = self.batch_size, layer.size()[0], layer.size()[1]
             input_stack = input_layer.unsqueeze(1).expand(stack_dim)
             output_stack = output_layer.unsqueeze(2).expand(stack_dim)
             weight_stack = layer.unsqueeze(0).expand(stack_dim)
-            print(input_stack.size())
-            print(weight_stack.size())
-            print(output_stack.size())
+            # print(input_stack.size())
+            # print(weight_stack.size())
+            # print(output_stack.size())
             meta_inputs = torch.stack((input_stack, weight_stack, output_stack), dim=3)
             # meta_inputs = torch.stack((input_layer.unsqueeze(1).expand(stack_dim),
             #                            layer.unsqueeze(0).expand(stack_dim),

@@ -19,9 +19,9 @@ class Vanilla(MetaFramework):
         input_size = self.fixed_params['input_size']
         num_classes = self.fixed_params['num_classes']
         learner_batch_size = math.floor(learner_batch_size)
-        if learner_batch_size > 50:
-            print(learner_batch_size)
-            raise ValueError("wtf")
+        # if learner_batch_size > 50:
+        #     print(learner_batch_size)
+        #     raise ValueError("wtf")
         # learner_batch_size = 1
         learner = SingleNet(input_size, mid1, mid2, num_classes, meta_input, meta_mid, meta_output, learner_batch_size)
 
@@ -158,7 +158,7 @@ class Vanilla(MetaFramework):
 vanilla_fixed_params = {'meta_input': 3, 'meta_output': 1, 'input_size': 784, 'num_classes': 10}
 vanilla_params_range = {'mid1': (20, 800), 'mid2': (20, 800), 'meta_mid': (2, 10), 'meta_batch_size': (1, 10000),
                         'learning_rate': (0.000001, 0.001), 'update_rate': (0.000001, 0.001),
-                        'learner_batch_size': (1, 50)}
+                        'learner_batch_size': (1, 100)}
 vanilla_params_init = {'mid1': [400, 20], 'mid2': [200, 20],
                        'meta_mid': [5, 10], 'meta_batch_size': [100, 2337],
                        'learning_rate': [0.0001, 0.00093], 'update_rate': [0.0001, 0.00087],
