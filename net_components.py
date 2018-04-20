@@ -6,6 +6,10 @@ import torchvision.transforms as transforms
 from torch.autograd import Variable
 import time
 
+import os
+
+os.environ["CUDA_VISIBLE_DEVICES"] = "3"
+
 
 def timeit(method):
     def timed(*args, **kw):
@@ -18,6 +22,7 @@ def timeit(method):
         else:
             print('%r  %2.2f ms' % (method.__name__, (te - ts) * 1000))
         return result
+
     return timed
 
 
@@ -98,6 +103,7 @@ class SingleNet(nn.Module):
             print(self.impulse)
             raise ValueError("Num keys not 1 less than num impulses")
         for i in range(0, len(self.weight_params)):
+            print(self.batch_size)
             layer = self.param_state[self.weight_params[i]]
             # print(layer)
             input_layer = self.impulse[i]
