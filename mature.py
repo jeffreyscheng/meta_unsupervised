@@ -13,7 +13,7 @@ class Mature(MetaFramework):
         meta_batch_size = math.floor(meta_batch_size)
         train_start_time = time.time()
         meta_weight = Meta(meta_input, meta_mid, meta_output)
-        learner = SingleNet(input_size, mid1, mid2, num_classes, meta_weight, learner_batch_size)
+        learner = VanillaNet(input_size, mid1, mid2, num_classes, meta_weight, learner_batch_size)
 
         # Loss and Optimizer
         learner_criterion = nn.CrossEntropyLoss()

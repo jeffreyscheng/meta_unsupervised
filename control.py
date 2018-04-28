@@ -20,7 +20,7 @@ class Control(MetaFramework):
         num_classes = self.fixed_params['num_classes']
         learner_batch_size = math.floor(learner_batch_size)
         # learner_batch_size = 1
-        learner = SingleNet(input_size, mid1, mid2, num_classes, meta_input, meta_mid, meta_output, learner_batch_size)
+        learner = VanillaNet(input_size, mid1, mid2, num_classes, meta_input, meta_mid, meta_output, learner_batch_size)
 
         # check if GPU is available
         gpu_bool = torch.cuda.device_count() > 0

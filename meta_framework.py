@@ -44,7 +44,7 @@ class MetaFramework:
             with open(file_name, 'rb') as bayes_file:
                 bayes = pickle.load(bayes_file)
             print("Loaded file:", file_name)
-            bayes.maximize(n_iter=n, kappa=1, acq="ucb", alpha=1e-4)
+            bayes.maximize(n_iter=n, kappa=1, acq="ucb", alpha=1e-2)
 
         print(bayes.res['max'])
         print(bayes.res['all'])
