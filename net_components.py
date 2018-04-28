@@ -316,7 +316,7 @@ class DiffNet(nn.Module):
         out = torch.squeeze(out, 1)
         return out
 
-    @timeit
+    # @timeit
     def forward(self, x, batch_num):
         if self.impulse is not None:
             if len(self.impulse) > 4:
@@ -334,12 +334,12 @@ class DiffNet(nn.Module):
             output_stack = old_vj.unsqueeze(2).expand(stack_dim)
             weight_stack = layer.unsqueeze(0).expand(stack_dim)
             meta_inputs = torch.stack((input_stack, weight_stack, output_stack), dim=3)
-            print('assembled meta_inputs', time.time() - tick)
-            tick = time.time()
+            # print('assembled meta_inputs', time.time() - tick)
+            # tick = time.time()
             meta_inputs = meta_inputs.permute(0, 3, 1, 2)
             shift = self.get_update(meta_inputs) * self.rate / batch_num
-            print('computed shift', time.time() - tick)
-            tick = time.time()
+            # print('computed shift', time.time() - tick)
+            # tick = time.time()
             # print(shift)
 
             # compute vi * new_weights
@@ -349,7 +349,7 @@ class DiffNet(nn.Module):
             # output, update weights
             out = old_vj + delta
             layer.data += torch.mean(shift.data, dim=0)
-            print('finished', time.time() - tick)
+            # print('finished', time.time() - tick)
         # print(out)
         return out
 
