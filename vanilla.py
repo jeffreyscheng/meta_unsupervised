@@ -75,6 +75,11 @@ class Vanilla(MetaFramework):
                 images = Variable(images.view(-1, 28 * 28))
                 labels = Variable(labels)
 
+                # move to CUDA
+                if gpu_bool:
+                    images = images.cuda()
+                    labels = labels.cuda()
+
                 # Learner Forward + Backward + Optimize
                 learner_optimizer.zero_grad()  # zero the gradient buffer
                 outputs = learner(images)
