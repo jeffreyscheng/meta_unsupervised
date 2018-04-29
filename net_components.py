@@ -174,6 +174,8 @@ class VanillaNet(nn.Module):
                 clipped_shift = torch.clamp(shift, -1000000, 1000000)
                 batch_shift = torch.mean(clipped_shift, 0)
                 layer.data += batch_shift.data * rate / epoch
+                del shift, clipped_shift, batch_shift
+            del input_stack, output_stack, weight_stack, meta_inputs
 
     def check_convergence(self):
         return False
@@ -339,23 +341,15 @@ class DiffNet(nn.Module):
                 output_stack = old_vj.unsqueeze(2).expand(stack_dim)
                 weight_stack = layer.unsqueeze(0).expand(stack_dim)
             meta_inputs = torch.stack((input_stack, weight_stack, output_stack), dim=3)
-            # print('assembled meta_inputs', time.time() - tick)
-            # tick = time.time()
             meta_inputs = meta_inputs.permute(0, 3, 1, 2)
             shift = self.get_update(meta_inputs) * self.rate / batch_num
-            # print('computed shift', time.time() - tick)
-            # tick = time.time()
-            # print(shift)
-
-            # compute vi * new_weights
             inter = input_stack * shift
             delta = torch.sum(inter, dim=2)
 
             # output, update weights
             out = old_vj + delta
             layer.data += torch.mean(shift.data, dim=0)
-            # print('finished', time.time() - tick)
-        # print(out)
+            del input_stack, output_stack, weight_stack, meta_inputs, shift
         return out
 
     # def update(self, rate, epoch, change_weights=True):

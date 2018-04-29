@@ -92,7 +92,9 @@ class FullyDiff(MetaFramework):
                 #     print(param)
                 #     print(learner.param_state[param].grad)
                 learner_optimizer.step()
+                del images, labels, outputs, learner_loss
             print("finished epoch")
+
 
         # Test the Model
         correct = 0

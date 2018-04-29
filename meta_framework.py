@@ -9,7 +9,7 @@ import os
 
 class MetaFramework:
     num_epochs = 10
-    time_out = 20 * 60
+    time_out = 30
 
     def __init__(self, name, fixed_params, variable_params_range, variable_params_init):
         self.name = name

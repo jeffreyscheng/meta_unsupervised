@@ -101,6 +101,7 @@ class Vanilla(MetaFramework):
                         learner.metadata[param] = torch.cat((learner.metadata[param], grad), dim=1)
                         cube = learner.metadata[param].size()
                         learner.metadata[param] = learner.metadata[param].view(cube[0] * cube[2] * cube[3], cube[1])
+                        del grad
                     all_metadata = torch.cat(list(learner.metadata.values()), dim=0)
                     metadata_size = all_metadata.size()[0]
                     try:
@@ -143,6 +144,9 @@ class Vanilla(MetaFramework):
                             print(meta_outputs.size())
                             print(meta_loss.size())
                             print("Runtime Error")
+                            del triplets, grads, meta_loss, aug_triplets, meta_outputs
+                    del all_metadata
+                del images, labels, outputs, learner_loss
 
         # Test the Model
         correct = 0
