@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6c272def-4b24-4508-8f48-9ae398102747" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fully_diff.py" beforeDir="false" afterPath="$PROJECT_DIR$/fully_diff.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/meta_framework.py" beforeDir="false" afterPath="$PROJECT_DIR$/meta_framework.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/net_components.py" beforeDir="false" afterPath="$PROJECT_DIR$/net_components.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vanilla.py" beforeDir="false" afterPath="$PROJECT_DIR$/vanilla.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -27,8 +31,8 @@
       <file leaf-file-name="meta_framework.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/meta_framework.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
-              <caret line="82" selection-start-line="82" selection-start-column="2" selection-end-line="93" selection-end-column="18" />
+            <state relative-caret-position="239">
+              <caret line="83" column="13" lean-forward="true" selection-start-line="83" selection-start-column="13" selection-end-line="83" selection-end-column="13" />
               <folding>
                 <element signature="e#0#42#0" expanded="true" />
               </folding>
@@ -39,8 +43,8 @@
       <file leaf-file-name="vanilla.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vanilla.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="78" column="41" lean-forward="true" selection-start-line="78" selection-start-column="41" selection-end-line="78" selection-end-column="41" />
+            <state relative-caret-position="51">
+              <caret line="3" column="11" lean-forward="true" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -51,8 +55,8 @@
       <file leaf-file-name="fully_diff.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/fully_diff.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="89" column="40" selection-start-line="89" selection-start-column="40" selection-end-line="89" selection-end-column="40" />
+            <state relative-caret-position="1513">
+              <caret line="101" column="38" lean-forward="true" selection-start-line="101" selection-start-column="38" selection-end-line="101" selection-end-column="38" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -63,8 +67,8 @@
       <file leaf-file-name="net_components.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/net_components.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" selection-start-line="13" selection-end-line="25" selection-end-column="16" />
+            <state relative-caret-position="68">
+              <caret line="332" column="31" selection-start-line="332" selection-start-column="31" selection-end-line="332" selection-end-column="31" />
               <folding>
                 <element signature="e#0#12#0" expanded="true" />
               </folding>
@@ -169,8 +173,8 @@
         <option value="$PROJECT_DIR$/mature.py" />
         <option value="$PROJECT_DIR$/separate.py" />
         <option value="$PROJECT_DIR$/control.py" />
-        <option value="$PROJECT_DIR$/net_components.py" />
         <option value="$PROJECT_DIR$/meta_framework.py" />
+        <option value="$PROJECT_DIR$/net_components.py" />
         <option value="$PROJECT_DIR$/vanilla.py" />
         <option value="$PROJECT_DIR$/fully_diff.py" />
       </list>
@@ -186,10 +190,10 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="2542" />
-    <option name="y" value="-18" />
-    <option name="width" value="3876" />
-    <option name="height" value="2076" />
+    <option name="x" value="-2581" />
+    <option name="y" value="71" />
+    <option name="width" value="2560" />
+    <option name="height" value="1371" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -372,7 +376,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="2554" y="-6" width="1292" height="692" extended-state="6" />
+    <frame x="-1928" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3297491" />
@@ -382,7 +386,7 @@
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.3298969" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.53405017" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.3297491" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17152104" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1130064" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="SciView" order="3" weight="0.32995737" />
@@ -398,6 +402,30 @@
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Concurrent Activities Diagram" order="8" weight="0.3297491" />
     </layout>
+    <layout-to-restore>
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17152104" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" weight="0.32995737" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3297491" />
+      <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.53405017" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Python Console" order="9" weight="0.3298969" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.3297491" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.32947463" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Concurrent Activities Diagram" order="13" weight="0.3297491" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -546,20 +574,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/meta_framework.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="82" selection-start-line="82" selection-start-column="2" selection-end-line="93" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#42#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vanilla.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="78" column="41" lean-forward="true" selection-start-line="78" selection-start-column="41" selection-end-line="78" selection-end-column="41" />
+        <state relative-caret-position="51">
+          <caret line="3" column="11" lean-forward="true" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
@@ -568,18 +586,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/net_components.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" selection-start-line="13" selection-end-line="25" selection-end-column="16" />
+        <state relative-caret-position="68">
+          <caret line="332" column="31" selection-start-line="332" selection-start-column="31" selection-end-line="332" selection-end-column="31" />
           <folding>
             <element signature="e#0#12#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/meta_framework.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="83" column="13" lean-forward="true" selection-start-line="83" selection-start-column="13" selection-end-line="83" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#42#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/fully_diff.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="89" column="40" selection-start-line="89" selection-start-column="40" selection-end-line="89" selection-end-column="40" />
+        <state relative-caret-position="1513">
+          <caret line="101" column="38" lean-forward="true" selection-start-line="101" selection-start-column="38" selection-end-line="101" selection-end-column="38" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>

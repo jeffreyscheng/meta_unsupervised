@@ -6,10 +6,6 @@ import torchvision.transforms as transforms
 from torch.autograd import Variable
 import time
 
-import os
-
-os.environ["CUDA_VISIBLE_DEVICES"] = "3"
-
 
 def timeit(method):
     def timed(*args, **kw):
@@ -330,9 +326,18 @@ class DiffNet(nn.Module):
             old_vj = self.layers[layer_num](out)
             old_vj = self.relu(old_vj)
             stack_dim = self.batch_size, layer.size()[0], layer.size()[1]
-            input_stack = vi.unsqueeze(1).expand(stack_dim)
-            output_stack = old_vj.unsqueeze(2).expand(stack_dim)
-            weight_stack = layer.unsqueeze(0).expand(stack_dim)
+            try:
+                input_stack = vi.unsqueeze(1).expand(stack_dim)
+                output_stack = old_vj.unsqueeze(2).expand(stack_dim)
+                weight_stack = layer.unsqueeze(0).expand(stack_dim)
+            except RuntimeError:
+                print(input_stack.size())
+                print(output_stack.size())
+                print(weight_stack.size())
+                print(vi.size())
+                input_stack = vi.unsqueeze(1).expand(stack_dim)
+                output_stack = old_vj.unsqueeze(2).expand(stack_dim)
+                weight_stack = layer.unsqueeze(0).expand(stack_dim)
             meta_inputs = torch.stack((input_stack, weight_stack, output_stack), dim=3)
             # print('assembled meta_inputs', time.time() - tick)
             # tick = time.time()

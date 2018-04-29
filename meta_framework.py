@@ -1,11 +1,12 @@
 from bayes_opt import BayesianOptimization
 import pickle
-import torch
-from torch.autograd import Variable
 from torch.utils.data import Dataset, DataLoader
-# from single_single import *
 from pathlib import Path
-import math
+import random
+
+import os
+
+os.environ["CUDA_VISIBLE_DEVICES"] = "3"
 
 
 class MetaFramework:
@@ -80,15 +81,15 @@ class MetaDataset(Dataset):
         return self.x_data[idx], self.y_data[idx]
 
 
-# def bounce_gpu(method):
-#     def bounced(*args, **kw):
-#         ts = time.time()
-#         result = method(*args, **kw)
-#         te = time.time()
-#         if 'log_time' in kw:
-#             name = kw.get('log_name', method.__name__.upper())
-#             kw['log_time'][name] = int((te - ts) * 1000)
-#         else:
-#             print('%r  %2.2f ms' % (method.__name__, (te - ts) * 1000))
-#         return result
-#     return timed
+def bounce_gpu(method):
+    def bounced(*args, **kw):
+        try:
+            result = method(*args, **kw)
+        except MemoryError:
+            print("Memory Error!")
+            num = str(random.randint(0, 3))
+            print("Bounced to machine " + num)
+            os.environ["CUDA_VISIBLE_DEVICES"] = num
+            result = method(*args, **kw)
+        return result
+    return bounced

@@ -1,12 +1,14 @@
 from meta_framework import *
 from net_components import *
 import numpy as np
+import math
 
 
 class Vanilla(MetaFramework):
     def __init__(self, name, fixed_params, variable_params_range, variable_params_init):
         super(Vanilla, self).__init__(name, fixed_params, variable_params_range, variable_params_init)
 
+    @bounce_gpu
     def train_model(self, mid1, mid2, meta_mid, meta_batch_size, learning_rate, update_rate, learner_batch_size):
         mid1 = math.floor(mid1)
         mid2 = math.floor(mid2)
@@ -59,25 +61,24 @@ class Vanilla(MetaFramework):
 
         tick = time.time()
         meta_converged = False
-        for meta_epoch in range(1, MetaFramework.num_epochs + 1):
+        batch_num = 0
+        for epoch in range(1, MetaFramework.num_epochs + 1):
             if time.time() - tick > MetaFramework.time_out:
                 break
             for i, (images, labels) in enumerate(train_loader):
+                tick = time.time()
+                batch_num += 1
                 if time.time() - tick > MetaFramework.time_out:
                     break
                 if meta_converged is False:
                     meta_converged = learner.check_convergence()
                 images = Variable(images.view(-1, 28 * 28))
                 labels = Variable(labels)
-                # move to CUDA
-                if gpu_bool:
-                    images = images.cuda()
-                    labels = labels.cuda()
 
                 # Learner Forward + Backward + Optimize
                 learner_optimizer.zero_grad()  # zero the gradient buffer
                 outputs = learner(images)
-                learner.update(update_rate, meta_epoch)
+                learner.update(update_rate, batch_num)
                 learner_loss = learner_criterion(outputs, labels)
                 # print(labels.data[0], ',', str(learner_loss.data[0]))
                 learner_loss.backward()
