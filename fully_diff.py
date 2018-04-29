@@ -62,10 +62,7 @@ class FullyDiff(MetaFramework):
             if time.time() - tick > MetaFramework.time_out:
                 break
             for i, (images, labels) in enumerate(train_loader):
-                # print(learner.param_state['conv1.weight'])
-                # print(learner.param_state['conv2.weight'])
-                print(learner.param_state['conv1.bias'])
-                # print(learner.param_state['conv2.bias'])
+                tick = time.time()
                 batch_num += 1
                 if time.time() - tick > MetaFramework.time_out:
                     break
@@ -79,17 +76,27 @@ class FullyDiff(MetaFramework):
                     images = images.cuda()
                     labels = labels.cuda()
 
+                print("Checkpoint 1:", time.time() - tick)
+                tick = time.time()
+
                 # Learner Forward + Backward + Optimize
                 learner_optimizer.zero_grad()  # zero the gradient buffer
                 outputs = learner.forward(images, batch_num)
-                # learner.update(update_rate, epoch)
+                print("Checkpoint 2:", time.time() - tick)
+                tick = time.time()
                 learner_loss = learner_criterion(outputs, labels)
-                print(labels.data[0], ',', str(learner_loss.data[0]))
+                print("Checkpoint 3:", time.time() - tick)
+                tick = time.time()
+                # print(labels.data[0], ',', str(learner_loss.data[0]))
                 learner_loss.backward()
+                print("Checkpoint 4:", time.time() - tick)
+                tick = time.time()
                 # for param in learner.weight_params:
                 #     print(param)
                 #     print(learner.param_state[param].grad)
                 learner_optimizer.step()
+                print("Checkpoint 5:", time.time() - tick)
+                tick = time.time()
 
         # Test the Model
         correct = 0
