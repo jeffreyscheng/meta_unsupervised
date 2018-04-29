@@ -76,27 +76,18 @@ class FullyDiff(MetaFramework):
                     images = images.cuda()
                     labels = labels.cuda()
 
-                print("Checkpoint 1:", time.time() - tick)
-                tick = time.time()
+                # most stuff before here
 
                 # Learner Forward + Backward + Optimize
                 learner_optimizer.zero_grad()  # zero the gradient buffer
                 outputs = learner.forward(images, batch_num)
-                print("Checkpoint 2:", time.time() - tick)
-                tick = time.time()
                 learner_loss = learner_criterion(outputs, labels)
-                print("Checkpoint 3:", time.time() - tick)
-                tick = time.time()
                 # print(labels.data[0], ',', str(learner_loss.data[0]))
                 learner_loss.backward()
-                print("Checkpoint 4:", time.time() - tick)
-                tick = time.time()
                 # for param in learner.weight_params:
                 #     print(param)
                 #     print(learner.param_state[param].grad)
                 learner_optimizer.step()
-                print("Checkpoint 5:", time.time() - tick)
-                tick = time.time()
 
         # Test the Model
         correct = 0
