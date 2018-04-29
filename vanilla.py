@@ -69,24 +69,39 @@ class Vanilla(MetaFramework):
                     meta_converged = learner.check_convergence()
                 images = Variable(images.view(-1, 28 * 28))
                 labels = Variable(labels)
-
+                print("Checkpoint 1:", time.time() - tick)
+                tick = time.time()
                 # move to CUDA
                 if gpu_bool:
                     images = images.cuda()
                     labels = labels.cuda()
 
+                print("Checkpoint 2:", time.time() - tick)
+                tick = time.time()
+
                 # Learner Forward + Backward + Optimize
                 learner_optimizer.zero_grad()  # zero the gradient buffer
                 outputs = learner(images)
+                print("Checkpoint 3:", time.time() - tick)
+                tick = time.time()
+
                 learner.update(update_rate, meta_epoch)
+                print("Checkpoint 4:", time.time() - tick)
+                tick = time.time()
+
                 learner_loss = learner_criterion(outputs, labels)
+                print("Checkpoint 5:", time.time() - tick)
+                tick = time.time()
                 # print(labels.data[0], ',', str(learner_loss.data[0]))
                 learner_loss.backward()
+                print("Checkpoint 6:", time.time() - tick)
+                tick = time.time()
                 # for param in learner.weight_params:
                 #     print(param)
                 #     print(learner.param_state[param].grad)
                 learner_optimizer.step()
-
+                print("Checkpoint 7:", time.time() - tick)
+                tick = time.time()
                 if not meta_converged:
                     # wrangling v_i, v_j, w_ij to go into MetaDataset
                     for param in learner.weight_params:
@@ -137,6 +152,8 @@ class Vanilla(MetaFramework):
                             print(meta_outputs.size())
                             print(meta_loss.size())
                             print("Runtime Error")
+                print("Checkpoint 8:", time.time() - tick)
+                tick = time.time()
 
         # Test the Model
         correct = 0

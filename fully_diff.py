@@ -62,6 +62,10 @@ class FullyDiff(MetaFramework):
             if time.time() - tick > MetaFramework.time_out:
                 break
             for i, (images, labels) in enumerate(train_loader):
+                # print(learner.param_state['conv1.weight'])
+                # print(learner.param_state['conv2.weight'])
+                print(learner.param_state['conv1.bias'])
+                # print(learner.param_state['conv2.bias'])
                 batch_num += 1
                 if time.time() - tick > MetaFramework.time_out:
                     break
