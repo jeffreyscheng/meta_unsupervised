@@ -3,6 +3,8 @@ from net_components import *
 import numpy as np
 import math
 
+os.environ["CUDA_VISIBLE_DEVICES"] = "2"
+
 
 class FullyDiff(MetaFramework):
     def __init__(self, name, fixed_params, variable_params_range, variable_params_init):
@@ -120,5 +122,5 @@ fully_diff_params_init = {'mid1': [400, 20], 'mid2': [200, 20],
 
 fully_diff_frame = FullyDiff('fully_diff', fully_diff_fixed_params, fully_diff_params_range, fully_diff_params_init)
 # fully_diff_frame.train_model(400, 200, 10, 3000, 0.001, 0.0001, 10)
-fully_diff_frame.optimize(40)
+fully_diff_frame.optimize(10)
 # fully_diff_frame.analyze()

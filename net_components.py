@@ -331,7 +331,6 @@ class DiffNet(nn.Module):
                 output_stack = old_vj.unsqueeze(2).expand(stack_dim)
                 weight_stack = layer.unsqueeze(0).expand(stack_dim)
             except RuntimeError:
-                print(input_stack.size())
                 print(output_stack.size())
                 print(weight_stack.size())
                 print(vi.size())

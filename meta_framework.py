@@ -6,12 +6,10 @@ import random
 
 import os
 
-os.environ["CUDA_VISIBLE_DEVICES"] = "3"
-
 
 class MetaFramework:
-    num_epochs = 15
-    time_out = 5 * 60
+    num_epochs = 10
+    time_out = 20 * 60
 
     def __init__(self, name, fixed_params, variable_params_range, variable_params_init):
         self.name = name
@@ -45,7 +43,7 @@ class MetaFramework:
             with open(file_name, 'rb') as bayes_file:
                 bayes = pickle.load(bayes_file)
             print("Loaded file:", file_name)
-            bayes.maximize(n_iter=n, kappa=1, acq="ucb", alpha=1e-2)
+            bayes.maximize(n_iter=n, kappa=1, acq="ucb", alpha=1e-3)
 
         print(bayes.res['max'])
         print(bayes.res['all'])
@@ -85,7 +83,7 @@ def bounce_gpu(method):
     def bounced(*args, **kw):
         try:
             result = method(*args, **kw)
-        except MemoryError:
+        except (RuntimeError, MemoryError) as e:
             print("Memory Error!")
             num = str(random.randint(0, 3))
             print("Bounced to machine " + num)

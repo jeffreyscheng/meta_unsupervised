@@ -2,6 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6c272def-4b24-4508-8f48-9ae398102747" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fully_diff.py" beforeDir="false" afterPath="$PROJECT_DIR$/fully_diff.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/meta_framework.py" beforeDir="false" afterPath="$PROJECT_DIR$/meta_framework.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/net_components.py" beforeDir="false" afterPath="$PROJECT_DIR$/net_components.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vanilla.py" beforeDir="false" afterPath="$PROJECT_DIR$/vanilla.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,11 +28,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="600">
-      <file leaf-file-name="meta_framework.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="meta_framework.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/meta_framework.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="239">
-              <caret line="83" column="13" lean-forward="true" selection-start-line="83" selection-start-column="13" selection-end-line="83" selection-end-column="13" />
+            <state relative-caret-position="306">
+              <caret line="45" column="67" selection-start-line="45" selection-start-column="67" selection-end-line="45" selection-end-column="67" />
               <folding>
                 <element signature="e#0#42#0" expanded="true" />
               </folding>
@@ -36,11 +40,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="vanilla.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="vanilla.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vanilla.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="80" column="42" selection-start-line="80" selection-start-column="42" selection-end-line="80" selection-end-column="42" />
+            <state relative-caret-position="374">
+              <caret line="174" column="25" selection-start-line="174" selection-start-column="25" selection-end-line="174" selection-end-column="25" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -51,8 +55,8 @@
       <file leaf-file-name="fully_diff.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/fully_diff.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="394">
-              <caret line="75" selection-start-line="75" selection-end-line="78" selection-end-column="42" />
+            <state relative-caret-position="374">
+              <caret line="124" column="27" selection-start-line="124" selection-start-column="27" selection-end-line="124" selection-end-column="27" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -63,8 +67,8 @@
       <file leaf-file-name="net_components.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/net_components.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="332" column="31" selection-start-line="332" selection-start-column="31" selection-end-line="332" selection-end-column="31" />
+            <state relative-caret-position="2091">
+              <caret line="333" selection-start-line="333" selection-end-line="333" />
               <folding>
                 <element signature="e#0#12#0" expanded="true" />
               </folding>
@@ -75,7 +79,7 @@
       <file leaf-file-name="separate.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/separate.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="663">
+            <state relative-caret-position="476">
               <caret line="40" column="68" selection-start-line="40" selection-start-column="68" selection-end-line="40" selection-end-column="68" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
@@ -169,10 +173,10 @@
         <option value="$PROJECT_DIR$/mature.py" />
         <option value="$PROJECT_DIR$/separate.py" />
         <option value="$PROJECT_DIR$/control.py" />
-        <option value="$PROJECT_DIR$/meta_framework.py" />
         <option value="$PROJECT_DIR$/net_components.py" />
-        <option value="$PROJECT_DIR$/fully_diff.py" />
         <option value="$PROJECT_DIR$/vanilla.py" />
+        <option value="$PROJECT_DIR$/fully_diff.py" />
+        <option value="$PROJECT_DIR$/meta_framework.py" />
       </list>
     </option>
   </component>
@@ -186,10 +190,10 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-2581" />
-    <option name="y" value="71" />
-    <option name="width" value="2560" />
-    <option name="height" value="1371" />
+    <option name="x" value="-12" />
+    <option name="y" value="-12" />
+    <option name="width" value="2586" />
+    <option name="height" value="1466" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -372,7 +376,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1928" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-6" y="-6" width="1293" height="693" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3297491" />
@@ -382,7 +386,7 @@
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.3298969" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.53405017" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.3297491" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1130064" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17165992" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="SciView" order="3" weight="0.32995737" />
@@ -550,16 +554,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/single_single.py" />
-    <entry file="file://$PROJECT_DIR$/separate.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="40" column="68" selection-start-line="40" selection-start-column="68" selection-end-line="40" selection-end-column="68" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/control.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2193">
@@ -570,30 +564,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/separate.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="40" column="68" selection-start-line="40" selection-start-column="68" selection-end-line="40" selection-end-column="68" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/net_components.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="332" column="31" selection-start-line="332" selection-start-column="31" selection-end-line="332" selection-end-column="31" />
+        <state relative-caret-position="2091">
+          <caret line="333" selection-start-line="333" selection-end-line="333" />
           <folding>
             <element signature="e#0#12#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/meta_framework.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="83" column="13" lean-forward="true" selection-start-line="83" selection-start-column="13" selection-end-line="83" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#42#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/fully_diff.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="394">
-          <caret line="75" selection-start-line="75" selection-end-line="78" selection-end-column="42" />
+        <state relative-caret-position="374">
+          <caret line="124" column="27" selection-start-line="124" selection-start-column="27" selection-end-line="124" selection-end-column="27" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
@@ -602,10 +596,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/vanilla.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="80" column="42" selection-start-line="80" selection-start-column="42" selection-end-line="80" selection-end-column="42" />
+        <state relative-caret-position="374">
+          <caret line="174" column="25" selection-start-line="174" selection-start-column="25" selection-end-line="174" selection-end-column="25" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/meta_framework.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="45" column="67" selection-start-line="45" selection-start-column="67" selection-end-line="45" selection-end-column="67" />
+          <folding>
+            <element signature="e#0#42#0" expanded="true" />
           </folding>
         </state>
       </provider>
