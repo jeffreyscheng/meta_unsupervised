@@ -81,13 +81,13 @@ class MetaDataset(Dataset):
 
 def bounce_gpu(method):
     def bounced(*args, **kw):
-        try:
-            result = method(*args, **kw)
-        except (RuntimeError, MemoryError) as e:
-            print("Memory Error!")
-            num = str(random.randint(0, 3))
-            print("Bounced to machine " + num)
-            os.environ["CUDA_VISIBLE_DEVICES"] = num
-            result = method(*args, **kw)
-        return result
+        while True:
+            try:
+                result = method(*args, **kw)
+                return result
+            except (RuntimeError, MemoryError) as e:
+                print("Memory Error!")
+                num = str(random.randint(0, 3))
+                print("Bounced to machine " + num)
+                os.environ["CUDA_VISIBLE_DEVICES"] = num
     return bounced
