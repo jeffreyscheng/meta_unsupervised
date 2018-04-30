@@ -10,7 +10,7 @@ class Vanilla(MetaFramework):
     def __init__(self, name, fixed_params, variable_params_range, variable_params_init):
         super(Vanilla, self).__init__(name, fixed_params, variable_params_range, variable_params_init)
 
-    @bounce_gpu
+    # @bounce_gpu
     def train_model(self, mid1, mid2, meta_mid, meta_batch_size, learning_rate, update_rate, learner_batch_size):
         mid1 = math.floor(mid1)
         mid2 = math.floor(mid2)
@@ -160,7 +160,9 @@ class Vanilla(MetaFramework):
             _, predicted = torch.max(outputs.data, 1)
             total += labels.size(0)
             correct += (predicted == labels).sum()
+            del images, outputs, predicted
         # print('Accuracy of the network on the 10000 test images: %d %%' % (100 * correct / total))
+        del learner
         return correct / total
 
 

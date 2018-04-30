@@ -109,7 +109,9 @@ class FullyDiff(MetaFramework):
             _, predicted = torch.max(outputs.data, 1)
             total += labels.size(0)
             correct += (predicted == labels).sum()
+            del images, outputs, predicted
         # print('Accuracy of the network on the 10000 test images: %d %%' % (100 * correct / total))
+        del learner
         return correct / total
 
 
