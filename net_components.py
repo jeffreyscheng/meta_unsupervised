@@ -306,13 +306,7 @@ class DiffNet(nn.Module):
 
     # get new weight
     def get_update(self, meta_input_stack):
-        # print("BEGINNING UPDATE")
-        out = self.conv1(meta_input_stack)
-        # print("First conv:", out.size())
-        out = self.conv2(out)
-        # print("Second conv:", out.size())
-        out = torch.squeeze(out, 1)
-        return out
+        return torch.squeeze(self.conv2(self.conv1(meta_input_stack)), 1)
 
     # @timeit
     def forward(self, x, batch_num):
@@ -322,7 +316,6 @@ class DiffNet(nn.Module):
         self.metadata = {}
         out = x
         for layer_num in range(0, 3):
-            tick = time.time()
             layer = self.param_state[self.param_names[layer_num]]
             vi = out
             old_vj = self.layers[layer_num](out)
@@ -343,13 +336,12 @@ class DiffNet(nn.Module):
             meta_inputs = torch.stack((input_stack, weight_stack, output_stack), dim=3)
             meta_inputs = meta_inputs.permute(0, 3, 1, 2)
             shift = self.get_update(meta_inputs) * self.rate / batch_num
-            inter = input_stack * shift
-            delta = torch.sum(inter, dim=2)
 
             # output, update weights
-            out = old_vj + delta
+
+            out = old_vj + torch.sum(input_stack * shift, dim=2)
             layer.data += torch.mean(shift.data, dim=0)
-            del input_stack, output_stack, weight_stack, meta_inputs, shift
+            del old_vj, input_stack, output_stack, weight_stack, meta_inputs, shift
         return out
 
     # def update(self, rate, epoch, change_weights=True):
