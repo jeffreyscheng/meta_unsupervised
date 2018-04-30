@@ -66,7 +66,6 @@ class FullyDiff(MetaFramework):
             if time.time() - tick > MetaFramework.time_out:
                 break
             for i, (images, labels) in enumerate(train_loader):
-                tick = time.time()
                 batch_num += 1
                 if time.time() - tick > MetaFramework.time_out:
                     break
@@ -92,6 +91,7 @@ class FullyDiff(MetaFramework):
                 #     print(param)
                 #     print(learner.param_state[param].grad)
                 learner_optimizer.step()
+                print("finished example!")
                 del images, labels, outputs, learner_loss
             print("finished epoch")
 

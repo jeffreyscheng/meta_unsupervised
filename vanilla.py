@@ -68,7 +68,6 @@ class Vanilla(MetaFramework):
             if time.time() - tick > MetaFramework.time_out:
                 break
             for i, (images, labels) in enumerate(train_loader):
-                tick = time.time()
                 batch_num += 1
                 if time.time() - tick > MetaFramework.time_out:
                     break
