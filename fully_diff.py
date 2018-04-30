@@ -10,7 +10,7 @@ class FullyDiff(MetaFramework):
     def __init__(self, name, fixed_params, variable_params_range, variable_params_init):
         super(FullyDiff, self).__init__(name, fixed_params, variable_params_range, variable_params_init)
 
-    @bounce_gpu
+    # @bounce_gpu
     def train_model(self, mid1, mid2, meta_mid, learning_rate, learner_batch_size, update_rate):
         mid1 = math.floor(mid1)
         mid2 = math.floor(mid2)
@@ -91,9 +91,9 @@ class FullyDiff(MetaFramework):
                 #     print(param)
                 #     print(learner.param_state[param].grad)
                 learner_optimizer.step()
-                print("finished example!")
+                # print("finished example!")
                 del images, labels, outputs, learner_loss
-            print("finished epoch")
+            # print("finished epoch")
 
 
         # Test the Model
