@@ -112,6 +112,9 @@ class VanillaNet(nn.Module):
                 del batch_shift
             del input_stack, output_stack, weight_stack, meta_inputs
 
+    def check_convergence(self):
+        return False
+
 
 # Template for Single Structure
 class DiffNet(nn.Module):
@@ -170,3 +173,6 @@ class DiffNet(nn.Module):
             layer.data += torch.mean(shift.data, dim=0)
             del old_vj, input_stack, output_stack, weight_stack, meta_inputs, shift
         return out
+
+    def check_convergence(self):
+        return False
