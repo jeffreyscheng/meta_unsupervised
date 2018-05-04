@@ -3,7 +3,8 @@ import pickle
 from torch.utils.data import Dataset, DataLoader
 from pathlib import Path
 import random
-
+import torch
+import gc
 import os
 
 
@@ -85,9 +86,12 @@ def bounce_gpu(method):
             try:
                 result = method(*args, **kw)
                 return result
-            except (RuntimeError, MemoryError) as e:
+            except MemoryError as e:
                 print("Memory Error!")
                 num = str(random.randint(0, 3))
-                print("Bounced to machine " + num)
-                os.environ["CUDA_VISIBLE_DEVICES"] = num
+                # print("Bounced to machine " + num)
+                # os.environ["CUDA_VISIBLE_DEVICES"] = num
+                for obj in gc.get_objects():
+                    if torch.is_tensor(obj) or (hasattr(obj, 'data') and torch.is_tensor(obj.data)):
+                        print(type(obj), obj.size())
     return bounced
