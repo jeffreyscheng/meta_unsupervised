@@ -24,6 +24,7 @@ class FullyDiff(MetaFramework):
         learner_batch_size = math.floor(learner_batch_size)
         learner = DiffNet(input_size, mid1, mid2, num_classes, meta_input, meta_mid, meta_output, learner_batch_size,
                           update_rate)
+        print(learner_batch_size)
 
         # check if GPU is available
         gpu_bool = torch.cuda.device_count() > 0
