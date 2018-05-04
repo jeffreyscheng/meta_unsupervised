@@ -43,11 +43,11 @@ class FullyDiff(MetaFramework):
         # Data Loader (Input Pipeline)
         train_loader = torch.utils.data.DataLoader(dataset=train_dataset,
                                                    batch_size=learner_batch_size,
-                                                   shuffle=True)
+                                                   shuffle=True, dropLast=True)
 
         test_loader = torch.utils.data.DataLoader(dataset=test_dataset,
                                                   batch_size=learner_batch_size,
-                                                  shuffle=False)
+                                                  shuffle=False, dropLast=True)
 
         # Loss and Optimizer
         learner_criterion = nn.CrossEntropyLoss()

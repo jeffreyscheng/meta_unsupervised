@@ -97,7 +97,11 @@ class Vanilla(MetaFramework):
                         cube = learner.metadata[param].size()
                         learner.metadata[param] = learner.metadata[param].view(cube[0] * cube[2] * cube[3], cube[1])
                         del grad
-                    all_metadata = torch.cat(list(learner.metadata.values()), dim=0)
+                    try:
+                        all_metadata = torch.cat(list(learner.metadata.values()), dim=0)
+                    except(RuntimeError, MemoryError):
+                        for elem in list(learner.metadata.values()):
+                            print(elem.size())
                     metadata_size = all_metadata.size()[0]
                     sample_idx = np.random.choice(metadata_size, meta_batch_size, replace=False)
                     sampled_metadata = all_metadata[sample_idx, :]
@@ -116,8 +120,8 @@ class Vanilla(MetaFramework):
                         meta_outputs = torch.squeeze(learner.get_update(aug_triplets))
                         meta_loss = meta_criterion(meta_outputs, grads)
                         # try:
-                        meta_loss.backward()
-                        meta_optimizer.step()
+                        #     meta_loss.backward()
+                        #     meta_optimizer.step()
                         # except RuntimeError:
                         #     print(meta_outputs.size())
                         #     print(meta_loss.size())
