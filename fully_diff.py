@@ -85,16 +85,9 @@ class FullyDiff(MetaFramework):
                 learner_optimizer.zero_grad()  # zero the gradient buffer
                 outputs = learner.forward(images, batch_num)
                 learner_loss = learner_criterion(outputs, labels)
-                # print(labels.data[0], ',', str(learner_loss.data[0]))
                 learner_loss.backward()
-                # for param in learner.weight_params:
-                #     print(param)
-                #     print(learner.param_state[param].grad)
                 learner_optimizer.step()
-                # print("finished example!")
                 del images, labels, outputs, learner_loss
-            # print("finished epoch")
-
 
         # Test the Model
         correct = 0

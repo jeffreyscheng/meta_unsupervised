@@ -86,11 +86,7 @@ class Vanilla(MetaFramework):
                 outputs = learner(images)
                 learner.update(update_rate, batch_num)
                 learner_loss = learner_criterion(outputs, labels)
-                # print(labels.data[0], ',', str(learner_loss.data[0]))
                 learner_loss.backward()
-                # for param in learner.weight_params:
-                #     print(param)
-                #     print(learner.param_state[param].grad)
                 learner_optimizer.step()
                 if not meta_converged:
                     # wrangling v_i, v_j, w_ij to go into MetaDataset
@@ -103,47 +99,30 @@ class Vanilla(MetaFramework):
                         del grad
                     all_metadata = torch.cat(list(learner.metadata.values()), dim=0)
                     metadata_size = all_metadata.size()[0]
-                    try:
-                        # do with torch
-                        sample_idx = np.random.choice(metadata_size, meta_batch_size, replace=False)
-                        sampled_metadata = all_metadata[sample_idx, :]
-                    except IndexError:
-                        print("===INDEX ERROR===")
-                        print(metadata_size)
-                        print(meta_batch_size)
-                        print(sample_idx)
-                        sampled_metadata = all_metadata
-                        print("===CLOSE===")
+                    sample_idx = np.random.choice(metadata_size, meta_batch_size, replace=False)
+                    sampled_metadata = all_metadata[sample_idx, :]
                     metadata_from_forward = MetaDataset(sampled_metadata)
                     meta_loader = torch.utils.data.DataLoader(dataset=metadata_from_forward,
                                                               batch_size=meta_batch_size,
                                                               shuffle=True)
                     # backprop error to metalearner with metadataset
                     for j, (triplets, grads) in enumerate(meta_loader):
-                        tock = time.time()
                         triplets = Variable(triplets)
                         grads = Variable(grads)
-
-                        # if gpu_bool:
-                        #     print("should be 1")
-                        #     print(torch.cuda.device_count())
-                        #     print("should be GPU")
-                        #     print(torch.cuda.get_device_name(0))
 
                         # Forward + Backward + Optimize
                         meta_optimizer.zero_grad()  # zero the gradient buffer
                         aug_triplets = torch.unsqueeze(torch.unsqueeze(triplets, 2), 3)
                         meta_outputs = torch.squeeze(learner.get_update(aug_triplets))
                         meta_loss = meta_criterion(meta_outputs, grads)
-                        # print("Meta-Loss:" + str(meta_loss.data[0]))
-                        try:
-                            meta_loss.backward()
-                            meta_optimizer.step()
-                        except RuntimeError:
-                            print(meta_outputs.size())
-                            print(meta_loss.size())
-                            print("Runtime Error")
-                            del triplets, grads, meta_loss, aug_triplets, meta_outputs
+                        # try:
+                        meta_loss.backward()
+                        meta_optimizer.step()
+                        # except RuntimeError:
+                        #     print(meta_outputs.size())
+                        #     print(meta_loss.size())
+                        #     print("Runtime Error")
+                        del triplets, grads, meta_loss, aug_triplets, meta_outputs
                     del all_metadata
                 del images, labels, outputs, learner_loss
 
