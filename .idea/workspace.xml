@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6c272def-4b24-4508-8f48-9ae398102747" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/fully_diff.py" beforeDir="false" afterPath="$PROJECT_DIR$/fully_diff.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/net_components.py" beforeDir="false" afterPath="$PROJECT_DIR$/net_components.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -51,8 +52,8 @@
       <file leaf-file-name="fully_diff.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/fully_diff.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1598">
-              <caret line="94" column="42" lean-forward="true" selection-start-line="94" selection-start-column="42" selection-end-line="94" selection-end-column="42" />
+            <state relative-caret-position="1530">
+              <caret line="90" column="42" lean-forward="true" selection-start-line="90" selection-start-column="42" selection-end-line="90" selection-end-column="42" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -63,8 +64,8 @@
       <file leaf-file-name="net_components.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/net_components.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="802">
-              <caret line="177" column="20" selection-start-line="177" selection-start-column="20" selection-end-line="177" selection-end-column="20" />
+            <state relative-caret-position="408">
+              <caret line="165" column="30" selection-start-line="165" selection-start-column="30" selection-end-line="165" selection-end-column="30" />
               <folding>
                 <element signature="e#0#12#0" expanded="true" />
                 <element signature="e#222#607#0" />
@@ -188,10 +189,10 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-1928" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="x" value="-16" />
+    <option name="y" value="-16" />
+    <option name="width" value="3872" />
+    <option name="height" value="2192" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -374,7 +375,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1928" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-6" y="-6" width="1293" height="693" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3297491" />
@@ -384,7 +385,7 @@
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.3298969" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.53405017" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.3297491" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17590618" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2672065" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="SciView" order="3" weight="0.32995737" />
@@ -593,8 +594,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/fully_diff.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1598">
-          <caret line="94" column="42" lean-forward="true" selection-start-line="94" selection-start-column="42" selection-end-line="94" selection-end-column="42" />
+        <state relative-caret-position="1530">
+          <caret line="90" column="42" lean-forward="true" selection-start-line="90" selection-start-column="42" selection-end-line="90" selection-end-column="42" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
@@ -613,8 +614,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/net_components.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="802">
-          <caret line="177" column="20" selection-start-line="177" selection-start-column="20" selection-end-line="177" selection-end-column="20" />
+        <state relative-caret-position="408">
+          <caret line="165" column="30" selection-start-line="165" selection-start-column="30" selection-end-line="165" selection-end-column="30" />
           <folding>
             <element signature="e#0#12#0" expanded="true" />
             <element signature="e#222#607#0" />

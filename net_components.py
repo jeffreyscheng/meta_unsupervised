@@ -153,18 +153,18 @@ class DiffNet(nn.Module):
             old_vj = self.layers[layer_num](out)
             old_vj = self.relu(old_vj)
             stack_dim = self.batch_size, layer.size()[0], layer.size()[1]
-            # try:
-            input_stack = vi.unsqueeze(1).expand(stack_dim)
-            output_stack = old_vj.unsqueeze(2).expand(stack_dim)
-            weight_stack = layer.unsqueeze(0).expand(stack_dim)
-            # except RuntimeError:
-            #     print(stack_dim)
-            #     print(vi.size())
-            #     print(old_vj.size())
-            #     print(layer.size())
-            #     input_stack = vi.unsqueeze(1).expand(stack_dim)
-            #     output_stack = old_vj.unsqueeze(2).expand(stack_dim)
-            #     weight_stack = layer.unsqueeze(0).expand(stack_dim)
+            try:
+                input_stack = vi.unsqueeze(1).expand(stack_dim)
+                output_stack = old_vj.unsqueeze(2).expand(stack_dim)
+                weight_stack = layer.unsqueeze(0).expand(stack_dim)
+            except RuntimeError:
+                print(stack_dim)
+                print(vi.size())
+                print(old_vj.size())
+                print(layer.size())
+                input_stack = vi.unsqueeze(1).expand(stack_dim)
+                output_stack = old_vj.unsqueeze(2).expand(stack_dim)
+                weight_stack = layer.unsqueeze(0).expand(stack_dim)
             meta_inputs = torch.stack((input_stack, weight_stack, output_stack), dim=3).permute(0, 3, 1, 2)
             shift = self.get_update(meta_inputs) * self.rate / batch_num
 
