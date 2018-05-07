@@ -1,10 +1,11 @@
 from meta_framework import *
-import numpy as np
+
+os.environ["CUDA_VISIBLE_DEVICES"] = "1"
 
 
 class Control(MetaFramework):
-    def __init__(self, name, fixed_params, variable_params_range, variable_params_init):
-        super(Control, self).__init__(name, fixed_params, variable_params_range, variable_params_init)
+    def __init__(self, name, fixed_params, variable_params_range, variable_params_init, theta):
+        super(Control, self).__init__(name, fixed_params, variable_params_range, variable_params_init, theta)
 
     def train_model(self, mid1, mid2, meta_mid, meta_batch_size, learning_rate, update_rate, learner_batch_size):
         mid1 = math.floor(mid1)
@@ -24,7 +25,6 @@ class Control(MetaFramework):
         gpu_bool = torch.cuda.device_count() > 0
         if gpu_bool:
             learner.cuda()
-
 
         # MNIST Dataset
         train_dataset = dsets.MNIST(root='./data',
@@ -144,7 +144,7 @@ control_params_init = {'mid1': [400, 20], 'mid2': [200, 20],
                        'learning_rate': [0.0001, 0.00093], 'update_rate': [0.0001, 0.00087],
                        'learner_batch_size': [5, 10]}
 
-control_frame = Control('control', control_fixed_params, control_params_range, control_params_init)
+control_frame = Control('control', control_fixed_params, control_params_range, control_params_init, 1)
 # control_frame.train_model(400, 200, 10, 3000, 0.001, 0.0001, 10)
 control_frame.optimize(10)
 # control_frame.analyze()
