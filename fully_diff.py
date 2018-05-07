@@ -178,5 +178,5 @@ fully_diff_params_init = {'mid1': [400, 20], 'mid2': [200, 20],
 
 fully_diff_frame = FullyDiff('fully_diff', fully_diff_fixed_params, fully_diff_params_range, fully_diff_params_init)
 # fully_diff_frame.train_model(400, 200, 10, 3000, 0.001, 0.0001, 10)
-fully_diff_frame.optimize(10)
+fully_diff_frame.optimize(MetaFramework.optimize_num)
 # fully_diff_frame.analyze()

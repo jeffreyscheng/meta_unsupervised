@@ -52,6 +52,7 @@ class MetaNet(nn.Module):
 class MetaFramework:
     num_epochs = 10
     time_out = 10 * 60
+    optimize_num = 3
 
     def __init__(self, name, fixed_params, variable_params_range, variable_params_init):
         self.name = name
