@@ -108,9 +108,8 @@ class VanillaNet(nn.Module):
             meta_inputs = meta_inputs.permute(0, 3, 1, 2)
             self.metadata[self.weight_params[i]] = meta_inputs
             if change_weights:
-                batch_shift = torch.mean(torch.clamp(self.get_update(meta_inputs), -1000000, 1000000), 0)
-                layer.data += batch_shift.data * rate / epoch
-                del batch_shift
+                layer.data += torch.mean(torch.clamp(self.get_update(meta_inputs), -1000000, 1000000), 0).data *\
+                              rate / epoch
             del input_stack, output_stack, weight_stack, meta_inputs
 
     def check_convergence(self):
