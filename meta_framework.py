@@ -80,18 +80,20 @@ class MetaDataset(Dataset):
         return self.x_data[idx], self.y_data[idx]
 
 
-def bounce_gpu(method):
+def bandaid(method):
     def bounced(*args, **kw):
         while True:
             try:
                 result = method(*args, **kw)
                 return result
-            except MemoryError as e:
-                print("Memory Error!")
-                num = str(random.randint(0, 3))
-                # print("Bounced to machine " + num)
-                # os.environ["CUDA_VISIBLE_DEVICES"] = num
-                for obj in gc.get_objects():
-                    if torch.is_tensor(obj) or (hasattr(obj, 'data') and torch.is_tensor(obj.data)):
-                        print(type(obj), obj.size())
+            except (RuntimeError, MemoryError) as e:
+                print("Encountered Error!")
+                print(e.__dict__)
+                # num = str(random.randint(0, 3))
+                # # print("Bounced to machine " + num)
+                # # os.environ["CUDA_VISIBLE_DEVICES"] = num
+                # for obj in gc.get_objects():
+                #     if torch.is_tensor(obj) or (hasattr(obj, 'data') and torch.is_tensor(obj.data)):
+                #         print(type(obj), obj.size())
+                return 0
     return bounced
