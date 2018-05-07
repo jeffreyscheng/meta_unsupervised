@@ -36,7 +36,7 @@ def timeit(method):
 # inputs in order v_i, w_ij, v_j
 class MetaNet(nn.Module):
     def __init__(self, input_size, hidden_size, num_classes):
-        super(Meta, self).__init__()
+        super(MetaNet, self).__init__()
         self.fc1 = nn.Linear(input_size, hidden_size)
         self.relu = nn.ReLU()
         self.fc2 = nn.Linear(hidden_size, num_classes)
@@ -53,12 +53,11 @@ class MetaFramework:
     num_epochs = 10
     time_out = 10 * 60
 
-    def __init__(self, name, fixed_params, variable_params_range, variable_params_init, theta):
+    def __init__(self, name, fixed_params, variable_params_range, variable_params_init):
         self.name = name
         self.fixed_params = fixed_params
         self.variable_params_range = variable_params_range
         self.variable_params_init = variable_params_init
-        self.theta = theta
 
     def initialize_learner(self, **params):
         pass

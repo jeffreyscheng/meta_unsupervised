@@ -80,11 +80,12 @@ class VanillaNet(nn.Module):
 
 
 class Vanilla(MetaFramework):
-    def __init__(self, name, fixed_params, variable_params_range, variable_params_init, theta):
-        super(Vanilla, self).__init__(name, fixed_params, variable_params_range, variable_params_init, theta)
+    def __init__(self, name, fixed_params, variable_params_range, variable_params_init):
+        super(Vanilla, self).__init__(name, fixed_params, variable_params_range, variable_params_init)
 
     @bandaid
-    def train_model(self, mid1, mid2, meta_mid, meta_batch_size, learning_rate, update_rate, learner_batch_size):
+    def train_model(self, mid1, mid2, meta_mid, meta_batch_size, learning_rate, update_rate, learner_batch_size,
+                    theta=1):
         mid1 = math.floor(mid1)
         mid2 = math.floor(mid2)
         meta_mid = math.floor(meta_mid)
@@ -152,7 +153,7 @@ class Vanilla(MetaFramework):
                 learner_optimizer.zero_grad()  # zero the gradient buffer
                 outputs = learner(images)
                 learner.update(update_rate, batch_num)
-                if random.uniform(0, 1) < self.theta:
+                if random.uniform(0, 1) < theta:
                     learner_loss = learner_criterion(outputs, labels)
                     learner_loss.backward()
                     learner_optimizer.step()
@@ -170,6 +171,7 @@ class Vanilla(MetaFramework):
                         except(RuntimeError, MemoryError):
                             for elem in list(learner.metadata.values()):
                                 print(elem.size())
+                            raise MemoryError
                         metadata_size = all_metadata.size()[0]
                         sample_idx = np.random.choice(metadata_size, meta_batch_size, replace=False)
                         sampled_metadata = all_metadata[sample_idx, :]
@@ -226,7 +228,7 @@ vanilla_params_init = {'mid1': [400, 20], 'mid2': [200, 20],
                        'learning_rate': [0.0001, 0.00093], 'update_rate': [0.0001, 0.00087],
                        'learner_batch_size': [50, 200]}
 
-vanilla_frame = Vanilla('vanilla', vanilla_fixed_params, vanilla_params_range, vanilla_params_init, 1)
+vanilla_frame = Vanilla('vanilla', vanilla_fixed_params, vanilla_params_range, vanilla_params_init)
 # vanilla_frame.train_model(400, 200, 10, 3000, 0.001, 0.0001, 10)
 vanilla_frame.optimize(10)
 # vanilla_frame.analyze()

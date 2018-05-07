@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6c272def-4b24-4508-8f48-9ae398102747" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/control.py" beforeDir="false" afterPath="$PROJECT_DIR$/control.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fully_diff.py" beforeDir="false" afterPath="$PROJECT_DIR$/fully_diff.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/meta_framework.py" beforeDir="false" afterPath="$PROJECT_DIR$/meta_framework.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vanilla.py" beforeDir="false" afterPath="$PROJECT_DIR$/vanilla.py" afterDir="false" />
     </list>
@@ -26,11 +28,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="600">
-      <file leaf-file-name="meta_framework.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="meta_framework.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/meta_framework.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="53" column="22" selection-start-line="53" selection-start-column="22" selection-end-line="53" selection-end-column="22" />
+            <state relative-caret-position="340">
+              <caret line="59" column="56" selection-start-line="59" selection-start-column="56" selection-end-line="59" selection-end-column="56" />
               <folding>
                 <element signature="e#0#42#0" expanded="true" />
               </folding>
@@ -41,8 +43,8 @@
       <file leaf-file-name="vanilla.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vanilla.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="26" column="47" lean-forward="true" selection-start-line="26" selection-start-column="47" selection-end-line="26" selection-end-column="47" />
+            <state relative-caret-position="281">
+              <caret line="87" column="25" selection-start-line="87" selection-start-column="20" selection-end-line="87" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -50,8 +52,8 @@
       <file leaf-file-name="fully_diff.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/fully_diff.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1255">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
+            <state relative-caret-position="537">
+              <caret line="170" column="85" lean-forward="true" selection-start-line="170" selection-start-column="85" selection-end-line="170" selection-end-column="85" />
               <folding>
                 <element signature="e#195#3036#0" />
               </folding>
@@ -59,11 +61,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="control.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="control.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/control.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="622">
-              <caret line="151" column="58" lean-forward="true" selection-start-line="151" selection-start-column="58" selection-end-line="151" selection-end-column="58" />
+            <state relative-caret-position="605">
+              <caret line="150" column="60" lean-forward="true" selection-start-line="150" selection-start-column="60" selection-end-line="150" selection-end-column="60" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="varying_theta.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/varying_theta.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="17" />
+              <folding>
+                <element signature="e#0#31#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -80,7 +94,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>here</find>
       <find>HERE</find>
       <find>break</find>
       <find />
@@ -110,6 +123,7 @@
       <find>VanillaNet</find>
       <find>update</find>
       <find>meta_mid</find>
+      <find>theta</find>
     </findStrings>
     <replaceStrings>
       <replace>update_rate</replace>
@@ -146,10 +160,12 @@
         <option value="$PROJECT_DIR$/mature.py" />
         <option value="$PROJECT_DIR$/separate.py" />
         <option value="$PROJECT_DIR$/net_components.py" />
-        <option value="$PROJECT_DIR$/fully_diff.py" />
+        <option value="$PROJECT_DIR$/theta.py" />
+        <option value="$PROJECT_DIR$/varying_theta.py" />
         <option value="$PROJECT_DIR$/vanilla.py" />
-        <option value="$PROJECT_DIR$/control.py" />
         <option value="$PROJECT_DIR$/meta_framework.py" />
+        <option value="$PROJECT_DIR$/fully_diff.py" />
+        <option value="$PROJECT_DIR$/control.py" />
       </list>
     </option>
   </component>
@@ -375,7 +391,7 @@
       <window_info anchor="bottom" id="Python Console" order="9" weight="0.3298969" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.5337691" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.3297491" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17857143" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17857143" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="4" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32897604" />
@@ -404,13 +420,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/vanilla.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="22" column="23" lean-forward="true" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/metaoptimizer.py" />
     <entry file="file://$PROJECT_DIR$/net_components.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -526,37 +535,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/control.py">
+    <entry file="file://$PROJECT_DIR$/varying_theta.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="622">
-          <caret line="151" column="58" lean-forward="true" selection-start-line="151" selection-start-column="58" selection-end-line="151" selection-end-column="58" />
+        <state relative-caret-position="51">
+          <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fully_diff.py">
+    <entry file="file://$PROJECT_DIR$/meta_framework.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1255">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        <state relative-caret-position="340">
+          <caret line="59" column="56" selection-start-line="59" selection-start-column="56" selection-end-line="59" selection-end-column="56" />
           <folding>
-            <element signature="e#195#3036#0" />
+            <element signature="e#0#42#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vanilla.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="47" lean-forward="true" selection-start-line="26" selection-start-column="47" selection-end-line="26" selection-end-column="47" />
+        <state relative-caret-position="281">
+          <caret line="87" column="25" selection-start-line="87" selection-start-column="20" selection-end-line="87" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/meta_framework.py">
+    <entry file="file://$PROJECT_DIR$/fully_diff.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="53" column="22" selection-start-line="53" selection-start-column="22" selection-end-line="53" selection-end-column="22" />
+        <state relative-caret-position="537">
+          <caret line="170" column="85" lean-forward="true" selection-start-line="170" selection-start-column="85" selection-end-line="170" selection-end-column="85" />
           <folding>
-            <element signature="e#0#42#0" expanded="true" />
+            <element signature="e#195#3036#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/control.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="605">
+          <caret line="150" column="60" lean-forward="true" selection-start-line="150" selection-start-column="60" selection-end-line="150" selection-end-column="60" />
         </state>
       </provider>
     </entry>

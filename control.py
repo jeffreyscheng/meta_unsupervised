@@ -1,6 +1,6 @@
 from meta_framework import *
 
-os.environ["CUDA_VISIBLE_DEVICES"] = "3"
+os.environ["CUDA_VISIBLE_DEVICES"] = "1"
 
 
 # Template for Control Structure
@@ -54,11 +54,11 @@ class ControlNet(nn.Module):
 
 
 class Control(MetaFramework):
-    def __init__(self, name, fixed_params, variable_params_range, variable_params_init, theta):
-        super(Control, self).__init__(name, fixed_params, variable_params_range, variable_params_init, theta)
+    def __init__(self, name, fixed_params, variable_params_range, variable_params_init):
+        super(Control, self).__init__(name, fixed_params, variable_params_range, variable_params_init)
 
     @bandaid
-    def train_model(self, mid1, mid2, learning_rate, learner_batch_size):
+    def train_model(self, mid1, mid2, learning_rate, learner_batch_size, theta=1):
         mid1 = math.floor(mid1)
         mid2 = math.floor(mid2)
         meta_input = self.fixed_params['meta_input']
@@ -120,7 +120,7 @@ class Control(MetaFramework):
                 learner_optimizer.zero_grad()  # zero the gradient buffer
                 outputs = learner(images)
                 # learner.update(update_rate, batch_num)
-                if random.uniform(0, 1) < self.theta:
+                if random.uniform(0, 1) < theta:
                     learner_loss = learner_criterion(outputs, labels)
                     learner_loss.backward()
                     learner_optimizer.step()
@@ -152,7 +152,7 @@ control_params_init = {'mid1': [400, 20], 'mid2': [200, 20],
                        'learning_rate': [0.0001, 0.00093],
                        'learner_batch_size': [50, 200]}
 
-control_frame = Control('control', control_fixed_params, control_params_range, control_params_init, 1)
+control_frame = Control('control', control_fixed_params, control_params_range, control_params_init)
 # control_frame.train_model(400, 200, 10, 3000, 0.001, 0.0001, 10)
 control_frame.optimize(10)
 # control_frame.analyze()

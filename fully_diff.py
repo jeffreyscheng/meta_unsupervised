@@ -70,11 +70,11 @@ class DiffNet(nn.Module):
 
 
 class FullyDiff(MetaFramework):
-    def __init__(self, name, fixed_params, variable_params_range, variable_params_init, theta):
-        super(FullyDiff, self).__init__(name, fixed_params, variable_params_range, variable_params_init, theta)
+    def __init__(self, name, fixed_params, variable_params_range, variable_params_init):
+        super(FullyDiff, self).__init__(name, fixed_params, variable_params_range, variable_params_init)
 
     @bandaid
-    def train_model(self, mid1, mid2, meta_mid, learning_rate, learner_batch_size, update_rate):
+    def train_model(self, mid1, mid2, meta_mid, learning_rate, learner_batch_size, update_rate, theta=1):
         mid1 = math.floor(mid1)
         mid2 = math.floor(mid2)
         meta_mid = math.floor(meta_mid)
@@ -142,7 +142,7 @@ class FullyDiff(MetaFramework):
                 # Learner Forward + Backward + Optimize
                 learner_optimizer.zero_grad()  # zero the gradient buffer
                 outputs = learner.forward(images, batch_num)
-                if random.uniform(0, 1) < self.theta:
+                if random.uniform(0, 1) < theta:
                     learner_loss = learner_criterion(outputs, labels)
                     learner_loss.backward()
                     learner_optimizer.step()
@@ -176,7 +176,7 @@ fully_diff_params_init = {'mid1': [400, 20], 'mid2': [200, 20],
                           'learning_rate': [0.0001, 0.00093], 'update_rate': [0.0001, 0.00087],
                           'learner_batch_size': [50, 200]}
 
-fully_diff_frame = FullyDiff('fully_diff', fully_diff_fixed_params, fully_diff_params_range, fully_diff_params_init, 1)
+fully_diff_frame = FullyDiff('fully_diff', fully_diff_fixed_params, fully_diff_params_range, fully_diff_params_init)
 # fully_diff_frame.train_model(400, 200, 10, 3000, 0.001, 0.0001, 10)
 fully_diff_frame.optimize(10)
 # fully_diff_frame.analyze()
