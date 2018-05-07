@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6c272def-4b24-4508-8f48-9ae398102747" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/meta_framework.py" beforeDir="false" afterPath="$PROJECT_DIR$/meta_framework.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/net_components.py" beforeDir="false" afterPath="$PROJECT_DIR$/net_components.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fully_diff.py" beforeDir="false" afterPath="$PROJECT_DIR$/fully_diff.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -25,11 +24,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="600">
-      <file leaf-file-name="meta_framework.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="meta_framework.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/meta_framework.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
+            <state relative-caret-position="202">
+              <caret line="42" column="13" lean-forward="true" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
               <folding>
                 <element signature="e#0#42#0" expanded="true" />
               </folding>
@@ -37,11 +36,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="vanilla.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="vanilla.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/vanilla.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-170">
-              <caret line="24" column="57" lean-forward="true" selection-start-line="24" selection-start-column="57" selection-end-line="24" selection-end-column="57" />
+            <state relative-caret-position="598">
+              <caret line="154" column="51" selection-start-line="154" selection-start-column="51" selection-end-line="154" selection-end-column="51" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -52,8 +51,8 @@
       <file leaf-file-name="fully_diff.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/fully_diff.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-660">
-              <caret line="54" column="36" selection-start-line="54" selection-start-column="36" selection-end-line="54" selection-end-column="36" />
+            <state relative-caret-position="666">
+              <caret line="114" column="54" selection-start-line="114" selection-start-column="54" selection-end-line="114" selection-end-column="54" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -64,11 +63,10 @@
       <file leaf-file-name="net_components.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/net_components.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2414">
-              <caret line="155" column="73" lean-forward="true" selection-start-line="155" selection-start-column="73" selection-end-line="155" selection-end-column="73" />
+            <state relative-caret-position="2516">
+              <caret line="155" column="73" selection-start-line="155" selection-start-column="73" selection-end-line="155" selection-end-column="73" />
               <folding>
                 <element signature="e#0#12#0" expanded="true" />
-                <element signature="e#222#607#0" />
               </folding>
             </state>
           </provider>
@@ -172,10 +170,10 @@
         <option value="$PROJECT_DIR$/mature.py" />
         <option value="$PROJECT_DIR$/separate.py" />
         <option value="$PROJECT_DIR$/control.py" />
-        <option value="$PROJECT_DIR$/vanilla.py" />
-        <option value="$PROJECT_DIR$/fully_diff.py" />
         <option value="$PROJECT_DIR$/net_components.py" />
         <option value="$PROJECT_DIR$/meta_framework.py" />
+        <option value="$PROJECT_DIR$/fully_diff.py" />
+        <option value="$PROJECT_DIR$/vanilla.py" />
       </list>
     </option>
   </component>
@@ -189,17 +187,15 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-16" />
-    <option name="y" value="-16" />
-    <option name="width" value="3872" />
-    <option name="height" value="2192" />
+    <option name="x" value="-1926" />
+    <option name="width" value="967" />
+    <option name="height" value="1046" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -211,6 +207,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -375,7 +372,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-6" y="-6" width="1293" height="693" extended-state="6" />
+    <frame x="-1928" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3297491" />
@@ -385,7 +382,7 @@
       <window_info anchor="bottom" id="Python Console" order="9" weight="0.3298969" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.53405017" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.3297491" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2672065" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17857143" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="4" />
       <window_info anchor="right" id="SciView" order="3" weight="0.32995737" />
@@ -431,7 +428,6 @@
           <caret line="46" column="24" lean-forward="true" selection-start-line="46" selection-start-column="24" selection-end-line="46" selection-end-column="24" />
           <folding>
             <element signature="e#0#12#0" expanded="true" />
-            <element signature="e#222#607#0" />
           </folding>
         </state>
       </provider>
@@ -443,7 +439,6 @@
           <caret line="73" selection-start-line="73" selection-end-line="73" selection-end-column="59" />
           <folding>
             <element signature="e#0#12#0" expanded="true" />
-            <element signature="e#222#607#0" />
           </folding>
         </state>
       </provider>
@@ -466,7 +461,6 @@
           <caret line="30" column="46" lean-forward="true" selection-start-line="30" selection-start-column="46" selection-end-line="30" selection-end-column="46" />
           <folding>
             <element signature="e#0#12#0" expanded="true" />
-            <element signature="e#222#607#0" />
           </folding>
         </state>
       </provider>
@@ -481,7 +475,6 @@
           <caret line="32" column="25" lean-forward="true" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="25" />
           <folding>
             <element signature="e#0#12#0" expanded="true" />
-            <element signature="e#222#607#0" />
           </folding>
         </state>
       </provider>
@@ -558,43 +551,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vanilla.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-170">
-          <caret line="24" column="57" lean-forward="true" selection-start-line="24" selection-start-column="57" selection-end-line="24" selection-end-column="57" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fully_diff.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-660">
-          <caret line="54" column="36" selection-start-line="54" selection-start-column="36" selection-end-line="54" selection-end-column="36" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/net_components.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2414">
-          <caret line="155" column="73" lean-forward="true" selection-start-line="155" selection-start-column="73" selection-end-line="155" selection-end-column="73" />
+        <state relative-caret-position="2516">
+          <caret line="155" column="73" selection-start-line="155" selection-start-column="73" selection-end-line="155" selection-end-column="73" />
           <folding>
             <element signature="e#0#12#0" expanded="true" />
-            <element signature="e#222#607#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/meta_framework.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
+        <state relative-caret-position="202">
+          <caret line="42" column="13" lean-forward="true" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
           <folding>
             <element signature="e#0#42#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fully_diff.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="666">
+          <caret line="114" column="54" selection-start-line="114" selection-start-column="54" selection-end-line="114" selection-end-column="54" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vanilla.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="598">
+          <caret line="154" column="51" selection-start-line="154" selection-start-column="51" selection-end-line="154" selection-end-column="51" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
           </folding>
         </state>
       </provider>

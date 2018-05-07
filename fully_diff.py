@@ -108,7 +108,7 @@ class FullyDiff(MetaFramework):
 fully_diff_fixed_params = {'meta_input': 3, 'meta_output': 1, 'input_size': 784, 'num_classes': 10}
 fully_diff_params_range = {'mid1': (20, 800), 'mid2': (20, 800), 'meta_mid': (2, 10),
                            'learning_rate': (0.000001, 0.001), 'update_rate': (0.000001, 0.001),
-                           'learner_batch_size': (1, 1000)}
+                           'learner_batch_size': (1, 600)}
 fully_diff_params_init = {'mid1': [400, 20], 'mid2': [200, 20],
                           'meta_mid': [5, 10],
                           'learning_rate': [0.0001, 0.00093], 'update_rate': [0.0001, 0.00087],
