@@ -1,5 +1,4 @@
 from meta_framework import *
-from net_components import *
 import numpy as np
 
 
@@ -12,7 +11,6 @@ class Control(MetaFramework):
         mid2 = math.floor(mid2)
         meta_mid = math.floor(meta_mid)
         meta_batch_size = math.floor(meta_batch_size)
-        train_start_time = time.time()
         meta_input = self.fixed_params['meta_input']
         meta_output = self.fixed_params['meta_output']
         # meta_weight = Meta(meta_input, meta_mid, meta_output)

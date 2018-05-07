@@ -1,2 +1,0 @@
-  File "vanilla.bayes", line 1
-SyntaxError: Non-UTF-8 code starting with '\x80' in file vanilla.bayes on line 1, but no encoding declared; see http://python.org/dev/peps/pep-0263/ for details
