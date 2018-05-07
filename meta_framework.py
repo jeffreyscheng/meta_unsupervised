@@ -15,6 +15,7 @@ import torch.nn as nn
 import time
 import numpy as np
 import math
+from functools import wraps
 
 
 def timeit(method):
@@ -72,19 +73,9 @@ class MetaFramework:
 
         if not bayes_file.is_file():
             print("Initializing:", file_name)
-            # param_dict = {'mid1': (20, 800), 'mid2': (20, 800), 'meta_mid': (2, 10), 'meta_batch_size': (1, 10000),
-            #               'learning_rate': (0.000001, 0.001), 'meta_rate': (0.000001, 0.001)}
-            # bayes = BayesianOptimization(train_model, param_dict)
             bayes = BayesianOptimization(self.train_model, self.variable_params_range)
-
-            # bayes.explore(
-            #     {'mid1': [starting_learner_mid1], 'mid2': [starting_learner_mid2], 'meta_mid': [starting_meta_mid],
-            #      'meta_batch_size': [starting_meta_batch_size], 'learning_rate': [starting_learning_rate],
-            #      'meta_rate': [starting_meta_rate]})
             bayes.explore(self.variable_params_init)
-
             bayes.maximize(init_points=1, n_iter=n, kappa=1, acq="ucb")
-
         else:
             with open(file_name, 'rb') as bayes_file:
                 bayes = pickle.load(bayes_file)
@@ -126,6 +117,7 @@ class MetaDataset(Dataset):
 
 
 def bandaid(method):
+    @wraps(method)
     def bounced(*args, **kw):
         while True:
             try:
