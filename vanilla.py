@@ -171,6 +171,7 @@ class Vanilla(MetaFramework):
                         except(RuntimeError, MemoryError):
                             for elem in list(learner.metadata.values()):
                                 print(elem.size())
+                            traceback.print_exc()
                             raise MemoryError
                         metadata_size = all_metadata.size()[0]
                         sample_idx = np.random.choice(metadata_size, meta_batch_size, replace=False)

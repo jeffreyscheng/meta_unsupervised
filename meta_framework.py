@@ -16,6 +16,7 @@ import time
 import numpy as np
 import math
 from functools import wraps
+import traceback
 
 
 def timeit(method):
@@ -53,7 +54,7 @@ class MetaNet(nn.Module):
 class MetaFramework:
     num_epochs = 10
     time_out = 10 * 60
-    optimize_num = 3
+    optimize_num = 30
 
     def __init__(self, name, fixed_params, variable_params_range, variable_params_init):
         self.name = name
@@ -125,6 +126,9 @@ def bandaid(method):
                 return result
             except (RuntimeError, MemoryError) as e:
                 print("Encountered Error!")
+                print("_____")
+                traceback.print_exc()
+                print("_____")
                 # print(e.__dict__)
                 # num = str(random.randint(0, 3))
                 # # print("Bounced to machine " + num)
