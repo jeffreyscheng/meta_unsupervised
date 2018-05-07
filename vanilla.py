@@ -224,7 +224,7 @@ vanilla_params_range = {'mid1': (20, 800), 'mid2': (20, 800), 'meta_mid': (2, 10
 vanilla_params_init = {'mid1': [400, 20], 'mid2': [200, 20],
                        'meta_mid': [5, 10], 'meta_batch_size': [100, 2337],
                        'learning_rate': [0.0001, 0.00093], 'update_rate': [0.0001, 0.00087],
-                       'learner_batch_size': [5, 200]}
+                       'learner_batch_size': [50, 200]}
 
 vanilla_frame = Vanilla('vanilla', vanilla_fixed_params, vanilla_params_range, vanilla_params_init, 1)
 # vanilla_frame.train_model(400, 200, 10, 3000, 0.001, 0.0001, 10)
