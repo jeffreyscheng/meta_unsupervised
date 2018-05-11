@@ -34,11 +34,13 @@ for theta in np.nditer(x):
     # learner_batch_size: 47.28394913558323
     fully_diff_acc = fully_diff_frame.train_model(246, 146, 6, 0.00066695, 0.00020694, 47, theta)
     theta_df.loc[theta_df['theta'] == theta, 'fully_diff'] = fully_diff_acc
+    print("Finished:", theta, "-fully_diff-", fully_diff_acc)
     # optimized control hyperparams
     # {'max_val': 0.9817, 'max_params': {'mid1': 612.5576463625512, 'mid2': 746.756482014418, 'learning_rate': 0.001,
     #                                    'learner_batch_size': 309.07721048030334}}
     control_acc = control_frame.train_model(612, 746, 0.001, 309, theta)
     theta_df.loc[theta_df['theta'] == theta, 'control'] = control_acc
+    print("Finished:", theta, "-control-", control_acc)
 
 fig = plt.figure()
 
