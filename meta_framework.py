@@ -120,8 +120,11 @@ class MetaDataset(Dataset):
 def bandaid(method):
     @wraps(method)
     def bounced(*args, **kw):
+        tick = time.time()
         while True:
             try:
+                if time.time() - tick > MetaFramework.time_out:
+                    return 0
                 result = method(*args, **kw)
                 return result
             except (RuntimeError, MemoryError) as e:
