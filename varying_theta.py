@@ -8,7 +8,7 @@ import pandas as pd
 fully_diff_frame = FullyDiff('fully_diff', {}, {}, {})
 control_frame = Control('control', {}, {}, {})
 
-frames = [vanilla_frame]
+frames = [fully_diff_frame]
 
 x = np.arange(0, 1.01, 0.1)
 
@@ -47,7 +47,7 @@ fig = plt.figure()
 # plt.plot(theta_df['theta'], theta_df['vanilla'])
 plt.plot(theta_df['theta'], theta_df['fully_diff'])
 plt.plot(theta_df['theta'], theta_df['control'])
-plt.legend(['vanilla', 'fully_diff', 'control', 'y = 4x'], loc='upper left')
+plt.legend(['fully_diff', 'control', 'y = 4x'], loc='upper left')
 plt.xlabel('Proportion of Labeled Examples', fontsize=18)
 plt.ylabel('Accuracy', fontsize=16)
 plt.show()
