@@ -4,6 +4,7 @@ from fully_diff import *
 from control import *
 import pandas as pd
 
+os.environ["CUDA_VISIBLE_DEVICES"] = "2"
 
 frames = [fully_diff_frame]
 
