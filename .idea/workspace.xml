@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6c272def-4b24-4508-8f48-9ae398102747" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/varying_theta.py" beforeDir="false" afterPath="$PROJECT_DIR$/varying_theta.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -49,7 +50,7 @@
       <file leaf-file-name="vanilla.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vanilla.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="493">
               <caret line="211" column="38" lean-forward="true" selection-start-line="211" selection-start-column="38" selection-end-line="211" selection-end-column="38" />
             </state>
           </provider>
@@ -76,8 +77,8 @@
       <file leaf-file-name="varying_theta.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/varying_theta.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="39" selection-start-line="6" selection-start-column="39" selection-end-line="6" selection-end-column="39" />
+            <state relative-caret-position="238">
+              <caret line="44" selection-start-line="44" selection-end-line="54" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
               </folding>
@@ -541,13 +542,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vanilla.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="211" column="38" lean-forward="true" selection-start-line="211" selection-start-column="38" selection-end-line="211" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/fully_diff.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -562,10 +556,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/vanilla.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="211" column="38" lean-forward="true" selection-start-line="211" selection-start-column="38" selection-end-line="211" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/varying_theta.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="39" selection-start-line="6" selection-start-column="39" selection-end-line="6" selection-end-column="39" />
+        <state relative-caret-position="238">
+          <caret line="44" selection-start-line="44" selection-end-line="54" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
           </folding>
