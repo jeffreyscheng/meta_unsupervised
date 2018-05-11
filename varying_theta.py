@@ -4,9 +4,6 @@ from fully_diff import *
 from control import *
 import pandas as pd
 
-# vanilla_frame = Vanilla('vanilla', {}, {}, {})
-fully_diff_frame = FullyDiff('fully_diff', {}, {}, {})
-control_frame = Control('control', {}, {}, {})
 
 frames = [fully_diff_frame]
 
@@ -32,7 +29,7 @@ for theta in np.nditer(x):
     # learning_rate: 0.0006669522749695926
     # update_rate: 0.00020694005810751248
     # learner_batch_size: 47.28394913558323
-    fully_diff_acc = fully_diff_frame.train_model(246, 146, 6, 0.00066695, 0.00020694, 47, theta)
+    fully_diff_acc = fully_diff_frame.train_model(246, 146, 6, 0.00066695, 47, 0.00020694, theta)
     theta_df.loc[theta_df['theta'] == theta, 'fully_diff'] = fully_diff_acc
     print("Finished:", theta, "-fully_diff-", fully_diff_acc)
     # optimized control hyperparams
