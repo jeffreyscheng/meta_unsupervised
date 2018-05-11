@@ -145,7 +145,7 @@ class FullyDiff(MetaFramework):
                 outputs = learner.forward(images, batch_num)
                 if random.uniform(0, 1) < theta:
                     learner_loss = learner_criterion(outputs, labels)
-                    print(labels.data[0], ',', str(learner_loss.data[0]))
+                    # print(labels.data[0], ',', str(learner_loss.data[0]))
                     learner_loss.backward()
                     learner_optimizer.step()
                     del images, labels, outputs, learner_loss

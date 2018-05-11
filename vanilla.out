@@ -1,0 +1,145 @@
+THCudaCheck FAIL file=/pytorch/torch/lib/THC/generic/THCStorage.cu line=58 error=2 : out of memory
+Loaded file: vanilla.bayes
+[31mBayesian Optimization[0m
+[94m-----------------------------------------------------------------------------------------------------------------------------------------------[0m
+ Step |   Time |      Value |   learner_batch_size |   learning_rate |   meta_batch_size |   meta_mid |      mid1 |      mid2 |   update_rate | 
+   36 | 30m30s |    0.75990 |              49.4961 |          0.0005 |         2472.5005 |     2.0590 |  637.1150 |   31.3028 |        0.0010 | 
+   37 | 30m27s |    0.58930 |              14.5806 |          0.0006 |         2495.9211 |     2.7381 |  626.4482 |   58.1836 |        0.0004 | 
+   38 | 31m33s |    0.58950 |             440.7602 |          0.0002 |         2243.5944 |     2.7584 |  452.5110 |   70.1793 |        0.0001 | 
+   39 | 30m07s |    0.50100 |              10.6251 |          0.0010 |         3795.3225 |     2.1846 |  478.9686 |  279.9748 |        0.0005 | 
+torch.Size([177623040, 4])
+torch.Size([16085760, 4])
+torch.Size([335120, 4])
+Encountered Error!
+_____
+_____
+   40 | 00m21s |    0.00000 |             472.8802 |          0.0001 |         2265.5432 |     4.4865 |  480.0969 |   71.8979 |        0.0006 | 
+Encountered Error!
+_____
+_____
+   41 | 00m24s |    0.00000 |             138.5363 |          0.0007 |           33.2121 |     8.3201 |  393.4590 |  794.3733 |        0.0007 | 
+   42 | 30m22s |    0.75500 |              64.5910 |          0.0004 |         2372.0283 |     6.7425 |  590.4779 |  166.7493 |        0.0000 | 
+   43 | 30m56s |    0.65790 |              48.5858 |          0.0002 |         2516.5337 |     5.8623 |  606.9320 |  265.0621 |        0.0001 | 
+   44 | 31m11s |    0.83960 |             120.0215 |          0.0006 |         2392.8380 |     4.6785 |  686.7592 |  343.9983 |        0.0002 | 
+   45 | 30m58s |    0.53650 |             134.0194 |          0.0001 |         2509.2722 |     3.4867 |  728.2636 |  430.7569 |        0.0003 | 
+   46 | 31m13s |    0.70320 |             154.0168 |          0.0001 |         2487.4867 |     7.3613 |  792.1677 |  387.8396 |        0.0002 | 
+   47 | 31m17s |    0.53210 |               1.0000 |          0.0000 |         2139.4506 |     2.1811 |  236.2321 |  522.7964 |        0.0000 | 
+   48 | 30m54s |    0.39700 |               3.1844 |          0.0003 |         2085.7679 |     2.3584 |  160.0125 |  533.5326 |        0.0006 | 
+   49 | 30m26s |    0.29510 |               2.1091 |          0.0008 |         1998.6140 |     5.1015 |  139.4886 |  538.0180 |        0.0006 | 
+   50 | 30m54s |    0.58150 |              77.1782 |          0.0002 |         2504.1144 |     7.0528 |  707.8694 |  312.5129 |        0.0001 | 
+Encountered Error!
+_____
+_____
+   51 | 26m55s |    0.00000 |             373.1217 |          0.0000 |         2224.5787 |     2.0000 |  367.7427 |   47.1413 |        0.0000 | 
+   52 | 30m26s |    0.60080 |              25.9894 |          0.0009 |         1920.1020 |     3.1516 |  151.9691 |  612.5601 |        0.0006 | 
+Encountered Error!
+_____
+_____
+   53 | 14m43s |    0.00000 |              57.5495 |          0.0003 |         1893.6741 |     2.6509 |  160.3554 |  654.6070 |        0.0005 | 
+Encountered Error!
+_____
+_____
+   54 | 01m19s |    0.00000 |             223.3748 |          0.0010 |         2305.1869 |    10.0000 |   20.0000 |   20.0000 |        0.0010 | 
+   55 | 30m12s |    0.67950 |              42.3892 |          0.0003 |         2471.1454 |     9.8989 |  748.9665 |  319.1810 |        0.0008 | 
+   56 | 30m14s |    0.67250 |              21.6237 |          0.0000 |         2455.4265 |     3.9232 |  699.3754 |  320.8258 |        0.0010 | 
+Encountered Error!
+_____
+_____
+   57 | 23m23s |    0.00000 |             164.9443 |          0.0010 |          290.5788 |     9.7712 |  447.9370 |   37.4027 |        0.0008 | 
+   58 | 30m11s |    0.57660 |              13.8734 |          0.0007 |         2186.7547 |     5.0611 |  612.2948 |  487.9578 |        0.0008 | 
+   59 | 30m26s |    0.38490 |              30.6554 |          0.0009 |         2072.0581 |     8.5540 |  696.0368 |  467.3575 |        0.0008 | 
+   60 | 30m12s |    0.55690 |              62.2771 |          0.0005 |         2131.2182 |     6.2296 |  669.9926 |  496.1731 |        0.0003 | 
+Encountered Error!
+_____
+_____
+   61 | 11m22s |    0.00000 |             158.7426 |          0.0001 |         1978.2130 |     8.6343 |  132.6066 |  521.9675 |        0.0008 | 
+Encountered Error!
+_____
+_____
+   62 | 03m44s |    0.00000 |              39.1131 |          0.0003 |         2258.1568 |     8.6788 |   44.1248 |  643.4299 |        0.0005 | 
+   63 | 30m12s |    0.76710 |             110.9190 |          0.0009 |         2340.5951 |     2.3049 |  721.4688 |  129.7933 |        0.0003 | 
+   64 | 30m12s |    0.85330 |             114.1087 |          0.0005 |         2214.8545 |     3.3479 |  765.2521 |  407.8182 |        0.0007 | 
+   65 | 30m16s |    0.09800 |               1.1329 |          0.0008 |         3000.0102 |     3.2550 |  124.6422 |  101.2750 |        0.0001 | 
+{'max_val': 0.9385, 'max_params': {'mid1': 20.0, 'mid2': 20.0, 'meta_mid': 10.0, 'meta_batch_size': 2337.0, 'learning_rate': 0.00093, 'update_rate': 0.00087, 'learner_batch_size': 200.0}}
+{'values': [0, 0.7601, 0, 0, 0.783, 0.3673, 0.6249, 0.6012, 0.3272, 0.2821, 0.098, 0, 0, 0, 0, 0.0993, 0.1132, 0.6284, 0.5769, 0.6895, 0.303, 0.4646, 0.2945, 0.098, 0.4675, 0.4853, 0, 0, 0.659, 0.0974, 0.1679, 0, 0.7599, 0.5893, 0.5895, 0.501, 0, 0, 0.755, 0.6579, 0.8396, 0.5365, 0.7032, 0.5321, 0.397, 0.2951, 0.5815, 0, 0.6008, 0, 0, 0.6795, 0.6725, 0, 0.5766, 0.3849, 0.5569, 0, 0, 0.7671, 0.8533, 0.098], 'params': [{'mid1': 20.0, 'mid2': 800.0, 'meta_mid': 10.0, 'meta_batch_size': 1355.9272259832958, 'learning_rate': 5.840659887335008e-05, 'update_rate': 0.0006555668281292158, 'learner_batch_size': 500.0}, {'mid1': 622.9615644924675, 'mid2': 20.0, 'meta_mid': 2.0, 'meta_batch_size': 2352.7278910320188, 'learning_rate': 7.103879360490401e-05, 'update_rate': 0.001, 'learner_batch_size': 1.0}, {'mid1': 800.0, 'mid2': 20.0, 'meta_mid': 2.0, 'meta_batch_size': 1.0, 'learning_rate': 0.0007916503838685021, 'update_rate': 0.0007800613398109078, 'learner_batch_size': 500.0}, {'mid1': 20.0, 'mid2': 20.0, 'meta_mid': 10.0, 'meta_batch_size': 601.8264180493209, 'learning_rate': 1e-06, 'update_rate': 0.00033685075333455606, 'learner_batch_size': 1.0}, {'mid1': 380.74371101311704, 'mid2': 799.8388027887981, 'meta_mid': 2.0, 'meta_batch_size': 1.0, 'learning_rate': 1e-06, 'update_rate': 0.001, 'learner_batch_size': 1.0}, {'mid1': 20.0, 'mid2': 20.0, 'meta_mid': 2.0, 'meta_batch_size': 2915.622963417676, 'learning_rate': 0.0006685430157363606, 'update_rate': 0.00041451920229089, 'learner_batch_size': 1.0}, {'mid1': 366.3416106969121, 'mid2': 20.0, 'meta_mid': 10.0, 'meta_batch_size': 2325.3023884943636, 'learning_rate': 0.00038980380601122004, 'update_rate': 0.001, 'learner_batch_size': 500.0}, {'mid1': 58.58404001611232, 'mid2': 467.8270046769492, 'meta_mid': 10.0, 'meta_batch_size': 2235.542306918408, 'learning_rate': 1e-06, 'update_rate': 0.001, 'learner_batch_size': 1.0}, {'mid1': 44.50621586760314, 'mid2': 20.0, 'meta_mid': 2.0, 'meta_batch_size': 2030.5910362287434, 'learning_rate': 1e-06, 'update_rate': 0.0008832404548356804, 'learner_batch_size': 1.0}, {'mid1': 20.0, 'mid2': 437.77282742671434, 'meta_mid': 10.0, 'meta_batch_size': 1.0, 'learning_rate': 0.0001340411883313386, 'update_rate': 1e-06, 'learner_batch_size': 1.0}, {'mid1': 800.0, 'mid2': 621.5937281568744, 'meta_mid': 10.0, 'meta_batch_size': 317.9386000779914, 'learning_rate': 0.001, 'update_rate': 0.0008552118820646408, 'learner_batch_size': 1.0}, {'mid1': 20.0, 'mid2': 362.4430303910561, 'meta_mid': 10.0, 'meta_batch_size': 2546.872289951375, 'learning_rate': 1e-06, 'update_rate': 0.001, 'learner_batch_size': 472.7670760674061}, {'mid1': 672.5969585401994, 'mid2': 728.1916899748377, 'meta_mid': 8.715457607820102, 'meta_batch_size': 9187.856252048894, 'learning_rate': 0.0005541531067959552, 'update_rate': 0.000816117871818141, 'learner_batch_size': 290.3727321891784}, {'mid1': 237.18287128238333, 'mid2': 20.0, 'meta_mid': 10.0, 'meta_batch_size': 2471.687737029429, 'learning_rate': 1e-06, 'update_rate': 0.001, 'learner_batch_size': 33.511478137973825}, {'mid1': 20.0, 'mid2': 20.0, 'meta_mid': 10.0, 'meta_batch_size': 2135.312583285703, 'learning_rate': 0.001, 'update_rate': 1e-06, 'learner_batch_size': 435.49270770405076}, {'mid1': 781.2250788504316, 'mid2': 46.625552918279936, 'meta_mid': 2.0, 'meta_batch_size': 2234.972084902942, 'learning_rate': 1e-06, 'update_rate': 0.000858184472359745, 'learner_batch_size': 262.1505032818443}, {'mid1': 444.4399183001859, 'mid2': 488.96218711451434, 'meta_mid': 2.0, 'meta_batch_size': 1.0, 'learning_rate': 1e-06, 'update_rate': 0.001, 'learner_batch_size': 134.80756416257685}, {'mid1': 304.6905849079191, 'mid2': 20.0, 'meta_mid': 10.0, 'meta_batch_size': 1.0, 'learning_rate': 1e-06, 'update_rate': 0.0008617942244777271, 'learner_batch_size': 1.0}, {'mid1': 522.4840003727921, 'mid2': 32.69619298196603, 'meta_mid': 2.0, 'meta_batch_size': 273.53475846390535, 'learning_rate': 1e-06, 'update_rate': 0.001, 'learner_batch_size': 1.0}, {'mid1': 229.80413889626504, 'mid2': 800.0, 'meta_mid': 2.0, 'meta_batch_size': 281.8425901351927, 'learning_rate': 1e-06, 'update_rate': 0.0009613214321452874, 'learner_batch_size': 1.0}, {'mid1': 800.0, 'mid2': 20.0, 'meta_mid': 2.0, 'meta_batch_size': 2607.8920509970167, 'learning_rate': 1e-06, 'update_rate': 0.001, 'learner_batch_size': 1.0}, {'mid1': 558.8069141981077, 'mid2': 353.13016914434206, 'meta_mid': 2.0, 'meta_batch_size': 2174.2184937497927, 'learning_rate': 1e-06, 'update_rate': 1e-06, 'learner_batch_size': 1.0}, {'mid1': 224.07332139670316, 'mid2': 787.7412733327005, 'meta_mid': 7.3117563307931634, 'meta_batch_size': 251.4910149616469, 'learning_rate': 0.00043503438345460015, 'update_rate': 0.0004116661485586515, 'learner_batch_size': 12.347316815649194}, {'mid1': 270.9144876863307, 'mid2': 800.0, 'meta_mid': 2.0, 'meta_batch_size': 416.2269828688012, 'learning_rate': 1e-06, 'update_rate': 0.001, 'learner_batch_size': 1.0}, {'mid1': 406.2276519378113, 'mid2': 83.57684332722607, 'meta_mid': 5.759580401491117, 'meta_batch_size': 121.80455604866182, 'learning_rate': 1e-06, 'update_rate': 0.001, 'learner_batch_size': 16.92073401221121}, {'mid1': 462.0512529295182, 'mid2': 299.29788486926185, 'meta_mid': 4.955938514683925, 'meta_batch_size': 3804.937946390226, 'learning_rate': 0.0008280447480870065, 'update_rate': 0.0007957890807140777, 'learner_batch_size': 18.48657500854588}, {'mid1': 21.91464335965469, 'mid2': 78.65708412865526, 'meta_mid': 8.190710513228856, 'meta_batch_size': 2265.819197986937, 'learning_rate': 0.001, 'update_rate': 0.001, 'learner_batch_size': 140.3643768579223}, {'mid1': 25.43554082826803, 'mid2': 20.0, 'meta_mid': 10.0, 'meta_batch_size': 2407.169821661266, 'learning_rate': 0.001, 'update_rate': 0.0004562709850617297, 'learner_batch_size': 265.31417230439007}, {'mid1': 336.3145253358187, 'mid2': 159.30143325515255, 'meta_mid': 7.650456387102698, 'meta_batch_size': 26.299709588484205, 'learning_rate': 0.001, 'update_rate': 0.001, 'learner_batch_size': 39.21799490671242}, {'mid1': 320.9673909970571, 'mid2': 224.23588670616337, 'meta_mid': 3.513146502994163, 'meta_batch_size': 138.73835348612025, 'learning_rate': 1e-06, 'update_rate': 0.001, 'learner_batch_size': 3.2054105488382802}, {'mid1': 458.7641686223673, 'mid2': 177.40572706358924, 'meta_mid': 6.4711692062958575, 'meta_batch_size': 33.16793954989986, 'learning_rate': 1e-06, 'update_rate': 1.8243996355945456e-05, 'learner_batch_size': 98.16290056155009}, {'mid1': 20.0, 'mid2': 20.0, 'meta_mid': 10.0, 'meta_batch_size': 2378.1114559185253, 'learning_rate': 1e-06, 'update_rate': 0.001, 'learner_batch_size': 135.6528723344812}, {'mid1': 637.1150193912752, 'mid2': 31.302786868176618, 'meta_mid': 2.0589894077621187, 'meta_batch_size': 2472.500492271171, 'learning_rate': 0.0004921408470839378, 'update_rate': 0.0009690179011138853, 'learner_batch_size': 49.496110288011224}, {'mid1': 626.4481927297612, 'mid2': 58.1836167620783, 'meta_mid': 2.73805092493739, 'meta_batch_size': 2495.921072644852, 'learning_rate': 0.0005560182960647795, 'update_rate': 0.00041475924737600743, 'learner_batch_size': 14.580637244337167}, {'mid1': 452.51097701049804, 'mid2': 70.17934143811453, 'meta_mid': 2.758381745342483, 'meta_batch_size': 2243.594415371063, 'learning_rate': 0.00022778691005281997, 'update_rate': 9.560965837095641e-05, 'learner_batch_size': 440.76016359873495}, {'mid1': 478.96861827290616, 'mid2': 279.974757360458, 'meta_mid': 2.184639269805717, 'meta_batch_size': 3795.322482628795, 'learning_rate': 0.0009950976193968959, 'update_rate': 0.00046763702782082173, 'learner_batch_size': 10.625104917853072}, {'mid1': 480.0968692410765, 'mid2': 71.89794374616037, 'meta_mid': 4.486534188453411, 'meta_batch_size': 2265.543233989895, 'learning_rate': 0.0001401802345770248, 'update_rate': 0.0005753111133657494, 'learner_batch_size': 472.8802163586532}, {'mid1': 393.45903525646804, 'mid2': 794.3732683053346, 'meta_mid': 8.320140760697548, 'meta_batch_size': 33.2121495709689, 'learning_rate': 0.0007064615858455003, 'update_rate': 0.0007018046334598122, 'learner_batch_size': 138.53625905663318}, {'mid1': 590.4778911528805, 'mid2': 166.74930924875002, 'meta_mid': 6.74245978902819, 'meta_batch_size': 2372.0283327978545, 'learning_rate': 0.0004058667503383527, 'update_rate': 3.286481312801645e-05, 'learner_batch_size': 64.59097470646402}, {'mid1': 606.9319560470144, 'mid2': 265.0620992347093, 'meta_mid': 5.86225365912361, 'meta_batch_size': 2516.533677260957, 'learning_rate': 0.00016827107779456295, 'update_rate': 0.00012318012849792467, 'learner_batch_size': 48.585806051097485}, {'mid1': 686.7592270877936, 'mid2': 343.9983097230881, 'meta_mid': 4.678529379259208, 'meta_batch_size': 2392.838006269233, 'learning_rate': 0.0006058371505365052, 'update_rate': 0.00022538336008969535, 'learner_batch_size': 120.02153539631671}, {'mid1': 728.2636050132575, 'mid2': 430.75689959471845, 'meta_mid': 3.486748217010577, 'meta_batch_size': 2509.272234799923, 'learning_rate': 0.00013630806553292582, 'update_rate': 0.00031171695538461985, 'learner_batch_size': 134.01942409904743}, {'mid1': 792.167671266373, 'mid2': 387.83959698453094, 'meta_mid': 7.361255298937952, 'meta_batch_size': 2487.4866696588665, 'learning_rate': 0.00014417638831205247, 'update_rate': 0.0001887547573280453, 'learner_batch_size': 154.01679225279534}, {'mid1': 236.232060759898, 'mid2': 522.7964350711595, 'meta_mid': 2.1811421516040603, 'meta_batch_size': 2139.4505769421776, 'learning_rate': 1e-06, 'update_rate': 1e-06, 'learner_batch_size': 1.0}, {'mid1': 160.0124541275303, 'mid2': 533.5325637499778, 'meta_mid': 2.3584378938674595, 'meta_batch_size': 2085.7678574168053, 'learning_rate': 0.0003227584642297037, 'update_rate': 0.0006230333985988452, 'learner_batch_size': 3.184438656961404}, {'mid1': 139.48856672291052, 'mid2': 538.0180458178243, 'meta_mid': 5.101467050211767, 'meta_batch_size': 1998.6139898547613, 'learning_rate': 0.0008239639555609424, 'update_rate': 0.0005535040340800653, 'learner_batch_size': 2.1090636274690953}, {'mid1': 707.8693556922764, 'mid2': 312.5128766797701, 'meta_mid': 7.052829440821477, 'meta_batch_size': 2504.114418816163, 'learning_rate': 0.00018614101869885309, 'update_rate': 0.0001086267919024533, 'learner_batch_size': 77.17824492585953}, {'mid1': 367.74271480295454, 'mid2': 47.14126866627368, 'meta_mid': 2.0, 'meta_batch_size': 2224.57869131853, 'learning_rate': 1e-06, 'update_rate': 1e-06, 'learner_batch_size': 373.12174940405885}, {'mid1': 151.9691032515273, 'mid2': 612.5601175349384, 'meta_mid': 3.1515973064084557, 'meta_batch_size': 1920.1019995303823, 'learning_rate': 0.000912119584424506, 'update_rate': 0.000617525540100828, 'learner_batch_size': 25.989431626475337}, {'mid1': 160.3554349765358, 'mid2': 654.6070458171727, 'meta_mid': 2.6508759864011457, 'meta_batch_size': 1893.6741492952192, 'learning_rate': 0.00034799939864616424, 'update_rate': 0.0004740054538829873, 'learner_batch_size': 57.54949798766072}, {'mid1': 20.0, 'mid2': 20.0, 'meta_mid': 10.0, 'meta_batch_size': 2305.186865476293, 'learning_rate': 0.001, 'update_rate': 0.001, 'learner_batch_size': 223.37482809815234}, {'mid1': 748.9665409972936, 'mid2': 319.1810232185963, 'meta_mid': 9.898922455690194, 'meta_batch_size': 2471.145427132549, 'learning_rate': 0.00029587743641778434, 'update_rate': 0.000778921385736871, 'learner_batch_size': 42.38922993465209}, {'mid1': 699.3754296994638, 'mid2': 320.8257838116344, 'meta_mid': 3.9231625346083927, 'meta_batch_size': 2455.4265191260833, 'learning_rate': 4.837278208314766e-05, 'update_rate': 0.0009675404860292752, 'learner_batch_size': 21.623686971944164}, {'mid1': 447.93703476749357, 'mid2': 37.4026734644013, 'meta_mid': 9.771179514848104, 'meta_batch_size': 290.578803012828, 'learning_rate': 0.000994072122989697, 'update_rate': 0.0007868811569025226, 'learner_batch_size': 164.94430994062924}, {'mid1': 612.2947670612328, 'mid2': 487.9578001747253, 'meta_mid': 5.061113340336935, 'meta_batch_size': 2186.7546769784417, 'learning_rate': 0.0006527587367481793, 'update_rate': 0.0007894112805055956, 'learner_batch_size': 13.873377067307217}, {'mid1': 696.0368132462594, 'mid2': 467.3575293785512, 'meta_mid': 8.554008327159274, 'meta_batch_size': 2072.058137407925, 'learning_rate': 0.0008948219113682508, 'update_rate': 0.0007968257003703934, 'learner_batch_size': 30.6554245287672}, {'mid1': 669.992610081884, 'mid2': 496.1730750334211, 'meta_mid': 6.229616814283338, 'meta_batch_size': 2131.2182007229435, 'learning_rate': 0.0005013661977783141, 'update_rate': 0.0002782508050102095, 'learner_batch_size': 62.277114593535316}, {'mid1': 132.6065533619758, 'mid2': 521.9675454813239, 'meta_mid': 8.634302127760769, 'meta_batch_size': 1978.2129775177384, 'learning_rate': 5.4611093579067736e-05, 'update_rate': 0.0008491916257550742, 'learner_batch_size': 158.74255244515345}, {'mid1': 44.12478839939054, 'mid2': 643.4298874863707, 'meta_mid': 8.678765423821272, 'meta_batch_size': 2258.1567624947843, 'learning_rate': 0.0002752397883918164, 'update_rate': 0.00048240740871063984, 'learner_batch_size': 39.11313882007648}, {'mid1': 721.4688434609404, 'mid2': 129.79325294883995, 'meta_mid': 2.3048538155318425, 'meta_batch_size': 2340.595093990185, 'learning_rate': 0.0009066082292022831, 'update_rate': 0.00027149678085681636, 'learner_batch_size': 110.91898591476067}, {'mid1': 765.2520717353846, 'mid2': 407.8182074740802, 'meta_mid': 3.3478947810114237, 'meta_batch_size': 2214.854505434802, 'learning_rate': 0.0005001255708016238, 'update_rate': 0.0007388106192127106, 'learner_batch_size': 114.10871318568127}, {'mid1': 124.6422007652252, 'mid2': 101.274965392935, 'meta_mid': 3.2549955549590672, 'meta_batch_size': 3000.0102351070586, 'learning_rate': 0.0007853220622274587, 'update_rate': 5.584776689083263e-05, 'learner_batch_size': 1.132899542529529}]}Traceback (most recent call last):
+  File "vanilla.py", line 170, in train_model
+    all_metadata = torch.cat(list(learner.metadata.values()), dim=0)
+RuntimeError: cuda runtime error (2) : out of memory at /pytorch/torch/lib/THC/generic/THCStorage.cu:58
+Traceback (most recent call last):
+  File "vanilla.py", line 170, in train_model
+    all_metadata = torch.cat(list(learner.metadata.values()), dim=0)
+RuntimeError: cuda runtime error (2) : out of memory at /pytorch/torch/lib/THC/generic/THCStorage.cu:58
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/jeffch/meta_unsupervised/meta_framework.py", line 125, in bounced
+    result = method(*args, **kw)
+  File "vanilla.py", line 175, in train_model
+    raise MemoryError
+MemoryError
+Traceback (most recent call last):
+  File "/home/jeffch/meta_unsupervised/meta_framework.py", line 125, in bounced
+    result = method(*args, **kw)
+  File "vanilla.py", line 154, in train_model
+    outputs = learner(images)
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py", line 357, in __call__
+    result = self.forward(*input, **kwargs)
+  File "vanilla.py", line 43, in forward
+    out = self.fc1(out)
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/nn/modules/module.py", line 357, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/nn/modules/linear.py", line 55, in forward
+    return F.linear(input, self.weight, self.bias)
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/nn/functional.py", line 835, in linear
+    return torch.addmm(bias, input, weight.t())
+RuntimeError: cuda runtime error (2) : out of memory at /pytorch/torch/lib/THC/THCTensorCopy.cu:204
+Traceback (most recent call last):
+  File "/home/jeffch/meta_unsupervised/meta_framework.py", line 125, in bounced
+    result = method(*args, **kw)
+  File "vanilla.py", line 155, in train_model
+    learner.update(update_rate, batch_num)
+  File "vanilla.py", line 67, in update
+    input_stack = input_layer.unsqueeze(1).expand(stack_dim)
+RuntimeError: The expanded size of the tensor (373) must match the existing size (320) at non-singleton dimension 0. at /pytorch/torch/lib/THC/generic/THCTensor.c:340
+Traceback (most recent call last):
+  File "/home/jeffch/meta_unsupervised/meta_framework.py", line 125, in bounced
+    result = method(*args, **kw)
+  File "vanilla.py", line 155, in train_model
+    learner.update(update_rate, batch_num)
+  File "vanilla.py", line 67, in update
+    input_stack = input_layer.unsqueeze(1).expand(stack_dim)
+RuntimeError: The expanded size of the tensor (57) must match the existing size (36) at non-singleton dimension 0. at /pytorch/torch/lib/THC/generic/THCTensor.c:340
+Traceback (most recent call last):
+  File "/home/jeffch/meta_unsupervised/meta_framework.py", line 125, in bounced
+    result = method(*args, **kw)
+  File "vanilla.py", line 155, in train_model
+    learner.update(update_rate, batch_num)
+  File "vanilla.py", line 67, in update
+    input_stack = input_layer.unsqueeze(1).expand(stack_dim)
+RuntimeError: The expanded size of the tensor (223) must match the existing size (13) at non-singleton dimension 0. at /pytorch/torch/lib/THC/generic/THCTensor.c:340
+Traceback (most recent call last):
+  File "/home/jeffch/meta_unsupervised/meta_framework.py", line 125, in bounced
+    result = method(*args, **kw)
+  File "vanilla.py", line 155, in train_model
+    learner.update(update_rate, batch_num)
+  File "vanilla.py", line 67, in update
+    input_stack = input_layer.unsqueeze(1).expand(stack_dim)
+RuntimeError: The expanded size of the tensor (164) must match the existing size (140) at non-singleton dimension 0. at /pytorch/torch/lib/THC/generic/THCTensor.c:340
+Traceback (most recent call last):
+  File "/home/jeffch/meta_unsupervised/meta_framework.py", line 125, in bounced
+    result = method(*args, **kw)
+  File "vanilla.py", line 155, in train_model
+    learner.update(update_rate, batch_num)
+  File "vanilla.py", line 67, in update
+    input_stack = input_layer.unsqueeze(1).expand(stack_dim)
+RuntimeError: The expanded size of the tensor (158) must match the existing size (118) at non-singleton dimension 0. at /pytorch/torch/lib/THC/generic/THCTensor.c:340
+Traceback (most recent call last):
+  File "/home/jeffch/meta_unsupervised/meta_framework.py", line 125, in bounced
+    result = method(*args, **kw)
+  File "vanilla.py", line 155, in train_model
+    learner.update(update_rate, batch_num)
+  File "vanilla.py", line 67, in update
+    input_stack = input_layer.unsqueeze(1).expand(stack_dim)
+RuntimeError: The expanded size of the tensor (39) must match the existing size (18) at non-singleton dimension 0. at /pytorch/torch/lib/THC/generic/THCTensor.c:340
+
