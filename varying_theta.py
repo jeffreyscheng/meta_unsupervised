@@ -36,19 +36,10 @@ for theta in np.nditer(x):
     # mid2: 252.21610495582954
     # learning_rate: 0.0007812704945456946
     # learner_batch_size: 216.94517685448233
-    control_acc = control_frame.train_model(775, 252, 0.000781, 216, theta)
+    control_acc = control_frame.train_model(246, 146, 0.00066695, 47, theta)
     theta_df.loc[theta_df['theta'] == theta, 'control'] = control_acc
     print("Finished:", theta, "-control-", control_acc)
 
 theta_df.to_csv('theta.csv')
 
-# fig = plt.figure()
-#
-# # plt.plot(theta_df['theta'], theta_df['vanilla'])
-# plt.plot(theta_df['theta'], theta_df['fully_diff'])
-# plt.plot(theta_df['theta'], theta_df['control'])
-# plt.legend(['fully_diff', 'control', 'y = 4x'], loc='upper left')
-# plt.xlabel('Proportion of Labeled Examples', fontsize=18)
-# plt.ylabel('Accuracy', fontsize=16)
-# plt.show()
-# fig.savefig('theta.jpg')
+
