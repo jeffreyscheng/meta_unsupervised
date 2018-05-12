@@ -10,7 +10,7 @@ MetaFramework.num_epochs = 1
 
 frames = [fully_diff_frame]
 
-x = np.arange(0, 1.01, 0.1)
+x = np.arange(0, 1.01, 0.01)
 
 theta_df = pd.DataFrame(x, columns=['theta'])
 # theta_df['vanilla'] = theta_df['theta']
