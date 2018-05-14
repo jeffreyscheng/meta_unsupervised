@@ -1,7 +1,23 @@
 import matplotlib.pyplot as plt
 import pandas as pd
+import numpy as np
+
+inc = 0.01
+width = 5
 
 theta_df = pd.read_csv('theta.csv')
+# theta_df['smooth_fully_diff'] = 0
+# theta_df['smooth_control'] = 0
+# for x in theta_df.index:
+#     if x > width:
+#         fully_diff_list = theta_df.loc[x - width:x, 'fully_diff']
+#         control_list = theta_df.loc[x - width:x, 'control']
+#         theta_df.loc[x, 'smooth_fully_diff'] = np.mean(fully_diff_list)
+#         theta_df.loc[x, 'smooth_control'] = np.mean(control_list)
+#     else:
+#         theta_df.loc[x, 'smooth_fully_diff'] = theta_df.loc[x, 'fully_diff']
+#         theta_df.loc[x, 'smooth_control'] = theta_df.loc[x, 'control']
+# print("Smoothed.")
 
 fig = plt.figure()
 

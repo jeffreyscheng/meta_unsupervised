@@ -1,5 +1,3 @@
-import matplotlib.pyplot as plt
-# from vanilla import *
 from fully_diff import *
 from control import *
 import pandas as pd
@@ -28,18 +26,26 @@ for theta in np.nditer(x):
     # learning_rate: 0.0006669522749695926
     # update_rate: 0.00020694005810751248
     # learner_batch_size: 47.28394913558323
-    fully_diff_acc = fully_diff_frame.train_model(246, 146, 6, 0.00066695, 47, 0.00020694, theta)
-    theta_df.loc[theta_df['theta'] == theta, 'fully_diff'] = fully_diff_acc
-    print("Finished:", theta, "-fully_diff-", fully_diff_acc)
+    def get_fully_diff():
+        acc = [fully_diff_frame.train_model(246, 146, 6, 0.00066695, 47, 0.00020694, theta) for _ in range(5)]
+        return max(acc)
+
+
     # optimized control hyperparams
     # mid1: 775.9687493498457
     # mid2: 252.21610495582954
     # learning_rate: 0.0007812704945456946
     # learner_batch_size: 216.94517685448233
-    control_acc = control_frame.train_model(246, 146, 0.00066695, 47, theta)
+    def get_control():
+        acc = [control_frame.train_model(246, 146, 0.00066695, 47, theta) for _ in range(5)]
+        return max(acc)
+
+
+    fully_diff_acc = get_fully_diff()
+    theta_df.loc[theta_df['theta'] == theta, 'fully_diff'] = fully_diff_acc
+    print("Finished:", theta, "-fully_diff-", fully_diff_acc)
+    control_acc = get_control()
     theta_df.loc[theta_df['theta'] == theta, 'control'] = control_acc
     print("Finished:", theta, "-control-", control_acc)
 
 theta_df.to_csv('theta.csv')
-
-
