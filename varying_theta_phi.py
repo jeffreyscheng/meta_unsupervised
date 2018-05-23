@@ -38,7 +38,7 @@ def run_theta_phi_pair(theta_val, phi_val):
     fully_diff_acc = get_fully_diff()
     control_acc = get_control()
     global acc_df
-    acc_df = acc_df.append([theta_val, phi_val, fully_diff_acc, control_acc])
+    acc_df = acc_df.append({'theta': theta_val, 'phi': phi_val, 'fully_diff': fully_diff_acc, 'control': control_acc})
     print("Finished:", theta_val, phi_val, "-fully_diff-", fully_diff_acc, "-control-", control_acc)
 
 
@@ -80,4 +80,5 @@ else:
         phi = pair[1]
         run_theta_phi_pair(theta, phi)
 
+print(acc_df)
 acc_df.to_csv('theta_phi_acc.csv')
