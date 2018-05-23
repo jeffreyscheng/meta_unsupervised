@@ -6,9 +6,9 @@ os.environ["CUDA_VISIBLE_DEVICES"] = "2"
 
 MetaFramework.num_epochs = 1
 # frames = [fully_diff_frame]
-x = np.arange(0, 1.01, 0.2)
+x = np.arange(0, 1.01, 0.1)
 acc_df = pd.DataFrame(columns=['theta', 'phi', 'fully_diff', 'control'])
-run_before = False
+run_before = os.path.isfile('theta_phi_acc.csv')
 
 
 def run_theta_phi_pair(theta_val, phi_val):
@@ -58,7 +58,7 @@ else:
         return (ser[idx] + ser[idx - 1]) / 2
 
 
-    for _ in range(10):
+    for _ in range(100):
         sort_by_theta = acc_df.sort_values(by=['theta', 'phi'])
         jumps1 = sort_by_theta['fully_diff'] - sort_by_theta['fully_diff'].shift()
         idx1 = jumps1.idxmax()
