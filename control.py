@@ -58,7 +58,7 @@ class Control(MetaFramework):
         super(Control, self).__init__(name, fixed_params, variable_params_range, variable_params_init)
 
     @bandaid
-    def train_model(self, mid1, mid2, learning_rate, learner_batch_size, theta=1):
+    def train_model(self, mid1, mid2, learning_rate, learner_batch_size, theta=1, phi=1):
         mid1 = math.floor(mid1)
         mid2 = math.floor(mid2)
         meta_input = self.fixed_params['meta_input']
@@ -99,12 +99,16 @@ class Control(MetaFramework):
         tick = time.time()
         meta_converged = False
         batch_num = 0
+
+        def stop_training(curr_time, batch):
+            return curr_time - tick > MetaFramework.time_out or batch > phi * train_loader.__len__()
+
         for epoch in range(1, MetaFramework.num_epochs + 1):
-            if time.time() - tick > MetaFramework.time_out:
+            if stop_training(time.time(), batch_num):
                 break
             for i, (images, labels) in enumerate(train_loader):
                 batch_num += 1
-                if time.time() - tick > MetaFramework.time_out:
+                if stop_training(time.time(), batch_num):
                     break
                 if meta_converged is False:
                     meta_converged = learner.check_convergence()
