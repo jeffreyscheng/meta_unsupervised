@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6c272def-4b24-4508-8f48-9ae398102747" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/varying_theta_phi.py" beforeDir="false" afterPath="$PROJECT_DIR$/varying_theta_phi.py" afterDir="false" />
-    </list>
+    <list default="true" id="6c272def-4b24-4508-8f48-9ae398102747" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -70,8 +67,8 @@
       <file leaf-file-name="varying_theta_phi.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/varying_theta_phi.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="39" column="77" selection-start-line="39" selection-start-column="77" selection-end-line="39" selection-end-column="77" />
+            <state relative-caret-position="161">
+              <caret line="39" column="10" selection-start-line="39" selection-start-column="4" selection-end-line="39" selection-end-column="10" />
               <folding>
                 <element signature="e#0#24#0" expanded="true" />
               </folding>
@@ -103,7 +100,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>batch_size</find>
       <find>0.7</find>
       <find>update_rate</find>
       <find>meta_epoch</find>
@@ -133,6 +129,7 @@
       <find>tick</find>
       <find>theta_df</find>
       <find>frames</find>
+      <find>acc_df</find>
     </findStrings>
     <replaceStrings>
       <replace>update_rate</replace>
@@ -600,8 +597,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/varying_theta_phi.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="39" column="77" selection-start-line="39" selection-start-column="77" selection-end-line="39" selection-end-column="77" />
+        <state relative-caret-position="161">
+          <caret line="39" column="10" selection-start-line="39" selection-start-column="4" selection-end-line="39" selection-end-column="10" />
           <folding>
             <element signature="e#0#24#0" expanded="true" />
           </folding>
