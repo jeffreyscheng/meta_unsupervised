@@ -6,7 +6,7 @@ os.environ["CUDA_VISIBLE_DEVICES"] = "2"
 
 MetaFramework.num_epochs = 1
 # frames = [fully_diff_frame]
-x = np.arange(0, 1.01, 0.1)
+x = np.arange(0, 1.01, 0.2)
 acc_df = pd.DataFrame(columns=['theta', 'phi', 'fully_diff', 'control'])
 run_before = False
 
@@ -77,5 +77,6 @@ else:
     for pair in theta_phi_list:
         theta = pair[0]
         phi = pair[1]
+        run_theta_phi_pair(theta, phi)
 
 acc_df.to_csv('theta_phi_acc.csv')
