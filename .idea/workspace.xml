@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6c272def-4b24-4508-8f48-9ae398102747" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/control.py" beforeDir="false" afterPath="$PROJECT_DIR$/control.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fully_diff.py" beforeDir="false" afterPath="$PROJECT_DIR$/fully_diff.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/theta.png" beforeDir="false" afterPath="$PROJECT_DIR$/theta.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/varying_theta.py" beforeDir="false" afterPath="$PROJECT_DIR$/varying_theta_phi.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/viz_theta.py" beforeDir="false" afterPath="$PROJECT_DIR$/viz_theta.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/varying_theta_phi.py" beforeDir="false" afterPath="$PROJECT_DIR$/varying_theta_phi.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -53,11 +49,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="fully_diff.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="fully_diff.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/fully_diff.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-527">
-              <caret line="133" column="25" lean-forward="true" selection-start-line="133" selection-start-column="25" selection-end-line="133" selection-end-column="25" />
+            <state relative-caret-position="51">
+              <caret line="88" lean-forward="true" selection-start-line="88" selection-end-line="88" />
             </state>
           </provider>
         </entry>
@@ -71,11 +67,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="varying_theta_phi.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="varying_theta_phi.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/varying_theta_phi.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="283">
-              <caret line="33" column="31" selection-start-line="33" selection-start-column="31" selection-end-line="33" selection-end-column="31" />
+            <state relative-caret-position="96">
+              <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
               <folding>
                 <element signature="e#0#24#0" expanded="true" />
               </folding>
@@ -86,7 +82,7 @@
       <file leaf-file-name="viz_theta.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/viz_theta.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
+            <state relative-caret-position="-119">
               <caret line="7" selection-start-line="7" selection-end-line="7" selection-end-column="41" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
@@ -180,8 +176,8 @@
         <option value="$PROJECT_DIR$/meta_framework.py" />
         <option value="$PROJECT_DIR$/varying_theta.py" />
         <option value="$PROJECT_DIR$/control.py" />
-        <option value="$PROJECT_DIR$/fully_diff.py" />
         <option value="$PROJECT_DIR$/viz_theta.py" />
+        <option value="$PROJECT_DIR$/fully_diff.py" />
         <option value="$PROJECT_DIR$/varying_theta_phi.py" />
       </list>
     </option>
@@ -407,7 +403,7 @@
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Python Console" order="9" weight="0.3298969" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.5322581" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.5322581" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.3297491" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18704453" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
@@ -578,16 +574,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/viz_theta.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" selection-start-line="7" selection-end-line="7" selection-end-column="41" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/control.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-476">
@@ -595,20 +581,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/varying_theta_phi.py">
+    <entry file="file://$PROJECT_DIR$/viz_theta.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="33" column="31" selection-start-line="33" selection-start-column="31" selection-end-line="33" selection-end-column="31" />
+        <state relative-caret-position="-119">
+          <caret line="7" selection-start-line="7" selection-end-line="7" selection-end-column="41" />
           <folding>
-            <element signature="e#0#24#0" expanded="true" />
+            <element signature="e#0#31#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/fully_diff.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-527">
-          <caret line="133" column="25" lean-forward="true" selection-start-line="133" selection-start-column="25" selection-end-line="133" selection-end-column="25" />
+        <state relative-caret-position="51">
+          <caret line="88" lean-forward="true" selection-start-line="88" selection-end-line="88" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/varying_theta_phi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
