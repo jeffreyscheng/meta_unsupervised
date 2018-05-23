@@ -37,7 +37,7 @@ def run_theta_phi_pair(theta_val, phi_val):
 
     fully_diff_acc = get_fully_diff()
     control_acc = get_control()
-    acc_df.loc[len(acc_df.index)] = [theta_val, phi_val, fully_diff_acc, control_acc]
+    acc_df = acc_df.append([theta_val, phi_val, fully_diff_acc, control_acc])
     print("Finished:", theta_val, phi_val, "-fully_diff-", fully_diff_acc, "-control-", control_acc)
 
 
@@ -57,7 +57,7 @@ else:
 
 
     for _ in range(10):
-        sort_by_theta = acc_df.sort_values(by=['theta, phi'])
+        sort_by_theta = acc_df.sort_values(by=['theta', 'phi'])
         jumps1 = sort_by_theta['fully_diff'] - sort_by_theta['fully_diff'].shift()
         idx1 = jumps1.idxmax()
         theta_phi_list.append([get_mid(sort_by_theta['theta'], idx1), get_mid(sort_by_theta['phi'], idx1)])
@@ -66,7 +66,7 @@ else:
         idx2 = jumps2.idxmax()
         theta_phi_list.append([get_mid(sort_by_theta['theta'], idx2), get_mid(sort_by_theta['phi'], idx2)])
 
-        sort_by_phi = acc_df.sort_values(by=['phi, theta'])
+        sort_by_phi = acc_df.sort_values(by=['phi', 'theta'])
         jumps3 = sort_by_phi['fully_diff'] - sort_by_phi['fully_diff'].shift()
         idx3 = jumps3.idxmax()
         theta_phi_list.append([get_mid(sort_by_phi['theta'], idx3), get_mid(sort_by_phi['phi'], idx3)])

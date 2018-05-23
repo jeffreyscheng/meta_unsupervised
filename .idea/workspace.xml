@@ -70,8 +70,8 @@
       <file leaf-file-name="varying_theta_phi.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/varying_theta_phi.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
+            <state relative-caret-position="289">
+              <caret line="39" column="77" selection-start-line="39" selection-start-column="77" selection-end-line="39" selection-end-column="77" />
               <folding>
                 <element signature="e#0#24#0" expanded="true" />
               </folding>
@@ -600,8 +600,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/varying_theta_phi.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
+        <state relative-caret-position="289">
+          <caret line="39" column="77" selection-start-line="39" selection-start-column="77" selection-end-line="39" selection-end-column="77" />
           <folding>
             <element signature="e#0#24#0" expanded="true" />
           </folding>
