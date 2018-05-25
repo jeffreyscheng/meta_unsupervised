@@ -58,7 +58,7 @@ else:
         return (ser[idx] + ser[idx - 1]) / 2
 
 
-    for _ in range(100):
+    for _ in range(200):
         sort_by_theta = acc_df.sort_values(by=['theta', 'phi'])
         jumps1 = sort_by_theta['fully_diff'] - sort_by_theta['fully_diff'].shift()
         idx1 = jumps1.idxmax()

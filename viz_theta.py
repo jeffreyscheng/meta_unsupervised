@@ -1,6 +1,7 @@
-import matplotlib.pyplot as plt
 import pandas as pd
 import numpy as np
+import matplotlib.pyplot as plt
+from mpl_toolkits.mplot3d import axes3d, Axes3D #<-- Note the capitalization
 
 inc = 0.001
 width = 10
@@ -27,24 +28,24 @@ if smoothed:
     ax = fig.add_subplot(111, projection='3d')
     x = acc_df['theta']
     y = acc_df['phi']
-    z_fd = acc_df['smooth_fully_diff']
-    z_c = acc_df['smooth_control']
+    z_fd = acc_df['fully_diff']
+    z_c = acc_df['control']
 
-    ax.scatter(x, y, z_fd)
-    ax.scatter(x, y, z_c)
+    ax.scatter(x, y, z_fd, color='red')
+    ax.scatter(x, y, z_c, c='blue')
 
-    ax.set_xlim([-0.5, 1.5])
-    ax.set_ylim([-0.5, 1.5])
-    ax.set_zlim([-1.5, 1.5])
+    ax.set_xlim([0, 1])
+    ax.set_ylim([0, 1])
+    ax.set_zlim([0, 1])
 
     plt.show()
 else:
     # plt.plot(acc_df['theta'], acc_df['vanilla'])
-    plt.plot(acc_df['theta'], acc_df['fully_diff'])
-    plt.plot(acc_df['theta'], acc_df['control'])
-plt.legend(['fully_diff', 'control', 'y = 4x'], loc='upper left')
-plt.xlabel('Proportion of Labeled Examples', fontsize=18)
-plt.xlabel('Proportion of Data Used', fontsize=18)
-plt.ylabel('Accuracy', fontsize=16)
+    plt.scatter(acc_df['theta'], acc_df['smooth_fully_diff'], c='red')
+    plt.scatter(acc_df['theta'], acc_df['smooth_control'], c='blue')
+# plt.legend(['fully_diff', 'control', 'y = 4x'], loc='upper left')
+# plt.xlabel('Proportion of Labeled Examples', fontsize=18)
+# plt.xlabel('Proportion of Data Used', fontsize=18)
+# plt.zlabel('Accuracy', fontsize=16)
 plt.show()
 fig.savefig('acc.png')
