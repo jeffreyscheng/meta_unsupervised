@@ -95,7 +95,7 @@ class HebbianFrame(MetaFramework):
         # print(learner_batch_size)
 
         # check if GPU is available
-        gpu_bool = i > 0
+        gpu_bool = torch.cuda.device_count() > 0
         if gpu_bool:
             learner.cuda()
 
