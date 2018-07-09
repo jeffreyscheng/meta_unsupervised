@@ -14,6 +14,7 @@
     <SUITE FILE_PATH="coverage/meta_unsupervised$single_single.coverage" NAME="single-single Coverage Results" MODIFIED="1522781710533" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/meta_unsupervised$extract_polynomial.coverage" NAME="extract_polynomial Coverage Results" MODIFIED="1525677111524" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/meta_unsupervised$fully_diff.coverage" NAME="fully_diff Coverage Results" MODIFIED="1527035807824" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/meta_unsupervised$run_experiments.coverage" NAME="run_experiments Coverage Results" MODIFIED="1531156991910" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/meta_unsupervised$varying_theta_phi.coverage" NAME="varying_theta_phi Coverage Results" MODIFIED="1527038445551" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/meta_unsupervised$lkjh.coverage" NAME="lkjh Coverage Results" MODIFIED="1531085710701" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/util" />
     <SUITE FILE_PATH="coverage/meta_unsupervised$separate.coverage" NAME="separate Coverage Results" MODIFIED="1523554704674" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -42,7 +43,7 @@
         </entry>
       </file>
       <file leaf-file-name="vary_phi.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/experiment-1-epochs/vary_phi.py">
+        <entry file="file://$PROJECT_DIR$/experiment_1_epochs/vary_phi.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="119">
               <caret line="7" column="39" lean-forward="true" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
@@ -56,11 +57,20 @@
       <file leaf-file-name="hebbian_frame.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/experiment_0_util/hebbian_frame.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="127">
-              <caret line="172" column="35" lean-forward="true" selection-start-line="172" selection-start-column="35" selection-end-line="172" selection-end-column="35" />
+            <state relative-caret-position="254">
+              <caret line="99" column="26" selection-start-line="99" selection-start-column="26" selection-end-line="99" selection-end-column="26" />
               <folding>
                 <element signature="e#0#33#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="run_experiments.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/run_experiments.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="40" selection-start-column="40" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -80,8 +90,8 @@
       <file leaf-file-name="control_frame.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/experiment_0_util/control_frame.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1261">
-              <caret line="151" column="19" lean-forward="true" selection-start-line="151" selection-start-column="19" selection-end-line="151" selection-end-column="19" />
+            <state relative-caret-position="118">
+              <caret line="78" selection-start-line="78" selection-end-line="80" selection-end-column="26" />
               <folding>
                 <element signature="e#0#33#0" expanded="true" />
               </folding>
@@ -122,8 +132,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>st</find>
-      <find>Cuda</find>
       <find>cuda</find>
       <find>GPU</find>
       <find>Meta(</find>
@@ -150,8 +158,10 @@
       <find>meta_converged</find>
       <find>optimize_num</find>
       <find>fully_diff</find>
-      <find>download</find>
       <find>downloading</find>
+      <find>download</find>
+      <find>gpu_bool</find>
+      <find>gpu_bo</find>
     </findStrings>
     <replaceStrings>
       <replace>update_rate</replace>
@@ -214,6 +224,7 @@
         <option value="$PROJECT_DIR$/experiment-1-epochs/vary_phi.py" />
         <option value="$PROJECT_DIR$/experiment_0_util/experiment.py" />
         <option value="$PROJECT_DIR$/experiment_0_util/control_frame.py" />
+        <option value="$PROJECT_DIR$/run_experiments.py" />
         <option value="$PROJECT_DIR$/experiment_0_util/hebbian_frame.py" />
       </list>
     </option>
@@ -249,12 +260,7 @@
             <path>
               <item name="meta_unsupervised" type="b2602c69:ProjectViewProjectNode" />
               <item name="meta_unsupervised" type="462c0819:PsiDirectoryNode" />
-              <item name="experiment-1-epochs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="meta_unsupervised" type="b2602c69:ProjectViewProjectNode" />
-              <item name="meta_unsupervised" type="462c0819:PsiDirectoryNode" />
-              <item name="experiment_0_util" type="462c0819:PsiDirectoryNode" />
+              <item name="experiment_1_epochs" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -294,7 +300,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.vary_phi (1)">
+  <component name="RunManager" selected="Python.run_experiments">
     <configuration name="control_frame" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="meta_unsupervised" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -333,7 +339,7 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="run_experiments" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="meta_unsupervised" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -346,7 +352,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/run_experiments.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -392,18 +398,18 @@
     </configuration>
     <list>
       <item itemvalue="Python.vary_phi" />
-      <item itemvalue="Python.test" />
       <item itemvalue="Python.control_frame" />
       <item itemvalue="Python.lkjh" />
       <item itemvalue="Python.vary_phi (1)" />
+      <item itemvalue="Python.run_experiments" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.run_experiments" />
         <item itemvalue="Python.vary_phi (1)" />
         <item itemvalue="Python.vary_phi" />
         <item itemvalue="Python.control_frame" />
         <item itemvalue="Python.lkjh" />
-        <item itemvalue="Python.test" />
       </list>
     </recent_temporary>
   </component>
@@ -438,7 +444,7 @@
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="File Transfer" weight="0.32897604" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Python Console" order="9" weight="0.3298969" />
+      <window_info anchor="bottom" id="Python Console" order="9" weight="0.32897604" />
       <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49959514" visible="true" weight="0.5315904" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.3297491" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19111112" />
@@ -494,7 +500,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/net_components.py" />
     <entry file="file://$PROJECT_DIR$/test.py" />
     <entry file="file://$PROJECT_DIR$/separate.py" />
     <entry file="file://$PROJECT_DIR$/single_single.py" />
@@ -599,12 +604,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/experiment-1-epochs/vary_phi.py">
+    <entry file="file://$PROJECT_DIR$/experiment_0_util/experiment.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="39" lean-forward="true" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
+        <state relative-caret-position="136">
+          <caret line="9" column="18" lean-forward="true" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
           <folding>
-            <element signature="e#0#42#0" expanded="true" />
+            <element signature="e#0#45#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -619,20 +624,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/experiment_0_util/experiment.py">
+    <entry file="file://$PROJECT_DIR$/experiment_1_epochs/vary_phi.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="9" column="18" lean-forward="true" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+        <state relative-caret-position="119">
+          <caret line="7" column="39" lean-forward="true" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
           <folding>
-            <element signature="e#0#45#0" expanded="true" />
+            <element signature="e#0#42#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/run_experiments.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="40" selection-start-column="40" selection-end-column="40" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/experiment_0_util/control_frame.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1261">
-          <caret line="151" column="19" lean-forward="true" selection-start-line="151" selection-start-column="19" selection-end-line="151" selection-end-column="19" />
+        <state relative-caret-position="118">
+          <caret line="78" selection-start-line="78" selection-end-line="80" selection-end-column="26" />
           <folding>
             <element signature="e#0#33#0" expanded="true" />
           </folding>
@@ -641,8 +653,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/experiment_0_util/hebbian_frame.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="172" column="35" lean-forward="true" selection-start-line="172" selection-start-column="35" selection-end-line="172" selection-end-column="35" />
+        <state relative-caret-position="254">
+          <caret line="99" column="26" selection-start-line="99" selection-start-column="26" selection-end-line="99" selection-end-column="26" />
           <folding>
             <element signature="e#0#33#0" expanded="true" />
           </folding>
