@@ -2,15 +2,6 @@ from bayes_opt import BayesianOptimization
 import pickle
 from torch.utils.data import Dataset, DataLoader
 from pathlib import Path
-import random
-import torch
-import torch.nn.functional as f
-import torchvision.datasets as dsets
-import torchvision.transforms as transforms
-from torch.autograd import Variable
-import time
-import gc
-import os
 import torch.nn as nn
 import time
 import numpy as np
@@ -52,9 +43,8 @@ class MetaNet(nn.Module):
 
 
 class MetaFramework:
-    num_epochs = 10
-    time_out = 10 * 60
-    optimize_num = 30
+    time_out = 20 * 60
+    num_data = 60000
 
     def __init__(self, name, fixed_params, variable_params_range, variable_params_init):
         self.name = name
@@ -140,4 +130,5 @@ def bandaid(method):
                 #     if torch.is_tensor(obj) or (hasattr(obj, 'data') and torch.is_tensor(obj.data)):
                 #         print(type(obj), obj.size())
                 return 0
+
     return bounced

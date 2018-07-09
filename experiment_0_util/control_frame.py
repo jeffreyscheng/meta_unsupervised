@@ -1,4 +1,11 @@
-from meta_framework import *
+from experiment_0_util.meta_framework import *
+import random
+import torch
+import torchvision.datasets as dsets
+import torchvision.transforms as transforms
+from torch.autograd import Variable
+import time
+import os
 
 os.environ["CUDA_VISIBLE_DEVICES"] = "1"
 
@@ -53,9 +60,9 @@ class ControlNet(nn.Module):
         return False
 
 
-class Control(MetaFramework):
+class ControlFrame(MetaFramework):
     def __init__(self, name, fixed_params, variable_params_range, variable_params_init):
-        super(Control, self).__init__(name, fixed_params, variable_params_range, variable_params_init)
+        super(ControlFrame, self).__init__(name, fixed_params, variable_params_range, variable_params_init)
 
     @bandaid
     def train_model(self, mid1, mid2, learning_rate, learner_batch_size, theta=1, phi=1):
@@ -97,37 +104,35 @@ class Control(MetaFramework):
         learner_optimizer = torch.optim.Adam(learner.parameters(), lr=learning_rate)
 
         tick = time.time()
-        meta_converged = False
+        # meta_converged = False
         batch_num = 0
 
-        def stop_training(curr_time, batch):
-            return curr_time - tick > MetaFramework.time_out or batch > phi * train_loader.__len__()
+        def stop_training(tock, batch):
+            return tock - tick > MetaFramework.time_out or batch * learner_batch_size / MetaFramework.num_data > phi
 
-        for epoch in range(1, MetaFramework.num_epochs + 1):
+        for i, (images, labels) in enumerate(train_loader):
+            batch_num += 1
             if stop_training(time.time(), batch_num):
+                # print("time out!")
                 break
-            for i, (images, labels) in enumerate(train_loader):
-                batch_num += 1
-                if stop_training(time.time(), batch_num):
-                    break
-                if meta_converged is False:
-                    meta_converged = learner.check_convergence()
-                images = Variable(images.view(-1, 28 * 28))
-                labels = Variable(labels)
+            # if meta_converged is False:
+            #     meta_converged = learner.check_convergence()
+            images = Variable(images.view(-1, 28 * 28))
+            labels = Variable(labels)
 
-                # move to CUDA
-                if gpu_bool:
-                    images = images.cuda()
-                    labels = labels.cuda()
+            # move to CUDA
+            if gpu_bool:
+                images = images.cuda()
+                labels = labels.cuda()
 
-                # Learner Forward + Backward + Optimize
-                learner_optimizer.zero_grad()  # zero the gradient buffer
-                outputs = learner(images)
-                # learner.update(update_rate, batch_num)
-                if random.uniform(0, 1) < theta:
-                    learner_loss = learner_criterion(outputs, labels)
-                    learner_loss.backward()
-                    learner_optimizer.step()
+            # Learner Forward + Backward + Optimize
+            learner_optimizer.zero_grad()  # zero the gradient buffer
+            outputs = learner(images)
+            # learner.update(update_rate, batch_num)
+            if random.uniform(0, 1) < theta:
+                learner_loss = learner_criterion(outputs, labels)
+                learner_loss.backward()
+                learner_optimizer.step()
 
         # Test the Model
         correct = 0
@@ -143,7 +148,7 @@ class Control(MetaFramework):
             total += labels.size(0)
             correct += (predicted == labels).sum()
             del images, outputs, predicted
-        # print('Accuracy of the network on the 10000 test images: %d %%' % (100 * correct / total))
+        print('Accuracy of the network on the 10000 test images: %d %%' % (100 * correct / total))
         del learner
         return correct / total
 
@@ -156,7 +161,4 @@ control_params_init = {'mid1': [400, 20], 'mid2': [200, 20],
                        'learning_rate': [0.0001, 0.00093],
                        'learner_batch_size': [50, 200]}
 
-control_frame = Control('control', control_fixed_params, control_params_range, control_params_init)
-# control_frame.train_model(400, 200, 10, 3000, 0.001, 0.0001, 10)
-# control_frame.optimize(MetaFramework.optimize_num)
-# control_frame.analyze()
+control_frame = ControlFrame('control', control_fixed_params, control_params_range, control_params_init)

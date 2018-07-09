@@ -10,6 +10,13 @@
             </list>
           </settings>
         </remote-mappings>
+        <remote-mappings server-id="python@sftp://jeffreycheng@localhost:22/home/jeffreycheng/anaconda3/bin/python3.6">
+          <settings>
+            <list>
+              <mapping local-root="C:" remote-root="/mnt/c" />
+            </list>
+          </settings>
+        </remote-mappings>
       </list>
     </list>
   </component>
