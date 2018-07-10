@@ -11,6 +11,7 @@ import os
 #
 fn = os.path.join(os.path.dirname(__file__), 'raw_phi_experiment.csv')
 phi_df = pd.read_csv(fn)
+print(len(phi_df.index))
 # fg = seaborn.FacetGrid(data=phi_df, hue='bool_hebbian', aspect=1.61)
 # fg.map(pyplot.scatter, 'phi', 'acc').add_legend()
 # plt.show()
