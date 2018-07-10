@@ -4,11 +4,13 @@ import matplotlib.pyplot as plt
 import math
 from mpl_toolkits.mplot3d import axes3d, Axes3D  # <-- Note the capitalization
 from matplotlib import pyplot
+import os
 
 # import seaborn
 # seaborn.set(style='ticks')
 #
-phi_df = pd.read_csv('raw_phi_experiment.csv')
+fn = os.path.join(os.path.dirname(__file__), 'raw_phi_experiment.csv')
+phi_df = pd.read_csv(fn)
 # fg = seaborn.FacetGrid(data=phi_df, hue='bool_hebbian', aspect=1.61)
 # fg.map(pyplot.scatter, 'phi', 'acc').add_legend()
 # plt.show()
