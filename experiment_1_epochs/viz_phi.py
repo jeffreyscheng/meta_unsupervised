@@ -17,10 +17,10 @@ phi_df = pd.read_csv(fn)
 
 agg = []
 for phi in set(phi_df['phi']):
-    if phi < 5.0:
-        hebbian_sub = phi_df.loc[(phi_df['phi'] == phi) & (phi_df['bool_hebbian']), ]
-        control_sub = phi_df.loc[(phi_df['phi'] == phi) & (~phi_df['bool_hebbian']), ]
-        agg.append({'phi': phi, 'hebbian_acc': np.min(hebbian_sub['acc']), 'control_acc': np.min(control_sub['acc'])})
+    # if phi < 5.0:
+    hebbian_sub = phi_df.loc[(phi_df['phi'] == phi) & (phi_df['bool_hebbian']), ]
+    control_sub = phi_df.loc[(phi_df['phi'] == phi) & (~phi_df['bool_hebbian']), ]
+    agg.append({'phi': phi, 'hebbian_acc': np.max(hebbian_sub['acc']), 'control_acc': np.max(control_sub['acc'])})
 
 print(agg)
 agg_df = pd.DataFrame(agg)
