@@ -49,7 +49,7 @@
       <file leaf-file-name="vary_phi.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/experiment_1_epochs/vary_phi.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
+            <state relative-caret-position="26">
               <caret line="5" selection-start-line="5" selection-end-line="5" selection-end-column="40" />
               <folding>
                 <element signature="e#0#42#0" expanded="true" />
@@ -72,13 +72,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="experiment.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/experiment_0_util/experiment.py">
+      <file leaf-file-name="run_experiments.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/run_experiments.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="17" column="48" selection-start-line="17" selection-start-column="48" selection-end-line="17" selection-end-column="48" />
+            <state relative-caret-position="17">
+              <caret line="1" column="42" selection-start-line="1" selection-start-column="42" selection-end-line="1" selection-end-column="42" />
               <folding>
-                <element signature="e#0#45#0" expanded="true" />
+                <element signature="e#0#40#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -110,7 +110,7 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file leaf-file-name="vary_theta.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="vary_theta.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/experiment_2_labels/vary_theta.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="85">
@@ -237,7 +237,6 @@
         <option value="$PROJECT_DIR$/experiment_0_util/meta_framework.py" />
         <option value="$PROJECT_DIR$/experiment-1-epochs/vary_phi.py" />
         <option value="$PROJECT_DIR$/experiment_0_util/control_frame.py" />
-        <option value="$PROJECT_DIR$/run_experiments.py" />
         <option value="$PROJECT_DIR$/experiment_0_util/hebbian_frame.py" />
         <option value="$PROJECT_DIR$/adf.py" />
         <option value="$PROJECT_DIR$/experiment_1_epochs/check.py" />
@@ -246,6 +245,7 @@
         <option value="$PROJECT_DIR$/experiment_1_epochs/viz_phi.py" />
         <option value="$PROJECT_DIR$/experiment_1_epochs/vary_phi.py" />
         <option value="$PROJECT_DIR$/experiment_2_labels/vary_theta.py" />
+        <option value="$PROJECT_DIR$/run_experiments.py" />
       </list>
     </option>
   </component>
@@ -382,7 +382,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/run_experiments.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\jeffr\home\dev\research\meta_unsupervised\run_experiment_1.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -516,6 +516,16 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/run_experiments.py</url>
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="1" />
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/separate.py" />
     <entry file="file://$PROJECT_DIR$/test.py" />
@@ -589,13 +599,6 @@
     <entry file="file://$PROJECT_DIR$/experiment_1_epochs/raw_phi_experiment.csv">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/run_experiments.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/adf.py" />
     <entry file="file://$PROJECT_DIR$/experiment_1_epochs/check.py" />
     <entry file="file://$PROJECT_DIR$/experiment_0_util/experiment.py">
@@ -660,7 +663,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/experiment_1_epochs/vary_phi.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
+        <state relative-caret-position="26">
           <caret line="5" selection-start-line="5" selection-end-line="5" selection-end-column="40" />
           <folding>
             <element signature="e#0#42#0" expanded="true" />
@@ -674,6 +677,16 @@
           <caret line="5" column="39" selection-start-line="5" selection-start-column="39" selection-end-line="5" selection-end-column="39" />
           <folding>
             <element signature="e#0#42#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/run_experiments.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="42" selection-start-line="1" selection-start-column="42" selection-end-line="1" selection-end-column="42" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
           </folding>
         </state>
       </provider>
