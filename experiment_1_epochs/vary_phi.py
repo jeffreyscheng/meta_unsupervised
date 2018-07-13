@@ -3,6 +3,8 @@ import numpy as np
 import pandas as pd
 import os
 
+os.environ["CUDA_VISIBLE_DEVICES"] = "2"
+
 fn = os.path.join(os.path.dirname(__file__), 'raw_phi_experiment.csv')
 
 acc_dict = []
