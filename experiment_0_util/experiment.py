@@ -3,7 +3,7 @@ from experiment_0_util.hebbian_frame import *
 
 os.environ["CUDA_VISIBLE_DEVICES"] = "2"
 
-n = 20  # iterations per experimental pair
+n = 100  # iterations per experimental pair
 
 
 def run_theta_phi_pair(theta_val, phi_val):
