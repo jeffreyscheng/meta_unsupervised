@@ -190,6 +190,15 @@ hebbian_params_init = {'mid1': [400, 20], 'mid2': [200, 20],
                        'learner_batch_size': [50, 200]}
 
 hebbian_frame = HebbianFrame('hebbian', hebbian_fixed_params, hebbian_params_range, hebbian_params_init)
-# hebbian_frame.train_model(246, 146, 6, 0.00066695, 47, 0.00020694, phi=0.001)
-# hebbian_frame.optimize(MetaFramework.optimize_num)
-# hebbian_frame.analyze()
+
+
+# stuff to run always here such as class/def
+def main():
+    hebbian_frame.train_model(246, 146, 6, 0.00066695, 47, 0.00020694, phi=0.001)
+    hebbian_frame.optimize(MetaFramework.optimize_num)
+    hebbian_frame.analyze()
+
+
+if __name__ == "__main__":
+    # stuff only to run when not called via 'import' here
+    main()
