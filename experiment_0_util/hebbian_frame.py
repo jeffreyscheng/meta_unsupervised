@@ -195,8 +195,8 @@ hebbian_frame = HebbianFrame('hebbian', hebbian_fixed_params, hebbian_params_ran
 # stuff to run always here such as class/def
 def main():
     hebbian_frame.train_model(246, 146, 6, 0.00066695, 47, 0.00020694, phi=0.001)
-    hebbian_frame.optimize(MetaFramework.optimize_num)
-    hebbian_frame.analyze()
+    # hebbian_frame.optimize(MetaFramework.optimize_num)
+    # hebbian_frame.analyze()
 
 
 if __name__ == "__main__":

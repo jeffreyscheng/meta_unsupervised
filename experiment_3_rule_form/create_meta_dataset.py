@@ -2,6 +2,7 @@ from experiment_0_util.hebbian_frame import *
 import os
 
 here = os.path.dirname(os.path.abspath(__file__))
+metalearner_directory = here + '/metalearners'
 os.environ["CUDA_VISIBLE_DEVICES"] = "1"
 
 
@@ -88,15 +89,14 @@ class WritableHebbianFrame(MetaFramework):
                 del images, labels, outputs, learner_loss
 
         # gets number of files in directory
-        metalearner_directory = here + '/metalearners'
         idx = len([name for name in os.listdir(metalearner_directory)
                    if os.path.isfile(os.path.join(metalearner_directory, name))])
 
-        torch.save(learner.state_dict(), metalearner_directory + '/' + str(idx))
+        torch.save(learner, metalearner_directory + '/' + str(idx) + '.model')
         del learner
 
 
-writable_hebbian_frame = WritableHebbianFrame('hebbian', hebbian_fixed_params, hebbian_params_range,
-                                              hebbian_params_init)
-for i in range(100):
-    writable_hebbian_frame.train_model(183, 43, 10, 0.001, 50, 0.001, 1, 15)
+# writable_hebbian_frame = WritableHebbianFrame('hebbian', hebbian_fixed_params, hebbian_params_range,
+#                                               hebbian_params_init)
+# for i in range(100):
+#     writable_hebbian_frame.train_model(183, 43, 10, 0.001, 50, 0.001, 1, 15)
