@@ -96,7 +96,7 @@ class WritableHebbianFrame(MetaFramework):
         del learner
 
 
-# writable_hebbian_frame = WritableHebbianFrame('hebbian', hebbian_fixed_params, hebbian_params_range,
-#                                               hebbian_params_init)
-# for i in range(100):
-#     writable_hebbian_frame.train_model(183, 43, 10, 0.001, 50, 0.001, 1, 15)
+writable_hebbian_frame = WritableHebbianFrame('hebbian', hebbian_fixed_params, hebbian_params_range,
+                                              hebbian_params_init)
+for i in range(100):
+    writable_hebbian_frame.train_model(183, 43, 10, 0.001, 50, 0.001, 1, 15)
