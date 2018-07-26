@@ -22,6 +22,9 @@ for phi in np.arange(5, 20, 1):
     acc_dict += run_theta_phi_pair(1, phi)
 
 acc_df = pd.DataFrame(acc_dict)
-prev_acc_df = pd.read_csv(fn)
-acc_df = pd.concat([acc_df, prev_acc_df])
+try:
+    prev_acc_df = pd.read_csv(fn)
+    acc_df = pd.concat([acc_df, prev_acc_df])
+except FileNotFoundError:
+    pass
 acc_df.to_csv(fn)
