@@ -204,7 +204,7 @@ class WritableHebbianFrame(MetaFramework):
                    if os.path.isfile(os.path.join(metalearner_directory, name))])
 
         torch.save(learner, metalearner_directory + '/' + str(idx) + '.model')
-        metadata_df.to_csv('here' + os.sep + 'metadata.csv')
+        metadata_df.to_csv(here + os.sep + 'metadata.csv')
         del learner
 
 
