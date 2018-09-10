@@ -172,11 +172,11 @@ class WritableHebbianFrame(MetaFramework):
                 # pushes gradients into the metalearner stack
                 for layer_name in learner.impulse:
                     print(layer_name)
-                    print(learner.impulse[layer_name].size())
+                    # print(learner.impulse[layer_name].size())
                     meta_stack_size = list(learner.impulse[layer_name].size())
                     meta_stack_size[1] = 1
                     layer_grad = grad_of_param[layer_name].unsqueeze(0).unsqueeze(1).expand(meta_stack_size)
-                    print(layer_grad.size())
+                    # print(layer_grad.size())
                     learner.impulse[layer_name] = torch.cat((learner.impulse[layer_name], layer_grad), dim=1)
                     print(learner.impulse[layer_name].size())
 
@@ -190,7 +190,7 @@ class WritableHebbianFrame(MetaFramework):
 
                     samples = [label_tuples(learner.impulse[layer_name][batch[x], :, j[x], i[x]]) for x in range(1000)]
                     metadata_df = pd.concat([metadata_df, pd.DataFrame(samples)])
-                    print(metadata_df)
+                    # print(metadata_df)
 
                 learner_optimizer.step()
                 print(time.time() - tick)
