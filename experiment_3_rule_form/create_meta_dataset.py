@@ -172,28 +172,28 @@ class WritableHebbianFrame(MetaFramework):
                     grad_of_param[name] = parameter.grad
 
                 # pushes gradients into the metalearner stack
-                for layer_name in learner.impulse:
-                    print(layer_name)
-                    # print(learner.impulse[layer_name].size())
-                    meta_stack_size = list(learner.impulse[layer_name].size())
-                    meta_stack_size[1] = 1
-                    layer_grad = grad_of_param[layer_name].unsqueeze(0).unsqueeze(1).expand(meta_stack_size)
-                    # print(layer_grad.size())
-                    learner.impulse[layer_name] = torch.cat((learner.impulse[layer_name], layer_grad), dim=1)
-                    print(learner.impulse[layer_name].size())
-
-                    # samples for metadata_df
-                    batch = [random.randint(0, meta_stack_size[0] - 1) for _ in range(1000)]
-                    i = [random.randint(0, meta_stack_size[3] - 1) for _ in range(1000)]
-                    j = [random.randint(0, meta_stack_size[2] - 1) for _ in range(1000)]
-
-                    def label_tuples(t):
-                        return {'v_i': t[0].data, 'w_ij': t[1].data, 'v_j': t[2].data, 'grad': t[3].data}
-
-                    samples = [label_tuples(learner.impulse[layer_name][batch[x], :, j[x], i[x]]) for x in range(1000)]
-                    metadata_df = pd.concat([metadata_df, pd.DataFrame(samples)])
-                    # print(metadata_df)
-                    del meta_stack_size, layer_grad, samples, batch
+                # for layer_name in learner.impulse:
+                #     print(layer_name)
+                #     # print(learner.impulse[layer_name].size())
+                #     meta_stack_size = list(learner.impulse[layer_name].size())
+                #     meta_stack_size[1] = 1
+                #     layer_grad = grad_of_param[layer_name].unsqueeze(0).unsqueeze(1).expand(meta_stack_size)
+                #     # print(layer_grad.size())
+                #     learner.impulse[layer_name] = torch.cat((learner.impulse[layer_name], layer_grad), dim=1)
+                #     print(learner.impulse[layer_name].size())
+                #
+                #     # samples for metadata_df
+                #     batch = [random.randint(0, meta_stack_size[0] - 1) for _ in range(1000)]
+                #     i = [random.randint(0, meta_stack_size[3] - 1) for _ in range(1000)]
+                #     j = [random.randint(0, meta_stack_size[2] - 1) for _ in range(1000)]
+                #
+                #     def label_tuples(t):
+                #         return {'v_i': t[0].data, 'w_ij': t[1].data, 'v_j': t[2].data, 'grad': t[3].data}
+                #
+                #     samples = [label_tuples(learner.impulse[layer_name][batch[x], :, j[x], i[x]]) for x in range(1000)]
+                #     metadata_df = pd.concat([metadata_df, pd.DataFrame(samples)])
+                #     # print(metadata_df)
+                #     del meta_stack_size, layer_grad, samples, batch
 
                 learner_optimizer.step()
                 print(time.time() - tick)
