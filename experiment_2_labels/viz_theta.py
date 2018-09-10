@@ -5,14 +5,55 @@ import math
 from mpl_toolkits.mplot3d import axes3d, Axes3D  # <-- Note the capitalization
 from matplotlib import pyplot
 import os
-
-
+#
 fn = os.path.join(os.path.dirname(__file__), 'raw_theta_experiment.csv')
 theta_df = pd.read_csv(fn)
 print(len(theta_df.index))
-# fg = seaborn.FacetGrid(data=theta_df, hue='bool_hebbian', aspect=1.61)
-# fg.map(pyplot.scatter, 'theta', 'acc').add_legend()
-# plt.show()
+
+results_path = os.path.join(os.sep.join(fn.split(os.sep)[:-2]), 'experiment_results')
+print(results_path)
+
+agg = []
+for theta in set(theta_df['theta']):
+    # if theta < 5.0:
+    hebbian_sub = theta_df.loc[(theta_df['theta'] == theta) & (theta_df['bool_hebbian']), ]
+    control_sub = theta_df.loc[(theta_df['theta'] == theta) & (~theta_df['bool_hebbian']), ]
+    agg.append({'theta': theta, 'hebbian_acc': np.max(hebbian_sub['acc']), 'control_acc': np.max(control_sub['acc'])})
+
+print(agg)
+agg_df = pd.DataFrame(agg)
+agg_df = agg_df.sort_values(by=['theta'], ascending=True)
+
+plt.plot(agg_df['theta'], agg_df['hebbian_acc'])
+plt.plot(agg_df['theta'], agg_df['control_acc'])
+# plt.legend(['y = x', 'y = 2x', 'y = 3x', 'y = 4x'], loc='upper left')
+
+plt.xlabel('Number of Epochs')
+plt.ylabel('Maximum Accuracy')
+
+plt.savefig(os.path.join(results_path, 'experiment_2_max.png'))
+plt.clf()
+
+agg = []
+for theta in set(theta_df['theta']):
+    # if theta < 5.0:
+    hebbian_sub = theta_df.loc[(theta_df['theta'] == theta) & (theta_df['bool_hebbian']), ]
+    control_sub = theta_df.loc[(theta_df['theta'] == theta) & (~theta_df['bool_hebbian']), ]
+    agg.append({'theta': theta, 'hebbian_acc': np.median(hebbian_sub['acc']), 'control_acc': np.median(control_sub['acc'])})
+
+print(agg)
+agg_df = pd.DataFrame(agg)
+agg_df = agg_df.sort_values(by=['theta'], ascending=True)
+
+plt.plot(agg_df['theta'], agg_df['hebbian_acc'])
+plt.plot(agg_df['theta'], agg_df['control_acc'])
+# plt.legend(['y = x', 'y = 2x', 'y = 3x', 'y = 4x'], loc='upper left')
+
+plt.xlabel('Number of Epochs')
+plt.ylabel('Median Accuracy')
+
+plt.savefig(os.path.join(results_path, 'experiment_2_median.png'))
+plt.clf()
 
 agg = []
 for theta in set(theta_df['theta']):
@@ -29,83 +70,8 @@ plt.plot(agg_df['theta'], agg_df['hebbian_acc'])
 plt.plot(agg_df['theta'], agg_df['control_acc'])
 # plt.legend(['y = x', 'y = 2x', 'y = 3x', 'y = 4x'], loc='upper left')
 
-plt.show()
-#
-#
-# smoothed = True
-#
-# if not smoothed:
-#     ax = fig.add_subplot(111, projection='3d')
-#     x = acc_df['theta']
-#     y = acc_df['theta']
-#     z_fd = acc_df['fully_diff']
-#     z_c = acc_df['control']
-#
-#     ax.scatter(x, y, z_fd, color='blue')
-#     ax.scatter(x, y, z_c, c='red')
-#
-#     ax.plot(x, z_fd, 'r+', zdir='y', zs=1)
-#     ax.plot(y, z_fd, 'g+', zdir='x', zs=0)
-#     # ax.plot(x, y, 'k+', zdir='z', zs=-0)
-#
-#     ax.set_xlim([0, 1])
-#     ax.set_ylim([0, 1])
-#     ax.set_zlim([0, 1])
-#
-#     ax.set_xlabel('theta', fontsize=20)
-#     ax.set_ylabel('theta', fontsize=20)
-#     ax.set_zlabel('accuracy', fontsize=20)
-#
-#     plt.show()
-# else:
-#     ax = fig.add_subplot(111, projection='3d')
-#     x = smooth_df['theta']
-#     y = smooth_df['theta']
-#     z_fd = smooth_df['fully_diff']
-#     z_c = smooth_df['control']
-#
-#     ax.scatter(x, y, z_fd, color='blue')
-#     ax.scatter(x, y, z_c, c='red')
-#
-#     ax.plot(x, z_fd, 'r+', zdir='y', zs=1)
-#     ax.plot(y, z_fd, 'g+', zdir='x', zs=0)
-#     # ax.plot(x, y, 'k+', zdir='z', zs=-0)
-#
-#     ax.set_xlim([0, 1])
-#     ax.set_ylim([0, 1])
-#     ax.set_zlim([0, 1])
-#
-#     ax.set_xlabel('theta', fontsize=20)
-#     ax.set_ylabel('theta', fontsize=20)
-#     ax.set_zlabel('accuracy', fontsize=20)
-#
-#     plt.show()
-# # plt.legend(['fully_diff', 'control', 'y = 4x'], loc='upper left')
-# # plt.xlabel('Proportion of Labeled Examples', fontsize=18)
-# # plt.xlabel('Proportion of Data Used', fontsize=18)
-# # plt.zlabel('Accuracy', fontsize=16)
-# plt.show()
-# fig.savefig('acc-3D.png')
-# smooth_df.to_csv('smooth.csv')
-#
-# theta_df = pd.DataFrame(columns=['theta', 'fully_diff', 'control'])
-# theta_df = pd.DataFrame(columns=['theta', 'fully_diff', 'control'])
-# for theta in np.arange(0, 1.01, 0.1):
-#     theta_df = theta_df.append({'theta': theta,
-#                                 'fully_diff': smooth_df[abs(smooth_df['theta'] - theta) < inc]['fully_diff'].mean(),
-#                                 'control': smooth_df[abs(smooth_df['theta'] - theta) < inc]['control'].mean()}, ignore_index=True)
-# for theta in np.arange(0, 1.01, 0.1):
-#     theta_df = theta_df.append({'theta': theta,
-#                             'fully_diff': smooth_df[abs(smooth_df['theta'] - theta) < inc]['fully_diff'].mean(),
-#                             'control': smooth_df[abs(smooth_df['theta'] - theta) < inc]['control'].mean()}, ignore_index=True)
-#
-# fig = plt.figure()
-# plt.scatter(theta_df['theta'], theta_df['fully_diff'], color='blue')
-# plt.scatter(theta_df['theta'], theta_df['control'], color='red')
-# plt.show()
-# fig.savefig('acc-theta.png')
-# fig = plt.figure()
-# plt.scatter(theta_df['theta'], theta_df['fully_diff'], color='blue')
-# plt.scatter(theta_df['theta'], theta_df['control'], color='red')
-# plt.show()
-# fig.savefig('acc-theta.png')
+plt.xlabel('Number of Epochs')
+plt.ylabel('Minimum Accuracy')
+
+plt.savefig(os.path.join(results_path, 'experiment_2_min.png'))
+
