@@ -106,7 +106,7 @@ class WritableHebbianFrame(MetaFramework):
         learner = WritableHebbianNet(input_size, mid1, mid2, num_classes, meta_input, meta_mid, meta_output,
                                      learner_batch_size, update_rate)
         # print(learner_batch_size)
-        if os.path.isfile():
+        if os.path.isfile(metadata_path):
             metadata_df = pd.read_csv(metadata_path)
         else:
             metadata_df = pd.DataFrame(columns=['v_i', 'w_ij', 'v_j', 'grad'])
