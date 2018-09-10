@@ -90,6 +90,8 @@ class WritableHebbianNet(nn.Module):
 
 
 class WritableHebbianFrame(MetaFramework):
+    num_samp = 100
+
     def __init__(self, name, fixed_params, variable_params_range, variable_params_init):
         super(WritableHebbianFrame, self).__init__(name, fixed_params, variable_params_range, variable_params_init)
 
@@ -188,17 +190,19 @@ class WritableHebbianFrame(MetaFramework):
                     print(learner.impulse[layer_name].size())
 
                     # samples for metadata_df
-                    batch = [random.randint(0, meta_stack_size[0] - 1) for _ in range(1000)]
-                    i = [random.randint(0, meta_stack_size[3] - 1) for _ in range(1000)]
-                    j = [random.randint(0, meta_stack_size[2] - 1) for _ in range(1000)]
+                    batch = [random.randint(0, meta_stack_size[0] - 1) for _ in range(WritableHebbianFrame.num_samp)]
+                    i = [random.randint(0, meta_stack_size[3] - 1) for _ in range(WritableHebbianFrame.num_samp)]
+                    j = [random.randint(0, meta_stack_size[2] - 1) for _ in range(WritableHebbianFrame.num_samp)]
 
                     def label_tuples(t):
                         return {'v_i': t[0].data, 'w_ij': t[1].data, 'v_j': t[2].data, 'grad': t[3].data}
 
-                    samples = [label_tuples(learner.impulse[layer_name][batch[x], :, j[x], i[x]]) for x in range(1000)]
+                    samples = [label_tuples(learner.impulse[layer_name][batch[x], :, j[x], i[x]])
+                               for x in range(WritableHebbianFrame.num_samp)]
                     metadata_df = pd.concat([metadata_df, pd.DataFrame(samples)])
                     # print(metadata_df)
                     del meta_stack_size, layer_grad, samples, batch, i, j
+                    gc.collect()
 
                 learner_optimizer.step()
                 print(time.time() - tick)
