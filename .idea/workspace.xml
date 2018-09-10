@@ -54,8 +54,8 @@
       <file leaf-file-name="create_meta_dataset.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/experiment_3_rule_form/create_meta_dataset.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="205" lean-forward="true" selection-start-line="205" selection-end-line="205" />
+            <state relative-caret-position="-306">
+              <caret line="24" column="29" lean-forward="true" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
               <folding>
                 <element signature="e#0#45#0" expanded="true" />
               </folding>
@@ -136,7 +136,7 @@
       <find>download</find>
       <find>gpu_bool</find>
       <find>gpu_bo</find>
-      <find>os.environ[&quot;CUDA_VISIBLE_DEVICES&quot;] = &quot;2&quot;</find>
+      <find />
       <find>phi</find>
       <find>self.impulse</find>
       <find>metadata</find>
@@ -703,8 +703,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/experiment_3_rule_form/create_meta_dataset.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="205" lean-forward="true" selection-start-line="205" selection-end-line="205" />
+        <state relative-caret-position="-306">
+          <caret line="24" column="29" lean-forward="true" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
           <folding>
             <element signature="e#0#45#0" expanded="true" />
           </folding>

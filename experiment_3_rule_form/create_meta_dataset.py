@@ -206,6 +206,7 @@ class WritableHebbianFrame(MetaFramework):
 
                 learner_optimizer.step()
                 print(time.time() - tick)
+                grad_of_param.clear()
                 del images, labels, outputs, learner_loss, grad_of_param
                 gc.collect()
 
