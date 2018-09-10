@@ -47,6 +47,9 @@ class WritableHebbianNet(nn.Module):
         if self.impulse is not None:
             if len(self.impulse) > 4:
                 raise ValueError("long impulse!")
+        for key in self.impulse:
+            del self.impulse[key]
+        del self.impulse
         self.impulse = {}
         out = x
         for layer_num in range(0, 3):
