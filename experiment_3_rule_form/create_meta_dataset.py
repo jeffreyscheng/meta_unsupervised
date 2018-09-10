@@ -11,7 +11,7 @@ import pandas as pd
 
 here = os.path.dirname(os.path.abspath(__file__))
 metalearner_directory = here + '/metalearners'
-os.environ["CUDA_VISIBLE_DEVICES"] = "1"
+os.environ["CUDA_VISIBLE_DEVICES"] = "0"
 
 
 # Template for Single Structure
@@ -191,10 +191,11 @@ class WritableHebbianFrame(MetaFramework):
                     samples = [label_tuples(learner.impulse[layer_name][batch[x], :, j[x], i[x]]) for x in range(1000)]
                     metadata_df = pd.concat([metadata_df, pd.DataFrame(samples)])
                     # print(metadata_df)
+                    del meta_stack_size, layer_grad, samples, batch
 
                 learner_optimizer.step()
                 print(time.time() - tick)
-                del images, labels, outputs, learner_loss
+                del images, labels, outputs, learner_loss, grad_of_param
 
         # gets number of files in directory
         idx = len([name for name in os.listdir(metalearner_directory)
