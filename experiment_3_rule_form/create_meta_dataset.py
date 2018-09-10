@@ -8,9 +8,11 @@ from torch.autograd import Variable
 import time
 import os
 import pandas as pd
+import gc
 
 here = os.path.dirname(os.path.abspath(__file__))
 metalearner_directory = here + '/metalearners'
+metadata_path = here + os.sep + 'metadata.csv'
 os.environ["CUDA_VISIBLE_DEVICES"] = "0"
 
 
@@ -104,7 +106,10 @@ class WritableHebbianFrame(MetaFramework):
         learner = WritableHebbianNet(input_size, mid1, mid2, num_classes, meta_input, meta_mid, meta_output,
                                      learner_batch_size, update_rate)
         # print(learner_batch_size)
-        metadata_df = pd.DataFrame(columns=['v_i', 'w_ij', 'v_j', 'grad'])
+        if os.path.isfile():
+            metadata_df = pd.read_csv(metadata_path)
+        else:
+            metadata_df = pd.DataFrame(columns=['v_i', 'w_ij', 'v_j', 'grad'])
 
         # check if GPU is available
         gpu_bool = torch.cuda.device_count() > 0
@@ -172,39 +177,40 @@ class WritableHebbianFrame(MetaFramework):
                     grad_of_param[name] = parameter.grad
 
                 # pushes gradients into the metalearner stack
-                # for layer_name in learner.impulse:
-                #     print(layer_name)
-                #     # print(learner.impulse[layer_name].size())
-                #     meta_stack_size = list(learner.impulse[layer_name].size())
-                #     meta_stack_size[1] = 1
-                #     layer_grad = grad_of_param[layer_name].unsqueeze(0).unsqueeze(1).expand(meta_stack_size)
-                #     # print(layer_grad.size())
-                #     learner.impulse[layer_name] = torch.cat((learner.impulse[layer_name], layer_grad), dim=1)
-                #     print(learner.impulse[layer_name].size())
-                #
-                #     # samples for metadata_df
-                #     batch = [random.randint(0, meta_stack_size[0] - 1) for _ in range(1000)]
-                #     i = [random.randint(0, meta_stack_size[3] - 1) for _ in range(1000)]
-                #     j = [random.randint(0, meta_stack_size[2] - 1) for _ in range(1000)]
-                #
-                #     def label_tuples(t):
-                #         return {'v_i': t[0].data, 'w_ij': t[1].data, 'v_j': t[2].data, 'grad': t[3].data}
-                #
-                #     samples = [label_tuples(learner.impulse[layer_name][batch[x], :, j[x], i[x]]) for x in range(1000)]
-                #     metadata_df = pd.concat([metadata_df, pd.DataFrame(samples)])
-                #     # print(metadata_df)
-                #     del meta_stack_size, layer_grad, samples, batch
+                for layer_name in learner.impulse:
+                    print(layer_name)
+                    # print(learner.impulse[layer_name].size())
+                    meta_stack_size = list(learner.impulse[layer_name].size())
+                    meta_stack_size[1] = 1
+                    layer_grad = grad_of_param[layer_name].unsqueeze(0).unsqueeze(1).expand(meta_stack_size)
+                    # print(layer_grad.size())
+                    learner.impulse[layer_name] = torch.cat((learner.impulse[layer_name], layer_grad), dim=1)
+                    print(learner.impulse[layer_name].size())
+
+                    # samples for metadata_df
+                    batch = [random.randint(0, meta_stack_size[0] - 1) for _ in range(1000)]
+                    i = [random.randint(0, meta_stack_size[3] - 1) for _ in range(1000)]
+                    j = [random.randint(0, meta_stack_size[2] - 1) for _ in range(1000)]
+
+                    def label_tuples(t):
+                        return {'v_i': t[0].data, 'w_ij': t[1].data, 'v_j': t[2].data, 'grad': t[3].data}
+
+                    samples = [label_tuples(learner.impulse[layer_name][batch[x], :, j[x], i[x]]) for x in range(1000)]
+                    metadata_df = pd.concat([metadata_df, pd.DataFrame(samples)])
+                    # print(metadata_df)
+                    del meta_stack_size, layer_grad, samples, batch, i, j
 
                 learner_optimizer.step()
                 print(time.time() - tick)
                 del images, labels, outputs, learner_loss, grad_of_param
+                gc.collect()
 
         # gets number of files in directory
         idx = len([name for name in os.listdir(metalearner_directory)
                    if os.path.isfile(os.path.join(metalearner_directory, name))])
 
         torch.save(learner, metalearner_directory + '/' + str(idx) + '.model')
-        metadata_df.to_csv(here + os.sep + 'metadata.csv')
+        metadata_df.to_csv(metadata_path)
         del learner
 
 
