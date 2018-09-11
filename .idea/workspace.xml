@@ -54,8 +54,8 @@
       <file leaf-file-name="create_meta_dataset.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/experiment_3_rule_form/create_meta_dataset.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-306">
-              <caret line="24" column="29" lean-forward="true" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
+            <state relative-caret-position="278">
+              <caret line="53" column="20" selection-start-line="53" selection-start-column="20" selection-end-line="53" selection-end-column="20" />
               <folding>
                 <element signature="e#0#45#0" expanded="true" />
               </folding>
@@ -136,7 +136,7 @@
       <find>download</find>
       <find>gpu_bool</find>
       <find>gpu_bo</find>
-      <find />
+      <find>os.environ[&quot;CUDA_VISIBLE_DEVICES&quot;] = &quot;2&quot;</find>
       <find>phi</find>
       <find>self.impulse</find>
       <find>metadata</find>
@@ -448,7 +448,7 @@
       <window_info anchor="bottom" id="File Transfer" order="14" weight="0.32897604" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32897604" />
       <window_info anchor="bottom" id="Python Console" order="9" weight="0.32897604" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49959514" visible="true" weight="0.40087146" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49959514" weight="0.3841336" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.32897604" />
       <window_info anchor="right" id="Remote Host" order="3" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.38222224" />
@@ -703,8 +703,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/experiment_3_rule_form/create_meta_dataset.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-306">
-          <caret line="24" column="29" lean-forward="true" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
+        <state relative-caret-position="278">
+          <caret line="53" column="20" selection-start-line="53" selection-start-column="20" selection-end-line="53" selection-end-column="20" />
           <folding>
             <element signature="e#0#45#0" expanded="true" />
           </folding>

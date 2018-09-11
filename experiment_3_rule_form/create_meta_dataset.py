@@ -51,6 +51,7 @@ class WritableHebbianNet(nn.Module):
                 raise ValueError("long impulse!")
         self.impulse.clear()
         del self.impulse
+        gc.collect()
         self.impulse = {}
         out = x
         for layer_num in range(0, 3):
