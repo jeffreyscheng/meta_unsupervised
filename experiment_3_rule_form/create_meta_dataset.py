@@ -205,7 +205,7 @@ class WritableHebbianFrame(MetaFramework):
                     samples = [label_tuples(learner.impulse[layer_name][batch[x], :, j[x], i[x]])
                                for x in range(WritableHebbianFrame.num_samp)]
                     metadata_df = pd.concat([metadata_df, pd.DataFrame(samples)])
-                    print(metadata_df.count)
+                    # print(metadata_df.count)
                     # del meta_stack_size, layer_grad
                     # del meta_stack_size, layer_grad, batch, i, j
                     del meta_stack_size, layer_grad, samples, batch, i, j
@@ -214,7 +214,7 @@ class WritableHebbianFrame(MetaFramework):
                         torch.cuda.empty_cache()
 
                 learner_optimizer.step()
-                print(time.time() - tick)
+                # print(time.time() - tick)
                 grad_of_param.clear()
                 del images, labels, outputs, learner_loss, grad_of_param
                 gc.collect()
@@ -230,5 +230,5 @@ class WritableHebbianFrame(MetaFramework):
 
 writable_hebbian_frame = WritableHebbianFrame('hebbian', hebbian_fixed_params, hebbian_params_range,
                                               hebbian_params_init)
-for i in range(1):
+for i in range(20):
     writable_hebbian_frame.train_model(183, 43, 10, 0.001, 50, 0.001, 1, 15)

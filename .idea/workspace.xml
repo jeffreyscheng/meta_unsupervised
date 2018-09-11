@@ -54,8 +54,8 @@
       <file leaf-file-name="create_meta_dataset.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/experiment_3_rule_form/create_meta_dataset.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="197">
-              <caret line="94" column="18" selection-start-line="94" selection-start-column="18" selection-end-line="94" selection-end-column="18" />
+            <state relative-caret-position="282">
+              <caret line="207" column="25" selection-start-line="207" selection-start-column="20" selection-end-line="207" selection-end-column="25" />
               <folding>
                 <element signature="e#0#45#0" expanded="true" />
               </folding>
@@ -121,7 +121,6 @@
       <find>bounce</find>
       <find>vanilla</find>
       <find>bounced</find>
-      <find>print</find>
       <find>tick</find>
       <find>theta_df</find>
       <find>frames</find>
@@ -140,6 +139,7 @@
       <find>self.impulse</find>
       <find>metadata</find>
       <find>metadata_df</find>
+      <find>print</find>
     </findStrings>
     <replaceStrings>
       <replace>update_rate</replace>
@@ -703,8 +703,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/experiment_3_rule_form/create_meta_dataset.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="94" column="18" selection-start-line="94" selection-start-column="18" selection-end-line="94" selection-end-column="18" />
+        <state relative-caret-position="282">
+          <caret line="207" column="25" selection-start-line="207" selection-start-column="20" selection-end-line="207" selection-end-column="25" />
           <folding>
             <element signature="e#0#45#0" expanded="true" />
           </folding>
