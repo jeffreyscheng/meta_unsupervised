@@ -197,7 +197,10 @@ class WritableHebbianFrame(MetaFramework):
                     j = [random.randint(0, meta_stack_size[2] - 1) for _ in range(WritableHebbianFrame.num_samp)]
 
                     def label_tuples(t):
-                        return {'v_i': t[0].data, 'w_ij': t[1].data, 'v_j': t[2].data, 'grad': t[3].data}
+                        return {'v_i': float(t[0].data[0]),
+                                'w_ij': float(t[1].data[0]),
+                                'v_j': float(t[2].data[0]),
+                                'grad': float(t[3].data[0])}
 
                     samples = [label_tuples(learner.impulse[layer_name][batch[x], :, j[x], i[x]])
                                for x in range(WritableHebbianFrame.num_samp)]
