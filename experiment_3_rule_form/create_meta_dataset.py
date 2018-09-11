@@ -199,13 +199,13 @@ class WritableHebbianFrame(MetaFramework):
                     def label_tuples(t):
                         return {'v_i': t[0].data, 'w_ij': t[1].data, 'v_j': t[2].data, 'grad': t[3].data}
 
-                    # samples = [label_tuples(learner.impulse[layer_name][batch[x], :, j[x], i[x]])
-                    #            for x in range(WritableHebbianFrame.num_samp)]
+                    samples = [label_tuples(learner.impulse[layer_name][batch[x], :, j[x], i[x]])
+                               for x in range(WritableHebbianFrame.num_samp)]
                     # metadata_df = pd.concat([metadata_df, pd.DataFrame(samples)])
                     # print(metadata_df.count)
                     # del meta_stack_size, layer_grad
-                    del meta_stack_size, layer_grad, batch, i, j
-                    # del meta_stack_size, layer_grad, samples, batch, i, j
+                    # del meta_stack_size, layer_grad, batch, i, j
+                    del meta_stack_size, layer_grad, samples, batch, i, j
                     gc.collect()
                     if gpu_bool:
                         torch.cuda.empty_cache()
