@@ -187,8 +187,8 @@ class WritableHebbianFrame(MetaFramework):
                     meta_stack_size[1] = 1
                     layer_grad = grad_of_param[layer_name].unsqueeze(0).unsqueeze(1).expand(meta_stack_size)
                     # print(layer_grad.size())
-                    learner.impulse[layer_name] = torch.cat((learner.impulse[layer_name], layer_grad), dim=1)
-                    print(learner.impulse[layer_name].size())
+                    # learner.impulse[layer_name] = torch.cat((learner.impulse[layer_name], layer_grad), dim=1)
+                    # print(learner.impulse[layer_name].size())
 
                     # samples for metadata_df
                     # batch = [random.randint(0, meta_stack_size[0] - 1) for _ in range(WritableHebbianFrame.num_samp)]
