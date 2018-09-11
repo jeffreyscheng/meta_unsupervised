@@ -202,7 +202,8 @@ class WritableHebbianFrame(MetaFramework):
                     #            for x in range(WritableHebbianFrame.num_samp)]
                     # metadata_df = pd.concat([metadata_df, pd.DataFrame(samples)])
                     # print(metadata_df)
-                    del meta_stack_size, layer_grad, samples, batch, i, j
+                    del meta_stack_size, layer_grad
+                    # del meta_stack_size, layer_grad, samples, batch, i, j
                     gc.collect()
 
                 learner_optimizer.step()
