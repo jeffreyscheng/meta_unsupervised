@@ -92,7 +92,7 @@ class WritableHebbianNet(nn.Module):
 
 
 class WritableHebbianFrame(MetaFramework):
-    num_samp = 100
+    num_samp = 10
 
     def __init__(self, name, fixed_params, variable_params_range, variable_params_init):
         super(WritableHebbianFrame, self).__init__(name, fixed_params, variable_params_range, variable_params_init)
@@ -201,8 +201,8 @@ class WritableHebbianFrame(MetaFramework):
 
                     samples = [label_tuples(learner.impulse[layer_name][batch[x], :, j[x], i[x]])
                                for x in range(WritableHebbianFrame.num_samp)]
-                    # metadata_df = pd.concat([metadata_df, pd.DataFrame(samples)])
-                    # print(metadata_df.count)
+                    metadata_df = pd.concat([metadata_df, pd.DataFrame(samples)])
+                    print(metadata_df.count)
                     # del meta_stack_size, layer_grad
                     # del meta_stack_size, layer_grad, batch, i, j
                     del meta_stack_size, layer_grad, samples, batch, i, j
