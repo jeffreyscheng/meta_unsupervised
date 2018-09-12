@@ -54,8 +54,8 @@
       <file leaf-file-name="create_meta_dataset.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/experiment_3_rule_form/create_meta_dataset.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="707">
-              <caret line="232" column="18" selection-start-line="232" selection-start-column="18" selection-end-line="232" selection-end-column="18" />
+            <state relative-caret-position="-109">
+              <caret line="172" column="118" selection-start-line="172" selection-start-column="118" selection-end-line="172" selection-end-column="118" />
               <folding>
                 <element signature="e#0#45#0" expanded="true" />
               </folding>
@@ -63,37 +63,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="vary_theta.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/experiment_2_labels/vary_theta.py">
+      <file leaf-file-name="fit_polynomial.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/experiment_3_rule_form/fit_polynomial.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="39" selection-start-line="5" selection-start-column="39" selection-end-line="5" selection-end-column="39" />
+            <state relative-caret-position="238">
+              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
               <folding>
-                <element signature="e#0#42#0" expanded="true" />
+                <element signature="e#0#19#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="raw_phi_experiment.csv" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/experiment_1_epochs/raw_phi_experiment.csv">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="run_experiment_3.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/run_experiment_3.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="54" lean-forward="true" selection-start-column="54" selection-end-column="54" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="meta_framework.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/experiment_0_util/meta_framework.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="621">
-              <caret line="93" column="61" lean-forward="true" selection-start-line="93" selection-start-column="61" selection-end-line="93" selection-end-column="61" />
             </state>
           </provider>
         </entry>
@@ -203,13 +180,13 @@
         <option value="$PROJECT_DIR$/experiment_0_util/experiment.py" />
         <option value="$PROJECT_DIR$/run_experiment_3.py" />
         <option value="$PROJECT_DIR$/experiment_3_rule_form/check_consistency.py" />
-        <option value="$PROJECT_DIR$/experiment_3_rule_form/fit_polynomial.py" />
         <option value="$PROJECT_DIR$/mu_exp/viz_phi.py" />
         <option value="$PROJECT_DIR$/experiment_1_epochs/viz_phi.py" />
         <option value="$PROJECT_DIR$/experiment_2_labels/viz_theta.py" />
         <option value="$PROJECT_DIR$/experiment_0_util/hebbian_frame.py" />
         <option value="$PROJECT_DIR$/experiment_1_epochs/vary_phi.py" />
         <option value="$PROJECT_DIR$/experiment_2_labels/vary_theta.py" />
+        <option value="$PROJECT_DIR$/experiment_3_rule_form/fit_polynomial.py" />
         <option value="$PROJECT_DIR$/experiment_3_rule_form/create_meta_dataset.py" />
       </list>
     </option>
@@ -452,7 +429,7 @@
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49959514" weight="0.3841336" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.32897604" />
       <window_info anchor="right" id="Remote Host" order="3" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.38222224" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17269841" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="4" />
       <window_info anchor="right" id="SciView" order="3" weight="0.5688889" />
@@ -628,13 +605,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/experiment_3_rule_form/fit_polynomial.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/experiment_3_rule_form/check_consistency.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -702,10 +672,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/experiment_3_rule_form/fit_polynomial.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/experiment_3_rule_form/create_meta_dataset.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="707">
-          <caret line="232" column="18" selection-start-line="232" selection-start-column="18" selection-end-line="232" selection-end-column="18" />
+        <state relative-caret-position="-109">
+          <caret line="172" column="118" selection-start-line="172" selection-start-column="118" selection-end-line="172" selection-end-column="118" />
           <folding>
             <element signature="e#0#45#0" expanded="true" />
           </folding>

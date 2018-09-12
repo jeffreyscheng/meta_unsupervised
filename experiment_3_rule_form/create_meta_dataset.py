@@ -170,7 +170,7 @@ class WritableHebbianFrame(MetaFramework):
             # Learner Forward + Backward + Optimize
             learner_optimizer.zero_grad()  # zero the gradient buffer
             outputs = learner.forward(images, batch_num)
-            if random.uniform(0, 1) < theta:
+            if random.uniform(0, 1) < theta * 0.01: # only sample 1% of the time... otherwise the dset blows up to 2GB
                 learner_loss = learner_criterion(outputs, labels)
                 # print(labels.data[0], ',', str(learner_loss.data[0]))
                 learner_loss.backward()
