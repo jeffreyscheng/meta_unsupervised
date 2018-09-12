@@ -92,7 +92,7 @@ class WritableHebbianNet(nn.Module):
 
 
 class WritableHebbianFrame(MetaFramework):
-    num_samp = 100
+    num_samp = 10
 
     def __init__(self, name, fixed_params, variable_params_range, variable_params_init):
         super(WritableHebbianFrame, self).__init__(name, fixed_params, variable_params_range, variable_params_init)
@@ -230,5 +230,5 @@ class WritableHebbianFrame(MetaFramework):
 
 writable_hebbian_frame = WritableHebbianFrame('hebbian', hebbian_fixed_params, hebbian_params_range,
                                               hebbian_params_init)
-for i in range(20):
+for i in range(100):
     writable_hebbian_frame.train_model(183, 43, 10, 0.001, 50, 0.001, 1, 15)

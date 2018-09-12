@@ -54,8 +54,8 @@
       <file leaf-file-name="create_meta_dataset.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/experiment_3_rule_form/create_meta_dataset.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="282">
-              <caret line="207" column="25" selection-start-line="207" selection-start-column="20" selection-end-line="207" selection-end-column="25" />
+            <state relative-caret-position="707">
+              <caret line="232" column="18" selection-start-line="232" selection-start-column="18" selection-end-line="232" selection-end-column="18" />
               <folding>
                 <element signature="e#0#45#0" expanded="true" />
               </folding>
@@ -224,9 +224,10 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-10" />
-    <option name="width" value="1642" />
-    <option name="height" value="2092" />
+    <option name="x" value="-6" />
+    <option name="y" value="2" />
+    <option name="width" value="1930" />
+    <option name="height" value="1004" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -703,8 +704,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/experiment_3_rule_form/create_meta_dataset.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="207" column="25" selection-start-line="207" selection-start-column="20" selection-end-line="207" selection-end-column="25" />
+        <state relative-caret-position="707">
+          <caret line="232" column="18" selection-start-line="232" selection-start-column="18" selection-end-line="232" selection-end-column="18" />
           <folding>
             <element signature="e#0#45#0" expanded="true" />
           </folding>
