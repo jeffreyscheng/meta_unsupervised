@@ -10,9 +10,17 @@ import os
 import pandas as pd
 import gc
 
-here = os.path.dirname(os.path.abspath(__file__))
-metalearner_directory = here + '/metalearners'
-metadata_path = here + os.sep + 'metadata.csv'
+metalearner_directory = os.path.join(os.sep.join(os.path.dirname(__file__).split(os.sep)[:-1]),
+                                     'temp_data',
+                                     'metalearners')
+metadata_path = os.path.join(os.sep.join(os.path.dirname(__file__).split(os.sep)[:-1]),
+                             'temp_data',
+                             'metadata.csv')
+
+#
+# here = os.path.dirname(os.path.abspath(__file__))
+# metalearner_directory = here + '/metalearners'
+# metadata_path = here + os.sep + 'metadata.csv'
 os.environ["CUDA_VISIBLE_DEVICES"] = "0"
 
 
@@ -170,7 +178,7 @@ class WritableHebbianFrame(MetaFramework):
             # Learner Forward + Backward + Optimize
             learner_optimizer.zero_grad()  # zero the gradient buffer
             outputs = learner.forward(images, batch_num)
-            if random.uniform(0, 1) < theta * 0.01: # only sample 1% of the time... otherwise the dset blows up to 2GB
+            if random.uniform(0, 1) < theta * 0.01:  # only sample 1% of the time... otherwise the dset blows up to 2GB
                 learner_loss = learner_criterion(outputs, labels)
                 # print(labels.data[0], ',', str(learner_loss.data[0]))
                 learner_loss.backward()

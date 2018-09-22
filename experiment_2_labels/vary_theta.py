@@ -5,7 +5,9 @@ import os
 
 os.environ["CUDA_VISIBLE_DEVICES"] = "2"
 
-fn = os.path.join(os.path.dirname(__file__), 'raw_theta_experiment.csv')
+fn = os.path.join(os.sep.join(os.path.dirname(__file__).split(os.sep)[:-1]),
+                  'final_data',
+                  'raw_theta_experiment.csv')
 
 acc_dict = []
 

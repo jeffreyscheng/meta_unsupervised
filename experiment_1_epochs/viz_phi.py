@@ -6,7 +6,9 @@ from mpl_toolkits.mplot3d import axes3d, Axes3D  # <-- Note the capitalization
 from matplotlib import pyplot
 import os
 #
-fn = os.path.join(os.path.dirname(__file__), 'raw_phi_experiment.csv')
+fn = os.path.join(os.sep.join(os.path.dirname(__file__).split(os.sep)[:-1]),
+                  'final_data',
+                  'raw_phi_experiment.csv')
 phi_df = pd.read_csv(fn)
 print(len(phi_df.index))
 

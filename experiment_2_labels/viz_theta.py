@@ -6,7 +6,9 @@ from mpl_toolkits.mplot3d import axes3d, Axes3D  # <-- Note the capitalization
 from matplotlib import pyplot
 import os
 #
-fn = os.path.join(os.path.dirname(__file__), 'raw_theta_experiment.csv')
+fn = os.path.join(os.sep.join(os.path.dirname(__file__).split(os.sep)[:-1]),
+                  'final_data',
+                  'raw_theta_experiment.csv')
 theta_df = pd.read_csv(fn)
 print(len(theta_df.index))
 
