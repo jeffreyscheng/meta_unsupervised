@@ -21,7 +21,7 @@ metadata_path = os.path.join(os.sep.join(os.path.dirname(__file__).split(os.sep)
 # here = os.path.dirname(os.path.abspath(__file__))
 # metalearner_directory = here + '/metalearners'
 # metadata_path = here + os.sep + 'metadata.csv'
-os.environ["CUDA_VISIBLE_DEVICES"] = "0"
+os.environ["CUDA_VISIBLE_DEVICES"] = "3"
 
 
 # Template for Single Structure
