@@ -16,7 +16,7 @@ temp_path = os.path.join(os.sep.join(os.path.dirname(__file__).split(os.sep)[:-1
                          'temp_data')
 deg_appx_train_path = os.path.join(temp_path, 'degree_appx_train_sets')
 
-metadata_path = os.path.join(final_path, 'metadata.csv')
+metadata_path = os.path.join(temp_path, 'metadata.csv')
 
 metadata_df = pd.read_csv(metadata_path)
 num_models = len([name for name in os.listdir(metalearner_directory)
