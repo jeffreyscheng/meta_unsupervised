@@ -15,6 +15,8 @@ metalearner_directory = os.path.join(os.sep.join(os.path.dirname(__file__).split
 temp_path = os.path.join(os.sep.join(os.path.dirname(__file__).split(os.sep)[:-1]),
                          'temp_data')
 deg_appx_train_path = os.path.join(temp_path, 'degree_appx_train_sets')
+if not os.path.exists(deg_appx_train_path):
+    os.makedirs(deg_appx_train_path)
 
 metadata_path = os.path.join(temp_path, 'metadata.csv')
 
