@@ -14,7 +14,7 @@ metalearner_directory = os.path.join(os.sep.join(os.path.dirname(__file__).split
                                      'temp_data',
                                      'metalearners')
 metadata_path = os.path.join(os.sep.join(os.path.dirname(__file__).split(os.sep)[:-1]),
-                             'temp_data',
+                             'final_data',
                              'metadata.csv')
 
 #
@@ -118,7 +118,7 @@ class WritableHebbianFrame(MetaFramework):
         learner = WritableHebbianNet(input_size, mid1, mid2, num_classes, meta_input, meta_mid, meta_output,
                                      learner_batch_size, update_rate)
         # print(learner_batch_size)
-        if os.path.isfile(metadata_path):
+        if os.path.isfile(metadata_path) and False:
             metadata_df = pd.read_csv(metadata_path)
         else:
             metadata_df = pd.DataFrame(columns=['v_i', 'w_ij', 'v_j', 'grad'])
@@ -212,7 +212,11 @@ class WritableHebbianFrame(MetaFramework):
 
                     samples = [label_tuples(learner.impulse[layer_name][batch[x], :, j[x], i[x]])
                                for x in range(WritableHebbianFrame.num_samp)]
-                    metadata_df = pd.concat([metadata_df, pd.DataFrame(samples)])
+                    correct_columns = ['v_i', 'w_ij', 'v_j', 'grad']
+                    metadata_df = pd.concat([metadata_df,
+                                             pd.DataFrame(samples, columns=correct_columns)], axis=0)
+                    if len(set(metadata_df.columns) - set(correct_columns)) > 0:
+                        raise ValueError("metadata_df columns corrupted")
                     # print(metadata_df.count)
                     # del meta_stack_size, layer_grad
                     # del meta_stack_size, layer_grad, batch, i, j
