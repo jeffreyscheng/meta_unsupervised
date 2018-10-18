@@ -3,6 +3,9 @@ import torch
 from torch import nn
 import os
 import itertools
+import torchvision.datasets as dsets
+import torchvision.transforms as transforms
+from torch.autograd import Variable
 
 final_path = os.path.join(os.sep.join(os.path.dirname(__file__).split(os.sep)[:-1]),
                           'final_data')
@@ -15,23 +18,24 @@ deg_appx_train_path = os.path.join(temp_path, 'degree_appx_train_sets')
 
 metadata_path = os.path.join(final_path, 'metadata.csv')
 
-
 metadata_df = pd.read_csv(metadata_path)
 num_models = len([name for name in os.listdir(metalearner_directory)
                   if os.path.isfile(os.path.join(metalearner_directory, name))])
 
 
-class LinearRegressionModel(torch.nn.Module):
-    def __init__(self):
+class LinearRegressionModel(nn.Module):
+
+    def __init__(self, input_dim, output_dim):
         super(LinearRegressionModel, self).__init__()
-        self.fc = nn.linear(1, 1)
+        # Calling Super Class's constructor
+        self.linear = nn.Linear(input_dim, output_dim)
+        # nn.linear is defined in nn.Module
 
     def forward(self, x):
-        x = self.fc(x)
-        return x
+        # Here the forward pass is simply a linear function
 
-
-model = LinearRegressionModel()
+        out = self.linear(x)
+        return out
 
 
 # turns a combination selection of indices into the balls and urns representation (last element is unused)
@@ -43,7 +47,7 @@ def comb_to_sb(tup):
 # column format: (0, 3, 5)
 # represents value of v_i^0 * w_ij^3 * v_j^5
 
-for d in range(5):  # d is max degree of polynomial
+for d in range(2, 5):  # d is max degree of polynomial
     all_combinations = list(itertools.combinations(range(d + 3), 3))
     all_deg_arr = [comb_to_sb(c) for c in all_combinations]
     print(all_deg_arr)
@@ -75,6 +79,33 @@ for d in range(5):  # d is max degree of polynomial
         model_update_ser = deg_appx_model_df.apply(lambda row: model(row['(1, 0, 0)'],
                                                                      row['(0, 1, 0)'],
                                                                      row['(0, 0, 1)'], ), axis=1)
+
+        input_dim = len(deg_appx_train_df.columns)
+        regression = LinearRegressionModel(input_dim, 1)
+
+        criterion = nn.MSELoss()  # Mean Squared Loss
+        l_rate = 0.01
+        optimiser = torch.optim.SGD(regression.parameters(), lr=l_rate)  # Stochastic Gradient Descent
+
+        epochs = 2000
+
+        for epoch in range(epochs):
+            epoch += 1
+            # increase the number of epochs by 1 every time
+            inputs = Variable(torch.Tensor(deg_appx_train_df.values))
+            labels = Variable(torch.Tensor(model_update_ser.values))
+
+            # clear grads as discussed in prev post
+            optimiser.zero_grad()
+            # forward to get predicted values
+            outputs = regression.forward(inputs)
+            loss = criterion(outputs, labels)
+            loss.backward()  # back props
+            optimiser.step()  # update the parameters
+            print('epoch {}, loss {}'.format(epoch, loss.data[0]))
+
+        print(regression.parameters())
+        raise ValueError("finished with first model")
 
     # need two dfs for results
     # degree vs. avg error df (just write every degree_appx, you can back it out)
