@@ -36,7 +36,7 @@
     <SUITE FILE_PATH="coverage/meta_unsupervised$bayes_back.coverage" NAME="bayes_back Coverage Results" MODIFIED="1523345267018" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/meta_unsupervised$mature.coverage" NAME="mature Coverage Results" MODIFIED="1523554531655" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/meta_unsupervised$control.coverage" NAME="control Coverage Results" MODIFIED="1525670568533" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/meta_unsupervised$viz_polynomial.coverage" NAME="viz_polynomial Coverage Results" MODIFIED="1539881391150" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/experiment_3_rule_form" />
+    <SUITE FILE_PATH="coverage/meta_unsupervised$viz_polynomial.coverage" NAME="viz_polynomial Coverage Results" MODIFIED="1539882150588" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/experiment_3_rule_form" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="600">
@@ -76,11 +76,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="create_meta_dataset.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="create_meta_dataset.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/experiment_3_rule_form/create_meta_dataset.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="120" column="50" selection-start-line="120" selection-start-column="50" selection-end-line="120" selection-end-column="50" />
+            <state relative-caret-position="170">
+              <caret line="16" column="34" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
               <folding>
                 <element signature="e#0#45#0" expanded="true" />
               </folding>
@@ -88,11 +88,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="viz_polynomial.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="viz_polynomial.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/experiment_3_rule_form/viz_polynomial.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="23" column="32" lean-forward="true" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
+            <state relative-caret-position="374">
+              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -258,8 +258,8 @@
         <option value="$PROJECT_DIR$/experiment_2_labels/vary_theta.py" />
         <option value="$PROJECT_DIR$/experiment_2_labels/viz_theta.py" />
         <option value="$PROJECT_DIR$/experiment_3_rule_form/fit_polynomial.py" />
-        <option value="$PROJECT_DIR$/experiment_3_rule_form/viz_polynomial.py" />
         <option value="$PROJECT_DIR$/experiment_3_rule_form/create_meta_dataset.py" />
+        <option value="$PROJECT_DIR$/experiment_3_rule_form/viz_polynomial.py" />
       </list>
     </option>
   </component>
@@ -764,22 +764,22 @@
     <entry file="file://$PROJECT_DIR$/final_data/metadata.csv">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/experiment_3_rule_form/viz_polynomial.py">
+    <entry file="file://$PROJECT_DIR$/experiment_3_rule_form/create_meta_dataset.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="32" lean-forward="true" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
+        <state relative-caret-position="170">
+          <caret line="16" column="34" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
           <folding>
-            <element signature="e#0#19#0" expanded="true" />
+            <element signature="e#0#45#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/experiment_3_rule_form/create_meta_dataset.py">
+    <entry file="file://$PROJECT_DIR$/experiment_3_rule_form/viz_polynomial.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="120" column="50" selection-start-line="120" selection-start-column="50" selection-end-line="120" selection-end-column="50" />
+        <state relative-caret-position="374">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
           <folding>
-            <element signature="e#0#45#0" expanded="true" />
+            <element signature="e#0#19#0" expanded="true" />
           </folding>
         </state>
       </provider>

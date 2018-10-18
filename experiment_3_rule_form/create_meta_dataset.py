@@ -14,7 +14,7 @@ metalearner_directory = os.path.join(os.sep.join(os.path.dirname(__file__).split
                                      'temp_data',
                                      'metalearners')
 metadata_path = os.path.join(os.sep.join(os.path.dirname(__file__).split(os.sep)[:-1]),
-                             'final_data',
+                             'temp_data',
                              'metadata.csv')
 
 #
