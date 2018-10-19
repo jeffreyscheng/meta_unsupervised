@@ -5,6 +5,8 @@ import os
 import itertools
 import torchvision.datasets as dsets
 import torchvision.transforms as transforms
+from .create_meta_dataset import WritableHebbianFrame
+from .create_meta_dataset import WritableHebbianNet
 from torch.autograd import Variable
 
 final_path = os.path.join(os.sep.join(os.path.dirname(__file__).split(os.sep)[:-1]),
@@ -76,6 +78,7 @@ for d in range(2, 5):  # d is max degree of polynomial
     # want to grab avg error for each table degree_i_df, plot against each other.
     # want to graph distribution of each column of each table degree_i_df
     deg_appx_model_df = pd.DataFrame(columns=deg_appx_train_df.columns + ['error'])
+    list_of_regression_params = []
     for i in range(num_models):
         model = torch.load(metalearner_directory + os.sep + str(i) + '.model')
         model_update_ser = deg_appx_model_df.apply(lambda row: model(row['(1, 0, 0)'],
@@ -108,6 +111,13 @@ for d in range(2, 5):  # d is max degree of polynomial
 
         print(regression.parameters())
         raise ValueError("finished with first model")
+
+        # list_of_regression_params.append(regression.parameters())
+        ## fix regression.parameters()
+
+    deg_appx_model_df.append(list_of_regression_params, ignore_index=True)
+
+
 
     # need two dfs for results
     # degree vs. avg error df (just write every degree_appx, you can back it out)
