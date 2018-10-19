@@ -5,7 +5,9 @@ import os
 import itertools
 import torchvision.datasets as dsets
 import torchvision.transforms as transforms
-from experiment_3_rule_form.create_meta_dataset import *
+# from experiment_0_util.experiment import *
+from experiment_3_rule_form.create_meta_dataset import WritableHebbianFrame
+from experiment_3_rule_form.create_meta_dataset import WritableHebbianNet
 from torch.autograd import Variable
 
 print("imports done")
