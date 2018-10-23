@@ -21,7 +21,7 @@ metadata_path = os.path.join(os.sep.join(os.path.dirname(__file__).split(os.sep)
 # here = os.path.dirname(os.path.abspath(__file__))
 # metalearner_directory = here + '/metalearners'
 # metadata_path = here + os.sep + 'metadata.csv'
-os.environ["CUDA_VISIBLE_DEVICES"] = "3"
+os.environ["CUDA_VISIBLE_DEVICES"] = "2"
 gpu_bool = torch.cuda.device_count() > 0
 
 
@@ -54,16 +54,10 @@ class WritableHebbianNet(nn.Module):
         formatted_meta = Variable(torch.Tensor(meta_inputs).unsqueeze(dim=0).unsqueeze(dim=2).unsqueeze(dim=3))
         if gpu_bool:
             formatted_meta = formatted_meta.cuda()
-        print(self.conv1(formatted_meta))
-        print(torch.squeeze(
-            self.conv2(self.conv1(torch.Tensor(formatted_meta).unsqueeze(dim=0).unsqueeze(dim=2).unsqueeze(dim=3)))))
-        print("all good")
-        return torch.squeeze(
-            self.conv2(self.conv1(torch.Tensor(formatted_meta).unsqueeze(dim=0).unsqueeze(dim=2).unsqueeze(dim=3))))
+        return torch.squeeze(self.conv2(self.conv1(formatted_meta)))
 
     # @timeit
     def forward(self, x, batch_num):
-        print(self.get_single_update((0, 0, 0)))
         if self.impulse is not None:
             if len(self.impulse) > 4:
                 raise ValueError("long impulse!")
