@@ -83,10 +83,13 @@ for d in range(2, 5):  # d is max degree of polynomial
     list_of_regression_params = []
     for i in range(num_models):
         model = torch.load(metalearner_directory + os.sep + str(i) + '.model')
-        model_update_ser = deg_appx_model_df.apply(lambda row: model(row['(1, 0, 0)'],
-                                                                     row['(0, 1, 0)'],
-                                                                     row['(0, 0, 1)'], ), axis=1)
+        model_update_ser = deg_appx_train_df.apply(lambda row: model.get_single_update((row['(1, 0, 0)'],
+                                                                                        row['(0, 1, 0)'],
+                                                                                        row['(0, 0, 1)'])), axis=1)
 
+        print(model_update_ser)
+        print(deg_appx_train_df)
+        print(deg_appx_model_df)
         input_dim = len(deg_appx_train_df.columns)
         regression = LinearRegressionModel(input_dim, 1)
 

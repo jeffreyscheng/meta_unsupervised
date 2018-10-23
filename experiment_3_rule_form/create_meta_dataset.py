@@ -22,7 +22,7 @@ metadata_path = os.path.join(os.sep.join(os.path.dirname(__file__).split(os.sep)
 # metalearner_directory = here + '/metalearners'
 # metadata_path = here + os.sep + 'metadata.csv'
 os.environ["CUDA_VISIBLE_DEVICES"] = "3"
-
+gpu_bool = torch.cuda.device_count() > 0
 
 # Template for Single Structure
 class WritableHebbianNet(nn.Module):
@@ -50,11 +50,21 @@ class WritableHebbianNet(nn.Module):
 
     # get new weight
     def get_single_update(self, meta_inputs):
+        formatted_meta = Variable(torch.Tensor(meta_inputs).unsqueeze(dim=0).unsqueeze(dim=2).unsqueeze(dim=3))
+        if gpu_bool:
+            formatted_meta = formatted_meta.cuda()
+            print("HERE")
+        print(type(self.conv1))
+        print(type(formatted_meta))
+        # print(formatted_meta.device)
+        print(self.conv1(formatted_meta))
         return torch.squeeze(
-            self.conv2(self.conv1(torch.Tensor(meta_inputs).unsqueeze(dim=0).unsqueeze(dim=2).unsqueeze(dim=3))))
+            self.conv2(self.conv1(torch.Tensor(formatted_meta).unsqueeze(dim=0).unsqueeze(dim=2).unsqueeze(dim=3))))
 
     # @timeit
     def forward(self, x, batch_num):
+        print("3:47 check")
+        print(self.get_single_update((0, 0, 0)))
         if self.impulse is not None:
             if len(self.impulse) > 4:
                 raise ValueError("long impulse!")
@@ -126,7 +136,7 @@ class WritableHebbianFrame(MetaFramework):
         # check if GPU is available
         gpu_bool = torch.cuda.device_count() > 0
         if gpu_bool:
-            learner.cuda()
+            learner = learner.cuda()
 
         # MNIST Dataset
         train_dataset = dsets.MNIST(root='./data',
@@ -240,7 +250,7 @@ class WritableHebbianFrame(MetaFramework):
         del learner
 
 
-run = False
+run = True
 if run:
     writable_hebbian_frame = WritableHebbianFrame('hebbian', hebbian_fixed_params, hebbian_params_range,
                                                   hebbian_params_init)
