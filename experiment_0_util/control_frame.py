@@ -78,7 +78,7 @@ class ControlFrame(MetaFramework):
         # check if GPU is available
         gpu_bool = torch.cuda.device_count() > 0
         if gpu_bool:
-            learner.cuda()
+            learner = learner.cuda()
 
         # MNIST Dataset
         train_dataset = dsets.MNIST(root='./data',

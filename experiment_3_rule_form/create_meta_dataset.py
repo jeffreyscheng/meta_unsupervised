@@ -24,6 +24,7 @@ metadata_path = os.path.join(os.sep.join(os.path.dirname(__file__).split(os.sep)
 os.environ["CUDA_VISIBLE_DEVICES"] = "3"
 gpu_bool = torch.cuda.device_count() > 0
 
+
 # Template for Single Structure
 class WritableHebbianNet(nn.Module):
 
@@ -53,17 +54,15 @@ class WritableHebbianNet(nn.Module):
         formatted_meta = Variable(torch.Tensor(meta_inputs).unsqueeze(dim=0).unsqueeze(dim=2).unsqueeze(dim=3))
         if gpu_bool:
             formatted_meta = formatted_meta.cuda()
-            print("HERE")
-        print(type(self.conv1))
-        print(type(formatted_meta))
-        # print(formatted_meta.device)
         print(self.conv1(formatted_meta))
+        print(torch.squeeze(
+            self.conv2(self.conv1(torch.Tensor(formatted_meta).unsqueeze(dim=0).unsqueeze(dim=2).unsqueeze(dim=3)))))
+        print("all good")
         return torch.squeeze(
             self.conv2(self.conv1(torch.Tensor(formatted_meta).unsqueeze(dim=0).unsqueeze(dim=2).unsqueeze(dim=3))))
 
     # @timeit
     def forward(self, x, batch_num):
-        print("3:47 check")
         print(self.get_single_update((0, 0, 0)))
         if self.impulse is not None:
             if len(self.impulse) > 4:
@@ -133,8 +132,7 @@ class WritableHebbianFrame(MetaFramework):
         else:
             metadata_df = pd.DataFrame(columns=['v_i', 'w_ij', 'v_j', 'grad'])
 
-        # check if GPU is available
-        gpu_bool = torch.cuda.device_count() > 0
+        # push if GPU is available
         if gpu_bool:
             learner = learner.cuda()
 
