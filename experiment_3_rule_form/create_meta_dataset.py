@@ -54,7 +54,7 @@ class WritableHebbianNet(nn.Module):
         formatted_meta = Variable(torch.Tensor(meta_inputs).unsqueeze(dim=0).unsqueeze(dim=2).unsqueeze(dim=3))
         if gpu_bool:
             formatted_meta = formatted_meta.cuda()
-        return torch.squeeze(self.conv2(self.conv1(formatted_meta)))
+        return float(torch.squeeze(self.conv2(self.conv1(formatted_meta))).data)
 
     # @timeit
     def forward(self, x, batch_num):
@@ -242,7 +242,7 @@ class WritableHebbianFrame(MetaFramework):
         del learner
 
 
-run = True
+run = False
 if run:
     writable_hebbian_frame = WritableHebbianFrame('hebbian', hebbian_fixed_params, hebbian_params_range,
                                                   hebbian_params_init)

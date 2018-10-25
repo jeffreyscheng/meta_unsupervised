@@ -1,5 +1,6 @@
 import pandas as pd
 import torch
+import numpy as np
 from torch import nn
 import os
 import itertools
@@ -21,6 +22,9 @@ temp_path = os.path.join(os.sep.join(os.path.dirname(__file__).split(os.sep)[:-1
 deg_appx_train_path = os.path.join(temp_path, 'degree_appx_train_sets')
 if not os.path.exists(deg_appx_train_path):
     os.makedirs(deg_appx_train_path)
+deg_appx_model_path = os.path.join(final_path, 'degree_appx_model_sets')
+if not os.path.exists(deg_appx_model_path):
+    os.makedirs(deg_appx_model_path)
 
 metadata_path = os.path.join(temp_path, 'metadata.csv')
 
@@ -34,7 +38,7 @@ class LinearRegressionModel(nn.Module):
     def __init__(self, input_dim, output_dim):
         super(LinearRegressionModel, self).__init__()
         # Calling Super Class's constructor
-        self.linear = nn.Linear(input_dim, output_dim)
+        self.linear = nn.Linear(input_dim, output_dim, bias=False)
         # nn.linear is defined in nn.Module
 
     def forward(self, x):
@@ -53,12 +57,25 @@ def comb_to_sb(tup):
 # column format: (0, 3, 5)
 # represents value of v_i^0 * w_ij^3 * v_j^5
 
-for d in range(2, 5):  # d is max degree of polynomial
+list_of_degree_dfs = []
+
+for d in range(1, 10):  # d is max degree of polynomial
+    print("starting degree " + str(d))
     all_combinations = list(itertools.combinations(range(d + 3), 3))
     all_deg_arr = [comb_to_sb(c) for c in all_combinations]
-    print(all_deg_arr)
+    str_all_deg_arr = [str(arr) for arr in all_deg_arr] + ['error']
+    # print(str_all_deg_arr)
 
-    deg_appx_train_df = metadata_df.copy()
+    def list_to_row_dict(lst):
+        row_dict = {}
+        if len(lst) != len(str_all_deg_arr):
+            raise ValueError('regression tuple is not same length as column vector!')
+        for idx in range(0, len(lst)):
+            row_dict[str_all_deg_arr[idx]] = lst[idx]
+        return row_dict
+
+
+    deg_appx_train_df = metadata_df[['v_i', 'w_ij', 'v_j', 'grad']].copy()
     for arr in all_deg_arr:
         deg_appx_train_df[str(arr)] = deg_appx_train_df.apply(lambda row: (row['v_i'] ** arr[0]) *
                                                                           (row['w_ij'] ** arr[1]) *
@@ -79,17 +96,20 @@ for d in range(2, 5):  # d is max degree of polynomial
     # add a column for error
     # want to grab avg error for each table degree_i_df, plot against each other.
     # want to graph distribution of each column of each table degree_i_df
-    deg_appx_model_df = pd.DataFrame(columns=deg_appx_train_df.columns + ['error'])
+
+    # print(type(deg_appx_train_df.columns))
+    # print(deg_appx_train_df.columns + ['question?'])
+    deg_appx_model_df = pd.DataFrame(columns=str_all_deg_arr)
     list_of_regression_params = []
+    # num_models = 5 # for testing, remove
     for i in range(num_models):
         model = torch.load(metalearner_directory + os.sep + str(i) + '.model')
         model_update_ser = deg_appx_train_df.apply(lambda row: model.get_single_update((row['(1, 0, 0)'],
                                                                                         row['(0, 1, 0)'],
                                                                                         row['(0, 0, 1)'])), axis=1)
-
-        print(model_update_ser)
-        print(deg_appx_train_df)
-        print(deg_appx_model_df)
+        # print(model_update_ser)
+        # print(deg_appx_train_df)
+        # print(deg_appx_model_df)
         input_dim = len(deg_appx_train_df.columns)
         regression = LinearRegressionModel(input_dim, 1)
 
@@ -97,8 +117,8 @@ for d in range(2, 5):  # d is max degree of polynomial
         l_rate = 0.01
         optimiser = torch.optim.SGD(regression.parameters(), lr=l_rate)  # Stochastic Gradient Descent
 
-        epochs = 2000
-
+        epochs = 20000
+        error = 1
         for epoch in range(epochs):
             epoch += 1
             # increase the number of epochs by 1 every time
@@ -110,17 +130,44 @@ for d in range(2, 5):  # d is max degree of polynomial
             # forward to get predicted values
             outputs = regression.forward(inputs)
             loss = criterion(outputs, labels)
+            error = float(loss.data)
             loss.backward()  # back props
             optimiser.step()  # update the parameters
-            print('epoch {}, loss {}'.format(epoch, loss.data[0]))
-
-        print(regression.parameters())
-        raise ValueError("finished with first model")
+            # print('epoch {}, loss {}'.format(epoch, loss.data[0]))
+        # print("model " + str(i) + ", error " + str(error))
+        # print(regression.parameters())
+        # for name, param in regression.named_parameters():
+            # if param.requires_grad:
+                # print(name, param.data)
+        regression_param = torch.squeeze(dict(regression.named_parameters())['linear.weight'].data)
+        # print(regression_param)
+        # print(regression_param.numpy())
+        # print(tuple(regression_param.numpy()))
+        # print(tuple(list(regression_param.numpy()) + [error]))
+        list_of_regression_params.append(list_to_row_dict(list(regression_param.numpy()) + [error]))
+        # raise ValueError("finished with first model")
 
         # list_of_regression_params.append(regression.parameters())
         ## fix regression.parameters()
 
-    deg_appx_model_df.append(list_of_regression_params, ignore_index=True)
+    deg_appx_model_df = deg_appx_model_df.append(list_of_regression_params, ignore_index=True)
+    # print(deg_appx_model_df)
+    print(deg_appx_model_df['error'].mean())
+    d_model_df_path = os.path.join(deg_appx_model_path, str(d) + '.csv')
+    deg_appx_model_df.to_csv(d_model_df_path)
+    list_of_degree_dfs.append(deg_appx_model_df)
+
+# compute pointwise means
+def pointwise_mean(tup):
+    def output_i(i):
+        model = torch.load(metalearner_directory + os.sep + str(i) + '.model')
+        return model.get_single_update(tup)
+    return sum([output_i(i) for i in range(num_models)]) / num_models
+
+pointwise_mean_df = metadata_df.copy()
+pointwise_mean_df['mean_Hebbian_update'] = pointwise_mean_df.apply(lambda row: pointwise_mean((row['v_i'], row['w_ij'], row['v_j'])), axis=1)
+pointwise_path = os.path.join(final_path, 'pointwise_mean_df.csv')
+pointwise_mean_df.to_csv(pointwise_path)
 
 
 
