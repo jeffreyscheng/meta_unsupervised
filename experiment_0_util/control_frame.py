@@ -1,4 +1,5 @@
 from experiment_0_util.meta_framework import *
+from hyperparameters import *
 import random
 import torch
 import torchvision.datasets as dsets
@@ -61,8 +62,8 @@ class ControlNet(nn.Module):
 
 
 class ControlFrame(MetaFramework):
-    def __init__(self, name, fixed_params, variable_params_range, variable_params_init):
-        super(ControlFrame, self).__init__(name, fixed_params, variable_params_range, variable_params_init)
+    def __init__(self, name, fixed_params):
+        super(ControlFrame, self).__init__(name, fixed_params)
 
     @bandaid
     def train_model(self, mid1, mid2, learning_rate, learner_batch_size, theta=1, phi=1):
@@ -153,12 +154,4 @@ class ControlFrame(MetaFramework):
         return correct / total
 
 
-control_fixed_params = {'meta_input': 3, 'meta_output': 1, 'input_size': 784, 'num_classes': 10}
-control_params_range = {'mid1': (20, 800), 'mid2': (20, 800),
-                        'learning_rate': (0.000001, 0.001),
-                        'learner_batch_size': (1, 500)}
-control_params_init = {'mid1': [400, 20], 'mid2': [200, 20],
-                       'learning_rate': [0.0001, 0.00093],
-                       'learner_batch_size': [50, 200]}
-
-control_frame = ControlFrame('control', control_fixed_params, control_params_range, control_params_init)
+control_frame = ControlFrame('control', fixed_parameters)

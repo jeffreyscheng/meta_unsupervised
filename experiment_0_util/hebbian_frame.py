@@ -1,4 +1,5 @@
 from experiment_0_util.meta_framework import *
+from hyperparameters import *
 import random
 import torch
 import torchvision.datasets as dsets
@@ -77,8 +78,8 @@ class HebbianNet(nn.Module):
 
 
 class HebbianFrame(MetaFramework):
-    def __init__(self, name, fixed_params, variable_params_range, variable_params_init):
-        super(HebbianFrame, self).__init__(name, fixed_params, variable_params_range, variable_params_init)
+    def __init__(self, name, fixed_params):
+        super(HebbianFrame, self).__init__(name)
 
     @bandaid
     def train_model(self, mid1, mid2, meta_mid, learning_rate, learner_batch_size, update_rate, theta=1, phi=15):
@@ -180,25 +181,4 @@ class HebbianFrame(MetaFramework):
         return correct / total
 
 
-hebbian_fixed_params = {'meta_input': 3, 'meta_output': 1, 'input_size': 784, 'num_classes': 10}
-hebbian_params_range = {'mid1': (20, 800), 'mid2': (20, 800), 'meta_mid': (2, 10),
-                        'learning_rate': (0.000001, 0.001), 'update_rate': (0.000001, 0.001),
-                        'learner_batch_size': (1, 500)}
-hebbian_params_init = {'mid1': [400, 20], 'mid2': [200, 20],
-                       'meta_mid': [5, 10],
-                       'learning_rate': [0.0001, 0.00093], 'update_rate': [0.0001, 0.00087],
-                       'learner_batch_size': [50, 200]}
-
-hebbian_frame = HebbianFrame('hebbian', hebbian_fixed_params, hebbian_params_range, hebbian_params_init)
-
-
-# stuff to run always here such as class/def
-def main():
-    hebbian_frame.train_model(246, 146, 6, 0.00066695, 47, 0.00020694, phi=0.001)
-    # hebbian_frame.optimize(MetaFramework.optimize_num)
-    # hebbian_frame.analyze()
-
-
-if __name__ == "__main__":
-    # stuff only to run when not called via 'import' here
-    main()
+hebbian_frame = HebbianFrame('hebbian', fixed_parameters)

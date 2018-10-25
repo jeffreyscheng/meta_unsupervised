@@ -100,8 +100,8 @@ class WritableHebbianNet(nn.Module):
 class WritableHebbianFrame(MetaFramework):
     num_samp = 10
 
-    def __init__(self, name, fixed_params, variable_params_range, variable_params_init):
-        super(WritableHebbianFrame, self).__init__(name, fixed_params, variable_params_range, variable_params_init)
+    def __init__(self, name, fixed_params):
+        super(WritableHebbianFrame, self).__init__(name, fixed_params)
 
     @bandaid
     def train_model(self, mid1, mid2, meta_mid, learning_rate, learner_batch_size, update_rate, theta=1, phi=15):
