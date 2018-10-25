@@ -79,7 +79,7 @@ class HebbianNet(nn.Module):
 
 class HebbianFrame(MetaFramework):
     def __init__(self, name, fixed_params):
-        super(HebbianFrame, self).__init__(name)
+        super(HebbianFrame, self).__init__(name, fixed_params)
 
     @bandaid
     def train_model(self, mid1, mid2, meta_mid, learning_rate, learner_batch_size, update_rate, theta=1, phi=15):
