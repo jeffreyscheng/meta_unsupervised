@@ -62,3 +62,9 @@ plt.plot(deg_by_avg_error_df.loc[1:, 'degree'], deg_by_avg_error_df.loc[1:, 'err
 plt.xlabel('Degree')
 plt.ylabel('Average MSE')
 plt.savefig(os.path.join(results_path, 'experiment_3_degree_vs_error_without_0.png'))
+
+deg_1_df = pd.read_csv(os.path.join(model_path, '1.csv'))
+good_columns = [col for col in list(deg_1_df.columns.values) if good_column(col)]
+for col in good_columns:
+    print(col)
+    print(deg_1_df[col].mean())

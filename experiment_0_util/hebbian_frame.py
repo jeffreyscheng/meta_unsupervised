@@ -32,7 +32,7 @@ class HebbianNet(nn.Module):
 
     # get new weight
     def get_update(self, meta_input_stack):
-        return torch.squeeze(self.conv2(self.conv1(meta_input_stack)), 1)
+        return torch.squeeze(self.conv2(self.relu(self.conv1(meta_input_stack))), 1)
 
     # @timeit
     def forward(self, x, batch_num):
