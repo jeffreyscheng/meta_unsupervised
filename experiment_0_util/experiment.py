@@ -21,7 +21,6 @@ def run_theta_phi_pair(theta_val, phi_val):
     print("Running Control:", theta_val, phi_val)
     control_acc = [control_frame.train_model(hyperparameters['mid1'],
                                              hyperparameters['mid2'],
-                                             hyperparameters['meta_mid'],
                                              hyperparameters['learning_rate'],
                                              hyperparameters['learner_batch_size'],
                                              theta=theta_val, phi=phi_val) for _ in range(n)]
