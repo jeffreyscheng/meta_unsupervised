@@ -15,7 +15,7 @@ def run_theta_phi_pair(theta_val, phi_val):
                                              hyperparameters['learning_rate'],
                                              hyperparameters['learner_batch_size'],
                                              hyperparameters['update_rate'],
-                                             theta_val, phi_val) for _ in range(n)]
+                                             theta=theta_val, phi=phi_val) for _ in range(n)]
     formatted_hebbian = [{'theta': theta_val, 'phi': phi_val, 'bool_hebbian': 1, 'acc': a} for a in hebbian_acc]
 
     print("Running Control:", theta_val, phi_val)
@@ -24,7 +24,7 @@ def run_theta_phi_pair(theta_val, phi_val):
                                              hyperparameters['meta_mid'],
                                              hyperparameters['learning_rate'],
                                              hyperparameters['learner_batch_size'],
-                                             theta_val, phi_val) for _ in range(n)]
+                                             theta=theta_val, phi=phi_val) for _ in range(n)]
     formatted_control = [{'theta': theta_val, 'phi': phi_val, 'bool_hebbian': 0, 'acc': a} for a in control_acc]
 
     return formatted_control + formatted_hebbian
