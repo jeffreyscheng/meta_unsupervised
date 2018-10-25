@@ -68,7 +68,7 @@
       <file leaf-file-name="control_frame.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/experiment_0_util/control_frame.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
+            <state relative-caret-position="1674">
               <caret line="156" column="56" selection-start-line="156" selection-start-column="56" selection-end-line="156" selection-end-column="56" />
               <folding>
                 <element signature="e#0#46#0" expanded="true" />
@@ -77,11 +77,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="experiment.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="meta_framework.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/experiment_0_util/meta_framework.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="246">
+              <caret line="48" column="41" selection-start-line="48" selection-start-column="41" selection-end-line="48" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="experiment.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/experiment_0_util/experiment.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="25" lean-forward="true" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
+            <state relative-caret-position="408">
+              <caret line="24" column="78" lean-forward="true" selection-start-line="24" selection-start-column="78" selection-end-line="24" selection-end-column="78" />
               <folding>
                 <element signature="e#0#45#0" expanded="true" />
               </folding>
@@ -230,7 +239,6 @@
         <option value="$PROJECT_DIR$/util/hebbian_frame.py" />
         <option value="$PROJECT_DIR$/1-experiment-labels/vary_phi.py" />
         <option value="$PROJECT_DIR$/experiment-1-labels/vary_phi.py" />
-        <option value="$PROJECT_DIR$/experiment_0_util/meta_framework.py" />
         <option value="$PROJECT_DIR$/experiment-1-epochs/vary_phi.py" />
         <option value="$PROJECT_DIR$/adf.py" />
         <option value="$PROJECT_DIR$/experiment_1_epochs/check.py" />
@@ -255,6 +263,7 @@
         <option value="$PROJECT_DIR$/experiment_0_util/control_frame.py" />
         <option value="$PROJECT_DIR$/experiment_3_rule_form/create_meta_dataset.py" />
         <option value="$PROJECT_DIR$/experiment_0_util/experiment.py" />
+        <option value="$PROJECT_DIR$/experiment_0_util/meta_framework.py" />
       </list>
     </option>
   </component>
@@ -622,13 +631,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/experiment_0_util/meta_framework.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1428">
-          <caret line="93" column="61" selection-start-line="93" selection-start-column="61" selection-end-line="93" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/run_experiment_3.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -735,16 +737,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/experiment_0_util/control_frame.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="156" column="56" selection-start-line="156" selection-start-column="56" selection-end-line="156" selection-end-column="56" />
-          <folding>
-            <element signature="e#0#46#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/experiment_1_epochs/vary_phi.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-9">
@@ -773,11 +765,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/experiment_0_util/experiment.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="25" lean-forward="true" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
+        <state relative-caret-position="408">
+          <caret line="24" column="78" lean-forward="true" selection-start-line="24" selection-start-column="78" selection-end-line="24" selection-end-column="78" />
           <folding>
             <element signature="e#0#45#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/experiment_0_util/control_frame.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1674">
+          <caret line="156" column="56" selection-start-line="156" selection-start-column="56" selection-end-line="156" selection-end-column="56" />
+          <folding>
+            <element signature="e#0#46#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/experiment_0_util/meta_framework.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="48" column="41" selection-start-line="48" selection-start-column="41" selection-end-line="48" selection-end-column="41" />
         </state>
       </provider>
     </entry>

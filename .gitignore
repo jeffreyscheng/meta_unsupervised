@@ -1,2 +1,4 @@
 /temp_data
 /experiment_results
+/__pycache__
+/.idea

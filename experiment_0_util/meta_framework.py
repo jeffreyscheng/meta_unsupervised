@@ -46,40 +46,44 @@ class MetaFramework:
     time_out = 20 * 60
     num_data = 60000
 
-    def __init__(self, name, fixed_params, variable_params_range, variable_params_init):
+    def __init__(self, name, fixed_params):
         self.name = name
         self.fixed_params = fixed_params
-        self.variable_params_range = variable_params_range
-        self.variable_params_init = variable_params_init
 
-    def initialize_learner(self, **params):
-        pass
-
-    def train_model(self, **params):
-        pass
-
-    def optimize(self, n):
-        file_name = self.name + '.bayes'
-        bayes_file = Path(file_name)
-
-        if not bayes_file.is_file():
-            print("Initializing:", file_name)
-            bayes = BayesianOptimization(self.train_model, self.variable_params_range)
-            bayes.explore(self.variable_params_init)
-            bayes.maximize(init_points=1, n_iter=n, kappa=1, acq="ucb")
-        else:
-            with open(file_name, 'rb') as bayes_file:
-                bayes = pickle.load(bayes_file)
-            print("Loaded file:", file_name)
-            bayes.maximize(n_iter=n, kappa=1, acq="ucb", alpha=1e-3)
-
-        print(bayes.res['max'])
-        print(bayes.res['all'])
-        with open(file_name, "wb") as output_file:
-            pickle.dump(bayes, output_file)
-
-    def analyze(self):
-        pass
+    # def __init__(self, name, fixed_params, variable_params_range, variable_params_init):
+    #     self.name = name
+    #     self.fixed_params = fixed_params
+    #     self.variable_params_range = variable_params_range
+    #     self.variable_params_init = variable_params_init
+    #
+    # def initialize_learner(self, **params):
+    #     pass
+    #
+    # def train_model(self, **params):
+    #     pass
+    #
+    # def optimize(self, n):
+    #     file_name = self.name + '.bayes'
+    #     bayes_file = Path(file_name)
+    #
+    #     if not bayes_file.is_file():
+    #         print("Initializing:", file_name)
+    #         bayes = BayesianOptimization(self.train_model, self.variable_params_range)
+    #         bayes.explore(self.variable_params_init)
+    #         bayes.maximize(init_points=1, n_iter=n, kappa=1, acq="ucb")
+    #     else:
+    #         with open(file_name, 'rb') as bayes_file:
+    #             bayes = pickle.load(bayes_file)
+    #         print("Loaded file:", file_name)
+    #         bayes.maximize(n_iter=n, kappa=1, acq="ucb", alpha=1e-3)
+    #
+    #     print(bayes.res['max'])
+    #     print(bayes.res['all'])
+    #     with open(file_name, "wb") as output_file:
+    #         pickle.dump(bayes, output_file)
+    #
+    # def analyze(self):
+    #     pass
 
 
 # MetaDataset
