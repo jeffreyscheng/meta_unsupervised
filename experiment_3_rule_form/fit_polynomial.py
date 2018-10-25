@@ -1,15 +1,10 @@
 import pandas as pd
 import torch
 import numpy as np
-from torch import nn
+from experiment_3_rule_form.writable_hebbian import WritableHebbianNet, WritableHebbianFrame
 import os
 import itertools
-import torchvision.datasets as dsets
-import torchvision.transforms as transforms
-# from experiment_0_util.experiment import *
-from experiment_3_rule_form.create_meta_dataset import WritableHebbianFrame
-from experiment_3_rule_form.create_meta_dataset import WritableHebbianNet
-from torch.autograd import Variable
+
 
 print("imports done")
 final_path = os.path.join(os.sep.join(os.path.dirname(__file__).split(os.sep)[:-1]),

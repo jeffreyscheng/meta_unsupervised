@@ -41,11 +41,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="600">
+      <file leaf-file-name="fit_polynomial.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/experiment_3_rule_form/fit_polynomial.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="72" selection-start-line="3" selection-start-column="72" selection-end-line="3" selection-end-column="72" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="writable_hebbian.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/experiment_3_rule_form/writable_hebbian.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret selection-end-line="1" selection-end-column="46" />
+              <folding>
+                <element signature="e#0#45#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="viz_polynomial.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/experiment_3_rule_form/viz_polynomial.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="439">
-              <caret line="69" column="31" selection-start-line="69" selection-start-column="31" selection-end-line="69" selection-end-column="31" />
+            <state relative-caret-position="51">
+              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -53,56 +74,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="hebbian_frame.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/experiment_0_util/hebbian_frame.py">
+      <file leaf-file-name="create_meta_dataset.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/experiment_3_rule_form/create_meta_dataset.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="484">
-              <caret line="56" column="32" lean-forward="true" selection-start-line="56" selection-start-column="32" selection-end-line="56" selection-end-column="32" />
-              <folding>
-                <element signature="e#0#46#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="34">
+              <caret line="2" column="52" selection-start-line="2" selection-start-column="52" selection-end-line="2" selection-end-column="52" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="experiment_3_degree_vs_error.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/experiment_results/experiment_3_degree_vs_error.png">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file leaf-file-name="experiment_3_degree_vs_error_without_0.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/experiment_results/experiment_3_degree_vs_error_without_0.png">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file leaf-file-name="experiment_3_grad_vs_Hebb.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/experiment_results/experiment_3_grad_vs_Hebb.png">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file leaf-file-name="experiment_3_degree_0_models.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/experiment_results/experiment_3_degree_0_models.png">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file leaf-file-name="experiment_3_degree_1_models.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/experiment_results/experiment_3_degree_1_models.png">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file leaf-file-name="experiment_3_scaled_grad_vs_Hebb.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/experiment_results/experiment_3_scaled_grad_vs_Hebb.png">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file leaf-file-name="experiment_3_degree_2_models.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/experiment_results/experiment_3_degree_2_models.png">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file leaf-file-name="experiment_3_degree_3_models.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/experiment_results/experiment_3_degree_3_models.png">
-          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
     </leaf>
@@ -139,7 +117,7 @@
       <find>download</find>
       <find>gpu_bool</find>
       <find>gpu_bo</find>
-      <find>os.environ[&quot;CUDA_VISIBLE_DEVICES&quot;] = &quot;2&quot;</find>
+      <find />
       <find>phi</find>
       <find>self.impulse</find>
       <find>metadata</find>
@@ -167,7 +145,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/hebbian_comparison.py" />
         <option value="$PROJECT_DIR$/single_single.py" />
         <option value="$PROJECT_DIR$/single_single_mature.py" />
         <option value="$PROJECT_DIR$/bayes.py" />
@@ -212,12 +189,13 @@
         <option value="$PROJECT_DIR$/experiment_2_labels/vary_theta.py" />
         <option value="$PROJECT_DIR$/experiment_2_labels/viz_theta.py" />
         <option value="$PROJECT_DIR$/experiment_3_rule_form/__init__.py" />
-        <option value="$PROJECT_DIR$/experiment_3_rule_form/fit_polynomial.py" />
         <option value="$PROJECT_DIR$/run_experiment_3.2.py" />
         <option value="$PROJECT_DIR$/experiment_0_util/control_frame.py" />
-        <option value="$PROJECT_DIR$/experiment_3_rule_form/create_meta_dataset.py" />
-        <option value="$PROJECT_DIR$/experiment_3_rule_form/viz_polynomial.py" />
         <option value="$PROJECT_DIR$/experiment_0_util/hebbian_frame.py" />
+        <option value="$PROJECT_DIR$/experiment_3_rule_form/writable_hebbian.py" />
+        <option value="$PROJECT_DIR$/experiment_3_rule_form/viz_polynomial.py" />
+        <option value="$PROJECT_DIR$/experiment_3_rule_form/fit_polynomial.py" />
+        <option value="$PROJECT_DIR$/experiment_3_rule_form/create_meta_dataset.py" />
       </list>
     </option>
   </component>
@@ -271,27 +249,6 @@
               <item name="meta_unsupervised" type="b2602c69:ProjectViewProjectNode" />
               <item name="meta_unsupervised" type="462c0819:PsiDirectoryNode" />
               <item name="experiment_3_rule_form" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="meta_unsupervised" type="b2602c69:ProjectViewProjectNode" />
-              <item name="meta_unsupervised" type="462c0819:PsiDirectoryNode" />
-              <item name="experiment_results" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="meta_unsupervised" type="b2602c69:ProjectViewProjectNode" />
-              <item name="meta_unsupervised" type="462c0819:PsiDirectoryNode" />
-              <item name="final_data" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="meta_unsupervised" type="b2602c69:ProjectViewProjectNode" />
-              <item name="meta_unsupervised" type="462c0819:PsiDirectoryNode" />
-              <item name="final_data" type="462c0819:PsiDirectoryNode" />
-              <item name="degree_appx_model_sets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="meta_unsupervised" type="b2602c69:ProjectViewProjectNode" />
-              <item name="meta_unsupervised" type="462c0819:PsiDirectoryNode" />
-              <item name="mu_exp" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -535,7 +492,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/extract_polynomial.py" />
     <entry file="file://$PROJECT_DIR$/test.py" />
     <entry file="file://$PROJECT_DIR$/requirements.txt">
       <provider selected="true" editor-type-id="text-editor">
@@ -656,16 +612,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/experiment_3_rule_form/fit_polynomial.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1921">
-          <caret line="123" selection-start-line="123" selection-end-line="123" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/experiment_0_util/control_frame.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1207">
@@ -688,16 +634,6 @@
     <entry file="file://$PROJECT_DIR$/final_data/degree_appx_model_sets/0.csv">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/experiment_3_rule_form/create_meta_dataset.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3103">
-          <caret line="43" column="66" selection-start-line="43" selection-start-column="66" selection-end-line="43" selection-end-column="66" />
-          <folding>
-            <element signature="e#0#45#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/experiment_2_labels/viz_theta.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="484">
@@ -713,16 +649,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/experiment_results/experiment_3_degree_vs_log_error.png">
       <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/experiment_3_rule_form/viz_polynomial.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="439">
-          <caret line="69" column="31" selection-start-line="69" selection-start-column="31" selection-end-line="69" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/experiment_results/experiment_3_degree_0_models.png">
       <provider selected="true" editor-type-id="images" />
@@ -750,11 +676,45 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/experiment_0_util/hebbian_frame.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="56" column="32" lean-forward="true" selection-start-line="56" selection-start-column="32" selection-end-line="56" selection-end-column="32" />
+        <state relative-caret-position="-1445">
+          <caret line="26" column="26" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="26" />
           <folding>
             <element signature="e#0#46#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/experiment_3_rule_form/viz_polynomial.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/experiment_3_rule_form/writable_hebbian.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="1" selection-end-column="46" />
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/experiment_3_rule_form/fit_polynomial.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="72" selection-start-line="3" selection-start-column="72" selection-end-line="3" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/experiment_3_rule_form/create_meta_dataset.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="52" selection-start-line="2" selection-start-column="52" selection-end-line="2" selection-end-column="52" />
         </state>
       </provider>
     </entry>

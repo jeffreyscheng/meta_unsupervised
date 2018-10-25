@@ -1,9 +1,5 @@
 import pandas as pd
-import numpy as np
 import matplotlib.pyplot as plt
-import math
-from mpl_toolkits.mplot3d import axes3d, Axes3D  # <-- Note the capitalization
-from matplotlib import pyplot
 import os
 
 pointwise_path = os.path.join(os.sep.join(os.path.dirname(__file__).split(os.sep)[:-1]),
