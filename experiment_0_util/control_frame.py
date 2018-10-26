@@ -8,8 +8,6 @@ from torch.autograd import Variable
 import time
 import os
 
-os.environ["CUDA_VISIBLE_DEVICES"] = "1"
-
 
 # Template for Control Structure
 class ControlNet(nn.Module):

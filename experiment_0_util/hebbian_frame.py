@@ -8,8 +8,6 @@ from torch.autograd import Variable
 import time
 import os
 
-os.environ["CUDA_VISIBLE_DEVICES"] = "2"
-
 
 # Template for Single Structure
 class HebbianNet(nn.Module):

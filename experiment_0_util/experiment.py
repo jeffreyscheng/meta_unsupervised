@@ -2,8 +2,6 @@ from experiment_0_util.control_frame import *
 from experiment_0_util.hebbian_frame import *
 from hyperparameters import *
 
-os.environ["CUDA_VISIBLE_DEVICES"] = "2"
-
 n = 10  # iterations per experimental pair
 
 
