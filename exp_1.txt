@@ -1,2700 +1,1069 @@
 Running Hebbian: 1 0.01
-Accuracy of the network on the 10000 test images: 32 %
-Time spent training: 3.116039514541626
-Time spent testing: 8.086073398590088
-Accuracy of the network on the 10000 test images: 20 %
-Time spent training: 1.6115241050720215
-Time spent testing: 8.131763219833374
-Accuracy of the network on the 10000 test images: 45 %
-Time spent training: 1.6134884357452393
-Time spent testing: 8.180651426315308
+Accuracy of the network on the 10000 test images: 34 %
+Time spent training: 3.031477689743042
+Time spent testing: 8.737814903259277
 Accuracy of the network on the 10000 test images: 29 %
-Time spent training: 1.6156654357910156
-Time spent testing: 8.197315692901611
-Accuracy of the network on the 10000 test images: 32 %
-Time spent training: 1.6122324466705322
-Time spent testing: 8.131184101104736
-Accuracy of the network on the 10000 test images: 48 %
-Time spent training: 1.610788345336914
-Time spent testing: 8.229082584381104
-Accuracy of the network on the 10000 test images: 30 %
-Time spent training: 1.6197590827941895
-Time spent testing: 8.193113327026367
-Accuracy of the network on the 10000 test images: 33 %
-Time spent training: 1.616344690322876
-Time spent testing: 8.24834418296814
-Accuracy of the network on the 10000 test images: 44 %
-Time spent training: 1.6233487129211426
-Time spent testing: 8.243069648742676
+Time spent training: 1.6366775035858154
+Time spent testing: 8.215234279632568
+Accuracy of the network on the 10000 test images: 34 %
+Time spent training: 1.6359927654266357
+Time spent testing: 8.225791931152344
+Accuracy of the network on the 10000 test images: 36 %
+Time spent training: 1.6429657936096191
+Time spent testing: 8.22071099281311
+Accuracy of the network on the 10000 test images: 49 %
+Time spent training: 1.6369619369506836
+Time spent testing: 8.663373947143555
 Accuracy of the network on the 10000 test images: 23 %
-Time spent training: 1.619225263595581
-Time spent testing: 8.176551580429077
+Time spent training: 1.6446447372436523
+Time spent testing: 8.22203016281128
+Accuracy of the network on the 10000 test images: 43 %
+Time spent training: 1.6453206539154053
+Time spent testing: 8.231023073196411
+Accuracy of the network on the 10000 test images: 22 %
+Time spent training: 1.642834186553955
+Time spent testing: 8.403074979782104
+Accuracy of the network on the 10000 test images: 34 %
+Time spent training: 1.7192368507385254
+Time spent testing: 8.488411903381348
+Accuracy of the network on the 10000 test images: 48 %
+Time spent training: 1.690021276473999
+Time spent testing: 8.323643684387207
 Running Control: 1 0.01
-Accuracy of the network on the 10000 test images: 47 %
-Accuracy of the network on the 10000 test images: 40 %
-Accuracy of the network on the 10000 test images: 48 %
-Accuracy of the network on the 10000 test images: 40 %
-Accuracy of the network on the 10000 test images: 37 %
-Accuracy of the network on the 10000 test images: 37 %
-Accuracy of the network on the 10000 test images: 52 %
+Accuracy of the network on the 10000 test images: 34 %
 Accuracy of the network on the 10000 test images: 35 %
 Accuracy of the network on the 10000 test images: 43 %
-Accuracy of the network on the 10000 test images: 53 %
-Running Hebbian: 1 0.02
-Accuracy of the network on the 10000 test images: 33 %
-Time spent training: 3.3837952613830566
-Time spent testing: 8.253151655197144
-Accuracy of the network on the 10000 test images: 56 %
-Time spent training: 3.396780252456665
-Time spent testing: 8.231821775436401
+Accuracy of the network on the 10000 test images: 48 %
+Accuracy of the network on the 10000 test images: 36 %
 Accuracy of the network on the 10000 test images: 49 %
-Time spent training: 3.3886501789093018
-Time spent testing: 8.28885555267334
-Accuracy of the network on the 10000 test images: 27 %
-Time spent training: 3.4046080112457275
-Time spent testing: 8.241586446762085
-Accuracy of the network on the 10000 test images: 41 %
-Time spent training: 3.488921880722046
-Time spent testing: 8.42808747291565
-Accuracy of the network on the 10000 test images: 56 %
-Time spent training: 3.419870138168335
-Time spent testing: 8.22922682762146
-Accuracy of the network on the 10000 test images: 62 %
-Time spent training: 3.413536548614502
-Time spent testing: 8.266804456710815
-Accuracy of the network on the 10000 test images: 60 %
-Time spent training: 3.468127965927124
-Time spent testing: 8.253758907318115
-Accuracy of the network on the 10000 test images: 51 %
-Time spent training: 3.3868653774261475
-Time spent testing: 8.18978762626648
-Accuracy of the network on the 10000 test images: 43 %
-Time spent training: 3.487001419067383
-Time spent testing: 8.29798173904419
-Running Control: 1 0.02
-Accuracy of the network on the 10000 test images: 57 %
-Accuracy of the network on the 10000 test images: 45 %
-Accuracy of the network on the 10000 test images: 45 %
 Accuracy of the network on the 10000 test images: 28 %
+Accuracy of the network on the 10000 test images: 29 %
+Accuracy of the network on the 10000 test images: 48 %
 Accuracy of the network on the 10000 test images: 52 %
-Accuracy of the network on the 10000 test images: 41 %
-Accuracy of the network on the 10000 test images: 38 %
-Accuracy of the network on the 10000 test images: 25 %
-Accuracy of the network on the 10000 test images: 59 %
-Accuracy of the network on the 10000 test images: 52 %
-Running Hebbian: 1 0.03
-Accuracy of the network on the 10000 test images: 52 %
-Time spent training: 5.1411097049713135
-Time spent testing: 8.354519367218018
-Accuracy of the network on the 10000 test images: 58 %
-Time spent training: 5.3151350021362305
-Time spent testing: 8.248034715652466
-Accuracy of the network on the 10000 test images: 45 %
-Time spent training: 5.145689249038696
-Time spent testing: 8.31765079498291
-Accuracy of the network on the 10000 test images: 38 %
-Time spent training: 5.200805902481079
-Time spent testing: 8.373965978622437
-Accuracy of the network on the 10000 test images: 65 %
-Time spent training: 5.143706560134888
-Time spent testing: 8.315511465072632
-Accuracy of the network on the 10000 test images: 51 %
-Time spent training: 5.165581941604614
-Time spent testing: 8.474318265914917
-Accuracy of the network on the 10000 test images: 37 %
-Time spent training: 5.3455893993377686
-Time spent testing: 9.002800464630127
-Accuracy of the network on the 10000 test images: 59 %
-Time spent training: 5.26762580871582
-Time spent testing: 9.53983759880066
-Accuracy of the network on the 10000 test images: 58 %
-Time spent training: 5.212849855422974
-Time spent testing: 8.361261367797852
+Running Hebbian: 1 0.02
+Accuracy of the network on the 10000 test images: 28 %
+Time spent training: 3.439378023147583
+Time spent testing: 8.263153791427612
+Accuracy of the network on the 10000 test images: 53 %
+Time spent training: 3.4629316329956055
+Time spent testing: 8.652416944503784
 Accuracy of the network on the 10000 test images: 50 %
-Time spent training: 5.165275573730469
-Time spent testing: 8.307269096374512
-Running Control: 1 0.03
-Accuracy of the network on the 10000 test images: 57 %
-Accuracy of the network on the 10000 test images: 48 %
-Accuracy of the network on the 10000 test images: 62 %
-Accuracy of the network on the 10000 test images: 46 %
-Accuracy of the network on the 10000 test images: 61 %
-Accuracy of the network on the 10000 test images: 59 %
-Accuracy of the network on the 10000 test images: 48 %
-Accuracy of the network on the 10000 test images: 58 %
+Time spent training: 3.4657669067382812
+Time spent testing: 8.362338304519653
 Accuracy of the network on the 10000 test images: 35 %
-Accuracy of the network on the 10000 test images: 46 %
-Running Hebbian: 1 0.04
-Accuracy of the network on the 10000 test images: 53 %
-Time spent training: 6.898973703384399
-Time spent testing: 8.204285860061646
-Accuracy of the network on the 10000 test images: 55 %
-Time spent training: 6.896655797958374
-Time spent testing: 8.275837421417236
-Accuracy of the network on the 10000 test images: 46 %
-Time spent training: 6.902270793914795
-Time spent testing: 8.2732994556427
-Accuracy of the network on the 10000 test images: 56 %
-Time spent training: 6.889214515686035
-Time spent testing: 8.269837141036987
+Time spent training: 3.4355618953704834
+Time spent testing: 8.286784648895264
+Accuracy of the network on the 10000 test images: 40 %
+Time spent training: 3.4653773307800293
+Time spent testing: 8.437487363815308
+Accuracy of the network on the 10000 test images: 42 %
+Time spent training: 3.553657054901123
+Time spent testing: 8.444191694259644
 Accuracy of the network on the 10000 test images: 38 %
-Time spent training: 6.946106433868408
-Time spent testing: 8.360673904418945
-Accuracy of the network on the 10000 test images: 53 %
-Time spent training: 6.9349634647369385
-Time spent testing: 8.280605792999268
-Accuracy of the network on the 10000 test images: 43 %
-Time spent training: 6.907585382461548
-Time spent testing: 8.376609802246094
-Accuracy of the network on the 10000 test images: 46 %
-Time spent training: 6.9830567836761475
-Time spent testing: 8.34266710281372
+Time spent training: 3.448517084121704
+Time spent testing: 8.334441900253296
+Accuracy of the network on the 10000 test images: 34 %
+Time spent training: 3.4439165592193604
+Time spent testing: 8.334075450897217
 Accuracy of the network on the 10000 test images: 49 %
-Time spent training: 6.9237892627716064
-Time spent testing: 8.531680345535278
-Accuracy of the network on the 10000 test images: 49 %
-Time spent training: 6.942862510681152
-Time spent testing: 8.330450534820557
-Running Control: 1 0.04
-Accuracy of the network on the 10000 test images: 65 %
-Accuracy of the network on the 10000 test images: 66 %
-Accuracy of the network on the 10000 test images: 56 %
-Accuracy of the network on the 10000 test images: 58 %
-Accuracy of the network on the 10000 test images: 44 %
-Accuracy of the network on the 10000 test images: 67 %
-Accuracy of the network on the 10000 test images: 70 %
-Accuracy of the network on the 10000 test images: 53 %
-Accuracy of the network on the 10000 test images: 52 %
-Accuracy of the network on the 10000 test images: 71 %
-Running Hebbian: 1 0.05
-Accuracy of the network on the 10000 test images: 58 %
-Time spent training: 8.613752126693726
-Time spent testing: 8.215969562530518
-Accuracy of the network on the 10000 test images: 42 %
-Time spent training: 8.662932634353638
-Time spent testing: 8.393349170684814
-Accuracy of the network on the 10000 test images: 44 %
-Time spent training: 8.733481884002686
-Time spent testing: 8.216594934463501
-Accuracy of the network on the 10000 test images: 50 %
-Time spent training: 8.682618856430054
-Time spent testing: 8.204824209213257
-Accuracy of the network on the 10000 test images: 50 %
-Time spent training: 8.649432182312012
-Time spent testing: 8.360511779785156
-Accuracy of the network on the 10000 test images: 59 %
-Time spent training: 8.651918649673462
-Time spent testing: 8.346906900405884
-Accuracy of the network on the 10000 test images: 42 %
-Time spent training: 8.677772521972656
-Time spent testing: 8.25126028060913
-Accuracy of the network on the 10000 test images: 58 %
-Time spent training: 8.657023191452026
-Time spent testing: 8.249725341796875
-Accuracy of the network on the 10000 test images: 33 %
-Time spent training: 8.697660684585571
-Time spent testing: 8.31905746459961
-Accuracy of the network on the 10000 test images: 51 %
-Time spent training: 8.871876955032349
-Time spent testing: 8.217558145523071
-Running Control: 1 0.05
-Accuracy of the network on the 10000 test images: 59 %
-Accuracy of the network on the 10000 test images: 72 %
-Accuracy of the network on the 10000 test images: 70 %
-Accuracy of the network on the 10000 test images: 68 %
-Accuracy of the network on the 10000 test images: 53 %
-Accuracy of the network on the 10000 test images: 63 %
-Accuracy of the network on the 10000 test images: 64 %
+Time spent training: 3.543388605117798
+Time spent testing: 8.38834023475647
+Accuracy of the network on the 10000 test images: 37 %
+Time spent training: 3.4684534072875977
+Time spent testing: 8.861297369003296
+Running Control: 1 0.02
 Accuracy of the network on the 10000 test images: 61 %
-Accuracy of the network on the 10000 test images: 69 %
-Accuracy of the network on the 10000 test images: 68 %
-Running Hebbian: 1 0.060000000000000005
-Accuracy of the network on the 10000 test images: 57 %
-Time spent training: 10.354390144348145
-Time spent testing: 8.170287132263184
-Accuracy of the network on the 10000 test images: 62 %
-Time spent training: 10.406906127929688
-Time spent testing: 8.234397411346436
-Accuracy of the network on the 10000 test images: 66 %
-Time spent training: 10.44185733795166
-Time spent testing: 8.355130672454834
-Accuracy of the network on the 10000 test images: 60 %
-Time spent training: 10.526602745056152
-Time spent testing: 8.341768741607666
-Accuracy of the network on the 10000 test images: 59 %
-Time spent training: 10.432223796844482
-Time spent testing: 8.345651149749756
-Accuracy of the network on the 10000 test images: 51 %
-Time spent training: 10.444287300109863
-Time spent testing: 8.413677215576172
-Accuracy of the network on the 10000 test images: 52 %
-Time spent training: 10.461723566055298
-Time spent testing: 8.267967939376831
-Accuracy of the network on the 10000 test images: 46 %
-Time spent training: 10.533936023712158
-Time spent testing: 8.28225827217102
-Accuracy of the network on the 10000 test images: 57 %
-Time spent training: 10.442946910858154
-Time spent testing: 8.32288646697998
-Accuracy of the network on the 10000 test images: 47 %
-Time spent training: 10.46811842918396
-Time spent testing: 8.411782503128052
-Running Control: 1 0.060000000000000005
-Accuracy of the network on the 10000 test images: 57 %
-Accuracy of the network on the 10000 test images: 74 %
-Accuracy of the network on the 10000 test images: 73 %
-Accuracy of the network on the 10000 test images: 76 %
-Accuracy of the network on the 10000 test images: 60 %
-Accuracy of the network on the 10000 test images: 76 %
-Accuracy of the network on the 10000 test images: 55 %
 Accuracy of the network on the 10000 test images: 61 %
-Accuracy of the network on the 10000 test images: 51 %
-Accuracy of the network on the 10000 test images: 59 %
-Running Hebbian: 1 0.06999999999999999
-Accuracy of the network on the 10000 test images: 59 %
-Time spent training: 11.984845876693726
-Time spent testing: 8.319348096847534
-Accuracy of the network on the 10000 test images: 58 %
-Time spent training: 12.092357635498047
-Time spent testing: 8.31124210357666
-Accuracy of the network on the 10000 test images: 52 %
-Time spent training: 12.152711868286133
-Time spent testing: 8.293044328689575
+Accuracy of the network on the 10000 test images: 25 %
+Accuracy of the network on the 10000 test images: 53 %
+Accuracy of the network on the 10000 test images: 55 %
 Accuracy of the network on the 10000 test images: 50 %
-Time spent training: 12.040627717971802
-Time spent testing: 8.389547348022461
-Accuracy of the network on the 10000 test images: 56 %
-Time spent training: 12.062122106552124
-Time spent testing: 8.268555402755737
-Accuracy of the network on the 10000 test images: 66 %
-Time spent training: 12.050540208816528
-Time spent testing: 8.268101215362549
-Accuracy of the network on the 10000 test images: 52 %
-Time spent training: 12.11227297782898
-Time spent testing: 8.232850313186646
-Accuracy of the network on the 10000 test images: 54 %
-Time spent training: 12.168607711791992
-Time spent testing: 8.24420952796936
-Accuracy of the network on the 10000 test images: 55 %
-Time spent training: 12.050889015197754
-Time spent testing: 8.247069597244263
-Accuracy of the network on the 10000 test images: 55 %
-Time spent training: 12.030526876449585
-Time spent testing: 8.227288722991943
-Running Control: 1 0.06999999999999999
-Accuracy of the network on the 10000 test images: 56 %
-Accuracy of the network on the 10000 test images: 73 %
-Accuracy of the network on the 10000 test images: 71 %
-Accuracy of the network on the 10000 test images: 79 %
 Accuracy of the network on the 10000 test images: 39 %
-Accuracy of the network on the 10000 test images: 66 %
-Accuracy of the network on the 10000 test images: 74 %
-Accuracy of the network on the 10000 test images: 79 %
-Accuracy of the network on the 10000 test images: 68 %
-Accuracy of the network on the 10000 test images: 62 %
-Running Hebbian: 1 0.08
-Accuracy of the network on the 10000 test images: 64 %
-Time spent training: 13.886246681213379
-Time spent testing: 8.176838397979736
-Accuracy of the network on the 10000 test images: 42 %
-Time spent training: 13.882081747055054
-Time spent testing: 8.144819498062134
-Accuracy of the network on the 10000 test images: 53 %
-Time spent training: 13.966272115707397
-Time spent testing: 8.347102880477905
-Accuracy of the network on the 10000 test images: 60 %
-Time spent training: 14.02404260635376
-Time spent testing: 8.322123289108276
-Accuracy of the network on the 10000 test images: 66 %
-Time spent training: 13.953219175338745
-Time spent testing: 8.296143531799316
-Accuracy of the network on the 10000 test images: 67 %
-Time spent training: 13.982518196105957
-Time spent testing: 8.259131669998169
-Accuracy of the network on the 10000 test images: 62 %
-Time spent training: 13.998928785324097
-Time spent testing: 8.357511043548584
-Accuracy of the network on the 10000 test images: 54 %
-Time spent training: 14.161736249923706
-Time spent testing: 8.26387906074524
-Accuracy of the network on the 10000 test images: 68 %
-Time spent training: 13.91279411315918
-Time spent testing: 8.447805881500244
-Accuracy of the network on the 10000 test images: 45 %
-Time spent training: 13.928383111953735
-Time spent testing: 8.288136720657349
-Running Control: 1 0.08
-Accuracy of the network on the 10000 test images: 56 %
-Accuracy of the network on the 10000 test images: 52 %
-Accuracy of the network on the 10000 test images: 64 %
-Accuracy of the network on the 10000 test images: 72 %
-Accuracy of the network on the 10000 test images: 61 %
-Accuracy of the network on the 10000 test images: 85 %
-Accuracy of the network on the 10000 test images: 32 %
-Accuracy of the network on the 10000 test images: 78 %
-Accuracy of the network on the 10000 test images: 74 %
-Accuracy of the network on the 10000 test images: 72 %
-Running Hebbian: 1 0.09
-Accuracy of the network on the 10000 test images: 59 %
-Time spent training: 15.675614356994629
-Time spent testing: 8.31486201286316
-Accuracy of the network on the 10000 test images: 47 %
-Time spent training: 15.743077516555786
-Time spent testing: 8.22327208518982
-Accuracy of the network on the 10000 test images: 61 %
-Time spent training: 15.789999008178711
-Time spent testing: 8.281388759613037
-Accuracy of the network on the 10000 test images: 51 %
-Time spent training: 15.812472820281982
-Time spent testing: 8.291135549545288
-Accuracy of the network on the 10000 test images: 52 %
-Time spent training: 15.706847190856934
-Time spent testing: 8.424847602844238
-Accuracy of the network on the 10000 test images: 53 %
-Time spent training: 15.83369779586792
-Time spent testing: 8.33547830581665
-Accuracy of the network on the 10000 test images: 54 %
-Time spent training: 15.713528871536255
-Time spent testing: 8.303671836853027
-Accuracy of the network on the 10000 test images: 67 %
-Time spent training: 15.838976383209229
-Time spent testing: 8.246145725250244
-Accuracy of the network on the 10000 test images: 72 %
-Time spent training: 15.730324268341064
-Time spent testing: 8.290811538696289
-Accuracy of the network on the 10000 test images: 54 %
-Time spent training: 15.986478805541992
-Time spent testing: 8.182698488235474
-Running Control: 1 0.09
-Accuracy of the network on the 10000 test images: 57 %
-Accuracy of the network on the 10000 test images: 70 %
-Accuracy of the network on the 10000 test images: 61 %
-Accuracy of the network on the 10000 test images: 68 %
-Accuracy of the network on the 10000 test images: 66 %
-Accuracy of the network on the 10000 test images: 58 %
-Accuracy of the network on the 10000 test images: 74 %
-Accuracy of the network on the 10000 test images: 81 %
-Accuracy of the network on the 10000 test images: 71 %
-Accuracy of the network on the 10000 test images: 42 %
-Running Hebbian: 1 0.09999999999999999
-Accuracy of the network on the 10000 test images: 59 %
-Time spent training: 17.29842519760132
-Time spent testing: 8.203482627868652
-Accuracy of the network on the 10000 test images: 67 %
-Time spent training: 17.357438802719116
-Time spent testing: 8.206114053726196
-Accuracy of the network on the 10000 test images: 54 %
-Time spent training: 17.356775045394897
-Time spent testing: 8.336682081222534
-Accuracy of the network on the 10000 test images: 46 %
-Time spent training: 17.292919874191284
-Time spent testing: 8.272494316101074
-Accuracy of the network on the 10000 test images: 45 %
-Time spent training: 17.35501456260681
-Time spent testing: 8.204341411590576
-Accuracy of the network on the 10000 test images: 49 %
-Time spent training: 17.448012590408325
-Time spent testing: 8.248092651367188
-Accuracy of the network on the 10000 test images: 66 %
-Time spent training: 17.266377925872803
-Time spent testing: 8.283576011657715
-Accuracy of the network on the 10000 test images: 77 %
-Time spent training: 17.29975652694702
-Time spent testing: 8.389235973358154
-Accuracy of the network on the 10000 test images: 49 %
-Time spent training: 17.288588523864746
-Time spent testing: 8.294075965881348
-Accuracy of the network on the 10000 test images: 61 %
-Time spent training: 17.444533824920654
-Time spent testing: 8.295103549957275
-Running Control: 1 0.09999999999999999
-Accuracy of the network on the 10000 test images: 60 %
-Accuracy of the network on the 10000 test images: 78 %
-Accuracy of the network on the 10000 test images: 69 %
-Accuracy of the network on the 10000 test images: 63 %
-Accuracy of the network on the 10000 test images: 59 %
-Accuracy of the network on the 10000 test images: 80 %
-Accuracy of the network on the 10000 test images: 64 %
-Accuracy of the network on the 10000 test images: 69 %
-Accuracy of the network on the 10000 test images: 46 %
-Accuracy of the network on the 10000 test images: 79 %
-Running Hebbian: 1 0.1
-Accuracy of the network on the 10000 test images: 53 %
-Time spent training: 17.41474223136902
-Time spent testing: 8.19080638885498
-Accuracy of the network on the 10000 test images: 56 %
-Time spent training: 17.474160194396973
-Time spent testing: 8.2646005153656
-Accuracy of the network on the 10000 test images: 68 %
-Time spent training: 17.464607000350952
-Time spent testing: 8.350245714187622
-Accuracy of the network on the 10000 test images: 46 %
-Time spent training: 17.500284910202026
-Time spent testing: 8.305119514465332
-Accuracy of the network on the 10000 test images: 58 %
-Time spent training: 17.594704151153564
-Time spent testing: 8.40674638748169
-Accuracy of the network on the 10000 test images: 48 %
-Time spent training: 17.49533224105835
-Time spent testing: 8.271345853805542
-Accuracy of the network on the 10000 test images: 50 %
-Time spent training: 17.524240732192993
-Time spent testing: 8.273919343948364
-Accuracy of the network on the 10000 test images: 68 %
-Time spent training: 17.46530318260193
-Time spent testing: 8.228224992752075
-Accuracy of the network on the 10000 test images: 54 %
-Time spent training: 17.694862365722656
-Time spent testing: 8.293731212615967
-Accuracy of the network on the 10000 test images: 42 %
-Time spent training: 17.483064889907837
-Time spent testing: 8.266068696975708
-Running Control: 1 0.1
-Accuracy of the network on the 10000 test images: 77 %
-Accuracy of the network on the 10000 test images: 70 %
-Accuracy of the network on the 10000 test images: 75 %
-Accuracy of the network on the 10000 test images: 54 %
-Accuracy of the network on the 10000 test images: 72 %
-Accuracy of the network on the 10000 test images: 71 %
-Accuracy of the network on the 10000 test images: 74 %
-Accuracy of the network on the 10000 test images: 47 %
-Accuracy of the network on the 10000 test images: 56 %
-Accuracy of the network on the 10000 test images: 80 %
-Running Hebbian: 1 0.15000000000000002
-Accuracy of the network on the 10000 test images: 61 %
-Time spent training: 26.244513750076294
-Time spent testing: 8.248602390289307
-Accuracy of the network on the 10000 test images: 71 %
-Time spent training: 26.264545440673828
-Time spent testing: 8.270072937011719
-Accuracy of the network on the 10000 test images: 56 %
-Time spent training: 26.37629222869873
-Time spent testing: 8.25716233253479
-Accuracy of the network on the 10000 test images: 42 %
-Time spent training: 26.502613306045532
-Time spent testing: 8.296889781951904
-Accuracy of the network on the 10000 test images: 73 %
-Time spent training: 26.167176485061646
-Time spent testing: 8.272706508636475
-Accuracy of the network on the 10000 test images: 68 %
-Time spent training: 26.18278956413269
-Time spent testing: 8.434721231460571
-Accuracy of the network on the 10000 test images: 72 %
-Time spent training: 26.332804203033447
-Time spent testing: 8.22618842124939
-Accuracy of the network on the 10000 test images: 70 %
-Time spent training: 26.284821033477783
-Time spent testing: 8.211608648300171
-Accuracy of the network on the 10000 test images: 60 %
-Time spent training: 26.604926586151123
-Time spent testing: 8.299782514572144
-Accuracy of the network on the 10000 test images: 52 %
-Time spent training: 26.259617567062378
-Time spent testing: 8.256215572357178
-Running Control: 1 0.15000000000000002
-Accuracy of the network on the 10000 test images: 76 %
-Accuracy of the network on the 10000 test images: 64 %
-Accuracy of the network on the 10000 test images: 88 %
-Accuracy of the network on the 10000 test images: 71 %
-Accuracy of the network on the 10000 test images: 82 %
-Accuracy of the network on the 10000 test images: 80 %
-Accuracy of the network on the 10000 test images: 52 %
-Accuracy of the network on the 10000 test images: 56 %
-Accuracy of the network on the 10000 test images: 47 %
-Accuracy of the network on the 10000 test images: 47 %
-Running Hebbian: 1 0.20000000000000004
-Accuracy of the network on the 10000 test images: 58 %
-Time spent training: 34.927497148513794
-Time spent testing: 8.40002179145813
-Accuracy of the network on the 10000 test images: 70 %
-Time spent training: 35.414917945861816
-Time spent testing: 8.416651248931885
-Accuracy of the network on the 10000 test images: 83 %
-Time spent training: 35.296470642089844
-Time spent testing: 8.260712623596191
-Accuracy of the network on the 10000 test images: 68 %
-Time spent training: 35.18829894065857
-Time spent testing: 8.26042890548706
-Accuracy of the network on the 10000 test images: 68 %
-Time spent training: 35.194159269332886
-Time spent testing: 8.317397594451904
-Accuracy of the network on the 10000 test images: 63 %
-Time spent training: 35.08211064338684
-Time spent testing: 8.3262619972229
-Accuracy of the network on the 10000 test images: 67 %
-Time spent training: 35.24009871482849
-Time spent testing: 8.264792203903198
-Accuracy of the network on the 10000 test images: 69 %
-Time spent training: 35.23575782775879
-Time spent testing: 8.248748779296875
-Accuracy of the network on the 10000 test images: 65 %
-Time spent training: 35.15213131904602
-Time spent testing: 8.202446222305298
-Accuracy of the network on the 10000 test images: 66 %
-Time spent training: 35.09863901138306
-Time spent testing: 8.008692502975464
-Running Control: 1 0.20000000000000004
-Accuracy of the network on the 10000 test images: 63 %
-Accuracy of the network on the 10000 test images: 73 %
-Accuracy of the network on the 10000 test images: 73 %
-Accuracy of the network on the 10000 test images: 74 %
-Accuracy of the network on the 10000 test images: 73 %
-Accuracy of the network on the 10000 test images: 80 %
-Accuracy of the network on the 10000 test images: 73 %
-Accuracy of the network on the 10000 test images: 54 %
-Accuracy of the network on the 10000 test images: 53 %
-Accuracy of the network on the 10000 test images: 82 %
-Running Hebbian: 1 0.25000000000000006
-Accuracy of the network on the 10000 test images: 71 %
-Time spent training: 43.91067123413086
-Time spent testing: 8.074479818344116
-Accuracy of the network on the 10000 test images: 62 %
-Time spent training: 43.93952655792236
-Time spent testing: 8.078512191772461
-Accuracy of the network on the 10000 test images: 71 %
-Time spent training: 43.84274649620056
-Time spent testing: 8.0150306224823
-Accuracy of the network on the 10000 test images: 71 %
-Time spent training: 44.121060371398926
-Time spent testing: 8.028651475906372
-Accuracy of the network on the 10000 test images: 72 %
-Time spent training: 43.83932900428772
-Time spent testing: 8.075479507446289
-Accuracy of the network on the 10000 test images: 60 %
-Time spent training: 43.84302258491516
-Time spent testing: 8.013953447341919
 Accuracy of the network on the 10000 test images: 41 %
-Time spent training: 43.8559205532074
-Time spent testing: 8.07490849494934
-Accuracy of the network on the 10000 test images: 49 %
-Time spent training: 43.78712797164917
-Time spent testing: 8.070669412612915
-Accuracy of the network on the 10000 test images: 70 %
-Time spent training: 43.92057490348816
-Time spent testing: 8.035718202590942
-Accuracy of the network on the 10000 test images: 74 %
-Time spent training: 43.854161500930786
-Time spent testing: 8.070839405059814
-Running Control: 1 0.25000000000000006
-Accuracy of the network on the 10000 test images: 73 %
-Accuracy of the network on the 10000 test images: 71 %
-Accuracy of the network on the 10000 test images: 71 %
-Accuracy of the network on the 10000 test images: 91 %
-Accuracy of the network on the 10000 test images: 72 %
-Accuracy of the network on the 10000 test images: 82 %
-Accuracy of the network on the 10000 test images: 49 %
-Accuracy of the network on the 10000 test images: 49 %
-Accuracy of the network on the 10000 test images: 56 %
-Accuracy of the network on the 10000 test images: 73 %
-Running Hebbian: 1 0.30000000000000004
-Accuracy of the network on the 10000 test images: 62 %
-Time spent training: 52.585365772247314
-Time spent testing: 8.09226655960083
-Accuracy of the network on the 10000 test images: 66 %
-Time spent training: 53.38134241104126
-Time spent testing: 8.070382118225098
-Accuracy of the network on the 10000 test images: 77 %
-Time spent training: 52.59109377861023
-Time spent testing: 8.11276364326477
-Accuracy of the network on the 10000 test images: 75 %
-Time spent training: 52.72850203514099
-Time spent testing: 8.062400341033936
-Accuracy of the network on the 10000 test images: 66 %
-Time spent training: 52.59064722061157
-Time spent testing: 8.02476954460144
-Accuracy of the network on the 10000 test images: 81 %
-Time spent training: 52.60601449012756
-Time spent testing: 8.097257852554321
-Accuracy of the network on the 10000 test images: 78 %
-Time spent training: 52.85016441345215
-Time spent testing: 8.037489414215088
-Accuracy of the network on the 10000 test images: 69 %
-Time spent training: 52.71124315261841
-Time spent testing: 8.067919731140137
-Accuracy of the network on the 10000 test images: 58 %
-Time spent training: 52.64211845397949
-Time spent testing: 8.10071849822998
-Accuracy of the network on the 10000 test images: 65 %
-Time spent training: 52.78151297569275
-Time spent testing: 8.041359186172485
-Running Control: 1 0.30000000000000004
-Accuracy of the network on the 10000 test images: 64 %
-Accuracy of the network on the 10000 test images: 71 %
-Accuracy of the network on the 10000 test images: 65 %
-Accuracy of the network on the 10000 test images: 66 %
-Accuracy of the network on the 10000 test images: 72 %
-Accuracy of the network on the 10000 test images: 64 %
-Accuracy of the network on the 10000 test images: 90 %
-Accuracy of the network on the 10000 test images: 92 %
-Accuracy of the network on the 10000 test images: 75 %
-Accuracy of the network on the 10000 test images: 63 %
-Running Hebbian: 1 0.3500000000000001
-Accuracy of the network on the 10000 test images: 56 %
-Time spent training: 61.39532232284546
-Time spent testing: 8.06899881362915
-Accuracy of the network on the 10000 test images: 80 %
-Time spent training: 61.47989296913147
-Time spent testing: 8.054596424102783
-Accuracy of the network on the 10000 test images: 63 %
-Time spent training: 61.49796986579895
-Time spent testing: 8.080294847488403
-Accuracy of the network on the 10000 test images: 75 %
-Time spent training: 61.378432273864746
-Time spent testing: 8.059141874313354
-Accuracy of the network on the 10000 test images: 83 %
-Time spent training: 61.58712935447693
-Time spent testing: 8.036311149597168
-Accuracy of the network on the 10000 test images: 82 %
-Time spent training: 61.44273376464844
-Time spent testing: 8.070312261581421
-Accuracy of the network on the 10000 test images: 73 %
-Time spent training: 61.44321084022522
-Time spent testing: 8.047093629837036
-Accuracy of the network on the 10000 test images: 61 %
-Time spent training: 61.34121775627136
-Time spent testing: 8.045048713684082
-Accuracy of the network on the 10000 test images: 65 %
-Time spent training: 61.45659852027893
-Time spent testing: 8.089654684066772
-Accuracy of the network on the 10000 test images: 57 %
-Time spent training: 61.48412752151489
-Time spent testing: 8.030454158782959
-Running Control: 1 0.3500000000000001
-Accuracy of the network on the 10000 test images: 67 %
-Accuracy of the network on the 10000 test images: 73 %
-Accuracy of the network on the 10000 test images: 64 %
-Accuracy of the network on the 10000 test images: 72 %
-Accuracy of the network on the 10000 test images: 83 %
-Accuracy of the network on the 10000 test images: 82 %
-Accuracy of the network on the 10000 test images: 71 %
-Accuracy of the network on the 10000 test images: 55 %
-Accuracy of the network on the 10000 test images: 66 %
 Accuracy of the network on the 10000 test images: 47 %
-Running Hebbian: 1 0.40000000000000013
-Accuracy of the network on the 10000 test images: 74 %
-Time spent training: 70.44261884689331
-Time spent testing: 8.085569858551025
-Accuracy of the network on the 10000 test images: 61 %
-Time spent training: 70.51639771461487
-Time spent testing: 8.06567931175232
-Accuracy of the network on the 10000 test images: 87 %
-Time spent training: 70.32431292533875
-Time spent testing: 8.071984052658081
-Accuracy of the network on the 10000 test images: 55 %
-Time spent training: 70.38166213035583
-Time spent testing: 8.058070182800293
-Accuracy of the network on the 10000 test images: 74 %
-Time spent training: 70.39658546447754
-Time spent testing: 7.997291088104248
-Accuracy of the network on the 10000 test images: 65 %
-Time spent training: 70.0740647315979
-Time spent testing: 8.127792119979858
-Accuracy of the network on the 10000 test images: 83 %
-Time spent training: 70.39428353309631
-Time spent testing: 8.025261402130127
-Accuracy of the network on the 10000 test images: 88 %
-Time spent training: 70.33504629135132
-Time spent testing: 8.072585582733154
+Accuracy of the network on the 10000 test images: 63 %
+Running Hebbian: 1 0.03
+Accuracy of the network on the 10000 test images: 51 %
+Time spent training: 5.293278455734253
+Time spent testing: 8.332448959350586
 Accuracy of the network on the 10000 test images: 52 %
-Time spent training: 70.18016409873962
-Time spent testing: 8.057374477386475
+Time spent training: 5.26175332069397
+Time spent testing: 8.372865200042725
+Accuracy of the network on the 10000 test images: 52 %
+Time spent training: 5.295379400253296
+Time spent testing: 8.338923692703247
+Accuracy of the network on the 10000 test images: 49 %
+Time spent training: 5.284681558609009
+Time spent testing: 8.330807209014893
+Accuracy of the network on the 10000 test images: 48 %
+Time spent training: 5.261196851730347
+Time spent testing: 9.166997194290161
+Accuracy of the network on the 10000 test images: 59 %
+Time spent training: 5.285156726837158
+Time spent testing: 8.828205347061157
+Accuracy of the network on the 10000 test images: 47 %
+Time spent training: 5.365617990493774
+Time spent testing: 8.38213562965393
+Accuracy of the network on the 10000 test images: 42 %
+Time spent training: 5.316887617111206
+Time spent testing: 9.134950399398804
+Accuracy of the network on the 10000 test images: 69 %
+Time spent training: 5.262234926223755
+Time spent testing: 8.916882038116455
+Accuracy of the network on the 10000 test images: 57 %
+Time spent training: 5.255227327346802
+Time spent testing: 8.34495735168457
+Running Control: 1 0.03
+Accuracy of the network on the 10000 test images: 53 %
+Accuracy of the network on the 10000 test images: 58 %
+Accuracy of the network on the 10000 test images: 52 %
+Accuracy of the network on the 10000 test images: 60 %
+Accuracy of the network on the 10000 test images: 37 %
+Accuracy of the network on the 10000 test images: 40 %
+Accuracy of the network on the 10000 test images: 56 %
+Accuracy of the network on the 10000 test images: 56 %
+Accuracy of the network on the 10000 test images: 66 %
+Accuracy of the network on the 10000 test images: 59 %
+Running Hebbian: 1 0.04
+Accuracy of the network on the 10000 test images: 50 %
+Time spent training: 7.034372568130493
+Time spent testing: 8.34264612197876
+Accuracy of the network on the 10000 test images: 46 %
+Time spent training: 7.088132619857788
+Time spent testing: 8.338997840881348
+Accuracy of the network on the 10000 test images: 43 %
+Time spent training: 7.0341856479644775
+Time spent testing: 8.335936069488525
+Accuracy of the network on the 10000 test images: 57 %
+Time spent training: 7.07632851600647
+Time spent testing: 8.80174994468689
+Accuracy of the network on the 10000 test images: 51 %
+Time spent training: 7.142190933227539
+Time spent testing: 9.01505446434021
+Accuracy of the network on the 10000 test images: 60 %
+Time spent training: 7.09354043006897
+Time spent testing: 8.862549543380737
+Accuracy of the network on the 10000 test images: 39 %
+Time spent training: 7.01721453666687
+Time spent testing: 8.323096752166748
+Accuracy of the network on the 10000 test images: 51 %
+Time spent training: 7.2372517585754395
+Time spent testing: 8.368627071380615
+Accuracy of the network on the 10000 test images: 60 %
+Time spent training: 7.0464489459991455
+Time spent testing: 8.306085109710693
+Accuracy of the network on the 10000 test images: 54 %
+Time spent training: 7.048080682754517
+Time spent testing: 8.320755243301392
+Running Control: 1 0.04
+Accuracy of the network on the 10000 test images: 51 %
+Accuracy of the network on the 10000 test images: 50 %
+Accuracy of the network on the 10000 test images: 37 %
+Accuracy of the network on the 10000 test images: 41 %
+Accuracy of the network on the 10000 test images: 41 %
+Accuracy of the network on the 10000 test images: 56 %
 Accuracy of the network on the 10000 test images: 74 %
-Time spent training: 70.28057312965393
-Time spent testing: 8.072992086410522
+Accuracy of the network on the 10000 test images: 45 %
+Accuracy of the network on the 10000 test images: 61 %
+Accuracy of the network on the 10000 test images: 59 %
+Running Hebbian: 1 0.05
+Accuracy of the network on the 10000 test images: 53 %
+Time spent training: 8.778921604156494
+Time spent testing: 8.310606002807617
+Accuracy of the network on the 10000 test images: 43 %
+Time spent training: 8.797773361206055
+Time spent testing: 8.470716953277588
+Accuracy of the network on the 10000 test images: 55 %
+Time spent training: 8.867583751678467
+Time spent testing: 8.34881854057312
+Accuracy of the network on the 10000 test images: 58 %
+Time spent training: 8.987119674682617
+Time spent testing: 8.336849212646484
+Accuracy of the network on the 10000 test images: 65 %
+Time spent training: 8.823503732681274
+Time spent testing: 8.358044385910034
+Accuracy of the network on the 10000 test images: 45 %
+Time spent training: 8.817285776138306
+Time spent testing: 8.344298124313354
+Accuracy of the network on the 10000 test images: 62 %
+Time spent training: 8.957743644714355
+Time spent testing: 8.360400915145874
+Accuracy of the network on the 10000 test images: 53 %
+Time spent training: 8.818586111068726
+Time spent testing: 8.353268146514893
+Accuracy of the network on the 10000 test images: 57 %
+Time spent training: 9.05164098739624
+Time spent testing: 8.327756404876709
+Accuracy of the network on the 10000 test images: 46 %
+Time spent training: 8.812232255935669
+Time spent testing: 8.352269411087036
+Running Control: 1 0.05
+Accuracy of the network on the 10000 test images: 62 %
+Accuracy of the network on the 10000 test images: 54 %
+Accuracy of the network on the 10000 test images: 67 %
+Accuracy of the network on the 10000 test images: 59 %
+Accuracy of the network on the 10000 test images: 71 %
+Accuracy of the network on the 10000 test images: 57 %
+Accuracy of the network on the 10000 test images: 65 %
+Accuracy of the network on the 10000 test images: 70 %
+Accuracy of the network on the 10000 test images: 68 %
+Accuracy of the network on the 10000 test images: 76 %
+Running Hebbian: 1 0.060000000000000005
+Accuracy of the network on the 10000 test images: 71 %
+Time spent training: 10.613155603408813
+Time spent testing: 8.30344557762146
+Accuracy of the network on the 10000 test images: 66 %
+Time spent training: 10.557295799255371
+Time spent testing: 8.347833633422852
+Accuracy of the network on the 10000 test images: 59 %
+Time spent training: 10.676996231079102
+Time spent testing: 8.354262351989746
+Accuracy of the network on the 10000 test images: 51 %
+Time spent training: 10.679146766662598
+Time spent testing: 8.334107160568237
+Accuracy of the network on the 10000 test images: 43 %
+Time spent training: 10.657798767089844
+Time spent testing: 8.332053422927856
+Accuracy of the network on the 10000 test images: 58 %
+Time spent training: 10.91005802154541
+Time spent testing: 8.357375621795654
+Accuracy of the network on the 10000 test images: 49 %
+Time spent training: 10.614475727081299
+Time spent testing: 8.341560363769531
+Accuracy of the network on the 10000 test images: 33 %
+Time spent training: 10.662880420684814
+Time spent testing: 8.3204185962677
+Accuracy of the network on the 10000 test images: 64 %
+Time spent training: 10.66990351676941
+Time spent testing: 8.611067295074463
+Accuracy of the network on the 10000 test images: 59 %
+Time spent training: 10.787028551101685
+Time spent testing: 8.323139667510986
+Running Control: 1 0.060000000000000005
+Accuracy of the network on the 10000 test images: 77 %
+Accuracy of the network on the 10000 test images: 70 %
+Accuracy of the network on the 10000 test images: 53 %
+Accuracy of the network on the 10000 test images: 56 %
+Accuracy of the network on the 10000 test images: 63 %
+Accuracy of the network on the 10000 test images: 80 %
+Accuracy of the network on the 10000 test images: 60 %
+Accuracy of the network on the 10000 test images: 57 %
+Accuracy of the network on the 10000 test images: 51 %
+Accuracy of the network on the 10000 test images: 83 %
+Running Hebbian: 1 0.06999999999999999
+Accuracy of the network on the 10000 test images: 63 %
+Time spent training: 12.215448141098022
+Time spent testing: 8.325019836425781
+Accuracy of the network on the 10000 test images: 56 %
+Time spent training: 12.294626474380493
+Time spent testing: 8.325520277023315
+Accuracy of the network on the 10000 test images: 53 %
+Time spent training: 12.263550043106079
+Time spent testing: 8.328503370285034
+Accuracy of the network on the 10000 test images: 44 %
+Time spent training: 12.297038078308105
+Time spent testing: 8.326464891433716
+Accuracy of the network on the 10000 test images: 49 %
+Time spent training: 12.613998889923096
+Time spent testing: 8.359009742736816
+Accuracy of the network on the 10000 test images: 42 %
+Time spent training: 12.304695844650269
+Time spent testing: 8.324086666107178
+Accuracy of the network on the 10000 test images: 43 %
+Time spent training: 12.27149248123169
+Time spent testing: 8.348448276519775
+Accuracy of the network on the 10000 test images: 41 %
+Time spent training: 12.485612392425537
+Time spent testing: 8.359034538269043
+Accuracy of the network on the 10000 test images: 34 %
+Time spent training: 12.275352239608765
+Time spent testing: 8.348614692687988
+Accuracy of the network on the 10000 test images: 61 %
+Time spent training: 12.238330602645874
+Time spent testing: 8.316844463348389
+Running Control: 1 0.06999999999999999
+Accuracy of the network on the 10000 test images: 45 %
+Accuracy of the network on the 10000 test images: 62 %
+Accuracy of the network on the 10000 test images: 54 %
+Accuracy of the network on the 10000 test images: 65 %
+Accuracy of the network on the 10000 test images: 57 %
+Accuracy of the network on the 10000 test images: 77 %
+Accuracy of the network on the 10000 test images: 70 %
+Accuracy of the network on the 10000 test images: 28 %
+Accuracy of the network on the 10000 test images: 69 %
+Accuracy of the network on the 10000 test images: 39 %
+Running Hebbian: 1 0.08
+Accuracy of the network on the 10000 test images: 46 %
+Time spent training: 14.214764595031738
+Time spent testing: 8.322350263595581
+Accuracy of the network on the 10000 test images: 56 %
+Time spent training: 14.21756887435913
+Time spent testing: 8.340455532073975
+Accuracy of the network on the 10000 test images: 52 %
+Time spent training: 14.28894829750061
+Time spent testing: 8.347837448120117
+Accuracy of the network on the 10000 test images: 61 %
+Time spent training: 14.281927824020386
+Time spent testing: 8.307276487350464
+Accuracy of the network on the 10000 test images: 52 %
+Time spent training: 14.231561660766602
+Time spent testing: 8.331831455230713
+Accuracy of the network on the 10000 test images: 65 %
+Time spent training: 14.56414532661438
+Time spent testing: 8.312853574752808
+Accuracy of the network on the 10000 test images: 63 %
+Time spent training: 14.169270038604736
+Time spent testing: 8.305701494216919
+Accuracy of the network on the 10000 test images: 57 %
+Time spent training: 14.366308450698853
+Time spent testing: 8.338427782058716
+Accuracy of the network on the 10000 test images: 63 %
+Time spent training: 14.17495608329773
+Time spent testing: 8.32349944114685
+Accuracy of the network on the 10000 test images: 49 %
+Time spent training: 14.39441967010498
+Time spent testing: 8.31639313697815
+Running Control: 1 0.08
+Accuracy of the network on the 10000 test images: 79 %
+Accuracy of the network on the 10000 test images: 79 %
+Accuracy of the network on the 10000 test images: 70 %
+Accuracy of the network on the 10000 test images: 70 %
+Accuracy of the network on the 10000 test images: 78 %
+Accuracy of the network on the 10000 test images: 51 %
+Accuracy of the network on the 10000 test images: 46 %
+Accuracy of the network on the 10000 test images: 30 %
+Accuracy of the network on the 10000 test images: 54 %
+Accuracy of the network on the 10000 test images: 56 %
+Running Hebbian: 1 0.09
+Accuracy of the network on the 10000 test images: 36 %
+Time spent training: 15.957898139953613
+Time spent testing: 8.31941533088684
+Accuracy of the network on the 10000 test images: 55 %
+Time spent training: 16.0233633518219
+Time spent testing: 8.331716060638428
+Accuracy of the network on the 10000 test images: 52 %
+Time spent training: 16.200708866119385
+Time spent testing: 8.2929847240448
+Accuracy of the network on the 10000 test images: 42 %
+Time spent training: 16.284855127334595
+Time spent testing: 8.317445039749146
+Accuracy of the network on the 10000 test images: 60 %
+Time spent training: 16.073498725891113
+Time spent testing: 8.338556051254272
+Accuracy of the network on the 10000 test images: 45 %
+Time spent training: 16.00971555709839
+Time spent testing: 8.361700773239136
+Accuracy of the network on the 10000 test images: 50 %
+Time spent training: 16.210299015045166
+Time spent testing: 8.320468664169312
+Accuracy of the network on the 10000 test images: 66 %
+Time spent training: 16.048291444778442
+Time spent testing: 8.367520809173584
+Accuracy of the network on the 10000 test images: 46 %
+Time spent training: 16.36311149597168
+Time spent testing: 8.31432056427002
+Accuracy of the network on the 10000 test images: 57 %
+Time spent training: 16.006266355514526
+Time spent testing: 8.3469078540802
+Running Control: 1 0.09
+Accuracy of the network on the 10000 test images: 56 %
+Accuracy of the network on the 10000 test images: 82 %
+Accuracy of the network on the 10000 test images: 70 %
+Accuracy of the network on the 10000 test images: 60 %
+Accuracy of the network on the 10000 test images: 46 %
+Accuracy of the network on the 10000 test images: 80 %
+Accuracy of the network on the 10000 test images: 71 %
+Accuracy of the network on the 10000 test images: 86 %
+Accuracy of the network on the 10000 test images: 75 %
+Accuracy of the network on the 10000 test images: 56 %
+Running Hebbian: 1 0.09999999999999999
+Accuracy of the network on the 10000 test images: 52 %
+Time spent training: 17.629551887512207
+Time spent testing: 8.349530458450317
+Accuracy of the network on the 10000 test images: 46 %
+Time spent training: 17.676939487457275
+Time spent testing: 8.341922044754028
+Accuracy of the network on the 10000 test images: 51 %
+Time spent training: 17.654043197631836
+Time spent testing: 8.365112781524658
+Accuracy of the network on the 10000 test images: 60 %
+Time spent training: 17.756240129470825
+Time spent testing: 8.323973655700684
+Accuracy of the network on the 10000 test images: 57 %
+Time spent training: 17.72295117378235
+Time spent testing: 8.386820316314697
+Accuracy of the network on the 10000 test images: 50 %
+Time spent training: 17.954400539398193
+Time spent testing: 8.373364448547363
+Accuracy of the network on the 10000 test images: 55 %
+Time spent training: 17.68329882621765
+Time spent testing: 8.374360084533691
+Accuracy of the network on the 10000 test images: 60 %
+Time spent training: 17.546469926834106
+Time spent testing: 8.316502094268799
+Accuracy of the network on the 10000 test images: 66 %
+Time spent training: 18.14569926261902
+Time spent testing: 8.325281858444214
+Accuracy of the network on the 10000 test images: 53 %
+Time spent training: 17.60817551612854
+Time spent testing: 8.354044675827026
+Running Control: 1 0.09999999999999999
+Accuracy of the network on the 10000 test images: 71 %
+Accuracy of the network on the 10000 test images: 72 %
+Accuracy of the network on the 10000 test images: 55 %
+Accuracy of the network on the 10000 test images: 65 %
+Accuracy of the network on the 10000 test images: 9 %
+Accuracy of the network on the 10000 test images: 62 %
+Accuracy of the network on the 10000 test images: 70 %
+Accuracy of the network on the 10000 test images: 61 %
+Accuracy of the network on the 10000 test images: 61 %
+Accuracy of the network on the 10000 test images: 56 %
+Running Hebbian: 1 0.1
+Accuracy of the network on the 10000 test images: 52 %
+Time spent training: 17.729479789733887
+Time spent testing: 8.350549936294556
+Accuracy of the network on the 10000 test images: 70 %
+Time spent training: 17.830235242843628
+Time spent testing: 8.52571988105774
+Accuracy of the network on the 10000 test images: 60 %
+Time spent training: 17.91908836364746
+Time spent testing: 8.294649839401245
+Accuracy of the network on the 10000 test images: 48 %
+Time spent training: 18.300703048706055
+Time spent testing: 8.32910704612732
+Accuracy of the network on the 10000 test images: 55 %
+Time spent training: 17.90829586982727
+Time spent testing: 8.872633457183838
+Accuracy of the network on the 10000 test images: 44 %
+Time spent training: 18.187618494033813
+Time spent testing: 8.800493955612183
+Accuracy of the network on the 10000 test images: 36 %
+Time spent training: 17.925565242767334
+Time spent testing: 8.35680341720581
+Accuracy of the network on the 10000 test images: 49 %
+Time spent training: 17.92249894142151
+Time spent testing: 8.352421283721924
+Accuracy of the network on the 10000 test images: 63 %
+Time spent training: 17.939502000808716
+Time spent testing: 8.807122468948364
+Accuracy of the network on the 10000 test images: 46 %
+Time spent training: 18.09435749053955
+Time spent testing: 8.869608163833618
+Running Control: 1 0.1
+Accuracy of the network on the 10000 test images: 64 %
+Accuracy of the network on the 10000 test images: 68 %
+Accuracy of the network on the 10000 test images: 62 %
+Accuracy of the network on the 10000 test images: 81 %
+Accuracy of the network on the 10000 test images: 72 %
+Accuracy of the network on the 10000 test images: 88 %
+Accuracy of the network on the 10000 test images: 64 %
+Accuracy of the network on the 10000 test images: 55 %
+Accuracy of the network on the 10000 test images: 63 %
+Accuracy of the network on the 10000 test images: 68 %
+Running Hebbian: 1 0.15000000000000002
+Accuracy of the network on the 10000 test images: 52 %
+Time spent training: 26.643434524536133
+Time spent testing: 8.316251516342163
+Accuracy of the network on the 10000 test images: 68 %
+Time spent training: 26.959583520889282
+Time spent testing: 8.33752703666687
+Accuracy of the network on the 10000 test images: 54 %
+Time spent training: 27.11291790008545
+Time spent testing: 8.801815271377563
+Accuracy of the network on the 10000 test images: 55 %
+Time spent training: 26.976495504379272
+Time spent testing: 8.345808744430542
+Accuracy of the network on the 10000 test images: 59 %
+Time spent training: 27.09804916381836
+Time spent testing: 8.344691514968872
+Accuracy of the network on the 10000 test images: 64 %
+Time spent training: 26.7908775806427
+Time spent testing: 8.311585664749146
+Accuracy of the network on the 10000 test images: 45 %
+Time spent training: 26.876455307006836
+Time spent testing: 8.371236324310303
+Accuracy of the network on the 10000 test images: 81 %
+Time spent training: 26.815120220184326
+Time spent testing: 8.350702285766602
+Accuracy of the network on the 10000 test images: 57 %
+Time spent training: 27.051015853881836
+Time spent testing: 8.363743782043457
+Accuracy of the network on the 10000 test images: 55 %
+Time spent training: 26.71651005744934
+Time spent testing: 8.354489088058472
+Running Control: 1 0.15000000000000002
+Accuracy of the network on the 10000 test images: 73 %
+Accuracy of the network on the 10000 test images: 78 %
+Accuracy of the network on the 10000 test images: 63 %
+Accuracy of the network on the 10000 test images: 75 %
+Accuracy of the network on the 10000 test images: 73 %
+Accuracy of the network on the 10000 test images: 52 %
+Accuracy of the network on the 10000 test images: 82 %
+Accuracy of the network on the 10000 test images: 37 %
+Accuracy of the network on the 10000 test images: 85 %
+Accuracy of the network on the 10000 test images: 83 %
+Running Hebbian: 1 0.20000000000000004
+Accuracy of the network on the 10000 test images: 69 %
+Time spent training: 35.60498023033142
+Time spent testing: 8.346795797348022
+Accuracy of the network on the 10000 test images: 74 %
+Time spent training: 35.90105152130127
+Time spent testing: 8.354139566421509
+Accuracy of the network on the 10000 test images: 81 %
+Time spent training: 36.13120722770691
+Time spent testing: 8.377628564834595
+Accuracy of the network on the 10000 test images: 83 %
+Time spent training: 35.839677572250366
+Time spent testing: 8.357582569122314
+Accuracy of the network on the 10000 test images: 52 %
+Time spent training: 35.7033908367157
+Time spent testing: 8.838484525680542
+Accuracy of the network on the 10000 test images: 33 %
+Time spent training: 35.78673768043518
+Time spent testing: 8.326647758483887
+Accuracy of the network on the 10000 test images: 60 %
+Time spent training: 35.59671640396118
+Time spent testing: 8.343311786651611
+Accuracy of the network on the 10000 test images: 64 %
+Time spent training: 36.16669464111328
+Time spent testing: 8.305898427963257
+Accuracy of the network on the 10000 test images: 65 %
+Time spent training: 35.71490812301636
+Time spent testing: 8.34538459777832
+Accuracy of the network on the 10000 test images: 61 %
+Time spent training: 35.811431884765625
+Time spent testing: 8.346904277801514
+Running Control: 1 0.20000000000000004
+Accuracy of the network on the 10000 test images: 71 %
+Accuracy of the network on the 10000 test images: 60 %
+Accuracy of the network on the 10000 test images: 59 %
+Accuracy of the network on the 10000 test images: 81 %
+Accuracy of the network on the 10000 test images: 63 %
+Accuracy of the network on the 10000 test images: 64 %
+Accuracy of the network on the 10000 test images: 81 %
+Accuracy of the network on the 10000 test images: 54 %
+Accuracy of the network on the 10000 test images: 76 %
+Accuracy of the network on the 10000 test images: 62 %
+Running Hebbian: 1 0.25000000000000006
+Accuracy of the network on the 10000 test images: 72 %
+Time spent training: 44.60310935974121
+Time spent testing: 8.368905305862427
+Accuracy of the network on the 10000 test images: 66 %
+Time spent training: 45.01986598968506
+Time spent testing: 8.3574697971344
+Accuracy of the network on the 10000 test images: 88 %
+Time spent training: 45.002527713775635
+Time spent testing: 8.332690477371216
+Accuracy of the network on the 10000 test images: 84 %
+Time spent training: 44.73425364494324
+Time spent testing: 8.336276769638062
+Accuracy of the network on the 10000 test images: 81 %
+Time spent training: 44.74281287193298
+Time spent testing: 8.670348882675171
+Accuracy of the network on the 10000 test images: 64 %
+Time spent training: 44.948875188827515
+Time spent testing: 8.286220788955688
+Accuracy of the network on the 10000 test images: 68 %
+Time spent training: 44.82515859603882
+Time spent testing: 8.591453075408936
+Accuracy of the network on the 10000 test images: 62 %
+Time spent training: 44.725083351135254
+Time spent testing: 8.34825873374939
+Accuracy of the network on the 10000 test images: 52 %
+Time spent training: 44.656529664993286
+Time spent testing: 8.28937840461731
+Accuracy of the network on the 10000 test images: 46 %
+Time spent training: 44.79648303985596
+Time spent testing: 8.308197259902954
+Running Control: 1 0.25000000000000006
+Accuracy of the network on the 10000 test images: 48 %
+Accuracy of the network on the 10000 test images: 64 %
+Accuracy of the network on the 10000 test images: 64 %
+Accuracy of the network on the 10000 test images: 64 %
+Accuracy of the network on the 10000 test images: 71 %
+Accuracy of the network on the 10000 test images: 65 %
+Accuracy of the network on the 10000 test images: 57 %
+Accuracy of the network on the 10000 test images: 84 %
+Accuracy of the network on the 10000 test images: 74 %
+Accuracy of the network on the 10000 test images: 72 %
+Running Hebbian: 1 0.30000000000000004
+Accuracy of the network on the 10000 test images: 67 %
+Time spent training: 53.452972650527954
+Time spent testing: 8.32660722732544
+Accuracy of the network on the 10000 test images: 52 %
+Time spent training: 54.02913284301758
+Time spent testing: 8.340414047241211
+Accuracy of the network on the 10000 test images: 79 %
+Time spent training: 53.781129121780396
+Time spent testing: 8.580640077590942
+Accuracy of the network on the 10000 test images: 75 %
+Time spent training: 53.60301399230957
+Time spent testing: 8.288165807723999
+Accuracy of the network on the 10000 test images: 71 %
+Time spent training: 53.811787128448486
+Time spent testing: 8.272974252700806
+Accuracy of the network on the 10000 test images: 67 %
+Time spent training: 53.83983087539673
+Time spent testing: 8.291117429733276
+Accuracy of the network on the 10000 test images: 79 %
+Time spent training: 53.718361377716064
+Time spent testing: 8.318821668624878
+Accuracy of the network on the 10000 test images: 67 %
+Time spent training: 53.885029315948486
+Time spent testing: 8.284498691558838
+Accuracy of the network on the 10000 test images: 63 %
+Time spent training: 53.9629647731781
+Time spent testing: 8.298755645751953
+Accuracy of the network on the 10000 test images: 55 %
+Time spent training: 53.94771146774292
+Time spent testing: 8.321337938308716
+Running Control: 1 0.30000000000000004
+Accuracy of the network on the 10000 test images: 75 %
+Accuracy of the network on the 10000 test images: 72 %
+Accuracy of the network on the 10000 test images: 47 %
+Accuracy of the network on the 10000 test images: 63 %
+Accuracy of the network on the 10000 test images: 83 %
+Accuracy of the network on the 10000 test images: 73 %
+Accuracy of the network on the 10000 test images: 72 %
+Accuracy of the network on the 10000 test images: 48 %
+Accuracy of the network on the 10000 test images: 48 %
+Accuracy of the network on the 10000 test images: 70 %
+Running Hebbian: 1 0.3500000000000001
+Accuracy of the network on the 10000 test images: 83 %
+Time spent training: 62.47400903701782
+Time spent testing: 8.352590084075928
+Accuracy of the network on the 10000 test images: 73 %
+Time spent training: 63.01223063468933
+Time spent testing: 8.611483812332153
+Accuracy of the network on the 10000 test images: 87 %
+Time spent training: 62.760719299316406
+Time spent testing: 8.445683717727661
+Accuracy of the network on the 10000 test images: 73 %
+Time spent training: 63.0208158493042
+Time spent testing: 8.505251407623291
+Accuracy of the network on the 10000 test images: 52 %
+Time spent training: 62.76707148551941
+Time spent testing: 8.297819375991821
+Accuracy of the network on the 10000 test images: 83 %
+Time spent training: 62.84162425994873
+Time spent testing: 8.291922092437744
+Accuracy of the network on the 10000 test images: 57 %
+Time spent training: 62.793694734573364
+Time spent testing: 8.295516967773438
+Accuracy of the network on the 10000 test images: 64 %
+Time spent training: 62.72979760169983
+Time spent testing: 8.296801805496216
+Accuracy of the network on the 10000 test images: 71 %
+Time spent training: 62.97464966773987
+Time spent testing: 8.322354078292847
+Accuracy of the network on the 10000 test images: 58 %
+Time spent training: 62.75698256492615
+Time spent testing: 8.298395156860352
+Running Control: 1 0.3500000000000001
+Accuracy of the network on the 10000 test images: 84 %
+Accuracy of the network on the 10000 test images: 45 %
+Accuracy of the network on the 10000 test images: 66 %
+Accuracy of the network on the 10000 test images: 92 %
+Accuracy of the network on the 10000 test images: 54 %
+Accuracy of the network on the 10000 test images: 83 %
+Accuracy of the network on the 10000 test images: 85 %
+Accuracy of the network on the 10000 test images: 91 %
+Accuracy of the network on the 10000 test images: 75 %
+Accuracy of the network on the 10000 test images: 84 %
+Running Hebbian: 1 0.40000000000000013
+Accuracy of the network on the 10000 test images: 83 %
+Time spent training: 71.79981517791748
+Time spent testing: 8.315885305404663
+Accuracy of the network on the 10000 test images: 61 %
+Time spent training: 71.88261294364929
+Time spent testing: 8.309777975082397
+Accuracy of the network on the 10000 test images: 68 %
+Time spent training: 71.62596011161804
+Time spent testing: 8.258293390274048
+Accuracy of the network on the 10000 test images: 58 %
+Time spent training: 71.5506420135498
+Time spent testing: 8.303472995758057
+Accuracy of the network on the 10000 test images: 66 %
+Time spent training: 71.61115598678589
+Time spent testing: 8.287052392959595
+Accuracy of the network on the 10000 test images: 78 %
+Time spent training: 71.81241774559021
+Time spent testing: 8.697697162628174
+Accuracy of the network on the 10000 test images: 79 %
+Time spent training: 71.81892228126526
+Time spent testing: 8.288141965866089
+Accuracy of the network on the 10000 test images: 77 %
+Time spent training: 71.78135943412781
+Time spent testing: 8.28899359703064
+Accuracy of the network on the 10000 test images: 79 %
+Time spent training: 71.74422287940979
+Time spent testing: 8.33823299407959
+Accuracy of the network on the 10000 test images: 69 %
+Time spent training: 71.48225164413452
+Time spent testing: 8.328282594680786
 Running Control: 1 0.40000000000000013
 Accuracy of the network on the 10000 test images: 74 %
-Accuracy of the network on the 10000 test images: 74 %
-Accuracy of the network on the 10000 test images: 65 %
-Accuracy of the network on the 10000 test images: 47 %
-Accuracy of the network on the 10000 test images: 83 %
-Accuracy of the network on the 10000 test images: 56 %
-Accuracy of the network on the 10000 test images: 48 %
-Accuracy of the network on the 10000 test images: 56 %
-Accuracy of the network on the 10000 test images: 73 %
-Accuracy of the network on the 10000 test images: 72 %
-Running Hebbian: 1 0.45000000000000007
-Accuracy of the network on the 10000 test images: 73 %
-Time spent training: 79.05508637428284
-Time spent testing: 8.030256032943726
-Accuracy of the network on the 10000 test images: 75 %
-Time spent training: 78.96773028373718
-Time spent testing: 7.992046356201172
-Accuracy of the network on the 10000 test images: 83 %
-Time spent training: 78.9248776435852
-Time spent testing: 8.010725736618042
-Accuracy of the network on the 10000 test images: 56 %
-Time spent training: 78.97409749031067
-Time spent testing: 8.021758079528809
-Accuracy of the network on the 10000 test images: 74 %
-Time spent training: 79.19411706924438
-Time spent testing: 8.032620906829834
-Accuracy of the network on the 10000 test images: 92 %
-Time spent training: 79.15165615081787
-Time spent testing: 8.076817750930786
-Accuracy of the network on the 10000 test images: 54 %
-Time spent training: 79.35171318054199
-Time spent testing: 8.10897159576416
-Accuracy of the network on the 10000 test images: 66 %
-Time spent training: 78.89343595504761
-Time spent testing: 8.078729391098022
-Accuracy of the network on the 10000 test images: 69 %
-Time spent training: 79.11484885215759
-Time spent testing: 8.10158634185791
-Accuracy of the network on the 10000 test images: 71 %
-Time spent training: 79.09276223182678
-Time spent testing: 8.108461141586304
-Running Control: 1 0.45000000000000007
-Accuracy of the network on the 10000 test images: 76 %
 Accuracy of the network on the 10000 test images: 84 %
-Accuracy of the network on the 10000 test images: 92 %
-Accuracy of the network on the 10000 test images: 84 %
-Accuracy of the network on the 10000 test images: 61 %
-Accuracy of the network on the 10000 test images: 84 %
-Accuracy of the network on the 10000 test images: 75 %
-Accuracy of the network on the 10000 test images: 56 %
-Accuracy of the network on the 10000 test images: 76 %
-Accuracy of the network on the 10000 test images: 76 %
-Running Hebbian: 1 0.5000000000000001
-Accuracy of the network on the 10000 test images: 86 %
-Time spent training: 87.94346833229065
-Time spent testing: 7.993252277374268
-Accuracy of the network on the 10000 test images: 70 %
-Time spent training: 87.51599955558777
-Time spent testing: 8.080138444900513
-Accuracy of the network on the 10000 test images: 51 %
-Time spent training: 87.71249413490295
-Time spent testing: 8.107413530349731
-Accuracy of the network on the 10000 test images: 91 %
-Time spent training: 88.14204335212708
-Time spent testing: 8.5341796875
-Accuracy of the network on the 10000 test images: 68 %
-Time spent training: 87.9387514591217
-Time spent testing: 8.119802951812744
-Accuracy of the network on the 10000 test images: 92 %
-Time spent training: 87.95004320144653
-Time spent testing: 8.083827018737793
-Accuracy of the network on the 10000 test images: 78 %
-Time spent training: 87.93006253242493
-Time spent testing: 8.033870935440063
-Accuracy of the network on the 10000 test images: 56 %
-Time spent training: 87.89055132865906
-Time spent testing: 8.075671672821045
-Accuracy of the network on the 10000 test images: 37 %
-Time spent training: 87.6727032661438
-Time spent testing: 8.010480165481567
-Accuracy of the network on the 10000 test images: 63 %
-Time spent training: 87.4883599281311
-Time spent testing: 8.025417566299438
-Running Control: 1 0.5000000000000001
-Accuracy of the network on the 10000 test images: 48 %
-Accuracy of the network on the 10000 test images: 67 %
-Accuracy of the network on the 10000 test images: 66 %
-Accuracy of the network on the 10000 test images: 64 %
-Accuracy of the network on the 10000 test images: 75 %
-Accuracy of the network on the 10000 test images: 76 %
-Accuracy of the network on the 10000 test images: 71 %
-Accuracy of the network on the 10000 test images: 58 %
-Accuracy of the network on the 10000 test images: 83 %
-Accuracy of the network on the 10000 test images: 57 %
-Running Hebbian: 1 0.5500000000000002
-Accuracy of the network on the 10000 test images: 91 %
-Time spent training: 97.17955112457275
-Time spent testing: 8.089551210403442
-Accuracy of the network on the 10000 test images: 57 %
-Time spent training: 96.63966155052185
-Time spent testing: 8.090758800506592
-Accuracy of the network on the 10000 test images: 60 %
-Time spent training: 96.66129326820374
-Time spent testing: 8.099416494369507
-Accuracy of the network on the 10000 test images: 60 %
-Time spent training: 96.71706819534302
-Time spent testing: 8.075903177261353
-Accuracy of the network on the 10000 test images: 72 %
-Time spent training: 96.6750385761261
-Time spent testing: 8.105062007904053
-Accuracy of the network on the 10000 test images: 78 %
-Time spent training: 96.96922564506531
-Time spent testing: 8.0807466506958
-Accuracy of the network on the 10000 test images: 82 %
-Time spent training: 96.76453304290771
-Time spent testing: 8.10596489906311
-Accuracy of the network on the 10000 test images: 67 %
-Time spent training: 96.44303727149963
-Time spent testing: 8.074767827987671
-Accuracy of the network on the 10000 test images: 56 %
-Time spent training: 96.68027114868164
-Time spent testing: 8.121918201446533
-Accuracy of the network on the 10000 test images: 84 %
-Time spent training: 96.64687323570251
-Time spent testing: 8.014004945755005
-Running Control: 1 0.5500000000000002
-Accuracy of the network on the 10000 test images: 59 %
-Accuracy of the network on the 10000 test images: 75 %
-Accuracy of the network on the 10000 test images: 93 %
-Accuracy of the network on the 10000 test images: 65 %
-Accuracy of the network on the 10000 test images: 74 %
-Accuracy of the network on the 10000 test images: 74 %
-Accuracy of the network on the 10000 test images: 63 %
-Accuracy of the network on the 10000 test images: 93 %
-Accuracy of the network on the 10000 test images: 84 %
-Accuracy of the network on the 10000 test images: 84 %
-Running Hebbian: 1 0.6000000000000002
-Accuracy of the network on the 10000 test images: 78 %
-Time spent training: 105.69001960754395
-Time spent testing: 8.101051568984985
-Accuracy of the network on the 10000 test images: 73 %
-Time spent training: 105.58512759208679
-Time spent testing: 8.111406326293945
-Accuracy of the network on the 10000 test images: 73 %
-Time spent training: 105.72758483886719
-Time spent testing: 8.088529586791992
-Accuracy of the network on the 10000 test images: 73 %
-Time spent training: 105.25393986701965
-Time spent testing: 8.037814378738403
-Accuracy of the network on the 10000 test images: 74 %
-Time spent training: 105.2422137260437
-Time spent testing: 8.051519632339478
-Accuracy of the network on the 10000 test images: 76 %
-Time spent training: 105.51135468482971
-Time spent testing: 8.089814901351929
-Accuracy of the network on the 10000 test images: 82 %
-Time spent training: 105.43272280693054
-Time spent testing: 8.088107347488403
-Accuracy of the network on the 10000 test images: 88 %
-Time spent training: 105.54829573631287
-Time spent testing: 8.260856628417969
-Accuracy of the network on the 10000 test images: 66 %
-Time spent training: 105.37637495994568
-Time spent testing: 8.058418035507202
-Accuracy of the network on the 10000 test images: 84 %
-Time spent training: 105.22273874282837
-Time spent testing: 8.094650745391846
-Running Control: 1 0.6000000000000002
-Accuracy of the network on the 10000 test images: 82 %
-Accuracy of the network on the 10000 test images: 74 %
-Accuracy of the network on the 10000 test images: 58 %
-Accuracy of the network on the 10000 test images: 68 %
-Accuracy of the network on the 10000 test images: 74 %
-Accuracy of the network on the 10000 test images: 64 %
-Accuracy of the network on the 10000 test images: 77 %
-Accuracy of the network on the 10000 test images: 81 %
-Accuracy of the network on the 10000 test images: 84 %
-Accuracy of the network on the 10000 test images: 55 %
-Running Hebbian: 1 0.6500000000000001
-Accuracy of the network on the 10000 test images: 92 %
-Time spent training: 114.55233478546143
-Time spent testing: 8.02267074584961
-Accuracy of the network on the 10000 test images: 76 %
-Time spent training: 114.3928759098053
-Time spent testing: 8.080183506011963
-Accuracy of the network on the 10000 test images: 84 %
-Time spent training: 114.2651002407074
-Time spent testing: 8.082597970962524
-Accuracy of the network on the 10000 test images: 80 %
-Time spent training: 114.30305099487305
-Time spent testing: 8.019013404846191
-Accuracy of the network on the 10000 test images: 93 %
-Time spent training: 114.24211573600769
-Time spent testing: 8.080180406570435
-Accuracy of the network on the 10000 test images: 75 %
-Time spent training: 114.1351580619812
-Time spent testing: 8.116107702255249
-Accuracy of the network on the 10000 test images: 92 %
-Time spent training: 114.12853908538818
-Time spent testing: 8.116909742355347
-Accuracy of the network on the 10000 test images: 72 %
-Time spent training: 114.13809442520142
-Time spent testing: 8.113601446151733
-Accuracy of the network on the 10000 test images: 77 %
-Time spent training: 114.3491222858429
-Time spent testing: 8.011952877044678
-Accuracy of the network on the 10000 test images: 66 %
-Time spent training: 113.9762110710144
-Time spent testing: 8.030562162399292
-Running Control: 1 0.6500000000000001
-Accuracy of the network on the 10000 test images: 76 %
-Accuracy of the network on the 10000 test images: 59 %
-Accuracy of the network on the 10000 test images: 75 %
-Accuracy of the network on the 10000 test images: 74 %
-Accuracy of the network on the 10000 test images: 67 %
-Accuracy of the network on the 10000 test images: 74 %
-Accuracy of the network on the 10000 test images: 74 %
-Accuracy of the network on the 10000 test images: 94 %
-Accuracy of the network on the 10000 test images: 46 %
-Accuracy of the network on the 10000 test images: 57 %
-Running Hebbian: 1 0.7000000000000002
-Accuracy of the network on the 10000 test images: 86 %
-Time spent training: 122.97285652160645
-Time spent testing: 8.036010503768921
-Accuracy of the network on the 10000 test images: 80 %
-Time spent training: 122.96240258216858
-Time spent testing: 8.075493097305298
-Accuracy of the network on the 10000 test images: 86 %
-Time spent training: 123.17672419548035
-Time spent testing: 8.050767183303833
-Accuracy of the network on the 10000 test images: 56 %
-Time spent training: 122.89926671981812
-Time spent testing: 8.075350999832153
-Accuracy of the network on the 10000 test images: 76 %
-Time spent training: 123.22766041755676
-Time spent testing: 8.11541485786438
-Accuracy of the network on the 10000 test images: 73 %
-Time spent training: 122.77466678619385
-Time spent testing: 8.087371110916138
-Accuracy of the network on the 10000 test images: 66 %
-Time spent training: 123.19484734535217
-Time spent testing: 8.123558521270752
-Accuracy of the network on the 10000 test images: 68 %
-Time spent training: 122.72712993621826
-Time spent testing: 8.0696542263031
-Accuracy of the network on the 10000 test images: 83 %
-Time spent training: 122.75685620307922
-Time spent testing: 8.04379391670227
-Accuracy of the network on the 10000 test images: 71 %
-Time spent training: 123.0454933643341
-Time spent testing: 8.077176094055176
-Running Control: 1 0.7000000000000002
-Accuracy of the network on the 10000 test images: 74 %
-Accuracy of the network on the 10000 test images: 56 %
-Accuracy of the network on the 10000 test images: 83 %
-Accuracy of the network on the 10000 test images: 74 %
-Accuracy of the network on the 10000 test images: 59 %
-Accuracy of the network on the 10000 test images: 75 %
-Accuracy of the network on the 10000 test images: 68 %
-Accuracy of the network on the 10000 test images: 85 %
-Accuracy of the network on the 10000 test images: 75 %
-Accuracy of the network on the 10000 test images: 58 %
-Running Hebbian: 1 0.7500000000000002
-Accuracy of the network on the 10000 test images: 63 %
-Time spent training: 131.91433811187744
-Time spent testing: 8.040187120437622
-Accuracy of the network on the 10000 test images: 77 %
-Time spent training: 131.7381820678711
-Time spent testing: 8.011877059936523
-Accuracy of the network on the 10000 test images: 69 %
-Time spent training: 131.9856402873993
-Time spent testing: 8.085804224014282
-Accuracy of the network on the 10000 test images: 82 %
-Time spent training: 131.6284523010254
-Time spent testing: 8.0213303565979
-Accuracy of the network on the 10000 test images: 82 %
-Time spent training: 131.9294571876526
-Time spent testing: 8.120663166046143
-Accuracy of the network on the 10000 test images: 66 %
-Time spent training: 131.92689752578735
-Time spent testing: 8.04768419265747
-Accuracy of the network on the 10000 test images: 68 %
-Time spent training: 131.86957955360413
-Time spent testing: 8.078539848327637
-Accuracy of the network on the 10000 test images: 66 %
-Time spent training: 131.8103506565094
-Time spent testing: 8.080559730529785
-Accuracy of the network on the 10000 test images: 93 %
-Time spent training: 131.8751437664032
-Time spent testing: 8.079237461090088
-Accuracy of the network on the 10000 test images: 37 %
-Time spent training: 131.72553086280823
-Time spent testing: 8.050112247467041
-Running Control: 1 0.7500000000000002
-Accuracy of the network on the 10000 test images: 94 %
-Accuracy of the network on the 10000 test images: 68 %
-Accuracy of the network on the 10000 test images: 84 %
-Accuracy of the network on the 10000 test images: 58 %
-Accuracy of the network on the 10000 test images: 94 %
-Accuracy of the network on the 10000 test images: 75 %
-Accuracy of the network on the 10000 test images: 85 %
-Accuracy of the network on the 10000 test images: 66 %
-Accuracy of the network on the 10000 test images: 59 %
-Accuracy of the network on the 10000 test images: 76 %
-Running Hebbian: 1 0.8000000000000002
-Accuracy of the network on the 10000 test images: 67 %
-Time spent training: 140.53009176254272
-Time spent testing: 8.09042763710022
-Accuracy of the network on the 10000 test images: 84 %
-Time spent training: 140.88432240486145
-Time spent testing: 8.038642168045044
-Accuracy of the network on the 10000 test images: 44 %
-Time spent training: 140.53659224510193
-Time spent testing: 8.064385890960693
-Accuracy of the network on the 10000 test images: 52 %
-Time spent training: 141.18352842330933
-Time spent testing: 8.105401992797852
-Accuracy of the network on the 10000 test images: 78 %
-Time spent training: 140.6629421710968
-Time spent testing: 8.55647349357605
-Accuracy of the network on the 10000 test images: 78 %
-Time spent training: 140.6693844795227
-Time spent testing: 8.104715347290039
-Accuracy of the network on the 10000 test images: 61 %
-Time spent training: 140.243488073349
-Time spent testing: 8.007936477661133
-Accuracy of the network on the 10000 test images: 66 %
-Time spent training: 140.65781331062317
-Time spent testing: 8.068449258804321
-Accuracy of the network on the 10000 test images: 65 %
-Time spent training: 140.93984651565552
-Time spent testing: 8.098901510238647
-Accuracy of the network on the 10000 test images: 56 %
-Time spent training: 140.9210171699524
-Time spent testing: 8.015233278274536
-Running Control: 1 0.8000000000000002
-Accuracy of the network on the 10000 test images: 68 %
-Accuracy of the network on the 10000 test images: 94 %
-Accuracy of the network on the 10000 test images: 76 %
-Accuracy of the network on the 10000 test images: 83 %
-Accuracy of the network on the 10000 test images: 83 %
-Accuracy of the network on the 10000 test images: 57 %
-Accuracy of the network on the 10000 test images: 58 %
-Accuracy of the network on the 10000 test images: 83 %
-Accuracy of the network on the 10000 test images: 76 %
-Accuracy of the network on the 10000 test images: 55 %
-Running Hebbian: 1 0.8500000000000002
-Accuracy of the network on the 10000 test images: 93 %
-Time spent training: 149.40606689453125
-Time spent testing: 8.090980529785156
-Accuracy of the network on the 10000 test images: 92 %
-Time spent training: 149.60731649398804
-Time spent testing: 8.10069751739502
-Accuracy of the network on the 10000 test images: 60 %
-Time spent training: 149.50602269172668
-Time spent testing: 8.090054988861084
-Accuracy of the network on the 10000 test images: 63 %
-Time spent training: 149.7794234752655
-Time spent testing: 8.128669023513794
-Accuracy of the network on the 10000 test images: 94 %
-Time spent training: 149.65628457069397
-Time spent testing: 7.991915225982666
-Accuracy of the network on the 10000 test images: 73 %
-Time spent training: 149.28653049468994
-Time spent testing: 8.065853834152222
-Accuracy of the network on the 10000 test images: 68 %
-Time spent training: 149.1301236152649
-Time spent testing: 8.079433679580688
-Accuracy of the network on the 10000 test images: 61 %
-Time spent training: 149.35304236412048
-Time spent testing: 8.12003755569458
-Accuracy of the network on the 10000 test images: 84 %
-Time spent training: 149.8647804260254
-Time spent testing: 8.033499240875244
-Accuracy of the network on the 10000 test images: 89 %
-Time spent training: 149.5085425376892
-Time spent testing: 8.086870193481445
-Running Control: 1 0.8500000000000002
-Accuracy of the network on the 10000 test images: 76 %
-Accuracy of the network on the 10000 test images: 67 %
-Accuracy of the network on the 10000 test images: 58 %
-Accuracy of the network on the 10000 test images: 66 %
-Accuracy of the network on the 10000 test images: 68 %
-Accuracy of the network on the 10000 test images: 85 %
-Accuracy of the network on the 10000 test images: 49 %
-Accuracy of the network on the 10000 test images: 65 %
-Accuracy of the network on the 10000 test images: 83 %
-Accuracy of the network on the 10000 test images: 94 %
-Running Hebbian: 1 0.9000000000000002
-Accuracy of the network on the 10000 test images: 79 %
-Time spent training: 158.264817237854
-Time spent testing: 8.086769342422485
-Accuracy of the network on the 10000 test images: 73 %
-Time spent training: 158.35177612304688
-Time spent testing: 7.998708963394165
-Accuracy of the network on the 10000 test images: 66 %
-Time spent training: 158.25078988075256
-Time spent testing: 8.087039470672607
-Accuracy of the network on the 10000 test images: 82 %
-Time spent training: 158.4933807849884
-Time spent testing: 8.006303548812866
-Accuracy of the network on the 10000 test images: 91 %
-Time spent training: 158.25141859054565
-Time spent testing: 8.05155086517334
-Accuracy of the network on the 10000 test images: 94 %
-Time spent training: 158.33297419548035
-Time spent testing: 8.043210983276367
-Accuracy of the network on the 10000 test images: 72 %
-Time spent training: 157.811998128891
-Time spent testing: 8.067856550216675
-Accuracy of the network on the 10000 test images: 95 %
-Time spent training: 158.4877290725708
-Time spent testing: 8.09135627746582
-Accuracy of the network on the 10000 test images: 93 %
-Time spent training: 158.20988726615906
-Time spent testing: 8.086528301239014
-Accuracy of the network on the 10000 test images: 63 %
-Time spent training: 157.8848316669464
-Time spent testing: 8.021384954452515
-Running Control: 1 0.9000000000000002
-Accuracy of the network on the 10000 test images: 85 %
-Accuracy of the network on the 10000 test images: 67 %
-Accuracy of the network on the 10000 test images: 76 %
-Accuracy of the network on the 10000 test images: 83 %
-Accuracy of the network on the 10000 test images: 76 %
-Accuracy of the network on the 10000 test images: 56 %
-Accuracy of the network on the 10000 test images: 74 %
-Accuracy of the network on the 10000 test images: 85 %
-Accuracy of the network on the 10000 test images: 95 %
-Accuracy of the network on the 10000 test images: 85 %
-Running Hebbian: 1 0.9500000000000003
-Accuracy of the network on the 10000 test images: 74 %
-Time spent training: 167.39310431480408
-Time spent testing: 8.010376930236816
-Accuracy of the network on the 10000 test images: 93 %
-Time spent training: 167.05405187606812
-Time spent testing: 8.07142186164856
-Accuracy of the network on the 10000 test images: 63 %
-Time spent training: 167.23753309249878
-Time spent testing: 8.066751480102539
-Accuracy of the network on the 10000 test images: 84 %
-Time spent training: 167.0957489013672
-Time spent testing: 8.057270765304565
-Accuracy of the network on the 10000 test images: 73 %
-Time spent training: 167.59446907043457
-Time spent testing: 8.05567455291748
-Accuracy of the network on the 10000 test images: 73 %
-Time spent training: 167.46648597717285
-Time spent testing: 8.086339950561523
-Accuracy of the network on the 10000 test images: 86 %
-Time spent training: 167.03376746177673
-Time spent testing: 8.088439226150513
-Accuracy of the network on the 10000 test images: 92 %
-Time spent training: 167.21939778327942
-Time spent testing: 8.073784828186035
-Accuracy of the network on the 10000 test images: 65 %
-Time spent training: 166.954514503479
-Time spent testing: 8.090161085128784
-Accuracy of the network on the 10000 test images: 59 %
-Time spent training: 167.07376337051392
-Time spent testing: 8.060689210891724
-Running Control: 1 0.9500000000000003
-Accuracy of the network on the 10000 test images: 69 %
-Accuracy of the network on the 10000 test images: 83 %
-Accuracy of the network on the 10000 test images: 74 %
-Accuracy of the network on the 10000 test images: 47 %
-Accuracy of the network on the 10000 test images: 39 %
-Accuracy of the network on the 10000 test images: 68 %
-Accuracy of the network on the 10000 test images: 67 %
-Accuracy of the network on the 10000 test images: 85 %
-Accuracy of the network on the 10000 test images: 87 %
-Accuracy of the network on the 10000 test images: 86 %
-Running Hebbian: 1 1.0000000000000004
-Accuracy of the network on the 10000 test images: 71 %
-Time spent training: 175.93600702285767
-Time spent testing: 8.05423355102539
-Accuracy of the network on the 10000 test images: 77 %
-Time spent training: 176.03353786468506
-Time spent testing: 8.111653566360474
-Accuracy of the network on the 10000 test images: 86 %
-Time spent training: 176.09779405593872
-Time spent testing: 8.016493797302246
-Accuracy of the network on the 10000 test images: 84 %
-Time spent training: 175.66534566879272
-Time spent testing: 8.074226140975952
-Accuracy of the network on the 10000 test images: 92 %
-Time spent training: 176.36265444755554
-Time spent testing: 8.065872192382812
-Accuracy of the network on the 10000 test images: 94 %
-Time spent training: 176.09154796600342
-Time spent testing: 8.112547636032104
-Accuracy of the network on the 10000 test images: 91 %
-Time spent training: 175.73852252960205
-Time spent testing: 8.002805709838867
-Accuracy of the network on the 10000 test images: 84 %
-Time spent training: 175.4153697490692
-Time spent testing: 8.09434199333191
-Accuracy of the network on the 10000 test images: 90 %
-Time spent training: 175.929523229599
-Time spent testing: 8.01978874206543
-Accuracy of the network on the 10000 test images: 68 %
-Time spent training: 175.79385447502136
-Time spent testing: 8.119156122207642
-Running Control: 1 1.0000000000000004
-Accuracy of the network on the 10000 test images: 65 %
-Accuracy of the network on the 10000 test images: 85 %
-Accuracy of the network on the 10000 test images: 76 %
-Accuracy of the network on the 10000 test images: 95 %
-Accuracy of the network on the 10000 test images: 48 %
-Accuracy of the network on the 10000 test images: 47 %
-Accuracy of the network on the 10000 test images: 65 %
-Accuracy of the network on the 10000 test images: 59 %
-Accuracy of the network on the 10000 test images: 95 %
-Accuracy of the network on the 10000 test images: 66 %
-Running Hebbian: 1 1.0
-Accuracy of the network on the 10000 test images: 69 %
-Time spent training: 176.1394329071045
-Time spent testing: 8.08235239982605
-Accuracy of the network on the 10000 test images: 79 %
-Time spent training: 175.84826350212097
-Time spent testing: 8.017415046691895
-Accuracy of the network on the 10000 test images: 66 %
-Time spent training: 175.9557318687439
-Time spent testing: 8.02277398109436
-Accuracy of the network on the 10000 test images: 92 %
-Time spent training: 176.5833466053009
-Time spent testing: 8.04055666923523
-Accuracy of the network on the 10000 test images: 76 %
-Time spent training: 176.10904622077942
-Time spent testing: 8.104898929595947
-Accuracy of the network on the 10000 test images: 75 %
-Time spent training: 175.8908588886261
-Time spent testing: 8.070326089859009
-Accuracy of the network on the 10000 test images: 77 %
-Time spent training: 176.14451026916504
-Time spent testing: 8.084994077682495
-Accuracy of the network on the 10000 test images: 69 %
-Time spent training: 175.67814564704895
-Time spent testing: 7.961050271987915
-Accuracy of the network on the 10000 test images: 85 %
-Time spent training: 175.35674810409546
-Time spent testing: 8.057756900787354
-Accuracy of the network on the 10000 test images: 49 %
-Time spent training: 175.49073719978333
-Time spent testing: 7.997037410736084
-Running Control: 1 1.0
-Accuracy of the network on the 10000 test images: 95 %
-Accuracy of the network on the 10000 test images: 67 %
-Accuracy of the network on the 10000 test images: 77 %
-Accuracy of the network on the 10000 test images: 55 %
-Accuracy of the network on the 10000 test images: 76 %
-Accuracy of the network on the 10000 test images: 67 %
-Accuracy of the network on the 10000 test images: 75 %
-Accuracy of the network on the 10000 test images: 68 %
-Accuracy of the network on the 10000 test images: 86 %
-Accuracy of the network on the 10000 test images: 74 %
-Running Hebbian: 1 1.2
-Accuracy of the network on the 10000 test images: 65 %
-Time spent training: 175.954491853714
-Time spent testing: 8.07544231414795
-Accuracy of the network on the 10000 test images: 88 %
-Time spent training: 176.0409598350525
-Time spent testing: 8.058618783950806
-Accuracy of the network on the 10000 test images: 66 %
-Time spent training: 176.10289645195007
-Time spent testing: 8.112578868865967
-Accuracy of the network on the 10000 test images: 83 %
-Time spent training: 176.08247995376587
-Time spent testing: 8.064463376998901
-Accuracy of the network on the 10000 test images: 85 %
-Time spent training: 175.6252658367157
-Time spent testing: 8.12300992012024
-Accuracy of the network on the 10000 test images: 66 %
-Time spent training: 176.07537269592285
-Time spent testing: 8.043402910232544
-Accuracy of the network on the 10000 test images: 86 %
-Time spent training: 176.23583507537842
-Time spent testing: 8.049136638641357
-Accuracy of the network on the 10000 test images: 85 %
-Time spent training: 175.9512333869934
-Time spent testing: 8.072235107421875
-Accuracy of the network on the 10000 test images: 86 %
-Time spent training: 175.59034752845764
-Time spent testing: 8.100380420684814
-Accuracy of the network on the 10000 test images: 74 %
-Time spent training: 175.92371129989624
-Time spent testing: 8.042651176452637
-Running Control: 1 1.2
-Accuracy of the network on the 10000 test images: 76 %
-Accuracy of the network on the 10000 test images: 95 %
-Accuracy of the network on the 10000 test images: 68 %
-Accuracy of the network on the 10000 test images: 87 %
-Accuracy of the network on the 10000 test images: 86 %
-Accuracy of the network on the 10000 test images: 50 %
-Accuracy of the network on the 10000 test images: 68 %
-Accuracy of the network on the 10000 test images: 78 %
-Accuracy of the network on the 10000 test images: 59 %
-Accuracy of the network on the 10000 test images: 59 %
-Running Hebbian: 1 1.4
-Accuracy of the network on the 10000 test images: 14 %
-Time spent training: 175.8801393508911
-Time spent testing: 8.054879188537598
-Accuracy of the network on the 10000 test images: 84 %
-Time spent training: 175.66466665267944
-Time spent testing: 8.068487882614136
-Accuracy of the network on the 10000 test images: 83 %
-Time spent training: 175.61718010902405
-Time spent testing: 8.07549786567688
-Accuracy of the network on the 10000 test images: 93 %
-Time spent training: 176.06531620025635
-Time spent testing: 8.02264952659607
-Accuracy of the network on the 10000 test images: 86 %
-Time spent training: 175.92387056350708
-Time spent testing: 8.079621315002441
-Accuracy of the network on the 10000 test images: 76 %
-Time spent training: 175.46869158744812
-Time spent testing: 8.042327642440796
-Accuracy of the network on the 10000 test images: 71 %
-Time spent training: 175.86881923675537
-Time spent testing: 8.030757427215576
-Accuracy of the network on the 10000 test images: 78 %
-Time spent training: 175.98578143119812
-Time spent testing: 8.024382829666138
-Accuracy of the network on the 10000 test images: 67 %
-Time spent training: 175.48208570480347
-Time spent testing: 8.093375205993652
-Accuracy of the network on the 10000 test images: 94 %
-Time spent training: 175.85065388679504
-Time spent testing: 8.068383693695068
-Running Control: 1 1.4
-Accuracy of the network on the 10000 test images: 75 %
-Accuracy of the network on the 10000 test images: 76 %
-Accuracy of the network on the 10000 test images: 48 %
-Accuracy of the network on the 10000 test images: 94 %
-Accuracy of the network on the 10000 test images: 58 %
-Accuracy of the network on the 10000 test images: 56 %
-Accuracy of the network on the 10000 test images: 57 %
-Accuracy of the network on the 10000 test images: 76 %
-Accuracy of the network on the 10000 test images: 58 %
-Accuracy of the network on the 10000 test images: 48 %
-Running Hebbian: 1 1.5999999999999999
-Accuracy of the network on the 10000 test images: 95 %
-Time spent training: 176.69959497451782
-Time spent testing: 8.069641590118408
-Accuracy of the network on the 10000 test images: 94 %
-Time spent training: 176.00799703598022
-Time spent testing: 8.08794379234314
-Accuracy of the network on the 10000 test images: 95 %
-Time spent training: 176.00660228729248
-Time spent testing: 8.035254001617432
-Accuracy of the network on the 10000 test images: 85 %
-Time spent training: 176.57828497886658
-Time spent testing: 8.098690748214722
-Accuracy of the network on the 10000 test images: 65 %
-Time spent training: 175.66630697250366
-Time spent testing: 8.09882926940918
-Accuracy of the network on the 10000 test images: 71 %
-Time spent training: 175.7740035057068
-Time spent testing: 7.987239122390747
-Accuracy of the network on the 10000 test images: 67 %
-Time spent training: 175.82651948928833
-Time spent testing: 8.07627820968628
-Accuracy of the network on the 10000 test images: 95 %
-Time spent training: 175.70298099517822
-Time spent testing: 8.063769578933716
-Accuracy of the network on the 10000 test images: 84 %
-Time spent training: 176.563321352005
-Time spent testing: 8.075096607208252
-Accuracy of the network on the 10000 test images: 94 %
-Time spent training: 175.80700182914734
-Time spent testing: 8.050201654434204
-Running Control: 1 1.5999999999999999
-Accuracy of the network on the 10000 test images: 67 %
-Accuracy of the network on the 10000 test images: 68 %
-Accuracy of the network on the 10000 test images: 77 %
-Accuracy of the network on the 10000 test images: 86 %
-Accuracy of the network on the 10000 test images: 84 %
-Accuracy of the network on the 10000 test images: 68 %
-Accuracy of the network on the 10000 test images: 66 %
-Accuracy of the network on the 10000 test images: 78 %
-Accuracy of the network on the 10000 test images: 67 %
-Accuracy of the network on the 10000 test images: 47 %
-Running Hebbian: 1 1.7999999999999998
-Accuracy of the network on the 10000 test images: 76 %
-Time spent training: 176.18150162696838
-Time spent testing: 8.076260328292847
-Accuracy of the network on the 10000 test images: 75 %
-Time spent training: 175.92292475700378
-Time spent testing: 8.067365646362305
-Accuracy of the network on the 10000 test images: 84 %
-Time spent training: 176.03555417060852
-Time spent testing: 8.01777696609497
-Accuracy of the network on the 10000 test images: 79 %
-Time spent training: 175.95362257957458
-Time spent testing: 7.974801778793335
-Accuracy of the network on the 10000 test images: 72 %
-Time spent training: 175.86356663703918
-Time spent testing: 8.038445234298706
-Accuracy of the network on the 10000 test images: 83 %
-Time spent training: 176.0850121974945
-Time spent testing: 8.092100620269775
-Accuracy of the network on the 10000 test images: 62 %
-Time spent training: 175.9367492198944
-Time spent testing: 8.084290027618408
-Accuracy of the network on the 10000 test images: 77 %
-Time spent training: 175.83005571365356
-Time spent testing: 8.101218938827515
-Accuracy of the network on the 10000 test images: 95 %
-Time spent training: 175.40504837036133
-Time spent testing: 8.149372577667236
-Accuracy of the network on the 10000 test images: 71 %
-Time spent training: 175.95021605491638
-Time spent testing: 8.083146095275879
-Running Control: 1 1.7999999999999998
-Accuracy of the network on the 10000 test images: 58 %
-Accuracy of the network on the 10000 test images: 86 %
-Accuracy of the network on the 10000 test images: 86 %
-Accuracy of the network on the 10000 test images: 86 %
-Accuracy of the network on the 10000 test images: 58 %
-Accuracy of the network on the 10000 test images: 95 %
-Accuracy of the network on the 10000 test images: 67 %
-Accuracy of the network on the 10000 test images: 69 %
-Accuracy of the network on the 10000 test images: 68 %
-Accuracy of the network on the 10000 test images: 94 %
-Running Hebbian: 1 1.9999999999999998
-Accuracy of the network on the 10000 test images: 92 %
-Time spent training: 175.9967498779297
-Time spent testing: 8.089212417602539
-Accuracy of the network on the 10000 test images: 93 %
-Time spent training: 176.1911597251892
-Time spent testing: 7.989754676818848
-Accuracy of the network on the 10000 test images: 55 %
-Time spent training: 175.8438310623169
-Time spent testing: 8.061113357543945
-Accuracy of the network on the 10000 test images: 74 %
-Time spent training: 175.85945081710815
-Time spent testing: 8.084165096282959
-Accuracy of the network on the 10000 test images: 55 %
-Time spent training: 175.99367308616638
-Time spent testing: 8.032773733139038
-Accuracy of the network on the 10000 test images: 68 %
-Time spent training: 176.11713814735413
-Time spent testing: 8.069336175918579
-Accuracy of the network on the 10000 test images: 86 %
-Time spent training: 176.0788402557373
-Time spent testing: 8.127888441085815
-Accuracy of the network on the 10000 test images: 95 %
-Time spent training: 176.1151556968689
-Time spent testing: 8.08002781867981
-Accuracy of the network on the 10000 test images: 91 %
-Time spent training: 176.04299688339233
-Time spent testing: 8.116657495498657
-Accuracy of the network on the 10000 test images: 94 %
-Time spent training: 175.09293007850647
-Time spent testing: 8.195764064788818
-Running Control: 1 1.9999999999999998
-Accuracy of the network on the 10000 test images: 77 %
-Accuracy of the network on the 10000 test images: 86 %
-Accuracy of the network on the 10000 test images: 94 %
-Accuracy of the network on the 10000 test images: 84 %
-Accuracy of the network on the 10000 test images: 85 %
-Accuracy of the network on the 10000 test images: 77 %
-Accuracy of the network on the 10000 test images: 68 %
-Accuracy of the network on the 10000 test images: 75 %
-Accuracy of the network on the 10000 test images: 50 %
-Accuracy of the network on the 10000 test images: 57 %
-Running Hebbian: 1 2.1999999999999997
-Accuracy of the network on the 10000 test images: 73 %
-Time spent training: 176.05041480064392
-Time spent testing: 8.130451917648315
-Accuracy of the network on the 10000 test images: 87 %
-Time spent training: 175.28418684005737
-Time spent testing: 8.115396499633789
-Accuracy of the network on the 10000 test images: 73 %
-Time spent training: 175.87858319282532
-Time spent testing: 8.00723934173584
-Accuracy of the network on the 10000 test images: 85 %
-Time spent training: 175.70307874679565
-Time spent testing: 8.148489713668823
-Accuracy of the network on the 10000 test images: 84 %
-Time spent training: 175.90058302879333
-Time spent testing: 8.044453620910645
-Accuracy of the network on the 10000 test images: 80 %
-Time spent training: 175.62551045417786
-Time spent testing: 8.13304853439331
-Accuracy of the network on the 10000 test images: 85 %
-Time spent training: 175.84440755844116
-Time spent testing: 8.04566216468811
-Accuracy of the network on the 10000 test images: 76 %
-Time spent training: 175.7955367565155
-Time spent testing: 8.061048030853271
-Accuracy of the network on the 10000 test images: 92 %
-Time spent training: 175.8305323123932
-Time spent testing: 8.015132904052734
-Accuracy of the network on the 10000 test images: 83 %
-Time spent training: 176.00620675086975
-Time spent testing: 8.004927158355713
-Running Control: 1 2.1999999999999997
-Accuracy of the network on the 10000 test images: 59 %
-Accuracy of the network on the 10000 test images: 65 %
-Accuracy of the network on the 10000 test images: 48 %
-Accuracy of the network on the 10000 test images: 95 %
-Accuracy of the network on the 10000 test images: 94 %
-Accuracy of the network on the 10000 test images: 67 %
-Accuracy of the network on the 10000 test images: 59 %
-Accuracy of the network on the 10000 test images: 65 %
-Accuracy of the network on the 10000 test images: 75 %
-Accuracy of the network on the 10000 test images: 65 %
-Running Hebbian: 1 2.3999999999999995
-Accuracy of the network on the 10000 test images: 85 %
-Time spent training: 175.8620753288269
-Time spent testing: 8.006317853927612
-Accuracy of the network on the 10000 test images: 63 %
-Time spent training: 176.2261061668396
-Time spent testing: 8.084827184677124
-Accuracy of the network on the 10000 test images: 27 %
-Time spent training: 175.97173500061035
-Time spent testing: 8.1334228515625
-Accuracy of the network on the 10000 test images: 70 %
-Time spent training: 175.87853145599365
-Time spent testing: 8.004995584487915
-Accuracy of the network on the 10000 test images: 53 %
-Time spent training: 176.12343192100525
-Time spent testing: 8.12037205696106
-Accuracy of the network on the 10000 test images: 88 %
-Time spent training: 175.91024470329285
-Time spent testing: 8.022677898406982
-Accuracy of the network on the 10000 test images: 77 %
-Time spent training: 176.01748991012573
-Time spent testing: 8.11961054801941
-Accuracy of the network on the 10000 test images: 74 %
-Time spent training: 175.92570185661316
-Time spent testing: 8.0643630027771
-Accuracy of the network on the 10000 test images: 95 %
-Time spent training: 176.39859580993652
-Time spent testing: 8.103754043579102
-Accuracy of the network on the 10000 test images: 93 %
-Time spent training: 175.86649870872498
-Time spent testing: 8.028188228607178
-Running Control: 1 2.3999999999999995
-Accuracy of the network on the 10000 test images: 47 %
-Accuracy of the network on the 10000 test images: 64 %
-Accuracy of the network on the 10000 test images: 58 %
-Accuracy of the network on the 10000 test images: 85 %
-Accuracy of the network on the 10000 test images: 68 %
-Accuracy of the network on the 10000 test images: 95 %
-Accuracy of the network on the 10000 test images: 48 %
-Accuracy of the network on the 10000 test images: 66 %
-Accuracy of the network on the 10000 test images: 94 %
-Accuracy of the network on the 10000 test images: 48 %
-Running Hebbian: 1 2.5999999999999996
-Accuracy of the network on the 10000 test images: 93 %
-Time spent training: 176.39153575897217
-Time spent testing: 8.0977303981781
-Accuracy of the network on the 10000 test images: 66 %
-Time spent training: 175.90942120552063
-Time spent testing: 8.056854963302612
-Accuracy of the network on the 10000 test images: 78 %
-Time spent training: 175.90712189674377
-Time spent testing: 8.111065149307251
-Accuracy of the network on the 10000 test images: 81 %
-Time spent training: 175.54293274879456
-Time spent testing: 8.019499063491821
-Accuracy of the network on the 10000 test images: 94 %
-Time spent training: 176.1846034526825
-Time spent testing: 8.016504049301147
-Accuracy of the network on the 10000 test images: 85 %
-Time spent training: 175.9249255657196
-Time spent testing: 8.008464097976685
-Accuracy of the network on the 10000 test images: 75 %
-Time spent training: 176.02934193611145
-Time spent testing: 8.046863794326782
-Accuracy of the network on the 10000 test images: 86 %
-Time spent training: 176.19755005836487
-Time spent testing: 8.069734334945679
-Accuracy of the network on the 10000 test images: 90 %
-Time spent training: 175.91882228851318
-Time spent testing: 8.10739016532898
-Accuracy of the network on the 10000 test images: 85 %
-Time spent training: 175.85696840286255
-Time spent testing: 8.114659547805786
-Running Control: 1 2.5999999999999996
-Accuracy of the network on the 10000 test images: 77 %
-Accuracy of the network on the 10000 test images: 86 %
-Accuracy of the network on the 10000 test images: 95 %
-Accuracy of the network on the 10000 test images: 78 %
-Accuracy of the network on the 10000 test images: 48 %
-Accuracy of the network on the 10000 test images: 85 %
-Accuracy of the network on the 10000 test images: 95 %
-Accuracy of the network on the 10000 test images: 94 %
-Accuracy of the network on the 10000 test images: 76 %
-Accuracy of the network on the 10000 test images: 76 %
-Running Hebbian: 1 2.8
-Accuracy of the network on the 10000 test images: 71 %
-Time spent training: 177.57397961616516
-Time spent testing: 8.544275283813477
-Accuracy of the network on the 10000 test images: 63 %
-Time spent training: 175.8590075969696
-Time spent testing: 8.034064054489136
-Accuracy of the network on the 10000 test images: 81 %
-Time spent training: 175.54065465927124
-Time spent testing: 8.082218647003174
-Accuracy of the network on the 10000 test images: 89 %
-Time spent training: 176.4388484954834
-Time spent testing: 8.07932710647583
-Accuracy of the network on the 10000 test images: 85 %
-Time spent training: 176.04805779457092
-Time spent testing: 7.980299711227417
-Accuracy of the network on the 10000 test images: 69 %
-Time spent training: 175.89632487297058
-Time spent testing: 8.019566059112549
-Accuracy of the network on the 10000 test images: 86 %
-Time spent training: 175.9233434200287
-Time spent testing: 8.041987180709839
-Accuracy of the network on the 10000 test images: 94 %
-Time spent training: 175.92692399024963
-Time spent testing: 8.07955026626587
-Accuracy of the network on the 10000 test images: 94 %
-Time spent training: 175.6118893623352
-Time spent testing: 8.09029483795166
-Accuracy of the network on the 10000 test images: 94 %
-Time spent training: 175.89972281455994
-Time spent testing: 8.100037097930908
-Running Control: 1 2.8
-Accuracy of the network on the 10000 test images: 67 %
-Accuracy of the network on the 10000 test images: 67 %
-Accuracy of the network on the 10000 test images: 76 %
-Accuracy of the network on the 10000 test images: 76 %
-Accuracy of the network on the 10000 test images: 58 %
-Accuracy of the network on the 10000 test images: 74 %
-Accuracy of the network on the 10000 test images: 94 %
-Accuracy of the network on the 10000 test images: 87 %
-Accuracy of the network on the 10000 test images: 67 %
-Accuracy of the network on the 10000 test images: 95 %
-Running Hebbian: 1 2.9999999999999996
-Accuracy of the network on the 10000 test images: 74 %
-Time spent training: 175.62693285942078
-Time spent testing: 8.032269477844238
-Accuracy of the network on the 10000 test images: 69 %
-Time spent training: 176.14018630981445
-Time spent testing: 7.970123052597046
-Accuracy of the network on the 10000 test images: 76 %
-Time spent training: 175.90265822410583
-Time spent testing: 7.971520185470581
-Accuracy of the network on the 10000 test images: 95 %
-Time spent training: 175.6609501838684
-Time spent testing: 8.061857223510742
-Accuracy of the network on the 10000 test images: 67 %
-Time spent training: 176.16516494750977
-Time spent testing: 8.145807266235352
-Accuracy of the network on the 10000 test images: 93 %
-Time spent training: 175.89915680885315
-Time spent testing: 8.063439130783081
-Accuracy of the network on the 10000 test images: 93 %
-Time spent training: 175.8784897327423
-Time spent testing: 8.055883884429932
-Accuracy of the network on the 10000 test images: 66 %
-Time spent training: 175.42366313934326
-Time spent testing: 8.08976125717163
-Accuracy of the network on the 10000 test images: 85 %
-Time spent training: 176.01689219474792
-Time spent testing: 8.236027479171753
-Accuracy of the network on the 10000 test images: 95 %
-Time spent training: 176.1081645488739
-Time spent testing: 8.494234085083008
-Running Control: 1 2.9999999999999996
-Accuracy of the network on the 10000 test images: 74 %
-Accuracy of the network on the 10000 test images: 84 %
-Accuracy of the network on the 10000 test images: 76 %
-Accuracy of the network on the 10000 test images: 66 %
-Accuracy of the network on the 10000 test images: 85 %
-Accuracy of the network on the 10000 test images: 37 %
-Accuracy of the network on the 10000 test images: 57 %
-Accuracy of the network on the 10000 test images: 67 %
-Accuracy of the network on the 10000 test images: 76 %
-Accuracy of the network on the 10000 test images: 76 %
-Running Hebbian: 1 3.1999999999999993
-Accuracy of the network on the 10000 test images: 94 %
-Time spent training: 176.00616359710693
-Time spent testing: 8.26816201210022
-Accuracy of the network on the 10000 test images: 94 %
-Time spent training: 176.12134218215942
-Time spent testing: 8.306946277618408
-Accuracy of the network on the 10000 test images: 61 %
-Time spent training: 176.05401611328125
-Time spent testing: 8.272937059402466
-Accuracy of the network on the 10000 test images: 28 %
-Time spent training: 176.21762871742249
-Time spent testing: 8.245247840881348
-Accuracy of the network on the 10000 test images: 95 %
-Time spent training: 175.98372530937195
-Time spent testing: 8.246156692504883
-Accuracy of the network on the 10000 test images: 86 %
-Time spent training: 176.198903799057
-Time spent testing: 8.238658666610718
-Accuracy of the network on the 10000 test images: 92 %
-Time spent training: 175.91083645820618
-Time spent testing: 8.207921028137207
-Accuracy of the network on the 10000 test images: 94 %
-Time spent training: 175.88332080841064
-Time spent testing: 8.294950246810913
-Accuracy of the network on the 10000 test images: 95 %
-Time spent training: 176.21957111358643
-Time spent testing: 8.338534355163574
-Accuracy of the network on the 10000 test images: 68 %
-Time spent training: 175.95622205734253
-Time spent testing: 8.297357320785522
-Running Control: 1 3.1999999999999993
-Accuracy of the network on the 10000 test images: 37 %
-Accuracy of the network on the 10000 test images: 87 %
-Accuracy of the network on the 10000 test images: 83 %
-Accuracy of the network on the 10000 test images: 77 %
-Accuracy of the network on the 10000 test images: 78 %
-Accuracy of the network on the 10000 test images: 68 %
-Accuracy of the network on the 10000 test images: 78 %
-Accuracy of the network on the 10000 test images: 67 %
-Accuracy of the network on the 10000 test images: 87 %
-Accuracy of the network on the 10000 test images: 58 %
-Running Hebbian: 1 3.3999999999999995
-Accuracy of the network on the 10000 test images: 85 %
-Time spent training: 176.17377281188965
-Time spent testing: 8.292672634124756
-Accuracy of the network on the 10000 test images: 39 %
-Time spent training: 175.83820581436157
-Time spent testing: 8.355080604553223
-Accuracy of the network on the 10000 test images: 67 %
-Time spent training: 176.0832278728485
-Time spent testing: 8.290037870407104
-Accuracy of the network on the 10000 test images: 53 %
-Time spent training: 176.09282755851746
-Time spent testing: 8.315809488296509
-Accuracy of the network on the 10000 test images: 76 %
-Time spent training: 176.27120518684387
-Time spent testing: 8.238461017608643
-Accuracy of the network on the 10000 test images: 71 %
-Time spent training: 176.0291452407837
-Time spent testing: 8.28176212310791
-Accuracy of the network on the 10000 test images: 73 %
-Time spent training: 176.08242344856262
-Time spent testing: 8.343056201934814
-Accuracy of the network on the 10000 test images: 64 %
-Time spent training: 175.9522840976715
-Time spent testing: 8.273414850234985
-Accuracy of the network on the 10000 test images: 86 %
-Time spent training: 176.10696506500244
-Time spent testing: 8.288103103637695
-Accuracy of the network on the 10000 test images: 93 %
-Time spent training: 175.94182777404785
-Time spent testing: 8.256461381912231
-Running Control: 1 3.3999999999999995
-Accuracy of the network on the 10000 test images: 75 %
-Accuracy of the network on the 10000 test images: 86 %
-Accuracy of the network on the 10000 test images: 78 %
-Accuracy of the network on the 10000 test images: 67 %
-Accuracy of the network on the 10000 test images: 48 %
-Accuracy of the network on the 10000 test images: 86 %
-Accuracy of the network on the 10000 test images: 67 %
-Accuracy of the network on the 10000 test images: 75 %
-Accuracy of the network on the 10000 test images: 68 %
-Accuracy of the network on the 10000 test images: 59 %
-Running Hebbian: 1 3.5999999999999996
-Accuracy of the network on the 10000 test images: 75 %
-Time spent training: 176.72775602340698
-Time spent testing: 8.244271755218506
-Accuracy of the network on the 10000 test images: 79 %
-Time spent training: 175.9806206226349
-Time spent testing: 7.976193428039551
-Accuracy of the network on the 10000 test images: 84 %
-Time spent training: 175.9982578754425
-Time spent testing: 8.088130474090576
-Accuracy of the network on the 10000 test images: 76 %
-Time spent training: 175.84876084327698
-Time spent testing: 8.117111682891846
-Accuracy of the network on the 10000 test images: 86 %
-Time spent training: 176.11800026893616
-Time spent testing: 8.124374628067017
-Accuracy of the network on the 10000 test images: 66 %
-Time spent training: 176.1709644794464
-Time spent testing: 8.090442895889282
-Accuracy of the network on the 10000 test images: 60 %
-Time spent training: 175.8593990802765
-Time spent testing: 8.145165920257568
-Accuracy of the network on the 10000 test images: 86 %
-Time spent training: 175.99140620231628
-Time spent testing: 8.069343566894531
-Accuracy of the network on the 10000 test images: 50 %
-Time spent training: 176.06622123718262
-Time spent testing: 8.125890016555786
-Accuracy of the network on the 10000 test images: 81 %
-Time spent training: 176.01347017288208
-Time spent testing: 8.08816647529602
-Running Control: 1 3.5999999999999996
-Accuracy of the network on the 10000 test images: 65 %
-Accuracy of the network on the 10000 test images: 95 %
-Accuracy of the network on the 10000 test images: 55 %
-Accuracy of the network on the 10000 test images: 56 %
-Accuracy of the network on the 10000 test images: 77 %
-Accuracy of the network on the 10000 test images: 84 %
-Accuracy of the network on the 10000 test images: 86 %
-Accuracy of the network on the 10000 test images: 28 %
-Accuracy of the network on the 10000 test images: 75 %
-Accuracy of the network on the 10000 test images: 87 %
-Running Hebbian: 1 3.7999999999999994
-Accuracy of the network on the 10000 test images: 77 %
-Time spent training: 176.44589400291443
-Time spent testing: 8.13501787185669
-Accuracy of the network on the 10000 test images: 67 %
-Time spent training: 175.96222496032715
-Time spent testing: 8.117379188537598
-Accuracy of the network on the 10000 test images: 67 %
-Time spent training: 175.94007420539856
-Time spent testing: 8.033617496490479
-Accuracy of the network on the 10000 test images: 78 %
-Time spent training: 175.95078945159912
-Time spent testing: 8.070479393005371
-Accuracy of the network on the 10000 test images: 85 %
-Time spent training: 176.1211519241333
-Time spent testing: 8.101387739181519
-Accuracy of the network on the 10000 test images: 76 %
-Time spent training: 176.2879319190979
-Time spent testing: 8.125679731369019
-Accuracy of the network on the 10000 test images: 77 %
-Time spent training: 176.188866853714
-Time spent testing: 8.07284426689148
-Accuracy of the network on the 10000 test images: 82 %
-Time spent training: 176.10937976837158
-Time spent testing: 8.063392639160156
-Accuracy of the network on the 10000 test images: 81 %
-Time spent training: 176.28381633758545
-Time spent testing: 8.100996971130371
-Accuracy of the network on the 10000 test images: 57 %
-Time spent training: 175.91968178749084
-Time spent testing: 7.99192214012146
-Running Control: 1 3.7999999999999994
-Accuracy of the network on the 10000 test images: 77 %
-Accuracy of the network on the 10000 test images: 85 %
-Accuracy of the network on the 10000 test images: 67 %
-Accuracy of the network on the 10000 test images: 67 %
-Accuracy of the network on the 10000 test images: 65 %
-Accuracy of the network on the 10000 test images: 77 %
-Accuracy of the network on the 10000 test images: 58 %
-Accuracy of the network on the 10000 test images: 87 %
-Accuracy of the network on the 10000 test images: 95 %
-Accuracy of the network on the 10000 test images: 56 %
-Running Hebbian: 1 3.999999999999999
-Accuracy of the network on the 10000 test images: 94 %
-Time spent training: 175.84486556053162
-Time spent testing: 8.000954627990723
-Accuracy of the network on the 10000 test images: 67 %
-Time spent training: 175.97212505340576
-Time spent testing: 8.119110584259033
-Accuracy of the network on the 10000 test images: 79 %
-Time spent training: 175.50718331336975
-Time spent testing: 8.106959342956543
-Accuracy of the network on the 10000 test images: 47 %
-Time spent training: 175.72205686569214
-Time spent testing: 8.06311845779419
-Accuracy of the network on the 10000 test images: 93 %
-Time spent training: 175.71327257156372
-Time spent testing: 8.17513918876648
-Accuracy of the network on the 10000 test images: 92 %
-Time spent training: 176.01741909980774
-Time spent testing: 8.017178535461426
-Accuracy of the network on the 10000 test images: 94 %
-Time spent training: 176.03888773918152
-Time spent testing: 8.127354860305786
-Accuracy of the network on the 10000 test images: 66 %
-Time spent training: 176.01743268966675
-Time spent testing: 8.06605863571167
-Accuracy of the network on the 10000 test images: 86 %
-Time spent training: 175.962144613266
-Time spent testing: 8.1245698928833
-Accuracy of the network on the 10000 test images: 86 %
-Time spent training: 175.95497369766235
-Time spent testing: 8.1352059841156
-Running Control: 1 3.999999999999999
-Accuracy of the network on the 10000 test images: 76 %
-Accuracy of the network on the 10000 test images: 58 %
-Accuracy of the network on the 10000 test images: 57 %
-Accuracy of the network on the 10000 test images: 87 %
-Accuracy of the network on the 10000 test images: 76 %
-Accuracy of the network on the 10000 test images: 66 %
-Accuracy of the network on the 10000 test images: 65 %
-Accuracy of the network on the 10000 test images: 56 %
-Accuracy of the network on the 10000 test images: 59 %
-Accuracy of the network on the 10000 test images: 66 %
-Running Hebbian: 1 4.199999999999999
-Accuracy of the network on the 10000 test images: 62 %
-Time spent training: 176.96495509147644
-Time spent testing: 7.985309600830078
-Accuracy of the network on the 10000 test images: 63 %
-Time spent training: 176.22600317001343
-Time spent testing: 8.024754285812378
-Accuracy of the network on the 10000 test images: 94 %
-Time spent training: 175.45649361610413
-Time spent testing: 8.029721021652222
-Accuracy of the network on the 10000 test images: 78 %
-Time spent training: 175.34975242614746
-Time spent testing: 8.120110034942627
-Accuracy of the network on the 10000 test images: 86 %
-Time spent training: 175.755854845047
-Time spent testing: 8.080257177352905
-Accuracy of the network on the 10000 test images: 87 %
-Time spent training: 176.270578622818
-Time spent testing: 8.064563512802124
-Accuracy of the network on the 10000 test images: 69 %
-Time spent training: 175.76056909561157
-Time spent testing: 8.081847429275513
-Accuracy of the network on the 10000 test images: 84 %
-Time spent training: 176.04553818702698
-Time spent testing: 8.092453002929688
-Accuracy of the network on the 10000 test images: 55 %
-Time spent training: 175.69330430030823
-Time spent testing: 8.103906869888306
-Accuracy of the network on the 10000 test images: 86 %
-Time spent training: 175.79885053634644
-Time spent testing: 8.07240915298462
-Running Control: 1 4.199999999999999
-Accuracy of the network on the 10000 test images: 68 %
-Accuracy of the network on the 10000 test images: 75 %
-Accuracy of the network on the 10000 test images: 66 %
-Accuracy of the network on the 10000 test images: 95 %
-Accuracy of the network on the 10000 test images: 67 %
-Accuracy of the network on the 10000 test images: 75 %
-Accuracy of the network on the 10000 test images: 86 %
-Accuracy of the network on the 10000 test images: 66 %
-Accuracy of the network on the 10000 test images: 77 %
-Accuracy of the network on the 10000 test images: 55 %
-Running Hebbian: 1 4.3999999999999995
-Accuracy of the network on the 10000 test images: 77 %
-Time spent training: 175.82301139831543
-Time spent testing: 8.093538999557495
-Accuracy of the network on the 10000 test images: 86 %
-Time spent training: 175.61996722221375
-Time spent testing: 8.072020530700684
-Accuracy of the network on the 10000 test images: 75 %
-Time spent training: 176.20660257339478
-Time spent testing: 8.107507705688477
-Accuracy of the network on the 10000 test images: 61 %
-Time spent training: 176.11532735824585
-Time spent testing: 8.085129261016846
-Accuracy of the network on the 10000 test images: 20 %
-Time spent training: 175.92574906349182
-Time spent testing: 8.061947584152222
-Accuracy of the network on the 10000 test images: 95 %
-Time spent training: 176.22159671783447
-Time spent testing: 8.030702114105225
-Accuracy of the network on the 10000 test images: 91 %
-Time spent training: 175.84010672569275
-Time spent testing: 8.086565017700195
-Accuracy of the network on the 10000 test images: 74 %
-Time spent training: 175.83591532707214
-Time spent testing: 8.052380084991455
-Accuracy of the network on the 10000 test images: 84 %
-Time spent training: 175.57089638710022
-Time spent testing: 8.077465772628784
-Accuracy of the network on the 10000 test images: 67 %
-Time spent training: 176.2027714252472
-Time spent testing: 8.010146856307983
-Running Control: 1 4.3999999999999995
-Accuracy of the network on the 10000 test images: 67 %
-Accuracy of the network on the 10000 test images: 74 %
-Accuracy of the network on the 10000 test images: 76 %
-Accuracy of the network on the 10000 test images: 66 %
-Accuracy of the network on the 10000 test images: 66 %
-Accuracy of the network on the 10000 test images: 48 %
-Accuracy of the network on the 10000 test images: 46 %
-Accuracy of the network on the 10000 test images: 40 %
-Accuracy of the network on the 10000 test images: 85 %
-Accuracy of the network on the 10000 test images: 47 %
-Running Hebbian: 1 4.6
-Accuracy of the network on the 10000 test images: 92 %
-Time spent training: 176.9302659034729
-Time spent testing: 8.073728322982788
-Accuracy of the network on the 10000 test images: 83 %
-Time spent training: 175.94463443756104
-Time spent testing: 8.001110315322876
-Accuracy of the network on the 10000 test images: 70 %
-Time spent training: 175.67439651489258
-Time spent testing: 8.016686201095581
-Accuracy of the network on the 10000 test images: 93 %
-Time spent training: 175.94167041778564
-Time spent testing: 8.038182973861694
-Accuracy of the network on the 10000 test images: 58 %
-Time spent training: 175.50023078918457
-Time spent testing: 7.989914417266846
-Accuracy of the network on the 10000 test images: 95 %
-Time spent training: 175.90194153785706
-Time spent testing: 7.982457876205444
-Accuracy of the network on the 10000 test images: 86 %
-Time spent training: 175.69514751434326
-Time spent testing: 8.091401100158691
-Accuracy of the network on the 10000 test images: 84 %
-Time spent training: 175.89544892311096
-Time spent testing: 8.100373983383179
-Accuracy of the network on the 10000 test images: 67 %
-Time spent training: 175.93573665618896
-Time spent testing: 8.002574682235718
-Accuracy of the network on the 10000 test images: 82 %
-Time spent training: 175.93138933181763
-Time spent testing: 8.067764043807983
-Running Control: 1 4.6
-Accuracy of the network on the 10000 test images: 76 %
-Accuracy of the network on the 10000 test images: 65 %
-Accuracy of the network on the 10000 test images: 48 %
-Accuracy of the network on the 10000 test images: 65 %
-Accuracy of the network on the 10000 test images: 59 %
-Accuracy of the network on the 10000 test images: 49 %
-Accuracy of the network on the 10000 test images: 76 %
-Accuracy of the network on the 10000 test images: 85 %
-Accuracy of the network on the 10000 test images: 78 %
-Accuracy of the network on the 10000 test images: 69 %
-Running Hebbian: 1 4.799999999999999
-Accuracy of the network on the 10000 test images: 67 %
-Time spent training: 176.4142189025879
-Time spent testing: 8.080559253692627
-Accuracy of the network on the 10000 test images: 37 %
-Time spent training: 175.30855345726013
-Time spent testing: 8.095721244812012
-Accuracy of the network on the 10000 test images: 57 %
-Time spent training: 176.69618248939514
-Time spent testing: 8.100441932678223
-Accuracy of the network on the 10000 test images: 64 %
-Time spent training: 175.94467449188232
-Time spent testing: 8.051159858703613
-Accuracy of the network on the 10000 test images: 84 %
-Time spent training: 175.92664575576782
-Time spent testing: 8.021374702453613
-Accuracy of the network on the 10000 test images: 93 %
-Time spent training: 175.89218163490295
-Time spent testing: 8.115703105926514
-Accuracy of the network on the 10000 test images: 74 %
-Time spent training: 176.17319989204407
-Time spent testing: 8.105869770050049
-Accuracy of the network on the 10000 test images: 72 %
-Time spent training: 175.8888828754425
-Time spent testing: 8.104453802108765
-Accuracy of the network on the 10000 test images: 81 %
-Time spent training: 175.56127095222473
-Time spent testing: 8.048607110977173
-Accuracy of the network on the 10000 test images: 85 %
-Time spent training: 176.11390280723572
-Time spent testing: 8.081100702285767
-Running Control: 1 4.799999999999999
-Accuracy of the network on the 10000 test images: 67 %
-Accuracy of the network on the 10000 test images: 86 %
-Accuracy of the network on the 10000 test images: 86 %
-Accuracy of the network on the 10000 test images: 67 %
-Accuracy of the network on the 10000 test images: 49 %
-Accuracy of the network on the 10000 test images: 86 %
-Accuracy of the network on the 10000 test images: 86 %
-Accuracy of the network on the 10000 test images: 77 %
-Accuracy of the network on the 10000 test images: 57 %
-Accuracy of the network on the 10000 test images: 58 %
-Running Hebbian: 1 5
-Accuracy of the network on the 10000 test images: 94 %
-Time spent training: 176.26437711715698
-Time spent testing: 8.022328853607178
-Accuracy of the network on the 10000 test images: 85 %
-Time spent training: 175.99327397346497
-Time spent testing: 8.095189571380615
-Accuracy of the network on the 10000 test images: 91 %
-Time spent training: 175.5663890838623
-Time spent testing: 8.153981447219849
-Accuracy of the network on the 10000 test images: 95 %
-Time spent training: 175.72361850738525
-Time spent testing: 8.105084419250488
-Accuracy of the network on the 10000 test images: 69 %
-Time spent training: 176.00556111335754
-Time spent testing: 8.126879692077637
-Accuracy of the network on the 10000 test images: 86 %
-Time spent training: 175.56801176071167
-Time spent testing: 8.125715970993042
-Accuracy of the network on the 10000 test images: 58 %
-Time spent training: 175.73697900772095
-Time spent testing: 8.101677417755127
-Accuracy of the network on the 10000 test images: 89 %
-Time spent training: 175.61542677879333
-Time spent testing: 8.14598035812378
-Accuracy of the network on the 10000 test images: 95 %
-Time spent training: 176.34869122505188
-Time spent testing: 8.11189079284668
-Accuracy of the network on the 10000 test images: 73 %
-Time spent training: 175.93615221977234
-Time spent testing: 8.00626802444458
-Running Control: 1 5
-Accuracy of the network on the 10000 test images: 83 %
-Accuracy of the network on the 10000 test images: 84 %
-Accuracy of the network on the 10000 test images: 94 %
-Accuracy of the network on the 10000 test images: 48 %
-Accuracy of the network on the 10000 test images: 68 %
-Accuracy of the network on the 10000 test images: 49 %
-Accuracy of the network on the 10000 test images: 82 %
-Accuracy of the network on the 10000 test images: 66 %
-Accuracy of the network on the 10000 test images: 59 %
-Accuracy of the network on the 10000 test images: 66 %
-Running Hebbian: 1 6
-Accuracy of the network on the 10000 test images: 77 %
-Time spent training: 175.54188776016235
-Time spent testing: 8.100187301635742
-Accuracy of the network on the 10000 test images: 65 %
-Time spent training: 176.05249547958374
-Time spent testing: 8.088895797729492
-Accuracy of the network on the 10000 test images: 71 %
-Time spent training: 175.72852993011475
-Time spent testing: 8.115649700164795
-Accuracy of the network on the 10000 test images: 95 %
-Time spent training: 176.04904079437256
-Time spent testing: 7.9919211864471436
-Accuracy of the network on the 10000 test images: 84 %
-Time spent training: 175.97790670394897
-Time spent testing: 8.129495859146118
-Accuracy of the network on the 10000 test images: 85 %
-Time spent training: 175.6231870651245
-Time spent testing: 8.138301610946655
-Accuracy of the network on the 10000 test images: 61 %
-Time spent training: 175.91535806655884
-Time spent testing: 8.111651182174683
-Accuracy of the network on the 10000 test images: 76 %
-Time spent training: 176.12940311431885
-Time spent testing: 8.065172672271729
-Accuracy of the network on the 10000 test images: 86 %
-Time spent training: 175.93123245239258
-Time spent testing: 8.082094192504883
-Accuracy of the network on the 10000 test images: 95 %
-Time spent training: 175.94034004211426
-Time spent testing: 8.094232082366943
-Running Control: 1 6
-Accuracy of the network on the 10000 test images: 85 %
-Accuracy of the network on the 10000 test images: 85 %
-Accuracy of the network on the 10000 test images: 87 %
-Accuracy of the network on the 10000 test images: 78 %
-Accuracy of the network on the 10000 test images: 67 %
-Accuracy of the network on the 10000 test images: 86 %
-Accuracy of the network on the 10000 test images: 75 %
-Accuracy of the network on the 10000 test images: 68 %
-Accuracy of the network on the 10000 test images: 86 %
-Accuracy of the network on the 10000 test images: 78 %
-Running Hebbian: 1 7
-Accuracy of the network on the 10000 test images: 94 %
-Time spent training: 176.68368434906006
-Time spent testing: 8.038208484649658
-Accuracy of the network on the 10000 test images: 59 %
-Time spent training: 176.02720141410828
-Time spent testing: 8.089096784591675
-Accuracy of the network on the 10000 test images: 61 %
-Time spent training: 176.23880743980408
-Time spent testing: 7.983865737915039
-Accuracy of the network on the 10000 test images: 74 %
-Time spent training: 176.16460990905762
-Time spent testing: 8.034379482269287
-Accuracy of the network on the 10000 test images: 74 %
-Time spent training: 175.81659197807312
-Time spent testing: 8.056844472885132
-Accuracy of the network on the 10000 test images: 94 %
-Time spent training: 176.10389828681946
-Time spent testing: 8.106585025787354
-Accuracy of the network on the 10000 test images: 83 %
-Time spent training: 176.0053732395172
-Time spent testing: 8.093960285186768
-Accuracy of the network on the 10000 test images: 84 %
-Time spent training: 175.95473647117615
-Time spent testing: 8.092900037765503
-Accuracy of the network on the 10000 test images: 93 %
-Time spent training: 175.79584980010986
-Time spent testing: 8.073283910751343
-Accuracy of the network on the 10000 test images: 74 %
-Time spent training: 176.41407179832458
-Time spent testing: 8.030330419540405
-Running Control: 1 7
-Accuracy of the network on the 10000 test images: 86 %
-Accuracy of the network on the 10000 test images: 86 %
-Accuracy of the network on the 10000 test images: 65 %
-Accuracy of the network on the 10000 test images: 59 %
-Accuracy of the network on the 10000 test images: 77 %
-Accuracy of the network on the 10000 test images: 76 %
-Accuracy of the network on the 10000 test images: 68 %
-Accuracy of the network on the 10000 test images: 86 %
-Accuracy of the network on the 10000 test images: 84 %
-Accuracy of the network on the 10000 test images: 75 %
-Running Hebbian: 1 8
-Accuracy of the network on the 10000 test images: 84 %
-Time spent training: 176.85983681678772
-Time spent testing: 8.142351388931274
-Accuracy of the network on the 10000 test images: 83 %
-Time spent training: 176.94012713432312
-Time spent testing: 8.322983503341675
-Accuracy of the network on the 10000 test images: 75 %
-Time spent training: 176.03169798851013
-Time spent testing: 8.224075078964233
-Accuracy of the network on the 10000 test images: 84 %
-Time spent training: 176.6377308368683
-Time spent testing: 7.99718451499939
-Accuracy of the network on the 10000 test images: 77 %
-Time spent training: 176.54693913459778
-Time spent testing: 8.091691493988037
-Accuracy of the network on the 10000 test images: 63 %
-Time spent training: 175.7912290096283
-Time spent testing: 8.070784568786621
-Accuracy of the network on the 10000 test images: 86 %
-Time spent training: 176.3653473854065
-Time spent testing: 8.424081802368164
-Accuracy of the network on the 10000 test images: 94 %
-Time spent training: 175.97366571426392
-Time spent testing: 8.113438844680786
-Accuracy of the network on the 10000 test images: 94 %
-Time spent training: 175.86760115623474
-Time spent testing: 8.116151809692383
-Accuracy of the network on the 10000 test images: 75 %
-Time spent training: 175.88207507133484
-Time spent testing: 8.043566703796387
-Running Control: 1 8
-Accuracy of the network on the 10000 test images: 67 %
-Accuracy of the network on the 10000 test images: 57 %
-Accuracy of the network on the 10000 test images: 59 %
-Accuracy of the network on the 10000 test images: 66 %
-Accuracy of the network on the 10000 test images: 84 %
-Accuracy of the network on the 10000 test images: 76 %
-Accuracy of the network on the 10000 test images: 67 %
-Accuracy of the network on the 10000 test images: 77 %
-Accuracy of the network on the 10000 test images: 85 %
-Accuracy of the network on the 10000 test images: 38 %
-Running Hebbian: 1 9
-Accuracy of the network on the 10000 test images: 82 %
-Time spent training: 175.93293523788452
-Time spent testing: 8.070656061172485
-Accuracy of the network on the 10000 test images: 65 %
-Time spent training: 175.93166542053223
-Time spent testing: 8.065037488937378
-Accuracy of the network on the 10000 test images: 82 %
-Time spent training: 175.93808555603027
-Time spent testing: 8.103883504867554
-Accuracy of the network on the 10000 test images: 95 %
-Time spent training: 176.30309224128723
-Time spent testing: 8.103533744812012
-Accuracy of the network on the 10000 test images: 53 %
-Time spent training: 176.07158517837524
-Time spent testing: 8.073463916778564
-Accuracy of the network on the 10000 test images: 94 %
-Time spent training: 175.91483068466187
-Time spent testing: 8.031674146652222
-Accuracy of the network on the 10000 test images: 94 %
-Time spent training: 175.88889598846436
-Time spent testing: 8.029683351516724
-Accuracy of the network on the 10000 test images: 94 %
-Time spent training: 175.99869203567505
-Time spent testing: 8.115193128585815
-Accuracy of the network on the 10000 test images: 72 %
-Time spent training: 175.7941610813141
-Time spent testing: 8.049645185470581
-Accuracy of the network on the 10000 test images: 80 %
-Time spent training: 175.88165187835693
-Time spent testing: 8.09132432937622
-Running Control: 1 9
-Accuracy of the network on the 10000 test images: 84 %
-Accuracy of the network on the 10000 test images: 85 %
-Accuracy of the network on the 10000 test images: 67 %
-Accuracy of the network on the 10000 test images: 74 %
-Accuracy of the network on the 10000 test images: 78 %
-Accuracy of the network on the 10000 test images: 85 %
-Accuracy of the network on the 10000 test images: 76 %
-Accuracy of the network on the 10000 test images: 94 %
-Accuracy of the network on the 10000 test images: 82 %
-Accuracy of the network on the 10000 test images: 66 %
-Running Hebbian: 1 10
-Accuracy of the network on the 10000 test images: 76 %
-Time spent training: 177.5840744972229
-Time spent testing: 8.140851974487305
-Accuracy of the network on the 10000 test images: 84 %
-Time spent training: 176.06856775283813
-Time spent testing: 8.047237634658813
-Accuracy of the network on the 10000 test images: 84 %
-Time spent training: 175.97184252738953
-Time spent testing: 8.108017206192017
-Accuracy of the network on the 10000 test images: 67 %
-Time spent training: 176.63189888000488
-Time spent testing: 8.073861122131348
-Accuracy of the network on the 10000 test images: 76 %
-Time spent training: 176.28374934196472
-Time spent testing: 8.053783178329468
-Accuracy of the network on the 10000 test images: 89 %
-Time spent training: 176.0136661529541
-Time spent testing: 8.316929340362549
-Accuracy of the network on the 10000 test images: 95 %
-Time spent training: 175.83771061897278
-Time spent testing: 8.09810996055603
-Accuracy of the network on the 10000 test images: 76 %
-Time spent training: 176.07471227645874
-Time spent testing: 8.107142448425293
-Accuracy of the network on the 10000 test images: 72 %
-Time spent training: 175.8769335746765
-Time spent testing: 8.059500694274902
-Accuracy of the network on the 10000 test images: 70 %
-Time spent training: 175.3574755191803
-Time spent testing: 8.109752655029297
-Running Control: 1 10
-Accuracy of the network on the 10000 test images: 78 %
-Accuracy of the network on the 10000 test images: 68 %
-Accuracy of the network on the 10000 test images: 76 %
-Accuracy of the network on the 10000 test images: 67 %
-Accuracy of the network on the 10000 test images: 85 %
-Accuracy of the network on the 10000 test images: 78 %
-Accuracy of the network on the 10000 test images: 94 %
-Accuracy of the network on the 10000 test images: 66 %
-Accuracy of the network on the 10000 test images: 76 %
-Accuracy of the network on the 10000 test images: 83 %
-Running Hebbian: 1 11
-Accuracy of the network on the 10000 test images: 85 %
-Time spent training: 177.06907176971436
-Time spent testing: 8.040662050247192
-Accuracy of the network on the 10000 test images: 67 %
-Time spent training: 176.52263808250427
-Time spent testing: 8.122395992279053
-Accuracy of the network on the 10000 test images: 85 %
-Time spent training: 176.28444027900696
-Time spent testing: 7.972020864486694
-Accuracy of the network on the 10000 test images: 54 %
-Time spent training: 175.93960285186768
-Time spent testing: 8.049830913543701
-Accuracy of the network on the 10000 test images: 93 %
-Time spent training: 176.31556463241577
-Time spent testing: 8.043699502944946
-Accuracy of the network on the 10000 test images: 84 %
-Time spent training: 175.86874294281006
-Time spent testing: 8.090992450714111
-Accuracy of the network on the 10000 test images: 11 %
-Time spent training: 175.86466002464294
-Time spent testing: 8.062323093414307
-Accuracy of the network on the 10000 test images: 75 %
-Time spent training: 175.99365139007568
-Time spent testing: 8.120965003967285
-Accuracy of the network on the 10000 test images: 95 %
-Time spent training: 175.90280032157898
-Time spent testing: 8.367148160934448
-Accuracy of the network on the 10000 test images: 84 %
-Time spent training: 177.7533073425293
-Time spent testing: 8.595153331756592
-Running Control: 1 11
-Accuracy of the network on the 10000 test images: 56 %
-Accuracy of the network on the 10000 test images: 86 %
-Accuracy of the network on the 10000 test images: 74 %
-Accuracy of the network on the 10000 test images: 86 %
-Accuracy of the network on the 10000 test images: 76 %
-Accuracy of the network on the 10000 test images: 66 %
-Accuracy of the network on the 10000 test images: 56 %
-Accuracy of the network on the 10000 test images: 85 %
-Accuracy of the network on the 10000 test images: 67 %
-Accuracy of the network on the 10000 test images: 49 %
-Running Hebbian: 1 12
-Accuracy of the network on the 10000 test images: 58 %
-Time spent training: 177.3110966682434
-Time spent testing: 8.096059322357178
-Accuracy of the network on the 10000 test images: 68 %
-Time spent training: 177.7940113544464
-Time spent testing: 8.31494927406311
-Accuracy of the network on the 10000 test images: 85 %
-Time spent training: 176.5741503238678
-Time spent testing: 8.38927674293518
-Accuracy of the network on the 10000 test images: 87 %
-Time spent training: 176.5378930568695
-Time spent testing: 8.10713791847229
-Accuracy of the network on the 10000 test images: 86 %
-Time spent training: 175.95182347297668
-Time spent testing: 8.06950044631958
-Accuracy of the network on the 10000 test images: 66 %
-Time spent training: 176.0784945487976
-Time spent testing: 8.122169017791748
-Accuracy of the network on the 10000 test images: 92 %
-Time spent training: 176.0861508846283
-Time spent testing: 8.053793907165527
-Accuracy of the network on the 10000 test images: 95 %
-Time spent training: 175.96401739120483
-Time spent testing: 8.085402488708496
-Accuracy of the network on the 10000 test images: 66 %
-Time spent training: 176.06593871116638
-Time spent testing: 8.094393253326416
-Accuracy of the network on the 10000 test images: 66 %
-Time spent training: 176.1532166004181
-Time spent testing: 8.154015064239502
-Running Control: 1 12
-Accuracy of the network on the 10000 test images: 59 %
-Accuracy of the network on the 10000 test images: 85 %
-Accuracy of the network on the 10000 test images: 56 %
-Accuracy of the network on the 10000 test images: 86 %
-Accuracy of the network on the 10000 test images: 77 %
-Accuracy of the network on the 10000 test images: 67 %
-Accuracy of the network on the 10000 test images: 59 %
-Accuracy of the network on the 10000 test images: 94 %
-Accuracy of the network on the 10000 test images: 86 %
-Accuracy of the network on the 10000 test images: 77 %
-Running Hebbian: 1 13
-Accuracy of the network on the 10000 test images: 93 %
-Time spent training: 176.38692474365234
-Time spent testing: 8.108055591583252
-Accuracy of the network on the 10000 test images: 77 %
-Time spent training: 176.15766835212708
-Time spent testing: 8.108114004135132
-Accuracy of the network on the 10000 test images: 77 %
-Time spent training: 175.83088636398315
-Time spent testing: 8.128570079803467
-Accuracy of the network on the 10000 test images: 78 %
-Time spent training: 175.86589241027832
-Time spent testing: 8.109979152679443
-Accuracy of the network on the 10000 test images: 95 %
-Time spent training: 176.1199734210968
-Time spent testing: 8.062103748321533
-Accuracy of the network on the 10000 test images: 94 %
-Time spent training: 175.6395697593689
-Time spent testing: 8.126163005828857
-Accuracy of the network on the 10000 test images: 94 %
-Time spent training: 176.38988518714905
-Time spent testing: 8.074060440063477
-Accuracy of the network on the 10000 test images: 66 %
-Time spent training: 175.82615637779236
-Time spent testing: 8.594576597213745
-Accuracy of the network on the 10000 test images: 75 %
-Time spent training: 175.82367730140686
-Time spent testing: 8.103217124938965
-Accuracy of the network on the 10000 test images: 66 %
-Time spent training: 175.93788409233093
-Time spent testing: 8.017760753631592
-Running Control: 1 13
-Accuracy of the network on the 10000 test images: 86 %
-Accuracy of the network on the 10000 test images: 75 %
-Accuracy of the network on the 10000 test images: 77 %
-Accuracy of the network on the 10000 test images: 76 %
-Accuracy of the network on the 10000 test images: 68 %
-Accuracy of the network on the 10000 test images: 67 %
-Accuracy of the network on the 10000 test images: 68 %
-Accuracy of the network on the 10000 test images: 76 %
-Accuracy of the network on the 10000 test images: 85 %
-Accuracy of the network on the 10000 test images: 86 %
-Running Hebbian: 1 14
-Accuracy of the network on the 10000 test images: 95 %
-Time spent training: 176.97512245178223
-Time spent testing: 7.993474721908569
-Accuracy of the network on the 10000 test images: 70 %
-Time spent training: 176.20157885551453
-Time spent testing: 8.112021446228027
-Accuracy of the network on the 10000 test images: 83 %
-Time spent training: 175.9468765258789
-Time spent testing: 8.10283637046814
-Accuracy of the network on the 10000 test images: 78 %
-Time spent training: 175.78895354270935
-Time spent testing: 8.044280529022217
-Accuracy of the network on the 10000 test images: 74 %
-Time spent training: 176.27233147621155
-Time spent testing: 8.021764516830444
-Accuracy of the network on the 10000 test images: 61 %
-Time spent training: 175.90660953521729
-Time spent testing: 8.06518816947937
-Accuracy of the network on the 10000 test images: 94 %
-Time spent training: 176.1840431690216
-Time spent testing: 8.091790676116943
-Accuracy of the network on the 10000 test images: 82 %
-Time spent training: 175.6476058959961
-Time spent testing: 8.138377904891968
-Accuracy of the network on the 10000 test images: 74 %
-Time spent training: 175.92883944511414
-Time spent testing: 7.993299722671509
-Accuracy of the network on the 10000 test images: 65 %
-Time spent training: 175.41779565811157
-Time spent testing: 8.018286943435669
-Running Control: 1 14
-Accuracy of the network on the 10000 test images: 55 %
-Accuracy of the network on the 10000 test images: 67 %
-Accuracy of the network on the 10000 test images: 93 %
-Accuracy of the network on the 10000 test images: 67 %
-Accuracy of the network on the 10000 test images: 68 %
-Accuracy of the network on the 10000 test images: 67 %
-Accuracy of the network on the 10000 test images: 40 %
-Accuracy of the network on the 10000 test images: 85 %
-Accuracy of the network on the 10000 test images: 86 %
-Accuracy of the network on the 10000 test images: 75 %
-Running Hebbian: 1 15
-Accuracy of the network on the 10000 test images: 76 %
-Time spent training: 176.4163749217987
-Time spent testing: 8.10816240310669
-Accuracy of the network on the 10000 test images: 76 %
-Time spent training: 176.03138160705566
-Time spent testing: 7.990317106246948
-Accuracy of the network on the 10000 test images: 84 %
-Time spent training: 175.96885347366333
-Time spent testing: 8.040644884109497
-Accuracy of the network on the 10000 test images: 85 %
-Time spent training: 175.6995997428894
-Time spent testing: 8.079852104187012
-Accuracy of the network on the 10000 test images: 90 %
-Time spent training: 175.95673990249634
-Time spent testing: 8.025785446166992
 Accuracy of the network on the 10000 test images: 45 %
-Time spent training: 175.9202742576599
-Time spent testing: 8.110215425491333
-Accuracy of the network on the 10000 test images: 44 %
-Time spent training: 176.0201234817505
-Time spent testing: 8.110832929611206
-Accuracy of the network on the 10000 test images: 94 %
-Time spent training: 176.27641344070435
-Time spent testing: 7.990489482879639
-Accuracy of the network on the 10000 test images: 58 %
-Time spent training: 175.40294432640076
-Time spent testing: 8.625980138778687
-Accuracy of the network on the 10000 test images: 85 %
-Time spent training: 175.86787915229797
-Time spent testing: 8.109412908554077
-Running Control: 1 15
-Accuracy of the network on the 10000 test images: 94 %
-Accuracy of the network on the 10000 test images: 39 %
-Accuracy of the network on the 10000 test images: 95 %
-Accuracy of the network on the 10000 test images: 56 %
-Accuracy of the network on the 10000 test images: 86 %
-Accuracy of the network on the 10000 test images: 77 %
-Accuracy of the network on the 10000 test images: 84 %
-Accuracy of the network on the 10000 test images: 76 %
-Accuracy of the network on the 10000 test images: 57 %
-Accuracy of the network on the 10000 test images: 77 %
-Running Hebbian: 1 16
-Accuracy of the network on the 10000 test images: 64 %
-Time spent training: 176.26648473739624
-Time spent testing: 8.115143775939941
-Accuracy of the network on the 10000 test images: 56 %
-Time spent training: 176.22012567520142
-Time spent testing: 8.094250440597534
-Accuracy of the network on the 10000 test images: 76 %
-Time spent training: 176.07994890213013
-Time spent testing: 8.049978971481323
-Accuracy of the network on the 10000 test images: 85 %
-Time spent training: 175.5406928062439
-Time spent testing: 8.130099773406982
-Accuracy of the network on the 10000 test images: 61 %
-Time spent training: 175.82429432868958
-Time spent testing: 8.067832946777344
-Accuracy of the network on the 10000 test images: 72 %
-Time spent training: 175.8152060508728
-Time spent testing: 8.517300605773926
-Accuracy of the network on the 10000 test images: 82 %
-Time spent training: 175.894939661026
-Time spent testing: 8.053539991378784
-Accuracy of the network on the 10000 test images: 91 %
-Time spent training: 175.91644835472107
-Time spent testing: 8.073923587799072
-Accuracy of the network on the 10000 test images: 85 %
-Time spent training: 176.18209528923035
-Time spent testing: 8.358359336853027
-Accuracy of the network on the 10000 test images: 40 %
-Time spent training: 176.05054211616516
-Time spent testing: 8.54007339477539
-Running Control: 1 16
-Accuracy of the network on the 10000 test images: 48 %
 Accuracy of the network on the 10000 test images: 75 %
-Accuracy of the network on the 10000 test images: 77 %
-Accuracy of the network on the 10000 test images: 67 %
-Accuracy of the network on the 10000 test images: 77 %
-Accuracy of the network on the 10000 test images: 85 %
-Accuracy of the network on the 10000 test images: 65 %
-Accuracy of the network on the 10000 test images: 57 %
-Accuracy of the network on the 10000 test images: 95 %
-Accuracy of the network on the 10000 test images: 67 %
-Running Hebbian: 1 17
-Accuracy of the network on the 10000 test images: 95 %
-Time spent training: 175.91613054275513
-Time spent testing: 8.106738328933716
-Accuracy of the network on the 10000 test images: 64 %
-Time spent training: 176.12647557258606
-Time spent testing: 8.059208869934082
-Accuracy of the network on the 10000 test images: 55 %
-Time spent training: 176.1352822780609
-Time spent testing: 8.028325319290161
-Accuracy of the network on the 10000 test images: 69 %
-Time spent training: 175.61570525169373
-Time spent testing: 8.09376573562622
-Accuracy of the network on the 10000 test images: 72 %
-Time spent training: 175.88359570503235
-Time spent testing: 8.054566144943237
-Accuracy of the network on the 10000 test images: 86 %
-Time spent training: 175.75239038467407
-Time spent testing: 8.081705570220947
 Accuracy of the network on the 10000 test images: 84 %
-Time spent training: 176.07921719551086
-Time spent testing: 8.083257913589478
-Accuracy of the network on the 10000 test images: 76 %
-Time spent training: 175.86685347557068
-Time spent testing: 8.067681789398193
-Accuracy of the network on the 10000 test images: 65 %
-Time spent training: 175.20163702964783
-Time spent testing: 8.039384603500366
-Accuracy of the network on the 10000 test images: 78 %
-Time spent training: 176.03463578224182
-Time spent testing: 8.042457103729248
-Running Control: 1 17
-Accuracy of the network on the 10000 test images: 67 %
-Accuracy of the network on the 10000 test images: 84 %
-Accuracy of the network on the 10000 test images: 56 %
-Accuracy of the network on the 10000 test images: 57 %
-Accuracy of the network on the 10000 test images: 65 %
-Accuracy of the network on the 10000 test images: 67 %
-Accuracy of the network on the 10000 test images: 66 %
-Accuracy of the network on the 10000 test images: 87 %
-Accuracy of the network on the 10000 test images: 66 %
-Accuracy of the network on the 10000 test images: 67 %
-Running Hebbian: 1 18
-Accuracy of the network on the 10000 test images: 70 %
-Time spent training: 176.18838262557983
-Time spent testing: 8.090568780899048
-Accuracy of the network on the 10000 test images: 76 %
-Time spent training: 175.9464111328125
-Time spent testing: 8.081167221069336
-Accuracy of the network on the 10000 test images: 75 %
-Time spent training: 176.3729908466339
-Time spent testing: 8.102698802947998
-Accuracy of the network on the 10000 test images: 94 %
-Time spent training: 176.09111976623535
-Time spent testing: 8.005142450332642
-Accuracy of the network on the 10000 test images: 42 %
-Time spent training: 176.4193994998932
-Time spent testing: 8.084938764572144
-Accuracy of the network on the 10000 test images: 38 %
-Time spent training: 176.23608016967773
-Time spent testing: 8.015383005142212
-Accuracy of the network on the 10000 test images: 82 %
-Time spent training: 176.21049857139587
-Time spent testing: 8.083261489868164
-Accuracy of the network on the 10000 test images: 40 %
-Time spent training: 175.6667444705963
-Time spent testing: 8.101379156112671
-Accuracy of the network on the 10000 test images: 58 %
-Time spent training: 175.9531490802765
-Time spent testing: 8.083714008331299
-Accuracy of the network on the 10000 test images: 95 %
-Time spent training: 175.9922959804535
-Time spent testing: 8.081393718719482
-Running Control: 1 18
-Accuracy of the network on the 10000 test images: 86 %
-Accuracy of the network on the 10000 test images: 56 %
-Accuracy of the network on the 10000 test images: 78 %
-Accuracy of the network on the 10000 test images: 94 %
-Accuracy of the network on the 10000 test images: 67 %
-Accuracy of the network on the 10000 test images: 85 %
-Accuracy of the network on the 10000 test images: 87 %
-Accuracy of the network on the 10000 test images: 69 %
-Accuracy of the network on the 10000 test images: 85 %
-Accuracy of the network on the 10000 test images: 57 %
-Running Hebbian: 1 19
-Accuracy of the network on the 10000 test images: 94 %
-Time spent training: 176.63786554336548
-Time spent testing: 8.045625448226929
-Accuracy of the network on the 10000 test images: 73 %
-Time spent training: 175.82387375831604
-Time spent testing: 8.112576246261597
-Accuracy of the network on the 10000 test images: 68 %
-Time spent training: 175.83049702644348
-Time spent testing: 8.052323818206787
-Accuracy of the network on the 10000 test images: 67 %
-Time spent training: 175.69412636756897
-Time spent testing: 8.08076024055481
-Accuracy of the network on the 10000 test images: 95 %
-Time spent training: 175.81124234199524
-Time spent testing: 8.104332208633423
-Accuracy of the network on the 10000 test images: 63 %
-Time spent training: 175.97652792930603
-Time spent testing: 8.045198678970337
-Accuracy of the network on the 10000 test images: 90 %
-Time spent training: 175.9869031906128
-Time spent testing: 8.051602363586426
-Accuracy of the network on the 10000 test images: 94 %
-Time spent training: 176.4752757549286
-Time spent testing: 8.100150346755981
-Accuracy of the network on the 10000 test images: 75 %
-Time spent training: 176.10957789421082
-Time spent testing: 7.979223251342773
 Accuracy of the network on the 10000 test images: 74 %
-Time spent training: 176.0178837776184
-Time spent testing: 8.073275566101074
-Running Control: 1 19
-Accuracy of the network on the 10000 test images: 85 %
+Accuracy of the network on the 10000 test images: 65 %
+Accuracy of the network on the 10000 test images: 49 %
+Accuracy of the network on the 10000 test images: 93 %
+Accuracy of the network on the 10000 test images: 83 %
+Running Hebbian: 1 0.45000000000000007
+Accuracy of the network on the 10000 test images: 65 %
+Time spent training: 80.21526551246643
+Time spent testing: 8.314218044281006
 Accuracy of the network on the 10000 test images: 81 %
-Accuracy of the network on the 10000 test images: 86 %
+Time spent training: 80.86113500595093
+Time spent testing: 8.28756070137024
+Accuracy of the network on the 10000 test images: 91 %
+Time spent training: 80.71026706695557
+Time spent testing: 8.303289651870728
 Accuracy of the network on the 10000 test images: 77 %
-Accuracy of the network on the 10000 test images: 77 %
-Accuracy of the network on the 10000 test images: 85 %
-Accuracy of the network on the 10000 test images: 68 %
+Time spent training: 80.6638240814209
+Time spent testing: 8.288837909698486
+Accuracy of the network on the 10000 test images: 50 %
+Time spent training: 80.74898910522461
+Time spent testing: 8.32082986831665
+Accuracy of the network on the 10000 test images: 71 %
+Time spent training: 80.75219941139221
+Time spent testing: 8.31395173072815
 Accuracy of the network on the 10000 test images: 74 %
+Time spent training: 80.49584650993347
+Time spent testing: 8.30070948600769
+Accuracy of the network on the 10000 test images: 53 %
+Time spent training: 80.79608964920044
+Time spent testing: 8.262525796890259
+Accuracy of the network on the 10000 test images: 73 %
+Time spent training: 80.80533361434937
+Time spent testing: 8.33090615272522
+Accuracy of the network on the 10000 test images: 76 %
+Time spent training: 80.79616189002991
+Time spent testing: 8.392903804779053
+Running Control: 1 0.45000000000000007
+Accuracy of the network on the 10000 test images: 84 %
+Accuracy of the network on the 10000 test images: 91 %
+Accuracy of the network on the 10000 test images: 64 %
+Accuracy of the network on the 10000 test images: 75 %
+Accuracy of the network on the 10000 test images: 76 %
+Accuracy of the network on the 10000 test images: 77 %
+Accuracy of the network on the 10000 test images: 75 %
+Accuracy of the network on the 10000 test images: 75 %
+Accuracy of the network on the 10000 test images: 76 %
+Accuracy of the network on the 10000 test images: 73 %
+Running Hebbian: 1 0.5000000000000001
+Accuracy of the network on the 10000 test images: 75 %
+Time spent training: 89.50249695777893
+Time spent testing: 8.363795280456543
+Accuracy of the network on the 10000 test images: 61 %
+Time spent training: 89.79456162452698
+Time spent testing: 8.31745433807373
+Accuracy of the network on the 10000 test images: 75 %
+Time spent training: 89.66585659980774
+Time spent testing: 8.278700113296509
+Accuracy of the network on the 10000 test images: 58 %
+Time spent training: 89.75286769866943
+Time spent testing: 8.296233415603638
+Accuracy of the network on the 10000 test images: 73 %
+Time spent training: 89.5850920677185
+Time spent testing: 8.309724807739258
+Accuracy of the network on the 10000 test images: 80 %
+Time spent training: 89.52565622329712
+Time spent testing: 8.333960771560669
+Accuracy of the network on the 10000 test images: 92 %
+Time spent training: 89.7822937965393
+Time spent testing: 8.542394161224365
+Accuracy of the network on the 10000 test images: 66 %
+Time spent training: 89.65519666671753
+Time spent testing: 8.305007696151733
+Accuracy of the network on the 10000 test images: 62 %
+Time spent training: 89.79632830619812
+Time spent testing: 8.267390012741089
+Accuracy of the network on the 10000 test images: 79 %
+Time spent training: 89.46907877922058
+Time spent testing: 8.921926259994507
+Running Control: 1 0.5000000000000001
+Accuracy of the network on the 10000 test images: 65 %
+Accuracy of the network on the 10000 test images: 93 %
+Accuracy of the network on the 10000 test images: 85 %
+Accuracy of the network on the 10000 test images: 74 %
+Accuracy of the network on the 10000 test images: 93 %
+Accuracy of the network on the 10000 test images: 58 %
+Accuracy of the network on the 10000 test images: 73 %
+Accuracy of the network on the 10000 test images: 72 %
+Accuracy of the network on the 10000 test images: 58 %
+Accuracy of the network on the 10000 test images: 77 %
+Running Hebbian: 1 0.5500000000000002
+Accuracy of the network on the 10000 test images: 71 %
+Time spent training: 98.67028975486755
+Time spent testing: 9.090512037277222
+Accuracy of the network on the 10000 test images: 77 %
+Time spent training: 98.97111344337463
+Time spent testing: 8.26507019996643
+Accuracy of the network on the 10000 test images: 72 %
+Time spent training: 98.71010828018188
+Time spent testing: 8.309910297393799
+Accuracy of the network on the 10000 test images: 60 %
+Time spent training: 99.0237169265747
+Time spent testing: 8.293081283569336
+Accuracy of the network on the 10000 test images: 73 %
+Time spent training: 99.1581072807312
+Time spent testing: 8.288532257080078
+Accuracy of the network on the 10000 test images: 84 %
+Time spent training: 98.47752833366394
+Time spent testing: 8.343960285186768
+Accuracy of the network on the 10000 test images: 50 %
+Time spent training: 99.02420616149902
+Time spent testing: 8.291598320007324
+Accuracy of the network on the 10000 test images: 35 %
+Time spent training: 98.33068180084229
+Time spent testing: 8.319414377212524
+Accuracy of the network on the 10000 test images: 93 %
+Time spent training: 98.92770338058472
+Time spent testing: 8.294161796569824
+Accuracy of the network on the 10000 test images: 93 %
+Time spent training: 98.57805728912354
+Time spent testing: 8.332895517349243
+Running Control: 1 0.5500000000000002
+Accuracy of the network on the 10000 test images: 66 %
+Accuracy of the network on the 10000 test images: 93 %
+Accuracy of the network on the 10000 test images: 66 %
+Accuracy of the network on the 10000 test images: 66 %
+Accuracy of the network on the 10000 test images: 68 %
+Accuracy of the network on the 10000 test images: 56 %
+Accuracy of the network on the 10000 test images: 73 %
+Accuracy of the network on the 10000 test images: 65 %
+Accuracy of the network on the 10000 test images: 49 %
+Accuracy of the network on the 10000 test images: 76 %
+Running Hebbian: 1 0.6000000000000002
+Accuracy of the network on the 10000 test images: 60 %
+Time spent training: 107.4608314037323
+Time spent testing: 8.348458290100098
+Accuracy of the network on the 10000 test images: 74 %
+Time spent training: 107.43506407737732
+Time spent testing: 8.303641080856323
+Accuracy of the network on the 10000 test images: 93 %
+Time spent training: 107.68919038772583
+Time spent testing: 8.300942659378052
+Accuracy of the network on the 10000 test images: 74 %
+Time spent training: 107.61163115501404
+Time spent testing: 8.291247367858887
+Accuracy of the network on the 10000 test images: 75 %
+Time spent training: 107.64903664588928
+Time spent testing: 8.28049087524414
+Accuracy of the network on the 10000 test images: 80 %
+Time spent training: 107.82478332519531
+Time spent testing: 8.282663345336914
+Accuracy of the network on the 10000 test images: 79 %
+Time spent training: 107.97134113311768
+Time spent testing: 8.33903193473816
+Accuracy of the network on the 10000 test images: 55 %
+Time spent training: 107.71652793884277
+Time spent testing: 8.338297605514526
+Accuracy of the network on the 10000 test images: 73 %
+Time spent training: 107.92769861221313
+Time spent testing: 8.255212545394897
+Accuracy of the network on the 10000 test images: 93 %
+Time spent training: 108.08108592033386
+Time spent testing: 8.332910776138306
+Running Control: 1 0.6000000000000002
+Accuracy of the network on the 10000 test images: 67 %
+Accuracy of the network on the 10000 test images: 77 %
+Accuracy of the network on the 10000 test images: 75 %
+Accuracy of the network on the 10000 test images: 64 %
+Accuracy of the network on the 10000 test images: 85 %
+Accuracy of the network on the 10000 test images: 84 %
+Accuracy of the network on the 10000 test images: 84 %
+Accuracy of the network on the 10000 test images: 64 %
+Accuracy of the network on the 10000 test images: 85 %
+Accuracy of the network on the 10000 test images: 73 %
+Running Hebbian: 1 0.6500000000000001
+Accuracy of the network on the 10000 test images: 71 %
+Time spent training: 116.66243481636047
+Time spent testing: 8.33028268814087
+Accuracy of the network on the 10000 test images: 50 %
+Time spent training: 116.50572443008423
+Time spent testing: 8.303566932678223
 Accuracy of the network on the 10000 test images: 86 %
+Time spent training: 116.41815662384033
+Time spent testing: 8.720073938369751
+Accuracy of the network on the 10000 test images: 70 %
+Time spent training: 116.42399072647095
+Time spent testing: 8.29344916343689
+Accuracy of the network on the 10000 test images: 67 %
+Time spent training: 116.80438017845154
+Time spent testing: 8.327103853225708
+Accuracy of the network on the 10000 test images: 77 %
+Time spent training: 116.94173192977905
+Time spent testing: 8.869221448898315
+Accuracy of the network on the 10000 test images: 90 %
+Time spent training: 117.0789041519165
+Time spent testing: 8.2673921585083
+Accuracy of the network on the 10000 test images: 53 %
+Time spent training: 116.24784708023071
+Time spent testing: 8.308209657669067
+Accuracy of the network on the 10000 test images: 62 %
+Time spent training: 116.69724464416504
+Time spent testing: 8.296481132507324
+Accuracy of the network on the 10000 test images: 64 %
+Time spent training: 116.67135739326477
+Time spent testing: 8.290722846984863
+Running Control: 1 0.6500000000000001
+Accuracy of the network on the 10000 test images: 56 %
+Accuracy of the network on the 10000 test images: 65 %
+Accuracy of the network on the 10000 test images: 77 %
+Accuracy of the network on the 10000 test images: 65 %
+Accuracy of the network on the 10000 test images: 93 %
+Accuracy of the network on the 10000 test images: 66 %
+Accuracy of the network on the 10000 test images: 94 %
+Accuracy of the network on the 10000 test images: 85 %
+Accuracy of the network on the 10000 test images: 58 %
+Accuracy of the network on the 10000 test images: 67 %
+Running Hebbian: 1 0.7000000000000002
+Accuracy of the network on the 10000 test images: 67 %
+Time spent training: 125.54279685020447
+Time spent testing: 8.318017959594727
+Accuracy of the network on the 10000 test images: 66 %
+Time spent training: 125.52391719818115
+Time spent testing: 8.292346477508545
+Accuracy of the network on the 10000 test images: 61 %
+Time spent training: 125.11382699012756
+Time spent testing: 8.362766027450562
+Accuracy of the network on the 10000 test images: 93 %
+Time spent training: 125.77528667449951
+Time spent testing: 8.361904621124268
+Accuracy of the network on the 10000 test images: 54 %
+Time spent training: 125.91863298416138
+Time spent testing: 8.298847913742065
+Accuracy of the network on the 10000 test images: 80 %
+Time spent training: 125.95292925834656
+Time spent testing: 8.571741342544556
+Accuracy of the network on the 10000 test images: 82 %
+Time spent training: 126.20544481277466
+Time spent testing: 8.304224729537964
+Accuracy of the network on the 10000 test images: 93 %
+Time spent training: 125.68889498710632
+Time spent testing: 8.305239915847778
+Accuracy of the network on the 10000 test images: 82 %
+Time spent training: 125.70213055610657
+Time spent testing: 8.292000770568848
+Accuracy of the network on the 10000 test images: 65 %
+Time spent training: 125.71001648902893
+Time spent testing: 8.320807695388794
+Running Control: 1 0.7000000000000002
+Accuracy of the network on the 10000 test images: 85 %
+Accuracy of the network on the 10000 test images: 76 %
+Accuracy of the network on the 10000 test images: 85 %
+Accuracy of the network on the 10000 test images: 76 %
+Accuracy of the network on the 10000 test images: 76 %
+Accuracy of the network on the 10000 test images: 55 %
+Accuracy of the network on the 10000 test images: 65 %
+Accuracy of the network on the 10000 test images: 74 %
+Accuracy of the network on the 10000 test images: 74 %
+Accuracy of the network on the 10000 test images: 76 %
+Running Hebbian: 1 0.7500000000000002
+Accuracy of the network on the 10000 test images: 65 %
+Time spent training: 133.9119918346405
+Time spent testing: 8.3061842918396
+Accuracy of the network on the 10000 test images: 49 %
+Time spent training: 134.24997520446777
+Time spent testing: 8.29166293144226
 Accuracy of the network on the 10000 test images: 59 %
-Traceback (most recent call last):
-  File "run_experiment_1.py", line 1, in <module>
-    from experiment_1_epochs import vary_phi
-  File "/home/jeffch/meta_unsupervised/experiment_1_epochs/vary_phi.py", line 32, in <module>
-    acc_df.to_csv(fn)
-  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/pandas/core/frame.py", line 1524, in to_csv
-    formatter.save()
-  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/pandas/io/formats/format.py", line 1637, in save
-    compression=self.compression)
-  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/pandas/io/common.py", line 390, in _get_handle
-    f = open(path_or_buf, mode, encoding=encoding)
-FileNotFoundError: [Errno 2] No such file or directory: '/home/jeffch/meta_unsupervised/final_data/raw_phi_experiment.csv'
+Time spent training: 134.68911027908325
+Time spent testing: 8.287314176559448
+Accuracy of the network on the 10000 test images: 89 %
+Time spent training: 134.19093918800354
+Time spent testing: 8.277837753295898
+Accuracy of the network on the 10000 test images: 86 %
+Time spent training: 134.3558328151703
+Time spent testing: 8.323033809661865
+Accuracy of the network on the 10000 test images: 90 %
+Time spent training: 134.6799499988556
+Time spent testing: 8.331309080123901
+Accuracy of the network on the 10000 test images: 66 %
+Time spent training: 134.49354934692383
+Time spent testing: 8.278824806213379
+Accuracy of the network on the 10000 test images: 82 %
+Time spent training: 134.46322751045227
+Time spent testing: 8.337655067443848
+Accuracy of the network on the 10000 test images: 64 %
+Time spent training: 134.70766162872314
+Time spent testing: 8.28236198425293
+Accuracy of the network on the 10000 test images: 84 %
+Time spent training: 134.38991904258728
+Time spent testing: 8.297754764556885
+Running Control: 1 0.7500000000000002
+Accuracy of the network on the 10000 test images: 67 %
+Accuracy of the network on the 10000 test images: 56 %
+Accuracy of the network on the 10000 test images: 77 %
+Accuracy of the network on the 10000 test images: 29 %
+Accuracy of the network on the 10000 test images: 67 %
+Accuracy of the network on the 10000 test images: 92 %
+Accuracy of the network on the 10000 test images: 85 %
+Accuracy of the network on the 10000 test images: 67 %
+Accuracy of the network on the 10000 test images: 37 %
+Accuracy of the network on the 10000 test images: 47 %
+Running Hebbian: 1 0.8000000000000002
+Accuracy of the network on the 10000 test images: 66 %
+Time spent training: 143.37909746170044
+Time spent testing: 8.312690019607544
+Accuracy of the network on the 10000 test images: 74 %
+Time spent training: 143.1420819759369
+Time spent testing: 8.2883620262146
+Accuracy of the network on the 10000 test images: 47 %
+Time spent training: 143.88795375823975
+Time spent testing: 8.32035517692566
+Accuracy of the network on the 10000 test images: 85 %
+Time spent training: 143.87670373916626
+Time spent testing: 8.605331897735596
+Accuracy of the network on the 10000 test images: 81 %
+Time spent training: 143.67866706848145
+Time spent testing: 8.319320440292358
+Accuracy of the network on the 10000 test images: 74 %
+Time spent training: 143.5196816921234
+Time spent testing: 8.289116859436035
+Accuracy of the network on the 10000 test images: 94 %
+Time spent training: 143.68915843963623
+Time spent testing: 8.29589056968689
+Accuracy of the network on the 10000 test images: 62 %
+Time spent training: 143.6815938949585
+Time spent testing: 8.27373743057251
+Accuracy of the network on the 10000 test images: 69 %
+Time spent training: 143.79004764556885
+Time spent testing: 8.294018983840942
+Accuracy of the network on the 10000 test images: 59 %
+Time spent training: 143.72651052474976
+Time spent testing: 8.307646036148071
+Running Control: 1 0.8000000000000002
+Accuracy of the network on the 10000 test images: 76 %
+Accuracy of the network on the 10000 test images: 67 %
+Accuracy of the network on the 10000 test images: 84 %
+Accuracy of the network on the 10000 test images: 86 %
+Accuracy of the network on the 10000 test images: 50 %
+Accuracy of the network on the 10000 test images: 83 %
+Accuracy of the network on the 10000 test images: 74 %
+Accuracy of the network on the 10000 test images: 56 %
+Accuracy of the network on the 10000 test images: 69 %
+Accuracy of the network on the 10000 test images: 66 %
+Running Hebbian: 1 0.8500000000000002
+Accuracy of the network on the 10000 test images: 53 %
+Time spent training: 152.46824836730957
+Time spent testing: 8.306588411331177
+Accuracy of the network on the 10000 test images: 92 %
+Time spent training: 152.4353437423706
+Time spent testing: 8.312525510787964
+Accuracy of the network on the 10000 test images: 78 %
+Time spent training: 152.8307318687439
+Time spent testing: 8.28696060180664
+Accuracy of the network on the 10000 test images: 75 %
+Time spent training: 152.4229154586792
+Time spent testing: 8.310168027877808
+Accuracy of the network on the 10000 test images: 94 %
+Time spent training: 152.61759448051453
+Time spent testing: 8.324597120285034
+Accuracy of the network on the 10000 test images: 85 %
+Time spent training: 152.08697962760925
+Time spent testing:
