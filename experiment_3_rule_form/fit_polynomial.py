@@ -83,8 +83,10 @@ for d in range(0, 5):  # d is max degree of polynomial
     deg_appx_model_df = pd.DataFrame(columns=str_all_deg_arr)
     list_of_regression_params = []
     # num_models = 5 # for testing, remove
+    print("check")
     for i in range(num_models):
         model = torch.load(metalearner_directory + os.sep + str(i) + '.model')
+        print("loaded model")
         if d == 0:
             model_update_ser = metadata_df.apply(lambda row: model.get_single_update((row['v_i'], row['w_ij'], row['v_j'])), axis=1)
         if d > 0:
@@ -92,7 +94,7 @@ for d in range(0, 5):  # d is max degree of polynomial
                                                                                             row['(0, 1, 0)'],
                                                                                             row['(0, 0, 1)'])), axis=1)
         y = model_update_ser.values
-        # print(y)
+        print(y)
         x = deg_appx_train_df.values
         regression_solution = np.matmul(np.matmul(np.linalg.inv(np.matmul(x.transpose(), x)), x.transpose()), y)
         error = np.square(y - np.matmul(x, regression_solution)).mean()
