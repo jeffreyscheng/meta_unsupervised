@@ -6,6 +6,7 @@ import os
 import itertools
 
 
+os.environ["CUDA_VISIBLE_DEVICES"] = "2"
 print("imports done")
 final_path = os.path.join(os.sep.join(os.path.dirname(__file__).split(os.sep)[:-1]),
                           'final_data')
