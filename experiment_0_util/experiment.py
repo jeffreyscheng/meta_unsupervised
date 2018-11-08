@@ -2,7 +2,7 @@ from experiment_0_util.control_frame import *
 from experiment_0_util.hebbian_frame import *
 from hyperparameters import *
 
-n = 90  # iterations per experimental pair
+n = 1  # iterations per experimental pair
 
 
 def run_theta_phi_pair(theta_val, phi_val):

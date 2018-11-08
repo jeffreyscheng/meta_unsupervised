@@ -40,7 +40,7 @@ def comb_to_sb(tup):
 
 list_of_degree_dfs = []
 
-for d in range(0, 5):  # d is max degree of polynomial
+for d in range(0, 7):  # d is max degree of polynomial
     print("starting degree " + str(d))
     all_combinations = list(itertools.combinations(range(d + 3), 3))
     all_deg_arr = [comb_to_sb(c) for c in all_combinations]
