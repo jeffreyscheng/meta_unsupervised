@@ -42,14 +42,14 @@ class WritableHebbianNet(nn.Module):
 
     # get new weight
     def get_update(self, meta_input_stack):
-        return torch.squeeze(self.conv2(self.conv1(meta_input_stack)), 1)
+        return torch.squeeze(self.conv2(self.relu(self.conv1(meta_input_stack))), 1)
 
     # get new weight
     def get_single_update(self, meta_inputs):
         formatted_meta = Variable(torch.Tensor(meta_inputs).unsqueeze(dim=0).unsqueeze(dim=2).unsqueeze(dim=3))
         if gpu_bool:
             formatted_meta = formatted_meta.cuda()
-        return float(torch.squeeze(self.conv2(self.conv1(formatted_meta))).data)
+        return float(torch.squeeze(self.conv2(self.relu(self.conv1(formatted_meta)))).data)
 
     # @timeit
     def forward(self, x, batch_num):

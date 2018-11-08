@@ -1,0 +1,8 @@
+/home/jcheng/meta_unsupervised/experiment_3_rule_form/writable_hebbian.py:205: UserWarning: invalid index of a 0-dim tensor. This will be an error in PyTorch 0.5. Use tensor.item() to convert a 0-dim tensor to a Python number
+  return {'v_i': float(t[0].data[0]),
+/home/jcheng/meta_unsupervised/experiment_3_rule_form/writable_hebbian.py:206: UserWarning: invalid index of a 0-dim tensor. This will be an error in PyTorch 0.5. Use tensor.item() to convert a 0-dim tensor to a Python number
+  'w_ij': float(t[1].data[0]),
+/home/jcheng/meta_unsupervised/experiment_3_rule_form/writable_hebbian.py:207: UserWarning: invalid index of a 0-dim tensor. This will be an error in PyTorch 0.5. Use tensor.item() to convert a 0-dim tensor to a Python number
+  'v_j': float(t[2].data[0]),
+/home/jcheng/meta_unsupervised/experiment_3_rule_form/writable_hebbian.py:208: UserWarning: invalid index of a 0-dim tensor. This will be an error in PyTorch 0.5. Use tensor.item() to convert a 0-dim tensor to a Python number
+  'grad': float(t[3].data[0])}
