@@ -7,12 +7,12 @@ from matplotlib import pyplot
 import os
 #
 fn = os.path.join(os.sep.join(os.path.dirname(__file__).split(os.sep)[:-1]),
-                  'final_data',
+                  'final_data', 'old',
                   'raw_phi_experiment.csv')
 phi_df = pd.read_csv(fn)
 print(len(phi_df.index))
 
-results_path = os.path.join(os.sep.join(fn.split(os.sep)[:-2]), 'experiment_results')
+results_path = os.path.join(os.sep.join(fn.split(os.sep)[:-3]), 'experiment_results')
 print(results_path)
 
 agg = []
@@ -26,6 +26,7 @@ print(agg)
 agg_df = pd.DataFrame(agg)
 agg_df = agg_df.sort_values(by=['phi'], ascending=True)
 
+# plt.figure(figsize=(4, 3))
 plt.plot(agg_df['phi'], agg_df['hebbian_acc'])
 plt.plot(agg_df['phi'], agg_df['control_acc'])
 # plt.legend(['y = x', 'y = 2x', 'y = 3x', 'y = 4x'], loc='upper left')
@@ -53,8 +54,12 @@ plt.plot(agg_df['phi'], agg_df['control_acc'])
 
 plt.xlabel('Number of Epochs')
 plt.ylabel('Median Accuracy')
+plt.title('Effect of HAT on Accuracy over Time')
+plt.ylim(0.6, 0.8)
+plt.legend(['Hebbian', 'Control'])
 
 plt.savefig(os.path.join(results_path, 'experiment_1_median.png'))
+plt.savefig(os.path.join(results_path, 'experiment_1_median.eps'))
 plt.clf()
 
 agg = []

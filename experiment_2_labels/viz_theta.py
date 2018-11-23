@@ -7,12 +7,12 @@ from matplotlib import pyplot
 import os
 #
 fn = os.path.join(os.sep.join(os.path.dirname(__file__).split(os.sep)[:-1]),
-                  'final_data',
+                  'final_data', 'old',
                   'raw_theta_experiment.csv')
 theta_df = pd.read_csv(fn)
 print(len(theta_df.index))
 
-results_path = os.path.join(os.sep.join(fn.split(os.sep)[:-2]), 'experiment_results')
+results_path = os.path.join(os.sep.join(fn.split(os.sep)[:-3]), 'experiment_results')
 print(results_path)
 
 agg = []
@@ -49,12 +49,16 @@ agg_df = agg_df.sort_values(by=['theta'], ascending=True)
 
 plt.plot(agg_df['theta'], agg_df['hebbian_acc'])
 plt.plot(agg_df['theta'], agg_df['control_acc'])
+plt.legend(['Hebbian', 'Control'])
 # plt.legend(['y = x', 'y = 2x', 'y = 3x', 'y = 4x'], loc='upper left')
 
 plt.xlabel('Number of Epochs')
 plt.ylabel('Median Accuracy')
+plt.ylim(0.6, 0.8)
+plt.title('Effect of HAT on Semi-Supervised Accuracy')
 
 plt.savefig(os.path.join(results_path, 'experiment_2_median.png'))
+plt.savefig(os.path.join(results_path, 'experiment_2_median.eps'))
 plt.clf()
 
 agg = []
