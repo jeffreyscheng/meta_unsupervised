@@ -1,7 +1,7 @@
 from experiment_4_prelearned.optimal_frame import *
 from hyperparameters import *
 
-n = 1  # iterations per experimental pair
+n = 90  # iterations per experimental pair
 
 
 def run_theta_phi_pair(theta_val, phi_val):

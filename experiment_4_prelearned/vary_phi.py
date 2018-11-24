@@ -3,7 +3,7 @@ import numpy as np
 import pandas as pd
 import os
 
-# os.environ["CUDA_VISIBLE_DEVICES"] = "1"
+os.environ["CUDA_VISIBLE_DEVICES"] = "0"
 
 fn = os.path.join(os.sep.join(os.path.dirname(__file__).split(os.sep)[:-1]),
                   'final_data',

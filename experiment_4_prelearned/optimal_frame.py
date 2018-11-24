@@ -59,11 +59,14 @@ class OptimalNet(nn.Module):
                     if torch.is_tensor(obj) or (hasattr(obj, 'data') and torch.is_tensor(obj.data)):
                         print(type(obj), obj.size())
             shift = self.get_update(output_stack) * self.rate / batch_num
-            shift = torch.mean(shift.data, dim=0)
+            shift = torch.mean(shift, dim=0)
 
             # output, update weights
-            out = old_vj + torch.sum(input_stack * shift, dim=2)
-            layer.data += shift
+            # print(type(input_stack))
+            # print(type(shift))
+            vj_update = input_stack * shift
+            out = old_vj + torch.sum(vj_update, dim=2)
+            layer.data += shift.data
             del old_vj, output_stack, shift
         return out
 
