@@ -27,7 +27,7 @@ class OptimalNet(nn.Module):
 
     @staticmethod
     def get_update(v_j):
-        return v_j / 5
+        return v_j
 
     # @timeit
     def forward(self, x, batch_num):
