@@ -1,5 +1,6 @@
 import torch
 import os
+from experiment_5_rule_over_time.experiment_metacaching import CachedMetaLearner
 
 temp_directory = os.path.join(os.sep.join(os.path.dirname(__file__).split(os.sep)[:-1]),
                               'temp_data')
