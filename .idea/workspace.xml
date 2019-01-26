@@ -41,18 +41,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="600">
-      <file leaf-file-name="optimal_frame.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/experiment_4_prelearned/optimal_frame.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="29" column="22" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
-              <folding>
-                <element signature="e#0#46#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="viz_phi.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/experiment_4_prelearned/viz_phi.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -73,8 +61,17 @@
       <file leaf-file-name="run_experiment_5.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/run_experiment_5.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+            <state>
+              <caret selection-end-column="60" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="run_experiment_5.2.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/run_experiment_5.2.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="54" lean-forward="true" selection-start-column="54" selection-end-column="54" />
             </state>
           </provider>
         </entry>
@@ -82,7 +79,7 @@
       <file leaf-file-name="hebbian_frame.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/experiment_0_util/hebbian_frame.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="521">
+            <state relative-caret-position="2839">
               <caret line="187" lean-forward="true" selection-start-line="187" selection-end-line="187" />
             </state>
           </provider>
@@ -91,8 +88,8 @@
       <file leaf-file-name="analyze_rule.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/experiment_5_rule_over_time/analyze_rule.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="13" lean-forward="true" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+            <state relative-caret-position="323">
+              <caret line="19" column="62" selection-start-line="19" selection-start-column="62" selection-end-line="19" selection-end-column="62" />
               <folding>
                 <element signature="e#0#12#0" expanded="true" />
               </folding>
@@ -168,7 +165,7 @@
       <find>download</find>
       <find>gpu_bool</find>
       <find>gpu_bo</find>
-      <find />
+      <find>os.environ[&quot;CUDA_VISIBLE_DEVICES&quot;] = &quot;2&quot;</find>
       <find>phi</find>
       <find>self.impulse</find>
       <find>metadata</find>
@@ -176,13 +173,13 @@
       <find>metadata_df</find>
       <find>model</find>
       <find>cuda</find>
-      <find />
+      <find>hebbian fix</find>
       <find>variable_params_range</find>
-      <find />
+      <find>degree 8, signifi</find>
       <find>pointwise</find>
       <find>hebbian_vs_grad</find>
       <find>degree_vs</find>
-      <find />
+      <find>plt.savefig(os.path.join(results_path, 'experiment_3_wij_vs_Hebb.eps'))eps</find>
       <find>eps</find>
       <find>degree_vs_</find>
       <find>grad_vs_</find>
@@ -210,7 +207,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/vanilla.py" />
         <option value="$PROJECT_DIR$/meta_framework.py" />
         <option value="$PROJECT_DIR$/varying_theta.py" />
         <option value="$PROJECT_DIR$/control.py" />
@@ -260,6 +256,7 @@
         <option value="$PROJECT_DIR$/experiment_1_epochs/viz_phi.py" />
         <option value="$PROJECT_DIR$/experiment_4_prelearned/optimal_frame.py" />
         <option value="$PROJECT_DIR$/experiment_0_util/hebbian_frame.py" />
+        <option value="$PROJECT_DIR$/run_experiment_5.2.py" />
         <option value="$PROJECT_DIR$/experiment_5_rule_over_time/analyze_rule.py" />
       </list>
     </option>
@@ -570,9 +567,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/final_data/deg_by_avg_error_df.csv">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/final_data/deg_by_significance_df.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -775,13 +769,6 @@
     <entry file="file://$PROJECT_DIR$/experiment_5_rule_over_time/exp_5.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/run_experiment_5.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/experiment_3_rule_form/writable_hebbian.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2862">
@@ -811,13 +798,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/experiment_0_util/hebbian_frame.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="521">
-          <caret line="187" lean-forward="true" selection-start-line="187" selection-end-line="187" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/experiment_5_rule_over_time/experiment_metacaching.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -828,10 +808,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/experiment_0_util/hebbian_frame.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2839">
+          <caret line="187" lean-forward="true" selection-start-line="187" selection-end-line="187" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/run_experiment_5.2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="54" lean-forward="true" selection-start-column="54" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/run_experiment_5.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/experiment_5_rule_over_time/analyze_rule.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="13" lean-forward="true" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+        <state relative-caret-position="323">
+          <caret line="19" column="62" selection-start-line="19" selection-start-column="62" selection-end-line="19" selection-end-column="62" />
           <folding>
             <element signature="e#0#12#0" expanded="true" />
           </folding>

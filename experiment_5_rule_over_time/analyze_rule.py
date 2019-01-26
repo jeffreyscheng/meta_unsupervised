@@ -17,5 +17,5 @@ num_models = len([name for name in os.listdir(metalearner_directory)
 for i in range(num_models):
     model = torch.load(metalearner_directory + os.sep + str(i) + '.model')
     print("loaded model")
-    print(model(torch.Tensor([0, 0, 0])))
+    print(model(torch.Tensor([0, 0, 0]).unsqueeze(0).unsqueeze(0).unsqueeze(0)))
     del model
