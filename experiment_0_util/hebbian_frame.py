@@ -80,7 +80,8 @@ class HebbianFrame(MetaFramework):
         super(HebbianFrame, self).__init__(name, fixed_params)
 
     @bandaid
-    def train_model(self, mid1, mid2, meta_mid, learning_rate, learner_batch_size, update_rate, theta=1, phi=15):
+    def train_model(self, mid1, mid2, meta_mid, learning_rate, learner_batch_size, update_rate, theta=1, phi=15,
+                    return_model=False):
         mid1 = math.floor(mid1)
         mid2 = math.floor(mid2)
         meta_mid = math.floor(meta_mid)
@@ -175,8 +176,12 @@ class HebbianFrame(MetaFramework):
         print('Accuracy of the network on the 10000 test images: %d %%' % (100 * correct / total))
         print("Time spent training:", tick2 - tick)
         print("Time spent testing:", time.time() - tick2)
-        del learner
-        return correct / total
+
+        if return_model:
+            return learner
+        else:
+            del learner
+            return correct / total
 
 
 hebbian_frame = HebbianFrame('hebbian', fixed_parameters)
