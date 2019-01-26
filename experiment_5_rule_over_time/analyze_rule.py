@@ -1,4 +1,5 @@
 import torch
+from torch.autograd import Variable
 import os
 from experiment_5_rule_over_time.experiment_metacaching import CachedMetaLearner
 
@@ -17,5 +18,5 @@ num_models = len([name for name in os.listdir(metalearner_directory)
 for i in range(num_models):
     model = torch.load(metalearner_directory + os.sep + str(i) + '.model')
     print("loaded model")
-    print(model(torch.Tensor([0, 0, 0]).unsqueeze(0).unsqueeze(0).unsqueeze(0)))
+    print(model(Variable(torch.Tensor([0, 0, 0]).unsqueeze(0).unsqueeze(0).unsqueeze(0))))
     del model
