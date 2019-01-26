@@ -44,46 +44,11 @@
       <file leaf-file-name="optimal_frame.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/experiment_4_prelearned/optimal_frame.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
+            <state relative-caret-position="357">
               <caret line="29" column="22" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
               <folding>
                 <element signature="e#0#46#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="viz_phi.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/experiment_1_epochs/viz_phi.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="57" column="20" selection-start-line="57" selection-start-column="20" selection-end-line="57" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="prelearned_experiment.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/experiment_4_prelearned/prelearned_experiment.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="69" selection-start-line="9" selection-start-column="69" selection-end-line="9" selection-end-column="69" />
-              <folding>
-                <element signature="e#1#46#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="experiment_1_median.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/experiment_results/experiment_1_median.png">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file leaf-file-name="hyperparameters.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hyperparameters.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="11" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -100,28 +65,83 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="experiment_4_min.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/experiment_results/experiment_4_min.png">
-          <provider selected="true" editor-type-id="images" />
+      <file leaf-file-name="exp_5.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/experiment_5_rule_over_time/exp_5.txt">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file leaf-file-name="experiment_4_max.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/experiment_results/experiment_4_max.png">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file leaf-file-name="experiment_4_median.png" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/experiment_results/experiment_4_median.png">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file leaf-file-name="vary_phi.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/experiment_4_prelearned/vary_phi.py">
+      <file leaf-file-name="run_experiment_5.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/run_experiment_5.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="14" selection-start-line="14" selection-end-line="14" />
+            <state relative-caret-position="17">
+              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="hebbian_frame.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/experiment_0_util/hebbian_frame.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="521">
+              <caret line="187" lean-forward="true" selection-start-line="187" selection-end-line="187" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="analyze_rule.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/experiment_5_rule_over_time/analyze_rule.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
               <folding>
-                <element signature="e#0#59#0" expanded="true" />
+                <element signature="e#0#12#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="experiment_metacaching.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/experiment_5_rule_over_time/experiment_metacaching.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" selection-start-line="4" selection-end-line="11" selection-end-column="38" />
+              <folding>
+                <element signature="e#0#45#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="writable_hebbian.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/experiment_3_rule_form/writable_hebbian.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-2862">
+              <folding>
+                <element signature="e#0#45#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="viz_polynomial.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/experiment_3_rule_form/viz_polynomial.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1513">
+              <caret line="92" column="50" selection-start-line="92" selection-start-column="50" selection-end-line="92" selection-end-column="50" />
+              <folding>
+                <element signature="e#0#19#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="fit_polynomial.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/experiment_3_rule_form/fit_polynomial.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="193">
+              <caret line="88" column="29" lean-forward="true" selection-start-line="86" selection-start-column="4" selection-end-line="88" selection-end-column="29" />
+              <folding>
+                <element signature="e#0#19#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -149,7 +169,7 @@
       <find>download</find>
       <find>gpu_bool</find>
       <find>gpu_bo</find>
-      <find>os.environ[&quot;CUDA_VISIBLE_DEVICES&quot;] = &quot;2&quot;</find>
+      <find />
       <find>phi</find>
       <find>self.impulse</find>
       <find>metadata</find>
@@ -157,13 +177,13 @@
       <find>metadata_df</find>
       <find>model</find>
       <find>cuda</find>
-      <find>hebbian fix</find>
+      <find />
       <find>variable_params_range</find>
-      <find>degree 8, signifi</find>
+      <find />
       <find>pointwise</find>
       <find>hebbian_vs_grad</find>
       <find>degree_vs</find>
-      <find>plt.savefig(os.path.join(results_path, 'experiment_3_wij_vs_Hebb.eps'))eps</find>
+      <find />
       <find>eps</find>
       <find>degree_vs_</find>
       <find>grad_vs_</find>
@@ -190,7 +210,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/extract_polynomial.py" />
         <option value="$PROJECT_DIR$/vanilla.py" />
         <option value="$PROJECT_DIR$/meta_framework.py" />
         <option value="$PROJECT_DIR$/varying_theta.py" />
@@ -230,7 +249,6 @@
         <option value="$PROJECT_DIR$/experiment_0_util/control_frame.py" />
         <option value="$PROJECT_DIR$/experiment_3_rule_form/create_meta_dataset.py" />
         <option value="$PROJECT_DIR$/experiment_0_util/meta_framework.py" />
-        <option value="$PROJECT_DIR$/experiment_0_util/hebbian_frame.py" />
         <option value="$PROJECT_DIR$/experiment_0_util/experiment.py" />
         <option value="$PROJECT_DIR$/experiment_3_rule_form/viz_polynomial.py" />
         <option value="$PROJECT_DIR$/experiment_2_labels/viz_theta.py" />
@@ -241,6 +259,8 @@
         <option value="$PROJECT_DIR$/experiment_4_prelearned/viz_phi.py" />
         <option value="$PROJECT_DIR$/experiment_1_epochs/viz_phi.py" />
         <option value="$PROJECT_DIR$/experiment_4_prelearned/optimal_frame.py" />
+        <option value="$PROJECT_DIR$/experiment_0_util/hebbian_frame.py" />
+        <option value="$PROJECT_DIR$/experiment_5_rule_over_time/analyze_rule.py" />
       </list>
     </option>
   </component>
@@ -263,7 +283,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -294,22 +313,13 @@
             <path>
               <item name="meta_unsupervised" type="b2602c69:ProjectViewProjectNode" />
               <item name="meta_unsupervised" type="462c0819:PsiDirectoryNode" />
-              <item name="experiment_4_prelearned" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="meta_unsupervised" type="b2602c69:ProjectViewProjectNode" />
-              <item name="meta_unsupervised" type="462c0819:PsiDirectoryNode" />
-              <item name="experiment_results" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="meta_unsupervised" type="b2602c69:ProjectViewProjectNode" />
-              <item name="meta_unsupervised" type="462c0819:PsiDirectoryNode" />
-              <item name="final_data" type="462c0819:PsiDirectoryNode" />
+              <item name="experiment_5_rule_over_time" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -327,15 +337,16 @@
     <option name="myIpythonEnabled" value="false" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\jeffr\home\dev\research\meta_unsupervised\final_data" />
+      <recent name="C:\Users\jeffr\home\dev\research\meta_unsupervised\experiment_1_epochs" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\jeffr\home\dev\research\meta_unsupervised" />
       <recent name="C:\Users\jeffr\home\dev\research\meta_unsupervised\experiment_4_prelearned" />
       <recent name="C:\Users\jeffr\home\dev\research\meta_unsupervised\final_data\old" />
       <recent name="C:\Users\jeffr\home\dev\research\meta_unsupervised\mu_exp" />
       <recent name="C:\Users\jeffr\home\dev\research\meta_unsupervised\experiment_2_labels" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\jeffr\home\dev\research\meta_unsupervised\final_data" />
-      <recent name="C:\Users\jeffr\home\dev\research\meta_unsupervised\experiment_1_epochs" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -477,25 +488,25 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-6" y="-6" width="1633" height="1053" extended-state="7" />
+    <frame x="-6" y="-6" width="1633" height="1053" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3297491" />
       <window_info anchor="bottom" id="Event Log" order="13" sideWeight="0.50040483" side_tool="true" weight="0.5322581" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
-      <window_info anchor="bottom" id="File Transfer" order="14" weight="0.34313726" />
+      <window_info anchor="bottom" id="File Transfer" order="14" visible="true" weight="0.34313726" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49959514" weight="0.3888889" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32897604" />
       <window_info anchor="bottom" id="Python Console" order="9" weight="0.32897604" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49959514" weight="0.3888889" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.32897604" />
       <window_info anchor="right" id="Remote Host" order="3" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20761904" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17269841" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="4" />
       <window_info anchor="right" id="SciView" order="3" weight="0.5688889" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39978212" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -506,30 +517,30 @@
       <window_info anchor="bottom" id="Concurrent Activities Diagram" order="12" weight="0.3297491" />
     </layout>
     <layout-to-restore>
+      <window_info anchor="bottom" id="Python Console" order="9" weight="0.32897604" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Remote Host" order="3" />
-      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18222222" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3297491" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32897604" />
       <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49959514" visible="true" weight="0.38344225" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3278867" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39978212" />
       <window_info anchor="right" id="Database" order="5" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.32897604" />
       <window_info anchor="bottom" id="Event Log" order="13" sideWeight="0.50040483" side_tool="true" weight="0.5322581" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32897604" />
       <window_info anchor="right" id="SciView" order="4" weight="0.5688889" />
       <window_info anchor="bottom" id="File Transfer" order="14" weight="0.34313726" />
-      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3278867" />
       <window_info anchor="bottom" id="Concurrent Activities Diagram" order="12" weight="0.3297491" />
-      <window_info anchor="bottom" id="Python Console" order="9" weight="0.32897604" />
+      <window_info id="Favorites" order="2" side_tool="true" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -559,24 +570,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/experiment_results/experiment_2_max.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/experiment_results/experiment_2_min.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/experiment_results/experiment_1_min.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/experiment_results/experiment_3_degree_vs_significance.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/final_data/degree_appx_model_sets/0.csv">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/experiment_results/experiment_3_deg_2/(1, 0, 1)_hist.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/final_data/deg_by_avg_error_df.csv">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -662,16 +655,6 @@
     <entry file="file://$PROJECT_DIR$/experiment_results/experiment_3_grad_vs_Hebb.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/experiment_3_rule_form/viz_polynomial.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1496">
-          <caret line="92" column="50" selection-start-line="92" selection-start-column="50" selection-end-line="92" selection-end-column="50" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/experiment_2_labels/viz_theta.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="850">
@@ -699,13 +682,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/experiment_0_util/hebbian_frame.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="68" column="12" selection-start-line="68" selection-start-column="12" selection-end-line="68" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/run_experiment_1.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -727,19 +703,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="17" column="44" selection-start-line="17" selection-start-column="44" selection-end-line="17" selection-end-column="44" />
-          <folding>
-            <element signature="e#0#42#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/experiment_4_prelearned/prelearned_experiment.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
+        <state relative-caret-position="136">
           <caret line="9" column="69" selection-start-line="9" selection-start-column="69" selection-end-line="9" selection-end-column="69" />
-          <folding>
-            <element signature="e#1#46#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -750,19 +720,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/experiment_4_prelearned/viz_phi.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="48" column="52" selection-start-line="48" selection-start-column="52" selection-end-line="48" selection-end-column="52" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/experiment_1_epochs/viz_phi.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
+        <state relative-caret-position="867">
           <caret line="57" column="20" selection-start-line="57" selection-start-column="20" selection-end-line="57" selection-end-column="20" />
         </state>
       </provider>
@@ -775,7 +735,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/experiment_4_prelearned/vary_phi.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
+        <state relative-caret-position="187">
           <caret line="14" selection-start-line="14" selection-end-line="14" />
           <folding>
             <element signature="e#0#59#0" expanded="true" />
@@ -785,7 +745,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/experiment_4_prelearned/optimal_frame.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
+        <state relative-caret-position="357">
           <caret line="29" column="22" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
           <folding>
             <element signature="e#0#46#0" expanded="true" />
@@ -793,14 +753,90 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/experiment_results/experiment_4_median.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/experiment_results/experiment_4_max.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/experiment_results/experiment_4_min.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/experiment_results/experiment_4_median.png">
-      <provider selected="true" editor-type-id="images" />
+    <entry file="file://$PROJECT_DIR$/experiment_4_prelearned/viz_phi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="48" column="52" selection-start-line="48" selection-start-column="52" selection-end-line="48" selection-end-column="52" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/experiment_5_rule_over_time/exp_5.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/run_experiment_5.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/experiment_3_rule_form/writable_hebbian.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2862">
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/experiment_3_rule_form/viz_polynomial.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1513">
+          <caret line="92" column="50" selection-start-line="92" selection-start-column="50" selection-end-line="92" selection-end-column="50" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/experiment_3_rule_form/fit_polynomial.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="88" column="29" lean-forward="true" selection-start-line="86" selection-start-column="4" selection-end-line="88" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/experiment_0_util/hebbian_frame.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="521">
+          <caret line="187" lean-forward="true" selection-start-line="187" selection-end-line="187" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/experiment_5_rule_over_time/experiment_metacaching.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" selection-start-line="4" selection-end-line="11" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/experiment_5_rule_over_time/analyze_rule.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
   </component>
 </project>
