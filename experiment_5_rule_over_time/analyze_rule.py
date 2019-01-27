@@ -19,7 +19,7 @@ for i in range(num_models):
     model = torch.load(metalearner_directory + os.sep + str(i) + '.model')
     print(type(model))
     print("loaded model")
-    test = Variable(torch.zeros([20, 3, 6, 7]))
+    test = Variable(torch.zeros([20, 3, 6, 7])).cuda()
     print(type(test))
     print(model(test))
     del model
