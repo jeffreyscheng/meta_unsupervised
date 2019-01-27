@@ -17,6 +17,9 @@ num_models = len([name for name in os.listdir(metalearner_directory)
 
 for i in range(num_models):
     model = torch.load(metalearner_directory + os.sep + str(i) + '.model')
+    print(type(model))
     print("loaded model")
-    print(model(Variable(torch.zeros([20, 3, 6, 7]))))
+    test = Variable(torch.zeros([20, 3, 6, 7]))
+    print(type(test))
+    print(model(test))
     del model
