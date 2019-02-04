@@ -72,16 +72,20 @@ class HebbianFrame(MetaFramework):
     def __init__(self, name, fixed_params):
         super(HebbianFrame, self).__init__(name, fixed_params)
 
-    def create_learner(self):
-        return HebbianNet(fixed_parameters['input_size'],
-                          hyperparameters['mid1'],
-                          hyperparameters['mid2'],
-                          fixed_parameters['num_classes'],
-                          fixed_parameters['meta_input'],
-                          hyperparameters['meta_mid'],
-                          fixed_parameters['meta_output'],
-                          hyperparameters['learner_batch_size'],
-                          hyperparameters['update_rate'])
+    def create_learner_and_optimizer(self):
+        learner = HebbianNet(fixed_parameters['input_size'],
+                             hyperparameters['mid1'],
+                             hyperparameters['mid2'],
+                             fixed_parameters['num_classes'],
+                             fixed_parameters['meta_input'],
+                             hyperparameters['meta_mid'],
+                             fixed_parameters['meta_output'],
+                             hyperparameters['learner_batch_size'],
+                             hyperparameters['update_rate'])
+        optimizer = base_optimizer(list(learner.parameters()) +
+                                   list(learner.conv1.parameters()) +
+                                   list(learner.conv2.parameters()), lr=hyperparameters['learning_rate'])
+        return learner, optimizer
 
 
 hebbian_frame = HebbianFrame('hebbian', fixed_parameters)

@@ -86,21 +86,18 @@ class MetaFramework(object):
                                                            shuffle=False)
 
     @abc.abstractmethod
-    def create_learner(self):
-        return
+    def create_learner_and_optimizer(self):
+        return None, None
 
     @bandaid
     def train_model(self, phi=5, theta=1, return_model=False):
-        learner = self.create_learner()
+        learner, optimizer = self.create_learner_and_optimizer()
         tick = time.time()
         if gpu_bool:
             learner.cuda()
 
         # Loss and Optimizer
         learner_criterion = nn.CrossEntropyLoss()
-        learner_optimizer = torch.optim.Adam(list(learner.parameters()) +
-                                             list(learner.conv1.parameters()) +
-                                             list(learner.conv2.parameters()), lr=hyperparameters['learning_rate'])
 
         batch_num = 0
 
@@ -126,13 +123,13 @@ class MetaFramework(object):
             # most stuff before here
 
             # Learner Forward + Backward + Optimize
-            learner_optimizer.zero_grad()  # zero the gradient buffer
+            optimizer.zero_grad()  # zero the gradient buffer
             outputs = learner.forward(images, batch_num)
             if random.uniform(0, 1) < theta:
                 learner_loss = learner_criterion(outputs, labels)
                 # print(labels.data[0], ',', str(learner_loss.data[0]))
                 learner_loss.backward()
-                learner_optimizer.step()
+                optimizer.step()
                 del images, labels, outputs, learner_loss
 
         tick2 = time.time()

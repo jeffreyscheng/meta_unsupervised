@@ -55,12 +55,14 @@ class ControlFrame(MetaFramework):
     def __init__(self, name, fixed_params):
         super(ControlFrame, self).__init__(name, fixed_params)
 
-    def create_learner(self):
-        return ControlNet(fixed_parameters['input_size'],
-                          hyperparameters['mid1'],
-                          hyperparameters['mid2'],
-                          fixed_parameters['num_classes'],
-                          hyperparameters['learner_batch_size'])
+    def create_learner_and_optimizer(self):
+        learner = ControlNet(fixed_parameters['input_size'],
+                             hyperparameters['mid1'],
+                             hyperparameters['mid2'],
+                             fixed_parameters['num_classes'],
+                             hyperparameters['learner_batch_size'])
+        optimizer = base_optimizer(list(learner.parameters()), lr=hyperparameters['learning_rate'])
+        return learner, optimizer
 
 
 control_frame = ControlFrame('control', fixed_parameters)

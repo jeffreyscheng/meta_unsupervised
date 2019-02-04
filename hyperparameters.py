@@ -15,6 +15,7 @@ hyperparameters = {'mid1': 100,
 dataset_name = 'MNIST'
 gpu_bool = torch.cuda.device_count() > 0
 experiment_iterations = 100
+base_optimizer = torch.optim.SGD
 
 
 def safe_mkdir(path):
