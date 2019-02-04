@@ -1,5 +1,5 @@
 import numpy as np
-from experiment_0_util.experiment import visualize_phi
+from experiment_0_util.run_experiment import visualize_phi
 from hyperparameters import *
 
 experiment_1_data_path = os.path.join(root_directory,

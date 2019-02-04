@@ -1,5 +1,5 @@
 import numpy as np
-from experiment_0_util.experiment import visualize_theta
+from experiment_0_util.run_experiment import visualize_theta
 from hyperparameters import *
 
 experiment_2_data_path = os.path.join(root_directory,

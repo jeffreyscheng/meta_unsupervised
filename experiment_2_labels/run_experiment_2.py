@@ -1,4 +1,4 @@
-from experiment_0_util.experiment import *
+from experiment_0_util.run_experiment import *
 import numpy as np
 import pandas as pd
 import os
@@ -21,7 +21,7 @@ for theta in np.arange(0.10, 1.01, 0.01):
 
 acc_df = pd.DataFrame(acc_dict)
 try:
-    prev_acc_df = pd.read_csv(fn)
+    prev_acc_df = pd.read_csv(experiment_2_data_path)
     acc_df = pd.concat([acc_df, prev_acc_df])
 except FileNotFoundError:
     pass
