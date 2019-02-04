@@ -54,11 +54,11 @@ class ControlNet(nn.Module):
 class ControlFrame(MetaFramework):
     def __init__(self, name, fixed_params):
         super(ControlFrame, self).__init__(name, fixed_params)
-        self.learner = ControlNet(hyperparameters['input_size'],
+        self.learner = ControlNet(fixed_parameters['input_size'],
                                   hyperparameters['mid1'],
                                   hyperparameters['mid2'],
-                                  hyperparameters['num_classes'],
-                                  hyperparameters['meta_input'])
+                                  fixed_parameters['num_classes'],
+                                  hyperparameters['learner_batch_size'])
 
 
 control_frame = ControlFrame('control', fixed_parameters)
