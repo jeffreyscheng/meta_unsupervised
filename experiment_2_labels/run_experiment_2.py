@@ -3,11 +3,10 @@ import numpy as np
 import pandas as pd
 import os
 
-# os.environ["CUDA_VISIBLE_DEVICES"] = "1"
 
-fn = os.path.join(os.sep.join(os.path.dirname(__file__).split(os.sep)[:-1]),
-                  'final_data',
-                  'raw_theta_experiment.csv')
+experiment_2_data_path = os.path.join(root_directory,
+                                      'final_data',
+                                      'experiment_2_data.csv')
 
 acc_dict = []
 
@@ -26,4 +25,4 @@ try:
     acc_df = pd.concat([acc_df, prev_acc_df])
 except FileNotFoundError:
     pass
-acc_df.to_csv(fn)
+acc_df.to_csv(experiment_2_data_path)

@@ -1,13 +1,13 @@
-# from bayes_opt import BayesianOptimization
-import pickle
-from torch.utils.data import Dataset, DataLoader
-from pathlib import Path
-import torch.nn as nn
 import time
-import numpy as np
-import math
 from functools import wraps
 import traceback
+from hyperparameters import *
+import torch
+import torchvision.transforms as transforms
+import torchvision.datasets as dsets
+import random
+import torch.nn as nn
+from torch.autograd import Variable
 
 
 def timeit(method):
@@ -23,92 +23,6 @@ def timeit(method):
         return result
 
     return timed
-
-
-# Template for Bias and Weight Update Metalearner
-# inputs in order v_i, w_ij, v_j
-class MetaNet(nn.Module):
-    def __init__(self, input_size, hidden_size, num_classes):
-        super(MetaNet, self).__init__()
-        self.fc1 = nn.Linear(input_size, hidden_size)
-        self.relu = nn.ReLU()
-        self.fc2 = nn.Linear(hidden_size, num_classes)
-
-    def forward(self, x):
-        out = self.fc1(x)
-        out = self.relu(out)
-        out = self.fc2(out)
-        out = self.relu(out)
-        return out
-
-
-class MetaFramework:
-    time_out = 20 * 60
-    num_data = 60000
-
-    def __init__(self, name, fixed_params):
-        self.name = name
-        self.fixed_params = fixed_params
-
-    # def __init__(self, name, fixed_params, variable_params_range, variable_params_init):
-    #     self.name = name
-    #     self.fixed_params = fixed_params
-    #     self.variable_params_range = variable_params_range
-    #     self.variable_params_init = variable_params_init
-    #
-    # def initialize_learner(self, **params):
-    #     pass
-    #
-    # def train_model(self, **params):
-    #     pass
-    #
-    # def optimize(self, n):
-    #     file_name = self.name + '.bayes'
-    #     bayes_file = Path(file_name)
-    #
-    #     if not bayes_file.is_file():
-    #         print("Initializing:", file_name)
-    #         bayes = BayesianOptimization(self.train_model, self.variable_params_range)
-    #         bayes.explore(self.variable_params_init)
-    #         bayes.maximize(init_points=1, n_iter=n, kappa=1, acq="ucb")
-    #     else:
-    #         with open(file_name, 'rb') as bayes_file:
-    #             bayes = pickle.load(bayes_file)
-    #         print("Loaded file:", file_name)
-    #         bayes.maximize(n_iter=n, kappa=1, acq="ucb", alpha=1e-3)
-    #
-    #     print(bayes.res['max'])
-    #     print(bayes.res['all'])
-    #     with open(file_name, "wb") as output_file:
-    #         pickle.dump(bayes, output_file)
-    #
-    # def analyze(self):
-    #     pass
-
-
-# MetaDataset
-
-class MetaDataset(Dataset):
-    """Face Landmarks dataset."""
-
-    def __init__(self, metadata):
-        """
-        Args:
-            csv_file (string): Path to the csv file with annotations.
-            root_dir (string): Directory with all the images.
-            transform (callable, optional): Optional transform to be applied
-                on a sample.
-        """
-        metadata = metadata.data
-        self.len = metadata.size()[0]
-        self.x_data = metadata[:, 0:3]
-        self.y_data = metadata[:, 3:4]
-
-    def __len__(self):
-        return self.len
-
-    def __getitem__(self, idx):
-        return self.x_data[idx], self.y_data[idx]
 
 
 def bandaid(method):
@@ -136,3 +50,102 @@ def bandaid(method):
                 return 0
 
     return bounced
+
+
+class MetaFramework:
+    time_out = 20 * 60
+    num_data = 60000
+
+    def __init__(self, name, fixed_params):
+        self.name = name
+        self.fixed_params = fixed_params
+        if dataset_name == 'MNIST':
+            # MNIST Dataset
+            train_dataset = dsets.MNIST(root='./' + dataset_name + '/data',
+                                        train=True,
+                                        transform=transforms.ToTensor(),
+                                        download=True)
+
+            test_dataset = dsets.MNIST(root='./' + dataset_name + '/data',
+                                       train=False,
+                                       transform=transforms.ToTensor())
+
+            # Data Loader (Input Pipeline)
+            self.train_loader = torch.utils.data.DataLoader(dataset=train_dataset,
+                                                            batch_size=hyperparameters['learner_batch_size'],
+                                                            shuffle=True)
+
+            self.test_loader = torch.utils.data.DataLoader(dataset=test_dataset,
+                                                           batch_size=hyperparameters['learner_batch_size'],
+                                                           shuffle=False)
+        self.learner = None
+
+    @bandaid
+    def train_model(self, phi=5, theta=1, return_model=False):
+        tick = time.time()
+        if gpu_bool:
+            self.learner.cuda()
+
+        # Loss and Optimizer
+        learner_criterion = nn.CrossEntropyLoss()
+        learner_optimizer = torch.optim.Adam(list(self.learner.parameters()) +
+                                             list(self.learner.conv1.parameters()) +
+                                             list(self.learner.conv2.parameters()), lr=hyperparameters['learning_rate'])
+
+        batch_num = 0
+
+        def stop_training(tock, batch):
+            return tock - tick > MetaFramework.time_out or batch * hyperparameters[
+                'learner_batch_size'] / MetaFramework.num_data > phi
+
+        for i, (images, labels) in enumerate(self.train_loader):
+            batch_num += 1
+            if stop_training(time.time(), batch_num):
+                # print("time out!")
+                break
+            # if meta_converged is False:
+            #     meta_converged = learner.check_convergence()
+            images = Variable(images.view(-1, 28 * 28))
+            labels = Variable(labels)
+
+            # move to CUDA
+            if gpu_bool:
+                images = images.cuda()
+                labels = labels.cuda()
+
+            # most stuff before here
+
+            # Learner Forward + Backward + Optimize
+            learner_optimizer.zero_grad()  # zero the gradient buffer
+            outputs = self.learner.forward(images, batch_num)
+            if random.uniform(0, 1) < theta:
+                learner_loss = learner_criterion(outputs, labels)
+                # print(labels.data[0], ',', str(learner_loss.data[0]))
+                learner_loss.backward()
+                learner_optimizer.step()
+                del images, labels, outputs, learner_loss
+
+        tick2 = time.time()
+        # Test the Model
+        correct = 0
+        total = 0
+        for images, labels in self.test_loader:
+            images = Variable(images.view(-1, 28 * 28))
+            # to CUDA
+            if gpu_bool:
+                images = images.cuda()
+                labels = labels.cuda()
+            outputs = self.learner(images, batch_num)
+            _, predicted = torch.max(outputs.data, 1)
+            total += labels.size(0)
+            correct += (predicted == labels).sum()
+            del images, outputs, predicted
+        print('Accuracy of the network on the 10000 test images: %d %%' % (100 * correct / total))
+        print("Time spent training:", tick2 - tick)
+        print("Time spent testing:", time.time() - tick2)
+        if return_model:
+            return self.learner
+        else:
+            del self.learner
+            self.learner = None
+            return correct / total

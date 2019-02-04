@@ -1,12 +1,7 @@
 from experiment_0_util.meta_framework import *
 from hyperparameters import *
-import random
 import torch
-import torchvision.datasets as dsets
-import torchvision.transforms as transforms
-from torch.autograd import Variable
-import time
-import os
+import torch.nn as nn
 
 
 # Template for Single Structure
@@ -71,117 +66,19 @@ class HebbianNet(nn.Module):
             del old_vj, input_stack, output_stack, weight_stack, meta_inputs, shift
         return out
 
-    def check_convergence(self):
-        return False
-
 
 class HebbianFrame(MetaFramework):
     def __init__(self, name, fixed_params):
         super(HebbianFrame, self).__init__(name, fixed_params)
-
-    @bandaid
-    def train_model(self, mid1, mid2, meta_mid, learning_rate, learner_batch_size, update_rate, theta=1, phi=15,
-                    return_model=False):
-        mid1 = math.floor(mid1)
-        mid2 = math.floor(mid2)
-        meta_mid = math.floor(meta_mid)
-        meta_input = self.fixed_params['meta_input']
-        meta_output = self.fixed_params['meta_output']
-        input_size = self.fixed_params['input_size']
-        num_classes = self.fixed_params['num_classes']
-        learner_batch_size = math.floor(learner_batch_size)
-        learner = HebbianNet(input_size, mid1, mid2, num_classes, meta_input, meta_mid, meta_output, learner_batch_size,
-                             update_rate)
-        # print(learner_batch_size)
-
-        # check if GPU is available
-        gpu_bool = torch.cuda.device_count() > 0
-        if gpu_bool:
-            learner.cuda()
-
-        # MNIST Dataset
-        train_dataset = dsets.MNIST(root='./data',
-                                    train=True,
-                                    transform=transforms.ToTensor(),
-                                    download=True)
-
-        test_dataset = dsets.MNIST(root='./data',
-                                   train=False,
-                                   transform=transforms.ToTensor())
-
-        # Data Loader (Input Pipeline)
-        train_loader = torch.utils.data.DataLoader(dataset=train_dataset,
-                                                   batch_size=learner_batch_size,
-                                                   shuffle=True, drop_last=True)
-
-        test_loader = torch.utils.data.DataLoader(dataset=test_dataset,
-                                                  batch_size=learner_batch_size,
-                                                  shuffle=False, drop_last=True)
-
-        # Loss and Optimizer
-        learner_criterion = nn.CrossEntropyLoss()
-        learner_optimizer = torch.optim.Adam(list(learner.parameters()) +
-                                             list(learner.conv1.parameters()) +
-                                             list(learner.conv2.parameters()), lr=learning_rate)
-
-        tick = time.time()
-        # meta_converged = False
-        batch_num = 0
-
-        def stop_training(tock, batch):
-            return tock - tick > MetaFramework.time_out or batch * learner_batch_size / MetaFramework.num_data > phi
-
-        for i, (images, labels) in enumerate(train_loader):
-            batch_num += 1
-            if stop_training(time.time(), batch_num):
-                # print("time out!")
-                break
-            # if meta_converged is False:
-            #     meta_converged = learner.check_convergence()
-            images = Variable(images.view(-1, 28 * 28))
-            labels = Variable(labels)
-
-            # move to CUDA
-            if gpu_bool:
-                images = images.cuda()
-                labels = labels.cuda()
-
-            # most stuff before here
-
-            # Learner Forward + Backward + Optimize
-            learner_optimizer.zero_grad()  # zero the gradient buffer
-            outputs = learner.forward(images, batch_num)
-            if random.uniform(0, 1) < theta:
-                learner_loss = learner_criterion(outputs, labels)
-                # print(labels.data[0], ',', str(learner_loss.data[0]))
-                learner_loss.backward()
-                learner_optimizer.step()
-                del images, labels, outputs, learner_loss
-
-        tick2 = time.time()
-        # Test the Model
-        correct = 0
-        total = 0
-        for images, labels in test_loader:
-            images = Variable(images.view(-1, 28 * 28))
-            # to CUDA
-            if gpu_bool:
-                images = images.cuda()
-                labels = labels.cuda()
-            outputs = learner(images, batch_num)
-            _, predicted = torch.max(outputs.data, 1)
-            total += labels.size(0)
-            correct += (predicted == labels).sum()
-            del images, outputs, predicted
-        print('Accuracy of the network on the 10000 test images: %d %%' % (100 * correct / total))
-        print("Time spent training:", tick2 - tick)
-        print("Time spent testing:", time.time() - tick2)
-
-        if return_model:
-            return learner
-        else:
-            del learner
-            return correct / total
+        self.learner = HebbianNet(hyperparameters['input_size'],
+                                  hyperparameters['mid1'],
+                                  hyperparameters['mid2'],
+                                  hyperparameters['num_classes'],
+                                  hyperparameters['meta_input'],
+                                  hyperparameters['meta_mid'],
+                                  hyperparameters['meta_output'],
+                                  hyperparameters['learner_batch_size'],
+                                  hyperparameters['update_rate'])
 
 
 hebbian_frame = HebbianFrame('hebbian', fixed_parameters)

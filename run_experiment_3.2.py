@@ -1,1 +1,0 @@
-from experiment_3_rule_form import fit_polynomial
