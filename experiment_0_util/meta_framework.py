@@ -118,8 +118,6 @@ class MetaFramework(object):
                 images = images.cuda()
                 labels = labels.cuda()
 
-            # most stuff before here
-
             # Learner Forward + Backward + Optimize
             optimizer.zero_grad()  # zero the gradient buffer
             outputs = learner.forward(images, batch_num)

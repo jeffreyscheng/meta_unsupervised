@@ -22,9 +22,6 @@ class ControlNet(nn.Module):
         return out
 
     def forward(self, x, batch_num=1):
-        if self.impulse is not None:
-            if len(self.impulse) > 4:
-                raise ValueError("long impulse!")
         out = x
         out = self.fc1(out)
         out = self.relu(out)
