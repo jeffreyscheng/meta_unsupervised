@@ -12,7 +12,7 @@ hyperparameters = {'mid1': 100,
                    'learning_rate': 0.001,
                    'learner_batch_size': 50,
                    'update_rate': 0.001}
-dataset_name = 'mnist'
+dataset_name = 'MNIST'
 gpu_bool = torch.cuda.device_count() > 0
 experiment_iterations = 100
 
