@@ -108,10 +108,8 @@ class MetaFramework(object):
         for i, (images, labels) in enumerate(self.train_loader):
             batch_num += 1
             if stop_training(time.time(), batch_num):
-                # print("time out!")
                 break
-            # if meta_converged is False:
-            #     meta_converged = learner.check_convergence()
+
             images = Variable(images.view(-1, 28 * 28))
             labels = Variable(labels)
 
