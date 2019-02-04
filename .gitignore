@@ -2,3 +2,4 @@
 /experiment_results
 /__pycache__
 /.idea
+/MNIST/data
