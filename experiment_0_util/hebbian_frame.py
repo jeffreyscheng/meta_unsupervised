@@ -68,17 +68,20 @@ class HebbianNet(nn.Module):
 
 
 class HebbianFrame(MetaFramework):
+
     def __init__(self, name, fixed_params):
         super(HebbianFrame, self).__init__(name, fixed_params)
-        self.learner = HebbianNet(fixed_parameters['input_size'],
-                                  hyperparameters['mid1'],
-                                  hyperparameters['mid2'],
-                                  fixed_parameters['num_classes'],
-                                  fixed_parameters['meta_input'],
-                                  hyperparameters['meta_mid'],
-                                  fixed_parameters['meta_output'],
-                                  hyperparameters['learner_batch_size'],
-                                  hyperparameters['update_rate'])
+
+    def create_learner(self):
+        return HebbianNet(fixed_parameters['input_size'],
+                          hyperparameters['mid1'],
+                          hyperparameters['mid2'],
+                          fixed_parameters['num_classes'],
+                          fixed_parameters['meta_input'],
+                          hyperparameters['meta_mid'],
+                          fixed_parameters['meta_output'],
+                          hyperparameters['learner_batch_size'],
+                          hyperparameters['update_rate'])
 
 
 hebbian_frame = HebbianFrame('hebbian', fixed_parameters)

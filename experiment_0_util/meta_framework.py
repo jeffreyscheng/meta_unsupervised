@@ -8,6 +8,7 @@ import torchvision.datasets as dsets
 import random
 import torch.nn as nn
 from torch.autograd import Variable
+import abc
 
 
 def timeit(method):
@@ -52,11 +53,16 @@ def bandaid(method):
     return bounced
 
 
-class MetaFramework:
+def create_learner():
+    return 0
+
+
+class MetaFramework(object):
     time_out = 20 * 60
     num_data = 60000
 
     def __init__(self, name, fixed_params):
+        __metaclass__ = abc.ABCMeta
         self.name = name
         self.fixed_params = fixed_params
         if dataset_name == 'MNIST':
@@ -78,19 +84,23 @@ class MetaFramework:
             self.test_loader = torch.utils.data.DataLoader(dataset=test_dataset,
                                                            batch_size=hyperparameters['learner_batch_size'],
                                                            shuffle=False)
-        self.learner = None
+
+    @abc.abstractmethod
+    def create_learner(self):
+        return
 
     @bandaid
     def train_model(self, phi=5, theta=1, return_model=False):
+        learner = self.create_learner()
         tick = time.time()
         if gpu_bool:
-            self.learner.cuda()
+            learner.cuda()
 
         # Loss and Optimizer
         learner_criterion = nn.CrossEntropyLoss()
-        learner_optimizer = torch.optim.Adam(list(self.learner.parameters()) +
-                                             list(self.learner.conv1.parameters()) +
-                                             list(self.learner.conv2.parameters()), lr=hyperparameters['learning_rate'])
+        learner_optimizer = torch.optim.Adam(list(learner.parameters()) +
+                                             list(learner.conv1.parameters()) +
+                                             list(learner.conv2.parameters()), lr=hyperparameters['learning_rate'])
 
         batch_num = 0
 
@@ -117,7 +127,7 @@ class MetaFramework:
 
             # Learner Forward + Backward + Optimize
             learner_optimizer.zero_grad()  # zero the gradient buffer
-            outputs = self.learner.forward(images, batch_num)
+            outputs = learner.forward(images, batch_num)
             if random.uniform(0, 1) < theta:
                 learner_loss = learner_criterion(outputs, labels)
                 # print(labels.data[0], ',', str(learner_loss.data[0]))
@@ -135,7 +145,7 @@ class MetaFramework:
             if gpu_bool:
                 images = images.cuda()
                 labels = labels.cuda()
-            outputs = self.learner(images, batch_num)
+            outputs = learner(images, batch_num)
             _, predicted = torch.max(outputs.data, 1)
             total += labels.size(0)
             correct += (predicted == labels).sum()
@@ -144,8 +154,7 @@ class MetaFramework:
         print("Time spent training:", tick2 - tick)
         print("Time spent testing:", time.time() - tick2)
         if return_model:
-            return self.learner
+            return learner
         else:
-            del self.learner
-            self.learner = None
+            del learner
             return correct / total

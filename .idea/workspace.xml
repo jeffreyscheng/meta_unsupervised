@@ -77,8 +77,8 @@
       <file leaf-file-name="meta_framework.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/experiment_0_util/meta_framework.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1649">
-              <caret line="151" selection-start-line="151" selection-end-line="151" />
+            <state relative-caret-position="1856">
+              <caret line="158" column="23" selection-start-line="158" selection-start-column="23" selection-end-line="158" selection-end-column="23" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -89,8 +89,8 @@
       <file leaf-file-name="hebbian_frame.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/experiment_0_util/hebbian_frame.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="683">
-              <caret line="79" column="71" lean-forward="true" selection-start-line="79" selection-start-column="34" selection-end-line="79" selection-end-column="71" />
+            <state relative-caret-position="887">
+              <caret line="76" column="37" lean-forward="true" selection-start-line="76" selection-start-column="37" selection-end-line="76" selection-end-column="37" />
               <folding>
                 <element signature="e#0#46#0" expanded="true" />
               </folding>
@@ -134,11 +134,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="control_frame.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="control_frame.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/experiment_0_util/control_frame.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="768">
-              <caret line="64" lean-forward="true" selection-start-line="64" selection-end-line="64" />
+            <state relative-caret-position="1003">
+              <caret line="59" column="35" selection-start-line="59" selection-start-column="35" selection-end-line="59" selection-end-column="35" />
               <folding>
                 <element signature="e#0#46#0" expanded="true" />
               </folding>
@@ -146,7 +146,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="hyperparameters.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="hyperparameters.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hyperparameters.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="238">
@@ -170,7 +170,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>download</find>
       <find>gpu_bool</find>
       <find>gpu_bo</find>
       <find>os.environ[&quot;CUDA_VISIBLE_DEVICES&quot;] = &quot;2&quot;</find>
@@ -200,6 +199,7 @@
       <find>MetaData</find>
       <find>self.</find>
       <find>batch_size</find>
+      <find>self.learner</find>
     </findStrings>
     <replaceStrings>
       <replace>update_rate</replace>
@@ -214,6 +214,7 @@
       <replace>theta</replace>
       <replace>optimal</replace>
       <replace>experiment_2</replace>
+      <replace>learner</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -264,15 +265,15 @@
         <option value="$PROJECT_DIR$/experiment_1_epochs/viz_phi.py" />
         <option value="$PROJECT_DIR$/experiment_2_labels/vary_theta.py" />
         <option value="$PROJECT_DIR$/experiment_0_util/experiment.py" />
-        <option value="$PROJECT_DIR$/experiment_0_util/meta_framework.py" />
         <option value="$PROJECT_DIR$/experiment_0_util/run_experiment.py" />
         <option value="$PROJECT_DIR$/experiment_1_epochs/run_experiment_1.py" />
         <option value="$PROJECT_DIR$/experiment_1_epochs/visualize_experiment_1.py" />
         <option value="$PROJECT_DIR$/experiment_2_labels/run_experiment_2.py" />
         <option value="$PROJECT_DIR$/experiment_2_labels/visualize_experiment_2.py" />
+        <option value="$PROJECT_DIR$/hyperparameters.py" />
         <option value="$PROJECT_DIR$/experiment_0_util/hebbian_frame.py" />
         <option value="$PROJECT_DIR$/experiment_0_util/control_frame.py" />
-        <option value="$PROJECT_DIR$/hyperparameters.py" />
+        <option value="$PROJECT_DIR$/experiment_0_util/meta_framework.py" />
       </list>
     </option>
   </component>
@@ -525,30 +526,30 @@
       <window_info anchor="bottom" id="Concurrent Activities Diagram" order="12" weight="0.3297491" />
     </layout>
     <layout-to-restore>
-      <window_info anchor="bottom" id="Python Console" order="9" weight="0.32897604" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32897604" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" id="Remote Host" order="3" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18222222" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17650793" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="File Transfer" order="14" weight="0.34313726" />
+      <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3297491" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49959514" visible="true" weight="0.38344225" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49959514" weight="0.3888889" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3278867" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39978212" />
       <window_info anchor="right" id="Database" order="5" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.32897604" />
       <window_info anchor="bottom" id="Event Log" order="13" sideWeight="0.50040483" side_tool="true" weight="0.5322581" />
-      <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32897604" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="SciView" order="4" weight="0.5688889" />
-      <window_info anchor="bottom" id="File Transfer" order="14" weight="0.34313726" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3278867" />
-      <window_info anchor="bottom" id="Concurrent Activities Diagram" order="12" weight="0.3297491" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Concurrent Activities Diagram" order="12" weight="0.3297491" />
+      <window_info anchor="bottom" id="Python Console" order="9" weight="0.32897604" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -808,6 +809,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/hyperparameters.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/experiment_1_epochs/visualize_experiment_1.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -835,20 +846,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/experiment_0_util/control_frame.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="768">
-          <caret line="64" lean-forward="true" selection-start-line="64" selection-end-line="64" />
-          <folding>
-            <element signature="e#0#46#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/experiment_0_util/hebbian_frame.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="683">
-          <caret line="79" column="71" lean-forward="true" selection-start-line="79" selection-start-column="34" selection-end-line="79" selection-end-column="71" />
+        <state relative-caret-position="887">
+          <caret line="76" column="37" lean-forward="true" selection-start-line="76" selection-start-column="37" selection-end-line="76" selection-end-column="37" />
           <folding>
             <element signature="e#0#46#0" expanded="true" />
           </folding>
@@ -857,20 +858,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/experiment_0_util/meta_framework.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1649">
-          <caret line="151" selection-start-line="151" selection-end-line="151" />
+        <state relative-caret-position="1856">
+          <caret line="158" column="23" selection-start-line="158" selection-start-column="23" selection-end-line="158" selection-end-column="23" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hyperparameters.py">
+    <entry file="file://$PROJECT_DIR$/experiment_0_util/control_frame.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+        <state relative-caret-position="1003">
+          <caret line="59" column="35" selection-start-line="59" selection-start-column="35" selection-end-line="59" selection-end-column="35" />
           <folding>
-            <element signature="e#0#9#0" expanded="true" />
+            <element signature="e#0#46#0" expanded="true" />
           </folding>
         </state>
       </provider>
