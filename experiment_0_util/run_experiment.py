@@ -48,8 +48,8 @@ def visualize_theta(input_path, fn, y_name, image_path, image_name):
     agg = []
     for theta in set(theta_df['phi']):
         # if phi < 5.0:
-        hebbian_sub = theta_df.loc[(theta_df['phi'] == phi) & (theta_df['bool_hebbian']),]
-        control_sub = theta_df.loc[(theta_df['phi'] == phi) & (~theta_df['bool_hebbian']),]
+        hebbian_sub = theta_df.loc[(theta_df['phi'] == theta) & (theta_df['bool_hebbian']),]
+        control_sub = theta_df.loc[(theta_df['phi'] == theta) & (~theta_df['bool_hebbian']),]
         agg.append({'theta': theta, 'hebbian_acc': fn(hebbian_sub['acc']), 'control_acc': fn(control_sub['acc'])})
 
     print(agg)
