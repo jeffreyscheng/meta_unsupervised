@@ -143,12 +143,4 @@ class MetaFramework(object):
             return learner
         else:
             del learner
-
-            print("TESTING")
-            print(correct)
-            print(type(correct))
-            print(total)
-            print(type(total))
-            print(correct / total)
-            print(type(correct / total))
             return correct / total
