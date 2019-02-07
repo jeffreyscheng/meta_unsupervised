@@ -1,6 +1,7 @@
 import os
 import torch
 
+print(__file__)
 root_directory = os.path.dirname(__file__)
 fixed_parameters = {'meta_input': 3,
                     'meta_output': 1,
@@ -16,6 +17,8 @@ dataset_name = 'MNIST'
 gpu_bool = torch.cuda.device_count() > 0
 experiment_iterations = 1
 base_optimizer = torch.optim.SGD
+time_out = 20 * 60
+num_data = 60000
 
 
 def safe_mkdir(path):

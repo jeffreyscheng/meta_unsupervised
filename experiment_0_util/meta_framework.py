@@ -32,7 +32,7 @@ def bandaid(method):
         tick = time.time()
         while True:
             try:
-                if time.time() - tick > MetaFramework.time_out:
+                if time.time() - tick > time_out:
                     return 0
                 result = method(*args, **kw)
                 return result
@@ -58,8 +58,6 @@ def create_learner():
 
 
 class MetaFramework(object):
-    time_out = 20 * 60
-    num_data = 60000
 
     def __init__(self, name, fixed_params):
         __metaclass__ = abc.ABCMeta
@@ -67,12 +65,12 @@ class MetaFramework(object):
         self.fixed_params = fixed_params
         if dataset_name == 'MNIST':
             # MNIST Dataset
-            train_dataset = dsets.MNIST(root='./' + dataset_name + '/data',
+            train_dataset = dsets.MNIST(root=root_directory + '/' + dataset_name + '/data',
                                         train=True,
                                         transform=transforms.ToTensor(),
                                         download=True)
 
-            test_dataset = dsets.MNIST(root='./' + dataset_name + '/data',
+            test_dataset = dsets.MNIST(root=root_directory + '/' + dataset_name + '/data',
                                        train=False,
                                        transform=transforms.ToTensor())
 
@@ -102,8 +100,7 @@ class MetaFramework(object):
         batch_num = 0
 
         def stop_training(tock, batch):
-            return tock - tick > MetaFramework.time_out or batch * hyperparameters[
-                'learner_batch_size'] / MetaFramework.num_data > phi
+            return tock - tick > time_out or batch * hyperparameters['learner_batch_size'] / num_data > phi
 
         for i, (images, labels) in enumerate(self.train_loader):
             batch_num += 1
