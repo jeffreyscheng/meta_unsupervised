@@ -53,10 +53,6 @@ def bandaid(method):
     return bounced
 
 
-def create_learner():
-    return 0
-
-
 class MetaFramework(object):
 
     def __init__(self, name, fixed_params):
@@ -147,4 +143,12 @@ class MetaFramework(object):
             return learner
         else:
             del learner
+
+            print("TESTING")
+            print(correct)
+            print(type(correct))
+            print(total)
+            print(type(total))
+            print(correct / total)
+            print(type(correct / total))
             return correct / total
