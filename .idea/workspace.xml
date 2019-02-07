@@ -42,11 +42,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="600">
-      <file leaf-file-name="meta_framework.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="meta_framework.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/experiment_0_util/meta_framework.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-184">
-              <caret line="118" column="38" selection-start-line="118" selection-start-column="38" selection-end-line="118" selection-end-column="38" />
+            <state relative-caret-position="734">
+              <caret line="151" column="23" lean-forward="true" selection-start-line="151" selection-start-column="23" selection-end-line="151" selection-end-column="23" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -71,11 +71,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="run_experiment_1.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="run_experiment_1.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/experiment_1_epochs/run_experiment_1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="5" column="68" selection-start-line="5" selection-start-column="68" selection-end-line="5" selection-end-column="68" />
+            <state relative-caret-position="357">
+              <caret line="24" column="28" lean-forward="true" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -125,16 +125,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="experiment_2_data.csv" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MNIST/final_data/experiment_2_data.csv">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
       <file leaf-file-name="hyperparameters.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hyperparameters.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="25" column="21" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
+            <state relative-caret-position="561">
+              <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -253,11 +248,11 @@
         <option value="$PROJECT_DIR$/experiment_0_util/control_frame.py" />
         <option value="$PROJECT_DIR$/experiment_0_util/hebbian_frame.py" />
         <option value="$PROJECT_DIR$/experiment_0_util/meta_framework.py" />
-        <option value="$PROJECT_DIR$/hyperparameters.py" />
         <option value="$PROJECT_DIR$/experiment_2_labels/run_experiment_2.py" />
-        <option value="$PROJECT_DIR$/experiment_1_epochs/run_experiment_1.py" />
         <option value="$PROJECT_DIR$/experiment_2_labels/visualize_experiment_2.py" />
         <option value="$PROJECT_DIR$/experiment_1_epochs/visualize_experiment_1.py" />
+        <option value="$PROJECT_DIR$/hyperparameters.py" />
+        <option value="$PROJECT_DIR$/experiment_1_epochs/run_experiment_1.py" />
       </list>
     </option>
   </component>
@@ -307,18 +302,6 @@
               <item name="meta_unsupervised" type="b2602c69:ProjectViewProjectNode" />
               <item name="meta_unsupervised" type="462c0819:PsiDirectoryNode" />
               <item name="MNIST" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="meta_unsupervised" type="b2602c69:ProjectViewProjectNode" />
-              <item name="meta_unsupervised" type="462c0819:PsiDirectoryNode" />
-              <item name="MNIST" type="462c0819:PsiDirectoryNode" />
-              <item name="final_data" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="meta_unsupervised" type="b2602c69:ProjectViewProjectNode" />
-              <item name="meta_unsupervised" type="462c0819:PsiDirectoryNode" />
-              <item name="MNIST" type="462c0819:PsiDirectoryNode" />
-              <item name="result_images" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -503,12 +486,13 @@
       <window_info anchor="bottom" id="File Transfer" order="14" weight="0.34313726" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32897604" />
       <window_info anchor="bottom" id="Python Console" order="9" weight="0.32897604" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49959514" visible="true" weight="0.3888889" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49959514" weight="0.3888889" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.32897604" />
       <window_info anchor="right" id="Remote Host" order="3" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1784127" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3278867" />
       <window_info anchor="right" id="SciView" order="3" weight="0.5688889" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -519,7 +503,6 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3278867" />
       <window_info anchor="bottom" id="Concurrent Activities Diagram" order="12" weight="0.3297491" />
     </layout>
     <layout-to-restore>
@@ -751,27 +734,10 @@
     <entry file="file://$PROJECT_DIR$/MNIST/result_images/experiment_2_max.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/experiment_1_epochs/run_experiment_1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="5" column="68" selection-start-line="5" selection-start-column="68" selection-end-line="5" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.PyCharm2018.1/system/remote_sources/-1721862755/1600677458/numpy/lib/function_base.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="416">
           <caret line="4132" column="9" lean-forward="true" selection-start-line="4132" selection-start-column="9" selection-end-line="4132" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hyperparameters.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="25" column="21" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -830,11 +796,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/experiment_0_util/meta_framework.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-184">
-          <caret line="118" column="38" selection-start-line="118" selection-start-column="38" selection-end-line="118" selection-end-column="38" />
+        <state relative-caret-position="734">
+          <caret line="151" column="23" lean-forward="true" selection-start-line="151" selection-start-column="23" selection-end-line="151" selection-end-column="23" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hyperparameters.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/experiment_1_epochs/run_experiment_1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="24" column="28" lean-forward="true" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
         </state>
       </provider>
     </entry>

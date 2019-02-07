@@ -3,7 +3,7 @@ import numpy as np
 import pandas as pd
 import os
 
-experiment_2_data_path = os.path.join(final_data_path, 'experiment_1_data.csv')
+experiment_1_data_path = os.path.join(final_data_path, 'experiment_1_data.csv')
 
 acc_dict = []
 
