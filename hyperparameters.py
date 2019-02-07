@@ -1,7 +1,6 @@
 import os
 import torch
 
-print(__file__)
 root_directory = os.path.dirname(__file__)
 fixed_parameters = {'meta_input': 3,
                     'meta_output': 1,

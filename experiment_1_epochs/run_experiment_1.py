@@ -4,7 +4,6 @@ import pandas as pd
 import os
 
 experiment_1_data_path = os.path.join(final_data_path, 'experiment_1_data.csv')
-print(run_theta_phi_pair(1, 0.01))
 
 acc_dict = []
 

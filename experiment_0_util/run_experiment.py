@@ -6,6 +6,9 @@ import pandas as pd
 
 
 def run_theta_phi_pair(theta_val, phi_val):
+    print("TESTING")
+    print(hebbian_frame.train_model(theta=theta_val, phi=phi_val)) # TODO: remove
+
     print("Running Hebbian:", theta_val, phi_val)
     hebbian_acc = [hebbian_frame.train_model(theta=theta_val, phi=phi_val) for _ in range(experiment_iterations)]
     formatted_hebbian = [{'theta': theta_val, 'phi': phi_val, 'bool_hebbian': 1, 'acc': a} for a in hebbian_acc]
