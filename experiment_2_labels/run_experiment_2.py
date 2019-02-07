@@ -4,9 +4,7 @@ import pandas as pd
 import os
 
 
-experiment_2_data_path = os.path.join(root_directory,
-                                      'final_data',
-                                      'experiment_2_data.csv')
+experiment_2_data_path = os.path.join(final_data_path, 'experiment_2_data.csv')
 
 acc_dict = []
 

@@ -28,6 +28,7 @@
     <SUITE FILE_PATH="coverage/meta_unsupervised$varying_theta_phi.coverage" NAME="varying_theta_phi Coverage Results" MODIFIED="1527038445551" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/meta_unsupervised$lkjh.coverage" NAME="lkjh Coverage Results" MODIFIED="1531085710701" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/util" />
     <SUITE FILE_PATH="coverage/meta_unsupervised$separate.coverage" NAME="separate Coverage Results" MODIFIED="1523554704674" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/meta_unsupervised$visualize_experiment_2.coverage" NAME="visualize_experiment_2 Coverage Results" MODIFIED="1549569758513" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/experiment_2_labels" />
     <SUITE FILE_PATH="coverage/meta_unsupervised$check.coverage" NAME="check Coverage Results" MODIFIED="1531190562095" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/experiment_1_epochs" />
     <SUITE FILE_PATH="coverage/meta_unsupervised$run_experiment_1.coverage" NAME="run_experiment_1 Coverage Results" MODIFIED="1531794430826" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/meta_unsupervised$bayes.coverage" NAME="bayes Coverage Results" MODIFIED="1523344882812" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -41,13 +42,60 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="600">
+      <file leaf-file-name="meta_framework.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/experiment_0_util/meta_framework.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-184">
+              <caret line="118" column="38" selection-start-line="118" selection-start-column="38" selection-end-line="118" selection-end-column="38" />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="exp_2.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/exp_2.txt">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="hebbian_frame.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/experiment_0_util/hebbian_frame.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-915">
+              <caret line="7" column="28" lean-forward="true" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+              <folding>
+                <element signature="e#0#46#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="run_experiment_1.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/experiment_1_epochs/run_experiment_1.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="5" column="68" selection-start-line="5" selection-start-column="68" selection-end-line="5" selection-end-column="68" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="run_experiment_2.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/experiment_2_labels/run_experiment_2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="23" column="30" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
+            <state relative-caret-position="51">
+              <caret line="6" selection-start-line="6" selection-end-line="6" selection-end-column="79" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="visualize_experiment_1.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/experiment_1_epochs/visualize_experiment_1.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="78" selection-start-line="8" selection-start-column="78" selection-end-line="8" selection-end-column="78" />
               <folding>
-                <element signature="e#0#42#0" expanded="true" />
+                <element signature="e#0#18#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -56,31 +104,10 @@
       <file leaf-file-name="visualize_experiment_2.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/experiment_2_labels/visualize_experiment_2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+            <state relative-caret-position="119">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="meta_framework.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/experiment_0_util/meta_framework.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="3" selection-start-column="3" selection-end-column="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="hebbian_frame.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/experiment_0_util/hebbian_frame.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="850">
-              <caret line="62" column="36" lean-forward="true" selection-start-line="62" selection-start-column="36" selection-end-line="62" selection-end-column="36" />
-              <folding>
-                <element signature="e#0#46#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -89,8 +116,8 @@
       <file leaf-file-name="run_experiment.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/experiment_0_util/run_experiment.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="51" column="60" selection-start-line="51" selection-start-column="60" selection-end-line="51" selection-end-column="60" />
+            <state relative-caret-position="884">
+              <caret line="52" selection-start-line="52" selection-end-line="52" />
               <folding>
                 <element signature="e#0#45#0" expanded="true" />
               </folding>
@@ -98,45 +125,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="control_frame.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/experiment_0_util/control_frame.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="27" column="15" lean-forward="true" selection-start-line="27" selection-start-column="15" selection-end-line="27" selection-end-column="15" />
-              <folding>
-                <element signature="e#0#46#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
+      <file leaf-file-name="experiment_2_data.csv" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MNIST/final_data/experiment_2_data.csv">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file leaf-file-name="hyperparameters.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hyperparameters.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+            <state relative-caret-position="330">
+              <caret line="25" column="21" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/__init__.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="11" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -153,11 +154,7 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>gpu_bo</find>
-      <find>os.environ[&quot;CUDA_VISIBLE_DEVICES&quot;] = &quot;2&quot;</find>
       <find>phi</find>
-      <find>self.impulse</find>
-      <find>metadata</find>
       <find>print</find>
       <find>metadata_df</find>
       <find>model</find>
@@ -183,6 +180,10 @@
       <find>batch_size</find>
       <find>self.learner</find>
       <find>learner</find>
+      <find>self.impulse</find>
+      <find>metadata</find>
+      <find>impulse</find>
+      <find>self.layer</find>
     </findStrings>
     <replaceStrings>
       <replace>update_rate</replace>
@@ -248,15 +249,15 @@
         <option value="$PROJECT_DIR$/experiment_2_labels/vary_theta.py" />
         <option value="$PROJECT_DIR$/experiment_0_util/experiment.py" />
         <option value="$PROJECT_DIR$/experiment_0_util/run_experiment.py" />
-        <option value="$PROJECT_DIR$/experiment_1_epochs/run_experiment_1.py" />
-        <option value="$PROJECT_DIR$/experiment_1_epochs/visualize_experiment_1.py" />
-        <option value="$PROJECT_DIR$/experiment_2_labels/run_experiment_2.py" />
-        <option value="$PROJECT_DIR$/experiment_2_labels/visualize_experiment_2.py" />
-        <option value="$PROJECT_DIR$/experiment_0_util/hebbian_frame.py" />
-        <option value="$PROJECT_DIR$/hyperparameters.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/experiment_0_util/meta_framework.py" />
         <option value="$PROJECT_DIR$/experiment_0_util/control_frame.py" />
+        <option value="$PROJECT_DIR$/experiment_0_util/hebbian_frame.py" />
+        <option value="$PROJECT_DIR$/experiment_0_util/meta_framework.py" />
+        <option value="$PROJECT_DIR$/hyperparameters.py" />
+        <option value="$PROJECT_DIR$/experiment_2_labels/run_experiment_2.py" />
+        <option value="$PROJECT_DIR$/experiment_1_epochs/run_experiment_1.py" />
+        <option value="$PROJECT_DIR$/experiment_2_labels/visualize_experiment_2.py" />
+        <option value="$PROJECT_DIR$/experiment_1_epochs/visualize_experiment_1.py" />
       </list>
     </option>
   </component>
@@ -305,7 +306,19 @@
             <path>
               <item name="meta_unsupervised" type="b2602c69:ProjectViewProjectNode" />
               <item name="meta_unsupervised" type="462c0819:PsiDirectoryNode" />
-              <item name="experiment_3_rule_form" type="462c0819:PsiDirectoryNode" />
+              <item name="MNIST" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="meta_unsupervised" type="b2602c69:ProjectViewProjectNode" />
+              <item name="meta_unsupervised" type="462c0819:PsiDirectoryNode" />
+              <item name="MNIST" type="462c0819:PsiDirectoryNode" />
+              <item name="final_data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="meta_unsupervised" type="b2602c69:ProjectViewProjectNode" />
+              <item name="meta_unsupervised" type="462c0819:PsiDirectoryNode" />
+              <item name="MNIST" type="462c0819:PsiDirectoryNode" />
+              <item name="result_images" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -329,16 +342,17 @@
     <option name="myIpythonEnabled" value="false" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\jeffr\home\dev\research\meta_unsupervised\final_data" />
-      <recent name="C:\Users\jeffr\home\dev\research\meta_unsupervised\experiment_1_epochs" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\jeffr\home\dev\research\meta_unsupervised" />
       <recent name="C:\Users\jeffr\home\dev\research\meta_unsupervised\experiment_4_prelearned" />
       <recent name="C:\Users\jeffr\home\dev\research\meta_unsupervised\final_data\old" />
       <recent name="C:\Users\jeffr\home\dev\research\meta_unsupervised\mu_exp" />
       <recent name="C:\Users\jeffr\home\dev\research\meta_unsupervised\experiment_2_labels" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\jeffr\home\dev\research\meta_unsupervised\MNIST\final_data" />
+      <recent name="C:\Users\jeffr\home\dev\research\meta_unsupervised\final_data" />
+      <recent name="C:\Users\jeffr\home\dev\research\meta_unsupervised\experiment_1_epochs" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -353,7 +367,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.viz_phi">
+  <component name="RunManager" selected="Python.visualize_experiment_2">
     <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="meta_unsupervised" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -373,7 +387,7 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="vary_phi" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="visualize_experiment_2" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="meta_unsupervised" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -381,12 +395,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/experiment_4_prelearned" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/experiment_2_labels" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/experiment_4_prelearned/vary_phi.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/experiment_2_labels/visualize_experiment_2.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -452,17 +466,17 @@
     <list>
       <item itemvalue="Python.viz_phi" />
       <item itemvalue="Python.viz_theta" />
-      <item itemvalue="Python.vary_phi" />
       <item itemvalue="Python.viz_phi (1)" />
       <item itemvalue="Python.test" />
+      <item itemvalue="Python.visualize_experiment_2" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.visualize_experiment_2" />
         <item itemvalue="Python.viz_phi" />
         <item itemvalue="Python.viz_theta" />
         <item itemvalue="Python.test" />
         <item itemvalue="Python.viz_phi (1)" />
-        <item itemvalue="Python.vary_phi" />
       </list>
     </recent_temporary>
   </component>
@@ -489,10 +503,10 @@
       <window_info anchor="bottom" id="File Transfer" order="14" weight="0.34313726" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32897604" />
       <window_info anchor="bottom" id="Python Console" order="9" weight="0.32897604" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49959514" weight="0.3888889" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49959514" visible="true" weight="0.3888889" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.32897604" />
       <window_info anchor="right" id="Remote Host" order="3" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17650793" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1784127" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="4" />
       <window_info anchor="right" id="SciView" order="3" weight="0.5688889" />
@@ -511,28 +525,28 @@
     <layout-to-restore>
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32897604" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49959514" weight="0.3888889" />
       <window_info anchor="right" id="Remote Host" order="3" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17650793" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="bottom" id="File Transfer" order="14" weight="0.34313726" />
-      <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3297491" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49959514" weight="0.3888889" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32897604" />
+      <window_info anchor="bottom" id="Python Console" order="9" weight="0.32897604" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3278867" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39978212" />
-      <window_info anchor="right" id="Database" order="5" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.32897604" />
       <window_info anchor="bottom" id="Event Log" order="13" sideWeight="0.50040483" side_tool="true" weight="0.5322581" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="right" id="SciView" order="4" weight="0.5688889" />
-      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="right" id="Database" order="5" />
       <window_info anchor="bottom" id="Concurrent Activities Diagram" order="12" weight="0.3297491" />
-      <window_info anchor="bottom" id="Python Console" order="9" weight="0.32897604" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17650793" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -563,22 +577,10 @@
           <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="6" />
+      <option name="time" value="7" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/experiment_results/experiment_3_oja_coefficient.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/experiment_results/experiment_3_vi_vj_Hebb.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/experiment_results/experiment_3_vi_vs_Hebb.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/experiment_results/experiment_3_vivj_vs_Hebb.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/experiment_results/experiment_3_wij_vj_Hebb.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -610,16 +612,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/run_experiment_3.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/run_experiment_4.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/run_experiment_3.py" />
+    <entry file="file://$PROJECT_DIR$/run_experiment_4.py" />
     <entry file="file://$PROJECT_DIR$/experiment_4_prelearned/vary_theta.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -677,33 +671,13 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/test.py" />
-    <entry file="file://$PROJECT_DIR$/run_experiment_1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/run_experiment_5.2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="54" lean-forward="true" selection-start-column="54" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/run_experiment_5.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/run_experiment_1.py" />
+    <entry file="file://$PROJECT_DIR$/run_experiment_5.2.py" />
+    <entry file="file://$PROJECT_DIR$/run_experiment_5.py" />
     <entry file="file://$PROJECT_DIR$/requirements.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/experiment_1_epochs/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/experiment_1_epochs/__init__.py" />
     <entry file="file://$PROJECT_DIR$/experiment_3_rule_form/viz_polynomial.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="502">
@@ -718,9 +692,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="45" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="45" />
-          <folding>
-            <element signature="e#0#64#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -731,92 +702,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/experiment_3_rule_form/fit_polynomial.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="88" column="29" selection-start-line="86" selection-start-column="4" selection-end-line="88" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/experiment_3_rule_form/writable_hebbian.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/experiment_3_rule_form/create_meta_dataset.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#45#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/experiment_5_rule_over_time/experiment_metacaching.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="173">
           <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#45#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/experiment_1_epochs/run_experiment_1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="52" selection-start-line="25" selection-start-column="52" selection-end-line="25" selection-end-column="52" />
-          <folding>
-            <element signature="e#0#42#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/experiment_1_epochs/visualize_experiment_1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="27" selection-start-line="1" selection-start-column="27" selection-end-line="1" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/experiment_2_labels/run_experiment_2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="30" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#42#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/experiment_2_labels/visualize_experiment_2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/experiment_0_util/run_experiment.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="51" column="60" selection-start-line="51" selection-start-column="60" selection-end-line="51" selection-end-column="60" />
-          <folding>
-            <element signature="e#0#45#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hyperparameters.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -833,30 +728,113 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/experiment_0_util/hebbian_frame.py">
+    <entry file="file://$PROJECT_DIR$/experiment_0_util/control_frame.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="850">
-          <caret line="62" column="36" lean-forward="true" selection-start-line="62" selection-start-column="36" selection-end-line="62" selection-end-column="36" />
+        <state relative-caret-position="493">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
           <folding>
             <element signature="e#0#46#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/experiment_0_util/control_frame.py">
+    <entry file="file://$PROJECT_DIR$/experiment_3_rule_form/fit_polynomial.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="27" column="15" lean-forward="true" selection-start-line="27" selection-start-column="15" selection-end-line="27" selection-end-column="15" />
+        <state relative-caret-position="510">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MNIST/result_images/experiment_2_max.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/experiment_1_epochs/run_experiment_1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="5" column="68" selection-start-line="5" selection-start-column="68" selection-end-line="5" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2018.1/system/remote_sources/-1721862755/1600677458/numpy/lib/function_base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="4132" column="9" lean-forward="true" selection-start-line="4132" selection-start-column="9" selection-end-line="4132" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hyperparameters.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="25" column="21" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/experiment_1_epochs/visualize_experiment_1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="78" selection-start-line="8" selection-start-column="78" selection-end-line="8" selection-end-column="78" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/experiment_2_labels/run_experiment_2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="6" selection-start-line="6" selection-end-line="6" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/experiment_2_labels/visualize_experiment_2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/experiment_0_util/run_experiment.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="884">
+          <caret line="52" selection-start-line="52" selection-end-line="52" />
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MNIST/final_data/experiment_2_data.csv">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/experiment_0_util/hebbian_frame.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-915">
+          <caret line="7" column="28" lean-forward="true" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
           <folding>
             <element signature="e#0#46#0" expanded="true" />
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exp_2.txt">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/experiment_0_util/meta_framework.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="3" selection-start-column="3" selection-end-column="3" />
+        <state relative-caret-position="-184">
+          <caret line="118" column="38" selection-start-line="118" selection-start-column="38" selection-end-line="118" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

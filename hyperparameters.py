@@ -23,7 +23,11 @@ def safe_mkdir(path):
         os.makedirs(path)
 
 
+temp_data_path = os.path.join(root_directory, dataset_name, 'temp_data')
+final_data_path = os.path.join(root_directory, dataset_name, 'final_data')
+result_images_path = os.path.join(root_directory, dataset_name, 'result_images')
+
 safe_mkdir(os.path.join(root_directory, dataset_name))
-safe_mkdir(os.path.join(root_directory, dataset_name, 'temp_data'))
-safe_mkdir(os.path.join(root_directory, dataset_name, 'final_data'))
-safe_mkdir(os.path.join(root_directory, dataset_name, 'result_images'))
+safe_mkdir(temp_data_path)
+safe_mkdir(final_data_path)
+safe_mkdir(result_images_path)
