@@ -9,7 +9,7 @@ fixed_parameters = {'meta_input': 3,
 hyperparameters = {'mid1': 200,
                    'mid2': 200,
                    'meta_mid': 50,
-                   'learning_rate': 0.005,
+                   'learning_rate': 0.01,
                    'learner_batch_size': 50,
                    'update_rate': 0.001}
 dataset_name = 'MNIST'
