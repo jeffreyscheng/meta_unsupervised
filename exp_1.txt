@@ -1,392 +1,1037 @@
+THCudaCheck FAIL file=/pytorch/torch/lib/THC/generic/THCStorage.cu line=58 error=2 : out of memory
+Traceback (most recent call last):
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 37, in bounced
+    result = method(*args, **kw)
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 120, in train_model
+    learner_loss.backward()
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/variable.py", line 167, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph, retain_variables)
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/__init__.py", line 99, in backward
+    variables, grad_variables, retain_graph)
+RuntimeError: cuda runtime error (2) : out of memory at /pytorch/torch/lib/THC/generic/THCStorage.cu:58
+Traceback (most recent call last):
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 37, in bounced
+    result = method(*args, **kw)
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 120, in train_model
+    learner_loss.backward()
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/variable.py", line 167, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph, retain_variables)
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/__init__.py", line 99, in backward
+    variables, grad_variables, retain_graph)
+RuntimeError: cuda runtime error (2) : out of memory at /pytorch/torch/lib/THC/generic/THCTensorMath.cu:35
+Traceback (most recent call last):
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 37, in bounced
+    result = method(*args, **kw)
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 120, in train_model
+    learner_loss.backward()
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/variable.py", line 167, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph, retain_variables)
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/__init__.py", line 99, in backward
+    variables, grad_variables, retain_graph)
+RuntimeError: cuda runtime error (2) : out of memory at /pytorch/torch/lib/THC/generic/THCStorage.cu:58
+Traceback (most recent call last):
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 37, in bounced
+    result = method(*args, **kw)
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 120, in train_model
+    learner_loss.backward()
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/variable.py", line 167, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph, retain_variables)
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/__init__.py", line 99, in backward
+    variables, grad_variables, retain_graph)
+RuntimeError: cuda runtime error (2) : out of memory at /pytorch/torch/lib/THC/generic/THCTensorMath.cu:35
+Traceback (most recent call last):
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 37, in bounced
+    result = method(*args, **kw)
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 120, in train_model
+    learner_loss.backward()
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/variable.py", line 167, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph, retain_variables)
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/__init__.py", line 99, in backward
+    variables, grad_variables, retain_graph)
+RuntimeError: cuda runtime error (2) : out of memory at /pytorch/torch/lib/THC/generic/THCStorage.cu:58
+Traceback (most recent call last):
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 37, in bounced
+    result = method(*args, **kw)
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 120, in train_model
+    learner_loss.backward()
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/variable.py", line 167, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph, retain_variables)
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/__init__.py", line 99, in backward
+    variables, grad_variables, retain_graph)
+RuntimeError: cuda runtime error (2) : out of memory at /pytorch/torch/lib/THC/generic/THCTensorMath.cu:35
+Traceback (most recent call last):
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 37, in bounced
+    result = method(*args, **kw)
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 120, in train_model
+    learner_loss.backward()
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/variable.py", line 167, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph, retain_variables)
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/__init__.py", line 99, in backward
+    variables, grad_variables, retain_graph)
+RuntimeError: cuda runtime error (2) : out of memory at /pytorch/torch/lib/THC/generic/THCStorage.cu:58
+Traceback (most recent call last):
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 37, in bounced
+    result = method(*args, **kw)
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 120, in train_model
+    learner_loss.backward()
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/variable.py", line 167, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph, retain_variables)
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/__init__.py", line 99, in backward
+    variables, grad_variables, retain_graph)
+RuntimeError: cuda runtime error (2) : out of memory at /pytorch/torch/lib/THC/generic/THCTensorMath.cu:35
+Traceback (most recent call last):
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 37, in bounced
+    result = method(*args, **kw)
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 120, in train_model
+    learner_loss.backward()
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/variable.py", line 167, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph, retain_variables)
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/__init__.py", line 99, in backward
+    variables, grad_variables, retain_graph)
+RuntimeError: cuda runtime error (2) : out of memory at /pytorch/torch/lib/THC/generic/THCStorage.cu:58
+Traceback (most recent call last):
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 37, in bounced
+    result = method(*args, **kw)
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 120, in train_model
+    learner_loss.backward()
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/variable.py", line 167, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph, retain_variables)
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/__init__.py", line 99, in backward
+    variables, grad_variables, retain_graph)
+RuntimeError: cuda runtime error (2) : out of memory at /pytorch/torch/lib/THC/generic/THCTensorMath.cu:35
+Traceback (most recent call last):
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 37, in bounced
+    result = method(*args, **kw)
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 120, in train_model
+    learner_loss.backward()
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/variable.py", line 167, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph, retain_variables)
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/__init__.py", line 99, in backward
+    variables, grad_variables, retain_graph)
+RuntimeError: cuda runtime error (2) : out of memory at /pytorch/torch/lib/THC/generic/THCStorage.cu:58
+Traceback (most recent call last):
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 37, in bounced
+    result = method(*args, **kw)
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 120, in train_model
+    learner_loss.backward()
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/variable.py", line 167, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph, retain_variables)
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/__init__.py", line 99, in backward
+    variables, grad_variables, retain_graph)
+RuntimeError: cuda runtime error (2) : out of memory at /pytorch/torch/lib/THC/generic/THCTensorMath.cu:35
+Traceback (most recent call last):
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 37, in bounced
+    result = method(*args, **kw)
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 120, in train_model
+    learner_loss.backward()
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/variable.py", line 167, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph, retain_variables)
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/__init__.py", line 99, in backward
+    variables, grad_variables, retain_graph)
+RuntimeError: cuda runtime error (2) : out of memory at /pytorch/torch/lib/THC/generic/THCStorage.cu:58
+Traceback (most recent call last):
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 37, in bounced
+    result = method(*args, **kw)
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 120, in train_model
+    learner_loss.backward()
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/variable.py", line 167, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph, retain_variables)
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/__init__.py", line 99, in backward
+    variables, grad_variables, retain_graph)
+RuntimeError: cuda runtime error (2) : out of memory at /pytorch/torch/lib/THC/generic/THCTensorMath.cu:35
+Traceback (most recent call last):
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 37, in bounced
+    result = method(*args, **kw)
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 120, in train_model
+    learner_loss.backward()
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/variable.py", line 167, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph, retain_variables)
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/__init__.py", line 99, in backward
+    variables, grad_variables, retain_graph)
+RuntimeError: cuda runtime error (2) : out of memory at /pytorch/torch/lib/THC/generic/THCStorage.cu:58
+Traceback (most recent call last):
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 37, in bounced
+    result = method(*args, **kw)
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 120, in train_model
+    learner_loss.backward()
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/variable.py", line 167, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph, retain_variables)
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/__init__.py", line 99, in backward
+    variables, grad_variables, retain_graph)
+RuntimeError: cuda runtime error (2) : out of memory at /pytorch/torch/lib/THC/generic/THCTensorMath.cu:35
+Traceback (most recent call last):
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 37, in bounced
+    result = method(*args, **kw)
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 120, in train_model
+    learner_loss.backward()
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/variable.py", line 167, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph, retain_variables)
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/__init__.py", line 99, in backward
+    variables, grad_variables, retain_graph)
+RuntimeError: cuda runtime error (2) : out of memory at /pytorch/torch/lib/THC/generic/THCStorage.cu:58
+Traceback (most recent call last):
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 37, in bounced
+    result = method(*args, **kw)
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 120, in train_model
+    learner_loss.backward()
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/variable.py", line 167, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph, retain_variables)
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/__init__.py", line 99, in backward
+    variables, grad_variables, retain_graph)
+RuntimeError: cuda runtime error (2) : out of memory at /pytorch/torch/lib/THC/generic/THCTensorMath.cu:35
+Traceback (most recent call last):
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 37, in bounced
+    result = method(*args, **kw)
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 120, in train_model
+    learner_loss.backward()
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/variable.py", line 167, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph, retain_variables)
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/__init__.py", line 99, in backward
+    variables, grad_variables, retain_graph)
+RuntimeError: cuda runtime error (2) : out of memory at /pytorch/torch/lib/THC/generic/THCStorage.cu:58
+Traceback (most recent call last):
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 37, in bounced
+    result = method(*args, **kw)
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 120, in train_model
+    learner_loss.backward()
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/variable.py", line 167, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph, retain_variables)
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/__init__.py", line 99, in backward
+    variables, grad_variables, retain_graph)
+RuntimeError: cuda runtime error (2) : out of memory at /pytorch/torch/lib/THC/generic/THCTensorMath.cu:35
+Traceback (most recent call last):
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 37, in bounced
+    result = method(*args, **kw)
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 120, in train_model
+    learner_loss.backward()
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/variable.py", line 167, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph, retain_variables)
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/__init__.py", line 99, in backward
+    variables, grad_variables, retain_graph)
+RuntimeError: cuda runtime error (2) : out of memory at /pytorch/torch/lib/THC/generic/THCStorage.cu:58
+Traceback (most recent call last):
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 37, in bounced
+    result = method(*args, **kw)
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 120, in train_model
+    learner_loss.backward()
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/variable.py", line 167, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph, retain_variables)
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/__init__.py", line 99, in backward
+    variables, grad_variables, retain_graph)
+RuntimeError: cuda runtime error (2) : out of memory at /pytorch/torch/lib/THC/generic/THCTensorMath.cu:35
+Traceback (most recent call last):
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 37, in bounced
+    result = method(*args, **kw)
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 120, in train_model
+    learner_loss.backward()
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/variable.py", line 167, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph, retain_variables)
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/__init__.py", line 99, in backward
+    variables, grad_variables, retain_graph)
+RuntimeError: cuda runtime error (2) : out of memory at /pytorch/torch/lib/THC/generic/THCStorage.cu:58
+Traceback (most recent call last):
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 37, in bounced
+    result = method(*args, **kw)
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 120, in train_model
+    learner_loss.backward()
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/variable.py", line 167, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph, retain_variables)
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/__init__.py", line 99, in backward
+    variables, grad_variables, retain_graph)
+RuntimeError: cuda runtime error (2) : out of memory at /pytorch/torch/lib/THC/generic/THCTensorMath.cu:35
+Traceback (most recent call last):
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 37, in bounced
+    result = method(*args, **kw)
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 120, in train_model
+    learner_loss.backward()
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/variable.py", line 167, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph, retain_variables)
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/__init__.py", line 99, in backward
+    variables, grad_variables, retain_graph)
+RuntimeError: cuda runtime error (2) : out of memory at /pytorch/torch/lib/THC/generic/THCStorage.cu:58
+Traceback (most recent call last):
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 37, in bounced
+    result = method(*args, **kw)
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 120, in train_model
+    learner_loss.backward()
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/variable.py", line 167, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph, retain_variables)
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/__init__.py", line 99, in backward
+    variables, grad_variables, retain_graph)
+RuntimeError: cuda runtime error (2) : out of memory at /pytorch/torch/lib/THC/generic/THCTensorMath.cu:35
+Traceback (most recent call last):
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 37, in bounced
+    result = method(*args, **kw)
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 120, in train_model
+    learner_loss.backward()
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/variable.py", line 167, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph, retain_variables)
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/__init__.py", line 99, in backward
+    variables, grad_variables, retain_graph)
+RuntimeError: cuda runtime error (2) : out of memory at /pytorch/torch/lib/THC/generic/THCStorage.cu:58
+Traceback (most recent call last):
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 37, in bounced
+    result = method(*args, **kw)
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 120, in train_model
+    learner_loss.backward()
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/variable.py", line 167, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph, retain_variables)
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/__init__.py", line 99, in backward
+    variables, grad_variables, retain_graph)
+RuntimeError: cuda runtime error (2) : out of memory at /pytorch/torch/lib/THC/generic/THCTensorMath.cu:35
+Traceback (most recent call last):
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 37, in bounced
+    result = method(*args, **kw)
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 120, in train_model
+    learner_loss.backward()
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/variable.py", line 167, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph, retain_variables)
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/__init__.py", line 99, in backward
+    variables, grad_variables, retain_graph)
+RuntimeError: cuda runtime error (2) : out of memory at /pytorch/torch/lib/THC/generic/THCStorage.cu:58
+Traceback (most recent call last):
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 37, in bounced
+    result = method(*args, **kw)
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 120, in train_model
+    learner_loss.backward()
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/variable.py", line 167, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph, retain_variables)
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/__init__.py", line 99, in backward
+    variables, grad_variables, retain_graph)
+RuntimeError: cuda runtime error (2) : out of memory at /pytorch/torch/lib/THC/generic/THCTensorMath.cu:35
+Traceback (most recent call last):
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 37, in bounced
+    result = method(*args, **kw)
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 120, in train_model
+    learner_loss.backward()
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/variable.py", line 167, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph, retain_variables)
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/__init__.py", line 99, in backward
+    variables, grad_variables, retain_graph)
+RuntimeError: cuda runtime error (2) : out of memory at /pytorch/torch/lib/THC/generic/THCStorage.cu:58
+Traceback (most recent call last):
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 37, in bounced
+    result = method(*args, **kw)
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 120, in train_model
+    learner_loss.backward()
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/variable.py", line 167, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph, retain_variables)
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/__init__.py", line 99, in backward
+    variables, grad_variables, retain_graph)
+RuntimeError: cuda runtime error (2) : out of memory at /pytorch/torch/lib/THC/generic/THCTensorMath.cu:35
+Traceback (most recent call last):
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 37, in bounced
+    result = method(*args, **kw)
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 120, in train_model
+    learner_loss.backward()
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/variable.py", line 167, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph, retain_variables)
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/__init__.py", line 99, in backward
+    variables, grad_variables, retain_graph)
+RuntimeError: cuda runtime error (2) : out of memory at /pytorch/torch/lib/THC/generic/THCStorage.cu:58
+Traceback (most recent call last):
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 37, in bounced
+    result = method(*args, **kw)
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 120, in train_model
+    learner_loss.backward()
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/variable.py", line 167, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph, retain_variables)
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/__init__.py", line 99, in backward
+    variables, grad_variables, retain_graph)
+RuntimeError: cuda runtime error (2) : out of memory at /pytorch/torch/lib/THC/generic/THCTensorMath.cu:35
+Traceback (most recent call last):
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 37, in bounced
+    result = method(*args, **kw)
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 120, in train_model
+    learner_loss.backward()
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/variable.py", line 167, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph, retain_variables)
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/__init__.py", line 99, in backward
+    variables, grad_variables, retain_graph)
+RuntimeError: cuda runtime error (2) : out of memory at /pytorch/torch/lib/THC/generic/THCStorage.cu:58
+Traceback (most recent call last):
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 37, in bounced
+    result = method(*args, **kw)
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 120, in train_model
+    learner_loss.backward()
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/variable.py", line 167, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph, retain_variables)
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/__init__.py", line 99, in backward
+    variables, grad_variables, retain_graph)
+RuntimeError: cuda runtime error (2) : out of memory at /pytorch/torch/lib/THC/generic/THCTensorMath.cu:35
+Traceback (most recent call last):
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 37, in bounced
+    result = method(*args, **kw)
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 120, in train_model
+    learner_loss.backward()
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/variable.py", line 167, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph, retain_variables)
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/__init__.py", line 99, in backward
+    variables, grad_variables, retain_graph)
+RuntimeError: cuda runtime error (2) : out of memory at /pytorch/torch/lib/THC/generic/THCStorage.cu:58
+Traceback (most recent call last):
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 37, in bounced
+    result = method(*args, **kw)
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 120, in train_model
+    learner_loss.backward()
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/variable.py", line 167, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph, retain_variables)
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/__init__.py", line 99, in backward
+    variables, grad_variables, retain_graph)
+RuntimeError: cuda runtime error (2) : out of memory at /pytorch/torch/lib/THC/generic/THCTensorMath.cu:35
+Traceback (most recent call last):
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 37, in bounced
+    result = method(*args, **kw)
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 120, in train_model
+    learner_loss.backward()
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/variable.py", line 167, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph, retain_variables)
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/__init__.py", line 99, in backward
+    variables, grad_variables, retain_graph)
+RuntimeError: cuda runtime error (2) : out of memory at /pytorch/torch/lib/THC/generic/THCStorage.cu:58
+Traceback (most recent call last):
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 37, in bounced
+    result = method(*args, **kw)
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 120, in train_model
+    learner_loss.backward()
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/variable.py", line 167, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph, retain_variables)
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/__init__.py", line 99, in backward
+    variables, grad_variables, retain_graph)
+RuntimeError: cuda runtime error (2) : out of memory at /pytorch/torch/lib/THC/generic/THCTensorMath.cu:35
+Traceback (most recent call last):
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 37, in bounced
+    result = method(*args, **kw)
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 120, in train_model
+    learner_loss.backward()
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/variable.py", line 167, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph, retain_variables)
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/__init__.py", line 99, in backward
+    variables, grad_variables, retain_graph)
+RuntimeError: cuda runtime error (2) : out of memory at /pytorch/torch/lib/THC/generic/THCStorage.cu:58
+Traceback (most recent call last):
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 37, in bounced
+    result = method(*args, **kw)
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 120, in train_model
+    learner_loss.backward()
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/variable.py", line 167, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph, retain_variables)
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/__init__.py", line 99, in backward
+    variables, grad_variables, retain_graph)
+RuntimeError: cuda runtime error (2) : out of memory at /pytorch/torch/lib/THC/generic/THCTensorMath.cu:35
+Traceback (most recent call last):
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 37, in bounced
+    result = method(*args, **kw)
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 120, in train_model
+    learner_loss.backward()
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/variable.py", line 167, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph, retain_variables)
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/__init__.py", line 99, in backward
+    variables, grad_variables, retain_graph)
+RuntimeError: cuda runtime error (2) : out of memory at /pytorch/torch/lib/THC/generic/THCStorage.cu:58
+Traceback (most recent call last):
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 37, in bounced
+    result = method(*args, **kw)
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 120, in train_model
+    learner_loss.backward()
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/variable.py", line 167, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph, retain_variables)
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/__init__.py", line 99, in backward
+    variables, grad_variables, retain_graph)
+RuntimeError: cuda runtime error (2) : out of memory at /pytorch/torch/lib/THC/generic/THCTensorMath.cu:35
+Traceback (most recent call last):
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 37, in bounced
+    result = method(*args, **kw)
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 120, in train_model
+    learner_loss.backward()
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/variable.py", line 167, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph, retain_variables)
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/__init__.py", line 99, in backward
+    variables, grad_variables, retain_graph)
+RuntimeError: cuda runtime error (2) : out of memory at /pytorch/torch/lib/THC/generic/THCStorage.cu:58
+Traceback (most recent call last):
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 37, in bounced
+    result = method(*args, **kw)
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 120, in train_model
+    learner_loss.backward()
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/variable.py", line 167, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph, retain_variables)
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/__init__.py", line 99, in backward
+    variables, grad_variables, retain_graph)
+RuntimeError: cuda runtime error (2) : out of memory at /pytorch/torch/lib/THC/generic/THCTensorMath.cu:35
+Traceback (most recent call last):
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 37, in bounced
+    result = method(*args, **kw)
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 120, in train_model
+    learner_loss.backward()
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/variable.py", line 167, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph, retain_variables)
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/__init__.py", line 99, in backward
+    variables, grad_variables, retain_graph)
+RuntimeError: cuda runtime error (2) : out of memory at /pytorch/torch/lib/THC/generic/THCStorage.cu:58
+Traceback (most recent call last):
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 37, in bounced
+    result = method(*args, **kw)
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 120, in train_model
+    learner_loss.backward()
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/variable.py", line 167, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph, retain_variables)
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/__init__.py", line 99, in backward
+    variables, grad_variables, retain_graph)
+RuntimeError: cuda runtime error (2) : out of memory at /pytorch/torch/lib/THC/generic/THCTensorMath.cu:35
+Traceback (most recent call last):
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 37, in bounced
+    result = method(*args, **kw)
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 120, in train_model
+    learner_loss.backward()
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/variable.py", line 167, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph, retain_variables)
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/__init__.py", line 99, in backward
+    variables, grad_variables, retain_graph)
+RuntimeError: cuda runtime error (2) : out of memory at /pytorch/torch/lib/THC/generic/THCStorage.cu:58
+Traceback (most recent call last):
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 37, in bounced
+    result = method(*args, **kw)
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 120, in train_model
+    learner_loss.backward()
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/variable.py", line 167, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph, retain_variables)
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/__init__.py", line 99, in backward
+    variables, grad_variables, retain_graph)
+RuntimeError: cuda runtime error (2) : out of memory at /pytorch/torch/lib/THC/generic/THCTensorMath.cu:35
+Traceback (most recent call last):
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 37, in bounced
+    result = method(*args, **kw)
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 120, in train_model
+    learner_loss.backward()
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/variable.py", line 167, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph, retain_variables)
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/__init__.py", line 99, in backward
+    variables, grad_variables, retain_graph)
+RuntimeError: cuda runtime error (2) : out of memory at /pytorch/torch/lib/THC/generic/THCStorage.cu:58
+Traceback (most recent call last):
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 37, in bounced
+    result = method(*args, **kw)
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 120, in train_model
+    learner_loss.backward()
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/variable.py", line 167, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph, retain_variables)
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/__init__.py", line 99, in backward
+    variables, grad_variables, retain_graph)
+RuntimeError: cuda runtime error (2) : out of memory at /pytorch/torch/lib/THC/generic/THCTensorMath.cu:35
+Traceback (most recent call last):
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 37, in bounced
+    result = method(*args, **kw)
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 120, in train_model
+    learner_loss.backward()
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/variable.py", line 167, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph, retain_variables)
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/__init__.py", line 99, in backward
+    variables, grad_variables, retain_graph)
+RuntimeError: cuda runtime error (2) : out of memory at /pytorch/torch/lib/THC/generic/THCStorage.cu:58
+Traceback (most recent call last):
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 37, in bounced
+    result = method(*args, **kw)
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 120, in train_model
+    learner_loss.backward()
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/variable.py", line 167, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph, retain_variables)
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/__init__.py", line 99, in backward
+    variables, grad_variables, retain_graph)
+RuntimeError: cuda runtime error (2) : out of memory at /pytorch/torch/lib/THC/generic/THCTensorMath.cu:35
+Traceback (most recent call last):
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 37, in bounced
+    result = method(*args, **kw)
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 120, in train_model
+    learner_loss.backward()
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/variable.py", line 167, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph, retain_variables)
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/__init__.py", line 99, in backward
+    variables, grad_variables, retain_graph)
+RuntimeError: cuda runtime error (2) : out of memory at /pytorch/torch/lib/THC/generic/THCStorage.cu:58
+Traceback (most recent call last):
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 37, in bounced
+    result = method(*args, **kw)
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 120, in train_model
+    learner_loss.backward()
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/variable.py", line 167, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph, retain_variables)
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/__init__.py", line 99, in backward
+    variables, grad_variables, retain_graph)
+RuntimeError: cuda runtime error (2) : out of memory at /pytorch/torch/lib/THC/generic/THCTensorMath.cu:35
+Traceback (most recent call last):
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 37, in bounced
+    result = method(*args, **kw)
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 120, in train_model
+    learner_loss.backward()
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/variable.py", line 167, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph, retain_variables)
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/__init__.py", line 99, in backward
+    variables, grad_variables, retain_graph)
+RuntimeError: cuda runtime error (2) : out of memory at /pytorch/torch/lib/THC/generic/THCStorage.cu:58
+Traceback (most recent call last):
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 37, in bounced
+    result = method(*args, **kw)
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 120, in train_model
+    learner_loss.backward()
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/variable.py", line 167, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph, retain_variables)
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/__init__.py", line 99, in backward
+    variables, grad_variables, retain_graph)
+RuntimeError: cuda runtime error (2) : out of memory at /pytorch/torch/lib/THC/generic/THCTensorMath.cu:35
+Traceback (most recent call last):
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 37, in bounced
+    result = method(*args, **kw)
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 120, in train_model
+    learner_loss.backward()
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/variable.py", line 167, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph, retain_variables)
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/__init__.py", line 99, in backward
+    variables, grad_variables, retain_graph)
+RuntimeError: cuda runtime error (2) : out of memory at /pytorch/torch/lib/THC/generic/THCStorage.cu:58
+Traceback (most recent call last):
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 37, in bounced
+    result = method(*args, **kw)
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 120, in train_model
+    learner_loss.backward()
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/variable.py", line 167, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph, retain_variables)
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/__init__.py", line 99, in backward
+    variables, grad_variables, retain_graph)
+RuntimeError: cuda runtime error (2) : out of memory at /pytorch/torch/lib/THC/generic/THCTensorMath.cu:35
+Traceback (most recent call last):
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 37, in bounced
+    result = method(*args, **kw)
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 120, in train_model
+    learner_loss.backward()
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/variable.py", line 167, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph, retain_variables)
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/__init__.py", line 99, in backward
+    variables, grad_variables, retain_graph)
+RuntimeError: cuda runtime error (2) : out of memory at /pytorch/torch/lib/THC/generic/THCStorage.cu:58
+Traceback (most recent call last):
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 37, in bounced
+    result = method(*args, **kw)
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 120, in train_model
+    learner_loss.backward()
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/variable.py", line 167, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph, retain_variables)
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/__init__.py", line 99, in backward
+    variables, grad_variables, retain_graph)
+RuntimeError: cuda runtime error (2) : out of memory at /pytorch/torch/lib/THC/generic/THCTensorMath.cu:35
+Traceback (most recent call last):
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 37, in bounced
+    result = method(*args, **kw)
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 120, in train_model
+    learner_loss.backward()
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/variable.py", line 167, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph, retain_variables)
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/__init__.py", line 99, in backward
+    variables, grad_variables, retain_graph)
+RuntimeError: cuda runtime error (2) : out of memory at /pytorch/torch/lib/THC/generic/THCStorage.cu:58
+Traceback (most recent call last):
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 37, in bounced
+    result = method(*args, **kw)
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 120, in train_model
+    learner_loss.backward()
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/variable.py", line 167, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph, retain_variables)
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/__init__.py", line 99, in backward
+    variables, grad_variables, retain_graph)
+RuntimeError: cuda runtime error (2) : out of memory at /pytorch/torch/lib/THC/generic/THCTensorMath.cu:35
+Traceback (most recent call last):
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 37, in bounced
+    result = method(*args, **kw)
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 120, in train_model
+    learner_loss.backward()
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/variable.py", line 167, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph, retain_variables)
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/__init__.py", line 99, in backward
+    variables, grad_variables, retain_graph)
+RuntimeError: cuda runtime error (2) : out of memory at /pytorch/torch/lib/THC/generic/THCStorage.cu:58
+Traceback (most recent call last):
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 37, in bounced
+    result = method(*args, **kw)
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 120, in train_model
+    learner_loss.backward()
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/variable.py", line 167, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph, retain_variables)
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/__init__.py", line 99, in backward
+    variables, grad_variables, retain_graph)
+RuntimeError: cuda runtime error (2) : out of memory at /pytorch/torch/lib/THC/generic/THCTensorMath.cu:35
+Traceback (most recent call last):
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 37, in bounced
+    result = method(*args, **kw)
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 120, in train_model
+    learner_loss.backward()
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/variable.py", line 167, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph, retain_variables)
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/__init__.py", line 99, in backward
+    variables, grad_variables, retain_graph)
+RuntimeError: cuda runtime error (2) : out of memory at /pytorch/torch/lib/THC/generic/THCStorage.cu:58
+Traceback (most recent call last):
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 37, in bounced
+    result = method(*args, **kw)
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 120, in train_model
+    learner_loss.backward()
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/variable.py", line 167, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph, retain_variables)
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/__init__.py", line 99, in backward
+    variables, grad_variables, retain_graph)
+RuntimeError: cuda runtime error (2) : out of memory at /pytorch/torch/lib/THC/generic/THCTensorMath.cu:35
+Traceback (most recent call last):
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 37, in bounced
+    result = method(*args, **kw)
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 120, in train_model
+    learner_loss.backward()
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/variable.py", line 167, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph, retain_variables)
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/__init__.py", line 99, in backward
+    variables, grad_variables, retain_graph)
+RuntimeError: cuda runtime error (2) : out of memory at /pytorch/torch/lib/THC/generic/THCStorage.cu:58
+Traceback (most recent call last):
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 37, in bounced
+    result = method(*args, **kw)
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 120, in train_model
+    learner_loss.backward()
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/variable.py", line 167, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph, retain_variables)
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/__init__.py", line 99, in backward
+    variables, grad_variables, retain_graph)
+RuntimeError: cuda runtime error (2) : out of memory at /pytorch/torch/lib/THC/generic/THCTensorMath.cu:35
+Traceback (most recent call last):
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 37, in bounced
+    result = method(*args, **kw)
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 120, in train_model
+    learner_loss.backward()
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/variable.py", line 167, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph, retain_variables)
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/__init__.py", line 99, in backward
+    variables, grad_variables, retain_graph)
+RuntimeError: cuda runtime error (2) : out of memory at /pytorch/torch/lib/THC/generic/THCStorage.cu:58
+Traceback (most recent call last):
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 37, in bounced
+    result = method(*args, **kw)
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 120, in train_model
+    learner_loss.backward()
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/variable.py", line 167, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph, retain_variables)
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/__init__.py", line 99, in backward
+    variables, grad_variables, retain_graph)
+RuntimeError: cuda runtime error (2) : out of memory at /pytorch/torch/lib/THC/generic/THCTensorMath.cu:35
+Traceback (most recent call last):
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 37, in bounced
+    result = method(*args, **kw)
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 120, in train_model
+    learner_loss.backward()
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/variable.py", line 167, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph, retain_variables)
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/__init__.py", line 99, in backward
+    variables, grad_variables, retain_graph)
+RuntimeError: cuda runtime error (2) : out of memory at /pytorch/torch/lib/THC/generic/THCStorage.cu:58
+Traceback (most recent call last):
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 37, in bounced
+    result = method(*args, **kw)
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 120, in train_model
+    learner_loss.backward()
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/variable.py", line 167, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph, retain_variables)
+  File "/home/jeffch/anaconda3/lib/python3.6/site-packages/torch/autograd/__init__.py", line 99, in backward
+    variables, grad_variables, retain_graph)
+RuntimeError: cuda runtime error (2) : out of memory at /pytorch/torch/lib/THC/generic/THCTensorMath.cu:35
 Running Hebbian: 1 0.01
-Accuracy of the network on the 10000 test images: 12 %
-Time spent training: 4.518417835235596
-Time spent testing: 9.752025842666626
+Encountered Error!
+_____
+_____
 Running Control: 1 0.01
-Accuracy of the network on the 10000 test images: 28 %
-Time spent training: 0.039132118225097656
-Time spent testing: 0.49175310134887695
+Encountered Error!
+_____
+_____
 Running Hebbian: 1 0.02
-Accuracy of the network on the 10000 test images: 36 %
-Time spent training: 4.317842483520508
-Time spent testing: 9.74537706375122
+Encountered Error!
+_____
+_____
 Running Control: 1 0.02
-Accuracy of the network on the 10000 test images: 37 %
-Time spent training: 0.07461142539978027
-Time spent testing: 0.4919278621673584
+Encountered Error!
+_____
+_____
 Running Hebbian: 1 0.03
-Accuracy of the network on the 10000 test images: 58 %
-Time spent training: 6.602756023406982
-Time spent testing: 9.751183986663818
+Encountered Error!
+_____
+_____
 Running Control: 1 0.03
-Accuracy of the network on the 10000 test images: 29 %
-Time spent training: 0.11124753952026367
-Time spent testing: 0.4940037727355957
+Encountered Error!
+_____
+_____
 Running Hebbian: 1 0.04
-Accuracy of the network on the 10000 test images: 49 %
-Time spent training: 8.836179971694946
-Time spent testing: 9.754611492156982
+Encountered Error!
+_____
+_____
 Running Control: 1 0.04
-Accuracy of the network on the 10000 test images: 42 %
-Time spent training: 0.1465470790863037
-Time spent testing: 0.4956328868865967
+Encountered Error!
+_____
+_____
 Running Hebbian: 1 0.05
-Accuracy of the network on the 10000 test images: 38 %
-Time spent training: 11.067728757858276
-Time spent testing: 9.753021717071533
+Encountered Error!
+_____
+_____
 Running Control: 1 0.05
-Accuracy of the network on the 10000 test images: 47 %
-Time spent training: 0.18217945098876953
-Time spent testing: 0.4962158203125
+Encountered Error!
+_____
+_____
 Running Hebbian: 1 0.060000000000000005
-Accuracy of the network on the 10000 test images: 49 %
-Time spent training: 13.367725610733032
-Time spent testing: 9.759639978408813
+Encountered Error!
+_____
+_____
 Running Control: 1 0.060000000000000005
-Accuracy of the network on the 10000 test images: 42 %
-Time spent training: 0.21830487251281738
-Time spent testing: 0.4937319755554199
+Encountered Error!
+_____
+_____
 Running Hebbian: 1 0.06999999999999999
-Accuracy of the network on the 10000 test images: 42 %
-Time spent training: 15.478428363800049
-Time spent testing: 9.762974739074707
+Encountered Error!
+_____
+_____
 Running Control: 1 0.06999999999999999
-Accuracy of the network on the 10000 test images: 40 %
-Time spent training: 0.26408839225769043
-Time spent testing: 0.4953610897064209
+Encountered Error!
+_____
+_____
 Running Hebbian: 1 0.08
-Accuracy of the network on the 10000 test images: 61 %
-Time spent training: 17.87880802154541
-Time spent testing: 9.761896133422852
+Encountered Error!
+_____
+_____
 Running Control: 1 0.08
-Accuracy of the network on the 10000 test images: 38 %
-Time spent training: 0.3381788730621338
-Time spent testing: 0.4974179267883301
+Encountered Error!
+_____
+_____
 Running Hebbian: 1 0.09
-Accuracy of the network on the 10000 test images: 45 %
-Time spent training: 20.186425924301147
-Time spent testing: 9.80127215385437
+Encountered Error!
+_____
+_____
 Running Control: 1 0.09
-Accuracy of the network on the 10000 test images: 56 %
-Time spent training: 0.32506823539733887
-Time spent testing: 0.49245715141296387
+Encountered Error!
+_____
+_____
 Running Hebbian: 1 0.09999999999999999
-Accuracy of the network on the 10000 test images: 62 %
-Time spent training: 22.1604425907135
-Time spent testing: 9.76247763633728
+Encountered Error!
+_____
+_____
 Running Control: 1 0.09999999999999999
-Accuracy of the network on the 10000 test images: 57 %
-Time spent training: 0.35927677154541016
-Time spent testing: 0.49471163749694824
+Encountered Error!
+_____
+_____
 Running Hebbian: 1 0.1
-Accuracy of the network on the 10000 test images: 54 %
-Time spent training: 22.43360471725464
-Time spent testing: 9.763492822647095
+Encountered Error!
+_____
+_____
 Running Control: 1 0.1
-Accuracy of the network on the 10000 test images: 67 %
-Time spent training: 0.36026859283447266
-Time spent testing: 0.49057650566101074
+Encountered Error!
+_____
+_____
 Running Hebbian: 1 0.15000000000000002
-Accuracy of the network on the 10000 test images: 68 %
-Time spent training: 33.740005016326904
-Time spent testing: 9.766035318374634
+Encountered Error!
+_____
+_____
 Running Control: 1 0.15000000000000002
-Accuracy of the network on the 10000 test images: 47 %
-Time spent training: 0.5392038822174072
-Time spent testing: 0.49274396896362305
+Encountered Error!
+_____
+_____
 Running Hebbian: 1 0.20000000000000004
-Accuracy of the network on the 10000 test images: 54 %
-Time spent training: 45.0749454498291
-Time spent testing: 9.771756410598755
+Encountered Error!
+_____
+_____
 Running Control: 1 0.20000000000000004
-Accuracy of the network on the 10000 test images: 54 %
-Time spent training: 0.731900691986084
-Time spent testing: 0.49790072441101074
+Encountered Error!
+_____
+_____
 Running Hebbian: 1 0.25000000000000006
-Accuracy of the network on the 10000 test images: 57 %
-Time spent training: 56.47937607765198
-Time spent testing: 9.803357124328613
+Encountered Error!
+_____
+_____
 Running Control: 1 0.25000000000000006
-Accuracy of the network on the 10000 test images: 62 %
-Time spent training: 0.9607186317443848
-Time spent testing: 0.49715399742126465
+Encountered Error!
+_____
+_____
 Running Hebbian: 1 0.30000000000000004
-Accuracy of the network on the 10000 test images: 73 %
-Time spent training: 68.05788826942444
-Time spent testing: 9.788490295410156
+Encountered Error!
+_____
+_____
 Running Control: 1 0.30000000000000004
-Accuracy of the network on the 10000 test images: 78 %
-Time spent training: 1.0753142833709717
-Time spent testing: 0.492779016494751
+Encountered Error!
+_____
+_____
 Running Hebbian: 1 0.3500000000000001
-Accuracy of the network on the 10000 test images: 87 %
-Time spent training: 78.9392819404602
-Time spent testing: 9.789319276809692
+Encountered Error!
+_____
+_____
 Running Control: 1 0.3500000000000001
-Accuracy of the network on the 10000 test images: 80 %
-Time spent training: 1.384284496307373
-Time spent testing: 0.5085980892181396
+Encountered Error!
+_____
+_____
 Running Hebbian: 1 0.40000000000000013
-Accuracy of the network on the 10000 test images: 66 %
-Time spent training: 90.65408635139465
-Time spent testing: 9.788806676864624
+Encountered Error!
+_____
+_____
 Running Control: 1 0.40000000000000013
-Accuracy of the network on the 10000 test images: 66 %
-Time spent training: 1.5656707286834717
-Time spent testing: 0.5032587051391602
+Encountered Error!
+_____
+_____
 Running Hebbian: 1 0.45000000000000007
-Accuracy of the network on the 10000 test images: 72 %
-Time spent training: 101.5233244895935
-Time spent testing: 9.786801815032959
+Encountered Error!
+_____
+_____
 Running Control: 1 0.45000000000000007
-Accuracy of the network on the 10000 test images: 82 %
-Time spent training: 1.6131227016448975
-Time spent testing: 0.493999719619751
+Encountered Error!
+_____
+_____
 Running Hebbian: 1 0.5000000000000001
-Accuracy of the network on the 10000 test images: 73 %
-Time spent training: 113.10727572441101
-Time spent testing: 9.798107862472534
+Encountered Error!
+_____
+_____
 Running Control: 1 0.5000000000000001
-Accuracy of the network on the 10000 test images: 66 %
-Time spent training: 1.7894792556762695
-Time spent testing: 0.49401378631591797
+Encountered Error!
+_____
+_____
 Running Hebbian: 1 0.5500000000000002
-Accuracy of the network on the 10000 test images: 82 %
-Time spent training: 136.93641448020935
-Time spent testing: 10.972459554672241
+Encountered Error!
+_____
+_____
 Running Control: 1 0.5500000000000002
-Accuracy of the network on the 10000 test images: 71 %
-Time spent training: 2.22502064704895
-Time spent testing: 0.5096046924591064
+Encountered Error!
+_____
+_____
 Running Hebbian: 1 0.6000000000000002
-Accuracy of the network on the 10000 test images: 73 %
-Time spent training: 152.78699779510498
-Time spent testing: 10.95951509475708
+Encountered Error!
+_____
+_____
 Running Control: 1 0.6000000000000002
-Accuracy of the network on the 10000 test images: 62 %
-Time spent training: 2.4313857555389404
-Time spent testing: 0.5353538990020752
+Encountered Error!
+_____
+_____
 Running Hebbian: 1 0.6500000000000001
-Accuracy of the network on the 10000 test images: 67 %
-Time spent training: 165.00764846801758
-Time spent testing: 10.971342325210571
+Encountered Error!
+_____
+_____
 Running Control: 1 0.6500000000000001
-Accuracy of the network on the 10000 test images: 48 %
-Time spent training: 2.412186861038208
-Time spent testing: 0.5467231273651123
+Encountered Error!
+_____
+_____
 Running Hebbian: 1 0.7000000000000002
-Accuracy of the network on the 10000 test images: 71 %
-Time spent training: 178.07621431350708
-Time spent testing: 10.924927234649658
+Encountered Error!
+_____
+_____
 Running Control: 1 0.7000000000000002
-Accuracy of the network on the 10000 test images: 82 %
-Time spent training: 2.7388224601745605
-Time spent testing: 0.5161998271942139
+Encountered Error!
+_____
+_____
 Running Hebbian: 1 0.7500000000000002
-Accuracy of the network on the 10000 test images: 75 %
-Time spent training: 189.8481843471527
-Time spent testing: 10.920047998428345
+Encountered Error!
+_____
+_____
 Running Control: 1 0.7500000000000002
-Accuracy of the network on the 10000 test images: 71 %
-Time spent training: 2.9427292346954346
-Time spent testing: 0.5164897441864014
+Encountered Error!
+_____
+_____
 Running Hebbian: 1 0.8000000000000002
-Accuracy of the network on the 10000 test images: 82 %
-Time spent training: 203.4763948917389
-Time spent testing: 10.927559614181519
+Encountered Error!
+_____
+_____
 Running Control: 1 0.8000000000000002
-Accuracy of the network on the 10000 test images: 75 %
-Time spent training: 3.076951503753662
-Time spent testing: 0.5199170112609863
+Encountered Error!
+_____
+_____
 Running Hebbian: 1 0.8500000000000002
-Accuracy of the network on the 10000 test images: 62 %
-Time spent training: 215.78894710540771
-Time spent testing: 10.941817283630371
+Encountered Error!
+_____
+_____
 Running Control: 1 0.8500000000000002
-Accuracy of the network on the 10000 test images: 65 %
-Time spent training: 3.324125289916992
-Time spent testing: 0.5140113830566406
+Encountered Error!
+_____
+_____
 Running Hebbian: 1 0.9000000000000002
-Accuracy of the network on the 10000 test images: 51 %
-Time spent training: 228.26673221588135
-Time spent testing: 10.971630096435547
+Encountered Error!
+_____
+_____
 Running Control: 1 0.9000000000000002
-Accuracy of the network on the 10000 test images: 75 %
-Time spent training: 3.592141628265381
-Time spent testing: 0.513026237487793
+Encountered Error!
+_____
+_____
 Running Hebbian: 1 0.9500000000000003
-Accuracy of the network on the 10000 test images: 74 %
-Time spent training: 241.58782768249512
-Time spent testing: 10.984612464904785
+Encountered Error!
+_____
+_____
 Running Control: 1 0.9500000000000003
-Accuracy of the network on the 10000 test images: 66 %
-Time spent training: 3.7667620182037354
-Time spent testing: 0.5346181392669678
+Encountered Error!
+_____
+_____
 Running Hebbian: 1 1.0000000000000004
-Accuracy of the network on the 10000 test images: 65 %
-Time spent training: 229.0741422176361
-Time spent testing: 9.797961711883545
+Encountered Error!
+_____
+_____
 Running Control: 1 1.0000000000000004
-Accuracy of the network on the 10000 test images: 91 %
-Time spent training: 3.909587860107422
-Time spent testing: 0.497575044631958
+Encountered Error!
+_____
+_____
 Running Hebbian: 1 1.0
-Accuracy of the network on the 10000 test images: 74 %
-Time spent training: 226.10751962661743
-Time spent testing: 9.801787614822388
+Encountered Error!
+_____
+_____
 Running Control: 1 1.0
-Accuracy of the network on the 10000 test images: 55 %
-Time spent training: 3.9927456378936768
-Time spent testing: 0.5171267986297607
-Running Hebbian: 1 1.2
-Accuracy of the network on the 10000 test images: 75 %
-Time spent training: 227.00172805786133
-Time spent testing: 9.797240257263184
-Running Control: 1 1.2
-Accuracy of the network on the 10000 test images: 65 %
-Time spent training: 3.628331184387207
-Time spent testing: 0.4973030090332031
-Running Hebbian: 1 1.4
-Accuracy of the network on the 10000 test images: 91 %
-Time spent training: 250.42419266700745
-Time spent testing: 10.926683187484741
-Running Control: 1 1.4
-Accuracy of the network on the 10000 test images: 80 %
-Time spent training: 3.932645082473755
-Time spent testing: 0.5412061214447021
-Running Hebbian: 1 1.5999999999999999
-Accuracy of the network on the 10000 test images: 64 %
-Time spent training: 254.19729590415955
-Time spent testing: 10.927472829818726
-Running Control: 1 1.5999999999999999
-Accuracy of the network on the 10000 test images: 47 %
-Time spent training: 3.9372055530548096
-Time spent testing: 0.5297861099243164
-Running Hebbian: 1 1.7999999999999998
-Accuracy of the network on the 10000 test images: 77 %
-Time spent training: 254.14631009101868
-Time spent testing: 10.976423740386963
-Running Control: 1 1.7999999999999998
-Accuracy of the network on the 10000 test images: 46 %
-Time spent training: 3.999009132385254
-Time spent testing: 0.5115132331848145
-Running Hebbian: 1 1.9999999999999998
-Accuracy of the network on the 10000 test images: 60 %
-Time spent training: 253.6044478416443
-Time spent testing: 10.946107625961304
-Running Control: 1 1.9999999999999998
-Accuracy of the network on the 10000 test images: 62 %
-Time spent training: 4.064982652664185
-Time spent testing: 0.525667667388916
-Running Hebbian: 1 2.1999999999999997
-Accuracy of the network on the 10000 test images: 76 %
-Time spent training: 253.79655385017395
-Time spent testing: 10.930378437042236
-Running Control: 1 2.1999999999999997
-Accuracy of the network on the 10000 test images: 69 %
-Time spent training: 3.8376920223236084
-Time spent testing: 0.5153241157531738
-Running Hebbian: 1 2.3999999999999995
-Accuracy of the network on the 10000 test images: 83 %
-Time spent training: 253.87818360328674
-Time spent testing: 10.922913551330566
-Running Control: 1 2.3999999999999995
-Accuracy of the network on the 10000 test images: 91 %
-Time spent training: 3.9657230377197266
-Time spent testing: 0.5126020908355713
-Running Hebbian: 1 2.5999999999999996
-Accuracy of the network on the 10000 test images: 63 %
-Time spent training: 254.56690621376038
-Time spent testing: 10.983273983001709
-Running Control: 1 2.5999999999999996
-Accuracy of the network on the 10000 test images: 63 %
-Time spent training: 3.7906901836395264
-Time spent testing: 0.5038652420043945
-Running Hebbian: 1 2.8
-Accuracy of the network on the 10000 test images: 84 %
-Time spent training: 228.67722368240356
-Time spent testing: 9.803140640258789
-Running Control: 1 2.8
-Accuracy of the network on the 10000 test images: 63 %
-Time spent training: 3.578953981399536
-Time spent testing: 0.4991872310638428
-Running Hebbian: 1 2.9999999999999996
-Accuracy of the network on the 10000 test images: 75 %
-Time spent training: 226.4544448852539
-Time spent testing: 9.796539545059204
-Running Control: 1 2.9999999999999996
-Accuracy of the network on the 10000 test images: 57 %
-Time spent training: 3.8327693939208984
-Time spent testing: 0.5187315940856934
-Running Hebbian: 1 3.1999999999999993
-Accuracy of the network on the 10000 test images: 43 %
-Time spent training: 226.33394360542297
-Time spent testing: 10.27035403251648
-Running Control: 1 3.1999999999999993
-Accuracy of the network on the 10000 test images: 75 %
-Time spent training: 3.9411911964416504
-Time spent testing: 0.5231249332427979
-Running Hebbian: 1 3.3999999999999995
-Accuracy of the network on the 10000 test images: 58 %
-Time spent training: 253.73128700256348
-Time spent testing: 10.977874279022217
-Running Control: 1 3.3999999999999995
-Accuracy of the network on the 10000 test images: 72 %
-Time spent training: 3.78029203414917
-Time spent testing: 0.5189564228057861
-Running Hebbian: 1 3.5999999999999996
-Accuracy of the network on the 10000 test images: 50 %
-Time spent training: 255.04729557037354
-Time spent testing: 10.984613180160522
-Running Control: 1 3.5999999999999996
-Accuracy of the network on the 10000 test images: 80 %
-Time spent training: 3.888671636581421
-Time spent testing: 0.5136754512786865
-Running Hebbian: 1 3.7999999999999994
-Accuracy of the network on the 10000 test images: 91 %
-Time spent training: 253.75071454048157
-Time spent testing: 10.966681718826294
-Running Control: 1 3.7999999999999994
-Accuracy of the network on the 10000 test images: 74 %
-Time spent training: 3.970433235168457
-Time spent testing: 0.5241794586181641
-Running Hebbian: 1 3.999999999999999
-Accuracy of the network on the 10000 test images: 66 %
-Time spent training: 254.28211307525635
-Time spent testing: 11.017205238342285
-Running Control: 1 3.999999999999999
-Accuracy of the network on the 10000 test images: 72 %
-Time spent training: 3.8639471530914307
-Time spent testing: 0.5254330635070801
-Running Hebbian: 1 4.199999999999999
-Accuracy of the network on the 10000 test images: 56 %
-Time spent training: 254.40979504585266
-Time spent testing: 10.973095178604126
-Running Control: 1 4.199999999999999
-Accuracy of the network on the 10000 test images: 63 %
-Time spent training: 4.00242805480957
-Time spent testing: 0.5355885028839111
-Running Hebbian: 1 4.3999999999999995
-Accuracy of the network on the 10000 test images: 41 %
-Time spent training: 253.7296118736267
-Time spent testing: 11.025348663330078
-Running Control: 1 4.3999999999999995
-Accuracy of the network on the 10000 test images: 73 %
-Time spent training: 3.976649522781372
-Time spent testing: 0.5287518501281738
-Running Hebbian: 1 4.6
-Accuracy of the network on the 10000 test images: 69 %
-Time spent training: 252.06033325195312
-Time spent testing: 9.879600286483765
-Running Control: 1 4.6
-Accuracy of the network on the 10000 test images: 55 %
-Time spent training: 3.928013563156128
-Time spent testing: 0.5129578113555908
-Running Hebbian: 1 4.799999999999999
-Accuracy of the network on the 10000 test images: 67 %
-Time spent training: 226.96661591529846
-Time spent testing: 9.887885332107544
-Running Control: 1 4.799999999999999
-Accuracy of the network on the 10000 test images: 48 %
-Time spent training: 3.8437581062316895
-Time spent testing: 0.5112400054931641
+Encountered Error!
+_____
+_____
+Running Hebbian: 1 1.5
+Encountered Error!
+_____
+_____
+Running Control: 1 1.5
+Encountered Error!
+_____
+_____
+Running Hebbian: 1 2.0
+Encountered Error!
+_____
+_____
+Running Control: 1 2.0
+Encountered Error!
+_____
+_____
+Running Hebbian: 1 2.5
+Encountered Error!
+_____
+_____
+Running Control: 1 2.5
+Encountered Error!
+_____
+_____
+Running Hebbian: 1 3.0
+Encountered Error!
+_____
+_____
+Running Control: 1 3.0
+Encountered Error!
+_____
+_____
+Running Hebbian: 1 3.5
+Encountered Error!
+_____
+_____
+Running Control: 1 3.5
+Encountered Error!
+_____
+_____
+Running Hebbian: 1 4.0
+Encountered Error!
+_____
+_____
+Running Control: 1 4.0
+Encountered Error!
+_____
+_____
+Running Hebbian: 1 4.5
+Encountered Error!
+_____
+_____
+Running Control: 1 4.5
+Encountered Error!
+_____
+_____
