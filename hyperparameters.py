@@ -18,6 +18,7 @@ experiment_iterations = 1
 base_optimizer = torch.optim.Adam
 time_out = 20 * 60
 num_data = 60000
+os.environ["CUDA_VISIBLE_DEVICES"] = "2"
 
 
 def safe_mkdir(path):

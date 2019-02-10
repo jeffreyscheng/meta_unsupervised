@@ -134,7 +134,9 @@ class MetaFramework(object):
             outputs = learner(images, batch_num)
             _, predicted = torch.max(outputs.data, 1)
             total += labels.size(0)
-            correct += (predicted == labels).sum().item()
+            correct += (predicted == labels).sum()
+            if not isinstance(correct, int):
+                correct = correct.item()
             del images, outputs, predicted
         print('Accuracy of the network on the 10000 test images: %d %%' % (100 * correct / total))
         print("Time spent training:", tick2 - tick)
