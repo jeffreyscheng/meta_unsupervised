@@ -6,7 +6,7 @@ fixed_parameters = {'meta_input': 3,
                     'meta_output': 1,
                     'input_size': 784,
                     'num_classes': 10}
-hyperparameters = {'mid1': 800,
+hyperparameters = {'mid1': 200,
                    'mid2': 200,
                    'meta_mid': 50,
                    'learning_rate': 0.0001,
