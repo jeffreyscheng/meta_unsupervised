@@ -6,16 +6,16 @@ fixed_parameters = {'meta_input': 3,
                     'meta_output': 1,
                     'input_size': 784,
                     'num_classes': 10}
-hyperparameters = {'mid1': 200,
-                   'mid2': 200,
+hyperparameters = {'mid1': 800,
+                   'mid2': 800,
                    'meta_mid': 50,
-                   'learning_rate': 0.01,
+                   'learning_rate': 0.00001,
                    'learner_batch_size': 50,
-                   'update_rate': 0.001}
+                   'update_rate': 0.00001}
 dataset_name = 'MNIST'
 gpu_bool = torch.cuda.device_count() > 0
 experiment_iterations = 1
-base_optimizer = torch.optim.SGD
+base_optimizer = torch.optim.Adam
 time_out = 20 * 60
 num_data = 60000
 
