@@ -13,7 +13,7 @@ for phi in np.arange(0.01, 0.11, 0.01):
 for phi in np.arange(0.10, 1.01, 0.05):
     acc_dict += run_theta_phi_pair(1, phi)
 
-for phi in np.arange(1.0, 5, 0.2):
+for phi in np.arange(1.0, 5, 0.5):
     acc_dict += run_theta_phi_pair(1, phi)
 
 acc_df = pd.DataFrame(acc_dict)
