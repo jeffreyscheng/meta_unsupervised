@@ -7,11 +7,11 @@ fixed_parameters = {'meta_input': 3,
                     'input_size': 784,
                     'num_classes': 10}
 hyperparameters = {'mid1': 800,
-                   'mid2': 800,
+                   'mid2': 200,
                    'meta_mid': 50,
-                   'learning_rate': 0.00001,
+                   'learning_rate': 0.0001,
                    'learner_batch_size': 50,
-                   'update_rate': 0.00001}
+                   'update_rate': 0.0001}
 dataset_name = 'MNIST'
 gpu_bool = torch.cuda.device_count() > 0
 experiment_iterations = 1
