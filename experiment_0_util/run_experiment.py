@@ -37,6 +37,7 @@ def visualize_phi(input_path, fn, y_name, image_path, image_name):
 
     plt.xlabel('Number of Epochs')
     plt.ylabel(y_name)
+    plt.legend()
 
     plt.savefig(os.path.join(image_path, image_name))
     plt.clf()
@@ -62,6 +63,7 @@ def visualize_theta(input_path, fn, y_name, image_path, image_name):
 
     plt.xlabel('Proportion of Labeled Examples')
     plt.ylabel(y_name)
+    plt.legend()
 
     plt.savefig(os.path.join(image_path, image_name))
     plt.clf()
