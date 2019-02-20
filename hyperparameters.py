@@ -14,7 +14,7 @@ hyperparameters = {'mid1': 200,
                    'update_rate': 0.0001}
 dataset_name = 'MNIST'
 gpu_bool = torch.cuda.device_count() > 0
-experiment_iterations = 100
+experiment_iterations = 10
 base_optimizer = torch.optim.Adam
 time_out = 20 * 60
 num_data = 60000
