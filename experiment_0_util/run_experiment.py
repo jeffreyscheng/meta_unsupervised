@@ -5,23 +5,19 @@ import matplotlib.pyplot as plt
 import pandas as pd
 
 
-def label_hebbian(d):
-    d['bool_hebbian'] = 1
-    return d
-
-
-def label_control(d):
-    d['bool_hebbian'] = 0
+def label_hebbian(d, bool_hebbian):
+    print(d)
+    d['bool_hebbian'] = bool_hebbian
     return d
 
 
 def run_theta_phi_pair(phi_val, theta_val):
     print("Running Hebbian:", phi_val, theta_val)
-    hebbian_list = [label_hebbian(hebbian_frame.train_model(phi=phi_val, theta=theta_val, intermediate_accuracy=True)) for _ in range(experiment_iterations)]
-    hebbian_list = [d for iteration in hebbian_list for d in iteration] # flattens
+    hebbian_list = [label_hebbian(hebbian_frame.train_model(phi=phi_val, theta=theta_val, intermediate_accuracy=True), 1) for _ in range(experiment_iterations)]
+    hebbian_list = [d for iteration in hebbian_list for d in iteration]  # flattens
 
     print("Running Control:", phi_val, theta_val)
-    control_list = [label_control(control_frame.train_model(phi=phi_val, theta=theta_val)) for _ in
+    control_list = [label_hebbian(control_frame.train_model(phi=phi_val, theta=theta_val), 0) for _ in
                     range(experiment_iterations)]
     control_list = [d for iteration in control_list for d in iteration]
 

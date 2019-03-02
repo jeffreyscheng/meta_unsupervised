@@ -12,18 +12,40 @@ class HebbianNet(nn.Module):
         super(HebbianNet, self).__init__()
         self.relu = nn.ReLU()
         self.fc1 = nn.Linear(input_size, learner_hidden)
-        self.fc3 = nn.Linear(learner_hidden, output_size)
+        self.fc2 = nn.Linear(learner_hidden, output_size)
         self.batch_size = batch_size
         self.conv1 = nn.Conv1d(in_channels=meta_input, out_channels=meta_hidden, kernel_size=1, bias=True)
         self.conv2 = nn.Conv1d(in_channels=meta_hidden, out_channels=meta_output, kernel_size=1, bias=True)
         self.param_state = self.state_dict(keep_vars=True)
-        self.param_names = ['fc1.weight', 'fc2.weight', 'fc3.weight']
-        self.layers = [self.fc1, self.fc2, self.fc3]
+        self.param_names = ['fc1.weight', 'fc2.weight']
+        self.layers = [self.fc1, self.fc2]
         self.rate = rate
 
     # get new weight
     def get_update(self, meta_input_stack):
-        return torch.squeeze(self.conv2(self.relu(self.conv1(meta_input_stack))), 1)
+
+        tick = time.time()
+        print(meta_input_stack.size())
+        meta_input_stack = torch.unbind(meta_input_stack, 3)
+        print(meta_input_stack[0].size())
+        meta_input_stack = [torch.squeeze(self.conv2(self.relu(self.conv1(meta_slice))), 1) for meta_slice in meta_input_stack]
+        print(len(meta_input_stack))
+        print(meta_input_stack[0].size())
+        meta_input_stack = torch.stack(meta_input_stack, 2)
+        print(meta_input_stack.size())
+        print(time.time() - tick)
+        raise ValueError
+        # tick = time.time()
+        # batch, channel, layer1, layer2 = meta_input_stack.size()
+        # meta_input_stack = meta_input_stack.view(batch, channel, layer1 * layer2)
+        # print(tick - time.time())
+        # meta_input_stack = torch.squeeze(self.conv2(self.relu(self.conv1(meta_input_stack))), 1)
+        # print(tick - time.time())
+        # meta_input_stack = meta_input_stack.view(batch, layer1, layer2)
+        # print(meta_input_stack.size())
+        # print(time.time() - tick)
+        # raise ValueError
+        return meta_input_stack
 
     # @timeit
     def forward(self, x, batch_num):
