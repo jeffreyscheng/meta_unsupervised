@@ -84,7 +84,7 @@ class MetaFramework(object):
         return None, None
 
     @bandaid
-    def train_model(self, phi=5, theta=1, return_model=False):
+    def train_model(self, phi=5, theta=1, intermediate_accuracy=False, return_model=False):
         learner, optimizer = self.create_learner_and_optimizer()
         tick = time.time()
         if gpu_bool:
@@ -94,6 +94,34 @@ class MetaFramework(object):
         learner_criterion = nn.CrossEntropyLoss()
 
         batch_num = 0
+
+        learning_curve_dict = []
+
+        def test_model(model):
+            # Test the Model
+            correct = 0
+            total = 0
+            for test_images, test_labels in self.test_loader:
+                test_images = Variable(test_images.view(-1, 28 * 28))
+                # to CUDA
+                if gpu_bool:
+                    test_images = test_images.cuda()
+                    test_labels = test_labels.cuda()
+                test_outputs = model(test_images, batch_num)
+                _, predicted = torch.max(test_outputs.data, 1)
+                total += test_labels.size(0)
+                correct += (predicted == test_labels).sum()
+                if not isinstance(correct, int):
+                    correct = correct.item()
+                del test_images, outputs, predicted, test_labels
+            print('Accuracy of the network on the 10000 test images: %d %%' % (100 * correct / total))
+            accuracy = correct / total
+            if intermediate_accuracy:
+                now_phi = batch_num * hyperparameters['learner_batch_size'] / num_data
+            else:
+                now_phi = phi
+            learning_curve_dict.append({'phi': now_phi, 'theta': theta, 'accuracy': accuracy})
+            return learning_curve_dict
 
         def stop_training(tock, batch):
             return tock - tick > time_out or batch * hyperparameters['learner_batch_size'] / num_data > phi
@@ -121,28 +149,13 @@ class MetaFramework(object):
                 optimizer.step()
                 del images, labels, outputs, learner_loss
 
-        tick2 = time.time()
-        # Test the Model
-        correct = 0
-        total = 0
-        for images, labels in self.test_loader:
-            images = Variable(images.view(-1, 28 * 28))
-            # to CUDA
-            if gpu_bool:
-                images = images.cuda()
-                labels = labels.cuda()
-            outputs = learner(images, batch_num)
-            _, predicted = torch.max(outputs.data, 1)
-            total += labels.size(0)
-            correct += (predicted == labels).sum()
-            if not isinstance(correct, int):
-                correct = correct.item()
-            del images, outputs, predicted
-        print('Accuracy of the network on the 10000 test images: %d %%' % (100 * correct / total))
-        print("Time spent training:", tick2 - tick)
-        print("Time spent testing:", time.time() - tick2)
+            if batch_num % 100 == 0 and not return_model and intermediate_accuracy:
+                test_model(learner)
+
         if return_model:
             return learner
         else:
+            if not intermediate_accuracy:
+                test_model(learner)
             del learner
-            return correct / total
+            return learning_curve_dict

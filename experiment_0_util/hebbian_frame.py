@@ -7,16 +7,15 @@ import torch.nn as nn
 # Template for Single Structure
 class HebbianNet(nn.Module):
 
-    def __init__(self, input_size, hidden1, hidden2, output_size, meta_input, meta_hidden, meta_output, batch_size,
+    def __init__(self, input_size, learner_hidden, output_size, meta_input, meta_hidden, meta_output, batch_size,
                  rate):
         super(HebbianNet, self).__init__()
         self.relu = nn.ReLU()
-        self.fc1 = nn.Linear(input_size, hidden1)
-        self.fc2 = nn.Linear(hidden1, hidden2)
-        self.fc3 = nn.Linear(hidden2, output_size)
+        self.fc1 = nn.Linear(input_size, learner_hidden)
+        self.fc3 = nn.Linear(learner_hidden, output_size)
         self.batch_size = batch_size
-        self.conv1 = nn.Conv2d(in_channels=meta_input, out_channels=meta_hidden, kernel_size=1, bias=True)
-        self.conv2 = nn.Conv2d(in_channels=meta_hidden, out_channels=meta_output, kernel_size=1, bias=True)
+        self.conv1 = nn.Conv1d(in_channels=meta_input, out_channels=meta_hidden, kernel_size=1, bias=True)
+        self.conv2 = nn.Conv1d(in_channels=meta_hidden, out_channels=meta_output, kernel_size=1, bias=True)
         self.param_state = self.state_dict(keep_vars=True)
         self.param_names = ['fc1.weight', 'fc2.weight', 'fc3.weight']
         self.layers = [self.fc1, self.fc2, self.fc3]
@@ -68,11 +67,10 @@ class HebbianFrame(MetaFramework):
 
     def create_learner_and_optimizer(self):
         learner = HebbianNet(fixed_parameters['input_size'],
-                             hyperparameters['mid1'],
-                             hyperparameters['mid2'],
+                             hyperparameters['learner_hidden_width'],
                              fixed_parameters['num_classes'],
                              fixed_parameters['meta_input'],
-                             hyperparameters['meta_mid'],
+                             hyperparameters['meta_hidden_width'],
                              fixed_parameters['meta_output'],
                              hyperparameters['learner_batch_size'],
                              hyperparameters['update_rate'])

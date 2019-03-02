@@ -5,20 +5,30 @@ import matplotlib.pyplot as plt
 import pandas as pd
 
 
-def run_theta_phi_pair(theta_val, phi_val):
-    print("Running Hebbian:", theta_val, phi_val)
-    hebbian_acc = [hebbian_frame.train_model(theta=theta_val, phi=phi_val) for _ in range(experiment_iterations)]
-    formatted_hebbian = [{'theta': theta_val, 'phi': phi_val, 'bool_hebbian': 1, 'acc': a} for a in hebbian_acc]
+def label_hebbian(d):
+    d['bool_hebbian'] = 1
+    return d
 
-    print("Running Control:", theta_val, phi_val)
-    control_acc = [control_frame.train_model(theta=theta_val, phi=phi_val) for _ in range(experiment_iterations)]
-    formatted_control = [{'theta': theta_val, 'phi': phi_val, 'bool_hebbian': 0, 'acc': a} for a in control_acc]
 
-    return formatted_control + formatted_hebbian
+def label_control(d):
+    d['bool_hebbian'] = 0
+    return d
+
+
+def run_theta_phi_pair(phi_val, theta_val):
+    print("Running Hebbian:", phi_val, theta_val)
+    hebbian_list = [label_hebbian(hebbian_frame.train_model(phi=phi_val, theta=theta_val, intermediate_accuracy=True)) for _ in range(experiment_iterations)]
+    hebbian_list = [d for iteration in hebbian_list for d in iteration] # flattens
+
+    print("Running Control:", phi_val, theta_val)
+    control_list = [label_control(control_frame.train_model(phi=phi_val, theta=theta_val)) for _ in
+                    range(experiment_iterations)]
+    control_list = [d for iteration in control_list for d in iteration]
+
+    return hebbian_list + control_list
 
 
 def visualize_phi(input_path, fn, y_name, image_path, image_name):
-
     phi_df = pd.read_csv(input_path)
     agg = []
     for phi in set(phi_df['phi']):
@@ -44,7 +54,6 @@ def visualize_phi(input_path, fn, y_name, image_path, image_name):
 
 
 def visualize_theta(input_path, fn, y_name, image_path, image_name):
-
     theta_df = pd.read_csv(input_path)
     agg = []
     for theta in set(theta_df['phi']):
