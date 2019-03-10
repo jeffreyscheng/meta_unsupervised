@@ -65,7 +65,7 @@ class LearnerNet(nn.Module):
                 print(x_i.size())
                 print(self.metalearner(x_i).size())
                 return self.metalearner(x_i) * self.rate / batch_num
-            shift = torch.stack([test_fn(x_i) for _, x_i in enumerate(torch.unbind(x, dim=1), 0)], dim=0).squeeze(0)
+            shift = torch.stack([test_fn(x_i) for _, x_i in enumerate(torch.unbind(meta_inputs, dim=1), 0)], dim=0).squeeze(0)
 
             # output, update weights
             print(old_vj.size())

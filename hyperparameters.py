@@ -33,6 +33,6 @@ if dataset_name == 'MNIST':
     hyperparameters = {'learner_hidden_width': 800,
                        'meta_hidden_width': 50,
                        'learning_rate': 0.0001,
-                       'learner_batch_size': 500,
+                       'learner_batch_size': 50,
                        'update_rate': 0.001}
     num_data = 60000
