@@ -25,7 +25,11 @@ class HebbianNet(nn.Module):
     def get_update(self, meta_input_stack):
         slice_along_layer1 = torch.randperm(meta_input_stack.size(2))[meta_data_ratio]
         slice_along_layer2 = torch.randperm(meta_input_stack.size(3))[meta_data_ratio]
+        print(slice_along_layer1)
+        print(slice_along_layer2)
         sampled_meta_input_stack = meta_input_stack[:, :, slice_along_layer1, slice_along_layer2]
+        print(sampled_meta_input_stack)
+        print(sampled_meta_input_stack.size())
 
         tick = time.time()
         print(sampled_meta_input_stack.size())
