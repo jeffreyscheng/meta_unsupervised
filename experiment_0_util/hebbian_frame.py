@@ -15,8 +15,8 @@ class HebbianNet(nn.Module):
         self.fc1 = nn.Linear(input_size, learner_hidden)
         self.fc2 = nn.Linear(learner_hidden, output_size)
         self.batch_size = batch_size
-        self.conv1 = nn.Conv1d(in_channels=meta_input, out_channels=meta_hidden, kernel_size=1, bias=True)
-        self.conv2 = nn.Conv1d(in_channels=meta_hidden, out_channels=meta_output, kernel_size=1, bias=True)
+        self.conv1 = nn.Conv1d(in_channels=meta_input, out_channels=meta_hidden, kernel_size=3, bias=True)
+        self.conv2 = nn.Conv1d(in_channels=meta_hidden, out_channels=meta_output, kernel_size=3, bias=True)
         self.param_state = self.state_dict(keep_vars=True)
         self.param_names = ['fc1.weight', 'fc2.weight']
         self.layers = [self.fc1, self.fc2]
@@ -24,25 +24,32 @@ class HebbianNet(nn.Module):
 
     # get new weight
     def get_update(self, meta_input_stack):
-        # sampling from neurons
-        slice_along_layer1 = Variable(torch.randperm(meta_input_stack.size(2))[:meta_data_ratio])
-        slice_along_layer2 = Variable(torch.randperm(meta_input_stack.size(3))[:meta_data_ratio])
-        if gpu_bool:
-            slice_along_layer1 = slice_along_layer1.cuda()
-            slice_along_layer2 = slice_along_layer2.cuda()
+        # # sampling from neurons
+        # slice_along_layer1 = Variable(torch.randperm(meta_input_stack.size(2))[:meta_data_ratio])
+        # slice_along_layer2 = Variable(torch.randperm(meta_input_stack.size(3))[:meta_data_ratio])
+        # if gpu_bool:
+        #     slice_along_layer1 = slice_along_layer1.cuda()
+        #     slice_along_layer2 = slice_along_layer2.cuda()
+        #
+        # # slicing along samples
+        # sampled_meta_input_stack = torch.index_select(meta_input_stack, 2, slice_along_layer1)
+        # sampled_meta_input_stack = torch.index_select(sampled_meta_input_stack, 3, slice_along_layer2)
+        #
+        # # convolving metalearner
+        # batch, channel, layer1, layer2 = sampled_meta_input_stack.size()
+        # #  this view is a fixed bottleneck of 0.5s, regardless of batch size or layer width
+        # sampled_meta_input_stack = sampled_meta_input_stack.view(batch, channel, layer1 * layer2)
+        # sampled_meta_input_stack = self.relu(self.conv1(sampled_meta_input_stack))
+        # sampled_meta_input_stack = torch.squeeze(self.conv2(sampled_meta_input_stack), 1)
+        # sampled_meta_input_stack = sampled_meta_input_stack.view(batch, layer1, layer2)
+        # return sampled_meta_input_stack
 
-        # slicing along samples
-        sampled_meta_input_stack = torch.index_select(meta_input_stack, 2, slice_along_layer1)
-        sampled_meta_input_stack = torch.index_select(sampled_meta_input_stack, 3, slice_along_layer2)
-
-        # convolving metalearner
-        batch, channel, layer1, layer2 = sampled_meta_input_stack.size()
-        #  this view is a fixed bottleneck of 0.5s, regardless of batch size or layer width
-        sampled_meta_input_stack = sampled_meta_input_stack.view(batch, channel, layer1 * layer2)
-        sampled_meta_input_stack = self.relu(self.conv1(sampled_meta_input_stack))
-        sampled_meta_input_stack = torch.squeeze(self.conv2(sampled_meta_input_stack), 1)
-        sampled_meta_input_stack = sampled_meta_input_stack.view(batch, layer1, layer2)
-        return sampled_meta_input_stack
+        batch, channel, layer1, layer2 = meta_input_stack.size()
+        meta_input_stack = meta_input_stack.view(batch, channel, layer1 * layer2)
+        meta_input_stack = self.relu(self.conv1(meta_input_stack))
+        meta_input_stack = torch.squeeze(self.conv2(meta_input_stack), 1)
+        meta_input_stack = meta_input_stack.view(batch, layer1, layer2)
+        return meta_input_stack
 
     # @timeit
     def forward(self, x, batch_num):
