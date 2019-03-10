@@ -61,8 +61,8 @@ class LearnerNet(nn.Module):
             meta_inputs = torch.stack((input_stack, weight_stack, output_stack), dim=3).permute(1, 2, 3, 0).contiguous().view(3, stack_prod)
 
             def test_fn(x_i):
-                print(x_i)
-                print(self.metalearner(x_i))
+                print(x_i.size())
+                print(self.metalearner(x_i).size())
                 return self.metalearner(x_i) * self.rate / batch_num
             shift = torch.stack([test_fn(x_i) for _, x_i in enumerate(torch.unbind(x, dim=1), 0)], dim=0).squeeze(0)
 
