@@ -4,96 +4,35 @@ import torch
 import torch.nn as nn
 import gc
 
-import sys
-from numbers import Number
-from collections import Set, Mapping, deque
 
-try:  # Python 2
-    zero_depth_bases = (basestring, Number, xrange, bytearray)
-    iteritems = 'iteritems'
-except NameError:  # Python 3
-    zero_depth_bases = (str, bytes, Number, range, bytearray)
-    iteritems = 'items'
+class MetaLearnerNet(nn.Module):
 
+    def __init__(self, meta_input, meta_hidden, meta_output):
+        super(MetaLearnerNet, self).__init__()
+        self.relu = nn.ReLU()
+        self.fc1 = nn.Linear(meta_input, meta_hidden)
+        self.fc2 = nn.Linear(meta_hidden, meta_output)
 
-def getsize(obj_0):
-    """Recursively iterate to sum size of object & members."""
-    _seen_ids = set()
-
-    def inner(obj):
-        obj_id = id(obj)
-        if obj_id in _seen_ids:
-            return 0
-        _seen_ids.add(obj_id)
-        size = sys.getsizeof(obj)
-        if isinstance(obj, zero_depth_bases):
-            pass  # bypass remaining control flow and return
-        elif isinstance(obj, (tuple, list, Set, deque)):
-            size += sum(inner(i) for i in obj)
-        elif isinstance(obj, Mapping) or hasattr(obj, iteritems):
-            size += sum(inner(k) + inner(v) for k, v in getattr(obj, iteritems)())
-        # Check for custom object instances - may subclass above too
-        if hasattr(obj, '__dict__'):
-            size += inner(vars(obj))
-        if hasattr(obj, '__slots__'):  # can have __slots__ with __dict__
-            size += sum(inner(getattr(obj, s)) for s in obj.__slots__ if hasattr(obj, s))
-        return size
-
-    return inner(obj_0)
+    def forward(self, x):
+        return self.fc2(self.relu(self.fc1))
 
 
 # Template for Single Structure
-class HebbianNet(nn.Module):
+class LearnerNet(nn.Module):
 
     def __init__(self, input_size, learner_hidden, output_size, meta_input, meta_hidden, meta_output, batch_size,
                  rate):
-        super(HebbianNet, self).__init__()
+        super(LearnerNet, self).__init__()
         self.relu = nn.ReLU()
         self.fc1 = nn.Linear(input_size, learner_hidden)
         self.fc2 = nn.Linear(learner_hidden, output_size)
         self.batch_size = batch_size
-        self.conv1 = nn.Conv1d(in_channels=meta_input, out_channels=meta_hidden, kernel_size=3, bias=True)
-        self.conv2 = nn.Conv1d(in_channels=meta_hidden, out_channels=meta_output, kernel_size=3, bias=True)
+        self.metalearner = MetaLearnerNet(meta_input, meta_hidden, meta_output)
         self.param_state = self.state_dict(keep_vars=True)
         self.param_names = ['fc1.weight', 'fc2.weight']
         self.layers = [self.fc1, self.fc2]
         self.rate = rate
 
-    # get new weight
-    def get_update(self, meta_input_stack):
-        # # sampling from neurons
-        # slice_along_layer1 = Variable(torch.randperm(meta_input_stack.size(2))[:meta_data_ratio])
-        # slice_along_layer2 = Variable(torch.randperm(meta_input_stack.size(3))[:meta_data_ratio])
-        # if gpu_bool:
-        #     slice_along_layer1 = slice_along_layer1.cuda()
-        #     slice_along_layer2 = slice_along_layer2.cuda()
-        #
-        # # slicing along samples
-        # sampled_meta_input_stack = torch.index_select(meta_input_stack, 2, slice_along_layer1)
-        # sampled_meta_input_stack = torch.index_select(sampled_meta_input_stack, 3, slice_along_layer2)
-        #
-        # # convolving metalearner
-        # batch, channel, layer1, layer2 = sampled_meta_input_stack.size()
-        # #  this view is a fixed bottleneck of 0.5s, regardless of batch size or layer width
-        # sampled_meta_input_stack = sampled_meta_input_stack.view(batch, channel, layer1 * layer2)
-        # sampled_meta_input_stack = self.relu(self.conv1(sampled_meta_input_stack))
-        # sampled_meta_input_stack = torch.squeeze(self.conv2(sampled_meta_input_stack), 1)
-        # sampled_meta_input_stack = sampled_meta_input_stack.view(batch, layer1, layer2)
-        # return sampled_meta_input_stack
-
-        def get_size(x):
-            return sum([sys.getsizeof(y.data) for y in x])
-
-        batch, channel, layer1, layer2 = meta_input_stack.size()
-        print("size ", getsize(meta_input_stack))
-        meta_input_stack = meta_input_stack.contiguous().view(batch, channel, layer1 * layer2)
-        print("size ", getsize(meta_input_stack))
-        meta_input_stack = self.relu(self.conv1(meta_input_stack))
-        meta_input_stack = torch.squeeze(self.conv2(meta_input_stack), 1)
-        meta_input_stack = meta_input_stack.view(batch, layer1, layer2)
-        return meta_input_stack
-
-    # @timeit
     def forward(self, x, batch_num):
         out = x
         for layer_num in range(0, len(self.layers)):
@@ -118,8 +57,9 @@ class HebbianNet(nn.Module):
                 for obj in gc.get_objects():
                     if torch.is_tensor(obj) or (hasattr(obj, 'data') and torch.is_tensor(obj.data)):
                         print(type(obj), obj.size())
-            meta_inputs = torch.stack((input_stack, weight_stack, output_stack), dim=3).permute(0, 3, 1, 2)
-            shift = self.get_update(meta_inputs) * self.rate / batch_num
+            stack_prod = stack_dim[0] * stack_dim[1] * stack_dim[2]
+            meta_inputs = torch.stack((input_stack, weight_stack, output_stack), dim=3).permute(1, 2, 3, 0).contiguous().view(3, stack_prod)
+            shift = torch.stack([self.metalearner(x_i) * self.rate / batch_num for i, x_i in enumerate(torch.unbind(x, dim=1), 0)], dim=0).squeeze(0)
 
             # output, update weights
             print(old_vj.size())
@@ -137,7 +77,7 @@ class HebbianFrame(MetaFramework):
         super(HebbianFrame, self).__init__(name, fixed_params)
 
     def create_learner_and_optimizer(self):
-        learner = HebbianNet(fixed_parameters['input_size'],
+        learner = LearnerNet(fixed_parameters['input_size'],
                              hyperparameters['learner_hidden_width'],
                              fixed_parameters['num_classes'],
                              fixed_parameters['meta_input'],
