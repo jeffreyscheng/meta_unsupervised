@@ -14,7 +14,7 @@ class MetaLearnerNet(nn.Module):
         self.fc2 = nn.Linear(meta_hidden, meta_output)
 
     def forward(self, x):
-        return self.fc2(self.relu(self.fc1))
+        return self.fc2(self.relu(self.fc1(x)))
 
 
 # Template for Single Structure
