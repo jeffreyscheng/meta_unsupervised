@@ -7,6 +7,7 @@ gpu_bool = torch.cuda.device_count() > 0
 experiment_iterations = 1
 base_optimizer = torch.optim.Adam
 time_out = 20 * 60
+meta_data_ratio = 10
 # os.environ["CUDA_VISIBLE_DEVICES"] = "2"
 
 

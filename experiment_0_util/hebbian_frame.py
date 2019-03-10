@@ -23,16 +23,19 @@ class HebbianNet(nn.Module):
 
     # get new weight
     def get_update(self, meta_input_stack):
+        slice_along_layer1 = torch.randperm(meta_input_stack.size(2))[meta_data_ratio]
+        slice_along_layer2 = torch.randperm(meta_input_stack.size(3))[meta_data_ratio]
+        sampled_meta_input_stack = meta_input_stack[:, :, slice_along_layer1, slice_along_layer2]
 
         tick = time.time()
-        print(meta_input_stack.size())
-        meta_input_stack = torch.unbind(meta_input_stack, 3)
-        print(meta_input_stack[0].size())
-        meta_input_stack = [torch.squeeze(self.conv2(self.relu(self.conv1(meta_slice))), 1) for meta_slice in meta_input_stack]
-        print(len(meta_input_stack))
-        print(meta_input_stack[0].size())
-        meta_input_stack = torch.stack(meta_input_stack, 2)
-        print(meta_input_stack.size())
+        print(sampled_meta_input_stack.size())
+        sampled_meta_input_stack = torch.unbind(sampled_meta_input_stack, 3)
+        print(sampled_meta_input_stack[0].size())
+        sampled_meta_input_stack = [torch.squeeze(self.conv2(self.relu(self.conv1(meta_slice))), 1) for meta_slice in sampled_meta_input_stack]
+        print(len(sampled_meta_input_stack))
+        print(sampled_meta_input_stack[0].size())
+        sampled_meta_input_stack = torch.stack(sampled_meta_input_stack, 2)
+        print(sampled_meta_input_stack.size())
         print(time.time() - tick)
         raise ValueError
         # tick = time.time()
@@ -45,7 +48,8 @@ class HebbianNet(nn.Module):
         # print(meta_input_stack.size())
         # print(time.time() - tick)
         # raise ValueError
-        return meta_input_stack
+        del meta_input_stack
+        return sampled_meta_input_stack
 
     # @timeit
     def forward(self, x, batch_num):

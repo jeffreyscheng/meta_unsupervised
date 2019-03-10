@@ -13,13 +13,6 @@ class ControlNet(nn.Module):
         self.fc1 = nn.Linear(input_size, hidden)
         self.fc2 = nn.Linear(hidden, output_size)
 
-    # get new weight
-    def get_update(self, meta_input_stack):
-        out = self.conv1(meta_input_stack)
-        out = self.conv2(out)
-        out = torch.squeeze(out, 1)
-        return out
-
     def forward(self, x, batch_num=1):
         out = x
         out = self.fc1(out)
