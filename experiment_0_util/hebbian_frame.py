@@ -62,8 +62,10 @@ class LearnerNet(nn.Module):
             print(meta_inputs.size())
 
             def test_fn(x_i):
+                tick = time.time()
                 print(x_i.size())
                 print(self.metalearner(x_i).size())
+                print(time.time() - tick)
                 return self.metalearner(x_i) * self.rate / batch_num
             shift = torch.stack([test_fn(x_i) for _, x_i in enumerate(torch.unbind(meta_inputs, dim=1), 0)], dim=0).squeeze(0)
 
