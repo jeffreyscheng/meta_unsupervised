@@ -45,10 +45,12 @@ class HebbianNet(nn.Module):
         # sampled_meta_input_stack = sampled_meta_input_stack.view(batch, layer1, layer2)
         # return sampled_meta_input_stack
 
+        def get_size(x):
+            return sum([sys.getsizeof(y.data) for y in x])
         batch, channel, layer1, layer2 = meta_input_stack.size()
-        print("size ", sys.getsizeof(meta_input_stack))
+        print("size ", get_size(meta_input_stack))
         meta_input_stack = meta_input_stack.contiguous().view(batch, channel, layer1 * layer2)
-        print("size ", sys.getsizeof(meta_input_stack))
+        print("size ", get_size(meta_input_stack))
         meta_input_stack = self.relu(self.conv1(meta_input_stack))
         meta_input_stack = torch.squeeze(self.conv2(meta_input_stack), 1)
         meta_input_stack = meta_input_stack.view(batch, layer1, layer2)
