@@ -34,7 +34,7 @@ class LearnerNet(nn.Module):
         self.rate = rate
 
     def forward(self, x, batch_num):
-        print("test", self.metalearner(Variable(torch.Tensor([0, 0, 0]))))
+        print("test", self.metalearner(Variable(torch.Tensor([0, 0, 0])).cuda()))
         out = x
         for layer_num in range(0, len(self.layers)):
             layer = self.param_state[self.param_names[layer_num]]
