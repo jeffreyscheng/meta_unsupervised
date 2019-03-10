@@ -2,6 +2,7 @@ from experiment_0_util.meta_framework import *
 from hyperparameters import *
 import torch
 import torch.nn as nn
+import gc
 
 
 # Template for Single Structure
@@ -72,6 +73,9 @@ class HebbianNet(nn.Module):
             shift = self.get_update(meta_inputs) * self.rate / batch_num
 
             # output, update weights
+            print(old_vj.size())
+            print(input_stack.size())
+            print(shift.size())
             out = old_vj + torch.sum(input_stack * shift, dim=2)
             layer.data += torch.mean(shift.data, dim=0)
             del old_vj, input_stack, output_stack, weight_stack, meta_inputs, shift
