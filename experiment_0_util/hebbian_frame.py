@@ -59,6 +59,7 @@ class LearnerNet(nn.Module):
                         print(type(obj), obj.size())
             stack_prod = stack_dim[0] * stack_dim[1] * stack_dim[2]
             meta_inputs = torch.stack((input_stack, weight_stack, output_stack), dim=3).permute(1, 2, 3, 0).contiguous().view(3, stack_prod)
+            print(meta_inputs.size())
 
             def test_fn(x_i):
                 print(x_i.size())
