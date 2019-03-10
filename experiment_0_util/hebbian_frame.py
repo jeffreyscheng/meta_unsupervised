@@ -23,22 +23,18 @@ class HebbianNet(nn.Module):
 
     # get new weight
     def get_update(self, meta_input_stack):
+        tick = time.time()
         slice_along_layer1 = Variable(torch.randperm(meta_input_stack.size(2))[:meta_data_ratio])
         slice_along_layer2 = Variable(torch.randperm(meta_input_stack.size(3))[:meta_data_ratio])
-        print(slice_along_layer1)
-        print(slice_along_layer2)
         if gpu_bool:
             slice_along_layer1 = slice_along_layer1.cuda()
             slice_along_layer2 = slice_along_layer2.cuda()
         sampled_meta_input_stack = torch.index_select(meta_input_stack, 2, slice_along_layer1)
         sampled_meta_input_stack = torch.index_select(sampled_meta_input_stack, 3, slice_along_layer2)
-        print(sampled_meta_input_stack)
+        print(time.time() - tick)
         print(sampled_meta_input_stack.size())
 
-        tick = time.time()
-        print(sampled_meta_input_stack.size())
         sampled_meta_input_stack = torch.unbind(sampled_meta_input_stack, 3)
-        print(sampled_meta_input_stack[0].size())
         sampled_meta_input_stack = [torch.squeeze(self.conv2(self.relu(self.conv1(meta_slice))), 1) for meta_slice in sampled_meta_input_stack]
         print(len(sampled_meta_input_stack))
         print(sampled_meta_input_stack[0].size())
