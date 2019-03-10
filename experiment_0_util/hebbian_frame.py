@@ -34,24 +34,25 @@ class HebbianNet(nn.Module):
         print(time.time() - tick)
         print(sampled_meta_input_stack.size())
 
-        sampled_meta_input_stack = torch.unbind(sampled_meta_input_stack, 3)
-        sampled_meta_input_stack = [torch.squeeze(self.conv2(self.relu(self.conv1(meta_slice))), 1) for meta_slice in sampled_meta_input_stack]
-        print(len(sampled_meta_input_stack))
-        print(sampled_meta_input_stack[0].size())
-        sampled_meta_input_stack = torch.stack(sampled_meta_input_stack, 2)
+        # sampled_meta_input_stack = torch.unbind(sampled_meta_input_stack, 3)
+        # sampled_meta_input_stack = [torch.squeeze(self.conv2(self.relu(self.conv1(meta_slice))), 1) for meta_slice in sampled_meta_input_stack]
+        # print(len(sampled_meta_input_stack))
+        # print(sampled_meta_input_stack[0].size())
+        # sampled_meta_input_stack = torch.stack(sampled_meta_input_stack, 2)
+        # print(sampled_meta_input_stack.size())
+        # print(time.time() - tick)
+        # raise ValueError
+
+        tick = time.time()
+        batch, channel, layer1, layer2 = sampled_meta_input_stack.size()
+        sampled_meta_input_stack = sampled_meta_input_stack.view(batch, channel, layer1 * layer2)
+        print(tick - time.time())
+        sampled_meta_input_stack = torch.squeeze(self.conv2(self.relu(self.conv1(sampled_meta_input_stack))), 1)
+        print(tick - time.time())
+        sampled_meta_input_stack = sampled_meta_input_stack.view(batch, layer1, layer2)
         print(sampled_meta_input_stack.size())
         print(time.time() - tick)
         raise ValueError
-        # tick = time.time()
-        # batch, channel, layer1, layer2 = meta_input_stack.size()
-        # meta_input_stack = meta_input_stack.view(batch, channel, layer1 * layer2)
-        # print(tick - time.time())
-        # meta_input_stack = torch.squeeze(self.conv2(self.relu(self.conv1(meta_input_stack))), 1)
-        # print(tick - time.time())
-        # meta_input_stack = meta_input_stack.view(batch, layer1, layer2)
-        # print(meta_input_stack.size())
-        # print(time.time() - tick)
-        # raise ValueError
         del meta_input_stack
         return sampled_meta_input_stack
 
