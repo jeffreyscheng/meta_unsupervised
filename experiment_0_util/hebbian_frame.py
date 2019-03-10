@@ -23,46 +23,30 @@ class HebbianNet(nn.Module):
 
     # get new weight
     def get_update(self, meta_input_stack):
-        tick = time.time()
+        # sampling from neurons
         slice_along_layer1 = Variable(torch.randperm(meta_input_stack.size(2))[:meta_data_ratio])
         slice_along_layer2 = Variable(torch.randperm(meta_input_stack.size(3))[:meta_data_ratio])
         if gpu_bool:
             slice_along_layer1 = slice_along_layer1.cuda()
             slice_along_layer2 = slice_along_layer2.cuda()
+
+        # slicing along samples
         sampled_meta_input_stack = torch.index_select(meta_input_stack, 2, slice_along_layer1)
         sampled_meta_input_stack = torch.index_select(sampled_meta_input_stack, 3, slice_along_layer2)
-        print(time.time() - tick)
-        print(sampled_meta_input_stack.size())
 
-        # sampled_meta_input_stack = torch.unbind(sampled_meta_input_stack, 3)
-        # sampled_meta_input_stack = [torch.squeeze(self.conv2(self.relu(self.conv1(meta_slice))), 1) for meta_slice in sampled_meta_input_stack]
-        # print(len(sampled_meta_input_stack))
-        # print(sampled_meta_input_stack[0].size())
-        # sampled_meta_input_stack = torch.stack(sampled_meta_input_stack, 2)
-        # print(sampled_meta_input_stack.size())
-        # print(time.time() - tick)
-        # raise ValueError
-
-        tick = time.time()
+        # convolving metalearner
         batch, channel, layer1, layer2 = sampled_meta_input_stack.size()
+        #  this view is a fixed bottleneck of 0.5s, regardless of batch size or layer width
         sampled_meta_input_stack = sampled_meta_input_stack.view(batch, channel, layer1 * layer2)
-        print(tick - time.time())
         sampled_meta_input_stack = self.relu(self.conv1(sampled_meta_input_stack))
-        print(tick - time.time())
         sampled_meta_input_stack = torch.squeeze(self.conv2(sampled_meta_input_stack), 1)
-        # sampled_meta_input_stack = torch.squeeze(self.conv2(self.relu(self.conv1(sampled_meta_input_stack))), 1)
-        print(tick - time.time())
         sampled_meta_input_stack = sampled_meta_input_stack.view(batch, layer1, layer2)
-        print(sampled_meta_input_stack.size())
-        print(time.time() - tick)
-        raise ValueError
-        del meta_input_stack
         return sampled_meta_input_stack
 
     # @timeit
     def forward(self, x, batch_num):
         out = x
-        for layer_num in range(0, 3):
+        for layer_num in range(0, len(self.layers)):
             layer = self.param_state[self.param_names[layer_num]]
             vi = out
             old_vj = self.layers[layer_num](out)
@@ -72,7 +56,7 @@ class HebbianNet(nn.Module):
                 input_stack = vi.unsqueeze(1).expand(stack_dim)
                 output_stack = old_vj.unsqueeze(2).expand(stack_dim)
                 weight_stack = layer.unsqueeze(0).expand(stack_dim)
-            except RuntimeError:
+            except RuntimeError:  # frequent memory errors happen on this step
                 print(self.batch_size)
                 print(stack_dim)
                 print(vi.size())
