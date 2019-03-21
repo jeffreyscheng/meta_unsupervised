@@ -113,7 +113,7 @@ class MetaFramework(object):
                 correct += (predicted == test_labels).sum()
                 if not isinstance(correct, int):
                     correct = correct.item()
-                del test_images, outputs, predicted, test_labels
+                del test_images, test_outputs, predicted, test_labels
             print('Accuracy of the network on the 10000 test images: %d %%' % (100 * correct / total))
             accuracy = correct / total
             if intermediate_accuracy:
