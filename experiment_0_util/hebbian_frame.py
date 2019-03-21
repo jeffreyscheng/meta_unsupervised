@@ -1,79 +1,52 @@
 from experiment_0_util.meta_framework import *
 from hyperparameters import *
 import torch
-import torch.nn as nn
-import gc
-
-
-class MetaLearnerNet(nn.Module):
-
-    def __init__(self, meta_input, meta_hidden, meta_output):
-        super(MetaLearnerNet, self).__init__()
-        self.relu = nn.ReLU()
-        self.fc1 = nn.Linear(meta_input, meta_hidden)
-        self.fc2 = nn.Linear(meta_hidden, meta_output)
-
-    def forward(self, x):
-        return self.fc2(self.relu(self.fc1(x)))
 
 
 # Template for Single Structure
-class LearnerNet(nn.Module):
+class HebbianNet(nn.Module):
 
-    def __init__(self, input_size, learner_hidden, output_size, meta_input, meta_hidden, meta_output, batch_size,
+    def __init__(self, input_size, hidden1, hidden2, output_size, meta_input, meta_hidden, meta_output, batch_size,
                  rate):
-        super(LearnerNet, self).__init__()
+        super(HebbianNet, self).__init__()
         self.relu = nn.ReLU()
-        self.fc1 = nn.Linear(input_size, learner_hidden)
-        self.fc2 = nn.Linear(learner_hidden, output_size)
+        self.fc1 = nn.Linear(input_size, hidden1)
+        self.fc2 = nn.Linear(hidden1, hidden2)
+        self.fc3 = nn.Linear(hidden2, output_size)
         self.batch_size = batch_size
-        self.metalearner = MetaLearnerNet(meta_input, meta_hidden, meta_output)
+        self.impulse = None
+        self.conv1 = nn.Conv2d(in_channels=meta_input, out_channels=meta_hidden, kernel_size=1, bias=True)
+        self.conv2 = nn.Conv2d(in_channels=meta_hidden, out_channels=meta_output, kernel_size=1, bias=True)
+        self.metadata = {}
         self.param_state = self.state_dict(keep_vars=True)
-        self.param_names = ['fc1.weight', 'fc2.weight']
-        self.layers = [self.fc1, self.fc2]
+        self.param_names = ['fc1.weight', 'fc2.weight', 'fc3.weight']
+        self.layers = [self.fc1, self.fc2, self.fc3]
         self.rate = rate
 
+    # get new weight
+    def get_update(self, meta_input_stack):
+        return torch.squeeze(self.conv2(self.relu(self.conv1(meta_input_stack))), 1)
+
+    # @timeit
     def forward(self, x, batch_num):
-        print("test", self.metalearner(Variable(torch.Tensor([0, 0, 0])).cuda()))
+        if self.impulse is not None:
+            if len(self.impulse) > 4:
+                raise ValueError("long impulse!")
+        self.metadata = {}
         out = x
-        for layer_num in range(0, len(self.layers)):
+        for layer_num in range(0, 3):
             layer = self.param_state[self.param_names[layer_num]]
             vi = out
             old_vj = self.layers[layer_num](out)
             old_vj = self.relu(old_vj)
             stack_dim = self.batch_size, layer.size()[0], layer.size()[1]
-            try:
-                input_stack = vi.unsqueeze(1).expand(stack_dim)
-                output_stack = old_vj.unsqueeze(2).expand(stack_dim)
-                weight_stack = layer.unsqueeze(0).expand(stack_dim)
-            except RuntimeError:  # frequent memory errors happen on this step
-                print(self.batch_size)
-                print(stack_dim)
-                print(vi.size())
-                print(old_vj.size())
-                print(layer.size())
-                input_stack = vi.unsqueeze(1).expand(stack_dim)
-                output_stack = old_vj.unsqueeze(2).expand(stack_dim)
-                weight_stack = layer.unsqueeze(0).expand(stack_dim)
-                for obj in gc.get_objects():
-                    if torch.is_tensor(obj) or (hasattr(obj, 'data') and torch.is_tensor(obj.data)):
-                        print(type(obj), obj.size())
-            stack_prod = stack_dim[0] * stack_dim[1] * stack_dim[2]
-            meta_inputs = torch.stack((input_stack, weight_stack, output_stack), dim=3).permute(1, 2, 3, 0).contiguous().view(3, stack_prod)
-            print(meta_inputs.size())
-
-            def test_fn(x_i):
-                tick = time.time()
-                print(x_i.size())
-                print(self.metalearner(x_i).size())
-                print(time.time() - tick)
-                return self.metalearner(x_i) * self.rate / batch_num
-            shift = torch.stack([test_fn(x_i) for _, x_i in enumerate(torch.unbind(meta_inputs, dim=1), 0)], dim=0).squeeze(0)
+            input_stack = vi.unsqueeze(1).expand(stack_dim)
+            output_stack = old_vj.unsqueeze(2).expand(stack_dim)
+            weight_stack = layer.unsqueeze(0).expand(stack_dim)
+            meta_inputs = torch.stack((input_stack, weight_stack, output_stack), dim=3).permute(0, 3, 1, 2)
+            shift = self.get_update(meta_inputs) * self.rate / batch_num
 
             # output, update weights
-            print(old_vj.size())
-            print(input_stack.size())
-            print(shift.size())
             out = old_vj + torch.sum(input_stack * shift, dim=2)
             layer.data += torch.mean(shift.data, dim=0)
             del old_vj, input_stack, output_stack, weight_stack, meta_inputs, shift
@@ -86,7 +59,7 @@ class HebbianFrame(MetaFramework):
         super(HebbianFrame, self).__init__(name, fixed_params)
 
     def create_learner_and_optimizer(self):
-        learner = LearnerNet(fixed_parameters['input_size'],
+        learner = HebbianNet(fixed_parameters['input_size'],
                              hyperparameters['learner_hidden_width'],
                              fixed_parameters['num_classes'],
                              fixed_parameters['meta_input'],
