@@ -6,21 +6,17 @@ import torch
 # Template for Single Structure
 class HebbianNet(nn.Module):
 
-    def __init__(self, input_size, hidden1, hidden2, output_size, meta_input, meta_hidden, meta_output, batch_size,
-                 rate):
+    def __init__(self, input_size, hidden, output_size, meta_input, meta_hidden, meta_output, batch_size, rate):
         super(HebbianNet, self).__init__()
         self.relu = nn.ReLU()
-        self.fc1 = nn.Linear(input_size, hidden1)
-        self.fc2 = nn.Linear(hidden1, hidden2)
-        self.fc3 = nn.Linear(hidden2, output_size)
+        self.fc1 = nn.Linear(input_size, hidden)
+        self.fc2 = nn.Linear(hidden, output_size)
         self.batch_size = batch_size
-        self.impulse = None
         self.conv1 = nn.Conv2d(in_channels=meta_input, out_channels=meta_hidden, kernel_size=1, bias=True)
         self.conv2 = nn.Conv2d(in_channels=meta_hidden, out_channels=meta_output, kernel_size=1, bias=True)
-        self.metadata = {}
         self.param_state = self.state_dict(keep_vars=True)
         self.param_names = ['fc1.weight', 'fc2.weight', 'fc3.weight']
-        self.layers = [self.fc1, self.fc2, self.fc3]
+        self.layers = [self.fc1, self.fc2]
         self.rate = rate
 
     # get new weight
@@ -29,12 +25,8 @@ class HebbianNet(nn.Module):
 
     # @timeit
     def forward(self, x, batch_num):
-        if self.impulse is not None:
-            if len(self.impulse) > 4:
-                raise ValueError("long impulse!")
-        self.metadata = {}
         out = x
-        for layer_num in range(0, 3):
+        for layer_num in range(0, len(self.layers)):
             layer = self.param_state[self.param_names[layer_num]]
             vi = out
             old_vj = self.layers[layer_num](out)
