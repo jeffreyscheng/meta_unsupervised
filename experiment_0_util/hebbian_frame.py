@@ -23,7 +23,6 @@ class HebbianNet(nn.Module):
     def get_update(self, meta_input_stack):
         return torch.squeeze(self.conv2(self.relu(self.conv1(meta_input_stack))), 1)
 
-    # @timeit
     def forward(self, x, batch_num=1):
         out = x
         for layer_num in range(0, len(self.layers)):

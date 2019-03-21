@@ -6,7 +6,6 @@ import pandas as pd
 
 
 def label_hebbian(d, bool_hebbian):
-    print(d)
     d['bool_hebbian'] = bool_hebbian
     return d
 
