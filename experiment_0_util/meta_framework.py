@@ -95,7 +95,7 @@ class MetaFramework(object):
 
         batch_num = 0
 
-        learning_curve_dict = []
+        learning_curve_list = []
 
         def test_model(model):
             # Test the Model
@@ -114,14 +114,14 @@ class MetaFramework(object):
                 if not isinstance(correct, int):
                     correct = correct.item()
                 del test_images, test_outputs, predicted, test_labels
-            print('Accuracy of the network on the 10000 test images: %d %%' % (100 * correct / total))
+            print('Accuracy of the network on ' + batch_num * hyperparameters['learner_batch_size'] + ' test images: ' + str(100 * correct / total))
             accuracy = correct / total
             if intermediate_accuracy:
                 now_phi = batch_num * hyperparameters['learner_batch_size'] / num_data
             else:
                 now_phi = phi
-            learning_curve_dict.append({'phi': now_phi, 'theta': theta, 'accuracy': accuracy})
-            return learning_curve_dict
+            learning_curve_list.append({'phi': now_phi, 'theta': theta, 'accuracy': accuracy})
+            return learning_curve_list
 
         def stop_training(tock, batch):
             return tock - tick > time_out or batch * hyperparameters['learner_batch_size'] / num_data > phi
@@ -160,5 +160,4 @@ class MetaFramework(object):
             if not intermediate_accuracy:
                 test_model(learner)
             del learner
-            print('got here')
-            return learning_curve_dict
+            return learning_curve_list
