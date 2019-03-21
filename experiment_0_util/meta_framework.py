@@ -149,7 +149,7 @@ class MetaFramework(object):
                 optimizer.step()
                 del learner_loss
 
-            if batch_num % 100 == 0 and not return_model and intermediate_accuracy:
+            if not return_model and intermediate_accuracy:
                 test_model(learner)
 
             del images, labels, outputs
