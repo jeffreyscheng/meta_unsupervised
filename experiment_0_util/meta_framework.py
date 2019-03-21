@@ -147,10 +147,12 @@ class MetaFramework(object):
                 # print(labels.data[0], ',', str(learner_loss.data[0]))
                 learner_loss.backward()
                 optimizer.step()
-                del images, labels, outputs, learner_loss
+                del learner_loss
 
             if batch_num % 100 == 0 and not return_model and intermediate_accuracy:
                 test_model(learner)
+
+            del images, labels, outputs
 
         if return_model:
             return learner
