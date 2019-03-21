@@ -114,8 +114,7 @@ class MetaFramework(object):
                 if not isinstance(correct, int):
                     correct = correct.item()
                 del test_images, test_outputs, predicted, test_labels
-            if batch_num % 100 == 0:
-                print('Accuracy of the network on ' + str(batch_num * hyperparameters['learner_batch_size']) + ' test images: ' + str(100 * correct / total))
+            print('Accuracy of the network on ' + str(batch_num * hyperparameters['learner_batch_size']) + ' test images: ' + str(100 * correct / total))
             accuracy = correct / total
             if intermediate_accuracy:
                 now_phi = batch_num * hyperparameters['learner_batch_size'] / num_data
@@ -150,7 +149,7 @@ class MetaFramework(object):
                 optimizer.step()
                 del learner_loss
 
-            if not return_model and intermediate_accuracy:
+            if batch_num % 100 == 0 and not return_model and intermediate_accuracy:
                 test_model(learner)
 
             del images, labels, outputs
