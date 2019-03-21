@@ -1,6 +1,5 @@
 from experiment_0_util.meta_framework import *
 from hyperparameters import *
-import torch
 import torch.nn as nn
 
 
@@ -14,12 +13,7 @@ class ControlNet(nn.Module):
         self.fc2 = nn.Linear(hidden, output_size)
 
     def forward(self, x, batch_num=1):
-        out = x
-        out = self.fc1(out)
-        out = self.relu(out)
-        out = self.fc3(out)
-        out = self.relu(out)
-        return out
+        return self.fc2(self.relu(self.fc1(x)))
 
 
 class ControlFrame(MetaFramework):
