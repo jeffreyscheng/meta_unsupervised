@@ -24,6 +24,9 @@ class HebbianNet(nn.Module):
         return torch.squeeze(self.conv2(self.relu(self.conv1(meta_input_stack))), 1)
 
     def forward(self, x, batch_num=1):
+        return self.fc2(self.relu(self.fc1(x)))
+
+    def train_forward(self, x, batch_num=1):
         out = x
         for layer_num in range(0, len(self.layers)):
             layer = self.param_state[self.param_names[layer_num]]

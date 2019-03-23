@@ -60,7 +60,7 @@ class MetaFramework(object):
                 if gpu_bool:
                     test_images = test_images.cuda()
                     test_labels = test_labels.cuda()
-                test_outputs = model(test_images, batch_num)
+                test_outputs = model.forward(test_images, batch_num)
                 _, predicted = torch.max(test_outputs.data, 1)
                 total += test_labels.size(0)
                 correct += (predicted == test_labels).sum()
@@ -95,7 +95,7 @@ class MetaFramework(object):
 
             # Learner Forward + Backward + Optimize
             optimizer.zero_grad()  # zero the gradient buffer
-            outputs = learner.forward(images, batch_num)
+            outputs = learner.train_forward(images, batch_num)
             if random.uniform(0, 1) < theta:
                 learner_loss = learner_criterion(outputs, labels)
                 # print(labels.data[0], ',', str(learner_loss.data[0]))
