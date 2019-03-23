@@ -15,8 +15,8 @@ class ControlNet(nn.Module):
     def forward(self, x, batch_num=1):
         return self.fc2(self.relu(self.fc1(x)))
 
-    def train_forward(self, x):
-        return self.forward(x)
+    def train_forward(self, x, batch_num=1):
+        return self.forward(x, batch_num)
 
 
 class ControlFrame(MetaFramework):
