@@ -28,14 +28,25 @@ class MetaFramework(object):
                                        train=False,
                                        transform=transforms.ToTensor())
 
-            # Data Loader (Input Pipeline)
-            self.train_loader = torch.utils.data.DataLoader(dataset=train_dataset,
-                                                            batch_size=hyperparameters['learner_batch_size'],
-                                                            shuffle=True)
+        if dataset_name == 'Fashion-MNIST':
+            # Fashion-MNIST Dataset
+            train_dataset = dsets.FashionMNIST(root=root_directory + '/' + dataset_name + '/data',
+                                               train=True,
+                                               transform=transforms.ToTensor(),
+                                               download=True)
 
-            self.test_loader = torch.utils.data.DataLoader(dataset=test_dataset,
-                                                           batch_size=hyperparameters['learner_batch_size'],
-                                                           shuffle=False)
+            test_dataset = dsets.FashionMNIST(root=root_directory + '/' + dataset_name + '/data',
+                                              train=False,
+                                              transform=transforms.ToTensor())
+
+        # Data Loader (Input Pipeline)
+        self.train_loader = torch.utils.data.DataLoader(dataset=train_dataset,
+                                                        batch_size=hyperparameters['learner_batch_size'],
+                                                        shuffle=True)
+
+        self.test_loader = torch.utils.data.DataLoader(dataset=test_dataset,
+                                                       batch_size=hyperparameters['learner_batch_size'],
+                                                       shuffle=False)
 
     @abc.abstractmethod
     def create_learner_and_optimizer(self):

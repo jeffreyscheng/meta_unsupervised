@@ -3,7 +3,7 @@ import torch
 import torch.nn as nn
 
 root_directory = os.path.dirname(__file__)
-dataset_name = 'MNIST'
+dataset_name = 'Fashion-MNIST'
 gpu_bool = torch.cuda.device_count() > 0
 experiment_iterations = 1
 base_optimizer = torch.optim.Adam
@@ -27,6 +27,17 @@ safe_mkdir(final_data_path)
 safe_mkdir(result_images_path)
 
 if dataset_name == 'MNIST':
+    fixed_parameters = {'meta_input': 3,
+                        'meta_output': 1,
+                        'input_size': 784,
+                        'num_classes': 10}
+    hyperparameters = {'learner_hidden_width': 800,
+                       'meta_hidden_width': 50,
+                       'learning_rate': 0.001,
+                       'learner_batch_size': 30,
+                       'update_rate': 0.001}
+    num_data = 60000
+if dataset_name == 'Fashion-MNIST':
     fixed_parameters = {'meta_input': 3,
                         'meta_output': 1,
                         'input_size': 784,
