@@ -9,7 +9,6 @@ experiment_iterations = 1
 base_optimizer = torch.optim.Adam
 learner_criterion = nn.CrossEntropyLoss()
 time_out = 20 * 60
-meta_data_ratio = 10
 # os.environ["CUDA_VISIBLE_DEVICES"] = "2"
 
 
@@ -35,6 +34,6 @@ if dataset_name == 'MNIST':
     hyperparameters = {'learner_hidden_width': 800,
                        'meta_hidden_width': 50,
                        'learning_rate': 0.001,
-                       'learner_batch_size': 50,
+                       'learner_batch_size': 30,
                        'update_rate': 0.001}
     num_data = 60000

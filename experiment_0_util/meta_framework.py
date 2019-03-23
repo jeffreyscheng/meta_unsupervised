@@ -78,7 +78,6 @@ class MetaFramework(object):
             return learning_curve_list
 
         def stop_training(tock, batch):
-            print("done")
             return tock - tick > time_out or batch * hyperparameters['learner_batch_size'] / num_data > phi
 
         for i, (images, labels) in enumerate(self.train_loader):
