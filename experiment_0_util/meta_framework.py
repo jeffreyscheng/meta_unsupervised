@@ -91,33 +91,34 @@ class MetaFramework(object):
         def stop_training(tock, batch):
             return tock - tick > time_out or batch * hyperparameters['learner_batch_size'] / num_data > phi
 
-        for i, (images, labels) in enumerate(self.train_loader):
-            batch_num += 1
+        while True:
             if stop_training(time.time(), batch_num):
                 break
+            for i, (images, labels) in enumerate(self.train_loader):
+                batch_num += 1
 
-            images = Variable(images.view(-1, 28 * 28))
-            labels = Variable(labels)
+                images = Variable(images.view(-1, 28 * 28))
+                labels = Variable(labels)
 
-            # move to CUDA
-            if gpu_bool:
-                images = images.cuda()
-                labels = labels.cuda()
+                # move to CUDA
+                if gpu_bool:
+                    images = images.cuda()
+                    labels = labels.cuda()
 
-            # Learner Forward + Backward + Optimize
-            optimizer.zero_grad()  # zero the gradient buffer
-            outputs = learner.train_forward(images, batch_num)
-            if random.uniform(0, 1) < theta:
-                learner_loss = learner_criterion(outputs, labels)
-                # print(labels.data[0], ',', str(learner_loss.data[0]))
-                learner_loss.backward()
-                optimizer.step()
-                del learner_loss
+                # Learner Forward + Backward + Optimize
+                optimizer.zero_grad()  # zero the gradient buffer
+                outputs = learner.train_forward(images, batch_num)
+                if random.uniform(0, 1) < theta:
+                    learner_loss = learner_criterion(outputs, labels)
+                    # print(labels.data[0], ',', str(learner_loss.data[0]))
+                    learner_loss.backward()
+                    optimizer.step()
+                    del learner_loss
 
-            if batch_num % 100 == 0 and not return_model and intermediate_accuracy:
-                test_model(learner)
+                if batch_num % 100 == 0 and not return_model and intermediate_accuracy:
+                    test_model(learner)
 
-            del images, labels, outputs
+                del images, labels, outputs
 
         if return_model:
             return learner
