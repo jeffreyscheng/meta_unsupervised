@@ -17,8 +17,6 @@ class HebbianNet(nn.Module):
         self.batch_size = batch_size
         self.conv1 = nn.Conv2d(in_channels=meta_input, out_channels=meta_hidden, kernel_size=1, bias=True)
         self.conv2 = nn.Conv2d(in_channels=meta_hidden, out_channels=meta_output, kernel_size=1, bias=True)
-        self.param_state = self.state_dict(keep_vars=True)
-        self.param_names = ['fc1.weight', 'fc2.weight', 'fc3.weight', 'fc4.weight']
         self.layers = [self.fc1, self.fc2, self.fc3, self.fc4]
         self.rate = rate
 
@@ -27,15 +25,15 @@ class HebbianNet(nn.Module):
         return torch.squeeze(self.conv2(self.relu(self.conv1(meta_input_stack))), 1)
 
     def forward(self, x, batch_num=1):
-        return self.fc2(self.relu(self.fc1(x)))
+        return self.fc4(self.relu(self.fc3(self.relu(self.fc2(self.relu(self.fc1(x)))))))
 
     def train_forward(self, x, batch_num=1):
         out = x
-        for layer_num in range(0, len(self.layers)):
-            layer = self.param_state[self.param_names[layer_num]]
+        for layer_num, layer in enumerate(self.layers):
             vi = out
             old_vj = self.layers[layer_num](out)
-            old_vj = self.relu(old_vj)
+            if layer_num < len(self.layers) - 1:
+                old_vj = self.relu(old_vj)
             stack_dim = self.batch_size, layer.size()[0], layer.size()[1]
             input_stack = vi.unsqueeze(1).expand(stack_dim)
             output_stack = old_vj.unsqueeze(2).expand(stack_dim)
