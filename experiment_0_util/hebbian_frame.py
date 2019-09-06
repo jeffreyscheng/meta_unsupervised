@@ -40,8 +40,12 @@ class HebbianNet(nn.Module):
             input_stack = vi.unsqueeze(1).expand(stack_dim)
             output_stack = old_vj.unsqueeze(2).expand(stack_dim)
             weight_stack = layer.unsqueeze(0).expand(stack_dim)
-            meta_inputs = torch.stack((input_stack, weight_stack, output_stack), dim=3).permute(0, 3, 1, 2)
-            shift = self.get_update(meta_inputs) * self.rate / batch_num
+            if batch_num <= 1:
+                grad_stack = torch.zeros(weight_stack.size())
+            else:
+                grad_stack = layer.grad.unsqueeze(0).expand(stack_dim)
+            meta_inputs = torch.stack((input_stack, weight_stack, output_stack, grad_stack), dim=3).permute(0, 3, 1, 2)
+            # shift = self.get_update(meta_inputs) * self.rate / batch_num
 
             # output, update weights
             out = old_vj + torch.sum(input_stack * shift, dim=2)

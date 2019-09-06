@@ -9,7 +9,7 @@ experiment_iterations = 1
 base_optimizer = torch.optim.Adam
 learner_criterion = nn.CrossEntropyLoss()
 time_out = 20 * 60
-# os.environ["CUDA_VISIBLE_DEVICES"] = "2"
+os.environ["CUDA_VISIBLE_DEVICES"] = "2"
 
 
 def safe_mkdir(path):
@@ -26,25 +26,25 @@ safe_mkdir(temp_data_path)
 safe_mkdir(final_data_path)
 safe_mkdir(result_images_path)
 
-if dataset_name == 'MNIST':
-    fixed_parameters = {'meta_input': 3,
-                        'meta_output': 1,
-                        'input_size': 784,
-                        'num_classes': 10}
-    hyperparameters = {'learner_hidden_widths': (256, 128, 100),
-                       'meta_hidden_width': 50,
-                       'learning_rate': 0.001,
-                       'learner_batch_size': 30,
-                       'update_rate': 0.001}
-    num_data = 60000
+# if dataset_name == 'MNIST':
+#     fixed_parameters = {'meta_input': 3,
+#                         'meta_output': 1,
+#                         'input_size': 784,
+#                         'num_classes': 10}
+#     hyperparameters = {'learner_hidden_widths': (256, 128, 100),
+#                        'meta_hidden_width': 50,
+#                        'learning_rate': 0.001,
+#                        'learner_batch_size': 10,
+#                        'update_rate': 0.001}
+#     num_data = 60000
 if dataset_name == 'Fashion-MNIST':
-    fixed_parameters = {'meta_input': 3,
+    fixed_parameters = {'meta_input': 4,
                         'meta_output': 1,
                         'input_size': 784,
                         'num_classes': 10}
     hyperparameters = {'learner_hidden_widths': (256, 128, 100),
-                       'meta_hidden_width': 50,
+                       'meta_hidden_width': 30,
                        'learning_rate': 0.001,
-                       'learner_batch_size': 30,
+                       'learner_batch_size': 10,
                        'update_rate': 0.001}
     num_data = 60000
