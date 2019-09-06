@@ -55,8 +55,7 @@ class MetaFramework(object):
     def train_model(self, phi=5, theta=1, intermediate_accuracy=False, return_model=False):
         learner, optimizer = self.create_learner_and_optimizer()
         tick = time.time()
-        if gpu_bool:
-            learner.cuda()
+        learner = push_to_gpu(learner)
 
         batch_num = 0
         learning_curve_list = []
@@ -68,9 +67,8 @@ class MetaFramework(object):
             for test_images, test_labels in self.test_loader:
                 test_images = Variable(test_images.view(-1, 28 * 28))
                 # to CUDA
-                if gpu_bool:
-                    test_images = test_images.cuda()
-                    test_labels = test_labels.cuda()
+                test_images = push_to_gpu(test_images)
+                test_labels = push_to_gpu(test_labels)
                 test_outputs = model.forward(test_images, batch_num)
                 _, predicted = torch.max(test_outputs.data, 1)
                 total += test_labels.size(0)
@@ -101,9 +99,8 @@ class MetaFramework(object):
                 labels = Variable(labels)
 
                 # move to CUDA
-                if gpu_bool:
-                    images = images.cuda()
-                    labels = labels.cuda()
+                images = push_to_gpu(images)
+                labels = push_to_gpu(labels)
 
                 # Learner Forward + Backward + Optimize
                 optimizer.zero_grad()  # zero the gradient buffer

@@ -5,6 +5,15 @@ import torch.nn as nn
 root_directory = os.path.dirname(__file__)
 dataset_name = 'Fashion-MNIST'
 gpu_bool = torch.cuda.device_count() > 0
+
+
+def push_to_gpu(x):
+    if gpu_bool:
+        return x.cuda()
+    else:
+        return x
+
+
 experiment_iterations = 1
 base_optimizer = torch.optim.Adam
 learner_criterion = nn.CrossEntropyLoss()
