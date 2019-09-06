@@ -6,14 +6,17 @@ import torch.nn as nn
 # Template for Control Structure
 class ControlNet(nn.Module):
 
-    def __init__(self, input_size, hidden, output_size):
+    def __init__(self, input_size, hidden_widths, output_size):
         super(ControlNet, self).__init__()
         self.relu = nn.ReLU()
-        self.fc1 = nn.Linear(input_size, hidden)
-        self.fc2 = nn.Linear(hidden, output_size)
+        hidden1, hidden2, hidden3 = hidden_widths
+        self.fc1 = nn.Linear(input_size, hidden1)
+        self.fc2 = nn.Linear(hidden1, hidden2)
+        self.fc3 = nn.Linear(hidden2, hidden3)
+        self.fc4 = nn.Linear(hidden3, output_size)
 
     def forward(self, x, batch_num=1):
-        return self.fc2(self.relu(self.fc1(x)))
+        return self.fc4(self.relu(self.fc3(self.relu(self.fc2(self.relu(self.fc1(x)))))))
 
     def train_forward(self, x, batch_num=1):
         return self.forward(x, batch_num)
@@ -25,7 +28,7 @@ class ControlFrame(MetaFramework):
 
     def create_learner_and_optimizer(self):
         learner = ControlNet(fixed_parameters['input_size'],
-                             hyperparameters['learner_hidden_width'],
+                             hyperparameters['learner_hidden_widths'],
                              fixed_parameters['num_classes'])
         optimizer = base_optimizer(list(learner.parameters()), lr=hyperparameters['learning_rate'])
         return learner, optimizer

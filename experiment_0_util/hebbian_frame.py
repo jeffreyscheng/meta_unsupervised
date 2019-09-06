@@ -6,17 +6,20 @@ import torch
 # Template for Single Structure
 class HebbianNet(nn.Module):
 
-    def __init__(self, input_size, hidden, output_size, meta_input, meta_hidden, meta_output, batch_size, rate):
+    def __init__(self, input_size, hidden_widths, output_size, meta_input, meta_hidden, meta_output, batch_size, rate):
         super(HebbianNet, self).__init__()
         self.relu = nn.ReLU()
-        self.fc1 = nn.Linear(input_size, hidden)
-        self.fc2 = nn.Linear(hidden, output_size)
+        hidden1, hidden2, hidden3 = hidden_widths
+        self.fc1 = nn.Linear(input_size, hidden1)
+        self.fc2 = nn.Linear(hidden1, hidden2)
+        self.fc3 = nn.Linear(hidden2, hidden3)
+        self.fc4 = nn.Linear(hidden3, output_size)
         self.batch_size = batch_size
         self.conv1 = nn.Conv2d(in_channels=meta_input, out_channels=meta_hidden, kernel_size=1, bias=True)
         self.conv2 = nn.Conv2d(in_channels=meta_hidden, out_channels=meta_output, kernel_size=1, bias=True)
         self.param_state = self.state_dict(keep_vars=True)
-        self.param_names = ['fc1.weight', 'fc2.weight', 'fc3.weight']
-        self.layers = [self.fc1, self.fc2]
+        self.param_names = ['fc1.weight', 'fc2.weight', 'fc3.weight', 'fc4.weight']
+        self.layers = [self.fc1, self.fc2, self.fc3, self.fc4]
         self.rate = rate
 
     # get new weight
