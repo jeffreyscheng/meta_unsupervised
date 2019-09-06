@@ -31,7 +31,7 @@ if dataset_name == 'MNIST':
                         'meta_output': 1,
                         'input_size': 784,
                         'num_classes': 10}
-    hyperparameters = {'learner_hidden_width': (256, 128, 100),
+    hyperparameters = {'learner_hidden_widths': (256, 128, 100),
                        'meta_hidden_width': 50,
                        'learning_rate': 0.001,
                        'learner_batch_size': 30,
@@ -42,7 +42,7 @@ if dataset_name == 'Fashion-MNIST':
                         'meta_output': 1,
                         'input_size': 784,
                         'num_classes': 10}
-    hyperparameters = {'learner_hidden_width': (256, 128, 100),
+    hyperparameters = {'learner_hidden_widths': (256, 128, 100),
                        'meta_hidden_width': 50,
                        'learning_rate': 0.001,
                        'learner_batch_size': 30,

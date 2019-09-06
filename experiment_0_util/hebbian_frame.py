@@ -57,7 +57,7 @@ class HebbianFrame(MetaFramework):
 
     def create_learner_and_optimizer(self):
         learner = HebbianNet(fixed_parameters['input_size'],
-                             hyperparameters['learner_hidden_width'],
+                             hyperparameters['learner_hidden_widths'],
                              fixed_parameters['num_classes'],
                              fixed_parameters['meta_input'],
                              hyperparameters['meta_hidden_width'],
