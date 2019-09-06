@@ -29,11 +29,10 @@ class HebbianNet(nn.Module):
 
     def train_forward(self, x, batch_num=1):
         out = x
-        for layer_num, layer in enumerate(self.layers):
+        for layer_num, layer_obj in enumerate(self.layers):
+            layer = layer_obj.weight
             vi = out
             old_vj = self.layers[layer_num](out)
-            if layer_num < len(self.layers) - 1:
-                old_vj = self.relu(old_vj)
             stack_dim = self.batch_size, layer.size()[0], layer.size()[1]
             input_stack = vi.unsqueeze(1).expand(stack_dim)
             output_stack = old_vj.unsqueeze(2).expand(stack_dim)
@@ -44,9 +43,14 @@ class HebbianNet(nn.Module):
                 grad_stack = layer.grad.unsqueeze(0).expand(stack_dim)
             meta_inputs = torch.stack((input_stack, weight_stack, output_stack, grad_stack), dim=3).permute(0, 3, 1, 2)
             shift = self.get_update(meta_inputs) * self.rate
+            # if batch_num % 100 == 0:
+                # print(batch_num, torch.mean(torch.abs(layer.grad)) / torch.mean(torch.abs(shift)))
 
             # output, update weights
             out = old_vj + torch.sum(input_stack * shift, dim=2)
+            out = old_vj
+            if layer_num < len(self.layers):
+                out = self.relu(out)
             layer.data += torch.mean(shift.data, dim=0)
             del old_vj, input_stack, output_stack, weight_stack, meta_inputs, shift
         return out

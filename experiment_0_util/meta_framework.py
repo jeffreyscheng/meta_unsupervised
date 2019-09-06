@@ -103,8 +103,9 @@ class MetaFramework(object):
                 labels = push_to_gpu(labels)
 
                 # Learner Forward + Backward + Optimize
-                optimizer.zero_grad()  # zero the gradient buffer
+                # optimizer.zero_grad()  # zero the gradient buffer
                 outputs = learner.train_forward(images, batch_num)
+                optimizer.zero_grad()  #  we do this here since the forward pass needs the gradient
                 if random.uniform(0, 1) < theta:
                     learner_loss = learner_criterion(outputs, labels)
                     # print(labels.data[0], ',', str(learner_loss.data[0]))

@@ -1,0 +1,71 @@
+Traceback (most recent call last):
+  File "/home/jeffch/anaconda3/lib/python3.7/runpy.py", line 183, in _run_module_as_main
+    mod_name, mod_spec, code = _get_module_details(mod_name, _Error)
+  File "/home/jeffch/anaconda3/lib/python3.7/runpy.py", line 109, in _get_module_details
+    __import__(pkg_name)
+  File "/home/jeffch/meta_unsupervised/experiment_1_epochs/run_experiment_1.py", line 7, in <module>
+    acc_dict = run_theta_phi_pair(phi_val=5, theta_val=1)
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/run_experiment.py", line 15, in run_theta_phi_pair
+    hebbian_list = [hebbian_frame.train_model(phi=phi_val, theta=theta_val, intermediate_accuracy=True) for _ in range(experiment_iterations)]
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/run_experiment.py", line 15, in <listcomp>
+    hebbian_list = [hebbian_frame.train_model(phi=phi_val, theta=theta_val, intermediate_accuracy=True) for _ in range(experiment_iterations)]
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/meta_framework.py", line 107, in train_model
+    outputs = learner.train_forward(images, batch_num)
+  File "/home/jeffch/meta_unsupervised/experiment_0_util/hebbian_frame.py", line 39, in train_forward
+    input_stack = vi.unsqueeze(1).expand(stack_dim)
+RuntimeError: The expanded size of the tensor (11) must match the existing size (6) at non-singleton dimension 0
+Running Hebbian: 5 1
+Accuracy of the network on 1100 test images: 42.59
+Accuracy of the network on 2200 test images: 59.42
+Accuracy of the network on 3300 test images: 69.99
+Accuracy of the network on 4400 test images: 70.97
+Accuracy of the network on 5500 test images: 55.34
+Accuracy of the network on 6600 test images: 34.26
+Accuracy of the network on 7700 test images: 6.96
+Accuracy of the network on 8800 test images: 5.68
+Accuracy of the network on 9900 test images: 13.45
+Accuracy of the network on 11000 test images: 24.21
+Accuracy of the network on 12100 test images: 12.94
+Accuracy of the network on 13200 test images: 10.0
+Accuracy of the network on 14300 test images: 20.56
+Accuracy of the network on 15400 test images: 2.26
+Accuracy of the network on 16500 test images: 1.32
+Accuracy of the network on 17600 test images: 10.0
+Accuracy of the network on 18700 test images: 10.79
+Accuracy of the network on 19800 test images: 12.83
+Accuracy of the network on 20900 test images: 15.98
+Accuracy of the network on 22000 test images: 15.55
+Accuracy of the network on 23100 test images: 15.02
+Accuracy of the network on 24200 test images: 23.45
+Accuracy of the network on 25300 test images: 14.1
+Accuracy of the network on 26400 test images: 12.39
+Accuracy of the network on 27500 test images: 12.29
+Accuracy of the network on 28600 test images: 13.67
+Accuracy of the network on 29700 test images: 14.93
+Accuracy of the network on 30800 test images: 14.6
+Accuracy of the network on 31900 test images: 10.75
+Accuracy of the network on 33000 test images: 10.0
+Accuracy of the network on 34100 test images: 10.0
+Accuracy of the network on 35200 test images: 10.01
+Accuracy of the network on 36300 test images: 10.2
+Accuracy of the network on 37400 test images: 12.68
+Accuracy of the network on 38500 test images: 15.94
+Accuracy of the network on 39600 test images: 11.49
+Accuracy of the network on 40700 test images: 11.66
+Accuracy of the network on 41800 test images: 11.91
+Accuracy of the network on 42900 test images: 12.73
+Accuracy of the network on 44000 test images: 12.85
+Accuracy of the network on 45100 test images: 12.0
+Accuracy of the network on 46200 test images: 11.4
+Accuracy of the network on 47300 test images: 10.62
+Accuracy of the network on 48400 test images: 13.04
+Accuracy of the network on 49500 test images: 16.86
+Accuracy of the network on 50600 test images: 18.13
+Accuracy of the network on 51700 test images: 16.75
+Accuracy of the network on 52800 test images: 14.25
+Accuracy of the network on 53900 test images: 12.98
+Accuracy of the network on 55000 test images: 12.2
+Accuracy of the network on 56100 test images: 16.85
+Accuracy of the network on 57200 test images: 19.85
+Accuracy of the network on 58300 test images: 19.85
+Accuracy of the network on 59400 test images: 19.17
