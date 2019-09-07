@@ -30,8 +30,8 @@ class ControlFrame(MetaFramework):
         learner = ControlNet(fixed_parameters['input_size'],
                              hyperparameters['learner_hidden_widths'],
                              fixed_parameters['num_classes'])
-        optimizer = base_optimizer(list(learner.parameters()), lr=hyperparameters['learning_rate'])
-        return learner, optimizer
+        optimizer = base_optimizer(list(learner.parameters()), lr=hyperparameters['learner_learning_rate'])
+        return learner, [optimizer]
 
 
 control_frame = ControlFrame('control', fixed_parameters)

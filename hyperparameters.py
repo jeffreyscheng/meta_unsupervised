@@ -54,7 +54,7 @@ if dataset_name == 'Fashion-MNIST':
     hyperparameters = {'learner_hidden_widths': (256, 128, 100),
                        'meta_hidden_width': 30,
                        'learner_learning_rate': 0.000001,
-                       'meta_learning_rate': 0.001,
+                       'meta_learning_rate': 0.1,
                        'learner_batch_size': 10}
-    hyperparameters['update_rate'] = hyperparameters['learning_rate'] / 1000
+    hyperparameters['update_rate'] = hyperparameters['learner_learning_rate'] / 100000
     num_data = 60000
