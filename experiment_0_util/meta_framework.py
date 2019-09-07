@@ -53,7 +53,7 @@ class MetaFramework(object):
         return None, None
 
     def train_model(self, phi=5, theta=1, intermediate_accuracy=False, return_model=False):
-        learner, optimizer = self.create_learner_and_optimizer()
+        learner, optimizers = self.create_learner_and_optimizer()
         tick = time.time()
         learner = push_to_gpu(learner)
 
@@ -105,12 +105,14 @@ class MetaFramework(object):
                 # Learner Forward + Backward + Optimize
                 # optimizer.zero_grad()  # zero the gradient buffer
                 outputs = learner.train_forward(images, batch_num)
-                optimizer.zero_grad()  #  we do this here since the forward pass needs the gradient
+                for optimizer in optimizers:
+                    optimizer.zero_grad()  #  we do this here since the forward pass needs the gradient
                 if random.uniform(0, 1) < theta:
                     learner_loss = learner_criterion(outputs, labels)
                     # print(labels.data[0], ',', str(learner_loss.data[0]))
                     learner_loss.backward()
-                    optimizer.step()
+                    for optimizer in optimizers:
+                        optimizer.step()
                     del learner_loss
 
                 if batch_num % 100 == 0 and not return_model and intermediate_accuracy:

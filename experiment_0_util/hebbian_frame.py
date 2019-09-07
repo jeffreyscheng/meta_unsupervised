@@ -70,8 +70,11 @@ class HebbianFrame(MetaFramework):
                              fixed_parameters['meta_output'],
                              hyperparameters['learner_batch_size'],
                              hyperparameters['update_rate'])
-        optimizer = base_optimizer(learner.parameters(), lr=hyperparameters['learning_rate'])
-        return learner, optimizer
+        learner_parameters = learner.fc1.parameters() + learner.fc2.parameters() + learner.fc3.parameters() + learner.fc4.parameters()
+        meta_parameters = list(learner.conv1.parameters()) + list(learner.conv2.parameters())
+        learner_optimizer = base_optimizer(learner_parameters, lr=hyperparameters['learner_learning_rate'])
+        meta_optimizer = base_optimizer(meta_parameters, lr=hyperparameters['meta_learning_rate'])
+        return learner, [learner_optimizer, meta_optimizer]
 
 
 hebbian_frame = HebbianFrame('hebbian', fixed_parameters)
