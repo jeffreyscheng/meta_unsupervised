@@ -90,12 +90,7 @@ class MetaFramework(object):
                                         'hebbian_update_norm': model.get_hebbian_update_norm()})
             return learning_curve_list
 
-        def stop_training(tock, batch):
-            return tock - tick > time_out or batch * hyperparameters['learner_batch_size'] / num_data > phi
-
-        while True:
-            if stop_training(time.time(), batch_num):
-                break
+        for epoch in range(phi):
             for i, (images, labels) in enumerate(self.train_loader):
                 batch_num += 1
 

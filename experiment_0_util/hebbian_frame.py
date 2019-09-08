@@ -97,7 +97,7 @@ class HebbianFrame(MetaFramework):
                              hyperparameters['hebbian_update_rate'])
         self_optimizer = base_optimizer(learner.get_learner_parameters(), lr=hyperparameters['self_learning_rate'])
         meta_optimizer = base_optimizer(learner.get_metalearner_parameters(), lr=hyperparameters['meta_learning_rate'])
-        return self, [self_optimizer, meta_optimizer]
+        return learner, [self_optimizer, meta_optimizer]
 
 
 hebbian_frame = HebbianFrame('hebbian', fixed_parameters)
