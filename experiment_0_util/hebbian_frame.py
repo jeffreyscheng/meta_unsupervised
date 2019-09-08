@@ -68,17 +68,17 @@ class HebbianNet(nn.Module):
         norms = []
         for p in list(filter(lambda p: p.grad is not None, self.get_learner_parameters())):
             norms.append(p.grad.data)
-        return torch.cat(norms).norm(2).item()
+        return sum([torch.sum(x ** 2).item() for x in norms]) ** 0.5
 
     def get_metalearner_gradient_norm(self):
         norms = []
         for p in list(filter(lambda p: p.grad is not None, self.get_metalearner_parameters())):
             norms.append(p.grad.data)
-        return torch.cat(norms).norm(2).item()
+        return sum([torch.sum(x ** 2).item() for x in norms]) ** 0.5
 
     def get_hebbian_update_norm(self):
-        norms_and_sizes = [t.norm(2).item() for t in self.most_recent_Hebbian_updates]
-        return sum([x ** 2 for x in norms_and_sizes]) ** 0.5
+        norms = [t.norm(2).item() for t in self.most_recent_Hebbian_updates]
+        return sum([torch.sum(x ** 2).item() for x in norms]) ** 0.5
 
 
 class HebbianFrame(MetaFramework):

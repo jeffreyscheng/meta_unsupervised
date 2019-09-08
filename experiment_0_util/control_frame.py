@@ -25,7 +25,7 @@ class ControlNet(nn.Module):
         norms = []
         for p in list(filter(lambda p: p.grad is not None, self.parameters())):
             norms.append(p.grad.data)
-        return torch.cat(norms).norm(2).item()
+        return sum([torch.sum(x ** 2).item() for x in norms]) ** 0.5
 
     def get_metalearner_gradient_norm(self):
         return 0
