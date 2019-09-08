@@ -2,17 +2,17 @@ from experiment_0_util.run_experiment import *
 import pandas as pd
 import os
 import time
-from torch.utils.tensorboard import SummaryWriter
+# from torch.utils.tensorboard import SummaryWriter
 from os.path import join
 
 tick = time.time()
 logs_dir = join(root_directory, 'logs', 'exp1-tuning' + str(time.time()))
-writer = SummaryWriter(logs_dir)
+# writer = SummaryWriter(logs_dir)
 
 experiment_1_data_path = os.path.join(final_data_path, 'experiment_1_data.csv')
 
-learner = ControlNet(784, (256, 128, 100), 10)
-optimizers = [base_optimizer(learner.parameters(), lr=0.0000001)]
+learner = ControlNet(784, (256, 128, 100), 10).cuda()
+optimizers = [torch.optim.SGD(learner.parameters(), lr=0.0005)]
 
 phi = 5
 theta = 1
@@ -60,10 +60,11 @@ def test_model(model):
     print('Accuracy of the network on ' + str(
         batch_num * hyperparameters['learner_batch_size']) + ' test images: ' + str(100 * correct / total))
     accuracy = correct / total
-    writer.add_scalar('Accuracy', accuracy, batch_num)
+    # writer.add_scalar('Accuracy', accuracy, batch_num)
 
 
-for epoch in range(50):
+for epoch in range(100):
+    print("Epoch", epoch)
     for i, (images, labels) in enumerate(train_loader):
         batch_num += 1
 
@@ -84,7 +85,8 @@ for epoch in range(50):
         learner_loss.backward()
         for optimizer in optimizers:
             optimizer.step()
-        writer.add_scalar('Loss', learner_loss, batch_num)
+        # writer.add_scalar('Loss', learner_loss, batch_num)
         del images, labels, learner_loss
-        if batch_num % 10000 == 0:
+        if batch_num % 100 == 0:
             test_model(learner)
+print(time.time() - tick)

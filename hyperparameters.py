@@ -15,7 +15,7 @@ def push_to_gpu(x):
 
 
 experiment_iterations = 1
-base_optimizer = torch.optim.Adam
+base_optimizer = torch.optim.SGD
 learner_criterion = nn.CrossEntropyLoss()
 time_out = 20 * 60
 os.environ["CUDA_VISIBLE_DEVICES"] = "2"
@@ -53,7 +53,7 @@ if dataset_name == 'Fashion-MNIST':
                         'num_classes': 10}
     hyperparameters = {'learner_hidden_widths': (256, 128, 100),
                        'meta_hidden_width': 30,
-                       'learner_learning_rate': 0.000001,
+                       'learner_learning_rate': 0.0005,
                        'meta_learning_rate': 0.1,
                        'learner_batch_size': 10}
     hyperparameters['update_rate'] = hyperparameters['learner_learning_rate'] / 100000
