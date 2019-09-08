@@ -84,7 +84,10 @@ class MetaFramework(object):
                 now_phi = batch_num * hyperparameters['learner_batch_size'] / num_data
             else:
                 now_phi = phi
-            learning_curve_list.append({'phi': now_phi, 'theta': theta, 'accuracy': accuracy})
+            learning_curve_list.append({'batch_num': batch_num, 'phi': now_phi, 'theta': theta, 'accuracy': accuracy,
+                                        'learner_gradient_norm': model.get_learner_gradient_norm(),
+                                        'metalearner_gradient_norm': model.get_metalearner_gradient_norm(),
+                                        'hebbian_update_norm': model.get_hebbian_update_norm()})
             return learning_curve_list
 
         def stop_training(tock, batch):

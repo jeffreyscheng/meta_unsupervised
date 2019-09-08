@@ -55,6 +55,6 @@ if dataset_name == 'Fashion-MNIST':
                        'meta_hidden_width': 30,
                        'learner_learning_rate': 0.0005,
                        'meta_learning_rate': 0.1,
-                       'learner_batch_size': 10}
-    hyperparameters['update_rate'] = hyperparameters['learner_learning_rate'] / 100000
+                       'learner_batch_size': 10,
+                       'hebbian_update_rate': 1 / 10000}
     num_data = 60000

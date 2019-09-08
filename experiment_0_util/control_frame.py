@@ -21,6 +21,18 @@ class ControlNet(nn.Module):
     def train_forward(self, x, batch_num=1):
         return self.forward(x, batch_num)
 
+    def get_learner_gradient_norm(self):
+        norms = []
+        for p in list(filter(lambda p: p.grad is not None, self.parameters())):
+            norms.append(p.grad.data)
+        return torch.cat(norms).norm(2).item()
+
+    def get_metalearner_gradient_norm(self):
+        return 0
+
+    def get_hebbian_update_norm(self):
+        return 0
+
 
 class ControlFrame(MetaFramework):
     def __init__(self, name, fixed_params):
