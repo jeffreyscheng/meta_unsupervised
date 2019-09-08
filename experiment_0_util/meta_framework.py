@@ -61,6 +61,7 @@ class MetaFramework(object):
         learning_curve_list = []
 
         def test_model(model):
+            model.eval()
             # Test the Model
             correct = 0
             total = 0
@@ -102,6 +103,7 @@ class MetaFramework(object):
                 images = push_to_gpu(images)
                 labels = push_to_gpu(labels)
 
+                learner.train()
                 # Learner Forward + Backward + Optimize
                 # optimizer.zero_grad()  # zero the gradient buffer
                 outputs = learner.train_forward(images, batch_num)
