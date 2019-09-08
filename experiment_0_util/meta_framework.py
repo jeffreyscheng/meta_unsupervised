@@ -91,6 +91,7 @@ class MetaFramework(object):
             return learning_curve_list
 
         for epoch in range(phi):
+            print("Epoch", epoch)
             for i, (images, labels) in enumerate(self.train_loader):
                 batch_num += 1
 
