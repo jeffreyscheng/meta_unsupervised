@@ -77,7 +77,7 @@ class HebbianNet(nn.Module):
         return sum([torch.sum(x ** 2).item() for x in norms]) ** 0.5
 
     def get_hebbian_update_norm(self):
-        norms = [t.norm(2).item() for t in self.most_recent_Hebbian_updates]
+        norms = [t.norm(2) for t in self.most_recent_Hebbian_updates]
         return sum([torch.sum(x ** 2).item() for x in norms]) ** 0.5
 
 
@@ -86,18 +86,18 @@ class HebbianFrame(MetaFramework):
     def __init__(self, name, fixed_params):
         super(HebbianFrame, self).__init__(name, fixed_params)
 
-    def create_self_and_optimizer(self):
+    def create_learner_and_optimizer(self):
         learner = HebbianNet(fixed_parameters['input_size'],
-                             hyperparameters['self_hidden_widths'],
+                             hyperparameters['learner_hidden_widths'],
                              fixed_parameters['num_classes'],
                              fixed_parameters['meta_input'],
                              hyperparameters['meta_hidden_width'],
                              fixed_parameters['meta_output'],
-                             hyperparameters['self_batch_size'],
+                             hyperparameters['learner_batch_size'],
                              hyperparameters['hebbian_update_rate'])
-        self_optimizer = base_optimizer(learner.get_learner_parameters(), lr=hyperparameters['self_learning_rate'])
+        learner_optimizer = base_optimizer(learner.get_learner_parameters(), lr=hyperparameters['learner_learning_rate'])
         meta_optimizer = base_optimizer(learner.get_metalearner_parameters(), lr=hyperparameters['meta_learning_rate'])
-        return learner, [self_optimizer, meta_optimizer]
+        return learner, [learner_optimizer, meta_optimizer]
 
 
 hebbian_frame = HebbianFrame('hebbian', fixed_parameters)

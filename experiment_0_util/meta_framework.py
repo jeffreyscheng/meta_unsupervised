@@ -50,7 +50,7 @@ class MetaFramework(object):
 
     @abc.abstractmethod
     def create_learner_and_optimizer(self):
-        return None, None
+        raise ValueError("Abstract learner + optimizer fn being used!")
 
     def train_model(self, phi=5, theta=1, intermediate_accuracy=False, return_model=False):
         learner, optimizers = self.create_learner_and_optimizer()
