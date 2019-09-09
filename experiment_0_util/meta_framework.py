@@ -80,6 +80,8 @@ class MetaFramework(object):
             print('Accuracy of the network on ' + str(
                 batch_num * hyperparameters['learner_batch_size']) + ' test images: ' + str(100 * correct / total))
             accuracy = correct / total
+            if accuracy < 0.101 and batch_num > 2 * len(self.train_loader):
+                raise ValueError("Pretty much not training!")
             if intermediate_accuracy:
                 now_phi = batch_num * hyperparameters['learner_batch_size'] / num_data
             else:
@@ -117,7 +119,11 @@ class MetaFramework(object):
                     del learner_loss
 
                 if batch_num % 100 == 0 and not return_model and intermediate_accuracy:
-                    test_model(learner)
+                    try:
+                        test_model(learner)
+                    except ValueError:
+                        print("Pretty much not training!")
+                        return learning_curve_list
 
                 del images, labels, outputs
 
