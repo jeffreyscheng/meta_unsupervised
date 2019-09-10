@@ -1,2400 +1,1800 @@
 Epoch 0
-Accuracy of the network on 6000 test images: 16.57
-Accuracy of the network on 12000 test images: 20.86
-Accuracy of the network on 18000 test images: 23.39
-Accuracy of the network on 24000 test images: 28.25
-Accuracy of the network on 30000 test images: 30.34
-Accuracy of the network on 36000 test images: 32.13
-Accuracy of the network on 42000 test images: 34.39
-Accuracy of the network on 48000 test images: 35.24
-Accuracy of the network on 54000 test images: 35.07
-Accuracy of the network on 60000 test images: 34.09
-25.877685070037842
+Accuracy of the network on 6000 test images: 11.11
+Accuracy of the network on 12000 test images: 14.32
+Accuracy of the network on 18000 test images: 21.89
+Accuracy of the network on 24000 test images: 30.14
+Accuracy of the network on 30000 test images: 32.81
+Accuracy of the network on 36000 test images: 34.28
+Accuracy of the network on 42000 test images: 34.69
+Accuracy of the network on 48000 test images: 33.83
+Accuracy of the network on 54000 test images: 32.18
+Accuracy of the network on 60000 test images: 33.0
+25.18993878364563
 Epoch 1
-Accuracy of the network on 66000 test images: 33.28
-Accuracy of the network on 72000 test images: 33.54
-Accuracy of the network on 78000 test images: 34.18
-Accuracy of the network on 84000 test images: 33.37
-Accuracy of the network on 90000 test images: 34.88
-Accuracy of the network on 96000 test images: 36.8
-Accuracy of the network on 102000 test images: 44.57
-Accuracy of the network on 108000 test images: 51.24
-Accuracy of the network on 114000 test images: 55.51
-Accuracy of the network on 120000 test images: 54.02
-24.22265124320984
+Accuracy of the network on 66000 test images: 35.49
+Accuracy of the network on 72000 test images: 36.87
+Accuracy of the network on 78000 test images: 37.5
+Accuracy of the network on 84000 test images: 39.74
+Accuracy of the network on 90000 test images: 39.5
+Accuracy of the network on 96000 test images: 39.1
+Accuracy of the network on 102000 test images: 41.27
+Accuracy of the network on 108000 test images: 43.24
+Accuracy of the network on 114000 test images: 46.62
+Accuracy of the network on 120000 test images: 46.28
+24.95428991317749
 Epoch 2
-Accuracy of the network on 126000 test images: 53.74
-Accuracy of the network on 132000 test images: 56.18
-Accuracy of the network on 138000 test images: 54.84
-Accuracy of the network on 144000 test images: 57.13
-Accuracy of the network on 150000 test images: 57.4
-Accuracy of the network on 156000 test images: 59.06
-Accuracy of the network on 162000 test images: 59.03
-Accuracy of the network on 168000 test images: 59.15
-Accuracy of the network on 174000 test images: 61.54
-Accuracy of the network on 180000 test images: 59.35
-26.09487509727478
+Accuracy of the network on 126000 test images: 48.11
+Accuracy of the network on 132000 test images: 46.46
+Accuracy of the network on 138000 test images: 49.9
+Accuracy of the network on 144000 test images: 52.95
+Accuracy of the network on 150000 test images: 54.63
+Accuracy of the network on 156000 test images: 58.41
+Accuracy of the network on 162000 test images: 55.52
+Accuracy of the network on 168000 test images: 59.57
+Accuracy of the network on 174000 test images: 58.03
+Accuracy of the network on 180000 test images: 59.58
+26.430145025253296
 Epoch 3
-Accuracy of the network on 186000 test images: 60.28
-Accuracy of the network on 192000 test images: 62.73
-Accuracy of the network on 198000 test images: 64.14
-Accuracy of the network on 204000 test images: 65.06
-Accuracy of the network on 210000 test images: 65.29
-Accuracy of the network on 216000 test images: 65.43
-Accuracy of the network on 222000 test images: 65.2
-Accuracy of the network on 228000 test images: 66.8
-Accuracy of the network on 234000 test images: 66.19
-Accuracy of the network on 240000 test images: 66.3
-25.318297624588013
+Accuracy of the network on 186000 test images: 59.78
+Accuracy of the network on 192000 test images: 63.06
+Accuracy of the network on 198000 test images: 60.21
+Accuracy of the network on 204000 test images: 62.01
+Accuracy of the network on 210000 test images: 63.46
+Accuracy of the network on 216000 test images: 65.85
+Accuracy of the network on 222000 test images: 63.15
+Accuracy of the network on 228000 test images: 65.85
+Accuracy of the network on 234000 test images: 65.78
+Accuracy of the network on 240000 test images: 65.71
+26.227993726730347
 Epoch 4
-Accuracy of the network on 246000 test images: 67.3
-Accuracy of the network on 252000 test images: 68.3
-Accuracy of the network on 258000 test images: 68.16
-Accuracy of the network on 264000 test images: 67.12
-Accuracy of the network on 270000 test images: 67.88
-Accuracy of the network on 276000 test images: 69.62
-Accuracy of the network on 282000 test images: 69.02
-Accuracy of the network on 288000 test images: 70.02
-Accuracy of the network on 294000 test images: 70.49
-Accuracy of the network on 300000 test images: 70.29
-25.491151809692383
+Accuracy of the network on 246000 test images: 66.89
+Accuracy of the network on 252000 test images: 66.9
+Accuracy of the network on 258000 test images: 66.35
+Accuracy of the network on 264000 test images: 67.52
+Accuracy of the network on 270000 test images: 68.49
+Accuracy of the network on 276000 test images: 67.9
+Accuracy of the network on 282000 test images: 68.79
+Accuracy of the network on 288000 test images: 69.18
+Accuracy of the network on 294000 test images: 69.79
+Accuracy of the network on 300000 test images: 69.17
+26.06364607810974
 Epoch 5
-Accuracy of the network on 306000 test images: 69.69
-Accuracy of the network on 312000 test images: 70.99
-Accuracy of the network on 318000 test images: 71.45
-Accuracy of the network on 324000 test images: 70.32
-Accuracy of the network on 330000 test images: 71.89
-Accuracy of the network on 336000 test images: 72.66
-Accuracy of the network on 342000 test images: 72.44
-Accuracy of the network on 348000 test images: 71.75
-Accuracy of the network on 354000 test images: 73.24
-Accuracy of the network on 360000 test images: 72.84
-26.41205406188965
+Accuracy of the network on 306000 test images: 70.21
+Accuracy of the network on 312000 test images: 69.97
+Accuracy of the network on 318000 test images: 70.95
+Accuracy of the network on 324000 test images: 69.74
+Accuracy of the network on 330000 test images: 71.41
+Accuracy of the network on 336000 test images: 70.77
+Accuracy of the network on 342000 test images: 72.33
+Accuracy of the network on 348000 test images: 72.43
+Accuracy of the network on 354000 test images: 72.92
+Accuracy of the network on 360000 test images: 73.32
+25.410381078720093
 Epoch 6
-Accuracy of the network on 366000 test images: 72.56
-Accuracy of the network on 372000 test images: 73.21
-Accuracy of the network on 378000 test images: 73.37
-Accuracy of the network on 384000 test images: 73.36
-Accuracy of the network on 390000 test images: 74.2
-Accuracy of the network on 396000 test images: 74.13
-Accuracy of the network on 402000 test images: 73.27
-Accuracy of the network on 408000 test images: 74.49
-Accuracy of the network on 414000 test images: 73.95
-Accuracy of the network on 420000 test images: 74.85
-24.43685030937195
+Accuracy of the network on 366000 test images: 73.47
+Accuracy of the network on 372000 test images: 73.75
+Accuracy of the network on 378000 test images: 73.89
+Accuracy of the network on 384000 test images: 73.97
+Accuracy of the network on 390000 test images: 74.13
+Accuracy of the network on 396000 test images: 74.4
+Accuracy of the network on 402000 test images: 75.02
+Accuracy of the network on 408000 test images: 74.03
+Accuracy of the network on 414000 test images: 75.04
+Accuracy of the network on 420000 test images: 73.63
+26.9046528339386
 Epoch 7
-Accuracy of the network on 426000 test images: 74.85
-Accuracy of the network on 432000 test images: 74.92
-Accuracy of the network on 438000 test images: 75.11
-Accuracy of the network on 444000 test images: 75.09
-Accuracy of the network on 450000 test images: 75.25
-Accuracy of the network on 456000 test images: 75.34
-Accuracy of the network on 462000 test images: 75.03
-Accuracy of the network on 468000 test images: 75.14
-Accuracy of the network on 474000 test images: 75.54
-Accuracy of the network on 480000 test images: 75.3
-26.548539400100708
+Accuracy of the network on 426000 test images: 75.5
+Accuracy of the network on 432000 test images: 74.25
+Accuracy of the network on 438000 test images: 75.51
+Accuracy of the network on 444000 test images: 75.65
+Accuracy of the network on 450000 test images: 76.03
+Accuracy of the network on 456000 test images: 76.1
+Accuracy of the network on 462000 test images: 76.1
+Accuracy of the network on 468000 test images: 76.2
+Accuracy of the network on 474000 test images: 76.61
+Accuracy of the network on 480000 test images: 76.83
+26.609137058258057
 Epoch 8
-Accuracy of the network on 486000 test images: 75.25
-Accuracy of the network on 492000 test images: 75.84
-Accuracy of the network on 498000 test images: 76.07
-Accuracy of the network on 504000 test images: 75.99
-Accuracy of the network on 510000 test images: 76.01
-Accuracy of the network on 516000 test images: 76.32
-Accuracy of the network on 522000 test images: 76.25
-Accuracy of the network on 528000 test images: 76.61
-Accuracy of the network on 534000 test images: 76.6
-Accuracy of the network on 540000 test images: 76.68
-25.83962082862854
+Accuracy of the network on 486000 test images: 76.82
+Accuracy of the network on 492000 test images: 75.75
+Accuracy of the network on 498000 test images: 76.86
+Accuracy of the network on 504000 test images: 77.14
+Accuracy of the network on 510000 test images: 77.01
+Accuracy of the network on 516000 test images: 77.41
+Accuracy of the network on 522000 test images: 77.59
+Accuracy of the network on 528000 test images: 77.97
+Accuracy of the network on 534000 test images: 77.93
+Accuracy of the network on 540000 test images: 77.83
+25.750006437301636
 Epoch 9
-Accuracy of the network on 546000 test images: 76.59
-Accuracy of the network on 552000 test images: 76.87
-Accuracy of the network on 558000 test images: 76.5
-Accuracy of the network on 564000 test images: 77.28
-Accuracy of the network on 570000 test images: 77.18
-Accuracy of the network on 576000 test images: 77.43
-Accuracy of the network on 582000 test images: 77.1
-Accuracy of the network on 588000 test images: 77.05
-Accuracy of the network on 594000 test images: 77.6
-Accuracy of the network on 600000 test images: 77.45
-24.696645259857178
+Accuracy of the network on 546000 test images: 77.84
+Accuracy of the network on 552000 test images: 77.85
+Accuracy of the network on 558000 test images: 78.26
+Accuracy of the network on 564000 test images: 77.43
+Accuracy of the network on 570000 test images: 78.25
+Accuracy of the network on 576000 test images: 78.48
+Accuracy of the network on 582000 test images: 78.44
+Accuracy of the network on 588000 test images: 78.69
+Accuracy of the network on 594000 test images: 78.68
+Accuracy of the network on 600000 test images: 78.86
+26.178062438964844
 Epoch 10
-Accuracy of the network on 606000 test images: 77.96
-Accuracy of the network on 612000 test images: 78.12
-Accuracy of the network on 618000 test images: 78.18
-Accuracy of the network on 624000 test images: 78.21
-Accuracy of the network on 630000 test images: 77.85
-Accuracy of the network on 636000 test images: 77.27
-Accuracy of the network on 642000 test images: 77.93
-Accuracy of the network on 648000 test images: 78.11
-Accuracy of the network on 654000 test images: 76.26
-Accuracy of the network on 660000 test images: 78.67
-24.6096613407135
+Accuracy of the network on 606000 test images: 77.95
+Accuracy of the network on 612000 test images: 78.62
+Accuracy of the network on 618000 test images: 79.01
+Accuracy of the network on 624000 test images: 79.22
+Accuracy of the network on 630000 test images: 79.23
+Accuracy of the network on 636000 test images: 79.33
+Accuracy of the network on 642000 test images: 79.38
+Accuracy of the network on 648000 test images: 79.31
+Accuracy of the network on 654000 test images: 79.16
+Accuracy of the network on 660000 test images: 79.27
+25.763447523117065
 Epoch 11
-Accuracy of the network on 666000 test images: 78.59
-Accuracy of the network on 672000 test images: 79.01
-Accuracy of the network on 678000 test images: 78.75
-Accuracy of the network on 684000 test images: 78.5
-Accuracy of the network on 690000 test images: 78.99
-Accuracy of the network on 696000 test images: 78.83
-Accuracy of the network on 702000 test images: 78.88
-Accuracy of the network on 708000 test images: 78.8
-Accuracy of the network on 714000 test images: 79.1
-Accuracy of the network on 720000 test images: 79.22
-24.896921634674072
+Accuracy of the network on 666000 test images: 79.77
+Accuracy of the network on 672000 test images: 79.71
+Accuracy of the network on 678000 test images: 79.9
+Accuracy of the network on 684000 test images: 79.92
+Accuracy of the network on 690000 test images: 79.69
+Accuracy of the network on 696000 test images: 79.67
+Accuracy of the network on 702000 test images: 79.97
+Accuracy of the network on 708000 test images: 79.98
+Accuracy of the network on 714000 test images: 80.13
+Accuracy of the network on 720000 test images: 80.13
+25.46661901473999
 Epoch 12
-Accuracy of the network on 726000 test images: 79.5
-Accuracy of the network on 732000 test images: 79.22
-Accuracy of the network on 738000 test images: 79.25
-Accuracy of the network on 744000 test images: 79.7
-Accuracy of the network on 750000 test images: 79.13
-Accuracy of the network on 756000 test images: 79.49
-Accuracy of the network on 762000 test images: 79.54
-Accuracy of the network on 768000 test images: 79.64
-Accuracy of the network on 774000 test images: 79.88
-Accuracy of the network on 780000 test images: 79.82
-25.45080804824829
+Accuracy of the network on 726000 test images: 79.28
+Accuracy of the network on 732000 test images: 80.19
+Accuracy of the network on 738000 test images: 80.22
+Accuracy of the network on 744000 test images: 79.57
+Accuracy of the network on 750000 test images: 80.48
+Accuracy of the network on 756000 test images: 79.78
+Accuracy of the network on 762000 test images: 80.57
+Accuracy of the network on 768000 test images: 80.46
+Accuracy of the network on 774000 test images: 80.89
+Accuracy of the network on 780000 test images: 80.28
+25.154338598251343
 Epoch 13
-Accuracy of the network on 786000 test images: 79.92
-Accuracy of the network on 792000 test images: 80.05
-Accuracy of the network on 798000 test images: 79.85
-Accuracy of the network on 804000 test images: 79.51
-Accuracy of the network on 810000 test images: 79.98
-Accuracy of the network on 816000 test images: 80.09
-Accuracy of the network on 822000 test images: 80.5
-Accuracy of the network on 828000 test images: 80.03
-Accuracy of the network on 834000 test images: 80.23
-Accuracy of the network on 840000 test images: 79.85
-24.793537616729736
+Accuracy of the network on 786000 test images: 80.66
+Accuracy of the network on 792000 test images: 80.4
+Accuracy of the network on 798000 test images: 80.47
+Accuracy of the network on 804000 test images: 80.76
+Accuracy of the network on 810000 test images: 79.71
+Accuracy of the network on 816000 test images: 80.51
+Accuracy of the network on 822000 test images: 81.04
+Accuracy of the network on 828000 test images: 81.02
+Accuracy of the network on 834000 test images: 81.26
+Accuracy of the network on 840000 test images: 80.92
+25.61099147796631
 Epoch 14
-Accuracy of the network on 846000 test images: 80.08
-Accuracy of the network on 852000 test images: 80.13
-Accuracy of the network on 858000 test images: 80.39
-Accuracy of the network on 864000 test images: 80.43
-Accuracy of the network on 870000 test images: 80.51
-Accuracy of the network on 876000 test images: 80.54
-Accuracy of the network on 882000 test images: 80.78
-Accuracy of the network on 888000 test images: 80.8
-Accuracy of the network on 894000 test images: 80.58
-Accuracy of the network on 900000 test images: 80.66
-25.41895341873169
+Accuracy of the network on 846000 test images: 80.63
+Accuracy of the network on 852000 test images: 81.31
+Accuracy of the network on 858000 test images: 80.78
+Accuracy of the network on 864000 test images: 81.15
+Accuracy of the network on 870000 test images: 81.13
+Accuracy of the network on 876000 test images: 81.03
+Accuracy of the network on 882000 test images: 81.11
+Accuracy of the network on 888000 test images: 81.27
+Accuracy of the network on 894000 test images: 81.43
+Accuracy of the network on 900000 test images: 81.13
+24.92697548866272
 Epoch 15
-Accuracy of the network on 906000 test images: 81.04
-Accuracy of the network on 912000 test images: 80.56
-Accuracy of the network on 918000 test images: 80.81
-Accuracy of the network on 924000 test images: 80.6
-Accuracy of the network on 930000 test images: 80.7
-Accuracy of the network on 936000 test images: 80.8
-Accuracy of the network on 942000 test images: 80.77
-Accuracy of the network on 948000 test images: 81.14
-Accuracy of the network on 954000 test images: 81.22
-Accuracy of the network on 960000 test images: 81.1
-25.60901641845703
+Accuracy of the network on 906000 test images: 80.89
+Accuracy of the network on 912000 test images: 80.21
+Accuracy of the network on 918000 test images: 81.48
+Accuracy of the network on 924000 test images: 81.14
+Accuracy of the network on 930000 test images: 81.81
+Accuracy of the network on 936000 test images: 80.7
+Accuracy of the network on 942000 test images: 81.17
+Accuracy of the network on 948000 test images: 81.36
+Accuracy of the network on 954000 test images: 81.53
+Accuracy of the network on 960000 test images: 81.61
+26.95553469657898
 Epoch 16
-Accuracy of the network on 966000 test images: 81.46
+Accuracy of the network on 966000 test images: 80.48
 Accuracy of the network on 972000 test images: 81.46
-Accuracy of the network on 978000 test images: 81.0
-Accuracy of the network on 984000 test images: 80.6
-Accuracy of the network on 990000 test images: 81.47
-Accuracy of the network on 996000 test images: 81.23
-Accuracy of the network on 1002000 test images: 81.22
-Accuracy of the network on 1008000 test images: 81.49
-Accuracy of the network on 1014000 test images: 81.66
-Accuracy of the network on 1020000 test images: 81.55
-25.576112747192383
+Accuracy of the network on 978000 test images: 81.61
+Accuracy of the network on 984000 test images: 81.86
+Accuracy of the network on 990000 test images: 81.2
+Accuracy of the network on 996000 test images: 81.45
+Accuracy of the network on 1002000 test images: 81.46
+Accuracy of the network on 1008000 test images: 81.09
+Accuracy of the network on 1014000 test images: 82.13
+Accuracy of the network on 1020000 test images: 82.14
+26.358879566192627
 Epoch 17
-Accuracy of the network on 1026000 test images: 81.45
-Accuracy of the network on 1032000 test images: 81.48
-Accuracy of the network on 1038000 test images: 81.4
-Accuracy of the network on 1044000 test images: 81.55
-Accuracy of the network on 1050000 test images: 81.88
-Accuracy of the network on 1056000 test images: 81.59
-Accuracy of the network on 1062000 test images: 81.52
-Accuracy of the network on 1068000 test images: 81.8
-Accuracy of the network on 1074000 test images: 82.01
-Accuracy of the network on 1080000 test images: 80.87
-26.43611478805542
-Epoch 18
-Accuracy of the network on 1086000 test images: 81.51
-Accuracy of the network on 1092000 test images: 81.49
-Accuracy of the network on 1098000 test images: 81.74
-Accuracy of the network on 1104000 test images: 82.08
-Accuracy of the network on 1110000 test images: 82.0
-Accuracy of the network on 1116000 test images: 82.06
-Accuracy of the network on 1122000 test images: 81.91
-Accuracy of the network on 1128000 test images: 81.73
-Accuracy of the network on 1134000 test images: 82.09
-Accuracy of the network on 1140000 test images: 81.88
-25.952863454818726
-Epoch 19
-Accuracy of the network on 1146000 test images: 82.21
-Accuracy of the network on 1152000 test images: 82.04
-Accuracy of the network on 1158000 test images: 82.19
-Accuracy of the network on 1164000 test images: 82.14
-Accuracy of the network on 1170000 test images: 82.28
-Accuracy of the network on 1176000 test images: 82.21
-Accuracy of the network on 1182000 test images: 82.35
-Accuracy of the network on 1188000 test images: 81.88
-Accuracy of the network on 1194000 test images: 82.07
-Accuracy of the network on 1200000 test images: 81.51
-26.329463958740234
-Epoch 0
-Accuracy of the network on 6000 test images: 13.28
-Accuracy of the network on 12000 test images: 14.33
-Accuracy of the network on 18000 test images: 15.89
-Accuracy of the network on 24000 test images: 17.28
-Accuracy of the network on 30000 test images: 17.68
-Accuracy of the network on 36000 test images: 19.48
-Accuracy of the network on 42000 test images: 21.84
-Accuracy of the network on 48000 test images: 22.79
-Accuracy of the network on 54000 test images: 25.77
-Accuracy of the network on 60000 test images: 29.56
-211.05903100967407
-Epoch 1
-Accuracy of the network on 66000 test images: 31.86
-Accuracy of the network on 72000 test images: 32.13
-Accuracy of the network on 78000 test images: 32.92
-Accuracy of the network on 84000 test images: 33.42
-Accuracy of the network on 90000 test images: 33.9
-Accuracy of the network on 96000 test images: 33.51
-Accuracy of the network on 102000 test images: 33.24
-Accuracy of the network on 108000 test images: 33.74
-Accuracy of the network on 114000 test images: 33.78
-Accuracy of the network on 120000 test images: 33.52
-208.86822390556335
-Epoch 2
-Accuracy of the network on 126000 test images: 32.98
-Accuracy of the network on 132000 test images: 32.34
-Accuracy of the network on 138000 test images: 31.92
-Accuracy of the network on 144000 test images: 31.8
-Accuracy of the network on 150000 test images: 31.67
-Accuracy of the network on 156000 test images: 31.39
-Accuracy of the network on 162000 test images: 31.87
-Accuracy of the network on 168000 test images: 31.4
-Accuracy of the network on 174000 test images: 31.37
-Accuracy of the network on 180000 test images: 31.47
-210.60914850234985
-Epoch 3
-Accuracy of the network on 186000 test images: 31.81
-Accuracy of the network on 192000 test images: 31.87
-Accuracy of the network on 198000 test images: 32.03
-Accuracy of the network on 204000 test images: 32.87
-Accuracy of the network on 210000 test images: 33.51
-Accuracy of the network on 216000 test images: 38.3
-Accuracy of the network on 222000 test images: 40.62
-Accuracy of the network on 228000 test images: 42.14
-Accuracy of the network on 234000 test images: 42.12
-Accuracy of the network on 240000 test images: 41.41
-210.823912858963
-Epoch 4
-Accuracy of the network on 246000 test images: 42.69
-Accuracy of the network on 252000 test images: 42.48
-Accuracy of the network on 258000 test images: 43.03
-Accuracy of the network on 264000 test images: 43.07
-Accuracy of the network on 270000 test images: 43.35
-Accuracy of the network on 276000 test images: 43.33
-Accuracy of the network on 282000 test images: 43.58
-Accuracy of the network on 288000 test images: 44.07
-Accuracy of the network on 294000 test images: 44.14
-Accuracy of the network on 300000 test images: 45.45
-210.06432580947876
-Epoch 5
-Accuracy of the network on 306000 test images: 45.74
-Accuracy of the network on 312000 test images: 45.43
-Accuracy of the network on 318000 test images: 46.11
-Accuracy of the network on 324000 test images: 46.33
-Accuracy of the network on 330000 test images: 46.3
-Accuracy of the network on 336000 test images: 46.65
-Accuracy of the network on 342000 test images: 46.69
-Accuracy of the network on 348000 test images: 46.83
-Accuracy of the network on 354000 test images: 47.25
-Accuracy of the network on 360000 test images: 47.4
-210.3674430847168
-Epoch 6
-Accuracy of the network on 366000 test images: 47.42
-Accuracy of the network on 372000 test images: 47.83
-Accuracy of the network on 378000 test images: 47.78
-Accuracy of the network on 384000 test images: 48.13
-Accuracy of the network on 390000 test images: 48.4
-Accuracy of the network on 396000 test images: 48.4
-Accuracy of the network on 402000 test images: 49.41
-Accuracy of the network on 408000 test images: 53.06
-Accuracy of the network on 414000 test images: 53.49
-Accuracy of the network on 420000 test images: 54.97
-210.14063143730164
-Epoch 7
-Accuracy of the network on 426000 test images: 56.22
-Accuracy of the network on 432000 test images: 56.98
-Accuracy of the network on 438000 test images: 57.09
-Accuracy of the network on 444000 test images: 57.44
-Accuracy of the network on 450000 test images: 56.88
-Accuracy of the network on 456000 test images: 57.35
-Accuracy of the network on 462000 test images: 57.3
-Accuracy of the network on 468000 test images: 57.23
-Accuracy of the network on 474000 test images: 57.75
-Accuracy of the network on 480000 test images: 57.54
-211.06919860839844
-Epoch 8
-Accuracy of the network on 486000 test images: 57.77
-Accuracy of the network on 492000 test images: 57.77
-Accuracy of the network on 498000 test images: 57.83
-Accuracy of the network on 504000 test images: 58.01
-Accuracy of the network on 510000 test images: 57.73
-Accuracy of the network on 516000 test images: 58.43
-Accuracy of the network on 522000 test images: 58.44
-Accuracy of the network on 528000 test images: 58.56
-Accuracy of the network on 534000 test images: 58.12
-Accuracy of the network on 540000 test images: 58.74
-210.16354513168335
-Epoch 9
-Accuracy of the network on 546000 test images: 58.38
-Accuracy of the network on 552000 test images: 58.9
-Accuracy of the network on 558000 test images: 58.45
-Accuracy of the network on 564000 test images: 58.29
-Accuracy of the network on 570000 test images: 58.66
-Accuracy of the network on 576000 test images: 59.16
-Accuracy of the network on 582000 test images: 58.79
-Accuracy of the network on 588000 test images: 59.01
-Accuracy of the network on 594000 test images: 58.87
-Accuracy of the network on 600000 test images: 59.79
-210.51623439788818
-Epoch 10
-Accuracy of the network on 606000 test images: 59.58
-Accuracy of the network on 612000 test images: 59.51
-Accuracy of the network on 618000 test images: 59.85
-Accuracy of the network on 624000 test images: 59.4
-Accuracy of the network on 630000 test images: 59.96
-Accuracy of the network on 636000 test images: 60.15
-Accuracy of the network on 642000 test images: 60.0
-Accuracy of the network on 648000 test images: 59.97
-Accuracy of the network on 654000 test images: 60.27
-Accuracy of the network on 660000 test images: 59.91
-210.7280809879303
-Epoch 11
-Accuracy of the network on 666000 test images: 60.41
-Accuracy of the network on 672000 test images: 59.85
-Accuracy of the network on 678000 test images: 60.49
-Accuracy of the network on 684000 test images: 60.44
-Accuracy of the network on 690000 test images: 60.84
-Accuracy of the network on 696000 test images: 60.88
-Accuracy of the network on 702000 test images: 60.79
-Accuracy of the network on 708000 test images: 61.0
-Accuracy of the network on 714000 test images: 60.99
-Accuracy of the network on 720000 test images: 60.97
-209.85199284553528
-Epoch 12
-Accuracy of the network on 726000 test images: 61.09
-Accuracy of the network on 732000 test images: 61.3
-Accuracy of the network on 738000 test images: 61.27
-Accuracy of the network on 744000 test images: 61.25
-Accuracy of the network on 750000 test images: 61.23
-Accuracy of the network on 756000 test images: 61.39
-Accuracy of the network on 762000 test images: 61.34
-Accuracy of the network on 768000 test images: 61.49
-Accuracy of the network on 774000 test images: 61.51
-Accuracy of the network on 780000 test images: 61.19
-210.1009020805359
-Epoch 13
-Accuracy of the network on 786000 test images: 61.54
-Accuracy of the network on 792000 test images: 61.47
-Accuracy of the network on 798000 test images: 61.78
-Accuracy of the network on 804000 test images: 61.68
-Accuracy of the network on 810000 test images: 61.8
-Accuracy of the network on 816000 test images: 61.96
-Accuracy of the network on 822000 test images: 62.09
-Accuracy of the network on 828000 test images: 61.86
-Accuracy of the network on 834000 test images: 61.81
-Accuracy of the network on 840000 test images: 61.94
-210.10567450523376
-Epoch 14
-Accuracy of the network on 846000 test images: 61.94
-Accuracy of the network on 852000 test images: 62.14
-Accuracy of the network on 858000 test images: 62.06
-Accuracy of the network on 864000 test images: 62.22
-Accuracy of the network on 870000 test images: 62.12
-Accuracy of the network on 876000 test images: 62.28
-Accuracy of the network on 882000 test images: 62.01
-Accuracy of the network on 888000 test images: 62.37
-Accuracy of the network on 894000 test images: 62.1
-Accuracy of the network on 900000 test images: 62.23
-210.0065176486969
-Epoch 15
-Accuracy of the network on 906000 test images: 62.65
-Accuracy of the network on 912000 test images: 62.07
-Accuracy of the network on 918000 test images: 61.27
-Accuracy of the network on 924000 test images: 61.93
-Accuracy of the network on 930000 test images: 62.44
-Accuracy of the network on 936000 test images: 62.33
-Accuracy of the network on 942000 test images: 62.36
-Accuracy of the network on 948000 test images: 62.85
-Accuracy of the network on 954000 test images: 62.35
-Accuracy of the network on 960000 test images: 62.63
-211.06868410110474
-Epoch 16
-Accuracy of the network on 966000 test images: 62.56
-Accuracy of the network on 972000 test images: 62.46
-Accuracy of the network on 978000 test images: 62.52
-Accuracy of the network on 984000 test images: 62.5
-Accuracy of the network on 990000 test images: 62.57
-Accuracy of the network on 996000 test images: 62.73
-Accuracy of the network on 1002000 test images: 62.32
-Accuracy of the network on 1008000 test images: 62.06
-Accuracy of the network on 1014000 test images: 61.89
-Accuracy of the network on 1020000 test images: 62.53
-210.30589890480042
-Epoch 17
-Accuracy of the network on 1026000 test images: 62.23
-Accuracy of the network on 1032000 test images: 62.81
-Accuracy of the network on 1038000 test images: 62.53
-Accuracy of the network on 1044000 test images: 63.07
-Accuracy of the network on 1050000 test images: 62.41
-Accuracy of the network on 1056000 test images: 62.5
-Accuracy of the network on 1062000 test images: 62.36
-Accuracy of the network on 1068000 test images: 62.31
-Accuracy of the network on 1074000 test images: 62.84
-Accuracy of the network on 1080000 test images: 62.58
-210.66644716262817
-Epoch 18
-Accuracy of the network on 1086000 test images: 62.27
-Accuracy of the network on 1092000 test images: 62.54
-Accuracy of the network on 1098000 test images: 62.86
-Accuracy of the network on 1104000 test images: 62.69
-Accuracy of the network on 1110000 test images: 62.67
-Accuracy of the network on 1116000 test images: 62.62
-Accuracy of the network on 1122000 test images: 62.65
-Accuracy of the network on 1128000 test images: 63.06
-Accuracy of the network on 1134000 test images: 62.8
-Accuracy of the network on 1140000 test images: 62.94
-209.95543503761292
-Epoch 19
-Accuracy of the network on 1146000 test images: 62.6
-Accuracy of the network on 1152000 test images: 62.56
-Accuracy of the network on 1158000 test images: 63.19
-Accuracy of the network on 1164000 test images: 63.05
-Accuracy of the network on 1170000 test images: 62.89
-Accuracy of the network on 1176000 test images: 62.82
-Accuracy of the network on 1182000 test images: 63.14
-Accuracy of the network on 1188000 test images: 63.35
-Accuracy of the network on 1194000 test images: 62.92
-Accuracy of the network on 1200000 test images: 63.34
-211.5254032611847
-Epoch 0
-Accuracy of the network on 6000 test images: 10.08
-Accuracy of the network on 12000 test images: 11.45
-Accuracy of the network on 18000 test images: 15.91
-Accuracy of the network on 24000 test images: 21.21
-Accuracy of the network on 30000 test images: 29.28
-Accuracy of the network on 36000 test images: 32.06
-Accuracy of the network on 42000 test images: 32.48
-Accuracy of the network on 48000 test images: 32.15
-Accuracy of the network on 54000 test images: 31.94
-Accuracy of the network on 60000 test images: 32.97
-209.00751757621765
-Epoch 1
-Accuracy of the network on 66000 test images: 33.23
-Accuracy of the network on 72000 test images: 33.62
-Accuracy of the network on 78000 test images: 33.37
-Accuracy of the network on 84000 test images: 32.87
-Accuracy of the network on 90000 test images: 33.48
-Accuracy of the network on 96000 test images: 33.3
-Accuracy of the network on 102000 test images: 33.03
-Accuracy of the network on 108000 test images: 32.79
-Accuracy of the network on 114000 test images: 32.46
-Accuracy of the network on 120000 test images: 32.24
-209.35538721084595
-Epoch 2
-Accuracy of the network on 126000 test images: 31.52
-Accuracy of the network on 132000 test images: 31.11
-Accuracy of the network on 138000 test images: 31.0
-Accuracy of the network on 144000 test images: 30.71
-Accuracy of the network on 150000 test images: 30.63
-Accuracy of the network on 156000 test images: 30.63
-Accuracy of the network on 162000 test images: 30.76
-Accuracy of the network on 168000 test images: 30.87
-Accuracy of the network on 174000 test images: 31.09
-Accuracy of the network on 180000 test images: 31.57
-209.1894280910492
-Epoch 3
-Accuracy of the network on 186000 test images: 31.98
-Accuracy of the network on 192000 test images: 32.1
-Accuracy of the network on 198000 test images: 32.72
-Accuracy of the network on 204000 test images: 33.03
-Accuracy of the network on 210000 test images: 33.39
-Accuracy of the network on 216000 test images: 33.65
-Accuracy of the network on 222000 test images: 33.92
-Accuracy of the network on 228000 test images: 34.15
-Accuracy of the network on 234000 test images: 34.44
-Accuracy of the network on 240000 test images: 34.39
-209.73829770088196
-Epoch 4
-Accuracy of the network on 246000 test images: 34.63
-Accuracy of the network on 252000 test images: 34.81
-Accuracy of the network on 258000 test images: 34.91
-Accuracy of the network on 264000 test images: 35.01
-Accuracy of the network on 270000 test images: 35.26
-Accuracy of the network on 276000 test images: 35.57
-Accuracy of the network on 282000 test images: 35.83
-Accuracy of the network on 288000 test images: 36.11
-Accuracy of the network on 294000 test images: 36.47
-Accuracy of the network on 300000 test images: 36.52
-209.4730212688446
-Epoch 5
-Accuracy of the network on 306000 test images: 37.1
-Accuracy of the network on 312000 test images: 36.96
-Accuracy of the network on 318000 test images: 37.35
-Accuracy of the network on 324000 test images: 37.64
-Accuracy of the network on 330000 test images: 37.92
-Accuracy of the network on 336000 test images: 38.17
-Accuracy of the network on 342000 test images: 38.29
-Accuracy of the network on 348000 test images: 38.65
-Accuracy of the network on 354000 test images: 39.12
-Accuracy of the network on 360000 test images: 39.25
-209.42924976348877
-Epoch 6
-Accuracy of the network on 366000 test images: 39.56
-Accuracy of the network on 372000 test images: 39.82
-Accuracy of the network on 378000 test images: 40.14
-Accuracy of the network on 384000 test images: 40.25
-Accuracy of the network on 390000 test images: 40.99
-Accuracy of the network on 396000 test images: 41.1
-Accuracy of the network on 402000 test images: 41.72
-Accuracy of the network on 408000 test images: 41.73
-Accuracy of the network on 414000 test images: 41.81
-Accuracy of the network on 420000 test images: 43.38
-210.2209279537201
-Epoch 7
-Accuracy of the network on 426000 test images: 44.69
-Accuracy of the network on 432000 test images: 45.18
-Accuracy of the network on 438000 test images: 45.05
-Accuracy of the network on 444000 test images: 45.6
-Accuracy of the network on 450000 test images: 45.8
-Accuracy of the network on 456000 test images: 45.91
-Accuracy of the network on 462000 test images: 46.1
-Accuracy of the network on 468000 test images: 46.04
-Accuracy of the network on 474000 test images: 46.34
-Accuracy of the network on 480000 test images: 46.41
-209.74163794517517
-Epoch 8
-Accuracy of the network on 486000 test images: 46.63
-Accuracy of the network on 492000 test images: 46.58
-Accuracy of the network on 498000 test images: 46.63
-Accuracy of the network on 504000 test images: 46.8
-Accuracy of the network on 510000 test images: 46.87
-Accuracy of the network on 516000 test images: 46.84
-Accuracy of the network on 522000 test images: 46.92
-Accuracy of the network on 528000 test images: 47.11
-Accuracy of the network on 534000 test images: 47.18
-Accuracy of the network on 540000 test images: 46.93
-211.08315896987915
-Epoch 9
-Accuracy of the network on 546000 test images: 47.29
-Accuracy of the network on 552000 test images: 47.39
-Accuracy of the network on 558000 test images: 47.53
-Accuracy of the network on 564000 test images: 47.3
-Accuracy of the network on 570000 test images: 47.31
-Accuracy of the network on 576000 test images: 47.22
-Accuracy of the network on 582000 test images: 47.5
-Accuracy of the network on 588000 test images: 47.55
-Accuracy of the network on 594000 test images: 47.72
-Accuracy of the network on 600000 test images: 47.77
-209.50522327423096
-Epoch 10
-Accuracy of the network on 606000 test images: 47.8
-Accuracy of the network on 612000 test images: 47.89
-Accuracy of the network on 618000 test images: 47.79
-Accuracy of the network on 624000 test images: 47.68
-Accuracy of the network on 630000 test images: 47.89
-Accuracy of the network on 636000 test images: 47.99
-Accuracy of the network on 642000 test images: 47.96
-Accuracy of the network on 648000 test images: 48.06
-Accuracy of the network on 654000 test images: 48.08
-Accuracy of the network on 660000 test images: 48.17
-209.74503231048584
-Epoch 11
-Accuracy of the network on 666000 test images: 48.18
-Accuracy of the network on 672000 test images: 47.95
-Accuracy of the network on 678000 test images: 48.34
-Accuracy of the network on 684000 test images: 48.05
-Accuracy of the network on 690000 test images: 48.7
-Accuracy of the network on 696000 test images: 48.52
-Accuracy of the network on 702000 test images: 48.68
-Accuracy of the network on 708000 test images: 48.53
-Accuracy of the network on 714000 test images: 48.68
-Accuracy of the network on 720000 test images: 48.75
-209.46247744560242
-Epoch 12
-Accuracy of the network on 726000 test images: 49.02
-Accuracy of the network on 732000 test images: 48.74
-Accuracy of the network on 738000 test images: 48.68
-Accuracy of the network on 744000 test images: 48.49
-Accuracy of the network on 750000 test images: 49.14
-Accuracy of the network on 756000 test images: 48.59
-Accuracy of the network on 762000 test images: 49.16
-Accuracy of the network on 768000 test images: 48.89
-Accuracy of the network on 774000 test images: 49.18
-Accuracy of the network on 780000 test images: 48.8
-210.98111200332642
-Epoch 13
-Accuracy of the network on 786000 test images: 49.14
-Accuracy of the network on 792000 test images: 49.01
-Accuracy of the network on 798000 test images: 49.07
-Accuracy of the network on 804000 test images: 49.39
-Accuracy of the network on 810000 test images: 49.12
-Accuracy of the network on 816000 test images: 49.34
-Accuracy of the network on 822000 test images: 49.23
-Accuracy of the network on 828000 test images: 49.13
-Accuracy of the network on 834000 test images: 49.56
-Accuracy of the network on 840000 test images: 49.47
-210.60340309143066
-Epoch 14
-Accuracy of the network on 846000 test images: 49.43
-Accuracy of the network on 852000 test images: 49.36
-Accuracy of the network on 858000 test images: 49.82
-Accuracy of the network on 864000 test images: 50.08
-Accuracy of the network on 870000 test images: 49.62
-Accuracy of the network on 876000 test images: 49.34
-Accuracy of the network on 882000 test images: 49.26
-Accuracy of the network on 888000 test images: 49.68
-Accuracy of the network on 894000 test images: 49.9
-Accuracy of the network on 900000 test images: 49.65
-210.10029792785645
-Epoch 15
-Accuracy of the network on 906000 test images: 49.56
-Accuracy of the network on 912000 test images: 50.42
-Accuracy of the network on 918000 test images: 49.48
-Accuracy of the network on 924000 test images: 49.68
-Accuracy of the network on 930000 test images: 49.98
-Accuracy of the network on 936000 test images: 50.39
-Accuracy of the network on 942000 test images: 49.93
-Accuracy of the network on 948000 test images: 49.96
-Accuracy of the network on 954000 test images: 49.66
-Accuracy of the network on 960000 test images: 49.95
-210.59525847434998
-Epoch 16
-Accuracy of the network on 966000 test images: 49.98
-Accuracy of the network on 972000 test images: 50.01
-Accuracy of the network on 978000 test images: 50.22
-Accuracy of the network on 984000 test images: 50.38
-Accuracy of the network on 990000 test images: 50.2
-Accuracy of the network on 996000 test images: 49.97
-Accuracy of the network on 1002000 test images: 50.38
-Accuracy of the network on 1008000 test images: 50.55
-Accuracy of the network on 1014000 test images: 50.44
-Accuracy of the network on 1020000 test images: 50.39
-210.47182273864746
-Epoch 17
-Accuracy of the network on 1026000 test images: 50.3
-Accuracy of the network on 1032000 test images: 50.3
-Accuracy of the network on 1038000 test images: 50.21
-Accuracy of the network on 1044000 test images: 50.44
-Accuracy of the network on 1050000 test images: 50.28
-Accuracy of the network on 1056000 test images: 50.25
-Accuracy of the network on 1062000 test images: 50.25
-Accuracy of the network on 1068000 test images: 50.38
-Accuracy of the network on 1074000 test images: 50.46
-Accuracy of the network on 1080000 test images: 50.77
-209.88518261909485
-Epoch 18
-Accuracy of the network on 1086000 test images: 50.87
-Accuracy of the network on 1092000 test images: 50.43
-Accuracy of the network on 1098000 test images: 51.19
-Accuracy of the network on 1104000 test images: 50.65
-Accuracy of the network on 1110000 test images: 50.76
-Accuracy of the network on 1116000 test images: 50.8
-Accuracy of the network on 1122000 test images: 50.91
-Accuracy of the network on 1128000 test images: 50.74
-Accuracy of the network on 1134000 test images: 50.61
-Accuracy of the network on 1140000 test images: 51.0
-210.1477644443512
-Epoch 19
-Accuracy of the network on 1146000 test images: 50.63
-Accuracy of the network on 1152000 test images: 50.8
-Accuracy of the network on 1158000 test images: 51.16
-Accuracy of the network on 1164000 test images: 50.91
-Accuracy of the network on 1170000 test images: 50.39
-Accuracy of the network on 1176000 test images: 51.26
-Accuracy of the network on 1182000 test images: 51.01
-Accuracy of the network on 1188000 test images: 50.99
-Accuracy of the network on 1194000 test images: 50.88
-Accuracy of the network on 1200000 test images: 50.81
-211.13048577308655
-Epoch 0
-Accuracy of the network on 6000 test images: 19.18
-Accuracy of the network on 12000 test images: 21.06
-Accuracy of the network on 18000 test images: 22.33
-Accuracy of the network on 24000 test images: 23.25
-Accuracy of the network on 30000 test images: 24.99
-Accuracy of the network on 36000 test images: 31.24
-Accuracy of the network on 42000 test images: 34.4
-Accuracy of the network on 48000 test images: 36.26
-Accuracy of the network on 54000 test images: 37.28
-Accuracy of the network on 60000 test images: 39.47
-210.02510237693787
-Epoch 1
-Accuracy of the network on 66000 test images: 41.29
-Accuracy of the network on 72000 test images: 42.04
-Accuracy of the network on 78000 test images: 42.58
-Accuracy of the network on 84000 test images: 41.86
-Accuracy of the network on 90000 test images: 38.09
-Accuracy of the network on 96000 test images: 36.55
-Accuracy of the network on 102000 test images: 35.78
-Accuracy of the network on 108000 test images: 37.08
-Accuracy of the network on 114000 test images: 38.28
-Accuracy of the network on 120000 test images: 37.15
-209.73229551315308
-Epoch 2
-Accuracy of the network on 126000 test images: 39.87
-Accuracy of the network on 132000 test images: 45.51
-Accuracy of the network on 138000 test images: 47.51
-Accuracy of the network on 144000 test images: 50.81
-Accuracy of the network on 150000 test images: 52.21
-Accuracy of the network on 156000 test images: 52.33
-Accuracy of the network on 162000 test images: 52.58
-Accuracy of the network on 168000 test images: 53.35
-Accuracy of the network on 174000 test images: 53.02
-Accuracy of the network on 180000 test images: 53.9
-209.51960849761963
-Epoch 3
-Accuracy of the network on 186000 test images: 53.04
-Accuracy of the network on 192000 test images: 53.82
-Accuracy of the network on 198000 test images: 54.17
-Accuracy of the network on 204000 test images: 54.15
-Accuracy of the network on 210000 test images: 53.73
-Accuracy of the network on 216000 test images: 57.0
-Accuracy of the network on 222000 test images: 62.44
-Accuracy of the network on 228000 test images: 62.76
-Accuracy of the network on 234000 test images: 63.27
-Accuracy of the network on 240000 test images: 63.19
-209.27979278564453
-Epoch 4
-Accuracy of the network on 246000 test images: 63.59
-Accuracy of the network on 252000 test images: 62.52
-Accuracy of the network on 258000 test images: 64.19
-Accuracy of the network on 264000 test images: 65.19
-Accuracy of the network on 270000 test images: 65.48
-Accuracy of the network on 276000 test images: 66.57
-Accuracy of the network on 282000 test images: 67.04
-Accuracy of the network on 288000 test images: 67.45
-Accuracy of the network on 294000 test images: 67.25
-Accuracy of the network on 300000 test images: 68.23
-209.06208324432373
-Epoch 5
-Accuracy of the network on 306000 test images: 68.53
-Accuracy of the network on 312000 test images: 67.93
-Accuracy of the network on 318000 test images: 69.94
-Accuracy of the network on 324000 test images: 70.27
-Accuracy of the network on 330000 test images: 70.69
-Accuracy of the network on 336000 test images: 70.24
-Accuracy of the network on 342000 test images: 71.1
-Accuracy of the network on 348000 test images: 71.32
-Accuracy of the network on 354000 test images: 71.82
-Accuracy of the network on 360000 test images: 71.68
-209.62974667549133
-Epoch 6
-Accuracy of the network on 366000 test images: 72.14
-Accuracy of the network on 372000 test images: 72.85
-Accuracy of the network on 378000 test images: 72.89
-Accuracy of the network on 384000 test images: 73.11
-Accuracy of the network on 390000 test images: 72.45
-Accuracy of the network on 396000 test images: 73.93
-Accuracy of the network on 402000 test images: 74.0
-Accuracy of the network on 408000 test images: 73.56
-Accuracy of the network on 414000 test images: 74.37
-Accuracy of the network on 420000 test images: 74.38
-210.9379801750183
-Epoch 7
-Accuracy of the network on 426000 test images: 73.41
-Accuracy of the network on 432000 test images: 74.55
-Accuracy of the network on 438000 test images: 74.85
-Accuracy of the network on 444000 test images: 74.76
-Accuracy of the network on 450000 test images: 74.95
-Accuracy of the network on 456000 test images: 74.69
-Accuracy of the network on 462000 test images: 75.38
-Accuracy of the network on 468000 test images: 75.35
-Accuracy of the network on 474000 test images: 75.12
-Accuracy of the network on 480000 test images: 75.32
-209.67654657363892
-Epoch 8
-Accuracy of the network on 486000 test images: 75.98
-Accuracy of the network on 492000 test images: 75.58
-Accuracy of the network on 498000 test images: 76.08
-Accuracy of the network on 504000 test images: 76.28
-Accuracy of the network on 510000 test images: 76.53
-Accuracy of the network on 516000 test images: 76.31
-Accuracy of the network on 522000 test images: 76.84
-Accuracy of the network on 528000 test images: 76.52
-Accuracy of the network on 534000 test images: 76.41
-Accuracy of the network on 540000 test images: 76.19
-210.25996780395508
-Epoch 9
-Accuracy of the network on 546000 test images: 77.15
-Accuracy of the network on 552000 test images: 77.03
-Accuracy of the network on 558000 test images: 77.31
-Accuracy of the network on 564000 test images: 77.68
-Accuracy of the network on 570000 test images: 77.54
-Accuracy of the network on 576000 test images: 77.7
-Accuracy of the network on 582000 test images: 77.9
-Accuracy of the network on 588000 test images: 77.77
-Accuracy of the network on 594000 test images: 77.91
-Accuracy of the network on 600000 test images: 77.59
-210.55559611320496
-Epoch 10
-Accuracy of the network on 606000 test images: 77.98
-Accuracy of the network on 612000 test images: 77.86
-Accuracy of the network on 618000 test images: 77.69
-Accuracy of the network on 624000 test images: 78.49
-Accuracy of the network on 630000 test images: 78.52
-Accuracy of the network on 636000 test images: 78.39
-Accuracy of the network on 642000 test images: 78.73
-Accuracy of the network on 648000 test images: 78.75
-Accuracy of the network on 654000 test images: 78.92
-Accuracy of the network on 660000 test images: 78.77
-210.10763382911682
-Epoch 11
-Accuracy of the network on 666000 test images: 78.6
-Accuracy of the network on 672000 test images: 78.89
-Accuracy of the network on 678000 test images: 79.07
-Accuracy of the network on 684000 test images: 79.29
-Accuracy of the network on 690000 test images: 79.42
-Accuracy of the network on 696000 test images: 79.36
-Accuracy of the network on 702000 test images: 79.02
-Accuracy of the network on 708000 test images: 79.44
-Accuracy of the network on 714000 test images: 79.57
-Accuracy of the network on 720000 test images: 79.45
-209.25437259674072
-Epoch 12
-Accuracy of the network on 726000 test images: 79.49
-Accuracy of the network on 732000 test images: 79.51
-Accuracy of the network on 738000 test images: 79.73
-Accuracy of the network on 744000 test images: 79.02
-Accuracy of the network on 750000 test images: 79.6
-Accuracy of the network on 756000 test images: 80.02
-Accuracy of the network on 762000 test images: 80.06
-Accuracy of the network on 768000 test images: 79.93
-Accuracy of the network on 774000 test images: 79.67
-Accuracy of the network on 780000 test images: 80.27
-209.59062957763672
-Epoch 13
-Accuracy of the network on 786000 test images: 79.91
-Accuracy of the network on 792000 test images: 80.27
-Accuracy of the network on 798000 test images: 80.2
-Accuracy of the network on 804000 test images: 80.42
-Accuracy of the network on 810000 test images: 80.53
-Accuracy of the network on 816000 test images: 80.33
-Accuracy of the network on 822000 test images: 80.59
-Accuracy of the network on 828000 test images: 80.5
-Accuracy of the network on 834000 test images: 80.36
-Accuracy of the network on 840000 test images: 80.41
-209.74851894378662
-Epoch 14
-Accuracy of the network on 846000 test images: 80.7
-Accuracy of the network on 852000 test images: 80.78
-Accuracy of the network on 858000 test images: 80.48
-Accuracy of the network on 864000 test images: 80.57
-Accuracy of the network on 870000 test images: 80.8
-Accuracy of the network on 876000 test images: 80.88
-Accuracy of the network on 882000 test images: 80.85
-Accuracy of the network on 888000 test images: 80.75
-Accuracy of the network on 894000 test images: 80.88
-Accuracy of the network on 900000 test images: 81.11
-210.26912784576416
-Epoch 15
-Accuracy of the network on 906000 test images: 81.16
-Accuracy of the network on 912000 test images: 81.01
-Accuracy of the network on 918000 test images: 80.93
-Accuracy of the network on 924000 test images: 80.96
-Accuracy of the network on 930000 test images: 81.26
-Accuracy of the network on 936000 test images: 81.04
-Accuracy of the network on 942000 test images: 80.73
-Accuracy of the network on 948000 test images: 81.35
-Accuracy of the network on 954000 test images: 81.5
-Accuracy of the network on 960000 test images: 81.38
-210.11253595352173
-Epoch 16
-Accuracy of the network on 966000 test images: 81.46
-Accuracy of the network on 972000 test images: 81.51
-Accuracy of the network on 978000 test images: 81.29
-Accuracy of the network on 984000 test images: 81.67
-Accuracy of the network on 990000 test images: 81.57
-Accuracy of the network on 996000 test images: 81.51
-Accuracy of the network on 1002000 test images: 81.74
-Accuracy of the network on 1008000 test images: 81.74
-Accuracy of the network on 1014000 test images: 81.52
-Accuracy of the network on 1020000 test images: 81.87
-209.37256979942322
-Epoch 17
-Accuracy of the network on 1026000 test images: 81.7
+Accuracy of the network on 1026000 test images: 81.71
 Accuracy of the network on 1032000 test images: 81.58
-Accuracy of the network on 1038000 test images: 81.85
-Accuracy of the network on 1044000 test images: 82.01
-Accuracy of the network on 1050000 test images: 81.73
-Accuracy of the network on 1056000 test images: 81.83
-Accuracy of the network on 1062000 test images: 81.85
-Accuracy of the network on 1068000 test images: 82.07
-Accuracy of the network on 1074000 test images: 82.12
-Accuracy of the network on 1080000 test images: 81.75
-210.19688892364502
+Accuracy of the network on 1038000 test images: 80.14
+Accuracy of the network on 1044000 test images: 82.07
+Accuracy of the network on 1050000 test images: 81.69
+Accuracy of the network on 1056000 test images: 81.81
+Accuracy of the network on 1062000 test images: 81.94
+Accuracy of the network on 1068000 test images: 82.12
+Accuracy of the network on 1074000 test images: 81.62
+Accuracy of the network on 1080000 test images: 82.24
+25.79802966117859
 Epoch 18
-Accuracy of the network on 1086000 test images: 82.04
-Accuracy of the network on 1092000 test images: 81.87
-Accuracy of the network on 1098000 test images: 82.2
-Accuracy of the network on 1104000 test images: 82.38
-Accuracy of the network on 1110000 test images: 82.03
-Accuracy of the network on 1116000 test images: 82.37
-Accuracy of the network on 1122000 test images: 81.95
-Accuracy of the network on 1128000 test images: 81.9
-Accuracy of the network on 1134000 test images: 82.29
-Accuracy of the network on 1140000 test images: 82.12
-210.19096779823303
+Accuracy of the network on 1086000 test images: 82.01
+Accuracy of the network on 1092000 test images: 81.98
+Accuracy of the network on 1098000 test images: 81.13
+Accuracy of the network on 1104000 test images: 81.51
+Accuracy of the network on 1110000 test images: 81.75
+Accuracy of the network on 1116000 test images: 82.12
+Accuracy of the network on 1122000 test images: 81.99
+Accuracy of the network on 1128000 test images: 82.23
+Accuracy of the network on 1134000 test images: 82.19
+Accuracy of the network on 1140000 test images: 82.21
+26.385106563568115
 Epoch 19
-Accuracy of the network on 1146000 test images: 82.51
-Accuracy of the network on 1152000 test images: 82.16
-Accuracy of the network on 1158000 test images: 82.56
-Accuracy of the network on 1164000 test images: 82.21
-Accuracy of the network on 1170000 test images: 82.61
-Accuracy of the network on 1176000 test images: 82.75
-Accuracy of the network on 1182000 test images: 82.29
-Accuracy of the network on 1188000 test images: 82.55
-Accuracy of the network on 1194000 test images: 82.52
-Accuracy of the network on 1200000 test images: 82.53
-208.8911612033844
+Accuracy of the network on 1146000 test images: 82.1
+Accuracy of the network on 1152000 test images: 82.43
+Accuracy of the network on 1158000 test images: 82.2
+Accuracy of the network on 1164000 test images: 81.8
+Accuracy of the network on 1170000 test images: 81.98
+Accuracy of the network on 1176000 test images: 82.44
+Accuracy of the network on 1182000 test images: 82.25
+Accuracy of the network on 1188000 test images: 82.7
+Accuracy of the network on 1194000 test images: 82.13
+Accuracy of the network on 1200000 test images: 82.24
+26.605627298355103
+Epoch 20
+Accuracy of the network on 1206000 test images: 82.47
+Accuracy of the network on 1212000 test images: 82.38
+Accuracy of the network on 1218000 test images: 82.3
+Accuracy of the network on 1224000 test images: 82.59
+Accuracy of the network on 1230000 test images: 82.43
+Accuracy of the network on 1236000 test images: 82.3
+Accuracy of the network on 1242000 test images: 82.6
+Accuracy of the network on 1248000 test images: 82.24
+Accuracy of the network on 1254000 test images: 82.59
+Accuracy of the network on 1260000 test images: 82.83
+26.02824568748474
+Epoch 21
+Accuracy of the network on 1266000 test images: 82.63
+Accuracy of the network on 1272000 test images: 82.79
+Accuracy of the network on 1278000 test images: 82.69
+Accuracy of the network on 1284000 test images: 82.78
+Accuracy of the network on 1290000 test images: 82.68
+Accuracy of the network on 1296000 test images: 82.46
+Accuracy of the network on 1302000 test images: 82.61
+Accuracy of the network on 1308000 test images: 82.27
+Accuracy of the network on 1314000 test images: 82.88
+Accuracy of the network on 1320000 test images: 83.01
+25.517566442489624
+Epoch 22
+Accuracy of the network on 1326000 test images: 82.6
+Accuracy of the network on 1332000 test images: 83.08
+Accuracy of the network on 1338000 test images: 82.98
+Accuracy of the network on 1344000 test images: 82.99
+Accuracy of the network on 1350000 test images: 82.79
+Accuracy of the network on 1356000 test images: 82.97
+Accuracy of the network on 1362000 test images: 83.04
+Accuracy of the network on 1368000 test images: 83.07
+Accuracy of the network on 1374000 test images: 82.92
+Accuracy of the network on 1380000 test images: 82.54
+26.789169549942017
+Epoch 23
+Accuracy of the network on 1386000 test images: 82.69
+Accuracy of the network on 1392000 test images: 83.05
+Accuracy of the network on 1398000 test images: 83.08
+Accuracy of the network on 1404000 test images: 82.47
+Accuracy of the network on 1410000 test images: 82.94
+Accuracy of the network on 1416000 test images: 83.26
+Accuracy of the network on 1422000 test images: 82.96
+Accuracy of the network on 1428000 test images: 83.15
+Accuracy of the network on 1434000 test images: 83.2
+Accuracy of the network on 1440000 test images: 83.1
+26.517948389053345
+Epoch 24
+Accuracy of the network on 1446000 test images: 83.11
+Accuracy of the network on 1452000 test images: 83.06
+Accuracy of the network on 1458000 test images: 83.19
+Accuracy of the network on 1464000 test images: 83.22
+Accuracy of the network on 1470000 test images: 83.33
+Accuracy of the network on 1476000 test images: 83.08
+Accuracy of the network on 1482000 test images: 83.16
+Accuracy of the network on 1488000 test images: 82.97
+Accuracy of the network on 1494000 test images: 82.94
+Accuracy of the network on 1500000 test images: 83.03
+25.525025367736816
+Epoch 25
+Accuracy of the network on 1506000 test images: 83.16
+Accuracy of the network on 1512000 test images: 83.28
+Accuracy of the network on 1518000 test images: 83.37
+Accuracy of the network on 1524000 test images: 83.21
+Accuracy of the network on 1530000 test images: 83.47
+Accuracy of the network on 1536000 test images: 83.47
+Accuracy of the network on 1542000 test images: 83.47
+Accuracy of the network on 1548000 test images: 83.56
+Accuracy of the network on 1554000 test images: 83.25
+Accuracy of the network on 1560000 test images: 83.34
+25.43407368659973
+Epoch 26
+Accuracy of the network on 1566000 test images: 83.4
+Accuracy of the network on 1572000 test images: 83.42
+Accuracy of the network on 1578000 test images: 83.5
+Accuracy of the network on 1584000 test images: 83.47
+Accuracy of the network on 1590000 test images: 83.51
+Accuracy of the network on 1596000 test images: 83.56
+Accuracy of the network on 1602000 test images: 83.58
+Accuracy of the network on 1608000 test images: 83.67
+Accuracy of the network on 1614000 test images: 82.27
+Accuracy of the network on 1620000 test images: 83.7
+26.25952386856079
+Epoch 27
+Accuracy of the network on 1626000 test images: 83.32
+Accuracy of the network on 1632000 test images: 83.61
+Accuracy of the network on 1638000 test images: 83.22
+Accuracy of the network on 1644000 test images: 83.48
+Accuracy of the network on 1650000 test images: 83.64
+Accuracy of the network on 1656000 test images: 83.17
+Accuracy of the network on 1662000 test images: 83.48
+Accuracy of the network on 1668000 test images: 83.69
+Accuracy of the network on 1674000 test images: 83.84
+Accuracy of the network on 1680000 test images: 83.64
+25.366506576538086
+Epoch 28
+Accuracy of the network on 1686000 test images: 83.35
+Accuracy of the network on 1692000 test images: 83.8
+Accuracy of the network on 1698000 test images: 83.62
+Accuracy of the network on 1704000 test images: 83.66
+Accuracy of the network on 1710000 test images: 83.79
+Accuracy of the network on 1716000 test images: 83.43
+Accuracy of the network on 1722000 test images: 83.76
+Accuracy of the network on 1728000 test images: 83.59
+Accuracy of the network on 1734000 test images: 83.93
+Accuracy of the network on 1740000 test images: 83.26
+26.065869092941284
+Epoch 29
+Accuracy of the network on 1746000 test images: 83.85
+Accuracy of the network on 1752000 test images: 83.71
+Accuracy of the network on 1758000 test images: 83.9
+Accuracy of the network on 1764000 test images: 83.53
+Accuracy of the network on 1770000 test images: 83.83
+Accuracy of the network on 1776000 test images: 84.04
+Accuracy of the network on 1782000 test images: 83.97
+Accuracy of the network on 1788000 test images: 84.04
+Accuracy of the network on 1794000 test images: 84.04
+Accuracy of the network on 1800000 test images: 83.9
+25.816314935684204
 Epoch 0
-Accuracy of the network on 6000 test images: 11.86
-Accuracy of the network on 12000 test images: 19.13
-Accuracy of the network on 18000 test images: 24.0
-Accuracy of the network on 24000 test images: 26.01
-Accuracy of the network on 30000 test images: 28.01
-Accuracy of the network on 36000 test images: 28.69
-Accuracy of the network on 42000 test images: 29.94
-Accuracy of the network on 48000 test images: 31.32
-Accuracy of the network on 54000 test images: 30.65
-Accuracy of the network on 60000 test images: 30.32
-210.85550785064697
+Accuracy of the network on 6000 test images: 7.41
+Accuracy of the network on 12000 test images: 14.86
+Accuracy of the network on 18000 test images: 19.99
+Accuracy of the network on 24000 test images: 22.27
+Accuracy of the network on 30000 test images: 25.4
+Accuracy of the network on 36000 test images: 29.35
+Accuracy of the network on 42000 test images: 31.89
+Accuracy of the network on 48000 test images: 31.71
+Accuracy of the network on 54000 test images: 31.56
+Accuracy of the network on 60000 test images: 31.03
+211.27063059806824
 Epoch 1
-Accuracy of the network on 66000 test images: 31.02
-Accuracy of the network on 72000 test images: 32.72
-Accuracy of the network on 78000 test images: 34.47
-Accuracy of the network on 84000 test images: 35.1
-Accuracy of the network on 90000 test images: 36.82
-Accuracy of the network on 96000 test images: 37.02
-Accuracy of the network on 102000 test images: 39.04
-Accuracy of the network on 108000 test images: 40.07
-Accuracy of the network on 114000 test images: 41.71
-Accuracy of the network on 120000 test images: 42.4
-209.3353888988495
+Accuracy of the network on 66000 test images: 30.98
+Accuracy of the network on 72000 test images: 30.31
+Accuracy of the network on 78000 test images: 29.68
+Accuracy of the network on 84000 test images: 29.43
+Accuracy of the network on 90000 test images: 29.39
+Accuracy of the network on 96000 test images: 29.3
+Accuracy of the network on 102000 test images: 29.27
+Accuracy of the network on 108000 test images: 29.15
+Accuracy of the network on 114000 test images: 29.15
+Accuracy of the network on 120000 test images: 29.14
+212.0666320323944
 Epoch 2
-Accuracy of the network on 126000 test images: 42.82
-Accuracy of the network on 132000 test images: 44.06
-Accuracy of the network on 138000 test images: 43.98
-Accuracy of the network on 144000 test images: 45.21
-Accuracy of the network on 150000 test images: 46.14
-Accuracy of the network on 156000 test images: 46.53
-Accuracy of the network on 162000 test images: 47.35
-Accuracy of the network on 168000 test images: 48.23
-Accuracy of the network on 174000 test images: 48.06
-Accuracy of the network on 180000 test images: 48.61
-209.7743697166443
+Accuracy of the network on 126000 test images: 29.32
+Accuracy of the network on 132000 test images: 29.95
+Accuracy of the network on 138000 test images: 30.8
+Accuracy of the network on 144000 test images: 31.37
+Accuracy of the network on 150000 test images: 32.16
+Accuracy of the network on 156000 test images: 32.77
+Accuracy of the network on 162000 test images: 33.66
+Accuracy of the network on 168000 test images: 34.93
+Accuracy of the network on 174000 test images: 36.31
+Accuracy of the network on 180000 test images: 37.54
+211.21296501159668
 Epoch 3
-Accuracy of the network on 186000 test images: 48.93
-Accuracy of the network on 192000 test images: 49.39
-Accuracy of the network on 198000 test images: 49.57
-Accuracy of the network on 204000 test images: 50.74
-Accuracy of the network on 210000 test images: 51.08
-Accuracy of the network on 216000 test images: 51.5
-Accuracy of the network on 222000 test images: 51.57
-Accuracy of the network on 228000 test images: 52.06
-Accuracy of the network on 234000 test images: 52.58
-Accuracy of the network on 240000 test images: 53.31
-210.6913206577301
+Accuracy of the network on 186000 test images: 37.72
+Accuracy of the network on 192000 test images: 37.75
+Accuracy of the network on 198000 test images: 37.98
+Accuracy of the network on 204000 test images: 38.1
+Accuracy of the network on 210000 test images: 38.36
+Accuracy of the network on 216000 test images: 39.72
+Accuracy of the network on 222000 test images: 39.41
+Accuracy of the network on 228000 test images: 39.8
+Accuracy of the network on 234000 test images: 39.29
+Accuracy of the network on 240000 test images: 39.61
+211.4887158870697
 Epoch 4
-Accuracy of the network on 246000 test images: 52.99
-Accuracy of the network on 252000 test images: 54.51
-Accuracy of the network on 258000 test images: 54.79
-Accuracy of the network on 264000 test images: 54.27
-Accuracy of the network on 270000 test images: 54.92
-Accuracy of the network on 276000 test images: 55.45
-Accuracy of the network on 282000 test images: 55.44
-Accuracy of the network on 288000 test images: 55.59
-Accuracy of the network on 294000 test images: 55.92
-Accuracy of the network on 300000 test images: 56.24
-209.51503205299377
+Accuracy of the network on 246000 test images: 40.25
+Accuracy of the network on 252000 test images: 40.19
+Accuracy of the network on 258000 test images: 40.24
+Accuracy of the network on 264000 test images: 41.09
+Accuracy of the network on 270000 test images: 41.1
+Accuracy of the network on 276000 test images: 41.24
+Accuracy of the network on 282000 test images: 40.94
+Accuracy of the network on 288000 test images: 42.54
+Accuracy of the network on 294000 test images: 42.49
+Accuracy of the network on 300000 test images: 43.32
+211.33973622322083
 Epoch 5
-Accuracy of the network on 306000 test images: 56.79
-Accuracy of the network on 312000 test images: 56.85
-Accuracy of the network on 318000 test images: 56.71
-Accuracy of the network on 324000 test images: 57.07
-Accuracy of the network on 330000 test images: 57.39
-Accuracy of the network on 336000 test images: 57.55
-Accuracy of the network on 342000 test images: 58.05
-Accuracy of the network on 348000 test images: 57.95
-Accuracy of the network on 354000 test images: 57.85
-Accuracy of the network on 360000 test images: 58.11
-210.67939162254333
+Accuracy of the network on 306000 test images: 43.12
+Accuracy of the network on 312000 test images: 43.47
+Accuracy of the network on 318000 test images: 42.53
+Accuracy of the network on 324000 test images: 43.68
+Accuracy of the network on 330000 test images: 43.89
+Accuracy of the network on 336000 test images: 44.05
+Accuracy of the network on 342000 test images: 43.7
+Accuracy of the network on 348000 test images: 43.48
+Accuracy of the network on 354000 test images: 44.09
+Accuracy of the network on 360000 test images: 44.65
+212.02561378479004
 Epoch 6
-Accuracy of the network on 366000 test images: 58.35
-Accuracy of the network on 372000 test images: 59.13
-Accuracy of the network on 378000 test images: 59.36
-Accuracy of the network on 384000 test images: 59.45
-Accuracy of the network on 390000 test images: 59.48
-Accuracy of the network on 396000 test images: 59.83
-Accuracy of the network on 402000 test images: 60.11
-Accuracy of the network on 408000 test images: 60.82
-Accuracy of the network on 414000 test images: 60.03
-Accuracy of the network on 420000 test images: 60.53
-209.40786290168762
+Accuracy of the network on 366000 test images: 44.56
+Accuracy of the network on 372000 test images: 45.24
+Accuracy of the network on 378000 test images: 44.35
+Accuracy of the network on 384000 test images: 45.4
+Accuracy of the network on 390000 test images: 45.92
+Accuracy of the network on 396000 test images: 45.83
+Accuracy of the network on 402000 test images: 46.16
+Accuracy of the network on 408000 test images: 46.84
+Accuracy of the network on 414000 test images: 47.15
+Accuracy of the network on 420000 test images: 46.55
+211.93523907661438
 Epoch 7
-Accuracy of the network on 426000 test images: 61.17
-Accuracy of the network on 432000 test images: 62.22
-Accuracy of the network on 438000 test images: 60.41
-Accuracy of the network on 444000 test images: 61.35
-Accuracy of the network on 450000 test images: 61.45
-Accuracy of the network on 456000 test images: 62.36
-Accuracy of the network on 462000 test images: 61.62
-Accuracy of the network on 468000 test images: 62.76
-Accuracy of the network on 474000 test images: 62.89
-Accuracy of the network on 480000 test images: 62.14
-209.33270835876465
+Accuracy of the network on 426000 test images: 46.38
+Accuracy of the network on 432000 test images: 46.84
+Accuracy of the network on 438000 test images: 47.44
+Accuracy of the network on 444000 test images: 48.43
+Accuracy of the network on 450000 test images: 48.67
+Accuracy of the network on 456000 test images: 48.64
+Accuracy of the network on 462000 test images: 49.15
+Accuracy of the network on 468000 test images: 49.44
+Accuracy of the network on 474000 test images: 49.32
+Accuracy of the network on 480000 test images: 49.68
+211.65423274040222
 Epoch 8
-Accuracy of the network on 486000 test images: 62.37
-Accuracy of the network on 492000 test images: 62.67
-Accuracy of the network on 498000 test images: 62.57
-Accuracy of the network on 504000 test images: 63.52
-Accuracy of the network on 510000 test images: 63.15
-Accuracy of the network on 516000 test images: 63.67
-Accuracy of the network on 522000 test images: 63.58
-Accuracy of the network on 528000 test images: 63.71
-Accuracy of the network on 534000 test images: 64.03
-Accuracy of the network on 540000 test images: 63.57
-210.1449179649353
+Accuracy of the network on 486000 test images: 49.57
+Accuracy of the network on 492000 test images: 50.2
+Accuracy of the network on 498000 test images: 50.3
+Accuracy of the network on 504000 test images: 50.81
+Accuracy of the network on 510000 test images: 50.5
+Accuracy of the network on 516000 test images: 51.46
+Accuracy of the network on 522000 test images: 51.58
+Accuracy of the network on 528000 test images: 51.6
+Accuracy of the network on 534000 test images: 51.01
+Accuracy of the network on 540000 test images: 51.91
+211.83247017860413
 Epoch 9
-Accuracy of the network on 546000 test images: 63.69
-Accuracy of the network on 552000 test images: 63.98
-Accuracy of the network on 558000 test images: 64.16
-Accuracy of the network on 564000 test images: 64.28
-Accuracy of the network on 570000 test images: 64.25
-Accuracy of the network on 576000 test images: 64.35
-Accuracy of the network on 582000 test images: 64.09
-Accuracy of the network on 588000 test images: 64.5
-Accuracy of the network on 594000 test images: 64.82
-Accuracy of the network on 600000 test images: 64.69
-210.06074357032776
+Accuracy of the network on 546000 test images: 51.86
+Accuracy of the network on 552000 test images: 53.09
+Accuracy of the network on 558000 test images: 53.15
+Accuracy of the network on 564000 test images: 53.11
+Accuracy of the network on 570000 test images: 53.03
+Accuracy of the network on 576000 test images: 53.6
+Accuracy of the network on 582000 test images: 53.0
+Accuracy of the network on 588000 test images: 53.95
+Accuracy of the network on 594000 test images: 53.59
+Accuracy of the network on 600000 test images: 54.7
+210.9960331916809
 Epoch 10
-Accuracy of the network on 606000 test images: 64.31
-Accuracy of the network on 612000 test images: 64.32
-Accuracy of the network on 618000 test images: 64.93
-Accuracy of the network on 624000 test images: 65.03
-Accuracy of the network on 630000 test images: 65.02
-Accuracy of the network on 636000 test images: 64.92
-Accuracy of the network on 642000 test images: 65.04
-Accuracy of the network on 648000 test images: 65.26
-Accuracy of the network on 654000 test images: 65.11
-Accuracy of the network on 660000 test images: 65.01
-210.68631720542908
+Accuracy of the network on 606000 test images: 54.34
+Accuracy of the network on 612000 test images: 55.09
+Accuracy of the network on 618000 test images: 54.67
+Accuracy of the network on 624000 test images: 54.29
+Accuracy of the network on 630000 test images: 54.23
+Accuracy of the network on 636000 test images: 54.65
+Accuracy of the network on 642000 test images: 55.08
+Accuracy of the network on 648000 test images: 55.31
+Accuracy of the network on 654000 test images: 55.46
+Accuracy of the network on 660000 test images: 55.68
+212.1512258052826
 Epoch 11
-Accuracy of the network on 666000 test images: 64.61
-Accuracy of the network on 672000 test images: 65.4
-Accuracy of the network on 678000 test images: 65.14
-Accuracy of the network on 684000 test images: 64.86
-Accuracy of the network on 690000 test images: 65.03
-Accuracy of the network on 696000 test images: 65.55
-Accuracy of the network on 702000 test images: 64.81
-Accuracy of the network on 708000 test images: 65.9
-Accuracy of the network on 714000 test images: 65.46
-Accuracy of the network on 720000 test images: 65.58
-210.62537169456482
+Accuracy of the network on 666000 test images: 55.77
+Accuracy of the network on 672000 test images: 55.37
+Accuracy of the network on 678000 test images: 55.67
+Accuracy of the network on 684000 test images: 56.09
+Accuracy of the network on 690000 test images: 55.72
+Accuracy of the network on 696000 test images: 55.84
+Accuracy of the network on 702000 test images: 56.22
+Accuracy of the network on 708000 test images: 56.19
+Accuracy of the network on 714000 test images: 56.26
+Accuracy of the network on 720000 test images: 55.99
+211.61256575584412
 Epoch 12
-Accuracy of the network on 726000 test images: 65.62
-Accuracy of the network on 732000 test images: 65.83
-Accuracy of the network on 738000 test images: 65.65
-Accuracy of the network on 744000 test images: 65.86
-Accuracy of the network on 750000 test images: 65.89
-Accuracy of the network on 756000 test images: 66.17
-Accuracy of the network on 762000 test images: 66.25
-Accuracy of the network on 768000 test images: 66.06
-Accuracy of the network on 774000 test images: 65.91
-Accuracy of the network on 780000 test images: 65.93
-209.92651510238647
+Accuracy of the network on 726000 test images: 56.11
+Accuracy of the network on 732000 test images: 56.38
+Accuracy of the network on 738000 test images: 56.49
+Accuracy of the network on 744000 test images: 56.27
+Accuracy of the network on 750000 test images: 56.42
+Accuracy of the network on 756000 test images: 56.83
+Accuracy of the network on 762000 test images: 56.68
+Accuracy of the network on 768000 test images: 56.52
+Accuracy of the network on 774000 test images: 56.59
+Accuracy of the network on 780000 test images: 56.37
+211.33379745483398
 Epoch 13
-Accuracy of the network on 786000 test images: 65.55
-Accuracy of the network on 792000 test images: 66.27
-Accuracy of the network on 798000 test images: 65.52
-Accuracy of the network on 804000 test images: 66.34
-Accuracy of the network on 810000 test images: 65.61
-Accuracy of the network on 816000 test images: 66.17
-Accuracy of the network on 822000 test images: 66.27
-Accuracy of the network on 828000 test images: 65.97
-Accuracy of the network on 834000 test images: 66.48
-Accuracy of the network on 840000 test images: 66.33
-209.99958205223083
+Accuracy of the network on 786000 test images: 56.96
+Accuracy of the network on 792000 test images: 56.69
+Accuracy of the network on 798000 test images: 56.74
+Accuracy of the network on 804000 test images: 56.58
+Accuracy of the network on 810000 test images: 56.79
+Accuracy of the network on 816000 test images: 56.98
+Accuracy of the network on 822000 test images: 56.97
+Accuracy of the network on 828000 test images: 57.22
+Accuracy of the network on 834000 test images: 56.8
+Accuracy of the network on 840000 test images: 57.0
+211.88970565795898
 Epoch 14
-Accuracy of the network on 846000 test images: 66.47
-Accuracy of the network on 852000 test images: 65.84
-Accuracy of the network on 858000 test images: 66.29
-Accuracy of the network on 864000 test images: 66.61
-Accuracy of the network on 870000 test images: 66.52
-Accuracy of the network on 876000 test images: 66.64
-Accuracy of the network on 882000 test images: 66.56
-Accuracy of the network on 888000 test images: 66.61
-Accuracy of the network on 894000 test images: 66.92
-Accuracy of the network on 900000 test images: 66.98
-210.58455061912537
+Accuracy of the network on 846000 test images: 57.09
+Accuracy of the network on 852000 test images: 56.77
+Accuracy of the network on 858000 test images: 57.1
+Accuracy of the network on 864000 test images: 56.98
+Accuracy of the network on 870000 test images: 57.08
+Accuracy of the network on 876000 test images: 57.37
+Accuracy of the network on 882000 test images: 57.57
+Accuracy of the network on 888000 test images: 57.26
+Accuracy of the network on 894000 test images: 57.52
+Accuracy of the network on 900000 test images: 57.5
+211.87939524650574
 Epoch 15
-Accuracy of the network on 906000 test images: 66.6
-Accuracy of the network on 912000 test images: 65.98
-Accuracy of the network on 918000 test images: 66.96
-Accuracy of the network on 924000 test images: 66.9
-Accuracy of the network on 930000 test images: 66.93
-Accuracy of the network on 936000 test images: 66.85
-Accuracy of the network on 942000 test images: 66.6
-Accuracy of the network on 948000 test images: 66.92
-Accuracy of the network on 954000 test images: 67.1
-Accuracy of the network on 960000 test images: 66.98
-211.11628651618958
+Accuracy of the network on 906000 test images: 57.48
+Accuracy of the network on 912000 test images: 57.22
+Accuracy of the network on 918000 test images: 57.35
+Accuracy of the network on 924000 test images: 57.76
+Accuracy of the network on 930000 test images: 57.96
+Accuracy of the network on 936000 test images: 57.76
+Accuracy of the network on 942000 test images: 57.72
+Accuracy of the network on 948000 test images: 57.54
+Accuracy of the network on 954000 test images: 57.89
+Accuracy of the network on 960000 test images: 57.74
+211.92750787734985
 Epoch 16
-Accuracy of the network on 966000 test images: 67.1
-Accuracy of the network on 972000 test images: 67.04
-Accuracy of the network on 978000 test images: 66.82
-Accuracy of the network on 984000 test images: 67.3
-Accuracy of the network on 990000 test images: 67.14
-Accuracy of the network on 996000 test images: 67.13
-Accuracy of the network on 1002000 test images: 67.36
-Accuracy of the network on 1008000 test images: 66.8
-Accuracy of the network on 1014000 test images: 66.44
-Accuracy of the network on 1020000 test images: 67.42
-211.11248421669006
+Accuracy of the network on 966000 test images: 57.81
+Accuracy of the network on 972000 test images: 57.84
+Accuracy of the network on 978000 test images: 58.09
+Accuracy of the network on 984000 test images: 57.75
+Accuracy of the network on 990000 test images: 57.76
+Accuracy of the network on 996000 test images: 57.74
+Accuracy of the network on 1002000 test images: 57.73
+Accuracy of the network on 1008000 test images: 58.11
+Accuracy of the network on 1014000 test images: 57.78
+Accuracy of the network on 1020000 test images: 58.17
+212.20273876190186
 Epoch 17
-Accuracy of the network on 1026000 test images: 67.34
-Accuracy of the network on 1032000 test images: 67.34
-Accuracy of the network on 1038000 test images: 67.2
-Accuracy of the network on 1044000 test images: 67.44
-Accuracy of the network on 1050000 test images: 67.57
-Accuracy of the network on 1056000 test images: 67.14
-Accuracy of the network on 1062000 test images: 67.12
-Accuracy of the network on 1068000 test images: 67.36
-Accuracy of the network on 1074000 test images: 67.41
-Accuracy of the network on 1080000 test images: 67.64
-210.11089277267456
+Accuracy of the network on 1026000 test images: 58.14
+Accuracy of the network on 1032000 test images: 58.25
+Accuracy of the network on 1038000 test images: 57.96
+Accuracy of the network on 1044000 test images: 58.11
+Accuracy of the network on 1050000 test images: 57.33
+Accuracy of the network on 1056000 test images: 58.33
+Accuracy of the network on 1062000 test images: 58.37
+Accuracy of the network on 1068000 test images: 58.38
+Accuracy of the network on 1074000 test images: 58.4
+Accuracy of the network on 1080000 test images: 58.22
+211.40111875534058
 Epoch 18
-Accuracy of the network on 1086000 test images: 67.45
-Accuracy of the network on 1092000 test images: 67.66
-Accuracy of the network on 1098000 test images: 67.55
-Accuracy of the network on 1104000 test images: 67.78
-Accuracy of the network on 1110000 test images: 66.92
-Accuracy of the network on 1116000 test images: 67.68
-Accuracy of the network on 1122000 test images: 67.93
-Accuracy of the network on 1128000 test images: 67.57
-Accuracy of the network on 1134000 test images: 67.86
-Accuracy of the network on 1140000 test images: 67.97
-209.71516489982605
+Accuracy of the network on 1086000 test images: 57.83
+Accuracy of the network on 1092000 test images: 58.49
+Accuracy of the network on 1098000 test images: 58.41
+Accuracy of the network on 1104000 test images: 57.81
+Accuracy of the network on 1110000 test images: 58.4
+Accuracy of the network on 1116000 test images: 58.34
+Accuracy of the network on 1122000 test images: 58.61
+Accuracy of the network on 1128000 test images: 58.63
+Accuracy of the network on 1134000 test images: 58.68
+Accuracy of the network on 1140000 test images: 58.56
+212.4715588092804
 Epoch 19
-Accuracy of the network on 1146000 test images: 67.11
-Accuracy of the network on 1152000 test images: 67.91
-Accuracy of the network on 1158000 test images: 67.05
-Accuracy of the network on 1164000 test images: 67.78
-Accuracy of the network on 1170000 test images: 67.39
-Accuracy of the network on 1176000 test images: 67.61
-Accuracy of the network on 1182000 test images: 67.76
-Accuracy of the network on 1188000 test images: 67.65
-Accuracy of the network on 1194000 test images: 67.96
-Accuracy of the network on 1200000 test images: 67.72
-210.1072118282318
+Accuracy of the network on 1146000 test images: 58.64
+Accuracy of the network on 1152000 test images: 58.56
+Accuracy of the network on 1158000 test images: 58.58
+Accuracy of the network on 1164000 test images: 58.35
+Accuracy of the network on 1170000 test images: 58.87
+Accuracy of the network on 1176000 test images: 58.77
+Accuracy of the network on 1182000 test images: 58.68
+Accuracy of the network on 1188000 test images: 58.38
+Accuracy of the network on 1194000 test images: 58.75
+Accuracy of the network on 1200000 test images: 58.79
+211.1511037349701
+Epoch 20
+Accuracy of the network on 1206000 test images: 58.57
+Accuracy of the network on 1212000 test images: 58.2
+Accuracy of the network on 1218000 test images: 58.89
+Accuracy of the network on 1224000 test images: 58.97
+Accuracy of the network on 1230000 test images: 58.87
+Accuracy of the network on 1236000 test images: 58.92
+Accuracy of the network on 1242000 test images: 58.76
+Accuracy of the network on 1248000 test images: 58.85
+Accuracy of the network on 1254000 test images: 58.77
+Accuracy of the network on 1260000 test images: 58.76
+211.85065364837646
+Epoch 21
+Accuracy of the network on 1266000 test images: 58.89
+Accuracy of the network on 1272000 test images: 59.09
+Accuracy of the network on 1278000 test images: 58.84
+Accuracy of the network on 1284000 test images: 58.77
+Accuracy of the network on 1290000 test images: 59.16
+Accuracy of the network on 1296000 test images: 58.69
+Accuracy of the network on 1302000 test images: 58.86
+Accuracy of the network on 1308000 test images: 59.07
+Accuracy of the network on 1314000 test images: 59.21
+Accuracy of the network on 1320000 test images: 59.07
+211.85734868049622
+Epoch 22
+Accuracy of the network on 1326000 test images: 59.04
+Accuracy of the network on 1332000 test images: 58.77
+Accuracy of the network on 1338000 test images: 59.04
+Accuracy of the network on 1344000 test images: 59.27
+Accuracy of the network on 1350000 test images: 59.23
+Accuracy of the network on 1356000 test images: 59.12
+Accuracy of the network on 1362000 test images: 58.99
+Accuracy of the network on 1368000 test images: 59.02
+Accuracy of the network on 1374000 test images: 59.13
+Accuracy of the network on 1380000 test images: 59.24
+211.75465297698975
+Epoch 23
+Accuracy of the network on 1386000 test images: 59.18
+Accuracy of the network on 1392000 test images: 59.04
+Accuracy of the network on 1398000 test images: 59.42
+Accuracy of the network on 1404000 test images: 59.31
+Accuracy of the network on 1410000 test images: 59.2
+Accuracy of the network on 1416000 test images: 59.55
+Accuracy of the network on 1422000 test images: 59.51
+Accuracy of the network on 1428000 test images: 59.47
+Accuracy of the network on 1434000 test images: 59.21
+Accuracy of the network on 1440000 test images: 59.25
+212.0517556667328
+Epoch 24
+Accuracy of the network on 1446000 test images: 59.39
+Accuracy of the network on 1452000 test images: 59.05
+Accuracy of the network on 1458000 test images: 59.35
+Accuracy of the network on 1464000 test images: 59.49
+Accuracy of the network on 1470000 test images: 59.05
+Accuracy of the network on 1476000 test images: 59.32
+Accuracy of the network on 1482000 test images: 59.6
+Accuracy of the network on 1488000 test images: 59.53
+Accuracy of the network on 1494000 test images: 59.26
+Accuracy of the network on 1500000 test images: 59.19
+211.62653470039368
+Epoch 25
+Accuracy of the network on 1506000 test images: 59.26
+Accuracy of the network on 1512000 test images: 59.37
+Accuracy of the network on 1518000 test images: 59.38
+Accuracy of the network on 1524000 test images: 59.65
+Accuracy of the network on 1530000 test images: 59.67
+Accuracy of the network on 1536000 test images: 59.62
+Accuracy of the network on 1542000 test images: 59.32
+Accuracy of the network on 1548000 test images: 59.53
+Accuracy of the network on 1554000 test images: 59.37
+Accuracy of the network on 1560000 test images: 59.62
+212.14852333068848
+Epoch 26
+Accuracy of the network on 1566000 test images: 59.59
+Accuracy of the network on 1572000 test images: 59.47
+Accuracy of the network on 1578000 test images: 59.76
+Accuracy of the network on 1584000 test images: 59.74
+Accuracy of the network on 1590000 test images: 59.69
+Accuracy of the network on 1596000 test images: 59.45
+Accuracy of the network on 1602000 test images: 59.97
+Accuracy of the network on 1608000 test images: 59.87
+Accuracy of the network on 1614000 test images: 59.91
+Accuracy of the network on 1620000 test images: 59.6
+211.59320664405823
+Epoch 27
+Accuracy of the network on 1626000 test images: 59.78
+Accuracy of the network on 1632000 test images: 59.74
+Accuracy of the network on 1638000 test images: 59.55
+Accuracy of the network on 1644000 test images: 59.49
+Accuracy of the network on 1650000 test images: 59.96
+Accuracy of the network on 1656000 test images: 60.0
+Accuracy of the network on 1662000 test images: 59.67
+Accuracy of the network on 1668000 test images: 59.86
+Accuracy of the network on 1674000 test images: 59.89
+Accuracy of the network on 1680000 test images: 59.62
+211.21521615982056
+Epoch 28
+Accuracy of the network on 1686000 test images: 59.22
+Accuracy of the network on 1692000 test images: 59.91
+Accuracy of the network on 1698000 test images: 60.05
+Accuracy of the network on 1704000 test images: 59.91
+Accuracy of the network on 1710000 test images: 59.45
+Accuracy of the network on 1716000 test images: 59.45
+Accuracy of the network on 1722000 test images: 59.86
+Accuracy of the network on 1728000 test images: 59.68
+Accuracy of the network on 1734000 test images: 59.94
+Accuracy of the network on 1740000 test images: 59.92
+211.8791151046753
+Epoch 29
+Accuracy of the network on 1746000 test images: 59.96
+Accuracy of the network on 1752000 test images: 59.92
+Accuracy of the network on 1758000 test images: 59.68
+Accuracy of the network on 1764000 test images: 59.93
+Accuracy of the network on 1770000 test images: 60.06
+Accuracy of the network on 1776000 test images: 60.01
+Accuracy of the network on 1782000 test images: 59.78
+Accuracy of the network on 1788000 test images: 59.75
+Accuracy of the network on 1794000 test images: 60.14
+Accuracy of the network on 1800000 test images: 60.35
+211.837632894516
 Epoch 0
-Accuracy of the network on 6000 test images: 10.79
-Accuracy of the network on 12000 test images: 13.36
-Accuracy of the network on 18000 test images: 14.91
-Accuracy of the network on 24000 test images: 16.64
-Accuracy of the network on 30000 test images: 16.81
-Accuracy of the network on 36000 test images: 17.03
-Accuracy of the network on 42000 test images: 17.44
-Accuracy of the network on 48000 test images: 17.58
-Accuracy of the network on 54000 test images: 17.62
-Accuracy of the network on 60000 test images: 18.0
-210.14564752578735
+Accuracy of the network on 6000 test images: 10.0
+Accuracy of the network on 12000 test images: 10.0
+Accuracy of the network on 18000 test images: 10.01
+Accuracy of the network on 24000 test images: 10.3
+Accuracy of the network on 30000 test images: 12.58
+Accuracy of the network on 36000 test images: 16.65
+Accuracy of the network on 42000 test images: 25.62
+Accuracy of the network on 48000 test images: 29.78
+Accuracy of the network on 54000 test images: 30.76
+Accuracy of the network on 60000 test images: 32.68
+210.7461874485016
 Epoch 1
-Accuracy of the network on 66000 test images: 18.67
-Accuracy of the network on 72000 test images: 19.11
-Accuracy of the network on 78000 test images: 19.73
-Accuracy of the network on 84000 test images: 19.8
-Accuracy of the network on 90000 test images: 19.93
-Accuracy of the network on 96000 test images: 20.15
-Accuracy of the network on 102000 test images: 20.2
-Accuracy of the network on 108000 test images: 21.01
-Accuracy of the network on 114000 test images: 22.03
-Accuracy of the network on 120000 test images: 22.13
-210.50759530067444
+Accuracy of the network on 66000 test images: 34.11
+Accuracy of the network on 72000 test images: 34.69
+Accuracy of the network on 78000 test images: 34.44
+Accuracy of the network on 84000 test images: 33.95
+Accuracy of the network on 90000 test images: 33.05
+Accuracy of the network on 96000 test images: 32.96
+Accuracy of the network on 102000 test images: 32.63
+Accuracy of the network on 108000 test images: 32.0
+Accuracy of the network on 114000 test images: 30.51
+Accuracy of the network on 120000 test images: 30.03
+210.9715220928192
 Epoch 2
-Accuracy of the network on 126000 test images: 22.38
-Accuracy of the network on 132000 test images: 23.38
-Accuracy of the network on 138000 test images: 24.05
-Accuracy of the network on 144000 test images: 25.82
-Accuracy of the network on 150000 test images: 29.43
-Accuracy of the network on 156000 test images: 29.46
-Accuracy of the network on 162000 test images: 31.52
-Accuracy of the network on 168000 test images: 31.83
-Accuracy of the network on 174000 test images: 34.3
-Accuracy of the network on 180000 test images: 35.82
-210.12799263000488
+Accuracy of the network on 126000 test images: 30.43
+Accuracy of the network on 132000 test images: 30.81
+Accuracy of the network on 138000 test images: 30.94
+Accuracy of the network on 144000 test images: 28.66
+Accuracy of the network on 150000 test images: 29.16
+Accuracy of the network on 156000 test images: 33.92
+Accuracy of the network on 162000 test images: 35.98
+Accuracy of the network on 168000 test images: 38.01
+Accuracy of the network on 174000 test images: 38.54
+Accuracy of the network on 180000 test images: 39.44
+210.52538967132568
 Epoch 3
-Accuracy of the network on 186000 test images: 36.19
-Accuracy of the network on 192000 test images: 34.11
-Accuracy of the network on 198000 test images: 33.89
-Accuracy of the network on 204000 test images: 35.14
-Accuracy of the network on 210000 test images: 36.79
-Accuracy of the network on 216000 test images: 37.31
-Accuracy of the network on 222000 test images: 35.45
-Accuracy of the network on 228000 test images: 35.74
-Accuracy of the network on 234000 test images: 35.95
-Accuracy of the network on 240000 test images: 37.01
-210.4618456363678
+Accuracy of the network on 186000 test images: 39.73
+Accuracy of the network on 192000 test images: 39.7
+Accuracy of the network on 198000 test images: 39.09
+Accuracy of the network on 204000 test images: 39.43
+Accuracy of the network on 210000 test images: 38.96
+Accuracy of the network on 216000 test images: 39.86
+Accuracy of the network on 222000 test images: 39.16
+Accuracy of the network on 228000 test images: 40.47
+Accuracy of the network on 234000 test images: 39.88
+Accuracy of the network on 240000 test images: 39.3
+210.94755721092224
 Epoch 4
-Accuracy of the network on 246000 test images: 36.99
-Accuracy of the network on 252000 test images: 37.88
-Accuracy of the network on 258000 test images: 37.81
-Accuracy of the network on 264000 test images: 38.55
-Accuracy of the network on 270000 test images: 38.37
-Accuracy of the network on 276000 test images: 38.56
-Accuracy of the network on 282000 test images: 37.93
-Accuracy of the network on 288000 test images: 38.83
-Accuracy of the network on 294000 test images: 39.34
-Accuracy of the network on 300000 test images: 38.76
-209.4278221130371
+Accuracy of the network on 246000 test images: 39.46
+Accuracy of the network on 252000 test images: 40.68
+Accuracy of the network on 258000 test images: 41.82
+Accuracy of the network on 264000 test images: 43.9
+Accuracy of the network on 270000 test images: 44.27
+Accuracy of the network on 276000 test images: 44.73
+Accuracy of the network on 282000 test images: 44.84
+Accuracy of the network on 288000 test images: 45.83
+Accuracy of the network on 294000 test images: 46.88
+Accuracy of the network on 300000 test images: 45.9
+210.81613755226135
 Epoch 5
-Accuracy of the network on 306000 test images: 39.22
-Accuracy of the network on 312000 test images: 39.51
-Accuracy of the network on 318000 test images: 38.53
-Accuracy of the network on 324000 test images: 39.8
-Accuracy of the network on 330000 test images: 39.6
-Accuracy of the network on 336000 test images: 39.54
-Accuracy of the network on 342000 test images: 39.47
-Accuracy of the network on 348000 test images: 39.62
-Accuracy of the network on 354000 test images: 39.8
-Accuracy of the network on 360000 test images: 40.02
-210.77984929084778
+Accuracy of the network on 306000 test images: 45.59
+Accuracy of the network on 312000 test images: 46.66
+Accuracy of the network on 318000 test images: 53.36
+Accuracy of the network on 324000 test images: 53.69
+Accuracy of the network on 330000 test images: 53.18
+Accuracy of the network on 336000 test images: 52.25
+Accuracy of the network on 342000 test images: 51.84
+Accuracy of the network on 348000 test images: 53.65
+Accuracy of the network on 354000 test images: 54.03
+Accuracy of the network on 360000 test images: 54.04
+211.12872314453125
 Epoch 6
-Accuracy of the network on 366000 test images: 40.03
-Accuracy of the network on 372000 test images: 40.11
-Accuracy of the network on 378000 test images: 40.08
-Accuracy of the network on 384000 test images: 40.22
-Accuracy of the network on 390000 test images: 40.24
-Accuracy of the network on 396000 test images: 40.27
-Accuracy of the network on 402000 test images: 40.45
-Accuracy of the network on 408000 test images: 40.39
-Accuracy of the network on 414000 test images: 40.29
-Accuracy of the network on 420000 test images: 40.04
-210.32615208625793
+Accuracy of the network on 366000 test images: 53.95
+Accuracy of the network on 372000 test images: 54.69
+Accuracy of the network on 378000 test images: 54.69
+Accuracy of the network on 384000 test images: 54.4
+Accuracy of the network on 390000 test images: 55.95
+Accuracy of the network on 396000 test images: 55.97
+Accuracy of the network on 402000 test images: 56.23
+Accuracy of the network on 408000 test images: 56.73
+Accuracy of the network on 414000 test images: 56.98
+Accuracy of the network on 420000 test images: 57.08
+210.07712697982788
 Epoch 7
-Accuracy of the network on 426000 test images: 40.59
-Accuracy of the network on 432000 test images: 40.64
-Accuracy of the network on 438000 test images: 40.37
-Accuracy of the network on 444000 test images: 40.81
-Accuracy of the network on 450000 test images: 40.61
-Accuracy of the network on 456000 test images: 40.6
-Accuracy of the network on 462000 test images: 40.62
-Accuracy of the network on 468000 test images: 40.67
-Accuracy of the network on 474000 test images: 40.86
-Accuracy of the network on 480000 test images: 40.55
-211.6937005519867
+Accuracy of the network on 426000 test images: 57.65
+Accuracy of the network on 432000 test images: 57.84
+Accuracy of the network on 438000 test images: 57.35
+Accuracy of the network on 444000 test images: 58.11
+Accuracy of the network on 450000 test images: 58.36
+Accuracy of the network on 456000 test images: 57.93
+Accuracy of the network on 462000 test images: 58.33
+Accuracy of the network on 468000 test images: 58.16
+Accuracy of the network on 474000 test images: 58.88
+Accuracy of the network on 480000 test images: 58.83
+210.74735856056213
 Epoch 8
-Accuracy of the network on 486000 test images: 40.94
-Accuracy of the network on 492000 test images: 40.7
-Accuracy of the network on 498000 test images: 40.82
-Accuracy of the network on 504000 test images: 40.91
-Accuracy of the network on 510000 test images: 41.04
-Accuracy of the network on 516000 test images: 41.04
-Accuracy of the network on 522000 test images: 41.09
-Accuracy of the network on 528000 test images: 41.09
-Accuracy of the network on 534000 test images: 40.97
-Accuracy of the network on 540000 test images: 41.08
-211.64453601837158
+Accuracy of the network on 486000 test images: 58.81
+Accuracy of the network on 492000 test images: 59.08
+Accuracy of the network on 498000 test images: 59.23
+Accuracy of the network on 504000 test images: 59.26
+Accuracy of the network on 510000 test images: 59.26
+Accuracy of the network on 516000 test images: 59.49
+Accuracy of the network on 522000 test images: 59.51
+Accuracy of the network on 528000 test images: 59.62
+Accuracy of the network on 534000 test images: 59.57
+Accuracy of the network on 540000 test images: 59.99
+210.58235931396484
 Epoch 9
-Accuracy of the network on 546000 test images: 41.23
-Accuracy of the network on 552000 test images: 41.29
-Accuracy of the network on 558000 test images: 41.27
-Accuracy of the network on 564000 test images: 41.34
-Accuracy of the network on 570000 test images: 41.27
-Accuracy of the network on 576000 test images: 41.45
-Accuracy of the network on 582000 test images: 41.39
-Accuracy of the network on 588000 test images: 41.21
-Accuracy of the network on 594000 test images: 41.45
-Accuracy of the network on 600000 test images: 41.47
-210.8950457572937
+Accuracy of the network on 546000 test images: 59.83
+Accuracy of the network on 552000 test images: 60.26
+Accuracy of the network on 558000 test images: 60.09
+Accuracy of the network on 564000 test images: 60.25
+Accuracy of the network on 570000 test images: 60.34
+Accuracy of the network on 576000 test images: 60.7
+Accuracy of the network on 582000 test images: 60.99
+Accuracy of the network on 588000 test images: 60.11
+Accuracy of the network on 594000 test images: 61.18
+Accuracy of the network on 600000 test images: 61.29
+211.20617008209229
 Epoch 10
-Accuracy of the network on 606000 test images: 41.4
-Accuracy of the network on 612000 test images: 41.4
-Accuracy of the network on 618000 test images: 41.51
-Accuracy of the network on 624000 test images: 41.71
-Accuracy of the network on 630000 test images: 41.79
-Accuracy of the network on 636000 test images: 41.45
-Accuracy of the network on 642000 test images: 41.39
-Accuracy of the network on 648000 test images: 41.43
-Accuracy of the network on 654000 test images: 41.78
-Accuracy of the network on 660000 test images: 41.88
-211.8419370651245
+Accuracy of the network on 606000 test images: 61.28
+Accuracy of the network on 612000 test images: 61.58
+Accuracy of the network on 618000 test images: 61.71
+Accuracy of the network on 624000 test images: 61.81
+Accuracy of the network on 630000 test images: 61.49
+Accuracy of the network on 636000 test images: 61.77
+Accuracy of the network on 642000 test images: 62.17
+Accuracy of the network on 648000 test images: 61.65
+Accuracy of the network on 654000 test images: 62.26
+Accuracy of the network on 660000 test images: 62.58
+210.59579181671143
 Epoch 11
-Accuracy of the network on 666000 test images: 41.79
-Accuracy of the network on 672000 test images: 41.72
-Accuracy of the network on 678000 test images: 41.79
-Accuracy of the network on 684000 test images: 41.87
-Accuracy of the network on 690000 test images: 41.99
-Accuracy of the network on 696000 test images: 41.81
-Accuracy of the network on 702000 test images: 41.99
-Accuracy of the network on 708000 test images: 41.92
-Accuracy of the network on 714000 test images: 42.02
-Accuracy of the network on 720000 test images: 42.04
-210.97991919517517
+Accuracy of the network on 666000 test images: 62.47
+Accuracy of the network on 672000 test images: 62.77
+Accuracy of the network on 678000 test images: 61.93
+Accuracy of the network on 684000 test images: 62.66
+Accuracy of the network on 690000 test images: 63.01
+Accuracy of the network on 696000 test images: 63.0
+Accuracy of the network on 702000 test images: 63.23
+Accuracy of the network on 708000 test images: 63.29
+Accuracy of the network on 714000 test images: 63.25
+Accuracy of the network on 720000 test images: 63.53
+210.82242274284363
 Epoch 12
-Accuracy of the network on 726000 test images: 42.08
-Accuracy of the network on 732000 test images: 42.09
-Accuracy of the network on 738000 test images: 41.96
-Accuracy of the network on 744000 test images: 42.02
-Accuracy of the network on 750000 test images: 42.05
-Accuracy of the network on 756000 test images: 42.16
-Accuracy of the network on 762000 test images: 42.12
-Accuracy of the network on 768000 test images: 42.15
-Accuracy of the network on 774000 test images: 42.26
-Accuracy of the network on 780000 test images: 42.21
-211.77669310569763
+Accuracy of the network on 726000 test images: 63.67
+Accuracy of the network on 732000 test images: 63.31
+Accuracy of the network on 738000 test images: 64.03
+Accuracy of the network on 744000 test images: 63.96
+Accuracy of the network on 750000 test images: 63.79
+Accuracy of the network on 756000 test images: 63.9
+Accuracy of the network on 762000 test images: 63.71
+Accuracy of the network on 768000 test images: 63.93
+Accuracy of the network on 774000 test images: 64.37
+Accuracy of the network on 780000 test images: 64.13
+211.32674741744995
 Epoch 13
-Accuracy of the network on 786000 test images: 42.05
-Accuracy of the network on 792000 test images: 42.21
-Accuracy of the network on 798000 test images: 42.36
-Accuracy of the network on 804000 test images: 42.42
-Accuracy of the network on 810000 test images: 42.29
-Accuracy of the network on 816000 test images: 42.42
-Accuracy of the network on 822000 test images: 42.3
-Accuracy of the network on 828000 test images: 42.21
-Accuracy of the network on 834000 test images: 42.17
-Accuracy of the network on 840000 test images: 42.26
-212.11114859580994
+Accuracy of the network on 786000 test images: 64.42
+Accuracy of the network on 792000 test images: 64.36
+Accuracy of the network on 798000 test images: 64.29
+Accuracy of the network on 804000 test images: 64.06
+Accuracy of the network on 810000 test images: 64.93
+Accuracy of the network on 816000 test images: 64.72
+Accuracy of the network on 822000 test images: 65.21
+Accuracy of the network on 828000 test images: 65.35
+Accuracy of the network on 834000 test images: 64.71
+Accuracy of the network on 840000 test images: 65.11
+210.68400812149048
 Epoch 14
-Accuracy of the network on 846000 test images: 42.42
-Accuracy of the network on 852000 test images: 42.32
-Accuracy of the network on 858000 test images: 42.38
-Accuracy of the network on 864000 test images: 42.41
-Accuracy of the network on 870000 test images: 42.32
-Accuracy of the network on 876000 test images: 42.34
-Accuracy of the network on 882000 test images: 42.54
-Accuracy of the network on 888000 test images: 42.65
-Accuracy of the network on 894000 test images: 42.45
-Accuracy of the network on 900000 test images: 42.5
-211.64346051216125
+Accuracy of the network on 846000 test images: 65.21
+Accuracy of the network on 852000 test images: 64.92
+Accuracy of the network on 858000 test images: 65.63
+Accuracy of the network on 864000 test images: 65.64
+Accuracy of the network on 870000 test images: 65.73
+Accuracy of the network on 876000 test images: 65.48
+Accuracy of the network on 882000 test images: 65.94
+Accuracy of the network on 888000 test images: 65.4
+Accuracy of the network on 894000 test images: 66.2
+Accuracy of the network on 900000 test images: 65.7
+210.4276888370514
 Epoch 15
-Accuracy of the network on 906000 test images: 42.6
-Accuracy of the network on 912000 test images: 42.4
-Accuracy of the network on 918000 test images: 42.4
-Accuracy of the network on 924000 test images: 42.63
-Accuracy of the network on 930000 test images: 42.67
-Accuracy of the network on 936000 test images: 42.51
-Accuracy of the network on 942000 test images: 42.54
-Accuracy of the network on 948000 test images: 42.61
-Accuracy of the network on 954000 test images: 42.66
-Accuracy of the network on 960000 test images: 42.64
-212.18813395500183
+Accuracy of the network on 906000 test images: 65.71
+Accuracy of the network on 912000 test images: 65.95
+Accuracy of the network on 918000 test images: 66.22
+Accuracy of the network on 924000 test images: 65.88
+Accuracy of the network on 930000 test images: 66.08
+Accuracy of the network on 936000 test images: 66.04
+Accuracy of the network on 942000 test images: 65.9
+Accuracy of the network on 948000 test images: 66.07
+Accuracy of the network on 954000 test images: 66.41
+Accuracy of the network on 960000 test images: 66.51
+211.07085180282593
 Epoch 16
-Accuracy of the network on 966000 test images: 42.58
-Accuracy of the network on 972000 test images: 42.59
-Accuracy of the network on 978000 test images: 42.74
-Accuracy of the network on 984000 test images: 42.69
-Accuracy of the network on 990000 test images: 42.53
-Accuracy of the network on 996000 test images: 42.66
-Accuracy of the network on 1002000 test images: 42.67
-Accuracy of the network on 1008000 test images: 42.74
-Accuracy of the network on 1014000 test images: 42.65
-Accuracy of the network on 1020000 test images: 42.7
-210.9765625
+Accuracy of the network on 966000 test images: 66.84
+Accuracy of the network on 972000 test images: 67.02
+Accuracy of the network on 978000 test images: 67.19
+Accuracy of the network on 984000 test images: 67.5
+Accuracy of the network on 990000 test images: 66.72
+Accuracy of the network on 996000 test images: 67.31
+Accuracy of the network on 1002000 test images: 67.23
+Accuracy of the network on 1008000 test images: 66.97
+Accuracy of the network on 1014000 test images: 67.25
+Accuracy of the network on 1020000 test images: 67.15
+211.17061853408813
 Epoch 17
-Accuracy of the network on 1026000 test images: 42.69
-Accuracy of the network on 1032000 test images: 42.78
-Accuracy of the network on 1038000 test images: 42.73
-Accuracy of the network on 1044000 test images: 42.83
-Accuracy of the network on 1050000 test images: 42.76
-Accuracy of the network on 1056000 test images: 42.75
-Accuracy of the network on 1062000 test images: 42.77
-Accuracy of the network on 1068000 test images: 42.8
-Accuracy of the network on 1074000 test images: 42.75
-Accuracy of the network on 1080000 test images: 42.74
-212.2623164653778
+Accuracy of the network on 1026000 test images: 67.35
+Accuracy of the network on 1032000 test images: 66.55
+Accuracy of the network on 1038000 test images: 67.64
+Accuracy of the network on 1044000 test images: 67.68
+Accuracy of the network on 1050000 test images: 67.73
+Accuracy of the network on 1056000 test images: 67.4
+Accuracy of the network on 1062000 test images: 67.6
+Accuracy of the network on 1068000 test images: 67.3
+Accuracy of the network on 1074000 test images: 67.56
+Accuracy of the network on 1080000 test images: 67.76
+210.74011874198914
 Epoch 18
-Accuracy of the network on 1086000 test images: 42.96
-Accuracy of the network on 1092000 test images: 42.78
-Accuracy of the network on 1098000 test images: 42.81
-Accuracy of the network on 1104000 test images: 42.8
-Accuracy of the network on 1110000 test images: 42.89
-Accuracy of the network on 1116000 test images: 42.77
-Accuracy of the network on 1122000 test images: 42.95
-Accuracy of the network on 1128000 test images: 42.92
-Accuracy of the network on 1134000 test images: 42.98
-Accuracy of the network on 1140000 test images: 42.86
-210.89686250686646
+Accuracy of the network on 1086000 test images: 68.15
+Accuracy of the network on 1092000 test images: 67.77
+Accuracy of the network on 1098000 test images: 67.75
+Accuracy of the network on 1104000 test images: 67.77
+Accuracy of the network on 1110000 test images: 67.54
+Accuracy of the network on 1116000 test images: 67.78
+Accuracy of the network on 1122000 test images: 68.15
+Accuracy of the network on 1128000 test images: 67.94
+Accuracy of the network on 1134000 test images: 67.94
+Accuracy of the network on 1140000 test images: 68.52
+210.87435150146484
 Epoch 19
-Accuracy of the network on 1146000 test images: 42.9
-Accuracy of the network on 1152000 test images: 42.99
-Accuracy of the network on 1158000 test images: 42.97
-Accuracy of the network on 1164000 test images: 42.96
-Accuracy of the network on 1170000 test images: 43.07
-Accuracy of the network on 1176000 test images: 43.08
-Accuracy of the network on 1182000 test images: 43.07
-Accuracy of the network on 1188000 test images: 42.94
-Accuracy of the network on 1194000 test images: 43.06
-Accuracy of the network on 1200000 test images: 42.71
-210.1586811542511
+Accuracy of the network on 1146000 test images: 68.3
+Accuracy of the network on 1152000 test images: 68.16
+Accuracy of the network on 1158000 test images: 68.35
+Accuracy of the network on 1164000 test images: 68.33
+Accuracy of the network on 1170000 test images: 68.4
+Accuracy of the network on 1176000 test images: 68.04
+Accuracy of the network on 1182000 test images: 68.35
+Accuracy of the network on 1188000 test images: 68.28
+Accuracy of the network on 1194000 test images: 68.46
+Accuracy of the network on 1200000 test images: 68.61
+210.39969420433044
+Epoch 20
+Accuracy of the network on 1206000 test images: 68.76
+Accuracy of the network on 1212000 test images: 68.21
+Accuracy of the network on 1218000 test images: 68.83
+Accuracy of the network on 1224000 test images: 68.93
+Accuracy of the network on 1230000 test images: 69.03
+Accuracy of the network on 1236000 test images: 68.95
+Accuracy of the network on 1242000 test images: 68.53
+Accuracy of the network on 1248000 test images: 69.04
+Accuracy of the network on 1254000 test images: 68.63
+Accuracy of the network on 1260000 test images: 68.88
+211.19286179542542
+Epoch 21
+Accuracy of the network on 1266000 test images: 68.97
+Accuracy of the network on 1272000 test images: 68.68
+Accuracy of the network on 1278000 test images: 69.22
+Accuracy of the network on 1284000 test images: 69.18
+Accuracy of the network on 1290000 test images: 69.05
+Accuracy of the network on 1296000 test images: 69.17
+Accuracy of the network on 1302000 test images: 69.18
+Accuracy of the network on 1308000 test images: 68.89
+Accuracy of the network on 1314000 test images: 68.84
+Accuracy of the network on 1320000 test images: 69.21
+211.04131698608398
+Epoch 22
+Accuracy of the network on 1326000 test images: 69.37
+Accuracy of the network on 1332000 test images: 69.0
+Accuracy of the network on 1338000 test images: 69.06
+Accuracy of the network on 1344000 test images: 69.17
+Accuracy of the network on 1350000 test images: 69.13
+Accuracy of the network on 1356000 test images: 69.05
+Accuracy of the network on 1362000 test images: 69.56
+Accuracy of the network on 1368000 test images: 69.5
+Accuracy of the network on 1374000 test images: 69.69
+Accuracy of the network on 1380000 test images: 69.77
+211.4820363521576
+Epoch 23
+Accuracy of the network on 1386000 test images: 69.63
+Accuracy of the network on 1392000 test images: 69.63
+Accuracy of the network on 1398000 test images: 69.45
+Accuracy of the network on 1404000 test images: 69.33
+Accuracy of the network on 1410000 test images: 69.97
+Accuracy of the network on 1416000 test images: 69.94
+Accuracy of the network on 1422000 test images: 70.07
+Accuracy of the network on 1428000 test images: 69.75
+Accuracy of the network on 1434000 test images: 69.83
+Accuracy of the network on 1440000 test images: 69.82
+210.54512524604797
+Epoch 24
+Accuracy of the network on 1446000 test images: 69.92
+Accuracy of the network on 1452000 test images: 69.87
+Accuracy of the network on 1458000 test images: 69.33
+Accuracy of the network on 1464000 test images: 70.05
+Accuracy of the network on 1470000 test images: 69.72
+Accuracy of the network on 1476000 test images: 70.15
+Accuracy of the network on 1482000 test images: 69.73
+Accuracy of the network on 1488000 test images: 69.74
+Accuracy of the network on 1494000 test images: 70.01
+Accuracy of the network on 1500000 test images: 69.69
+208.80805039405823
+Epoch 25
+Accuracy of the network on 1506000 test images: 69.68
+Accuracy of the network on 1512000 test images: 69.51
+Accuracy of the network on 1518000 test images: 70.03
+Accuracy of the network on 1524000 test images: 70.28
+Accuracy of the network on 1530000 test images: 69.58
+Accuracy of the network on 1536000 test images: 69.87
+Accuracy of the network on 1542000 test images: 70.46
+Accuracy of the network on 1548000 test images: 70.07
+Accuracy of the network on 1554000 test images: 69.89
+Accuracy of the network on 1560000 test images: 69.91
+208.66156339645386
+Epoch 26
+Accuracy of the network on 1566000 test images: 69.94
+Accuracy of the network on 1572000 test images: 69.68
+Accuracy of the network on 1578000 test images: 69.73
+Accuracy of the network on 1584000 test images: 70.38
+Accuracy of the network on 1590000 test images: 69.95
+Accuracy of the network on 1596000 test images: 69.58
+Accuracy of the network on 1602000 test images: 69.42
+Accuracy of the network on 1608000 test images: 69.88
+Accuracy of the network on 1614000 test images: 69.82
+Accuracy of the network on 1620000 test images: 70.3
+208.60342717170715
+Epoch 27
+Accuracy of the network on 1626000 test images: 69.94
+Accuracy of the network on 1632000 test images: 69.85
+Accuracy of the network on 1638000 test images: 70.2
+Accuracy of the network on 1644000 test images: 70.2
+Accuracy of the network on 1650000 test images: 70.0
+Accuracy of the network on 1656000 test images: 69.9
+Accuracy of the network on 1662000 test images: 69.93
+Accuracy of the network on 1668000 test images: 70.25
+Accuracy of the network on 1674000 test images: 70.49
+Accuracy of the network on 1680000 test images: 70.08
+208.5575122833252
+Epoch 28
+Accuracy of the network on 1686000 test images: 70.27
+Accuracy of the network on 1692000 test images: 70.13
+Accuracy of the network on 1698000 test images: 69.89
+Accuracy of the network on 1704000 test images: 70.27
+Accuracy of the network on 1710000 test images: 70.25
+Accuracy of the network on 1716000 test images: 70.47
+Accuracy of the network on 1722000 test images: 70.16
+Accuracy of the network on 1728000 test images: 70.6
+Accuracy of the network on 1734000 test images: 70.08
+Accuracy of the network on 1740000 test images: 70.29
+208.6680405139923
+Epoch 29
+Accuracy of the network on 1746000 test images: 70.17
+Accuracy of the network on 1752000 test images: 70.74
+Accuracy of the network on 1758000 test images: 70.64
+Accuracy of the network on 1764000 test images: 70.33
+Accuracy of the network on 1770000 test images: 70.87
+Accuracy of the network on 1776000 test images: 70.39
+Accuracy of the network on 1782000 test images: 70.26
+Accuracy of the network on 1788000 test images: 71.11
+Accuracy of the network on 1794000 test images: 70.35
+Accuracy of the network on 1800000 test images: 70.6
+208.5655493736267
 Epoch 0
-Accuracy of the network on 6000 test images: 10.48
-Accuracy of the network on 12000 test images: 12.02
-Accuracy of the network on 18000 test images: 13.24
-Accuracy of the network on 24000 test images: 15.38
-Accuracy of the network on 30000 test images: 17.94
-Accuracy of the network on 36000 test images: 19.1
-Accuracy of the network on 42000 test images: 19.53
-Accuracy of the network on 48000 test images: 19.64
-Accuracy of the network on 54000 test images: 19.8
-Accuracy of the network on 60000 test images: 23.39
-210.68759894371033
+Accuracy of the network on 6000 test images: 10.0
+Accuracy of the network on 12000 test images: 10.12
+Accuracy of the network on 18000 test images: 12.71
+Accuracy of the network on 24000 test images: 16.15
+Accuracy of the network on 30000 test images: 18.54
+Accuracy of the network on 36000 test images: 20.47
+Accuracy of the network on 42000 test images: 20.4
+Accuracy of the network on 48000 test images: 21.17
+Accuracy of the network on 54000 test images: 21.09
+Accuracy of the network on 60000 test images: 22.77
+208.29923677444458
 Epoch 1
-Accuracy of the network on 66000 test images: 28.08
-Accuracy of the network on 72000 test images: 34.49
-Accuracy of the network on 78000 test images: 38.21
-Accuracy of the network on 84000 test images: 42.97
-Accuracy of the network on 90000 test images: 46.97
-Accuracy of the network on 96000 test images: 48.09
-Accuracy of the network on 102000 test images: 47.74
-Accuracy of the network on 108000 test images: 46.86
-Accuracy of the network on 114000 test images: 47.0
-Accuracy of the network on 120000 test images: 45.39
-210.8961718082428
+Accuracy of the network on 66000 test images: 25.08
+Accuracy of the network on 72000 test images: 26.25
+Accuracy of the network on 78000 test images: 27.74
+Accuracy of the network on 84000 test images: 28.29
+Accuracy of the network on 90000 test images: 27.31
+Accuracy of the network on 96000 test images: 27.56
+Accuracy of the network on 102000 test images: 27.62
+Accuracy of the network on 108000 test images: 28.08
+Accuracy of the network on 114000 test images: 27.88
+Accuracy of the network on 120000 test images: 28.56
+208.4864799976349
 Epoch 2
-Accuracy of the network on 126000 test images: 45.7
-Accuracy of the network on 132000 test images: 43.73
-Accuracy of the network on 138000 test images: 43.2
-Accuracy of the network on 144000 test images: 42.52
-Accuracy of the network on 150000 test images: 40.83
-Accuracy of the network on 156000 test images: 40.57
-Accuracy of the network on 162000 test images: 39.79
-Accuracy of the network on 168000 test images: 39.63
-Accuracy of the network on 174000 test images: 37.53
-Accuracy of the network on 180000 test images: 37.32
-210.33263182640076
+Accuracy of the network on 126000 test images: 28.33
+Accuracy of the network on 132000 test images: 29.18
+Accuracy of the network on 138000 test images: 29.19
+Accuracy of the network on 144000 test images: 29.55
+Accuracy of the network on 150000 test images: 30.42
+Accuracy of the network on 156000 test images: 31.04
+Accuracy of the network on 162000 test images: 31.63
+Accuracy of the network on 168000 test images: 31.2
+Accuracy of the network on 174000 test images: 31.56
+Accuracy of the network on 180000 test images: 31.54
+208.4745626449585
 Epoch 3
-Accuracy of the network on 186000 test images: 36.93
-Accuracy of the network on 192000 test images: 36.24
-Accuracy of the network on 198000 test images: 37.04
-Accuracy of the network on 204000 test images: 37.08
-Accuracy of the network on 210000 test images: 36.35
-Accuracy of the network on 216000 test images: 36.41
-Accuracy of the network on 222000 test images: 37.96
-Accuracy of the network on 228000 test images: 38.83
-Accuracy of the network on 234000 test images: 39.13
-Accuracy of the network on 240000 test images: 38.54
-210.49042391777039
+Accuracy of the network on 186000 test images: 31.77
+Accuracy of the network on 192000 test images: 32.12
+Accuracy of the network on 198000 test images: 32.98
+Accuracy of the network on 204000 test images: 33.76
+Accuracy of the network on 210000 test images: 34.74
+Accuracy of the network on 216000 test images: 34.81
+Accuracy of the network on 222000 test images: 35.3
+Accuracy of the network on 228000 test images: 35.46
+Accuracy of the network on 234000 test images: 36.45
+Accuracy of the network on 240000 test images: 37.22
+208.4376311302185
 Epoch 4
-Accuracy of the network on 246000 test images: 37.59
-Accuracy of the network on 252000 test images: 39.18
-Accuracy of the network on 258000 test images: 40.34
-Accuracy of the network on 264000 test images: 40.89
-Accuracy of the network on 270000 test images: 41.52
-Accuracy of the network on 276000 test images: 41.73
-Accuracy of the network on 282000 test images: 42.3
-Accuracy of the network on 288000 test images: 43.35
-Accuracy of the network on 294000 test images: 43.45
-Accuracy of the network on 300000 test images: 44.02
-210.51546669006348
+Accuracy of the network on 246000 test images: 38.58
+Accuracy of the network on 252000 test images: 44.49
+Accuracy of the network on 258000 test images: 46.41
+Accuracy of the network on 264000 test images: 46.67
+Accuracy of the network on 270000 test images: 46.04
+Accuracy of the network on 276000 test images: 45.9
+Accuracy of the network on 282000 test images: 45.73
+Accuracy of the network on 288000 test images: 46.19
+Accuracy of the network on 294000 test images: 46.21
+Accuracy of the network on 300000 test images: 46.47
+208.68038082122803
 Epoch 5
-Accuracy of the network on 306000 test images: 44.12
-Accuracy of the network on 312000 test images: 44.22
-Accuracy of the network on 318000 test images: 44.44
-Accuracy of the network on 324000 test images: 44.63
-Accuracy of the network on 330000 test images: 44.87
-Accuracy of the network on 336000 test images: 45.31
-Accuracy of the network on 342000 test images: 45.57
-Accuracy of the network on 348000 test images: 46.03
-Accuracy of the network on 354000 test images: 46.26
-Accuracy of the network on 360000 test images: 46.64
-211.71587920188904
+Accuracy of the network on 306000 test images: 46.86
+Accuracy of the network on 312000 test images: 46.82
+Accuracy of the network on 318000 test images: 47.72
+Accuracy of the network on 324000 test images: 47.79
+Accuracy of the network on 330000 test images: 47.9
+Accuracy of the network on 336000 test images: 48.53
+Accuracy of the network on 342000 test images: 48.0
+Accuracy of the network on 348000 test images: 48.77
+Accuracy of the network on 354000 test images: 48.98
+Accuracy of the network on 360000 test images: 49.01
+208.56502294540405
 Epoch 6
-Accuracy of the network on 366000 test images: 47.03
-Accuracy of the network on 372000 test images: 47.25
-Accuracy of the network on 378000 test images: 47.55
-Accuracy of the network on 384000 test images: 47.84
-Accuracy of the network on 390000 test images: 48.17
-Accuracy of the network on 396000 test images: 48.38
-Accuracy of the network on 402000 test images: 48.58
-Accuracy of the network on 408000 test images: 48.71
-Accuracy of the network on 414000 test images: 48.83
-Accuracy of the network on 420000 test images: 48.95
-211.11036682128906
+Accuracy of the network on 366000 test images: 49.17
+Accuracy of the network on 372000 test images: 49.32
+Accuracy of the network on 378000 test images: 49.39
+Accuracy of the network on 384000 test images: 49.48
+Accuracy of the network on 390000 test images: 49.9
+Accuracy of the network on 396000 test images: 49.79
+Accuracy of the network on 402000 test images: 50.08
+Accuracy of the network on 408000 test images: 50.16
+Accuracy of the network on 414000 test images: 50.44
+Accuracy of the network on 420000 test images: 51.25
+208.658588886261
 Epoch 7
-Accuracy of the network on 426000 test images: 49.22
-Accuracy of the network on 432000 test images: 49.32
-Accuracy of the network on 438000 test images: 49.43
-Accuracy of the network on 444000 test images: 49.54
-Accuracy of the network on 450000 test images: 49.93
-Accuracy of the network on 456000 test images: 49.72
-Accuracy of the network on 462000 test images: 50.12
-Accuracy of the network on 468000 test images: 50.24
-Accuracy of the network on 474000 test images: 50.35
-Accuracy of the network on 480000 test images: 50.42
-211.54649567604065
+Accuracy of the network on 426000 test images: 50.63
+Accuracy of the network on 432000 test images: 50.67
+Accuracy of the network on 438000 test images: 50.99
+Accuracy of the network on 444000 test images: 51.12
+Accuracy of the network on 450000 test images: 51.78
+Accuracy of the network on 456000 test images: 51.37
+Accuracy of the network on 462000 test images: 51.42
+Accuracy of the network on 468000 test images: 51.84
+Accuracy of the network on 474000 test images: 51.61
+Accuracy of the network on 480000 test images: 52.01
+208.77448225021362
 Epoch 8
-Accuracy of the network on 486000 test images: 50.57
-Accuracy of the network on 492000 test images: 50.6
-Accuracy of the network on 498000 test images: 51.08
-Accuracy of the network on 504000 test images: 50.74
-Accuracy of the network on 510000 test images: 51.02
-Accuracy of the network on 516000 test images: 50.95
-Accuracy of the network on 522000 test images: 51.07
-Accuracy of the network on 528000 test images: 51.22
-Accuracy of the network on 534000 test images: 51.3
-Accuracy of the network on 540000 test images: 51.53
-210.8699746131897
+Accuracy of the network on 486000 test images: 51.77
+Accuracy of the network on 492000 test images: 52.17
+Accuracy of the network on 498000 test images: 51.83
+Accuracy of the network on 504000 test images: 52.16
+Accuracy of the network on 510000 test images: 52.46
+Accuracy of the network on 516000 test images: 52.55
+Accuracy of the network on 522000 test images: 52.65
+Accuracy of the network on 528000 test images: 52.7
+Accuracy of the network on 534000 test images: 52.7
+Accuracy of the network on 540000 test images: 52.93
+208.7070198059082
 Epoch 9
-Accuracy of the network on 546000 test images: 51.37
-Accuracy of the network on 552000 test images: 51.68
-Accuracy of the network on 558000 test images: 51.87
-Accuracy of the network on 564000 test images: 51.58
-Accuracy of the network on 570000 test images: 52.09
-Accuracy of the network on 576000 test images: 52.05
-Accuracy of the network on 582000 test images: 51.83
-Accuracy of the network on 588000 test images: 52.27
-Accuracy of the network on 594000 test images: 52.32
-Accuracy of the network on 600000 test images: 52.19
-212.48338794708252
+Accuracy of the network on 546000 test images: 52.98
+Accuracy of the network on 552000 test images: 52.83
+Accuracy of the network on 558000 test images: 52.69
+Accuracy of the network on 564000 test images: 53.14
+Accuracy of the network on 570000 test images: 53.33
+Accuracy of the network on 576000 test images: 53.23
+Accuracy of the network on 582000 test images: 53.56
+Accuracy of the network on 588000 test images: 53.7
+Accuracy of the network on 594000 test images: 53.06
+Accuracy of the network on 600000 test images: 53.68
+208.87025260925293
 Epoch 10
-Accuracy of the network on 606000 test images: 52.45
-Accuracy of the network on 612000 test images: 52.46
-Accuracy of the network on 618000 test images: 52.22
-Accuracy of the network on 624000 test images: 52.45
-Accuracy of the network on 630000 test images: 52.71
-Accuracy of the network on 636000 test images: 52.91
-Accuracy of the network on 642000 test images: 52.84
-Accuracy of the network on 648000 test images: 52.91
-Accuracy of the network on 654000 test images: 52.93
-Accuracy of the network on 660000 test images: 52.89
-212.2313244342804
+Accuracy of the network on 606000 test images: 53.71
+Accuracy of the network on 612000 test images: 53.86
+Accuracy of the network on 618000 test images: 53.84
+Accuracy of the network on 624000 test images: 54.08
+Accuracy of the network on 630000 test images: 53.68
+Accuracy of the network on 636000 test images: 54.15
+Accuracy of the network on 642000 test images: 54.17
+Accuracy of the network on 648000 test images: 54.03
+Accuracy of the network on 654000 test images: 54.81
+Accuracy of the network on 660000 test images: 54.8
+208.74674773216248
 Epoch 11
-Accuracy of the network on 666000 test images: 53.24
-Accuracy of the network on 672000 test images: 53.16
-Accuracy of the network on 678000 test images: 53.22
-Accuracy of the network on 684000 test images: 53.05
-Accuracy of the network on 690000 test images: 53.33
-Accuracy of the network on 696000 test images: 53.63
-Accuracy of the network on 702000 test images: 53.55
-Accuracy of the network on 708000 test images: 53.59
-Accuracy of the network on 714000 test images: 54.01
-Accuracy of the network on 720000 test images: 53.86
-212.06618785858154
+Accuracy of the network on 666000 test images: 55.07
+Accuracy of the network on 672000 test images: 55.12
+Accuracy of the network on 678000 test images: 54.93
+Accuracy of the network on 684000 test images: 55.37
+Accuracy of the network on 690000 test images: 54.98
+Accuracy of the network on 696000 test images: 55.6
+Accuracy of the network on 702000 test images: 55.31
+Accuracy of the network on 708000 test images: 55.64
+Accuracy of the network on 714000 test images: 55.73
+Accuracy of the network on 720000 test images: 56.24
+208.67720127105713
 Epoch 12
-Accuracy of the network on 726000 test images: 54.18
-Accuracy of the network on 732000 test images: 54.04
-Accuracy of the network on 738000 test images: 54.35
-Accuracy of the network on 744000 test images: 54.16
-Accuracy of the network on 750000 test images: 54.04
-Accuracy of the network on 756000 test images: 54.3
-Accuracy of the network on 762000 test images: 54.22
-Accuracy of the network on 768000 test images: 54.28
-Accuracy of the network on 774000 test images: 54.37
-Accuracy of the network on 780000 test images: 54.4
-212.98064422607422
+Accuracy of the network on 726000 test images: 56.42
+Accuracy of the network on 732000 test images: 56.34
+Accuracy of the network on 738000 test images: 56.47
+Accuracy of the network on 744000 test images: 56.39
+Accuracy of the network on 750000 test images: 56.38
+Accuracy of the network on 756000 test images: 56.59
+Accuracy of the network on 762000 test images: 57.08
+Accuracy of the network on 768000 test images: 57.25
+Accuracy of the network on 774000 test images: 57.17
+Accuracy of the network on 780000 test images: 56.97
+208.61009192466736
 Epoch 13
-Accuracy of the network on 786000 test images: 54.6
-Accuracy of the network on 792000 test images: 54.36
-Accuracy of the network on 798000 test images: 54.54
-Accuracy of the network on 804000 test images: 54.67
-Accuracy of the network on 810000 test images: 54.88
-Accuracy of the network on 816000 test images: 54.94
-Accuracy of the network on 822000 test images: 54.77
-Accuracy of the network on 828000 test images: 54.91
-Accuracy of the network on 834000 test images: 54.98
-Accuracy of the network on 840000 test images: 55.04
-219.00164246559143
+Accuracy of the network on 786000 test images: 56.9
+Accuracy of the network on 792000 test images: 57.62
+Accuracy of the network on 798000 test images: 57.97
+Accuracy of the network on 804000 test images: 57.27
+Accuracy of the network on 810000 test images: 57.49
+Accuracy of the network on 816000 test images: 58.02
+Accuracy of the network on 822000 test images: 58.63
+Accuracy of the network on 828000 test images: 58.34
+Accuracy of the network on 834000 test images: 58.93
+Accuracy of the network on 840000 test images: 58.06
+208.60125136375427
 Epoch 14
-Accuracy of the network on 846000 test images: 54.75
-Accuracy of the network on 852000 test images: 54.86
-Accuracy of the network on 858000 test images: 55.0
-Accuracy of the network on 864000 test images: 55.15
-Accuracy of the network on 870000 test images: 54.93
-Accuracy of the network on 876000 test images: 55.17
-Accuracy of the network on 882000 test images: 55.1
-Accuracy of the network on 888000 test images: 55.07
-Accuracy of the network on 894000 test images: 55.01
-Accuracy of the network on 900000 test images: 55.16
-221.88504433631897
+Accuracy of the network on 846000 test images: 58.82
+Accuracy of the network on 852000 test images: 58.97
+Accuracy of the network on 858000 test images: 59.23
+Accuracy of the network on 864000 test images: 59.33
+Accuracy of the network on 870000 test images: 59.17
+Accuracy of the network on 876000 test images: 59.25
+Accuracy of the network on 882000 test images: 58.85
+Accuracy of the network on 888000 test images: 59.26
+Accuracy of the network on 894000 test images: 60.15
+Accuracy of the network on 900000 test images: 59.51
+208.55764985084534
 Epoch 15
-Accuracy of the network on 906000 test images: 55.02
-Accuracy of the network on 912000 test images: 55.0
-Accuracy of the network on 918000 test images: 55.29
-Accuracy of the network on 924000 test images: 54.99
-Accuracy of the network on 930000 test images: 55.06
-Accuracy of the network on 936000 test images: 55.1
-Accuracy of the network on 942000 test images: 55.0
-Accuracy of the network on 948000 test images: 55.16
-Accuracy of the network on 954000 test images: 55.12
-Accuracy of the network on 960000 test images: 55.16
-211.45278191566467
+Accuracy of the network on 906000 test images: 59.01
+Accuracy of the network on 912000 test images: 60.48
+Accuracy of the network on 918000 test images: 59.84
+Accuracy of the network on 924000 test images: 60.11
+Accuracy of the network on 930000 test images: 59.66
+Accuracy of the network on 936000 test images: 60.84
+Accuracy of the network on 942000 test images: 60.01
+Accuracy of the network on 948000 test images: 60.51
+Accuracy of the network on 954000 test images: 60.24
+Accuracy of the network on 960000 test images: 60.84
+208.56472730636597
 Epoch 16
-Accuracy of the network on 966000 test images: 55.25
-Accuracy of the network on 972000 test images: 55.14
-Accuracy of the network on 978000 test images: 55.11
-Accuracy of the network on 984000 test images: 55.25
-Accuracy of the network on 990000 test images: 55.17
-Accuracy of the network on 996000 test images: 55.21
-Accuracy of the network on 1002000 test images: 55.38
-Accuracy of the network on 1008000 test images: 55.22
-Accuracy of the network on 1014000 test images: 55.19
-Accuracy of the network on 1020000 test images: 55.41
-211.9669816493988
+Accuracy of the network on 966000 test images: 60.48
+Accuracy of the network on 972000 test images: 61.16
+Accuracy of the network on 978000 test images: 60.74
+Accuracy of the network on 984000 test images: 60.86
+Accuracy of the network on 990000 test images: 60.71
+Accuracy of the network on 996000 test images: 61.34
+Accuracy of the network on 1002000 test images: 61.26
+Accuracy of the network on 1008000 test images: 61.05
+Accuracy of the network on 1014000 test images: 60.79
+Accuracy of the network on 1020000 test images: 61.58
+208.62660384178162
 Epoch 17
-Accuracy of the network on 1026000 test images: 55.48
-Accuracy of the network on 1032000 test images: 55.42
-Accuracy of the network on 1038000 test images: 55.45
-Accuracy of the network on 1044000 test images: 55.46
-Accuracy of the network on 1050000 test images: 55.38
-Accuracy of the network on 1056000 test images: 55.45
-Accuracy of the network on 1062000 test images: 55.55
-Accuracy of the network on 1068000 test images: 55.62
-Accuracy of the network on 1074000 test images: 55.43
-Accuracy of the network on 1080000 test images: 55.45
-212.7427887916565
+Accuracy of the network on 1026000 test images: 60.93
+Accuracy of the network on 1032000 test images: 61.59
+Accuracy of the network on 1038000 test images: 61.55
+Accuracy of the network on 1044000 test images: 61.82
+Accuracy of the network on 1050000 test images: 60.77
+Accuracy of the network on 1056000 test images: 61.54
+Accuracy of the network on 1062000 test images: 61.47
+Accuracy of the network on 1068000 test images: 60.99
+Accuracy of the network on 1074000 test images: 62.21
+Accuracy of the network on 1080000 test images: 61.57
+208.62747168540955
 Epoch 18
-Accuracy of the network on 1086000 test images: 55.5
-Accuracy of the network on 1092000 test images: 55.55
-Accuracy of the network on 1098000 test images: 55.53
-Accuracy of the network on 1104000 test images: 55.66
-Accuracy of the network on 1110000 test images: 55.48
-Accuracy of the network on 1116000 test images: 55.49
-Accuracy of the network on 1122000 test images: 55.57
-Accuracy of the network on 1128000 test images: 55.61
-Accuracy of the network on 1134000 test images: 55.51
-Accuracy of the network on 1140000 test images: 55.49
-212.56036472320557
+Accuracy of the network on 1086000 test images: 61.4
+Accuracy of the network on 1092000 test images: 62.3
+Accuracy of the network on 1098000 test images: 61.64
+Accuracy of the network on 1104000 test images: 61.93
+Accuracy of the network on 1110000 test images: 61.52
+Accuracy of the network on 1116000 test images: 62.49
+Accuracy of the network on 1122000 test images: 62.31
+Accuracy of the network on 1128000 test images: 61.6
+Accuracy of the network on 1134000 test images: 62.48
+Accuracy of the network on 1140000 test images: 62.32
+208.6682107448578
 Epoch 19
-Accuracy of the network on 1146000 test images: 55.64
-Accuracy of the network on 1152000 test images: 55.51
-Accuracy of the network on 1158000 test images: 55.66
-Accuracy of the network on 1164000 test images: 55.69
-Accuracy of the network on 1170000 test images: 55.64
-Accuracy of the network on 1176000 test images: 55.74
-Accuracy of the network on 1182000 test images: 55.69
-Accuracy of the network on 1188000 test images: 55.93
-Accuracy of the network on 1194000 test images: 55.87
-Accuracy of the network on 1200000 test images: 55.83
-212.67015671730042
+Accuracy of the network on 1146000 test images: 61.85
+Accuracy of the network on 1152000 test images: 62.49
+Accuracy of the network on 1158000 test images: 61.81
+Accuracy of the network on 1164000 test images: 61.92
+Accuracy of the network on 1170000 test images: 62.49
+Accuracy of the network on 1176000 test images: 62.26
+Accuracy of the network on 1182000 test images: 62.46
+Accuracy of the network on 1188000 test images: 62.68
+Accuracy of the network on 1194000 test images: 62.61
+Accuracy of the network on 1200000 test images: 62.47
+208.654531955719
+Epoch 20
+Accuracy of the network on 1206000 test images: 62.37
+Accuracy of the network on 1212000 test images: 62.6
+Accuracy of the network on 1218000 test images: 62.79
+Accuracy of the network on 1224000 test images: 63.15
+Accuracy of the network on 1230000 test images: 62.73
+Accuracy of the network on 1236000 test images: 62.97
+Accuracy of the network on 1242000 test images: 62.78
+Accuracy of the network on 1248000 test images: 62.73
+Accuracy of the network on 1254000 test images: 63.12
+Accuracy of the network on 1260000 test images: 62.24
+208.6419665813446
+Epoch 21
+Accuracy of the network on 1266000 test images: 62.76
+Accuracy of the network on 1272000 test images: 62.73
+Accuracy of the network on 1278000 test images: 62.96
+Accuracy of the network on 1284000 test images: 62.65
+Accuracy of the network on 1290000 test images: 63.35
+Accuracy of the network on 1296000 test images: 62.82
+Accuracy of the network on 1302000 test images: 63.17
+Accuracy of the network on 1308000 test images: 63.25
+Accuracy of the network on 1314000 test images: 63.19
+Accuracy of the network on 1320000 test images: 62.95
+208.75630927085876
+Epoch 22
+Accuracy of the network on 1326000 test images: 63.14
+Accuracy of the network on 1332000 test images: 63.09
+Accuracy of the network on 1338000 test images: 63.05
+Accuracy of the network on 1344000 test images: 63.15
+Accuracy of the network on 1350000 test images: 63.47
+Accuracy of the network on 1356000 test images: 63.28
+Accuracy of the network on 1362000 test images: 63.39
+Accuracy of the network on 1368000 test images: 62.93
+Accuracy of the network on 1374000 test images: 63.5
+Accuracy of the network on 1380000 test images: 63.06
+208.7623209953308
+Epoch 23
+Accuracy of the network on 1386000 test images: 63.69
+Accuracy of the network on 1392000 test images: 63.73
+Accuracy of the network on 1398000 test images: 63.58
+Accuracy of the network on 1404000 test images: 63.68
+Accuracy of the network on 1410000 test images: 62.83
+Accuracy of the network on 1416000 test images: 63.45
+Accuracy of the network on 1422000 test images: 63.26
+Accuracy of the network on 1428000 test images: 63.55
+Accuracy of the network on 1434000 test images: 63.55
+Accuracy of the network on 1440000 test images: 63.46
+208.78922295570374
+Epoch 24
+Accuracy of the network on 1446000 test images: 63.41
+Accuracy of the network on 1452000 test images: 63.43
+Accuracy of the network on 1458000 test images: 63.21
+Accuracy of the network on 1464000 test images: 63.52
+Accuracy of the network on 1470000 test images: 63.48
+Accuracy of the network on 1476000 test images: 63.58
+Accuracy of the network on 1482000 test images: 63.55
+Accuracy of the network on 1488000 test images: 63.47
+Accuracy of the network on 1494000 test images: 63.63
+Accuracy of the network on 1500000 test images: 63.62
+208.66808104515076
+Epoch 25
+Accuracy of the network on 1506000 test images: 63.17
+Accuracy of the network on 1512000 test images: 63.79
+Accuracy of the network on 1518000 test images: 63.79
+Accuracy of the network on 1524000 test images: 63.43
+Accuracy of the network on 1530000 test images: 63.61
+Accuracy of the network on 1536000 test images: 63.94
+Accuracy of the network on 1542000 test images: 63.82
+Accuracy of the network on 1548000 test images: 63.89
+Accuracy of the network on 1554000 test images: 63.41
+Accuracy of the network on 1560000 test images: 63.77
+208.7166450023651
+Epoch 26
+Accuracy of the network on 1566000 test images: 63.48
+Accuracy of the network on 1572000 test images: 63.9
+Accuracy of the network on 1578000 test images: 63.55
+Accuracy of the network on 1584000 test images: 64.01
+Accuracy of the network on 1590000 test images: 63.57
+Accuracy of the network on 1596000 test images: 63.98
+Accuracy of the network on 1602000 test images: 63.77
+Accuracy of the network on 1608000 test images: 63.51
+Accuracy of the network on 1614000 test images: 63.51
+Accuracy of the network on 1620000 test images: 64.16
+208.96117997169495
+Epoch 27
+Accuracy of the network on 1626000 test images: 63.83
+Accuracy of the network on 1632000 test images: 64.39
+Accuracy of the network on 1638000 test images: 63.85
+Accuracy of the network on 1644000 test images: 63.92
+Accuracy of the network on 1650000 test images: 64.18
+Accuracy of the network on 1656000 test images: 64.0
+Accuracy of the network on 1662000 test images: 63.95
+Accuracy of the network on 1668000 test images: 64.35
+Accuracy of the network on 1674000 test images: 63.53
+Accuracy of the network on 1680000 test images: 63.99
+209.2727813720703
+Epoch 28
+Accuracy of the network on 1686000 test images: 63.98
+Accuracy of the network on 1692000 test images: 63.94
+Accuracy of the network on 1698000 test images: 63.98
+Accuracy of the network on 1704000 test images: 64.01
+Accuracy of the network on 1710000 test images: 64.33
+Accuracy of the network on 1716000 test images: 63.81
+Accuracy of the network on 1722000 test images: 63.98
+Accuracy of the network on 1728000 test images: 64.36
+Accuracy of the network on 1734000 test images: 63.74
+Accuracy of the network on 1740000 test images: 64.2
+209.20959091186523
+Epoch 29
+Accuracy of the network on 1746000 test images: 64.06
+Accuracy of the network on 1752000 test images: 64.39
+Accuracy of the network on 1758000 test images: 63.9
+Accuracy of the network on 1764000 test images: 64.21
+Accuracy of the network on 1770000 test images: 64.24
+Accuracy of the network on 1776000 test images: 63.98
+Accuracy of the network on 1782000 test images: 64.05
+Accuracy of the network on 1788000 test images: 64.32
+Accuracy of the network on 1794000 test images: 64.04
+Accuracy of the network on 1800000 test images: 63.69
+209.31892919540405
 Epoch 0
-Accuracy of the network on 6000 test images: 11.47
-Accuracy of the network on 12000 test images: 15.5
-Accuracy of the network on 18000 test images: 21.87
-Accuracy of the network on 24000 test images: 26.72
-Accuracy of the network on 30000 test images: 34.43
-Accuracy of the network on 36000 test images: 36.12
-Accuracy of the network on 42000 test images: 40.01
-Accuracy of the network on 48000 test images: 42.08
-Accuracy of the network on 54000 test images: 41.72
-Accuracy of the network on 60000 test images: 41.74
-213.1049439907074
+Accuracy of the network on 6000 test images: 11.74
+Accuracy of the network on 12000 test images: 20.95
+Accuracy of the network on 18000 test images: 21.79
+Accuracy of the network on 24000 test images: 21.93
+Accuracy of the network on 30000 test images: 22.09
+Accuracy of the network on 36000 test images: 21.65
+Accuracy of the network on 42000 test images: 21.81
+Accuracy of the network on 48000 test images: 22.69
+Accuracy of the network on 54000 test images: 23.39
+Accuracy of the network on 60000 test images: 22.95
+208.82714819908142
 Epoch 1
-Accuracy of the network on 66000 test images: 41.58
-Accuracy of the network on 72000 test images: 39.56
-Accuracy of the network on 78000 test images: 39.22
-Accuracy of the network on 84000 test images: 38.37
-Accuracy of the network on 90000 test images: 36.95
-Accuracy of the network on 96000 test images: 36.42
-Accuracy of the network on 102000 test images: 36.31
-Accuracy of the network on 108000 test images: 36.58
-Accuracy of the network on 114000 test images: 37.85
-Accuracy of the network on 120000 test images: 37.76
-213.0694181919098
+Accuracy of the network on 66000 test images: 23.57
+Accuracy of the network on 72000 test images: 23.81
+Accuracy of the network on 78000 test images: 24.36
+Accuracy of the network on 84000 test images: 25.03
+Accuracy of the network on 90000 test images: 25.02
+Accuracy of the network on 96000 test images: 24.82
+Accuracy of the network on 102000 test images: 25.71
+Accuracy of the network on 108000 test images: 25.46
+Accuracy of the network on 114000 test images: 25.72
+Accuracy of the network on 120000 test images: 26.35
+209.0625114440918
 Epoch 2
-Accuracy of the network on 126000 test images: 40.37
-Accuracy of the network on 132000 test images: 42.01
-Accuracy of the network on 138000 test images: 46.03
-Accuracy of the network on 144000 test images: 44.41
-Accuracy of the network on 150000 test images: 47.03
-Accuracy of the network on 156000 test images: 45.88
-Accuracy of the network on 162000 test images: 47.14
-Accuracy of the network on 168000 test images: 49.74
-Accuracy of the network on 174000 test images: 47.89
-Accuracy of the network on 180000 test images: 49.4
-213.3857548236847
+Accuracy of the network on 126000 test images: 26.81
+Accuracy of the network on 132000 test images: 27.12
+Accuracy of the network on 138000 test images: 27.56
+Accuracy of the network on 144000 test images: 27.71
+Accuracy of the network on 150000 test images: 27.53
+Accuracy of the network on 156000 test images: 27.99
+Accuracy of the network on 162000 test images: 28.32
+Accuracy of the network on 168000 test images: 28.32
+Accuracy of the network on 174000 test images: 28.42
+Accuracy of the network on 180000 test images: 28.6
+209.19290447235107
 Epoch 3
-Accuracy of the network on 186000 test images: 50.46
-Accuracy of the network on 192000 test images: 51.09
-Accuracy of the network on 198000 test images: 52.08
-Accuracy of the network on 204000 test images: 51.79
-Accuracy of the network on 210000 test images: 52.42
-Accuracy of the network on 216000 test images: 52.74
-Accuracy of the network on 222000 test images: 53.21
-Accuracy of the network on 228000 test images: 53.31
-Accuracy of the network on 234000 test images: 53.68
-Accuracy of the network on 240000 test images: 53.68
-213.63598895072937
+Accuracy of the network on 186000 test images: 28.6
+Accuracy of the network on 192000 test images: 28.94
+Accuracy of the network on 198000 test images: 29.13
+Accuracy of the network on 204000 test images: 29.42
+Accuracy of the network on 210000 test images: 30.25
+Accuracy of the network on 216000 test images: 30.91
+Accuracy of the network on 222000 test images: 31.22
+Accuracy of the network on 228000 test images: 31.36
+Accuracy of the network on 234000 test images: 31.76
+Accuracy of the network on 240000 test images: 31.98
+209.13643646240234
 Epoch 4
-Accuracy of the network on 246000 test images: 53.88
-Accuracy of the network on 252000 test images: 54.03
-Accuracy of the network on 258000 test images: 54.1
-Accuracy of the network on 264000 test images: 54.28
-Accuracy of the network on 270000 test images: 54.39
-Accuracy of the network on 276000 test images: 54.14
-Accuracy of the network on 282000 test images: 54.49
-Accuracy of the network on 288000 test images: 54.74
-Accuracy of the network on 294000 test images: 54.62
-Accuracy of the network on 300000 test images: 54.85
-212.50606060028076
+Accuracy of the network on 246000 test images: 32.13
+Accuracy of the network on 252000 test images: 32.56
+Accuracy of the network on 258000 test images: 33.1
+Accuracy of the network on 264000 test images: 33.62
+Accuracy of the network on 270000 test images: 34.35
+Accuracy of the network on 276000 test images: 34.45
+Accuracy of the network on 282000 test images: 34.84
+Accuracy of the network on 288000 test images: 33.96
+Accuracy of the network on 294000 test images: 34.75
+Accuracy of the network on 300000 test images: 34.45
+208.99769496917725
 Epoch 5
-Accuracy of the network on 306000 test images: 54.95
-Accuracy of the network on 312000 test images: 54.93
-Accuracy of the network on 318000 test images: 54.95
-Accuracy of the network on 324000 test images: 55.15
-Accuracy of the network on 330000 test images: 55.11
-Accuracy of the network on 336000 test images: 55.29
-Accuracy of the network on 342000 test images: 55.51
-Accuracy of the network on 348000 test images: 55.61
-Accuracy of the network on 354000 test images: 55.62
-Accuracy of the network on 360000 test images: 55.61
-212.44596004486084
+Accuracy of the network on 306000 test images: 35.25
+Accuracy of the network on 312000 test images: 34.68
+Accuracy of the network on 318000 test images: 34.89
+Accuracy of the network on 324000 test images: 35.15
+Accuracy of the network on 330000 test images: 35.44
+Accuracy of the network on 336000 test images: 34.82
+Accuracy of the network on 342000 test images: 35.63
+Accuracy of the network on 348000 test images: 35.88
+Accuracy of the network on 354000 test images: 36.08
+Accuracy of the network on 360000 test images: 36.13
+209.0172781944275
 Epoch 6
-Accuracy of the network on 366000 test images: 55.66
-Accuracy of the network on 372000 test images: 55.91
-Accuracy of the network on 378000 test images: 55.94
-Accuracy of the network on 384000 test images: 56.33
-Accuracy of the network on 390000 test images: 56.35
-Accuracy of the network on 396000 test images: 56.76
-Accuracy of the network on 402000 test images: 57.13
-Accuracy of the network on 408000 test images: 57.3
-Accuracy of the network on 414000 test images: 56.92
-Accuracy of the network on 420000 test images: 57.53
-210.67088556289673
+Accuracy of the network on 366000 test images: 36.49
+Accuracy of the network on 372000 test images: 36.68
+Accuracy of the network on 378000 test images: 37.31
+Accuracy of the network on 384000 test images: 36.93
+Accuracy of the network on 390000 test images: 36.97
+Accuracy of the network on 396000 test images: 37.56
+Accuracy of the network on 402000 test images: 37.66
+Accuracy of the network on 408000 test images: 38.11
+Accuracy of the network on 414000 test images: 38.47
+Accuracy of the network on 420000 test images: 38.52
+208.90040397644043
 Epoch 7
-Accuracy of the network on 426000 test images: 57.01
-Accuracy of the network on 432000 test images: 57.67
-Accuracy of the network on 438000 test images: 58.17
-Accuracy of the network on 444000 test images: 57.77
-Accuracy of the network on 450000 test images: 58.25
-Accuracy of the network on 456000 test images: 58.05
-Accuracy of the network on 462000 test images: 59.16
-Accuracy of the network on 468000 test images: 59.34
-Accuracy of the network on 474000 test images: 59.48
-Accuracy of the network on 480000 test images: 59.28
-210.49095106124878
+Accuracy of the network on 426000 test images: 38.99
+Accuracy of the network on 432000 test images: 39.37
+Accuracy of the network on 438000 test images: 39.74
+Accuracy of the network on 444000 test images: 39.54
+Accuracy of the network on 450000 test images: 39.4
+Accuracy of the network on 456000 test images: 39.61
+Accuracy of the network on 462000 test images: 39.43
+Accuracy of the network on 468000 test images: 40.73
+Accuracy of the network on 474000 test images: 40.24
+Accuracy of the network on 480000 test images: 41.02
+208.90497636795044
 Epoch 8
-Accuracy of the network on 486000 test images: 59.96
-Accuracy of the network on 492000 test images: 59.22
-Accuracy of the network on 498000 test images: 60.05
-Accuracy of the network on 504000 test images: 60.12
-Accuracy of the network on 510000 test images: 59.49
-Accuracy of the network on 516000 test images: 60.56
-Accuracy of the network on 522000 test images: 60.14
-Accuracy of the network on 528000 test images: 61.03
-Accuracy of the network on 534000 test images: 60.97
-Accuracy of the network on 540000 test images: 60.85
-209.86156582832336
+Accuracy of the network on 486000 test images: 40.73
+Accuracy of the network on 492000 test images: 41.31
+Accuracy of the network on 498000 test images: 42.02
+Accuracy of the network on 504000 test images: 42.17
+Accuracy of the network on 510000 test images: 41.53
+Accuracy of the network on 516000 test images: 41.98
+Accuracy of the network on 522000 test images: 42.02
+Accuracy of the network on 528000 test images: 42.1
+Accuracy of the network on 534000 test images: 42.55
+Accuracy of the network on 540000 test images: 42.86
+209.19039630889893
 Epoch 9
-Accuracy of the network on 546000 test images: 60.99
-Accuracy of the network on 552000 test images: 61.23
-Accuracy of the network on 558000 test images: 61.06
-Accuracy of the network on 564000 test images: 61.06
-Accuracy of the network on 570000 test images: 61.49
-Accuracy of the network on 576000 test images: 61.26
-Accuracy of the network on 582000 test images: 61.6
-Accuracy of the network on 588000 test images: 61.11
-Accuracy of the network on 594000 test images: 61.79
-Accuracy of the network on 600000 test images: 61.95
-210.60029435157776
+Accuracy of the network on 546000 test images: 43.12
+Accuracy of the network on 552000 test images: 43.3
+Accuracy of the network on 558000 test images: 43.1
+Accuracy of the network on 564000 test images: 43.57
+Accuracy of the network on 570000 test images: 43.33
+Accuracy of the network on 576000 test images: 43.7
+Accuracy of the network on 582000 test images: 44.09
+Accuracy of the network on 588000 test images: 45.18
+Accuracy of the network on 594000 test images: 44.16
+Accuracy of the network on 600000 test images: 44.88
+209.18824791908264
 Epoch 10
-Accuracy of the network on 606000 test images: 62.11
-Accuracy of the network on 612000 test images: 62.29
-Accuracy of the network on 618000 test images: 61.73
-Accuracy of the network on 624000 test images: 62.25
-Accuracy of the network on 630000 test images: 62.29
-Accuracy of the network on 636000 test images: 62.67
-Accuracy of the network on 642000 test images: 61.98
-Accuracy of the network on 648000 test images: 62.27
-Accuracy of the network on 654000 test images: 62.4
-Accuracy of the network on 660000 test images: 61.7
-210.07868909835815
+Accuracy of the network on 606000 test images: 45.19
+Accuracy of the network on 612000 test images: 44.19
+Accuracy of the network on 618000 test images: 45.18
+Accuracy of the network on 624000 test images: 45.57
+Accuracy of the network on 630000 test images: 44.56
+Accuracy of the network on 636000 test images: 45.27
+Accuracy of the network on 642000 test images: 45.25
+Accuracy of the network on 648000 test images: 45.67
+Accuracy of the network on 654000 test images: 46.13
+Accuracy of the network on 660000 test images: 45.55
+209.336350440979
 Epoch 11
-Accuracy of the network on 666000 test images: 62.1
-Accuracy of the network on 672000 test images: 61.99
-Accuracy of the network on 678000 test images: 62.27
-Accuracy of the network on 684000 test images: 62.7
-Accuracy of the network on 690000 test images: 62.09
-Accuracy of the network on 696000 test images: 61.98
-Accuracy of the network on 702000 test images: 62.24
-Accuracy of the network on 708000 test images: 61.99
-Accuracy of the network on 714000 test images: 62.0
-Accuracy of the network on 720000 test images: 62.52
-210.4198784828186
+Accuracy of the network on 666000 test images: 46.43
+Accuracy of the network on 672000 test images: 45.76
+Accuracy of the network on 678000 test images: 46.36
+Accuracy of the network on 684000 test images: 45.37
+Accuracy of the network on 690000 test images: 46.37
+Accuracy of the network on 696000 test images: 46.78
+Accuracy of the network on 702000 test images: 47.09
+Accuracy of the network on 708000 test images: 46.22
+Accuracy of the network on 714000 test images: 46.96
+Accuracy of the network on 720000 test images: 46.47
+208.93920946121216
 Epoch 12
-Accuracy of the network on 726000 test images: 62.53
-Accuracy of the network on 732000 test images: 62.65
-Accuracy of the network on 738000 test images: 62.49
-Accuracy of the network on 744000 test images: 62.46
-Accuracy of the network on 750000 test images: 63.06
-Accuracy of the network on 756000 test images: 63.02
-Accuracy of the network on 762000 test images: 63.36
-Accuracy of the network on 768000 test images: 62.72
-Accuracy of the network on 774000 test images: 62.82
-Accuracy of the network on 780000 test images: 62.8
-210.78640937805176
+Accuracy of the network on 726000 test images: 47.05
+Accuracy of the network on 732000 test images: 46.25
+Accuracy of the network on 738000 test images: 46.27
+Accuracy of the network on 744000 test images: 47.43
+Accuracy of the network on 750000 test images: 46.71
+Accuracy of the network on 756000 test images: 47.19
+Accuracy of the network on 762000 test images: 46.52
+Accuracy of the network on 768000 test images: 47.28
+Accuracy of the network on 774000 test images: 47.1
+Accuracy of the network on 780000 test images: 46.76
+209.13659000396729
 Epoch 13
-Accuracy of the network on 786000 test images: 62.73
-Accuracy of the network on 792000 test images: 63.1
-Accuracy of the network on 798000 test images: 62.84
-Accuracy of the network on 804000 test images: 62.91
-Accuracy of the network on 810000 test images: 63.1
-Accuracy of the network on 816000 test images: 63.54
-Accuracy of the network on 822000 test images: 63.35
-Accuracy of the network on 828000 test images: 62.99
-Accuracy of the network on 834000 test images: 63.14
-Accuracy of the network on 840000 test images: 62.81
-210.60163140296936
+Accuracy of the network on 786000 test images: 47.03
+Accuracy of the network on 792000 test images: 47.03
+Accuracy of the network on 798000 test images: 47.1
+Accuracy of the network on 804000 test images: 46.96
+Accuracy of the network on 810000 test images: 46.68
+Accuracy of the network on 816000 test images: 46.26
+Accuracy of the network on 822000 test images: 46.99
+Accuracy of the network on 828000 test images: 47.07
+Accuracy of the network on 834000 test images: 46.78
+Accuracy of the network on 840000 test images: 46.92
+208.93260216712952
 Epoch 14
-Accuracy of the network on 846000 test images: 63.08
-Accuracy of the network on 852000 test images: 63.02
-Accuracy of the network on 858000 test images: 62.66
-Accuracy of the network on 864000 test images: 62.84
-Accuracy of the network on 870000 test images: 63.33
-Accuracy of the network on 876000 test images: 62.97
-Accuracy of the network on 882000 test images: 63.12
-Accuracy of the network on 888000 test images: 63.02
-Accuracy of the network on 894000 test images: 63.75
-Accuracy of the network on 900000 test images: 63.24
-210.41186928749084
+Accuracy of the network on 846000 test images: 45.93
+Accuracy of the network on 852000 test images: 46.69
+Accuracy of the network on 858000 test images: 46.62
+Accuracy of the network on 864000 test images: 47.12
+Accuracy of the network on 870000 test images: 46.96
+Accuracy of the network on 876000 test images: 46.64
+Accuracy of the network on 882000 test images: 47.27
+Accuracy of the network on 888000 test images: 46.48
+Accuracy of the network on 894000 test images: 46.68
+Accuracy of the network on 900000 test images: 46.49
+209.12277555465698
 Epoch 15
-Accuracy of the network on 906000 test images: 63.37
-Accuracy of the network on 912000 test images: 63.45
-Accuracy of the network on 918000 test images: 63.45
-Accuracy of the network on 924000 test images: 63.52
-Accuracy of the network on 930000 test images: 63.09
-Accuracy of the network on 936000 test images: 63.14
-Accuracy of the network on 942000 test images: 62.83
-Accuracy of the network on 948000 test images: 63.54
-Accuracy of the network on 954000 test images: 63.24
-Accuracy of the network on 960000 test images: 63.35
-210.50635766983032
+Accuracy of the network on 906000 test images: 47.27
+Accuracy of the network on 912000 test images: 46.22
+Accuracy of the network on 918000 test images: 47.09
+Accuracy of the network on 924000 test images: 47.44
+Accuracy of the network on 930000 test images: 47.88
+Accuracy of the network on 936000 test images: 47.31
+Accuracy of the network on 942000 test images: 46.63
+Accuracy of the network on 948000 test images: 46.07
+Accuracy of the network on 954000 test images: 47.11
+Accuracy of the network on 960000 test images: 47.5
+209.13450527191162
 Epoch 16
-Accuracy of the network on 966000 test images: 63.71
-Accuracy of the network on 972000 test images: 63.48
-Accuracy of the network on 978000 test images: 63.45
-Accuracy of the network on 984000 test images: 63.5
-Accuracy of the network on 990000 test images: 63.48
-Accuracy of the network on 996000 test images: 63.15
-Accuracy of the network on 1002000 test images: 62.95
-Accuracy of the network on 1008000 test images: 63.28
-Accuracy of the network on 1014000 test images: 63.19
-Accuracy of the network on 1020000 test images: 63.08
-210.42788076400757
+Accuracy of the network on 966000 test images: 47.82
+Accuracy of the network on 972000 test images: 47.25
+Accuracy of the network on 978000 test images: 47.67
+Accuracy of the network on 984000 test images: 47.46
+Accuracy of the network on 990000 test images: 47.87
+Accuracy of the network on 996000 test images: 47.77
+Accuracy of the network on 1002000 test images: 47.87
+Accuracy of the network on 1008000 test images: 47.32
+Accuracy of the network on 1014000 test images: 47.78
+Accuracy of the network on 1020000 test images: 46.98
+208.97787642478943
 Epoch 17
-Accuracy of the network on 1026000 test images: 63.49
-Accuracy of the network on 1032000 test images: 63.27
-Accuracy of the network on 1038000 test images: 63.74
-Accuracy of the network on 1044000 test images: 63.55
-Accuracy of the network on 1050000 test images: 63.31
-Accuracy of the network on 1056000 test images: 62.99
-Accuracy of the network on 1062000 test images: 62.58
-Accuracy of the network on 1068000 test images: 62.78
-Accuracy of the network on 1074000 test images: 63.39
-Accuracy of the network on 1080000 test images: 63.2
-210.6758906841278
+Accuracy of the network on 1026000 test images: 48.1
+Accuracy of the network on 1032000 test images: 48.09
+Accuracy of the network on 1038000 test images: 47.99
+Accuracy of the network on 1044000 test images: 48.07
+Accuracy of the network on 1050000 test images: 47.84
+Accuracy of the network on 1056000 test images: 47.81
+Accuracy of the network on 1062000 test images: 48.36
+Accuracy of the network on 1068000 test images: 47.9
+Accuracy of the network on 1074000 test images: 47.71
+Accuracy of the network on 1080000 test images: 48.53
+208.92356753349304
 Epoch 18
-Accuracy of the network on 1086000 test images: 63.8
-Accuracy of the network on 1092000 test images: 62.73
-Accuracy of the network on 1098000 test images: 62.45
-Accuracy of the network on 1104000 test images: 63.18
-Accuracy of the network on 1110000 test images: 63.5
-Accuracy of the network on 1116000 test images: 63.3
-Accuracy of the network on 1122000 test images: 63.37
-Accuracy of the network on 1128000 test images: 63.49
-Accuracy of the network on 1134000 test images: 63.36
-Accuracy of the network on 1140000 test images: 63.24
-212.4340898990631
+Accuracy of the network on 1086000 test images: 48.15
+Accuracy of the network on 1092000 test images: 49.11
+Accuracy of the network on 1098000 test images: 48.15
+Accuracy of the network on 1104000 test images: 48.19
+Accuracy of the network on 1110000 test images: 49.16
+Accuracy of the network on 1116000 test images: 48.5
+Accuracy of the network on 1122000 test images: 48.46
+Accuracy of the network on 1128000 test images: 48.5
+Accuracy of the network on 1134000 test images: 47.69
+Accuracy of the network on 1140000 test images: 48.37
+209.21196174621582
 Epoch 19
-Accuracy of the network on 1146000 test images: 63.01
-Accuracy of the network on 1152000 test images: 63.42
-Accuracy of the network on 1158000 test images: 63.25
-Accuracy of the network on 1164000 test images: 63.46
-Accuracy of the network on 1170000 test images: 63.75
-Accuracy of the network on 1176000 test images: 63.15
-Accuracy of the network on 1182000 test images: 62.85
-Accuracy of the network on 1188000 test images: 63.56
-Accuracy of the network on 1194000 test images: 63.53
-Accuracy of the network on 1200000 test images: 63.35
-212.98354625701904
-Epoch 0
-Accuracy of the network on 6000 test images: 12.79
-Accuracy of the network on 12000 test images: 14.81
-Accuracy of the network on 18000 test images: 17.54
-Accuracy of the network on 24000 test images: 21.84
-Accuracy of the network on 30000 test images: 30.41
-Accuracy of the network on 36000 test images: 35.81
-Accuracy of the network on 42000 test images: 40.85
-Accuracy of the network on 48000 test images: 43.83
-Accuracy of the network on 54000 test images: 44.14
-Accuracy of the network on 60000 test images: 45.06
-212.95025944709778
-Epoch 1
-Accuracy of the network on 66000 test images: 45.58
-Accuracy of the network on 72000 test images: 44.11
-Accuracy of the network on 78000 test images: 45.27
-Accuracy of the network on 84000 test images: 45.04
-Accuracy of the network on 90000 test images: 45.16
-Accuracy of the network on 96000 test images: 43.82
-Accuracy of the network on 102000 test images: 43.36
-Accuracy of the network on 108000 test images: 42.0
-Accuracy of the network on 114000 test images: 41.87
-Accuracy of the network on 120000 test images: 40.33
-213.57218527793884
-Epoch 2
-Accuracy of the network on 126000 test images: 38.87
-Accuracy of the network on 132000 test images: 39.29
-Accuracy of the network on 138000 test images: 39.74
-Accuracy of the network on 144000 test images: 40.44
-Accuracy of the network on 150000 test images: 43.3
-Accuracy of the network on 156000 test images: 46.61
-Accuracy of the network on 162000 test images: 47.93
-Accuracy of the network on 168000 test images: 49.54
-Accuracy of the network on 174000 test images: 51.3
-Accuracy of the network on 180000 test images: 52.47
-213.04557847976685
-Epoch 3
-Accuracy of the network on 186000 test images: 52.62
-Accuracy of the network on 192000 test images: 53.44
-Accuracy of the network on 198000 test images: 54.08
-Accuracy of the network on 204000 test images: 54.6
-Accuracy of the network on 210000 test images: 54.32
-Accuracy of the network on 216000 test images: 54.89
-Accuracy of the network on 222000 test images: 54.68
-Accuracy of the network on 228000 test images: 55.05
-Accuracy of the network on 234000 test images: 55.36
-Accuracy of the network on 240000 test images: 55.71
-213.88153100013733
-Epoch 4
-Accuracy of the network on 246000 test images: 55.41
-Accuracy of the network on 252000 test images: 55.83
-Accuracy of the network on 258000 test images: 55.49
-Accuracy of the network on 264000 test images: 56.22
-Accuracy of the network on 270000 test images: 56.94
-Accuracy of the network on 276000 test images: 56.82
-Accuracy of the network on 282000 test images: 57.04
-Accuracy of the network on 288000 test images: 57.58
-Accuracy of the network on 294000 test images: 57.28
-Accuracy of the network on 300000 test images: 57.75
-214.44302582740784
-Epoch 5
-Accuracy of the network on 306000 test images: 57.87
-Accuracy of the network on 312000 test images: 57.79
-Accuracy of the network on 318000 test images: 58.07
-Accuracy of the network on 324000 test images: 58.28
-Accuracy of the network on 330000 test images: 58.62
-Accuracy of the network on 336000 test images: 59.22
-Accuracy of the network on 342000 test images: 58.65
-Accuracy of the network on 348000 test images: 58.66
-Accuracy of the network on 354000 test images: 59.2
-Accuracy of the network on 360000 test images: 59.54
-212.7731375694275
-Epoch 6
-Accuracy of the network on 366000 test images: 59.97
-Accuracy of the network on 372000 test images: 59.4
-Accuracy of the network on 378000 test images: 59.87
-Accuracy of the network on 384000 test images: 60.41
-Accuracy of the network on 390000 test images: 60.44
-Accuracy of the network on 396000 test images: 60.67
-Accuracy of the network on 402000 test images: 61.46
-Accuracy of the network on 408000 test images: 61.0
-Accuracy of the network on 414000 test images: 61.42
-Accuracy of the network on 420000 test images: 61.27
-213.01812028884888
-Epoch 7
-Accuracy of the network on 426000 test images: 61.83
-Accuracy of the network on 432000 test images: 61.84
-Accuracy of the network on 438000 test images: 62.29
-Accuracy of the network on 444000 test images: 62.41
-Accuracy of the network on 450000 test images: 62.07
-Accuracy of the network on 456000 test images: 62.22
-Accuracy of the network on 462000 test images: 62.49
-Accuracy of the network on 468000 test images: 62.56
-Accuracy of the network on 474000 test images: 62.55
-Accuracy of the network on 480000 test images: 62.61
-212.78195691108704
-Epoch 8
-Accuracy of the network on 486000 test images: 62.64
-Accuracy of the network on 492000 test images: 62.56
-Accuracy of the network on 498000 test images: 63.15
-Accuracy of the network on 504000 test images: 62.76
-Accuracy of the network on 510000 test images: 63.09
-Accuracy of the network on 516000 test images: 63.07
-Accuracy of the network on 522000 test images: 62.79
-Accuracy of the network on 528000 test images: 62.93
-Accuracy of the network on 534000 test images: 63.22
-Accuracy of the network on 540000 test images: 63.16
-212.98495244979858
-Epoch 9
-Accuracy of the network on 546000 test images: 63.24
-Accuracy of the network on 552000 test images: 63.25
-Accuracy of the network on 558000 test images: 63.26
-Accuracy of the network on 564000 test images: 63.32
-Accuracy of the network on 570000 test images: 63.33
-Accuracy of the network on 576000 test images: 63.3
-Accuracy of the network on 582000 test images: 63.28
-Accuracy of the network on 588000 test images: 63.46
-Accuracy of the network on 594000 test images: 63.66
-Accuracy of the network on 600000 test images: 63.52
-212.76105260849
-Epoch 10
-Accuracy of the network on 606000 test images: 63.66
-Accuracy of the network on 612000 test images: 63.7
-Accuracy of the network on 618000 test images: 63.72
-Accuracy of the network on 624000 test images: 63.41
-Accuracy of the network on 630000 test images: 63.66
-Accuracy of the network on 636000 test images: 63.59
-Accuracy of the network on 642000 test images: 63.52
-Accuracy of the network on 648000 test images: 63.8
-Accuracy of the network on 654000 test images: 63.73
-Accuracy of the network on 660000 test images: 63.93
-213.84027433395386
-Epoch 11
-Accuracy of the network on 666000 test images: 63.86
-Accuracy of the network on 672000 test images: 63.98
-Accuracy of the network on 678000 test images: 64.04
-Accuracy of the network on 684000 test images: 63.93
-Accuracy of the network on 690000 test images: 64.03
-Accuracy of the network on 696000 test images: 64.08
-Accuracy of the network on 702000 test images: 64.14
-Accuracy of the network on 708000 test images: 63.98
-Accuracy of the network on 714000 test images: 63.92
-Accuracy of the network on 720000 test images: 64.13
-213.19793891906738
-Epoch 12
-Accuracy of the network on 726000 test images: 64.19
-Accuracy of the network on 732000 test images: 64.16
-Accuracy of the network on 738000 test images: 64.22
-Accuracy of the network on 744000 test images: 64.29
-Accuracy of the network on 750000 test images: 64.35
-Accuracy of the network on 756000 test images: 64.17
-Accuracy of the network on 762000 test images: 64.35
-Accuracy of the network on 768000 test images: 64.26
-Accuracy of the network on 774000 test images: 64.27
-Accuracy of the network on 780000 test images: 64.35
-212.60587525367737
-Epoch 13
-Accuracy of the network on 786000 test images: 64.43
-Accuracy of the network on 792000 test images: 64.62
-Accuracy of the network on 798000 test images: 64.47
-Accuracy of the network on 804000 test images: 64.5
-Accuracy of the network on 810000 test images: 64.19
-Accuracy of the network on 816000 test images: 64.58
-Accuracy of the network on 822000 test images: 64.55
-Accuracy of the network on 828000 test images: 64.58
-Accuracy of the network on 834000 test images: 64.77
-Accuracy of the network on 840000 test images: 64.72
-213.11229944229126
-Epoch 14
-Accuracy of the network on 846000 test images: 64.51
-Accuracy of the network on 852000 test images: 64.84
-Accuracy of the network on 858000 test images: 64.57
-Accuracy of the network on 864000 test images: 64.78
-Accuracy of the network on 870000 test images: 64.62
-Accuracy of the network on 876000 test images: 64.88
-Accuracy of the network on 882000 test images: 64.88
-Accuracy of the network on 888000 test images: 64.85
-Accuracy of the network on 894000 test images: 64.78
-Accuracy of the network on 900000 test images: 64.95
-212.83015203475952
-Epoch 15
-Accuracy of the network on 906000 test images: 64.8
-Accuracy of the network on 912000 test images: 64.73
-Accuracy of the network on 918000 test images: 64.81
-Accuracy of the network on 924000 test images: 65.41
-Accuracy of the network on 930000 test images: 64.8
-Accuracy of the network on 936000 test images: 65.13
-Accuracy of the network on 942000 test images: 64.8
-Accuracy of the network on 948000 test images: 65.12
-Accuracy of the network on 954000 test images: 64.94
-Accuracy of the network on 960000 test images: 65.07
-213.0692901611328
-Epoch 16
-Accuracy of the network on 966000 test images: 64.63
-Accuracy of the network on 972000 test images: 65.14
-Accuracy of the network on 978000 test images: 65.48
-Accuracy of the network on 984000 test images: 64.87
-Accuracy of the network on 990000 test images: 65.16
-Accuracy of the network on 996000 test images: 65.29
-Accuracy of the network on 1002000 test images: 65.63
-Accuracy of the network on 1008000 test images: 65.21
-Accuracy of the network on 1014000 test images: 65.3
-Accuracy of the network on 1020000 test images: 65.28
-213.94596076011658
-Epoch 17
-Accuracy of the network on 1026000 test images: 65.38
-Accuracy of the network on 1032000 test images: 65.34
-Accuracy of the network on 1038000 test images: 65.28
-Accuracy of the network on 1044000 test images: 65.65
-Accuracy of the network on 1050000 test images: 65.3
-Accuracy of the network on 1056000 test images: 65.56
-Accuracy of the network on 1062000 test images: 65.41
-Accuracy of the network on 1068000 test images: 65.75
-Accuracy of the network on 1074000 test images: 65.46
-Accuracy of the network on 1080000 test images: 65.6
-213.44613027572632
-Epoch 18
-Accuracy of the network on 1086000 test images: 65.63
-Accuracy of the network on 1092000 test images: 65.59
-Accuracy of the network on 1098000 test images: 65.36
-Accuracy of the network on 1104000 test images: 65.77
-Accuracy of the network on 1110000 test images: 65.57
-Accuracy of the network on 1116000 test images: 65.78
-Accuracy of the network on 1122000 test images: 65.55
-Accuracy of the network on 1128000 test images: 65.51
-Accuracy of the network on 1134000 test images: 65.45
-Accuracy of the network on 1140000 test images: 65.6
-213.18382692337036
-Epoch 19
-Accuracy of the network on 1146000 test images: 65.52
-Accuracy of the network on 1152000 test images: 65.37
-Accuracy of the network on 1158000 test images: 65.44
-Accuracy of the network on 1164000 test images: 65.5
-Accuracy of the network on 1170000 test images: 66.18
-Accuracy of the network on 1176000 test images: 65.62
-Accuracy of the network on 1182000 test images: 65.41
-Accuracy of the network on 1188000 test images: 65.45
-Accuracy of the network on 1194000 test images: 65.55
-Accuracy of the network on 1200000 test images: 65.61
-213.1195342540741
-Epoch 0
-Accuracy of the network on 6000 test images: 9.94
-Accuracy of the network on 12000 test images: 10.07
-Accuracy of the network on 18000 test images: 11.67
-Accuracy of the network on 24000 test images: 16.7
-Accuracy of the network on 30000 test images: 22.25
-Accuracy of the network on 36000 test images: 28.34
-Accuracy of the network on 42000 test images: 31.19
-Accuracy of the network on 48000 test images: 30.94
-Accuracy of the network on 54000 test images: 30.35
-Accuracy of the network on 60000 test images: 31.8
-213.5752351284027
-Epoch 1
-Accuracy of the network on 66000 test images: 31.58
-Accuracy of the network on 72000 test images: 32.26
-Accuracy of the network on 78000 test images: 30.64
-Accuracy of the network on 84000 test images: 30.41
-Accuracy of the network on 90000 test images: 30.7
-Accuracy of the network on 96000 test images: 29.92
-Accuracy of the network on 102000 test images: 30.58
-Accuracy of the network on 108000 test images: 30.14
-Accuracy of the network on 114000 test images: 29.92
-Accuracy of the network on 120000 test images: 30.67
-212.66301608085632
-Epoch 2
-Accuracy of the network on 126000 test images: 31.73
-Accuracy of the network on 132000 test images: 32.84
-Accuracy of the network on 138000 test images: 34.88
-Accuracy of the network on 144000 test images: 36.65
-Accuracy of the network on 150000 test images: 40.48
-Accuracy of the network on 156000 test images: 45.12
-Accuracy of the network on 162000 test images: 45.68
-Accuracy of the network on 168000 test images: 46.87
-Accuracy of the network on 174000 test images: 48.6
-Accuracy of the network on 180000 test images: 48.2
-213.1074731349945
-Epoch 3
-Accuracy of the network on 186000 test images: 49.07
-Accuracy of the network on 192000 test images: 51.01
-Accuracy of the network on 198000 test images: 49.73
-Accuracy of the network on 204000 test images: 51.32
-Accuracy of the network on 210000 test images: 51.21
-Accuracy of the network on 216000 test images: 51.94
-Accuracy of the network on 222000 test images: 52.34
-Accuracy of the network on 228000 test images: 51.76
-Accuracy of the network on 234000 test images: 53.4
-Accuracy of the network on 240000 test images: 54.01
-213.8852367401123
-Epoch 4
-Accuracy of the network on 246000 test images: 54.36
-Accuracy of the network on 252000 test images: 54.29
-Accuracy of the network on 258000 test images: 54.11
-Accuracy of the network on 264000 test images: 55.15
-Accuracy of the network on 270000 test images: 56.16
-Accuracy of the network on 276000 test images: 56.18
-Accuracy of the network on 282000 test images: 56.34
-Accuracy of the network on 288000 test images: 56.69
-Accuracy of the network on 294000 test images: 56.92
-Accuracy of the network on 300000 test images: 56.91
-214.28125
-Epoch 5
-Accuracy of the network on 306000 test images: 57.14
-Accuracy of the network on 312000 test images: 57.47
-Accuracy of the network on 318000 test images: 56.56
-Accuracy of the network on 324000 test images: 57.37
-Accuracy of the network on 330000 test images: 57.19
-Accuracy of the network on 336000 test images: 57.83
-Accuracy of the network on 342000 test images: 57.74
-Accuracy of the network on 348000 test images: 57.79
-Accuracy of the network on 354000 test images: 58.42
-Accuracy of the network on 360000 test images: 58.49
-212.8737998008728
-Epoch 6
-Accuracy of the network on 366000 test images: 58.47
-Accuracy of the network on 372000 test images: 57.86
-Accuracy of the network on 378000 test images: 58.38
-Accuracy of the network on 384000 test images: 58.46
-Accuracy of the network on 390000 test images: 58.89
-Accuracy of the network on 396000 test images: 58.89
-Accuracy of the network on 402000 test images: 58.85
-Accuracy of the network on 408000 test images: 59.09
-Accuracy of the network on 414000 test images: 59.34
-Accuracy of the network on 420000 test images: 59.43
-213.18470454216003
-Epoch 7
-Accuracy of the network on 426000 test images: 59.65
-Accuracy of the network on 432000 test images: 59.2
-Accuracy of the network on 438000 test images: 60.3
-Accuracy of the network on 444000 test images: 60.34
-Accuracy of the network on 450000 test images: 59.95
-Accuracy of the network on 456000 test images: 60.31
-Accuracy of the network on 462000 test images: 60.78
-Accuracy of the network on 468000 test images: 60.86
-Accuracy of the network on 474000 test images: 61.07
-Accuracy of the network on 480000 test images: 60.87
-212.95935368537903
-Epoch 8
-Accuracy of the network on 486000 test images: 61.59
-Accuracy of the network on 492000 test images: 61.76
-Accuracy of the network on 498000 test images: 61.41
-Accuracy of the network on 504000 test images: 61.55
-Accuracy of the network on 510000 test images: 61.87
-Accuracy of the network on 516000 test images: 62.7
-Accuracy of the network on 522000 test images: 63.24
-Accuracy of the network on 528000 test images: 62.5
-Accuracy of the network on 534000 test images: 62.59
-Accuracy of the network on 540000 test images: 63.23
-213.0529022216797
-Epoch 9
-Accuracy of the network on 546000 test images: 63.27
-Accuracy of the network on 552000 test images: 62.67
-Accuracy of the network on 558000 test images: 63.77
-Accuracy of the network on 564000 test images: 63.55
-Accuracy of the network on 570000 test images: 63.71
-Accuracy of the network on 576000 test images: 64.42
-Accuracy of the network on 582000 test images: 64.17
-Accuracy of the network on 588000 test images: 64.05
-Accuracy of the network on 594000 test images: 64.86
-Accuracy of the network on 600000 test images: 64.89
-213.25216555595398
-Epoch 10
-Accuracy of the network on 606000 test images: 65.0
-Accuracy of the network on 612000 test images: 64.69
-Accuracy of the network on 618000 test images: 64.6
-Accuracy of the network on 624000 test images: 65.64
-Accuracy of the network on 630000 test images: 65.13
-Accuracy of the network on 636000 test images: 65.88
-Accuracy of the network on 642000 test images: 65.4
-Accuracy of the network on 648000 test images: 66.06
-Accuracy of the network on 654000 test images: 65.83
-Accuracy of the network on 660000 test images: 65.92
-212.50500750541687
-Epoch 11
-Accuracy of the network on 666000 test images: 65.87
-Accuracy of the network on 672000 test images: 66.29
-Accuracy of the network on 678000 test images: 66.45
-Accuracy of the network on 684000 test images: 66.36
-Accuracy of the network on 690000 test images: 66.82
-Accuracy of the network on 696000 test images: 66.69
-Accuracy of the network on 702000 test images: 66.82
-Accuracy of the network on 708000 test images: 67.24
-Accuracy of the network on 714000 test images: 67.22
-Accuracy of the network on 720000 test images: 67.1
-213.46456599235535
-Epoch 12
-Accuracy of the network on 726000 test images: 67.26
-Accuracy of the network on 732000 test images: 67.38
-Accuracy of the network on 738000 test images: 67.3
-Accuracy of the network on 744000 test images: 67.77
-Accuracy of the network on 750000 test images: 68.09
-Accuracy of the network on 756000 test images: 67.74
-Accuracy of the network on 762000 test images: 68.12
-Accuracy of the network on 768000 test images: 68.24
-Accuracy of the network on 774000 test images: 68.02
-Accuracy of the network on 780000 test images: 68.37
-213.48424768447876
-Epoch 13
-Accuracy of the network on 786000 test images: 68.43
-Accuracy of the network on 792000 test images: 68.41
-Accuracy of the network on 798000 test images: 68.61
-Accuracy of the network on 804000 test images: 68.6
-Accuracy of the network on 810000 test images: 68.75
-Accuracy of the network on 816000 test images: 68.9
-Accuracy of the network on 822000 test images: 68.89
-Accuracy of the network on 828000 test images: 68.87
-Accuracy of the network on 834000 test images: 68.92
-Accuracy of the network on 840000 test images: 69.09
-213.05444073677063
-Epoch 14
-Accuracy of the network on 846000 test images: 69.11
-Accuracy of the network on 852000 test images: 69.21
-Accuracy of the network on 858000 test images: 69.34
-Accuracy of the network on 864000 test images: 69.2
-Accuracy of the network on 870000 test images: 69.09
-Accuracy of the network on 876000 test images: 69.17
-Accuracy of the network on 882000 test images: 69.42
-Accuracy of the network on 888000 test images: 69.48
-Accuracy of the network on 894000 test images: 69.41
-Accuracy of the network on 900000 test images: 69.48
-213.08658361434937
-Epoch 15
-Accuracy of the network on 906000 test images: 69.22
-Accuracy of the network on 912000 test images: 69.78
-Accuracy of the network on 918000 test images: 69.63
-Accuracy of the network on 924000 test images: 69.6
-Accuracy of the network on 930000 test images: 69.94
-Accuracy of the network on 936000 test images: 69.29
-Accuracy of the network on 942000 test images: 70.03
-Accuracy of the network on 948000 test images: 69.9
-Accuracy of the network on 954000 test images: 70.05
-Accuracy of the network on 960000 test images: 69.99
-214.32542300224304
-Epoch 16
-Accuracy of the network on 966000 test images: 69.74
-Accuracy of the network on 972000 test images: 70.2
-Accuracy of the network on 978000 test images: 70.27
-Accuracy of the network on 984000 test images: 70.31
-Accuracy of the network on 990000 test images: 70.33
-Accuracy of the network on 996000 test images: 69.97
-Accuracy of the network on 1002000 test images: 70.36
-Accuracy of the network on 1008000 test images: 70.24
-Accuracy of the network on 1014000 test images: 70.32
-Accuracy of the network on 1020000 test images: 69.79
-213.1265320777893
-Epoch 17
-Accuracy of the network on 1026000 test images: 70.38
-Accuracy of the network on 1032000 test images: 70.18
-Accuracy of the network on 1038000 test images: 70.63
-Accuracy of the network on 1044000 test images: 70.46
-Accuracy of the network on 1050000 test images: 70.56
-Accuracy of the network on 1056000 test images: 70.65
-Accuracy of the network on 1062000 test images: 70.52
-Accuracy of the network on 1068000 test images: 70.5
-Accuracy of the network on 1074000 test images: 70.57
-Accuracy of the network on 1080000 test images: 70.47
-213.20715022087097
-Epoch 18
-Accuracy of the network on 1086000 test images: 70.33
-Accuracy of the network on 1092000 test images: 70.68
-Accuracy of the network on 1098000 test images: 70.28
-Accuracy of the network on 1104000 test images: 70.71
-Accuracy of the network on 1110000 test images: 70.49
-Accuracy of the network on 1116000 test images: 70.77
-Accuracy of the network on 1122000 test images: 70.82
-Accuracy of the network on 1128000 test images: 70.95
-Accuracy of the network on 1134000 test images: 70.88
-Accuracy of the network on 1140000 test images: 70.74
-213.28207874298096
-Epoch 19
-Accuracy of the network on 1146000 test images: 70.62
-Accuracy of the network on 1152000 test images: 71.06
-Accuracy of the network on 1158000 test images: 70.84
-Accuracy of the network on 1164000 test images: 70.57
-Accuracy of the network on 1170000 test images: 71.18
-Accuracy of the network on 1176000 test images: 70.85
-Accuracy of the network on 1182000 test images: 71.1
-Accuracy of the network on 1188000 test images: 71.04
-Accuracy of the network on 1194000 test images: 70.74
-Accuracy of the network on 1200000 test images: 71.08
-213.04750084877014
+Accuracy of the network on 1146000 test images: 49.23
+Accuracy of the network on 1152000 test images: 48.15
+Accuracy of the network on 1158000 test images: 49.22
+Accuracy of the network on 1164000 test images: 48.79
+Accuracy of the network on 1170000 test images: 48.71
+Accuracy of the network on 1176000 test images: 48.92
+Accuracy of the network on 1182000 test images: 48.47
+Accuracy of the network on 1188000 test images: 48.13
+Accuracy of the network on 1194000 test images: 49.06
+Accuracy of the network on 1200000 test images: 48.73
+209.00259566307068
+Epoch 20
+Accuracy of the network on 1206000 test images: 49.57
+Accuracy of the network on 1212000 test images: 48.89
+Accuracy of the network on 1218000 test images: 48.66
+Accuracy of the network on 1224000 test images: 48.18
+Accuracy of the network on 1230000 test images: 49.27
+Accuracy of the network on 1236000 test images: 49.68
+Accuracy of the network on 1242000 test images: 49.0
+Accuracy of the network on 1248000 test images: 48.66
+Accuracy of the network on 1254000 test images: 48.93
+Accuracy of the network on 1260000 test images: 49.47
+209.0128071308136
+Epoch 21
+Accuracy of the network on 1266000 test images: 49.0
+Accuracy of the network on 1272000 test images: 49.78
+Accuracy of the network on 1278000 test images: 49.09
+Accuracy of the network on 1284000 test images: 49.71
+Accuracy of the network on 1290000 test images: 48.73
+Accuracy of the network on 1296000 test images: 49.7
+Accuracy of the network on 1302000 test images: 48.78
+Accuracy of the network on 1308000 test images: 49.75
+Accuracy of the network on 1314000 test images: 49.06
+Accuracy of the network on 1320000 test images: 49.63
+209.31774520874023
+Epoch 22
+Accuracy of the network on 1326000 test images: 49.95
+Accuracy of the network on 1332000 test images: 48.12
+Accuracy of the network on 1338000 test images: 49.81
+Accuracy of the network on 1344000 test images: 49.46
+Accuracy of the network on 1350000 test images: 49.63
+Accuracy of the network on 1356000 test images: 48.9
+Accuracy of the network on 1362000 test images: 50.03
+Accuracy of the network on 1368000 test images: 49.3
+Accuracy of the network on 1374000 test images: 49.44
+Accuracy of the network on 1380000 test images: 49.0
+209.21552205085754
+Epoch 23
+Accuracy of the network on 1386000 test images: 49.72
+Accuracy of the network on 1392000 test images: 49.83
+Accuracy of the network on 1398000 test images: 49.96
+Accuracy of the network on 1404000 test images: 49.15
+Accuracy of the network on 1410000 test images: 49.81
+Accuracy of the network on 1416000 test images: 50.12
+Accuracy of the network on 1422000 test images: 49.29
+Accuracy of the network on 1428000 test images: 49.6
+Accuracy of the network on 1434000 test images: 49.82
+Accuracy of the network on 1440000 test images: 49.4
+209.00636506080627
+Epoch 24
+Accuracy of the network on 1446000 test images: 49.11
+Accuracy of the network on 1452000 test images: 50.23
+Accuracy of the network on 1458000 test images: 50.28
+Accuracy of the network on 1464000 test images: 49.8
+Accuracy of the network on 1470000 test images: 49.86
+Accuracy of the network on 1476000 test images: 49.81
+Accuracy of the network on 1482000 test images: 50.06
+Accuracy of the network on 1488000 test images: 49.98
+Accuracy of the network on 1494000 test images: 49.6
+Accuracy of the network on 1500000 test images: 50.1
+208.99392199516296
+Epoch 25
+Accuracy of the network on 1506000 test images: 49.86
+Accuracy of the network on 1512000 test images: 48.92
+Accuracy of the network on 1518000 test images: 50.34
+Accuracy of the network on 1524000 test images: 49.98
+Accuracy of the network on 1530000 test images: 49.59
+Accuracy of the network on 1536000 test images: 50.2
+Accuracy of the network on 1542000 test images: 49.68
+Accuracy of the network on 1548000 test images: 49.78
+Accuracy of the network on 1554000 test images: 50.1
+Accuracy of the network on 1560000 test images: 50.08
+209.30432295799255
+Epoch 26
+Accuracy of the network on 1566000 test images: 49.66
+Accuracy of the network on 1572000 test images: 50.33
+Accuracy of the network on 1578000 test images: 49.7
+Accuracy of the network on 1584000 test images: 50.31
+Accuracy of the network on 1590000 test images: 50.04
+Accuracy of the network on 1596000 test images: 50.0
+Accuracy of the network on 1602000 test images: 50.0
+Accuracy of the network on 1608000 test images: 48.92
+Accuracy of the network on 1614000 test images: 50.17
+Accuracy of the network on 1620000 test images: 49.72
+209.03440856933594
+Epoch 27
+Accuracy of the network on 1626000 test images: 50.35
+Accuracy of the network on 1632000 test images: 49.68
+Accuracy of the network on 1638000 test images: 49.93
+Accuracy of the network on 1644000 test images: 49.83
+Accuracy of the network on 1650000 test images: 50.5
+Accuracy of the network on 1656000 test images: 50.07
+Accuracy of the network on 1662000 test images: 49.82
+Accuracy of the network on 1668000 test images: 50.21
+Accuracy of the network on 1674000 test images: 50.24
+Accuracy of the network on 1680000 test images: 49.85
+209.00650334358215
+Epoch 28
+Accuracy of the network on 1686000 test images: 49.67
+Accuracy of the network on 1692000 test images: 50.23
+Accuracy of the network on 1698000 test images: 49.35
+Accuracy of the network on 1704000 test images: 50.56
+Accuracy of the network on 1710000 test images: 49.51
+Accuracy of the network on 1716000 test images: 50.76
+Accuracy of the network on 1722000 test images: 50.15
+Accuracy of the network on 1728000 test images: 50.4
+Accuracy of the network on 1734000 test images: 49.99
+Accuracy of the network on 1740000 test images: 50.56
+209.19263195991516
+Epoch 29
+Accuracy of the network on 1746000 test images: 50.81
+Accuracy of the network on 1752000 test images: 49.79
+Accuracy of the network on 1758000 test images: 50.85
+Accuracy of the network on 1764000 test images: 50.39
+Accuracy of the network on 1770000 test images: 50.54
+Accuracy of the network on 1776000 test images: 49.81
+Accuracy of the network on 1782000 test images: 49.98
+Accuracy of the network on 1788000 test images: 49.91
+Accuracy of the network on 1794000 test images: 50.76
+Accuracy of the network on 1800000 test images: 49.73
+209.07574915885925
