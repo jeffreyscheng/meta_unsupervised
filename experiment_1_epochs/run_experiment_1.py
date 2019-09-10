@@ -20,7 +20,10 @@ results = {(0, 0): control_frame.train_model(phi=30, theta=1, intermediate_accur
 # for metalearner_learning_rate in [10 ** (-4), 10 ** (-3), 10 ** (-2)]:
 #     for update_rate in [10 ** (-10), 10 ** (-8), 10 ** (-6)]:
 for metalearner_learning_rate in [10 ** (-5), 10 ** (-4)]:
-    for update_rate in [10 ** (-11), 10 ** (-10)]:
+    for update_rate in [10 ** (-6), 10 ** (-5)]:
         results[(metalearner_learning_rate, update_rate)] = test_mllr_update_pair(metalearner_learning_rate,
                                                                                   update_rate)
         pickle.dump(results, open(experiment_1_data_path, 'wb'))
+
+
+
