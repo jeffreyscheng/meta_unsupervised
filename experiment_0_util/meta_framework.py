@@ -94,6 +94,7 @@ class MetaFramework(object):
 
         for epoch in range(phi):
             print("Epoch", epoch)
+            tick = time.time()
             for i, (images, labels) in enumerate(self.train_loader):
                 batch_num += 1
 
@@ -118,7 +119,7 @@ class MetaFramework(object):
                         optimizer.step()
                     del learner_loss
 
-                if batch_num % 100 == 0 and not return_model and intermediate_accuracy:
+                if batch_num % 600 == 0 and not return_model and intermediate_accuracy:
                     try:
                         test_model(learner)
                     except ValueError:
@@ -126,6 +127,7 @@ class MetaFramework(object):
                         return learning_curve_list
 
                 del images, labels, outputs
+            print(time.time() - tick)
 
         if return_model:
             return learner
