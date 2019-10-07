@@ -17,13 +17,11 @@ def test_mllr_update_pair(mllr, update_rate):
 
 
 results = {(0, 0): control_frame.train_model(phi=30, theta=1, intermediate_accuracy=True, return_model=False)}
-# for metalearner_learning_rate in [10 ** (-4), 10 ** (-3), 10 ** (-2)]:
-#     for update_rate in [10 ** (-10), 10 ** (-8), 10 ** (-6)]:
-for metalearner_learning_rate in [10 ** (-5), 10 ** (-4)]:
-    for update_rate in [10 ** (-6), 10 ** (-5)]:
-        results[(metalearner_learning_rate, update_rate)] = test_mllr_update_pair(metalearner_learning_rate,
-                                                                                  update_rate)
+for metalearner_learning_rate in [10 ** (-5), 5 * 10 ** (-5), 10 ** (-4), 5 * 10 ** (-4), 10 ** (-3), 10 ** (-2)]:
+    for update_rate in [10 ** (-10), 10 ** (-9), 10 ** (-8), 10 ** (-7), 10 ** (-6), 10 ** (-5)]:
+        for iter in range(5):
+        # for metalearner_learning_rate in [10 ** (-5), 10 ** (-4)]:
+        #     for update_rate in [10 ** (-6), 10 ** (-5)]:
+            results[(metalearner_learning_rate, update_rate, iter)] = test_mllr_update_pair(metalearner_learning_rate,
+                                                                                      update_rate)
         pickle.dump(results, open(experiment_1_data_path, 'wb'))
-
-
-

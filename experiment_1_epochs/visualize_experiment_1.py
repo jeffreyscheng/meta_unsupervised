@@ -32,26 +32,23 @@ result_df = pd.DataFrame(best_result)
 result_df['epoch'] = result_df['batch_num'] * 10 / 60000
 result_df['scaled_learner_gradient_norm'] = result_df['learner_gradient_norm'] / result_df['learner_gradient_norm'].mean()
 result_df['scaled_metalearner_gradient_norm'] = result_df['metalearner_gradient_norm'] / result_df['metalearner_gradient_norm'].mean()
+result_df['scaled_hebbian_update_norm'] = result_df['hebbian_update_norm'] / result_df['hebbian_update_norm'].mean()
 plt.plot(result_df['epoch'], result_df['scaled_learner_gradient_norm'], label='Scaled Learner Gradient')
 plt.plot(result_df['epoch'], result_df['scaled_metalearner_gradient_norm'], label='Scaled Metalearner Gradient')
+plt.plot(result_df['epoch'], result_df['scaled_hebbian_update_norm'], label='Scaled Hebbian Update')
 plt.xlabel('Number of Epochs')
-plt.ylabel('Gradient')
+plt.ylabel('Update Norm')
 plt.legend()
-
+plt.grid()
 plt.savefig(os.path.join(root_directory, dataset_name, 'result_images', 'experiment_1_gradient_comparison.png'))
 plt.show()
 plt.clf()
 
-
-#  VISUALIZATION 3: see if the metalearner outputs are related to the gradients
-best_result = results[(10 ** -4, 10 ** -10)]
-result_df = pd.DataFrame(best_result)
-result_df['epoch'] = result_df['batch_num'] * 10 / 60000
-plt.scatter(result_df['learner_gradient_norm'], result_df['hebbian_update_norm'], c=result_df['epoch'])
-plt.ylim((0, 0.00000002))
-plt.xlabel('Gradient Norm')
+plt.plot(result_df['epoch'], result_df['hebbian_update_norm'])
+plt.xlabel('Number of Epochs')
 plt.ylabel('Hebbian Update Norm')
 plt.legend()
-plt.savefig(os.path.join(root_directory, dataset_name, 'result_images', 'experiment_1_gradient_vs_Hebb.png'))
+plt.grid()
+plt.savefig(os.path.join(root_directory, dataset_name, 'result_images', 'experiment_1_hebbian_updates.png'))
 plt.show()
 plt.clf()
