@@ -9,6 +9,7 @@ class HebbianNet(nn.Module):
     def __init__(self, input_size, hidden_widths, output_size, meta_input, meta_hidden, meta_output, batch_size, rate):
         super(HebbianNet, self).__init__()
         self.relu = nn.ReLU()
+        self.tanh = nn.Tanh()
         hidden1, hidden2, hidden3 = hidden_widths
         self.fc1 = nn.Linear(input_size, hidden1)
         self.fc2 = nn.Linear(hidden1, hidden2)
@@ -23,7 +24,7 @@ class HebbianNet(nn.Module):
 
     # get new weight
     def get_update(self, meta_input_stack):
-        return torch.squeeze(self.conv2(self.relu(self.conv1(meta_input_stack))), 1)
+        return torch.squeeze(self.conv2(self.tanh(self.conv1(meta_input_stack))), 1)
 
     def forward(self, x, batch_num=1):
         return self.fc4(self.relu(self.fc3(self.relu(self.fc2(self.relu(self.fc1(x)))))))

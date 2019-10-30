@@ -10,11 +10,18 @@ experiment_1_data_path = join(root_directory, dataset_name, 'final_data', 'exper
 
 #  VISUALIZATION 1: just plot the learning curves to tune hyperparameters
 results = pickle.load(open(experiment_1_data_path, 'rb'))
-for key in results:
-    result_df = pd.DataFrame(results[key])
-    result_df['epoch'] = result_df['batch_num'] * 10 / 60000
-
-    plt.plot(result_df['epoch'], result_df['accuracy'], label=key)
+hyperparams = set([(key[0], key[1]) for key in results.keys()])
+for h in hyperparams:
+    if h != (0, 0):
+        list_of_dfs = [pd.DataFrame(results[key]) for key in results if key[0] == h[0] and key[1] == h[1]]
+        epoch = list_of_dfs[0]['batch_num'] * 10 / 60000
+        mean_accuracy = pd.DataFrame([df['accuracy'] for df in list_of_dfs]).median(axis=0)
+        if mean_accuracy.max() > 0.8:
+            plt.plot(epoch, mean_accuracy, label=h)
+    else:
+        results_df = pd.DataFrame(results[h])
+        epoch = results_df['batch_num'] * 10 / 60000
+        plt.plot(epoch, results_df['accuracy'], label=h)
 
 plt.xlabel('Number of Epochs')
 plt.ylabel('Accuracy')
